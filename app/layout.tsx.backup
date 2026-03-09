@@ -1,43 +1,14 @@
 import "./globals.css";
 import Link from "next/link";
 import type { Metadata } from "next";
-import { organizationSchema } from "@/lib/seo/schema";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.aipatentinsight.com"),
   title: {
     default: "AI Patent Insight",
     template: "%s｜AI Patent Insight",
   },
   description:
     "以產業演化趨勢、精選專利摘要、精選公司簡介、API 服務與深度解析報告為核心的研究平台。",
-  alternates: {
-    canonical: "/",
-  },
-  openGraph: {
-    title: "AI Patent Insight",
-    description:
-      "以產業演化趨勢、精選專利摘要、精選公司簡介、API 服務與深度解析報告為核心的研究平台。",
-    url: "https://www.aipatentinsight.com",
-    siteName: "AI Patent Insight",
-    locale: "zh_TW",
-    type: "website",
-    images: [
-      {
-        url: "/images/reports/ai-server-cover.jpg",
-        width: 1200,
-        height: 630,
-        alt: "AI Patent Insight",
-      },
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "AI Patent Insight",
-    description:
-      "以產業演化趨勢、精選專利摘要、精選公司簡介、API 服務與深度解析報告為核心的研究平台。",
-    images: ["/images/reports/ai-server-cover.jpg"],
-  },
 };
 
 const navItems = [
@@ -57,13 +28,6 @@ export default function RootLayout({
   return (
     <html lang="zh-Hant">
       <body className="bg-white text-neutral-900 antialiased">
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify(organizationSchema),
-          }}
-        />
-
         <header className="border-b border-neutral-200 bg-white">
           <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
             <Link href="/" className="text-lg font-semibold tracking-tight">
