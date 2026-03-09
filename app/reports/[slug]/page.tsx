@@ -29,9 +29,39 @@ export async function generateMetadata({
     };
   }
 
+  const canonicalUrl = `${siteUrl}/reports/${report.slug}`;
+  const ogImage = report.coverImage
+    ? `${siteUrl}${report.coverImage}`
+    : `${siteUrl}/images/reports/ai-server-cover.jpg`;
+
   return {
     title: report.title,
     description: report.summary,
+    alternates: {
+      canonical: canonicalUrl,
+    },
+    openGraph: {
+      title: report.title,
+      description: report.summary,
+      url: canonicalUrl,
+      siteName: "AI Patent Insight",
+      locale: "zh_TW",
+      type: "article",
+      images: [
+        {
+          url: ogImage,
+          width: 1200,
+          height: 630,
+          alt: report.title,
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: report.title,
+      description: report.summary,
+      images: [ogImage],
+    },
   };
 }
 
