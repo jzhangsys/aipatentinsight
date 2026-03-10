@@ -2,6 +2,11 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import SchemaScript from "@/components/SchemaScript";
+import { getFAQSchema } from "@/lib/faqSchema";
+import Disclaimer from "@/components/content/Disclaimer";
+import ResearchScope from "@/components/content/ResearchScope";
+import FAQSection from "@/components/content/FAQSection";
+import AISummary from "@/components/content/AISummary";
 import { reports } from "@/content/reports/reports";
 import { getArticleSchema, siteUrl } from "@/lib/schema";
 
@@ -83,9 +88,18 @@ export default async function ReportDetailPage({
     image: report.coverImage ? `${siteUrl}${report.coverImage}` : undefined,
   });
 
+  const faqSchema = report.faqs?.length ? getFAQSchema(report.faqs) : null;
+
+
   return (
     <main className="mx-auto max-w-4xl px-6 py-16">
+      <>
+      <>
       <SchemaScript data={schemaData} />
+      {faqSchema ? <SchemaScript data={faqSchema} /> : null}
+      </>
+      {faqSchema ? <SchemaScript data={faqSchema} /> : null}
+      </>
 
       <div className="mb-8">
         <Link
@@ -97,6 +111,8 @@ export default async function ReportDetailPage({
       </div>
 
       <article>
+        {report.aiSummary?.length ? <AISummary summary={report.aiSummary} /> : null}
+        {report.aiSummary?.length ? <AISummary summary={report.aiSummary} /> : null}
         <header className="max-w-3xl">
           <p className="text-sm font-medium text-neutral-500">
             {report.category}
@@ -159,6 +175,14 @@ export default async function ReportDetailPage({
             </section>
           ))}
         </section>
+
+        {report.faqs?.length ? <FAQSection items={report.faqs} /> : null}
+        <ResearchScope />
+        <Disclaimer />
+
+        {report.faqs?.length ? <FAQSection items={report.faqs} /> : null}
+        <ResearchScope />
+        <Disclaimer />
       </article>
     </main>
   );
