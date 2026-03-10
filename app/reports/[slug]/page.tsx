@@ -195,9 +195,6 @@ export default async function ReportDetailPage({
         <ResearchScope />
         <Disclaimer />
 
-        {report.faqs?.length ? <FAQSection items={report.faqs} /> : null}
-        <ResearchScope />
-        <Disclaimer />
       </article>
     </main>
   );
