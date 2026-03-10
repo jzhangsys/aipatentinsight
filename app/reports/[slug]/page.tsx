@@ -112,7 +112,6 @@ export default async function ReportDetailPage({
 
       <article>
         {report.aiSummary?.length ? <AISummary summary={report.aiSummary} /> : null}
-        {report.aiSummary?.length ? <AISummary summary={report.aiSummary} /> : null}
         <header className="max-w-3xl">
           <p className="text-sm font-medium text-[var(--brand-text-muted)]">
             {report.category}
