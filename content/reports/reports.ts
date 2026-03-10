@@ -189,7 +189,7 @@ export const reports: ReportItem[] = [
       "本研究透過多來源資料分析建立技術地圖，整理出台灣產業技術的主要演化方向。研究顯示，先進半導體、AI晶片、電源管理晶片、硬體信任與安全控制、XR與數位模擬等技術正在形成多個核心技術群，並由不同企業在其中扮演關鍵角色。本報告嘗試從整體結構角度，理解這些技術如何在產業中形成互動關係。",
     category: "產業演化趨勢",
     status: "custom-only",
-    coverImage: "/images/reports/taiwan-technology-evolution-cover.jpg",
+    coverImage: "/images/reports/global-patent-technology-landscape-2026-cover.jpg",
     publishedAt: "2026-03-10",
     aiSummary: [
       "本研究以台灣申請專利為主要資料來源，結合多源訊號與結構分析，辨識出台灣產業技術地圖中的主流與分支路徑。",
