@@ -1,8 +1,19 @@
 import Link from "next/link";
+import SchemaScript from "@/components/SchemaScript";
+import { getWebPageSchema } from "@/lib/pageSchema";
 
 export default function HomePage() {
+  const schema = getWebPageSchema({
+    title: "AI Patent Insight｜技術演化研究平台",
+    description:
+      "以技術演化為核心的研究平台，透過專利、產業訊號與技術結構分析，辨識主流技術、分支路徑與企業在技術地圖中的位置。",
+    path: "/",
+  });
+
   return (
     <main className="mx-auto max-w-6xl px-6 py-16 md:px-10">
+      <SchemaScript data={schema} />
+
       <section className="max-w-4xl">
         <p className="text-sm font-semibold tracking-wide text-neutral-500">
           AI Patent Insight
