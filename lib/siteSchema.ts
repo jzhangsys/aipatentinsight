@@ -6,7 +6,7 @@ export function getOrganizationSchema() {
     "@type": "Organization",
     name: siteConfig.name,
     url: siteConfig.url,
-    logo: siteConfig.ogImage,
+    logo: siteConfig.logo,
     description: siteConfig.description,
   };
 }

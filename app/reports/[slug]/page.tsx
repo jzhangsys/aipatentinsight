@@ -114,19 +114,19 @@ export default async function ReportDetailPage({
         {report.aiSummary?.length ? <AISummary summary={report.aiSummary} /> : null}
         {report.aiSummary?.length ? <AISummary summary={report.aiSummary} /> : null}
         <header className="max-w-3xl">
-          <p className="text-sm font-medium text-neutral-500">
+          <p className="text-sm font-medium text-[var(--brand-text-muted)]">
             {report.category}
           </p>
 
-          <h1 className="mt-3 text-4xl font-bold leading-tight">
+          <h1 className="mt-3 text-4xl font-bold leading-tight brand-title">
             {report.title}
           </h1>
 
-          <p className="mt-6 text-lg leading-8 text-neutral-600">
+          <p className="mt-6 text-lg leading-8 text-[var(--brand-text-soft)]">
             {report.summary}
           </p>
 
-          <div className="mt-6 flex flex-wrap gap-4 text-sm text-neutral-500">
+          <div className="mt-6 flex flex-wrap gap-4 text-sm text-[var(--brand-text-muted)]">
             <span>發布日期：{report.publishedAt}</span>
             <span>
               狀態：
@@ -137,7 +137,7 @@ export default async function ReportDetailPage({
           </div>
 
           {report.coverImage ? (
-            <div className="mt-8 overflow-hidden rounded-2xl border border-neutral-200">
+            <div className="mt-8 overflow-hidden rounded-[28px] border border-[var(--brand-line)] shadow-sm">
               <img
                 src={report.coverImage}
                 alt={report.title}
@@ -147,16 +147,16 @@ export default async function ReportDetailPage({
           ) : null}
         </header>
 
-        <section className="mt-12 space-y-12 border-t border-neutral-200 pt-12">
+        <section className="mt-12 space-y-12 border-t border-[var(--brand-line)] pt-12">
           {report.sections.map((section) => (
             <section key={section.heading}>
-              <h2 className="text-2xl font-semibold">{section.heading}</h2>
+              <h2 className="text-2xl font-semibold brand-title">{section.heading}</h2>
 
               <div className="mt-5 space-y-5">
                 {section.paragraphs.map((paragraph, index) => (
                   <p
                     key={`${section.heading}-${index}`}
-                    className="text-base leading-8 text-neutral-700"
+                    className="text-base leading-8 text-[var(--brand-text-soft)]"
                   >
                     {paragraph}
                   </p>
@@ -164,7 +164,7 @@ export default async function ReportDetailPage({
               </div>
 
               {section.image ? (
-                <div className="mt-8 overflow-hidden rounded-2xl border border-neutral-200">
+                <div className="mt-8 overflow-hidden rounded-[28px] border border-[var(--brand-line)] shadow-sm">
                   <img
                     src={section.image}
                     alt={section.imageAlt ?? section.heading}

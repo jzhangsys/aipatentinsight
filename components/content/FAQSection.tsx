@@ -11,18 +11,19 @@ export default function FAQSection({ items }: FAQSectionProps) {
   if (!items?.length) return null;
 
   return (
-    <section className="mt-14 border-t border-neutral-200 pt-12">
-      <h2 className="text-2xl font-semibold">常見問題</h2>
+    <section className="mt-14 border-t border-[var(--brand-line)] pt-12">
+      <p className="brand-kicker">FAQ</p>
+      <h2 className="mt-2 text-2xl font-semibold brand-title">常見問題</h2>
       <div className="mt-6 space-y-4">
         {items.map((item, index) => (
           <details
             key={index}
-            className="rounded-2xl border border-neutral-200 bg-white p-5"
+            className="rounded-[24px] border border-[var(--brand-line)] bg-white p-5 shadow-sm"
           >
-            <summary className="cursor-pointer text-base font-semibold text-neutral-900">
+            <summary className="cursor-pointer text-base font-semibold text-[var(--brand-ink)]">
               {item.question}
             </summary>
-            <p className="mt-4 text-base leading-8 text-neutral-700">
+            <p className="mt-4 text-base leading-8 text-[var(--brand-text-soft)]">
               {item.answer}
             </p>
           </details>
