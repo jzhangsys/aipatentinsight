@@ -137,7 +137,22 @@ export default async function ReportDetailPage({
           </div>
 
           {report.coverImage ? (
-            <div className="mt-8 overflow-hidden rounded-[28px] border border-[var(--brand-line)] shadow-sm">
+            <div className="mt-8 overflow-hidden rounded-[28px] border border-[var(--brand-line)] bg-[linear-gradient(180deg,#ffffff_0%,#f8fbff_100%)] shadow-sm">
+              <div className="flex items-center gap-3 border-b border-[var(--brand-line)] px-5 py-4">
+                <img
+                  src="/brand/logo-panda.png"
+                  alt="熊貓看產業"
+                  className="h-10 w-10 rounded-full border border-[var(--brand-line)] bg-white p-1"
+                />
+                <div>
+                  <p className="text-xs font-semibold uppercase tracking-[0.14em] text-[var(--brand-blue)]">
+                    Panda Industry Watch
+                  </p>
+                  <p className="text-sm text-[var(--brand-text-muted)]">
+                    AI Patent Insight 研究報告封面
+                  </p>
+                </div>
+              </div>
               <img
                 src={report.coverImage}
                 alt={report.title}

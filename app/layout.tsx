@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     locale: siteConfig.locale,
     images: [
       {
-        url: siteConfig.ogImage,
+        url: siteConfig.url + "/opengraph-image",
         width: 1200,
         height: 630,
         alt: "AI Patent Insight 熊貓看產業",
@@ -50,7 +50,8 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "AI Patent Insight｜熊貓看產業",
     description: siteConfig.description,
-    images: [siteConfig.ogImage],
+    images: [siteConfig.url + "/twitter-image"],
+    creator: "AI Patent Insight",
   },
   robots: {
     index: true,
@@ -61,6 +62,7 @@ export const metadata: Metadata = {
     shortcut: "/brand/logo-panda.png",
     apple: "/brand/logo-panda.png",
   },
+  manifest: "/manifest.webmanifest",
 };
 
 const navItems = [
