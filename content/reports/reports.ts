@@ -20,7 +20,7 @@ export type ReportItem = {
 };
 
 export const reports: ReportItem[] = [
-        {
+          {
     slug: "ai-server-industry-evolution",
     title: "技術風險與機會白皮書：剪切帶警報與高價值橋接專利分析",
     summary:
