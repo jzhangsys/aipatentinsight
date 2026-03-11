@@ -122,7 +122,7 @@ export const reports: ReportItem[] = [
         ]
       }
     ]
-  }
+  },
 
 {
     slug: "advanced-packaging-technology-path",
