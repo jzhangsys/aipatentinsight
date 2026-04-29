@@ -1,6 +1,29 @@
 import Link from "next/link";
 import SchemaScript from "@/components/SchemaScript";
+import { reports } from "@/content/reports/reports";
 import { getWebPageSchema } from "@/lib/pageSchema";
+
+const homeTabs = [
+  { href: "/insights", label: "Insights", meta: "公司專利圖譜與類別聚焦" },
+  { href: "/reports", label: "Flagship", meta: "深度報告與封面牆" },
+  { href: "/api-services", label: "API", meta: "研究資料介面與客製輸出" },
+  { href: "/contact", label: "Contact", meta: "合作與採購入口" },
+];
+
+const signalStats = [
+  { label: "Reports", value: String(reports.length).padStart(2, "0") },
+  { label: "Focus", value: "TW" },
+  { label: "Mode", value: "LIVE" },
+];
+
+const labelCloud = [
+  "Semiconductor",
+  "Display",
+  "Memory",
+  "Thermal",
+  "Optics",
+  "Wireless",
+];
 
 export default function HomePage() {
   const schema = getWebPageSchema({
@@ -11,169 +34,122 @@ export default function HomePage() {
   });
 
   return (
-    <main className="mx-auto max-w-6xl px-6 py-16 md:px-10">
+    <main className="px-0 pb-10 pt-0">
       <SchemaScript data={schema} />
 
-      <section className="grid items-center gap-10 lg:grid-cols-[1.2fr_0.8fr]">
-        <div className="max-w-4xl">
-          <p className="brand-kicker">Panda Industry Watch</p>
-          <h1 className="mt-3 text-4xl font-bold leading-tight md:text-6xl brand-title">
-            熊貓看產業，
-            <br className="hidden md:block" />
-            看見技術主幹與產業結構
-          </h1>
-          <p className="mt-6 max-w-3xl text-lg leading-8 text-[var(--brand-text-soft)]">
-            AI Patent Insight 是一個以技術演化為核心的研究平台。
-            我們透過專利資料、產業輿情、總體環境與資金脈動等多源訊號，
-            建立可持續更新的技術地圖，協助理解主流技術、分支路徑與企業在技術結構中的位置。
-          </p>
-
-          <div className="mt-6 flex flex-wrap gap-3">
-            <span className="brand-chip">技術演化地圖</span>
-            <span className="brand-chip">專利研究</span>
-            <span className="brand-chip">產業觀察</span>
-            <span className="brand-chip">熊貓看產業</span>
-          </div>
-
-          <div className="mt-8 flex flex-wrap gap-4">
-            <Link href="/reports/taiwan-technology-evolution-map" className="brand-button-primary">
-              閱讀旗艦研究
-            </Link>
-            <Link href="/reports" className="brand-button-secondary">
-              查看全部報告
-            </Link>
-          </div>
+      <section className="brand-vignette relative min-h-[calc(100vh-84px)] overflow-hidden">
+        <div className="absolute inset-0">
+          <div className="absolute left-[8%] top-[18%] h-56 w-56 rounded-full bg-[radial-gradient(circle,rgba(125,249,255,0.18)_0%,rgba(125,249,255,0.03)_38%,transparent_72%)]" />
+          <div className="absolute right-[16%] top-[24%] h-40 w-40 rounded-full bg-[radial-gradient(circle,rgba(125,249,255,0.12)_0%,rgba(125,249,255,0.02)_42%,transparent_72%)]" />
+          <div className="brand-grid absolute inset-x-[8%] top-[18%] h-[58%] rounded-[32px] border border-[rgba(125,249,255,0.06)] opacity-45" />
+          <svg
+            className="absolute inset-0 h-full w-full opacity-55"
+            viewBox="0 0 1200 800"
+            aria-hidden="true"
+          >
+            <path d="M220 540L420 410L650 470L860 320L1020 390" stroke="rgba(125,249,255,0.18)" strokeWidth="1" fill="none" />
+            <path d="M260 280L420 410L520 240L720 210L860 320" stroke="rgba(125,249,255,0.12)" strokeWidth="1" fill="none" />
+            {[["220", "540"], ["420", "410"], ["650", "470"], ["860", "320"], ["1020", "390"], ["260", "280"], ["520", "240"], ["720", "210"]].map(
+              ([cx, cy]) => (
+                <circle key={`${cx}-${cy}`} cx={cx} cy={cy} r="5" fill="rgba(125,249,255,0.85)" />
+              )
+            )}
+          </svg>
         </div>
 
-        <div className="brand-card-soft rounded-[32px] p-8">
-          <div className="flex items-center gap-4">
-            <img
-              src="/brand/logo-panda.png"
-              alt="熊貓看產業"
-              className="h-20 w-20 rounded-full border border-[var(--brand-line)] bg-white p-2"
-            />
-            <div>
-              <p className="text-sm font-semibold tracking-wide text-[var(--brand-blue)]">
-                Brand Signal
-              </p>
-              <h2 className="mt-1 text-2xl font-semibold brand-title">
-                Panda as Observer
-              </h2>
+        <div className="relative mx-auto flex max-w-7xl flex-col px-6 pb-8 pt-24 md:px-10">
+          <div className="max-w-4xl">
+            <p className="brand-panel-label">Research Interface</p>
+            <h1 className="mt-4 text-5xl font-light tracking-[0.16em] text-white md:text-7xl">
+              AIPatentInsight
+            </h1>
+            <p className="mt-4 font-mono text-[11px] uppercase tracking-[0.28em] text-[var(--brand-text-muted)]">
+              Patent Signal Desk · Structured Industry Intelligence
+            </p>
+            <p className="mt-8 max-w-2xl text-lg font-light leading-9 text-[var(--brand-text-soft)]">
+              根據你給的 `insights-inline.html`，首頁現在先往沉浸式研究終端修正：
+              深色星圖背景、極簡導覽、螢光青介面，以及像 control room 一樣的資訊分區。
+            </p>
+
+            <div className="mt-10 flex flex-wrap gap-4">
+              <Link href="/insights" className="brand-button-primary">
+                Enter Insights
+              </Link>
+              <Link href="/reports" className="brand-button-secondary">
+                View Reports
+              </Link>
             </div>
           </div>
 
-          <div className="mt-6 space-y-4">
-            <p className="text-base leading-8 text-[var(--brand-text-soft)]">
-              熊貓不是可愛裝飾，而是研究平台的觀察者符號。
-            </p>
-            <p className="text-base leading-8 text-[var(--brand-text-soft)]">
-              它代表從複雜的產業結構中，冷靜辨識技術主幹、支撐層、橋接節點與應用擴散方向。
-            </p>
-            <p className="text-base leading-8 text-[var(--brand-text-soft)]">
-              這也是 AI Patent Insight 的品牌核心：以結構視角理解產業世界。
-            </p>
+          <div className="mt-16 grid gap-4 md:grid-cols-[0.8fr_1.2fr]">
+            <div className="brand-card brand-glow rounded-[10px] p-5">
+              <p className="brand-panel-label">Category Labels</p>
+              <div className="mt-5 flex flex-wrap gap-x-6 gap-y-4">
+                {labelCloud.map((label) => (
+                  <span key={label} className="font-mono text-[11px] uppercase tracking-[0.24em] text-[rgba(255,255,255,0.58)]">
+                    <span className="mr-2 inline-block h-2 w-2 rounded-full bg-[var(--brand-blue)] shadow-[0_0_8px_rgba(125,249,255,0.72)]" />
+                    {label}
+                  </span>
+                ))}
+              </div>
+            </div>
+
+            <div className="grid gap-4 md:grid-cols-[0.9fr_1.1fr]">
+              <div className="brand-card rounded-[10px] p-5">
+                <p className="brand-panel-label">Stats</p>
+                <div className="mt-5 grid grid-cols-3 gap-4">
+                  {signalStats.map((stat) => (
+                    <div key={stat.label}>
+                      <p className="font-mono text-[9px] uppercase tracking-[0.24em] text-[var(--brand-text-muted)]">
+                        {stat.label}
+                      </p>
+                      <p className="mt-2 text-2xl font-light tracking-[0.08em] text-white brand-data">
+                        {stat.value}
+                      </p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              <div className="brand-card rounded-[10px] p-5">
+                <p className="brand-panel-label">Featured Stream</p>
+                <div className="mt-4 space-y-3">
+                  {reports.slice(0, 3).map((report) => (
+                    <Link
+                      key={report.slug}
+                      href={`/reports/${report.slug}`}
+                      className="flex items-center justify-between gap-4 border-b border-[var(--brand-line)] pb-3 last:border-b-0 last:pb-0"
+                    >
+                      <div className="min-w-0">
+                        <p className="truncate text-sm text-white">{report.title}</p>
+                        <p className="mt-1 font-mono text-[10px] uppercase tracking-[0.2em] text-[var(--brand-text-muted)]">
+                          {report.category}
+                        </p>
+                      </div>
+                      <span className="brand-data text-[10px] text-[var(--brand-blue)]">
+                        {report.publishedAt}
+                      </span>
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-      </section>
 
-      <section className="mt-16 brand-card rounded-[32px] p-8">
-        <div className="max-w-4xl">
-          <p className="brand-kicker">Featured Research</p>
-          <h2 className="mt-2 text-3xl font-semibold brand-title">
-            台灣產業技術演化地圖
-          </h2>
-          <p className="mt-4 text-base leading-8 text-[var(--brand-text-soft)]">
-            從台灣申請專利出發，結合多源訊號與技術結構分析，辨識哪些技術正在形成主流，
-            哪些技術屬於支撐層、橋接層與應用擴散層，並進一步觀察關鍵企業在技術地圖中的位置與角色。
-          </p>
-        </div>
-        <div className="mt-6">
-          <Link href="/reports/taiwan-technology-evolution-map" className="brand-button-primary">
-            前往閱讀
-          </Link>
-        </div>
-      </section>
-
-      <section className="mt-16">
-        <p className="brand-kicker">Methodology</p>
-        <h2 className="mt-2 text-3xl font-semibold brand-title">研究方法框架</h2>
-        <div className="mt-6 grid gap-6 md:grid-cols-3">
-          <article className="brand-card rounded-[28px] p-6">
-            <p className="text-sm font-semibold tracking-wide text-[var(--brand-blue)]">01</p>
-            <h3 className="mt-3 text-xl font-semibold">Evolutionary Landscape Modeling</h3>
-            <p className="mt-4 text-sm leading-7 text-[var(--brand-text-soft)]">
-              整合專利、輿情、總經與資金脈動等多源訊號，辨識主流技術與分支技術的動能與路徑。
-            </p>
-          </article>
-
-          <article className="brand-card rounded-[28px] p-6">
-            <p className="text-sm font-semibold tracking-wide text-[var(--brand-blue)]">02</p>
-            <h3 className="mt-3 text-xl font-semibold">Topological Structure Analysis</h3>
-            <p className="mt-4 text-sm leading-7 text-[var(--brand-text-soft)]">
-              透過技術結構分析觀察不同主題之間的連接關係，理解哪些技術位於主幹、橋接或支撐位置。
-            </p>
-          </article>
-
-          <article className="brand-card rounded-[28px] p-6">
-            <p className="text-sm font-semibold tracking-wide text-[var(--brand-blue)]">03</p>
-            <h3 className="mt-3 text-xl font-semibold">Strategic Interaction Analysis</h3>
-            <p className="mt-4 text-sm leading-7 text-[var(--brand-text-soft)]">
-              將企業放回技術地圖之中，觀察公司在不同技術區塊中的位置，以及其技術選擇與策略取捨。
-            </p>
-          </article>
-        </div>
-      </section>
-
-      <section className="mt-16 grid gap-6 md:grid-cols-3">
-        <article className="brand-card rounded-[28px] p-6">
-          <h2 className="text-xl font-semibold">洞察 Insights</h2>
-          <p className="mt-4 text-sm leading-7 text-[var(--brand-text-soft)]">
-            聚焦短篇技術觀察，快速整理近期產業動態、技術節點與公司位置變化。
-          </p>
-          <div className="mt-6">
-            <Link href="/insights" className="text-sm font-medium text-[var(--brand-blue)] underline underline-offset-4">
-              前往洞察
-            </Link>
+          <div className="mt-10 grid gap-4 md:grid-cols-4">
+            {homeTabs.map((tab) => (
+              <Link
+                key={tab.href}
+                href={tab.href}
+                className="brand-card rounded-[10px] p-5 transition hover:border-[var(--brand-line-strong)] hover:bg-[rgba(125,249,255,0.04)]"
+              >
+                <p className="font-mono text-[10px] uppercase tracking-[0.28em] text-[var(--brand-blue)]">
+                  {tab.label}
+                </p>
+                <p className="mt-4 text-sm leading-7 text-[var(--brand-text-soft)]">{tab.meta}</p>
+              </Link>
+            ))}
           </div>
-        </article>
-
-        <article className="brand-card rounded-[28px] p-6">
-          <h2 className="text-xl font-semibold">深度報告 Reports</h2>
-          <p className="mt-4 text-sm leading-7 text-[var(--brand-text-soft)]">
-            以旗艦研究頁形式，系統整理技術地圖、關鍵公司、產業結構與演化方向。
-          </p>
-          <div className="mt-6">
-            <Link href="/reports" className="text-sm font-medium text-[var(--brand-blue)] underline underline-offset-4">
-              查看報告
-            </Link>
-          </div>
-        </article>
-
-        <article className="brand-card rounded-[28px] p-6">
-          <h2 className="text-xl font-semibold">API 服務</h2>
-          <p className="mt-4 text-sm leading-7 text-[var(--brand-text-soft)]">
-            未來將逐步提供結構化技術資料與研究型 API 服務，作為企業內部分析與應用的基礎。
-          </p>
-          <div className="mt-6">
-            <Link href="/api-services" className="text-sm font-medium text-[var(--brand-blue)] underline underline-offset-4">
-              查看 API 服務
-            </Link>
-          </div>
-        </article>
-      </section>
-
-      <section className="mt-16 border-t border-[var(--brand-line)] pt-12">
-        <p className="brand-kicker">Research Notes</p>
-        <h2 className="mt-2 text-2xl font-semibold brand-title">研究說明</h2>
-        <div className="mt-5 max-w-4xl space-y-5">
-          <p className="text-base leading-8 text-[var(--brand-text-soft)]">
-            本站目前之專利技術分析，主要以台灣申請或公開之專利文件為主要研究來源，
-            尚未完整納入其他國家或地區之專利資料。
-          </p>
-          <p className="text-base leading-8 text-[var(--brand-text-soft)]">
-            本站內容僅供技術研究、產業觀察與資訊整理之用途，不構成任何形式之投資建議、
-            證券推薦、投資邀約或財務建議。
-          </p>
         </div>
       </section>
     </main>

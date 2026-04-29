@@ -10,6 +10,18 @@ export const metadata: Metadata = {
     "以技術地圖、關鍵公司與產業結構為核心的研究報告頁，聚焦主流技術、分支路徑與企業技術定位。",
 };
 
+const reportStats = [
+  { label: "Total dossiers", value: String(reports.length).padStart(2, "0") },
+  {
+    label: "Published",
+    value: String(reports.filter((item) => item.status === "published").length).padStart(2, "0"),
+  },
+  {
+    label: "Custom queue",
+    value: String(reports.filter((item) => item.status === "custom-only").length).padStart(2, "0"),
+  },
+];
+
 export default function ReportsPage() {
   const schema = getCollectionPageSchema({
     title: "深度報告｜AI Patent Insight",
@@ -19,96 +31,81 @@ export default function ReportsPage() {
   });
 
   return (
-    <main className="mx-auto max-w-7xl px-6 py-16 md:px-10">
+    <main className="mx-auto max-w-7xl px-6 py-10 md:px-10">
       <SchemaScript data={schema} />
 
-      <section className="max-w-4xl">
-        <p className="brand-kicker">Research Reports</p>
-        <h1 className="mt-2 text-4xl font-bold brand-title">深度報告</h1>
-        <p className="mt-4 text-lg leading-8 text-[var(--brand-text-soft)]">
-          以旗艦研究頁形式，系統整理技術地圖、關鍵公司、產業結構與演化方向。
-          每篇報告皆以結構化方式整理主流技術、支撐層、橋接節點與企業位置。
-        </p>
-      </section>
-
-      <section className="mt-10 brand-card rounded-[32px] p-8">
-        <div className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
-          <div className="flex items-center gap-4">
-            <img
-              src="/brand/logo-panda.png"
-              alt="熊貓看產業"
-              className="h-16 w-16 rounded-full border border-[var(--brand-line)] bg-white p-2"
-            />
-            <div>
-              <p className="text-sm font-semibold tracking-wide text-[var(--brand-blue)]">
-                Panda Industry Watch
-              </p>
-              <h2 className="mt-1 text-2xl font-semibold brand-title">
-                研究封面牆
-              </h2>
+      <section className="brand-card overflow-hidden rounded-[36px] p-6 md:p-8">
+        <div className="grid gap-8 xl:grid-cols-[1.05fr_0.95fr]">
+          <div className="max-w-4xl">
+            <p className="brand-kicker">Report Library</p>
+            <h1 className="mt-2 text-4xl font-semibold brand-title md:text-5xl">深度報告資料庫</h1>
+            <p className="mt-5 max-w-3xl text-base leading-8 text-[var(--brand-text-soft)]">
+              報告頁改成封面牆與資料庫模式，不再只是單純文章列表。
+              每一張卡都像研究商品頁的封面，先給主題、狀態、發布日期，再進報告詳頁。
+            </p>
+            <div className="mt-7 flex flex-wrap gap-3">
+              <span className="brand-chip">Longform dossiers</span>
+              <span className="brand-chip">Terminal cover wall</span>
+              <span className="brand-chip">Research product surface</span>
             </div>
           </div>
 
-          <div className="max-w-2xl text-sm leading-7 text-[var(--brand-text-soft)]">
-            這裡收錄以技術演化、專利研究、公司定位與產業結構為核心的深度研究內容。
-            你可以先從旗艦報告開始，再逐步延伸到不同技術主題與公司層級的專題研究。
+          <div className="grid gap-4 md:grid-cols-3 xl:grid-cols-1">
+            {reportStats.map((stat) => (
+              <div
+                key={stat.label}
+                className="rounded-[26px] border border-[var(--brand-line)] bg-[rgba(9,17,29,0.76)] p-5"
+              >
+                <p className="text-xs uppercase tracking-[0.18em] text-[var(--brand-text-muted)]">
+                  {stat.label}
+                </p>
+                <p className="brand-data mt-4 text-4xl font-semibold text-white">{stat.value}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
 
-      <section className="mt-12 grid gap-8 md:grid-cols-2 xl:grid-cols-3">
+      <section className="mt-8 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
         {reports.map((report) => (
           <article
             key={report.slug}
-            className="group overflow-hidden rounded-[30px] border border-[var(--brand-line)] bg-white shadow-sm transition duration-200 hover:-translate-y-1 hover:shadow-lg"
+            className="group overflow-hidden rounded-[30px] border border-[var(--brand-line)] bg-[linear-gradient(180deg,rgba(21,30,48,0.96)_0%,rgba(11,17,29,0.96)_100%)] transition hover:-translate-y-1 hover:border-[var(--brand-line-strong)]"
           >
-            <Link href={`/reports/${report.slug}`} className="block">
+            <Link href={`/reports/${report.slug}`} className="block h-full">
               <div className="relative">
-                <div className="absolute left-4 top-4 z-10 flex items-center gap-2 rounded-full border border-white/60 bg-white/85 px-3 py-1 backdrop-blur">
-                  <img
-                    src="/brand/logo-panda.png"
-                    alt="熊貓看產業"
-                    className="h-6 w-6 rounded-full border border-[var(--brand-line)] bg-white p-0.5"
-                  />
-                  <span className="text-[11px] font-semibold uppercase tracking-[0.14em] text-[var(--brand-blue)]">
-                    Panda Watch
-                  </span>
+                <div className="absolute left-4 top-4 z-10 rounded-full border border-[var(--brand-line)] bg-[rgba(10,15,25,0.78)] px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.18em] text-[var(--brand-blue)] backdrop-blur">
+                  {report.category}
                 </div>
 
                 {report.coverImage ? (
                   <img
                     src={report.coverImage}
                     alt={report.title}
-                    className="h-64 w-full object-cover transition duration-300 group-hover:scale-[1.02]"
+                    className="h-64 w-full object-cover transition duration-300 group-hover:scale-[1.03]"
                   />
                 ) : (
-                  <div className="flex h-64 w-full items-center justify-center bg-[linear-gradient(135deg,#eef4ff_0%,#ede9fe_100%)]">
-                    <div className="text-center">
-                      <img
-                        src="/brand/logo-panda.png"
-                        alt="熊貓看產業"
-                        className="mx-auto h-20 w-20 rounded-full border border-[var(--brand-line)] bg-white p-2"
-                      />
-                      <p className="mt-4 text-sm font-semibold text-[var(--brand-blue)]">
-                        AI Patent Insight
-                      </p>
-                    </div>
+                  <div className="brand-grid flex h-64 items-center justify-center bg-[rgba(9,17,29,0.96)]">
+                    <img
+                      src="/brand/logo-panda.png"
+                      alt="AI Patent Insight"
+                      className="h-16 w-16 rounded-full border border-[var(--brand-line)] bg-[var(--brand-surface)] p-2"
+                    />
                   </div>
                 )}
               </div>
 
-              <div className="p-6">
-                <div className="flex flex-wrap items-center gap-2">
-                  <span className="rounded-full bg-[var(--brand-surface-2)] px-3 py-1 text-xs font-semibold text-[var(--brand-blue)]">
-                    {report.category}
+              <div className="flex h-[calc(100%-16rem)] flex-col p-6">
+                <div className="flex items-center justify-between gap-4">
+                  <span className="rounded-full border border-[var(--brand-line)] px-3 py-1 text-xs text-[var(--brand-text-soft)]">
+                    {report.status === "custom-only" ? "Custom only" : "Published"}
                   </span>
-
-                  <span className="rounded-full border border-[var(--brand-line)] px-3 py-1 text-xs font-medium text-[var(--brand-text-muted)]">
-                    {report.status === "custom-only" ? "客製預定" : "已發布"}
+                  <span className="brand-data text-xs text-[var(--brand-text-muted)]">
+                    {report.publishedAt}
                   </span>
                 </div>
 
-                <h2 className="mt-4 line-clamp-2 text-2xl font-semibold leading-tight text-[var(--brand-ink)] brand-title">
+                <h2 className="mt-5 line-clamp-3 text-2xl font-semibold leading-tight text-white brand-title">
                   {report.title}
                 </h2>
 
@@ -116,33 +113,13 @@ export default function ReportsPage() {
                   {report.summary}
                 </p>
 
-                <div className="mt-6 flex items-center justify-between border-t border-[var(--brand-line)] pt-4">
-                  <div className="text-xs text-[var(--brand-text-muted)]">
-                    發布日期：{report.publishedAt}
-                  </div>
-                  <span className="text-sm font-semibold text-[var(--brand-blue)] underline underline-offset-4">
-                    閱讀報告
-                  </span>
+                <div className="mt-auto pt-6">
+                  <span className="text-sm font-semibold text-white">Open dossier →</span>
                 </div>
               </div>
             </Link>
           </article>
         ))}
-      </section>
-
-      <section className="mt-16 border-t border-[var(--brand-line)] pt-12">
-        <p className="brand-kicker">Research Notes</p>
-        <h2 className="mt-2 text-2xl font-semibold brand-title">研究說明</h2>
-        <div className="mt-5 max-w-4xl space-y-5">
-          <p className="text-base leading-8 text-[var(--brand-text-soft)]">
-            本站目前之專利技術分析，主要以台灣申請或公開之專利文件為主要研究來源，
-            尚未完整納入其他國家或地區之專利資料。
-          </p>
-          <p className="text-base leading-8 text-[var(--brand-text-soft)]">
-            本站內容僅供技術研究、產業觀察與資訊整理之用途，不構成任何形式之投資建議、
-            證券推薦、投資邀約或財務建議。
-          </p>
-        </div>
       </section>
     </main>
   );

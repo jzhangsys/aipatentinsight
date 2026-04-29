@@ -1,9 +1,22 @@
 import "./globals.css";
 import Link from "next/link";
 import type { Metadata } from "next";
+import { IBM_Plex_Mono, Jost } from "next/font/google";
 import SchemaScript from "@/components/SchemaScript";
 import { siteConfig } from "@/lib/site";
 import { getOrganizationSchema, getWebSiteSchema } from "@/lib/siteSchema";
+
+const jost = Jost({
+  subsets: ["latin"],
+  variable: "--font-sans",
+  weight: ["300", "400", "500"],
+});
+
+const ibmPlexMono = IBM_Plex_Mono({
+  subsets: ["latin"],
+  variable: "--font-mono",
+  weight: ["400", "500", "600"],
+});
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
@@ -66,12 +79,11 @@ export const metadata: Metadata = {
 };
 
 const navItems = [
-  { href: "/", label: "首頁" },
-  { href: "/insights", label: "洞察 Insights" },
-  { href: "/reports", label: "深度報告" },
-  { href: "/api-services", label: "API 服務" },
-  { href: "/about", label: "關於我們" },
-  { href: "/contact", label: "聯絡我們" },
+  { href: "/", label: "Home" },
+  { href: "/insights", label: "Insights" },
+  { href: "/reports", label: "Flagship" },
+  { href: "/api-services", label: "API" },
+  { href: "/contact", label: "Contact" },
 ];
 
 export default function RootLayout({
@@ -83,72 +95,91 @@ export default function RootLayout({
   const websiteSchema = getWebSiteSchema();
 
   return (
-    <html lang="zh-Hant">
+    <html
+      lang="zh-Hant"
+      className={`${jost.variable} ${ibmPlexMono.variable}`}
+    >
       <body className="brand-shell text-[var(--brand-ink)] antialiased">
         <SchemaScript data={organizationSchema} />
         <SchemaScript data={websiteSchema} />
 
-        <header className="sticky top-0 z-40 border-b border-[var(--brand-line)] bg-white/90 backdrop-blur">
-          <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-            <Link href="/" className="flex items-center gap-3">
+        <header className="sticky top-0 z-40 bg-[linear-gradient(180deg,rgba(2,4,12,0.82)_0%,rgba(2,4,12,0.34)_100%)] backdrop-blur-md">
+          <div className="mx-auto flex max-w-7xl items-center justify-between gap-6 px-6 py-5">
+            <Link href="/" className="flex min-w-0 items-center gap-3">
               <img
                 src="/brand/logo-panda.png"
                 alt="AI Patent Insight 熊貓看產業"
-                className="h-12 w-12 rounded-full border border-[var(--brand-line)] bg-white p-1"
+                className="h-10 w-10 rounded-full border border-[var(--brand-line)] bg-[var(--brand-surface)] p-1"
               />
-              <div>
-                <p className="text-lg font-semibold tracking-tight text-[var(--brand-ink)]">
+              <div className="min-w-0">
+                <p className="truncate text-lg font-normal tracking-[0.08em] text-[var(--brand-ink)]">
                   AI Patent Insight
                 </p>
-                <p className="text-xs font-medium text-[var(--brand-text-muted)]">
-                  熊貓看產業
+                <p className="truncate font-mono text-[10px] uppercase tracking-[0.28em] text-[var(--brand-text-muted)]">
+                  Patent Intelligence Terminal
                 </p>
               </div>
             </Link>
 
-            <nav className="hidden gap-6 md:flex">
+            <nav className="hidden items-center gap-8 lg:flex">
               {navItems.map((item) => (
                 <Link
                   key={item.href}
                   href={item.href}
-                  className="text-sm text-[var(--brand-text-soft)] transition hover:text-[var(--brand-blue)]"
+                  className="font-mono text-[11px] uppercase tracking-[0.3em] text-[var(--brand-text-soft)] transition hover:text-[var(--brand-blue)]"
                 >
                   {item.label}
                 </Link>
               ))}
             </nav>
+
+            <div className="flex items-center gap-3">
+              <Link href="/contact" className="brand-button-primary text-[10px]">
+                Launch →
+              </Link>
+            </div>
           </div>
         </header>
 
         {children}
 
-        <footer className="mt-20 border-t border-[var(--brand-line)] bg-white">
-          <div className="mx-auto max-w-6xl px-6 py-10">
+        <footer className="mt-20 border-t border-[var(--brand-line)] bg-[rgba(2,4,12,0.82)]">
+          <div className="mx-auto max-w-7xl px-6 py-10">
             <div className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
               <div className="flex items-center gap-4">
                 <img
                   src="/brand/logo-panda.png"
                   alt="AI Patent Insight 熊貓看產業"
-                  className="h-14 w-14 rounded-full border border-[var(--brand-line)] bg-white p-1"
+                  className="h-14 w-14 rounded-full border border-[var(--brand-line)] bg-[var(--brand-surface)] p-1"
                 />
                 <div>
-                  <p className="text-base font-semibold text-[var(--brand-ink)]">
+                  <p className="text-base font-normal tracking-[0.06em] text-[var(--brand-ink)]">
                     AI Patent Insight
                   </p>
-                  <p className="text-sm text-[var(--brand-text-muted)]">
-                    熊貓看產業｜技術演化研究平台
+                  <p className="font-mono text-[10px] uppercase tracking-[0.28em] text-[var(--brand-text-muted)]">
+                    Research Terminal For Patent Signals
                   </p>
                 </div>
               </div>
 
               <p className="max-w-xl text-sm leading-7 text-[var(--brand-text-muted)]">
-                以技術演化為核心，透過專利、產業訊號與技術結構分析，
-                協助理解主流技術、分支路徑與企業在技術地圖中的位置。
+                以專利與產業訊號為核心，將洞察、報告與資料介面整合成一個可閱讀的研究終端。
               </p>
             </div>
 
-            <div className="mt-8 border-t border-[var(--brand-line)] pt-6 text-sm text-[var(--brand-text-muted)]">
-              © AI Patent Insight. All rights reserved.
+            <div className="mt-8 flex flex-col gap-3 border-t border-[var(--brand-line)] pt-6 text-sm text-[var(--brand-text-muted)] md:flex-row md:items-center md:justify-between">
+              <span>© AI Patent Insight. All rights reserved.</span>
+              <div className="flex flex-wrap gap-4">
+                <Link href="/about" className="hover:text-white">
+                  About
+                </Link>
+                <Link href="/reports" className="hover:text-white">
+                  Reports
+                </Link>
+                <Link href="/contact" className="hover:text-white">
+                  Contact
+                </Link>
+              </div>
             </div>
           </div>
         </footer>

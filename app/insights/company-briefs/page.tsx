@@ -25,43 +25,33 @@ export default function CompanyBriefsPage() {
   });
 
   return (
-    <main className="mx-auto max-w-7xl px-6 py-16 md:px-10">
+    <main className="mx-auto max-w-7xl px-6 py-10 md:px-10">
       <SchemaScript data={schemaData} />
 
-      <section className="max-w-3xl">
-        <h1 className="text-4xl font-bold">精選公司簡介</h1>
-        <p className="mt-4 text-lg leading-8 text-neutral-600">
-          以研究導向整理重點公司的技術定位、產品布局與產業位置，協助建立清楚的理解框架。
+      <section className="brand-card rounded-[36px] p-6 md:p-8">
+        <p className="brand-kicker">Company Briefs</p>
+        <h1 className="mt-2 text-4xl font-semibold brand-title md:text-5xl">公司觀測卡</h1>
+        <p className="mt-5 max-w-3xl text-base leading-8 text-[var(--brand-text-soft)]">
+          用更像研究卡片的形式呈現公司定位與供應鏈角色，方便日後持續擴充。
         </p>
       </section>
 
-      <section className="mt-12">
-        <h2 className="text-2xl font-semibold">最新公司主題</h2>
-        <ul className="mt-6 space-y-4">
-          {sampleItems.map((item) => (
-            <li
-              key={item}
-              className="rounded-2xl border border-neutral-200 px-5 py-4"
-            >
-              {item}
-            </li>
-          ))}
-        </ul>
-      </section>
-
-      <section className="mt-16 border-t border-neutral-200 pt-12">
-        <h2 className="text-2xl font-semibold">延伸到深度解析報告</h2>
-        <p className="mt-4 max-w-3xl text-base leading-8 text-neutral-600">
-          若你希望從公司簡介延伸到更完整的技術定位、競爭格局與研究分析，可進一步查看深度解析報告。
-        </p>
-        <div className="mt-6">
-          <Link
-            href="/reports"
-            className="text-sm font-medium text-neutral-900 underline underline-offset-4"
+      <section className="mt-8 grid gap-4">
+        {sampleItems.map((item, index) => (
+          <article
+            key={item}
+            className="rounded-[26px] border border-[var(--brand-line)] bg-[rgba(19,28,46,0.82)] px-5 py-5"
           >
-            前往深度解析報告
-          </Link>
-        </div>
+            <p className="brand-data text-xs text-[var(--brand-blue)]">{String(index + 1).padStart(2, "0")}</p>
+            <h2 className="mt-3 text-xl font-semibold text-white">{item}</h2>
+          </article>
+        ))}
+      </section>
+
+      <section className="mt-10">
+        <Link href="/reports" className="brand-button-primary">
+          前往深度解析報告
+        </Link>
       </section>
     </main>
   );

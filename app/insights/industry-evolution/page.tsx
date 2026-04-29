@@ -25,43 +25,33 @@ export default function IndustryEvolutionPage() {
   });
 
   return (
-    <main className="mx-auto max-w-7xl px-6 py-16 md:px-10">
+    <main className="mx-auto max-w-7xl px-6 py-10 md:px-10">
       <SchemaScript data={schemaData} />
 
-      <section className="max-w-3xl">
-        <h1 className="text-4xl font-bold">產業演化趨勢</h1>
-        <p className="mt-4 text-lg leading-8 text-neutral-600">
-          追蹤技術主題、產業路線與市場變化，理解產業如何從萌芽逐步走向主流。
+      <section className="brand-card rounded-[36px] p-6 md:p-8">
+        <p className="brand-kicker">Industry Evolution</p>
+        <h1 className="mt-2 text-4xl font-semibold brand-title md:text-5xl">產業演化速覽</h1>
+        <p className="mt-5 max-w-3xl text-base leading-8 text-[var(--brand-text-soft)]">
+          把短篇產業主題整理成可滾動的 watchlist，當作深度報告之前的熱身頁。
         </p>
       </section>
 
-      <section className="mt-12">
-        <h2 className="text-2xl font-semibold">最新主題</h2>
-        <ul className="mt-6 space-y-4">
-          {sampleItems.map((item) => (
-            <li
-              key={item}
-              className="rounded-2xl border border-neutral-200 px-5 py-4"
-            >
-              {item}
-            </li>
-          ))}
-        </ul>
-      </section>
-
-      <section className="mt-16 border-t border-neutral-200 pt-12">
-        <h2 className="text-2xl font-semibold">延伸到深度解析報告</h2>
-        <p className="mt-4 max-w-3xl text-base leading-8 text-neutral-600">
-          若你需要更完整的圖文研究內容、比較框架與客製化分析方向，可進一步查看深度解析報告。
-        </p>
-        <div className="mt-6">
-          <Link
-            href="/reports"
-            className="text-sm font-medium text-neutral-900 underline underline-offset-4"
+      <section className="mt-8 grid gap-4">
+        {sampleItems.map((item, index) => (
+          <article
+            key={item}
+            className="rounded-[26px] border border-[var(--brand-line)] bg-[rgba(19,28,46,0.82)] px-5 py-5"
           >
-            前往深度解析報告
-          </Link>
-        </div>
+            <p className="brand-data text-xs text-[var(--brand-blue)]">{String(index + 1).padStart(2, "0")}</p>
+            <h2 className="mt-3 text-xl font-semibold text-white">{item}</h2>
+          </article>
+        ))}
+      </section>
+
+      <section className="mt-10">
+        <Link href="/reports" className="brand-button-primary">
+          前往深度解析報告
+        </Link>
       </section>
     </main>
   );

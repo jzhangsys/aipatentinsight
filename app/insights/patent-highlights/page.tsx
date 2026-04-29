@@ -25,43 +25,33 @@ export default function PatentHighlightsPage() {
   });
 
   return (
-    <main className="mx-auto max-w-7xl px-6 py-16 md:px-10">
+    <main className="mx-auto max-w-7xl px-6 py-10 md:px-10">
       <SchemaScript data={schemaData} />
 
-      <section className="max-w-3xl">
-        <h1 className="text-4xl font-bold">精選專利摘要</h1>
-        <p className="mt-4 text-lg leading-8 text-neutral-600">
-          針對關鍵專利內容進行摘要整理，協助快速理解技術重點、專利脈絡與應用方向。
+      <section className="brand-card rounded-[36px] p-6 md:p-8">
+        <p className="brand-kicker">Patent Highlights</p>
+        <h1 className="mt-2 text-4xl font-semibold brand-title md:text-5xl">專利亮點摘要</h1>
+        <p className="mt-5 max-w-3xl text-base leading-8 text-[var(--brand-text-soft)]">
+          把專利摘要改成 watchlist 卡片，作為報告、簡報與後續 API 輸出的基礎素材頁。
         </p>
       </section>
 
-      <section className="mt-12">
-        <h2 className="text-2xl font-semibold">最新專利主題</h2>
-        <ul className="mt-6 space-y-4">
-          {sampleItems.map((item) => (
-            <li
-              key={item}
-              className="rounded-2xl border border-neutral-200 px-5 py-4"
-            >
-              {item}
-            </li>
-          ))}
-        </ul>
-      </section>
-
-      <section className="mt-16 border-t border-neutral-200 pt-12">
-        <h2 className="text-2xl font-semibold">延伸到深度解析報告</h2>
-        <p className="mt-4 max-w-3xl text-base leading-8 text-neutral-600">
-          若你希望從摘要整理延伸到更完整的專利比較、技術脈絡與研究內容，可進一步查看深度解析報告。
-        </p>
-        <div className="mt-6">
-          <Link
-            href="/reports"
-            className="text-sm font-medium text-neutral-900 underline underline-offset-4"
+      <section className="mt-8 grid gap-4">
+        {sampleItems.map((item, index) => (
+          <article
+            key={item}
+            className="rounded-[26px] border border-[var(--brand-line)] bg-[rgba(19,28,46,0.82)] px-5 py-5"
           >
-            前往深度解析報告
-          </Link>
-        </div>
+            <p className="brand-data text-xs text-[var(--brand-blue)]">{String(index + 1).padStart(2, "0")}</p>
+            <h2 className="mt-3 text-xl font-semibold text-white">{item}</h2>
+          </article>
+        ))}
+      </section>
+
+      <section className="mt-10">
+        <Link href="/reports" className="brand-button-primary">
+          前往深度解析報告
+        </Link>
       </section>
     </main>
   );

@@ -18,7 +18,7 @@ export default function FAQSection({ items }: FAQSectionProps) {
         {items.map((item, index) => (
           <details
             key={index}
-            className="rounded-[24px] border border-[var(--brand-line)] bg-white p-5 shadow-sm"
+            className="rounded-[24px] border border-[var(--brand-line)] bg-[rgba(19,28,46,0.82)] p-5"
           >
             <summary className="cursor-pointer text-base font-semibold text-[var(--brand-ink)]">
               {item.question}
