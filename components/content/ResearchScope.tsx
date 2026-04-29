@@ -1,8 +1,8 @@
 export default function ResearchScope() {
   return (
     <section className="mt-14 border-t border-[var(--brand-line)] pt-12">
-      <p className="brand-kicker">Research Scope</p>
-      <h2 className="mt-2 text-2xl font-semibold brand-title">研究資料範圍</h2>
+      <p className="brand-panel-label">Research Scope</p>
+      <h2 className="mt-3 text-2xl font-light tracking-[0.08em] text-white">研究資料範圍</h2>
       <div className="mt-5 space-y-5">
         <p className="text-base leading-8 text-[var(--brand-text-soft)]">
           本站目前之專利技術分析，主要以台灣申請或公開之專利文件為主要研究來源。

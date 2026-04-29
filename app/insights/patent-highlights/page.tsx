@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import SchemaScript from "@/components/SchemaScript";
+import TerminalPage from "@/components/terminal/TerminalPage";
 import { getWebPageSchema, siteUrl } from "@/lib/schema";
 
 export const metadata: Metadata = {
@@ -25,34 +26,34 @@ export default function PatentHighlightsPage() {
   });
 
   return (
-    <main className="mx-auto max-w-7xl px-6 py-10 md:px-10">
+    <TerminalPage
+      eyebrow="Patent Highlights"
+      title="專利亮點摘要"
+      description="專利亮點頁也切成同一套終端介面，不再保留舊網站式內容節奏。它現在只是研究桌面上的摘要清單。"
+      stats={[
+        { label: "List", value: "03" },
+        { label: "Mode", value: "Digest" },
+        { label: "Focus", value: "Patent" },
+      ]}
+    >
       <SchemaScript data={schemaData} />
-
-      <section className="brand-card rounded-[36px] p-6 md:p-8">
-        <p className="brand-kicker">Patent Highlights</p>
-        <h1 className="mt-2 text-4xl font-semibold brand-title md:text-5xl">專利亮點摘要</h1>
-        <p className="mt-5 max-w-3xl text-base leading-8 text-[var(--brand-text-soft)]">
-          把專利摘要改成 watchlist 卡片，作為報告、簡報與後續 API 輸出的基礎素材頁。
-        </p>
-      </section>
-
-      <section className="mt-8 grid gap-4">
+      <div className="grid gap-4">
         {sampleItems.map((item, index) => (
           <article
             key={item}
-            className="rounded-[26px] border border-[var(--brand-line)] bg-[rgba(19,28,46,0.82)] px-5 py-5"
+            className="brand-card rounded-[8px] px-5 py-5"
           >
-            <p className="brand-data text-xs text-[var(--brand-blue)]">{String(index + 1).padStart(2, "0")}</p>
-            <h2 className="mt-3 text-xl font-semibold text-white">{item}</h2>
+            <p className="brand-panel-label">{String(index + 1).padStart(2, "0")}</p>
+            <h2 className="mt-3 text-xl font-light tracking-[0.06em] text-white">{item}</h2>
           </article>
         ))}
-      </section>
+      </div>
 
-      <section className="mt-10">
+      <div className="mt-10">
         <Link href="/reports" className="brand-button-primary">
           前往深度解析報告
         </Link>
-      </section>
-    </main>
+      </div>
+    </TerminalPage>
   );
 }

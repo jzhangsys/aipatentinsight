@@ -7,6 +7,7 @@ import Disclaimer from "@/components/content/Disclaimer";
 import ResearchScope from "@/components/content/ResearchScope";
 import FAQSection from "@/components/content/FAQSection";
 import AISummary from "@/components/content/AISummary";
+import TerminalPage from "@/components/terminal/TerminalPage";
 import { reports } from "@/content/reports/reports";
 import { getArticleSchema, siteUrl } from "@/lib/schema";
 
@@ -95,73 +96,39 @@ export default async function ReportDetailPage({ params }: ReportPageProps) {
   ];
 
   return (
-    <main className="mx-auto max-w-7xl px-6 py-10 md:px-10">
+    <TerminalPage
+      eyebrow={report.category}
+      title={report.title}
+      description={report.summary}
+      stats={factCards}
+    >
       <SchemaScript data={schemaData} />
       {faqSchema ? <SchemaScript data={faqSchema} /> : null}
 
       <div className="mb-6">
-        <Link href="/reports" className="text-sm font-medium text-[var(--brand-text-soft)] hover:text-white">
+        <Link href="/reports" className="font-mono text-[11px] uppercase tracking-[0.2em] text-[var(--brand-text-soft)] hover:text-white">
           ← 返回報告列表
         </Link>
       </div>
 
       <article>
-        <section className="brand-card overflow-hidden rounded-[36px]">
-          <div className="grid gap-8 p-6 md:p-8 xl:grid-cols-[1.05fr_0.95fr]">
-            <div className="max-w-4xl">
-              <p className="brand-kicker">{report.category}</p>
-              <h1 className="mt-3 text-4xl font-semibold leading-tight brand-title md:text-5xl">
-                {report.title}
-              </h1>
-
-              <p className="mt-6 max-w-3xl text-base leading-8 text-[var(--brand-text-soft)] md:text-lg">
-                {report.summary}
-              </p>
-
-              <div className="mt-7 grid gap-3 sm:grid-cols-2 xl:grid-cols-4">
-                {factCards.map((card) => (
-                  <div
-                    key={card.label}
-                    className="rounded-[22px] border border-[var(--brand-line)] bg-[rgba(9,17,29,0.76)] p-4"
-                  >
-                    <p className="text-xs uppercase tracking-[0.18em] text-[var(--brand-text-muted)]">
-                      {card.label}
-                    </p>
-                    <p className="mt-3 text-sm font-semibold text-white">{card.value}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            <div className="overflow-hidden rounded-[32px] border border-[var(--brand-line)] bg-[rgba(9,17,29,0.8)]">
-              {report.coverImage ? (
-                <img src={report.coverImage} alt={report.title} className="h-full w-full object-cover" />
-              ) : (
-                <div className="brand-grid flex h-full min-h-[320px] items-center justify-center">
-                  <img
-                    src="/brand/logo-panda.png"
-                    alt="AI Patent Insight"
-                    className="h-20 w-20 rounded-full border border-[var(--brand-line)] bg-[var(--brand-surface)] p-2"
-                  />
-                </div>
-              )}
-            </div>
-          </div>
-        </section>
+        {report.coverImage ? (
+          <section className="mb-10 overflow-hidden rounded-[8px] border border-[var(--brand-line)]">
+            <img src={report.coverImage} alt={report.title} className="max-h-[520px] w-full object-cover" />
+          </section>
+        ) : null}
 
         {report.aiSummary?.length ? <AISummary summary={report.aiSummary} /> : null}
 
         <section className="mt-10 grid gap-6 xl:grid-cols-[0.3fr_0.7fr]">
-          <aside className="h-fit rounded-[30px] border border-[var(--brand-line)] bg-[rgba(19,28,46,0.8)] p-5 xl:sticky xl:top-32">
-            <p className="text-xs uppercase tracking-[0.18em] text-[var(--brand-text-muted)]">
-              Reading map
-            </p>
+          <aside className="h-fit rounded-[8px] border border-[var(--brand-line)] bg-[rgba(125,249,255,0.03)] p-5 xl:sticky xl:top-32">
+            <p className="brand-panel-label">Reading Map</p>
             <div className="mt-5 space-y-3">
               {report.sections.map((section, index) => (
                 <a
                   key={section.heading}
                   href={`#section-${index + 1}`}
-                  className="block rounded-[18px] border border-[var(--brand-line)] bg-[rgba(9,17,29,0.66)] px-4 py-3 text-sm text-[var(--brand-text-soft)] transition hover:border-[var(--brand-line-strong)] hover:text-white"
+                  className="block rounded-[6px] border border-[var(--brand-line)] bg-[rgba(3,5,15,0.66)] px-4 py-3 text-sm text-[var(--brand-text-soft)] transition hover:border-[var(--brand-line-strong)] hover:text-white"
                 >
                   <span className="brand-data mr-2 text-[var(--brand-blue)]">
                     {String(index + 1).padStart(2, "0")}
@@ -177,14 +144,14 @@ export default async function ReportDetailPage({ params }: ReportPageProps) {
               <section
                 id={`section-${index + 1}`}
                 key={section.heading}
-                className="rounded-[30px] border border-[var(--brand-line)] bg-[linear-gradient(180deg,rgba(21,30,48,0.96)_0%,rgba(10,15,25,0.96)_100%)] p-6"
+                className="rounded-[8px] border border-[var(--brand-line)] bg-[rgba(125,249,255,0.03)] p-6"
               >
                 <div className="flex items-start gap-4">
-                  <span className="brand-data rounded-full border border-[var(--brand-line)] bg-[rgba(9,17,29,0.72)] px-3 py-1 text-sm text-[var(--brand-blue)]">
+                  <span className="brand-data rounded-[4px] border border-[var(--brand-line)] bg-[rgba(3,5,15,0.72)] px-3 py-1 text-sm text-[var(--brand-blue)]">
                     {String(index + 1).padStart(2, "0")}
                   </span>
                   <div className="min-w-0">
-                    <h2 className="text-2xl font-semibold text-white brand-title">{section.heading}</h2>
+                    <h2 className="text-2xl font-light tracking-[0.06em] text-white">{section.heading}</h2>
                     <div className="mt-5 space-y-5">
                       {section.paragraphs.map((paragraph, paragraphIndex) => (
                         <p
@@ -199,7 +166,7 @@ export default async function ReportDetailPage({ params }: ReportPageProps) {
                 </div>
 
                 {section.image ? (
-                  <div className="mt-8 overflow-hidden rounded-[24px] border border-[var(--brand-line)]">
+                  <div className="mt-8 overflow-hidden rounded-[6px] border border-[var(--brand-line)]">
                     <img
                       src={section.image}
                       alt={section.imageAlt ?? section.heading}
@@ -216,6 +183,6 @@ export default async function ReportDetailPage({ params }: ReportPageProps) {
         <ResearchScope />
         <Disclaimer />
       </article>
-    </main>
+    </TerminalPage>
   );
 }

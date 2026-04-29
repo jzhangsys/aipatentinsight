@@ -82,7 +82,7 @@ export default function HomePage() {
           </div>
 
           <div className="mt-16 grid gap-4 md:grid-cols-[0.8fr_1.2fr]">
-            <div className="brand-card brand-glow rounded-[10px] p-5">
+            <div className="brand-card brand-glow rounded-[8px] p-5">
               <p className="brand-panel-label">Category Labels</p>
               <div className="mt-5 flex flex-wrap gap-x-6 gap-y-4">
                 {labelCloud.map((label) => (
@@ -95,7 +95,7 @@ export default function HomePage() {
             </div>
 
             <div className="grid gap-4 md:grid-cols-[0.9fr_1.1fr]">
-              <div className="brand-card rounded-[10px] p-5">
+              <div className="brand-card rounded-[8px] p-5">
                 <p className="brand-panel-label">Stats</p>
                 <div className="mt-5 grid grid-cols-3 gap-4">
                   {signalStats.map((stat) => (
@@ -111,7 +111,7 @@ export default function HomePage() {
                 </div>
               </div>
 
-              <div className="brand-card rounded-[10px] p-5">
+              <div className="brand-card rounded-[8px] p-5">
                 <p className="brand-panel-label">Featured Stream</p>
                 <div className="mt-4 space-y-3">
                   {reports.slice(0, 3).map((report) => (
@@ -141,7 +141,7 @@ export default function HomePage() {
               <Link
                 key={tab.href}
                 href={tab.href}
-                className="brand-card rounded-[10px] p-5 transition hover:border-[var(--brand-line-strong)] hover:bg-[rgba(125,249,255,0.04)]"
+                className="brand-card rounded-[8px] p-5 transition hover:border-[var(--brand-line-strong)] hover:bg-[rgba(125,249,255,0.04)]"
               >
                 <p className="font-mono text-[10px] uppercase tracking-[0.28em] text-[var(--brand-blue)]">
                   {tab.label}

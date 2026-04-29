@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import SchemaScript from "@/components/SchemaScript";
+import TerminalPage from "@/components/terminal/TerminalPage";
 import { getWebPageSchema, siteUrl } from "@/lib/schema";
 
 export const metadata: Metadata = {
@@ -25,34 +26,34 @@ export default function IndustryEvolutionPage() {
   });
 
   return (
-    <main className="mx-auto max-w-7xl px-6 py-10 md:px-10">
+    <TerminalPage
+      eyebrow="Industry Evolution"
+      title="產業演化速覽"
+      description="舊版的短篇內容頁面樣式已移除，這裡只保留終端式 watchlist 入口，作為後續擴寫成長文報告的前置區。"
+      stats={[
+        { label: "List", value: "03" },
+        { label: "Mode", value: "Watch" },
+        { label: "Output", value: "Brief" },
+      ]}
+    >
       <SchemaScript data={schemaData} />
-
-      <section className="brand-card rounded-[36px] p-6 md:p-8">
-        <p className="brand-kicker">Industry Evolution</p>
-        <h1 className="mt-2 text-4xl font-semibold brand-title md:text-5xl">產業演化速覽</h1>
-        <p className="mt-5 max-w-3xl text-base leading-8 text-[var(--brand-text-soft)]">
-          把短篇產業主題整理成可滾動的 watchlist，當作深度報告之前的熱身頁。
-        </p>
-      </section>
-
-      <section className="mt-8 grid gap-4">
+      <div className="grid gap-4">
         {sampleItems.map((item, index) => (
           <article
             key={item}
-            className="rounded-[26px] border border-[var(--brand-line)] bg-[rgba(19,28,46,0.82)] px-5 py-5"
+            className="brand-card rounded-[8px] px-5 py-5"
           >
-            <p className="brand-data text-xs text-[var(--brand-blue)]">{String(index + 1).padStart(2, "0")}</p>
-            <h2 className="mt-3 text-xl font-semibold text-white">{item}</h2>
+            <p className="brand-panel-label">{String(index + 1).padStart(2, "0")}</p>
+            <h2 className="mt-3 text-xl font-light tracking-[0.06em] text-white">{item}</h2>
           </article>
         ))}
-      </section>
+      </div>
 
-      <section className="mt-10">
+      <div className="mt-10">
         <Link href="/reports" className="brand-button-primary">
           前往深度解析報告
         </Link>
-      </section>
-    </main>
+      </div>
+    </TerminalPage>
   );
 }

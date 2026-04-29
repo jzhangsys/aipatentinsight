@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import TerminalPage from "@/components/terminal/TerminalPage";
 
 export const metadata: Metadata = {
   title: "聯絡我們｜AI Patent Insight",
@@ -23,38 +24,35 @@ const contactCards = [
 
 export default function ContactPage() {
   return (
-    <main className="mx-auto max-w-7xl px-6 py-10 md:px-10">
-      <section className="brand-card rounded-[36px] p-6 md:p-8">
-        <div className="grid gap-8 xl:grid-cols-[1fr_0.9fr]">
-          <div className="max-w-4xl">
-            <p className="brand-kicker">Contact Desk</p>
-            <h1 className="mt-2 text-4xl font-semibold brand-title md:text-5xl">合作與聯繫入口</h1>
-            <p className="mt-5 max-w-3xl text-base leading-8 text-[var(--brand-text-soft)]">
-              我把聯絡頁也改成 desk 風格，不再只是單一 email 區塊。
-              你可以把它當成報告採購、API 導入與研究合作的統一入口。
-            </p>
-          </div>
+    <TerminalPage
+      eyebrow="Contact Desk"
+      title="合作與聯繫入口"
+      description="聯絡頁已完全切到新版，舊式宣傳文案與多餘區塊都不保留。這裡只留合作入口、需求分類與主聯絡通道。"
+      stats={[
+        { label: "Channel", value: "Email" },
+        { label: "Priority", value: "B2B" },
+        { label: "Status", value: "Open" },
+      ]}
+    >
+      <div className="mb-6 rounded-[8px] border border-[var(--brand-line)] bg-[rgba(125,249,255,0.03)] p-6">
+        <p className="brand-panel-label">Primary Channel</p>
+        <p className="mt-3 text-2xl font-light tracking-[0.04em] text-white">
+          hello@aipatentinsight.com
+        </p>
+        <p className="mt-3 text-sm leading-7 text-[var(--brand-text-soft)]">
+          來信時直接附上需求類型、產業主題、交付格式與預計時程。
+        </p>
+      </div>
 
-          <div className="rounded-[30px] border border-[var(--brand-line)] bg-[rgba(9,17,29,0.82)] p-5">
-            <p className="text-xs uppercase tracking-[0.18em] text-[var(--brand-text-muted)]">
-              Primary channel
-            </p>
-            <p className="mt-5 text-2xl font-semibold text-white">hello@aipatentinsight.com</p>
-            <p className="mt-3 text-sm leading-7 text-[var(--brand-text-soft)]">
-              來信時可直接註明需求類型、產業主題與預計交付形式。
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section className="mt-8 grid gap-6 md:grid-cols-3">
+      <div className="grid gap-4 md:grid-cols-3">
         {contactCards.map((card) => (
-          <article key={card.title} className="brand-card-soft rounded-[30px] p-6">
-            <h2 className="text-2xl font-semibold text-white brand-title">{card.title}</h2>
+          <article key={card.title} className="brand-card rounded-[8px] p-6">
+            <p className="brand-panel-label">Route</p>
+            <h2 className="mt-3 text-2xl font-light tracking-[0.08em] text-white">{card.title}</h2>
             <p className="mt-4 text-sm leading-7 text-[var(--brand-text-soft)]">{card.body}</p>
           </article>
         ))}
-      </section>
-    </main>
+      </div>
+    </TerminalPage>
   );
 }

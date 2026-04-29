@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import SchemaScript from "@/components/SchemaScript";
+import TerminalPage from "@/components/terminal/TerminalPage";
 import { getCollectionPageSchema } from "@/lib/pageSchema";
 import { reports } from "@/content/reports/reports";
 
@@ -31,50 +32,22 @@ export default function ReportsPage() {
   });
 
   return (
-    <main className="mx-auto max-w-7xl px-6 py-10 md:px-10">
+    <TerminalPage
+      eyebrow="Flagship"
+      title="深度報告資料庫"
+      description="舊版報告列表頁已完全移除，現在只保留新版 terminal library。所有報告用同一種封面卡與 metadata 節奏展示。"
+      stats={reportStats}
+    >
       <SchemaScript data={schema} />
-
-      <section className="brand-card overflow-hidden rounded-[36px] p-6 md:p-8">
-        <div className="grid gap-8 xl:grid-cols-[1.05fr_0.95fr]">
-          <div className="max-w-4xl">
-            <p className="brand-kicker">Report Library</p>
-            <h1 className="mt-2 text-4xl font-semibold brand-title md:text-5xl">深度報告資料庫</h1>
-            <p className="mt-5 max-w-3xl text-base leading-8 text-[var(--brand-text-soft)]">
-              報告頁改成封面牆與資料庫模式，不再只是單純文章列表。
-              每一張卡都像研究商品頁的封面，先給主題、狀態、發布日期，再進報告詳頁。
-            </p>
-            <div className="mt-7 flex flex-wrap gap-3">
-              <span className="brand-chip">Longform dossiers</span>
-              <span className="brand-chip">Terminal cover wall</span>
-              <span className="brand-chip">Research product surface</span>
-            </div>
-          </div>
-
-          <div className="grid gap-4 md:grid-cols-3 xl:grid-cols-1">
-            {reportStats.map((stat) => (
-              <div
-                key={stat.label}
-                className="rounded-[26px] border border-[var(--brand-line)] bg-[rgba(9,17,29,0.76)] p-5"
-              >
-                <p className="text-xs uppercase tracking-[0.18em] text-[var(--brand-text-muted)]">
-                  {stat.label}
-                </p>
-                <p className="brand-data mt-4 text-4xl font-semibold text-white">{stat.value}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="mt-8 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+      <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
         {reports.map((report) => (
           <article
             key={report.slug}
-            className="group overflow-hidden rounded-[30px] border border-[var(--brand-line)] bg-[linear-gradient(180deg,rgba(21,30,48,0.96)_0%,rgba(11,17,29,0.96)_100%)] transition hover:-translate-y-1 hover:border-[var(--brand-line-strong)]"
+            className="group overflow-hidden rounded-[8px] border border-[var(--brand-line)] bg-[rgba(125,249,255,0.03)] transition hover:-translate-y-1 hover:border-[var(--brand-line-strong)]"
           >
             <Link href={`/reports/${report.slug}`} className="block h-full">
               <div className="relative">
-                <div className="absolute left-4 top-4 z-10 rounded-full border border-[var(--brand-line)] bg-[rgba(10,15,25,0.78)] px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.18em] text-[var(--brand-blue)] backdrop-blur">
+                <div className="absolute left-4 top-4 z-10 rounded-[4px] border border-[var(--brand-line)] bg-[rgba(3,5,15,0.82)] px-3 py-1 font-mono text-[10px] uppercase tracking-[0.22em] text-[var(--brand-blue)]">
                   {report.category}
                 </div>
 
@@ -97,7 +70,7 @@ export default function ReportsPage() {
 
               <div className="flex h-[calc(100%-16rem)] flex-col p-6">
                 <div className="flex items-center justify-between gap-4">
-                  <span className="rounded-full border border-[var(--brand-line)] px-3 py-1 text-xs text-[var(--brand-text-soft)]">
+                  <span className="rounded-[4px] border border-[var(--brand-line)] px-3 py-1 font-mono text-[10px] uppercase tracking-[0.18em] text-[var(--brand-text-soft)]">
                     {report.status === "custom-only" ? "Custom only" : "Published"}
                   </span>
                   <span className="brand-data text-xs text-[var(--brand-text-muted)]">
@@ -105,7 +78,7 @@ export default function ReportsPage() {
                   </span>
                 </div>
 
-                <h2 className="mt-5 line-clamp-3 text-2xl font-semibold leading-tight text-white brand-title">
+                <h2 className="mt-5 line-clamp-3 text-2xl font-light leading-tight tracking-[0.04em] text-white">
                   {report.title}
                 </h2>
 
@@ -114,13 +87,15 @@ export default function ReportsPage() {
                 </p>
 
                 <div className="mt-auto pt-6">
-                  <span className="text-sm font-semibold text-white">Open dossier →</span>
+                  <span className="font-mono text-[11px] uppercase tracking-[0.2em] text-[var(--brand-blue)]">
+                    Open dossier →
+                  </span>
                 </div>
               </div>
             </Link>
           </article>
         ))}
-      </section>
-    </main>
+      </div>
+    </TerminalPage>
   );
 }

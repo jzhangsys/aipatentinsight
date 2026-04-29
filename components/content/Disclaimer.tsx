@@ -1,8 +1,8 @@
 export default function Disclaimer() {
   return (
     <section className="mt-14 border-t border-[var(--brand-line)] pt-12">
-      <p className="brand-kicker">Disclaimer</p>
-      <h2 className="mt-2 text-2xl font-semibold brand-title">研究說明與免責聲明</h2>
+      <p className="brand-panel-label">Disclaimer</p>
+      <h2 className="mt-3 text-2xl font-light tracking-[0.08em] text-white">研究說明與免責聲明</h2>
       <div className="mt-5 space-y-4">
         <p className="text-base leading-8 text-[var(--brand-text-soft)]">
           本站內容僅供技術研究、產業觀察與資訊整理之用途，不構成任何形式之投資建議、證券推薦、投資邀約、財務建議或交易建議。
