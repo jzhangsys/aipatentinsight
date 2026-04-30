@@ -111,7 +111,7 @@ export default function StreamChart({
   return (
     <div
       className="ai-trends-stream-wrapper"
-      onMouseLeave={() => setHovered(null)}
+      onPointerLeave={() => setHovered(null)}
     >
       <svg
         viewBox={`0 0 ${W} ${H}`}
@@ -147,7 +147,7 @@ export default function StreamChart({
               opacity={isDim ? 0.12 : isHovered ? 0.95 : 0.7}
               stroke={isHovered ? "rgba(255,255,255,0.4)" : "none"}
               strokeWidth={isHovered ? 1.5 : 0}
-              onMouseEnter={() => setHovered(cat)}
+              onPointerEnter={() => setHovered(cat)}
               onClick={() => onCategoryClick?.(cat)}
               style={{
                 cursor: "pointer",

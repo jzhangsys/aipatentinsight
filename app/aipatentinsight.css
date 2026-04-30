@@ -1509,6 +1509,10 @@
   display: block;
   cursor: grab;
   background: radial-gradient(ellipse at 50% 60%, #060A1C 0%, #03050F 60%, #01030A 100%);
+  /* 接管全部觸控手勢(單指拖、雙指 pinch),不讓瀏覽器搶去做頁面縮放 */
+  touch-action: none;
+  -webkit-user-select: none;
+  user-select: none;
 }
 .ai-patent-map .ai-map-canvas:active { cursor: grabbing; }
 

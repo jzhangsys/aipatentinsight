@@ -512,33 +512,94 @@ export default function PatentMapCanvas({
       scene.add(focusLines);
     }
 
-    // ===== 鏡頭控制(拖曳 / 滾輪) =====
+    // ===== 鏡頭控制(統一 Pointer Events:支援 mouse / touch / pen) =====
     let isDragging = false;
     let didDrag = false;
     const dragStart = { x: 0, y: 0 };
     const cameraState = { x: 0, y: 0, distance: 80 };
     const cameraTarget = { x: 0, y: 0, distance: 80 };
 
-    const onMouseDown = (e: MouseEvent) => {
-      isDragging = true;
-      didDrag = false;
-      dragStart.x = e.clientX;
-      dragStart.y = e.clientY;
-    };
-    const onMouseUp = () => { isDragging = false; };
+    // 多 pointer 追蹤:單指 = 拖曳,雙指 = pinch zoom + 中心點 pan
+    const activePointers = new Map<number, { x: number; y: number }>();
+    let lastPinchDistance: number | null = null;
+    let lastPinchCentroid: { x: number; y: number } | null = null;
 
-    // ===== Hover + Click =====
+    function pinchInfo(): { dist: number; cx: number; cy: number } | null {
+      const pts = [...activePointers.values()];
+      if (pts.length < 2) return null;
+      const dist = Math.hypot(pts[1].x - pts[0].x, pts[1].y - pts[0].y);
+      return {
+        dist,
+        cx: (pts[0].x + pts[1].x) / 2,
+        cy: (pts[0].y + pts[1].y) / 2,
+      };
+    }
+
+    // ===== Hover + Click(raycaster 共用) =====
     const raycaster = new THREE.Raycaster();
     raycaster.params.Points!.threshold = 1.2;
     const mouseNDC = new THREE.Vector2();
     let hoveredIdx = -1;
 
-    const onPointerMove = (e: MouseEvent) => {
-      if (isDragging) {
+    const onPointerDown = (e: PointerEvent) => {
+      // 阻止瀏覽器預設(避免雙指縮放整個頁面)
+      if (e.pointerType !== "mouse") e.preventDefault();
+      canvas.setPointerCapture(e.pointerId);
+      activePointers.set(e.pointerId, { x: e.clientX, y: e.clientY });
+
+      if (activePointers.size === 1) {
+        isDragging = true;
+        didDrag = false;
+        dragStart.x = e.clientX;
+        dragStart.y = e.clientY;
+      } else if (activePointers.size === 2) {
+        // 進入 pinch 模式 — 取消單指 drag
+        isDragging = false;
+        didDrag = true; // 防止多指放開時誤觸 click
+        const info = pinchInfo();
+        if (info) {
+          lastPinchDistance = info.dist;
+          lastPinchCentroid = { x: info.cx, y: info.cy };
+        }
+      }
+    };
+
+    const onPointerMove = (e: PointerEvent) => {
+      // 更新 pointer 位置
+      if (activePointers.has(e.pointerId)) {
+        activePointers.set(e.pointerId, { x: e.clientX, y: e.clientY });
+      }
+
+      // === 雙指 pinch:zoom + pan ===
+      if (activePointers.size >= 2) {
+        const info = pinchInfo();
+        if (info && lastPinchDistance && info.dist > 0) {
+          // distance 變大 = 放大 = distance 變小
+          const ratio = lastPinchDistance / info.dist;
+          cameraTarget.distance = Math.max(
+            20,
+            Math.min(160, cameraTarget.distance * ratio)
+          );
+        }
+        if (info && lastPinchCentroid) {
+          const dx = info.cx - lastPinchCentroid.x;
+          const dy = info.cy - lastPinchCentroid.y;
+          const speed = 0.08 * (cameraTarget.distance / 80);
+          cameraTarget.x -= dx * speed;
+          cameraTarget.y += dy * speed;
+        }
+        if (info) {
+          lastPinchDistance = info.dist;
+          lastPinchCentroid = { x: info.cx, y: info.cy };
+        }
+        return;
+      }
+
+      // === 單指 drag ===
+      if (activePointers.size === 1 && isDragging) {
         const dx = e.clientX - dragStart.x;
         const dy = e.clientY - dragStart.y;
         if (Math.abs(dx) > 3 || Math.abs(dy) > 3) didDrag = true;
-        // 速度依距離縮放,zoom out 時拖更快
         const speed = 0.08 * (cameraTarget.distance / 80);
         cameraTarget.x -= dx * speed;
         cameraTarget.y += dy * speed;
@@ -547,6 +608,8 @@ export default function PatentMapCanvas({
         return;
       }
 
+      // === Hover(只給 mouse 使用,touch 不顯示 hover tooltip) ===
+      if (e.pointerType !== "mouse") return;
       if (!companyPoints || !canvasRef.current) return;
       const rect = canvasRef.current.getBoundingClientRect();
       mouseNDC.x = ((e.clientX - rect.left) / rect.width) * 2 - 1;
@@ -583,6 +646,24 @@ export default function PatentMapCanvas({
       }
     };
 
+    const onPointerUpOrCancel = (e: PointerEvent) => {
+      activePointers.delete(e.pointerId);
+      if (activePointers.size === 0) {
+        isDragging = false;
+        lastPinchDistance = null;
+        lastPinchCentroid = null;
+      } else if (activePointers.size === 1) {
+        // 從 pinch 退回到單指 — 把 dragStart 對齊剩下那根手指,讓接下來的拖曳順暢
+        const remaining = [...activePointers.values()][0];
+        dragStart.x = remaining.x;
+        dragStart.y = remaining.y;
+        isDragging = true;
+        // didDrag 在 onPointerDown 進 pinch 時已設 true,維持原狀(避免誤觸 click)
+        lastPinchDistance = null;
+        lastPinchCentroid = null;
+      }
+    };
+
     const onClick = (e: MouseEvent) => {
       if (didDrag) return;
       if (!companyPoints || !canvasRef.current) return;
@@ -609,9 +690,11 @@ export default function PatentMapCanvas({
       renderer.setSize(window.innerWidth, window.innerHeight);
     };
 
-    canvas.addEventListener("mousedown", onMouseDown);
-    window.addEventListener("mouseup", onMouseUp);
-    canvas.addEventListener("mousemove", onPointerMove);
+    canvas.addEventListener("pointerdown", onPointerDown);
+    canvas.addEventListener("pointermove", onPointerMove);
+    canvas.addEventListener("pointerup", onPointerUpOrCancel);
+    canvas.addEventListener("pointercancel", onPointerUpOrCancel);
+    canvas.addEventListener("pointerleave", onPointerUpOrCancel);
     canvas.addEventListener("click", onClick);
     canvas.addEventListener("wheel", onWheel, { passive: false });
     window.addEventListener("resize", onResize);
@@ -748,9 +831,11 @@ export default function PatentMapCanvas({
     // ===== Cleanup =====
     return () => {
       cancelAnimationFrame(rafId);
-      canvas.removeEventListener("mousedown", onMouseDown);
-      window.removeEventListener("mouseup", onMouseUp);
-      canvas.removeEventListener("mousemove", onPointerMove);
+      canvas.removeEventListener("pointerdown", onPointerDown);
+      canvas.removeEventListener("pointermove", onPointerMove);
+      canvas.removeEventListener("pointerup", onPointerUpOrCancel);
+      canvas.removeEventListener("pointercancel", onPointerUpOrCancel);
+      canvas.removeEventListener("pointerleave", onPointerUpOrCancel);
       canvas.removeEventListener("click", onClick);
       canvas.removeEventListener("wheel", onWheel);
       window.removeEventListener("resize", onResize);
