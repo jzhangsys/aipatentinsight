@@ -3,10 +3,10 @@ import "./aipatentinsight.css";
 import type { Metadata, Viewport } from "next";
 
 // === SEO / Social metadata ===
-// metadataBase 用 env var 控制,Vercel 部署時設 NEXT_PUBLIC_SITE_URL=https://你的網域
-// 沒設的話 fallback 到 vercel 預設網域,OG 圖會用相對路徑(社群分享可能抓不到)
+// 正式網域為 www.aipatentinsight.com(Vercel 已設 aipatentinsight.com 307 → www)。
+// 若有需要在 staging / preview 用其他網域,可在 Vercel 設 NEXT_PUBLIC_SITE_URL 覆蓋。
 const siteUrl =
-  process.env.NEXT_PUBLIC_SITE_URL || "https://aipatentinsight.vercel.app";
+  process.env.NEXT_PUBLIC_SITE_URL || "https://www.aipatentinsight.com";
 
 const SITE_NAME = "AIPatentInsight";
 const SITE_TITLE = "AIPatentInsight — 專利情報視覺化平台";
