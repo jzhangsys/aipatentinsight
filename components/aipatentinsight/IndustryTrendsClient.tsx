@@ -95,9 +95,9 @@ export default function IndustryTrendsClient() {
     [catTotals]
   );
 
-  // 點 stream / legend → 跳到 patent map(目前不帶 ?category, 之後做 URL state 同步再加)
-  const handleCategoryClick = (_cat: string) => {
-    router.push("/patent-map");
+  // 點 stream / legend → 跳到 patent map 並自動 Legend 高亮該 cat
+  const handleCategoryClick = (cat: string) => {
+    router.push("/patent-map?category=" + encodeURIComponent(cat));
   };
 
   // === Render ===

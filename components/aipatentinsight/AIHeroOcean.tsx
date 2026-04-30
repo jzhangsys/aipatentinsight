@@ -260,13 +260,14 @@ export default function AIHeroOcean({ monthProgress }: Props = {}) {
     window.addEventListener("resize", onResize);
 
     // ============== 動畫迴圈 ==============
-    const clock = new THREE.Clock();
+    // 用 performance.now() 取代 THREE.Clock(後者已 deprecated)
+    const animStart = performance.now();
     let lastTime = 0;
     let rafId = 0;
 
     function animate() {
       rafId = requestAnimationFrame(animate);
-      const time = clock.getElapsedTime();
+      const time = (performance.now() - animStart) / 1000;
       const dt = Math.min(0.05, time - lastTime);
       lastTime = time;
 

@@ -1,13 +1,19 @@
 "use client";
 
 /**
- * PatentMapClient — Patent Map 頁面 orchestrator (R3a + R3b)
+ * PatentMapClient — Patent Map 頁面 orchestrator (R3a + R3b + R6 URL sync)
  *
  * 控制:Time Range / Mode / Branch / Layout / Legend / 公司清單 / detail panel / patent modal
  * 把 dataset 跟篩選傳給 <PatentMapCanvas>;狀態同步散播到各 UI 面板。
+ *
+ * URL 雙向綁:
+ *   - mount 時讀 ?month=&mode=&branch=&layout=&category=&company= 初始化 state
+ *   - state 變化時用 history.replaceState 更新 URL(不觸發 Next.js 導航,不滾動)
+ *   - 預設值不寫進 URL,保持 URL 簡潔
  */
 
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
+import { useSearchParams } from "next/navigation";
 import PatentMapCanvas, { type PatentMapLayout } from "./PatentMapCanvas";
 import PatentMapLegend, { type LegendCategoryRow } from "./PatentMapLegend";
 import PatentMapCompanyPanel from "./PatentMapCompanyPanel";
@@ -28,7 +34,20 @@ import {
 type Mode = "cumulative" | "monthly";
 type Branch = "all" | "main" | "branch" | "decline";
 
+// === URL 解析 helpers ===
+function parseMode(v: string | null): Mode {
+  return v === "monthly" ? "monthly" : "cumulative";
+}
+function parseBranch(v: string | null): Branch {
+  return v === "main" || v === "branch" || v === "decline" ? v : "all";
+}
+function parseLayout(v: string | null): PatentMapLayout {
+  return v === "force" ? "force" : "random";
+}
+
 export default function PatentMapClient() {
+  const searchParams = useSearchParams();
+
   // ===== 資料載入 =====
   const [dataset, setDataset] = useState<InsightsDataset | null>(null);
   const [loadError, setLoadError] = useState<string | null>(null);
@@ -41,17 +60,45 @@ export default function PatentMapClient() {
     return () => { cancelled = true; };
   }, []);
 
-  // ===== UI 狀態 =====
-  const [selectedMonth, setSelectedMonth] = useState<string | "all">("all");
-  const [mode, setMode] = useState<Mode>("cumulative");
-  const [branch, setBranch] = useState<Branch>("all");
-  const [layout, setLayout] = useState<PatentMapLayout>("random");
-  const [activeCategory, setActiveCategory] = useState<string | null>(null);
+  // ===== UI 狀態(從 URL 初始化) =====
+  // 注意:這裡用 lazy initializer + useState 讀一次 URL,之後 URL 變化由 state 控制,
+  // 不會 re-init(避免 ?company= 切換時 state 被重置)
+  const [selectedMonth, setSelectedMonth] = useState<string | "all">(() => {
+    return searchParams.get("month") || "all";
+  });
+  const [mode, setMode] = useState<Mode>(() => parseMode(searchParams.get("mode")));
+  const [branch, setBranch] = useState<Branch>(() => parseBranch(searchParams.get("branch")));
+  const [layout, setLayout] = useState<PatentMapLayout>(() => parseLayout(searchParams.get("layout")));
+  const [activeCategory, setActiveCategory] = useState<string | null>(() => searchParams.get("category"));
   const [visibleCompanies, setVisibleCompanies] = useState<LayoutCompany[]>([]);
 
-  // ===== 詳情面板 / patent modal 狀態 =====
-  const [selectedCompanyName, setSelectedCompanyName] = useState<string | null>(null);
+  // ===== 詳情面板 / patent modal 狀態(從 URL 初始化) =====
+  const [selectedCompanyName, setSelectedCompanyName] = useState<string | null>(
+    () => searchParams.get("company")
+  );
   const [selectedPatent, setSelectedPatent] = useState<InsightsPatent | null>(null);
+
+  // ===== URL 同步:state 變化時更新 ?query 字串(history.replaceState 不滾動) =====
+  // 用 ref 標記 first render 跳過,避免初始載入立刻 push 一次無意義的 URL 更新
+  const urlInitialized = useRef(false);
+  useEffect(() => {
+    if (!urlInitialized.current) {
+      urlInitialized.current = true;
+      return;
+    }
+    const params = new URLSearchParams();
+    if (selectedMonth !== "all") params.set("month", selectedMonth);
+    if (mode !== "cumulative") params.set("mode", mode);
+    if (branch !== "all") params.set("branch", branch);
+    if (layout !== "random") params.set("layout", layout);
+    if (activeCategory) params.set("category", activeCategory);
+    if (selectedCompanyName) params.set("company", selectedCompanyName);
+    const qs = params.toString();
+    const newUrl = window.location.pathname + (qs ? "?" + qs : "");
+    if (window.location.search.replace(/^\?/, "") !== qs) {
+      window.history.replaceState(null, "", newUrl);
+    }
+  }, [selectedMonth, mode, branch, layout, activeCategory, selectedCompanyName]);
 
   // 取對應的 InsightsCompany 物件(完整資料,給 detail panel 用)
   const selectedCompany: InsightsCompany | null = useMemo(() => {

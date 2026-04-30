@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import AINavbar from "@/components/aipatentinsight/AINavbar";
 import PatentMapClient from "@/components/aipatentinsight/PatentMapClient";
 
@@ -17,7 +18,10 @@ export default function PatentMapPage() {
   return (
     <div className="ai-shell">
       <AINavbar />
-      <PatentMapClient />
+      {/* Suspense 必要:PatentMapClient 用 useSearchParams,Next 16 需要 boundary */}
+      <Suspense fallback={null}>
+        <PatentMapClient />
+      </Suspense>
     </div>
   );
 }

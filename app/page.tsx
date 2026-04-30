@@ -3,19 +3,17 @@
 /**
  * 首頁 — 產業演化趨勢(對齊靜態原型 hero_8/12)
  *
- * 構成:
- *   - 背景:8 條洋流動畫(AIHeroOcean,monthProgress 受 page 控制 → 跟尺規同步)
- *   - HUD 角框 + 四角小標籤
- *   - 中央:標題「產業演化趨勢」+ 趨勢標記(色點 + 名稱) + 36 個月尺規 + 年份標籤
- *   - 自動循環:60 秒走完 36 個月
- *   - 點尺規 → 跳到該時間 + 暫停 3 秒,之後恢復自動循環
+ * 動畫策略(避免 60fps re-render 導致閃退):
+ *   - monthProgressRef:RAF 內以 ref 累積真實進度,不觸發 React re-render
+ *   - cursor / fill 的 DOM 透過 ref 直接 .style 更新 → 60fps 視覺絲滑
+ *   - state(monthProgress)只在每 100ms 同步一次(10fps) → 文字 / 趨勢標記 / AIHeroOcean prop 更新
+ *   - AIHeroOcean 內部用 ref 接 prop,所以 10fps 就足夠驅動洋流主導切換
  */
 
 import { useEffect, useRef, useState } from "react";
 import AINavbar from "@/components/aipatentinsight/AINavbar";
 import AIHeroOcean from "@/components/aipatentinsight/AIHeroOcean";
 
-// 對齊 AIHeroOcean 的 8 條洋流(色 + 名)
 const CURRENTS: { name: string; color: number }[] = [
   { name: "矽光子",     color: 0x9DEBFF },
   { name: "AI 晶片",    color: 0x7DDFFF },
@@ -27,13 +25,14 @@ const CURRENTS: { name: string; color: number }[] = [
   { name: "特級化學品", color: 0xA08FE5 },
 ];
 
-// 36 個月對應(每 3 個月切一次主導,8 循環 + 取前 4 復出)
+// 36 個月 → 8 條洋流(每 3 個月切一次,8 循環 + 取前 4 復出)
 const MONTH_TO_DOMAIN: number[] = [];
 for (let m = 0; m < 36; m++) {
   MONTH_TO_DOMAIN.push(Math.floor(m / 3) % 8);
 }
 
 const SECONDS_PER_MONTH = 60 / 36;
+const STATE_UPDATE_MS = 100; // 10 fps
 
 function formatDate(monthIdx: number): string {
   const year = 2023 + Math.floor(monthIdx / 12);
@@ -46,48 +45,53 @@ function colorToHex(c: number): string {
 }
 
 export default function HomePage() {
+  // 真實進度(0..36)放在 ref,不觸發 re-render
+  const monthProgressRef = useRef(0);
+  // state 只用來驅動需要 React 重繪的部分(文字、趨勢標記、AIHeroOcean prop)
   const [monthProgress, setMonthProgress] = useState(0);
   const [paused, setPaused] = useState(false);
+
+  // DOM refs 給 RAF 直接 style.left/width(避免 React re-render)
   const rulerTrackRef = useRef<HTMLDivElement | null>(null);
+  const rulerCursorRef = useRef<HTMLDivElement | null>(null);
+  const rulerFillRef = useRef<HTMLDivElement | null>(null);
   const resumeTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
-  // === 自動循環(rAF,60 秒一輪)===
+  // === RAF 自動循環 ===
   useEffect(() => {
     if (paused) return;
     let rafId = 0;
     let last = performance.now();
+    let lastStateAt = 0;
+
     const tick = (now: number) => {
       const dt = Math.min(0.05, (now - last) / 1000);
       last = now;
-      setMonthProgress((p) => {
-        let next = p + dt / SECONDS_PER_MONTH;
-        if (next >= 36) next = 0;
-        return next;
-      });
+
+      let next = monthProgressRef.current + dt / SECONDS_PER_MONTH;
+      if (next >= 36) next = 0;
+      monthProgressRef.current = next;
+
+      // DOM 直接更新游標跟填充(60fps 絲滑)
+      const pct = (next / 36) * 100;
+      if (rulerCursorRef.current) {
+        rulerCursorRef.current.style.left = pct + "%";
+      }
+      if (rulerFillRef.current) {
+        rulerFillRef.current.style.width = pct + "%";
+      }
+
+      // state 限頻 100ms 同步一次(讓文字 / AIHeroOcean prop 更新)
+      if (now - lastStateAt > STATE_UPDATE_MS) {
+        lastStateAt = now;
+        setMonthProgress(next);
+      }
+
       rafId = requestAnimationFrame(tick);
     };
     rafId = requestAnimationFrame(tick);
     return () => cancelAnimationFrame(rafId);
   }, [paused]);
-
-  // === 衍生資料 ===
-  const monthIdx = Math.min(35, Math.floor(monthProgress));
-  const dominantIdx = MONTH_TO_DOMAIN[monthIdx];
-  const dominant = CURRENTS[dominantIdx];
-  const dateStr = formatDate(monthIdx);
-  const progressPct = (monthProgress / 36) * 100;
-  const trendHex = colorToHex(dominant.color);
-
-  // === 點尺規:跳轉 + 暫停 3 秒 ===
-  const onRulerClick = (e: React.MouseEvent<HTMLDivElement>) => {
-    if (!rulerTrackRef.current) return;
-    const rect = rulerTrackRef.current.getBoundingClientRect();
-    const ratio = Math.max(0, Math.min(1, (e.clientX - rect.left) / rect.width));
-    setMonthProgress(ratio * 36);
-    setPaused(true);
-    if (resumeTimerRef.current) clearTimeout(resumeTimerRef.current);
-    resumeTimerRef.current = setTimeout(() => setPaused(false), 3000);
-  };
 
   // unmount 時清 timer
   useEffect(() => {
@@ -95,6 +99,43 @@ export default function HomePage() {
       if (resumeTimerRef.current) clearTimeout(resumeTimerRef.current);
     };
   }, []);
+
+  // === 衍生資料(基於 state,~10fps 重算) ===
+  // 防禦式處理:確保 monthProgress 是有限數字,不然 fallback 0
+  const safeProgress =
+    typeof monthProgress === "number" && isFinite(monthProgress)
+      ? monthProgress
+      : 0;
+  const monthIdx = Math.min(35, Math.max(0, Math.floor(safeProgress)));
+  // CURRENTS / MONTH_TO_DOMAIN 是 module 常數,理論上 index 永遠 in-bounds,
+  // 但用顯式 if 保證 dominant 永遠是合法物件,避免任何邊角情況
+  let dominant: { name: string; color: number } = CURRENTS[0];
+  const dIdx = MONTH_TO_DOMAIN[monthIdx];
+  if (typeof dIdx === "number" && CURRENTS[dIdx]) {
+    dominant = CURRENTS[dIdx];
+  }
+  const dateStr = formatDate(monthIdx);
+  const trendHex = colorToHex(dominant.color);
+  const initialPct = (safeProgress / 36) * 100;
+
+  // === 點尺規:跳轉 + 暫停 3 秒 ===
+  const onRulerClick = (e: React.MouseEvent<HTMLDivElement>) => {
+    if (!rulerTrackRef.current) return;
+    const rect = rulerTrackRef.current.getBoundingClientRect();
+    const ratio = Math.max(0, Math.min(1, (e.clientX - rect.left) / rect.width));
+    const target = ratio * 36;
+    monthProgressRef.current = target;
+    setMonthProgress(target);
+
+    // 立即更新 DOM(暫停期間 RAF 不跑)
+    const pct = ratio * 100;
+    if (rulerCursorRef.current) rulerCursorRef.current.style.left = pct + "%";
+    if (rulerFillRef.current) rulerFillRef.current.style.width = pct + "%";
+
+    setPaused(true);
+    if (resumeTimerRef.current) clearTimeout(resumeTimerRef.current);
+    resumeTimerRef.current = setTimeout(() => setPaused(false), 3000);
+  };
 
   return (
     <div className="ai-shell">
@@ -117,7 +158,7 @@ export default function HomePage() {
             產業<span className="ai-hero-accent">演化</span>趨勢
           </h1>
 
-          <div className="ai-hero-trend" key={dominantIdx}>
+          <div className="ai-hero-trend" key={dominant.name}>
             <span
               className="ai-hero-trend-marker"
               style={{ background: trendHex, color: trendHex }}
@@ -125,7 +166,10 @@ export default function HomePage() {
             <span className="ai-hero-trend-text">{dominant.name}</span>
           </div>
 
-          <section className="ai-hero-ruler-section" aria-label="Industry evolution timeline">
+          <section
+            className="ai-hero-ruler-section"
+            aria-label="Industry evolution timeline"
+          >
             <div className="ai-hero-ruler-date">{dateStr}</div>
 
             <div
@@ -133,14 +177,16 @@ export default function HomePage() {
               ref={rulerTrackRef}
               onClick={onRulerClick}
               role="slider"
+              tabIndex={0}
               aria-valuemin={0}
               aria-valuemax={36}
-              aria-valuenow={monthProgress}
+              aria-valuenow={Math.round(monthProgress)}
             >
               <div className="ai-hero-ruler-baseline" />
               <div
                 className="ai-hero-ruler-fill"
-                style={{ width: progressPct + "%" }}
+                ref={rulerFillRef}
+                style={{ width: initialPct + "%" }}
               />
               <div className="ai-hero-ruler-ticks">
                 {Array.from({ length: 37 }, (_, m) => {
@@ -157,7 +203,8 @@ export default function HomePage() {
               </div>
               <div
                 className="ai-hero-ruler-cursor"
-                style={{ left: progressPct + "%" }}
+                ref={rulerCursorRef}
+                style={{ left: initialPct + "%" }}
               />
             </div>
 

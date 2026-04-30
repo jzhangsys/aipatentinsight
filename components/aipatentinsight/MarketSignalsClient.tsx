@@ -190,7 +190,9 @@ export default function MarketSignalsClient() {
                 <li
                   key={row.cat}
                   className="ai-signal-row"
-                  onClick={() => router.push("/patent-map")}
+                  onClick={() =>
+                    router.push("/patent-map?category=" + encodeURIComponent(row.cat))
+                  }
                   role="button"
                   tabIndex={0}
                 >
