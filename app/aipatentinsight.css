@@ -1872,24 +1872,51 @@
 
 /* === RWD === */
 @media (max-width: 768px) {
-  .ai-patent-map { padding: 96px 16px 0; }
-  .ai-patent-map .ai-page-title { font-size: 16px; letter-spacing: 0.28em; }
-  .ai-patent-map .ai-page-description { font-size: 10px; }
-  .ai-patent-map .ai-controls { padding: 8px 12px; gap: 8px 14px; }
+  .ai-patent-map { padding: 90px 12px 0; }
+  .ai-patent-map .ai-page-title { font-size: 14px; letter-spacing: 0.22em; }
+  .ai-patent-map .ai-page-description { font-size: 10px; line-height: 1.5; }
+  .ai-patent-map .ai-controls {
+    padding: 6px 10px;
+    gap: 6px 10px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  .ai-patent-map .ai-control-select { font-size: 10px; min-width: 70px; }
+  .ai-patent-map .ai-pill { font-size: 7px; padding: 3px 6px; }
+
+  /* 手機:隱藏公司清單面板,避免右側跟 stats / detail panel 相疊;
+     使用者直接點 canvas 上的點即可開詳情面板 */
+  .ai-patent-map .ai-map-company-panel { display: none; }
+
+  /* Legend:左下小盒,別佔太多空間 */
   .ai-patent-map .ai-map-legend {
-    width: calc(100% - 36px);
-    max-width: 280px;
-    bottom: 18px;
-    left: 18px;
+    bottom: 12px;
+    left: 12px;
+    width: 168px;
+    max-height: 36vh;
+    padding: 8px 10px;
   }
+  .ai-patent-map .ai-map-legend-title { font-size: 8px; letter-spacing: 0.2em; }
+  .ai-patent-map .ai-map-legend-item { font-size: 10px; padding: 3px 5px; }
+
+  /* Stats:右下小條 */
   .ai-patent-map .ai-map-stats {
-    bottom: 18px;
-    right: 18px;
-    padding: 10px 14px;
-    gap: 18px;
+    bottom: 12px;
+    right: 12px;
+    padding: 8px 12px;
+    gap: 14px;
   }
-  .ai-patent-map .ai-map-stat-value { font-size: 18px; }
-  .ai-patent-map .ai-map-stat { min-width: 50px; }
+  .ai-patent-map .ai-map-stat-value { font-size: 16px; }
+  .ai-patent-map .ai-map-stat-value.ai-map-stat-period { font-size: 11px; }
+  .ai-patent-map .ai-map-stat { min-width: 44px; }
+  .ai-patent-map .ai-map-stat-label { font-size: 7px; letter-spacing: 0.2em; }
+}
+
+/* 超小螢幕(<= 480px):再縮一段 */
+@media (max-width: 480px) {
+  .ai-patent-map .ai-map-legend { width: 138px; max-height: 30vh; }
+  .ai-patent-map .ai-map-stats { gap: 10px; padding: 6px 10px; }
+  .ai-patent-map .ai-map-stat-value { font-size: 14px; }
 }
 
 /* ============================================================
@@ -3486,4 +3513,190 @@
   .ai-signals-page .ai-signal-row.patent {
     grid-template-columns: 80px 1fr 40px;
   }
+}
+
+/* ============================================================
+   首頁中央敘事 — 對齊 hero_8 靜態原型
+   構成:標題「產業演化趨勢」+ 趨勢標記 + 36 個月連續尺規 + 年份標籤
+   ============================================================ */
+
+.ai-hero-page.ocean .ai-hero-narrative {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 90%;
+  max-width: 760px;
+  pointer-events: none;
+}
+.ai-hero-page.ocean .ai-hero-narrative > * { pointer-events: auto; }
+
+/* === 標題 === */
+.ai-hero-page.ocean .ai-hero-narrative-title {
+  font-family: 'Futura', 'Jost', 'Avenir Next', sans-serif;
+  font-size: clamp(1.8rem, 3.5vw, 3rem);
+  font-weight: 300;
+  letter-spacing: 0.32em;
+  line-height: 1;
+  color: rgba(255, 255, 255, 0.92);
+  margin: 0;
+}
+.ai-hero-page.ocean .ai-hero-accent {
+  color: rgba(125, 249, 255, 0.9);
+  font-weight: 400;
+}
+
+/* === 趨勢標記(色點 + 名稱) === */
+.ai-hero-page.ocean .ai-hero-trend {
+  margin-top: 22px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  height: 18px;
+  animation: aiHeroTrendIn 0.6s ease;
+}
+@keyframes aiHeroTrendIn {
+  from { opacity: 0; transform: translateY(4px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.ai-hero-page.ocean .ai-hero-trend-marker {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  box-shadow: 0 0 8px currentColor;
+}
+.ai-hero-page.ocean .ai-hero-trend-text {
+  font-family: 'JetBrains Mono', 'Courier New', monospace;
+  font-size: 12px;
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.92);
+}
+
+/* === 尺規 === */
+.ai-hero-page.ocean .ai-hero-ruler-section {
+  margin-top: 56px;
+  width: 100%;
+  max-width: 640px;
+}
+
+.ai-hero-page.ocean .ai-hero-ruler-date {
+  font-family: 'Futura', 'Jost', 'Avenir Next', sans-serif;
+  margin-bottom: 18px;
+  font-size: 36px;
+  font-weight: 300;
+  line-height: 1;
+  color: rgba(255, 255, 255, 0.95);
+  letter-spacing: 0.04em;
+  font-variant-numeric: tabular-nums;
+  text-align: center;
+}
+
+.ai-hero-page.ocean .ai-hero-ruler-track {
+  position: relative;
+  width: 100%;
+  height: 36px;
+  cursor: pointer;
+}
+
+.ai-hero-page.ocean .ai-hero-ruler-baseline {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: rgba(125, 249, 255, 0.15);
+}
+
+.ai-hero-page.ocean .ai-hero-ruler-fill {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  height: 1px;
+  width: 0;
+  background: linear-gradient(90deg, rgba(125, 249, 255, 0.2), rgba(125, 249, 255, 0.6));
+  transition: width 0.1s linear;
+}
+
+.ai-hero-page.ocean .ai-hero-ruler-ticks {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+}
+
+.ai-hero-page.ocean .ai-hero-ruler-tick {
+  position: absolute;
+  top: 50%;
+  width: 1px;
+  background: rgba(125, 249, 255, 0.25);
+  transform: translateY(-50%);
+}
+.ai-hero-page.ocean .ai-hero-ruler-tick.minor { height: 6px; }
+.ai-hero-page.ocean .ai-hero-ruler-tick.major {
+  height: 14px;
+  background: rgba(125, 249, 255, 0.6);
+}
+.ai-hero-page.ocean .ai-hero-ruler-tick.year {
+  height: 20px;
+  background: rgba(125, 249, 255, 0.85);
+}
+
+.ai-hero-page.ocean .ai-hero-ruler-cursor {
+  position: absolute;
+  top: 50%;
+  width: 2px;
+  height: 28px;
+  background: rgba(125, 249, 255, 1);
+  box-shadow: 0 0 12px rgba(125, 249, 255, 0.9);
+  transform: translate(-50%, -50%);
+  transition: left 0.05s linear;
+  pointer-events: none;
+}
+.ai-hero-page.ocean .ai-hero-ruler-cursor::after {
+  content: '';
+  position: absolute;
+  top: -3px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba(125, 249, 255, 1);
+  box-shadow: 0 0 10px rgba(125, 249, 255, 0.9);
+}
+
+.ai-hero-page.ocean .ai-hero-ruler-years {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 12px;
+  font-family: 'JetBrains Mono', 'Courier New', monospace;
+  font-size: 10px;
+  color: rgba(255, 255, 255, 0.4);
+  letter-spacing: 0.2em;
+  font-variant-numeric: tabular-nums;
+}
+
+/* === 手機 === */
+@media (max-width: 768px) {
+  .ai-hero-page.ocean .ai-hero-narrative-title {
+    font-size: 1.4rem;
+    letter-spacing: 0.22em;
+  }
+  .ai-hero-page.ocean .ai-hero-trend { margin-top: 16px; gap: 12px; }
+  .ai-hero-page.ocean .ai-hero-trend-text { font-size: 10px; letter-spacing: 0.3em; }
+  .ai-hero-page.ocean .ai-hero-ruler-section {
+    margin-top: 40px;
+    max-width: 320px;
+  }
+  .ai-hero-page.ocean .ai-hero-ruler-date { font-size: 26px; margin-bottom: 14px; }
+  .ai-hero-page.ocean .ai-hero-ruler-years { font-size: 9px; }
 }

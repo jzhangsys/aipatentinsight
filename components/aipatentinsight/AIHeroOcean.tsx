@@ -13,6 +13,14 @@
 import { useEffect, useRef } from "react";
 import * as THREE from "three";
 
+type Props = {
+  /**
+   * 0..36 — 受控的月份進度。若給了數值就以它為準,讓上層 page.tsx 的尺規跟洋流動畫同步;
+   * 若沒給(undefined),AIHeroOcean 自己跑內部 60 秒一輪的循環(維持向後相容)。
+   */
+  monthProgress?: number;
+};
+
 type CurrentDef = {
   name: string;
   color: number;
@@ -44,8 +52,12 @@ const PARTICLES_PER_CURRENT = 380;
 const TOTAL_CURRENT = CURRENTS.length * PARTICLES_PER_CURRENT;
 const SECONDS_PER_MONTH = 60 / 36;
 
-export default function AIHeroOcean() {
+export default function AIHeroOcean({ monthProgress }: Props = {}) {
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
+  // 用 ref 同步 prop,讓 useEffect 內的 closure 可以隨時讀到最新值,
+  // 而不需要把 monthProgress 進依賴陣列(會重建整個 Three.js 場景)。
+  const externalMonthRef = useRef<number | undefined>(monthProgress);
+  externalMonthRef.current = monthProgress;
 
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -226,7 +238,8 @@ export default function AIHeroOcean() {
     scene.add(tailLines);
 
     // ============== 動畫狀態 ==============
-    let monthProgress = 0;
+    // 內部 fallback 進度 — 只在 externalMonthRef.current 為 undefined 時用
+    let internalMonthProgress = 0;
     let activeDomainIdx = 0;
     let activeIntensity = 1;
     let pendingDomainIdx = 0;
@@ -257,10 +270,16 @@ export default function AIHeroOcean() {
       const dt = Math.min(0.05, time - lastTime);
       lastTime = time;
 
-      // 月份遞增:36 個月一輪(60 秒)
-      monthProgress += dt / SECONDS_PER_MONTH;
-      if (monthProgress >= 36) monthProgress = 0;
-      const monthIdx = Math.min(35, Math.floor(monthProgress));
+      // 取得有效進度:有外部受控值就用,否則用內部循環
+      let effectiveProgress: number;
+      if (externalMonthRef.current !== undefined) {
+        effectiveProgress = externalMonthRef.current;
+      } else {
+        internalMonthProgress += dt / SECONDS_PER_MONTH;
+        if (internalMonthProgress >= 36) internalMonthProgress = 0;
+        effectiveProgress = internalMonthProgress;
+      }
+      const monthIdx = Math.min(35, Math.floor(effectiveProgress));
       const newDomain = MONTH_TO_DOMAIN[monthIdx];
       if (newDomain !== pendingDomainIdx) {
         pendingDomainIdx = newDomain;
