@@ -1,5 +1,5 @@
 import BlankPage from "@/components/zero/BlankPage";
 
-export default function NotFoundPage() {
+export default function HomePage() {
   return <BlankPage />;
 }

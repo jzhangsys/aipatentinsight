@@ -1,0 +1,1735 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AIPatentInsight — Insights</title>
+<link rel="icon" type="image/svg+xml" href="logo-icon.svg">
+<link rel="stylesheet" href="styles.css">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&display=swap');
+  :root { --font-futura: 'Futura', 'Futura PT', 'Century Gothic', 'Jost', 'Avenir Next', sans-serif; }
+  body { overflow: hidden; margin: 0; }
+
+  .page {
+    position: relative;
+    height: 100vh;
+    background: radial-gradient(ellipse at 50% 60%, #060A1C 0%, #03050F 60%, #01030A 100%);
+    overflow: hidden;
+  }
+
+  #graph-canvas {
+    position: absolute; inset: 0; width: 100%; height: 100%;
+    z-index: 1; display: block; cursor: grab;
+  }
+  #graph-canvas:active { cursor: grabbing; }
+
+  #category-labels {
+    position: fixed; inset: 0; z-index: 3; pointer-events: none;
+  }
+  .cat-label {
+    position: absolute;
+    transform: translate(-50%, -100%);
+    font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.18em;
+    color: rgba(255, 255, 255, 0.55);
+    text-transform: uppercase; white-space: nowrap;
+    padding: 2px 0; transition: all 0.3s ease;
+    text-align: center; line-height: 1.4;
+  }
+  .cat-label .cat-dot {
+    display: inline-block; width: 6px; height: 6px; border-radius: 50%;
+    margin-right: 6px; vertical-align: middle;
+    box-shadow: 0 0 8px currentColor;
+  }
+  .cat-label.active { color: rgba(255, 255, 255, 1); font-weight: 500; }
+  .cat-label.dim { opacity: 0.2; }
+
+  .vignette {
+    position: fixed; inset: 0; z-index: 2; pointer-events: none;
+    background:
+      linear-gradient(180deg, rgba(2,4,12,0.6) 0%, transparent 14%, transparent 86%, rgba(2,4,12,0.7) 100%),
+      linear-gradient(90deg, rgba(2,4,12,0.4) 0%, transparent 8%, transparent 92%, rgba(2,4,12,0.4) 100%);
+  }
+
+  /* 導覽列 */
+  .nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 30;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 24px 48px; backdrop-filter: blur(8px);
+    background: linear-gradient(180deg, rgba(2,4,12,0.7) 0%, rgba(2,4,12,0.3) 100%);
+  }
+  .nav-logo img { height: 38px; width: auto; display: block; }
+  .nav-menu { display: flex; align-items: center; gap: 36px; list-style: none; margin: 0; padding: 0; }
+  .nav-menu li a {
+    font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.3em;
+    text-transform: uppercase; color: rgba(255, 255, 255, 0.7);
+    text-decoration: none; transition: color 0.2s; position: relative; padding: 8px 0;
+  }
+  .nav-menu li a:hover { color: rgba(125, 249, 255, 1); }
+  .nav-menu li a.active { color: rgba(125, 249, 255, 1); }
+  .nav-menu li a.active::after {
+    content: ''; position: absolute; left: 0; right: 0; bottom: 0;
+    height: 1px; background: rgba(125, 249, 255, 0.7);
+  }
+  .nav-cta {
+    font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.3em;
+    text-transform: uppercase; color: rgba(2, 4, 12, 1);
+    background: rgba(125, 249, 255, 0.9); border: none; padding: 9px 18px;
+    cursor: pointer; text-decoration: none;
+  }
+  .nav-cta:hover { background: rgba(125, 249, 255, 1); }
+
+  /* 控制列 */
+  .controls {
+    position: fixed; top: 100px; left: 50%; transform: translateX(-50%);
+    z-index: 20; display: flex; align-items: flex-end; gap: 24px;
+    padding: 14px 22px;
+    background: rgba(3, 5, 15, 0.8); backdrop-filter: blur(12px);
+    border: 1px solid rgba(125, 249, 255, 0.18); border-radius: 8px;
+  }
+  .control-group { display: flex; flex-direction: column; gap: 4px; }
+  .control-label {
+    font-family: var(--font-mono); font-size: 9px; letter-spacing: 0.25em;
+    color: rgba(125, 249, 255, 0.65); text-transform: uppercase;
+  }
+  .control-select {
+    font-family: var(--font-futura); font-size: 14px; background: transparent;
+    color: #FFFFFF; border: none;
+    border-bottom: 1px solid rgba(125, 249, 255, 0.3);
+    padding: 4px 0; cursor: pointer; outline: none; min-width: 120px;
+    letter-spacing: 0.05em;
+  }
+  .control-select:hover { border-bottom-color: rgba(125, 249, 255, 0.7); }
+  .control-select option { background: #03050F; color: #FFFFFF; }
+
+  .filter-pills { display: flex; gap: 6px; }
+  .filter-pill {
+    font-family: var(--font-mono); font-size: 9px; letter-spacing: 0.2em;
+    text-transform: uppercase; padding: 4px 10px;
+    border: 1px solid rgba(125, 249, 255, 0.2);
+    background: transparent; color: rgba(255, 255, 255, 0.5);
+    cursor: pointer; transition: all 0.2s;
+  }
+  .filter-pill.active {
+    border-color: rgba(125, 249, 255, 0.7); color: rgba(125, 249, 255, 1);
+    background: rgba(125, 249, 255, 0.08);
+  }
+
+  /* 頁面標題 */
+  .page-info { position: fixed; top: 100px; right: 48px; z-index: 15; text-align: right; }
+  .page-info-title {
+    font-family: var(--font-futura); font-size: 28px; font-weight: 300;
+    color: rgba(255, 255, 255, 0.9); letter-spacing: 0.16em; margin: 0 0 6px 0;
+  }
+  .page-info-meta {
+    font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.25em;
+    color: rgba(255, 255, 255, 0.4); text-transform: uppercase;
+  }
+
+  /* Legend */
+  .legend {
+    position: fixed; bottom: 24px; left: 24px; z-index: 15;
+    background: rgba(3, 5, 15, 0.8); backdrop-filter: blur(8px);
+    border: 1px solid rgba(125, 249, 255, 0.15);
+    padding: 14px 16px; border-radius: 6px;
+    max-width: 300px; max-height: calc(100vh - 220px); overflow-y: auto;
+  }
+  .legend::-webkit-scrollbar { width: 4px; }
+  .legend::-webkit-scrollbar-thumb { background: rgba(125, 249, 255, 0.2); }
+  .legend-title {
+    font-family: var(--font-mono); font-size: 9px; letter-spacing: 0.3em;
+    color: rgba(125, 249, 255, 0.6); text-transform: uppercase; margin-bottom: 10px;
+  }
+  .legend-item {
+    display: flex; align-items: center; gap: 8px;
+    margin-bottom: 6px;
+    font-family: var(--font-mono); font-size: 10px;
+    color: rgba(255, 255, 255, 0.7);
+    cursor: pointer; transition: all 0.2s;
+    padding: 4px 6px; border-radius: 3px; border: 1px solid transparent;
+  }
+  .legend-item:hover { color: rgba(255, 255, 255, 1); background: rgba(125, 249, 255, 0.05); }
+  .legend-item.active {
+    background: rgba(125, 249, 255, 0.12);
+    border-color: rgba(125, 249, 255, 0.5);
+    color: rgba(255, 255, 255, 1);
+  }
+  .legend-item.dim { opacity: 0.25; }
+  .legend-dot {
+    width: 9px; height: 9px; border-radius: 50%; flex-shrink: 0;
+    box-shadow: 0 0 8px currentColor;
+  }
+  .legend-count { margin-left: auto; color: rgba(255, 255, 255, 0.4); font-size: 9px; }
+
+  /* 統計 */
+  .stats {
+    position: fixed; bottom: 24px; right: 24px; z-index: 15;
+    display: flex; gap: 24px;
+    background: rgba(3, 5, 15, 0.8); backdrop-filter: blur(8px);
+    border: 1px solid rgba(125, 249, 255, 0.15);
+    padding: 12px 18px; border-radius: 6px;
+  }
+  .stat-cell { display: flex; flex-direction: column; gap: 2px; }
+  .stat-label {
+    font-family: var(--font-mono); font-size: 8px; letter-spacing: 0.25em;
+    color: rgba(125, 249, 255, 0.5); text-transform: uppercase;
+  }
+  .stat-value {
+    font-family: var(--font-futura); font-size: 20px; font-weight: 400;
+    color: rgba(255, 255, 255, 0.95); letter-spacing: 0.04em;
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* Tooltip */
+  .hover-tooltip {
+    position: fixed; pointer-events: none; z-index: 25;
+    background: rgba(3, 5, 15, 0.95);
+    border: 1px solid rgba(125, 249, 255, 0.4);
+    padding: 8px 12px; border-radius: 4px;
+    font-family: var(--font-mono); font-size: 11px;
+    color: rgba(255, 255, 255, 0.95);
+    opacity: 0; transition: opacity 0.15s; max-width: 260px;
+  }
+  .hover-tooltip.visible { opacity: 1; }
+  .hover-tooltip .tip-cat {
+    color: rgba(125, 249, 255, 0.7); font-size: 9px; letter-spacing: 0.2em;
+    text-transform: uppercase; display: block; margin-bottom: 3px;
+  }
+  .hover-tooltip .tip-name { font-family: var(--font-body); font-weight: 500; margin-bottom: 4px; }
+  .hover-tooltip .tip-meta { color: rgba(255, 255, 255, 0.5); font-size: 10px; }
+
+  /* ========== 公司清單面板(右側) ========== */
+  .company-panel {
+    position: fixed;
+    top: 180px;
+    right: 24px;
+    width: 320px;
+    max-height: calc(100vh - 320px);
+    z-index: 18;
+    background: rgba(3, 5, 15, 0.85);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(125, 249, 255, 0.18);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+  .company-panel.collapsed {
+    transform: translateX(calc(100% - 44px));
+  }
+  .company-panel-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 14px;
+    border-bottom: 1px solid rgba(125, 249, 255, 0.12);
+    flex-shrink: 0;
+  }
+  .company-panel-title {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    letter-spacing: 0.3em;
+    color: rgba(125, 249, 255, 0.7);
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .company-panel-title .count {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 9px;
+  }
+  .company-panel-toggle {
+    background: transparent;
+    border: 1px solid rgba(125, 249, 255, 0.3);
+    color: rgba(125, 249, 255, 0.8);
+    width: 22px;
+    height: 22px;
+    border-radius: 3px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+    transition: all 0.2s;
+    flex-shrink: 0;
+  }
+  .company-panel-toggle:hover {
+    background: rgba(125, 249, 255, 0.1);
+    color: rgba(125, 249, 255, 1);
+  }
+
+  .company-search {
+    padding: 10px 14px;
+    border-bottom: 1px solid rgba(125, 249, 255, 0.08);
+    flex-shrink: 0;
+  }
+  .company-search input {
+    width: 100%;
+    box-sizing: border-box;
+    background: rgba(125, 249, 255, 0.04);
+    border: 1px solid rgba(125, 249, 255, 0.15);
+    color: rgba(255, 255, 255, 0.95);
+    font-family: var(--font-body);
+    font-size: 13px;
+    padding: 7px 10px;
+    border-radius: 3px;
+    outline: none;
+    transition: border-color 0.2s;
+  }
+  .company-search input::placeholder {
+    color: rgba(255, 255, 255, 0.35);
+  }
+  .company-search input:focus {
+    border-color: rgba(125, 249, 255, 0.5);
+  }
+
+  .company-sort-tabs {
+    display: flex;
+    gap: 4px;
+    padding: 8px 14px;
+    border-bottom: 1px solid rgba(125, 249, 255, 0.08);
+    flex-shrink: 0;
+  }
+  .company-sort-tab {
+    flex: 1;
+    font-family: var(--font-mono);
+    font-size: 9px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    padding: 4px 6px;
+    border: 1px solid rgba(125, 249, 255, 0.15);
+    background: transparent;
+    color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    transition: all 0.2s;
+    border-radius: 2px;
+  }
+  .company-sort-tab.active {
+    border-color: rgba(125, 249, 255, 0.6);
+    color: rgba(125, 249, 255, 1);
+    background: rgba(125, 249, 255, 0.06);
+  }
+
+  .company-list {
+    flex: 1;
+    overflow-y: auto;
+    padding: 6px 0;
+  }
+  .company-list::-webkit-scrollbar { width: 5px; }
+  .company-list::-webkit-scrollbar-thumb { background: rgba(125, 249, 255, 0.2); }
+  .company-list::-webkit-scrollbar-track { background: transparent; }
+
+  .company-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 14px;
+    cursor: pointer;
+    transition: background 0.15s;
+    border-left: 2px solid transparent;
+  }
+  .company-item:hover {
+    background: rgba(125, 249, 255, 0.05);
+  }
+  .company-item.highlighted {
+    background: rgba(125, 249, 255, 0.1);
+    border-left-color: rgba(125, 249, 255, 0.8);
+  }
+  .company-item .ci-dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    box-shadow: 0 0 5px currentColor;
+  }
+  .company-item .ci-info {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+  .company-item .ci-name {
+    font-family: var(--font-body);
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.92);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .company-item .ci-meta {
+    font-family: var(--font-mono);
+    font-size: 9px;
+    color: rgba(255, 255, 255, 0.4);
+    letter-spacing: 0.05em;
+  }
+  .company-item .ci-count {
+    font-family: var(--font-futura);
+    font-size: 14px;
+    color: rgba(125, 249, 255, 0.85);
+    flex-shrink: 0;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .company-list-empty {
+    padding: 24px 14px;
+    text-align: center;
+    font-family: var(--font-mono);
+    font-size: 10px;
+    letter-spacing: 0.2em;
+    color: rgba(255, 255, 255, 0.3);
+    text-transform: uppercase;
+  }
+
+  /* ========== 公司詳情側邊面板(取代 Modal Layer 1) ========== */
+  .detail-panel {
+    position: fixed;
+    top: 80px;
+    right: 0;
+    bottom: 0;
+    width: 420px;
+    z-index: 40;
+    background: linear-gradient(145deg, rgba(6, 10, 28, 0.96) 0%, rgba(3, 5, 15, 0.96) 100%);
+    backdrop-filter: blur(16px);
+    border-left: 1px solid rgba(125, 249, 255, 0.25);
+    display: flex;
+    flex-direction: column;
+    transform: translateX(100%);
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    box-shadow: -10px 0 40px rgba(0, 0, 0, 0.5);
+  }
+  .detail-panel.open { transform: translateX(0); }
+
+  .detail-header {
+    padding: 24px 24px 18px;
+    border-bottom: 1px solid rgba(125, 249, 255, 0.12);
+    display: flex; align-items: flex-start; justify-content: space-between; gap: 16px;
+    flex-shrink: 0;
+  }
+  .detail-title {
+    font-family: var(--font-futura); font-size: 22px; font-weight: 400;
+    color: rgba(255, 255, 255, 0.95); margin: 0 0 8px 0;
+    letter-spacing: 0.04em; line-height: 1.25;
+  }
+  .detail-meta { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
+
+  .detail-close {
+    background: transparent; border: 1px solid rgba(255, 255, 255, 0.2);
+    color: rgba(255, 255, 255, 0.7);
+    width: 28px; height: 28px; border-radius: 50%;
+    cursor: pointer; display: flex; align-items: center; justify-content: center;
+    font-size: 14px; flex-shrink: 0; transition: all 0.2s; line-height: 1;
+  }
+  .detail-close:hover { background: rgba(255, 255, 255, 0.1); color: #FFFFFF; }
+
+  .detail-body { padding: 18px 24px 24px; overflow-y: auto; flex: 1; }
+  .detail-body::-webkit-scrollbar { width: 5px; }
+  .detail-body::-webkit-scrollbar-thumb { background: rgba(125, 249, 255, 0.2); }
+
+  /* 第二層卡片(專利摘要) — 仍用 Modal,但較小 */
+  .modal-backdrop {
+    position: fixed; inset: 0; z-index: 60;
+    background: rgba(2, 4, 12, 0.7); backdrop-filter: blur(4px);
+    display: none; align-items: center; justify-content: center;
+    padding: 40px 20px;
+  }
+  .modal-backdrop.show { display: flex; animation: backdropIn 0.3s ease; }
+  @keyframes backdropIn { from { opacity: 0; } to { opacity: 1; } }
+
+  .modal {
+    background: linear-gradient(145deg, #060A1C 0%, #03050F 100%);
+    border: 1px solid rgba(125, 249, 255, 0.25);
+    border-radius: 8px;
+    width: 100%; max-width: 640px; max-height: 80vh;
+    display: flex; flex-direction: column;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6), 0 0 80px rgba(125, 249, 255, 0.05);
+    animation: modalIn 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  @keyframes modalIn {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+  }
+
+  .modal-header {
+    padding: 24px 28px 18px;
+    border-bottom: 1px solid rgba(125, 249, 255, 0.12);
+    display: flex; align-items: flex-start; justify-content: space-between; gap: 24px;
+  }
+  .modal-title {
+    font-family: var(--font-futura); font-size: 24px; font-weight: 400;
+    color: rgba(255, 255, 255, 0.95); margin: 0 0 8px 0;
+    letter-spacing: 0.04em; line-height: 1.2;
+  }
+  .modal-meta { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+  .meta-tag {
+    font-family: var(--font-mono); font-size: 9px; letter-spacing: 0.25em;
+    text-transform: uppercase; padding: 3px 9px;
+    border: 1px solid rgba(125, 249, 255, 0.2);
+    color: rgba(125, 249, 255, 0.85); border-radius: 2px;
+  }
+  .meta-tag.industry { color: rgba(255, 255, 255, 0.85); }
+  .meta-tag.stock { color: rgba(200, 200, 255, 0.85); }
+  .meta-tag.public { border-color: #7DF9FF; color: #7DF9FF; }
+
+  .modal-close {
+    background: transparent; border: 1px solid rgba(255, 255, 255, 0.2);
+    color: rgba(255, 255, 255, 0.7);
+    width: 32px; height: 32px; border-radius: 50%;
+    cursor: pointer; display: flex; align-items: center; justify-content: center;
+    font-size: 16px; flex-shrink: 0; transition: all 0.2s; line-height: 1;
+  }
+  .modal-close:hover { background: rgba(255, 255, 255, 0.1); color: #FFFFFF; }
+
+  .modal-body { padding: 20px 28px 28px; overflow-y: auto; flex: 1; }
+  .modal-body::-webkit-scrollbar { width: 6px; }
+  .modal-body::-webkit-scrollbar-thumb { background: rgba(125, 249, 255, 0.2); }
+
+  .section-label {
+    font-family: var(--font-mono); font-size: 9px; letter-spacing: 0.3em;
+    color: rgba(125, 249, 255, 0.6); text-transform: uppercase;
+    margin-bottom: 10px; margin-top: 20px;
+  }
+  .section-label:first-child { margin-top: 0; }
+
+  .info-grid {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 14px; margin-bottom: 12px;
+  }
+  .info-cell .info-label {
+    font-family: var(--font-mono); font-size: 9px; letter-spacing: 0.2em;
+    color: rgba(255, 255, 255, 0.4); text-transform: uppercase; margin-bottom: 4px;
+  }
+  .info-cell .info-value {
+    font-family: var(--font-futura); font-size: 16px; font-weight: 400;
+    color: rgba(255, 255, 255, 0.95); letter-spacing: 0.02em;
+  }
+
+  .patent-list { display: flex; flex-direction: column; gap: 4px; }
+  .patent-row {
+    display: flex; align-items: center; gap: 12px;
+    padding: 10px 12px;
+    background: rgba(125, 249, 255, 0.03);
+    border: 1px solid rgba(125, 249, 255, 0.1);
+    border-radius: 4px; cursor: pointer; transition: all 0.15s;
+  }
+  .patent-row:hover {
+    background: rgba(125, 249, 255, 0.08);
+    border-color: rgba(125, 249, 255, 0.4);
+    transform: translateX(2px);
+  }
+  .patent-row .patent-id {
+    font-family: var(--font-mono); font-size: 12px;
+    color: rgba(125, 249, 255, 0.95); letter-spacing: 0.05em;
+    flex-shrink: 0; min-width: 110px;
+  }
+  .patent-row .patent-title {
+    flex: 1; font-family: var(--font-body); font-size: 13px;
+    color: rgba(255, 255, 255, 0.85);
+    overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+  }
+  .patent-row .patent-date {
+    font-family: var(--font-mono); font-size: 10px;
+    color: rgba(255, 255, 255, 0.4); flex-shrink: 0;
+  }
+  .patent-row .patent-arrow { color: rgba(125, 249, 255, 0.5); font-size: 14px; flex-shrink: 0; }
+
+  .modal.level-2 { max-width: 640px; }
+  .modal.level-2 .modal-title {
+    font-family: var(--font-mono); font-size: 22px;
+    letter-spacing: 0.06em; color: rgba(125, 249, 255, 0.95);
+  }
+  .modal.level-2 .patent-title-display {
+    font-family: var(--font-futura); font-size: 17px; font-weight: 400;
+    color: rgba(255, 255, 255, 0.95); margin-bottom: 8px;
+    letter-spacing: 0.02em; line-height: 1.4;
+  }
+  .abstract-box {
+    font-family: var(--font-body); font-size: 14px; line-height: 1.8;
+    color: rgba(255, 255, 255, 0.85); padding: 18px;
+    background: rgba(125, 249, 255, 0.04);
+    border-left: 2px solid rgba(125, 249, 255, 0.4);
+    border-radius: 0 4px 4px 0;
+  }
+
+  .loading-overlay {
+    position: fixed; inset: 0; z-index: 100; background: #02040C;
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    gap: 16px; transition: opacity 0.6s ease;
+  }
+  .loading-overlay.hidden { opacity: 0; pointer-events: none; }
+  .loading-text {
+    font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.4em;
+    color: rgba(125, 249, 255, 0.6); text-transform: uppercase;
+  }
+  .loading-bar {
+    width: 160px; height: 1px; background: rgba(125, 249, 255, 0.1);
+    overflow: hidden; position: relative;
+  }
+  .loading-bar::before {
+    content: ''; position: absolute; inset: 0;
+    background: linear-gradient(90deg, transparent, rgba(125, 249, 255, 0.7), transparent);
+    animation: loading 1.4s ease-in-out infinite;
+  }
+  @keyframes loading {
+    0% { transform: translateX(-100%); } 100% { transform: translateX(100%); }
+  }
+
+  .error-overlay {
+    position: fixed; inset: 0; z-index: 200; display: none;
+    flex-direction: column; align-items: center; justify-content: center;
+    background: rgba(2, 4, 12, 0.95); color: #FF7777;
+    font-family: var(--font-mono); font-size: 13px; text-align: center;
+    padding: 40px; line-height: 1.6;
+  }
+  .error-overlay.show { display: flex; }
+  .error-overlay strong { color: rgba(125, 249, 255, 0.8); display: block; margin-bottom: 12px; letter-spacing: 0.2em; }
+
+  /* 開啟詳情面板時,把右側 UI 元素移開避免重疊 */
+  body.detail-open .stats { right: 444px; }
+  body.detail-open .company-panel { display: none; }
+  body.detail-open .page-info { display: none; }
+
+  @media (max-width: 900px) {
+    .nav { padding: 18px 24px; }
+    .nav-menu { display: none; }
+    .controls { top: 90px; flex-wrap: wrap; padding: 10px 14px; gap: 12px; }
+    .page-info { display: none; }
+    .legend { max-width: 200px; padding: 10px 12px; }
+    .stats { padding: 8px 12px; gap: 14px; }
+    .stat-value { font-size: 16px; }
+    .cat-label { font-size: 8px; }
+    .company-panel { width: 280px; top: 220px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="page">
+  <canvas id="graph-canvas"></canvas>
+  <div class="vignette"></div>
+  <div id="category-labels"></div>
+
+  <div class="loading-overlay" id="loading">
+    <div class="loading-text">Loading Patent Graph</div>
+    <div class="loading-bar"></div>
+  </div>
+
+  <div class="error-overlay" id="error-overlay">
+    <strong>ERROR</strong>
+    <div id="error-msg"></div>
+  </div>
+
+  <nav class="nav">
+    <a href="index.html" class="nav-logo">
+      <img src="logo-primary-dark.svg" alt="AIPatentInsight">
+    </a>
+    <ul class="nav-menu">
+      <li><a href="insights.html" class="active">Insights</a></li>
+      <li><a href="#">Topics</a></li>
+      <li><a href="#">Trends</a></li>
+    </ul>
+    <a href="#" class="nav-cta">Launch →</a>
+  </nav>
+
+  <div class="controls">
+    <div class="control-group">
+      <span class="control-label">Time Range</span>
+      <select class="control-select" id="month-select">
+        <option value="all">All (累積)</option>
+      </select>
+    </div>
+    <div class="control-group">
+      <span class="control-label">Mode</span>
+      <div class="filter-pills" id="mode-pills">
+        <button class="filter-pill active" data-mode="cumulative">Cumulative</button>
+        <button class="filter-pill" data-mode="monthly">Monthly</button>
+      </div>
+    </div>
+    <div class="control-group">
+      <span class="control-label">Branch</span>
+      <div class="filter-pills" id="branch-pills">
+        <button class="filter-pill active" data-branch="all">All</button>
+        <button class="filter-pill" data-branch="main">Main</button>
+        <button class="filter-pill" data-branch="branch">Branch</button>
+      </div>
+    </div>
+    <div class="control-group">
+      <span class="control-label">Layout</span>
+      <div class="filter-pills" id="layout-pills">
+        <button class="filter-pill active" data-layout="grid">Grid</button>
+        <button class="filter-pill" data-layout="force">Force</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="page-info">
+    <h1 class="page-info-title">INSIGHTS</h1>
+    <div class="page-info-meta">公司專利圖譜 · Company Patent Map</div>
+  </div>
+
+  <div class="legend" id="legend">
+    <div class="legend-title">Tech Categories · 點選聚焦</div>
+  </div>
+
+  <!-- 公司清單面板 -->
+  <div class="company-panel" id="company-panel">
+    <div class="company-panel-header">
+      <div class="company-panel-title">
+        <span>Companies</span>
+        <span class="count" id="cp-count">0</span>
+      </div>
+      <button class="company-panel-toggle" id="cp-toggle" title="收合/展開">‹</button>
+    </div>
+    <div class="company-search">
+      <input type="text" id="cp-search" placeholder="搜尋公司名稱..." autocomplete="off">
+    </div>
+    <div class="company-sort-tabs">
+      <button class="company-sort-tab active" data-sort="patents">By Patents</button>
+      <button class="company-sort-tab" data-sort="name">By Name</button>
+      <button class="company-sort-tab" data-sort="category">By Category</button>
+    </div>
+    <div class="company-list" id="cp-list"></div>
+  </div>
+
+  <div class="stats">
+    <div class="stat-cell">
+      <span class="stat-label">Companies</span>
+      <span class="stat-value" id="stat-companies">--</span>
+    </div>
+    <div class="stat-cell">
+      <span class="stat-label">Patents</span>
+      <span class="stat-value" id="stat-patents">--</span>
+    </div>
+    <div class="stat-cell">
+      <span class="stat-label">Period</span>
+      <span class="stat-value" id="stat-period" style="font-size: 14px;">--</span>
+    </div>
+  </div>
+
+  <div class="hover-tooltip" id="tooltip">
+    <span class="tip-cat" id="tip-cat"></span>
+    <div class="tip-name" id="tip-name"></div>
+    <div class="tip-meta" id="tip-meta"></div>
+  </div>
+</div>
+
+<!-- 公司詳情側邊面板(取代 Modal Layer 1) -->
+<div class="detail-panel" id="detail-panel">
+  <div class="detail-header">
+    <div style="flex:1; min-width:0;">
+      <h2 class="detail-title" id="m1-name">公司</h2>
+      <div class="detail-meta" id="m1-meta"></div>
+    </div>
+    <button class="detail-close" id="detail-close-btn">×</button>
+  </div>
+  <div class="detail-body">
+    <div class="section-label">// Overview</div>
+    <div class="info-grid">
+      <div class="info-cell">
+        <div class="info-label">Total Patents</div>
+        <div class="info-value" id="m1-total">0</div>
+      </div>
+      <div class="info-cell">
+        <div class="info-label">Main Category</div>
+        <div class="info-value" id="m1-cat" style="font-size:13px;">--</div>
+      </div>
+      <div class="info-cell">
+        <div class="info-label">Active Months</div>
+        <div class="info-value" id="m1-months">0</div>
+      </div>
+    </div>
+    <div class="section-label">// Patents (<span id="m1-pcount">0</span>)</div>
+    <div class="patent-list" id="m1-patents"></div>
+  </div>
+</div>
+
+<!-- Modal Layer 2 -->
+<div class="modal-backdrop" id="modal-2">
+  <div class="modal level-2">
+    <div class="modal-header">
+      <div style="flex:1; min-width:0;">
+        <h2 class="modal-title" id="m2-id">PATENT ID</h2>
+        <div class="patent-title-display" id="m2-title">標題</div>
+        <div class="modal-meta" id="m2-meta"></div>
+      </div>
+      <button class="modal-close" data-close="2">×</button>
+    </div>
+    <div class="modal-body">
+      <div class="section-label">// Abstract</div>
+      <div class="abstract-box" id="m2-abstract">無摘要</div>
+    </div>
+  </div>
+</div>
+
+<script type="importmap">
+{ "imports": { "three": "https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js" } }
+</script>
+
+<script type="module">
+  function showError(msg) {
+    const o = document.getElementById('error-overlay');
+    const m = document.getElementById('error-msg');
+    if (o && m) { m.textContent = msg; o.classList.add('show'); }
+    document.getElementById('loading')?.classList.add('hidden');
+    console.error('[Insights]', msg);
+  }
+  window.addEventListener('error', (e) => showError(e.message || 'Unknown error'));
+
+  async function loadThree() {
+    const cdns = [
+      'https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js',
+      'https://unpkg.com/three@0.170.0/build/three.module.js',
+      'https://esm.sh/three@0.170.0',
+    ];
+    for (const url of cdns) {
+      try { return await import(url); }
+      catch (e) { console.warn('CDN failed:', url); }
+    }
+    throw new Error('All CDN failed');
+  }
+
+  let THREE;
+  try { THREE = await loadThree(); }
+  catch (err) { showError('Failed to load Three.js'); throw err; }
+
+  // ========== 載入資料 ==========
+  let dataset;
+  try {
+    const res = await fetch('data/insights-2025-02-15.json');
+    if (!res.ok) throw new Error('HTTP ' + res.status);
+    dataset = await res.json();
+  } catch (err) {
+    showError('資料載入失敗: ' + err.message);
+    throw err;
+  }
+  console.log('[Insights]', dataset.totalCompanies, 'companies,', dataset.totalPatents, 'patents');
+
+  const patentMap = {};
+  dataset.patents.forEach(p => { patentMap[p.id] = p; });
+
+  // 17 個 category 配色 — 用黃金角分布(137.5°)讓相鄰色差最大,色相全環展開
+  const categories = dataset.categories;
+  const categoryColors = {};
+  categories.forEach((cat, i) => {
+    // 黃金角分布:每個 category 的色相相差 137.5°,避免相鄰色相近
+    const hue = (i * 137.5) % 360;
+    // 飽和度與明度固定高值,確保每個顏色都飽滿、明亮
+    const sat = 78;
+    const lig = 66;
+    const c = new THREE.Color(`hsl(${hue}, ${sat}%, ${lig}%)`);
+    categoryColors[cat] = { color: c, hex: '#' + c.getHexString().toUpperCase() };
+  });
+
+  const catCounts = {};
+  dataset.companies.forEach(c => { catCounts[c.mainCategory] = (catCounts[c.mainCategory] || 0) + 1; });
+  const sortedCategories = [...categories].sort((a, b) => (catCounts[b] || 0) - (catCounts[a] || 0));
+
+  // ========== Three.js 場景 ==========
+  const canvas = document.getElementById('graph-canvas');
+  const scene = new THREE.Scene();
+  scene.fog = new THREE.FogExp2(0x02040C, 0.006);
+
+  const camera = new THREE.PerspectiveCamera(55, window.innerWidth / window.innerHeight, 0.1, 400);
+  camera.position.set(0, 0, 80);
+
+  const renderer = new THREE.WebGLRenderer({
+    canvas, antialias: true, alpha: true, powerPreference: 'high-performance'
+  });
+  renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+  renderer.setSize(window.innerWidth, window.innerHeight);
+  renderer.setClearColor(0x000000, 0);
+
+  // 背景雜訊
+  const NOISE_COUNT = 600;
+  const noisePos = new Float32Array(NOISE_COUNT * 3);
+  const noiseSize = new Float32Array(NOISE_COUNT);
+  for (let i = 0; i < NOISE_COUNT; i++) {
+    noisePos[i*3]     = (Math.random() - 0.5) * 160;
+    noisePos[i*3 + 1] = (Math.random() - 0.5) * 80;
+    noisePos[i*3 + 2] = (Math.random() - 0.5) * 50 - 10;
+    noiseSize[i] = Math.random() < 0.85 ? 0.3 + Math.random() * 0.4 : 0.7 + Math.random() * 0.4;
+  }
+  const noiseGeom = new THREE.BufferGeometry();
+  noiseGeom.setAttribute('position', new THREE.BufferAttribute(noisePos, 3));
+  noiseGeom.setAttribute('size', new THREE.BufferAttribute(noiseSize, 1));
+  const noiseMat = new THREE.ShaderMaterial({
+    uniforms: { pixelRatio: { value: renderer.getPixelRatio() } },
+    vertexShader: `
+      attribute float size;
+      varying float vDepth;
+      uniform float pixelRatio;
+      void main() {
+        vec4 mv = modelViewMatrix * vec4(position, 1.0);
+        vDepth = -mv.z;
+        gl_PointSize = size * pixelRatio * (240.0 / -mv.z);
+        gl_Position = projectionMatrix * mv;
+      }
+    `,
+    fragmentShader: `
+      varying float vDepth;
+      void main() {
+        vec2 c = gl_PointCoord - vec2(0.5);
+        float d = length(c);
+        if (d > 0.5) discard;
+        float alpha = smoothstep(0.5, 0.1, d) * 0.18;
+        float fade = smoothstep(180.0, 30.0, vDepth);
+        gl_FragColor = vec4(0.45, 0.58, 0.78, alpha * fade);
+      }
+    `,
+    transparent: true, depthWrite: false, blending: THREE.NormalBlending
+  });
+  scene.add(new THREE.Points(noiseGeom, noiseMat));
+
+  // ========== 佈局演算法 ==========
+  // 兩種模式:
+  //  A. Grid     — 同 category 內排成整齊矩陣
+  //  B. Force    — 從 grid 起始,跑物理 simulation(斥力 + 向心力)
+
+  // 整體版面參數
+  const TOTAL_WIDTH = 130;
+  const totalCompanies = dataset.companies.length;
+
+  // 計算每個 category 的 anchor(中心)位置
+  const categoryAnchors = {};
+  let currentX = -TOTAL_WIDTH / 2;
+  sortedCategories.forEach((cat, i) => {
+    const count = catCounts[cat] || 0;
+    const ratio = count / totalCompanies;
+    const w = Math.max(8, ratio * TOTAL_WIDTH);
+    categoryAnchors[cat] = { x: currentX + w / 2, width: w, index: i };
+    currentX += w;
+  });
+
+  // === 初始隨機散落佈局(供 force 模式起始,或單獨使用) ===
+  function computeRandomLayout(companies) {
+    // 按 category 分組,讓相同 category 的初始位置稍微靠近(但仍隨機)
+    const byCat = {};
+    sortedCategories.forEach(c => { byCat[c] = []; });
+    companies.forEach(c => {
+      if (byCat[c.mainCategory]) byCat[c.mainCategory].push(c);
+    });
+    Object.values(byCat).forEach(arr => arr.sort((a, b) => b.displayPatents - a.displayPatents));
+
+    const positions = [];
+    const orderedCompanies = [];
+
+    // 整個圖譜的有效半徑(隨公司數縮放)
+    const totalN = companies.length;
+    const radius = Math.max(20, Math.sqrt(totalN) * 1.6);
+
+    // 給每個 category 一個「種子角度」,讓同 cat 的公司初始位置在某個角度區域內
+    // 但每個公司在自己 cat 的範圍內仍是隨機散落
+    sortedCategories.forEach((cat, ci) => {
+      const list = byCat[cat];
+      if (list.length === 0) return;
+      // 種子角度均勻分布
+      const seedAngle = (ci / sortedCategories.length) * Math.PI * 2;
+
+      list.forEach((company, i) => {
+        const seed = hashString(company.name + i);
+        // 在種子角度附近 ±60 度內隨機(讓 cat 內部分散)
+        const angleSpread = (Math.PI / 3); // 60度
+        const angle = seedAngle + ((seed % 1000) / 1000 - 0.5) * angleSpread * 2;
+        // 距中心的距離隨機(0 ~ radius)
+        const r = Math.sqrt((seed / 1000) % 1000 / 1000) * radius;
+        const x = Math.cos(angle) * r;
+        const y = Math.sin(angle) * r * 0.65; // y 軸壓扁,讓圖譜偏橫向
+        // 加大 z 軸分散讓 3D 立體感更明顯
+        const z = (((seed / 100) % 100) / 100 - 0.5) * 16;
+        positions.push({ x, y, z });
+        orderedCompanies.push(company);
+      });
+    });
+
+    return { positions, orderedCompanies };
+  }
+
+  // Grid 模式現在改成「隨機散落」(不再是矩陣)
+  const computeGridLayout = computeRandomLayout;
+
+  // === Force-directed Layout(知識圖譜風格) ===
+  // 從隨機散落起步,跑物理 simulation:
+  //  1. 同 category 公司互相吸引(動態質心,不是固定 anchor)
+  //  2. 所有公司之間有近距離斥力
+  //  3. 整體向中央(0,0)的微弱回拉,避免漂走
+  function computeForceLayout(companies, iterations = 120) {
+    const { positions, orderedCompanies } = computeRandomLayout(companies);
+    if (positions.length === 0) return { positions, orderedCompanies };
+
+    const N = positions.length;
+    const vx = new Float32Array(N);
+    const vy = new Float32Array(N);
+
+    // 為每家公司記錄它的 category
+    const cats = orderedCompanies.map(c => c.mainCategory);
+    const sizes = orderedCompanies.map(c => Math.min(8, 2.5 + Math.sqrt(c.displayPatents) * 0.7));
+
+    if (N > 800) {
+      console.warn('Skipping force simulation for large N=', N);
+      return { positions, orderedCompanies };
+    }
+
+    const REPEL = 1.5;        // 斥力強度
+    const REPEL_DIST = 5.0;   // 斥力作用距離
+    const CLUSTER = 0.025;    // 同 category 互相吸引強度
+    const CENTER = 0.008;     // 整體向中心拉力(防止漂走)
+    const DAMPING = 0.78;
+
+    for (let step = 0; step < iterations; step++) {
+      const fx = new Float32Array(N);
+      const fy = new Float32Array(N);
+
+      // 計算每個 category 的質心(動態,每步都重算)
+      const catCentroid = {};
+      const catCount = {};
+      for (let i = 0; i < N; i++) {
+        const c = cats[i];
+        if (!catCentroid[c]) { catCentroid[c] = { x: 0, y: 0 }; catCount[c] = 0; }
+        catCentroid[c].x += positions[i].x;
+        catCentroid[c].y += positions[i].y;
+        catCount[c]++;
+      }
+      Object.keys(catCentroid).forEach(c => {
+        catCentroid[c].x /= catCount[c];
+        catCentroid[c].y /= catCount[c];
+      });
+
+      // 兩兩斥力(O(N²) 但 N=719 在現代 CPU 還夠)
+      for (let i = 0; i < N; i++) {
+        for (let j = i + 1; j < N; j++) {
+          const dx = positions[j].x - positions[i].x;
+          const dy = positions[j].y - positions[i].y;
+          const dist2 = dx * dx + dy * dy + 0.001;
+          const minDist = (sizes[i] + sizes[j]) * 0.6 + 0.5;
+          if (dist2 < REPEL_DIST * REPEL_DIST) {
+            const dist = Math.sqrt(dist2);
+            const force = REPEL * (REPEL_DIST - dist) / Math.max(0.5, dist);
+            if (force > 0) {
+              const fxi = (dx / dist) * force;
+              const fyi = (dy / dist) * force;
+              fx[i] -= fxi;  fy[i] -= fyi;
+              fx[j] += fxi;  fy[j] += fyi;
+            }
+          }
+        }
+      }
+
+      // 拉向自己 category 的質心(群聚力)
+      for (let i = 0; i < N; i++) {
+        const cn = catCentroid[cats[i]];
+        const dx = cn.x - positions[i].x;
+        const dy = cn.y - positions[i].y;
+        fx[i] += dx * CLUSTER;
+        fy[i] += dy * CLUSTER;
+      }
+
+      // 整體向(0,0)輕微回拉
+      for (let i = 0; i < N; i++) {
+        fx[i] += -positions[i].x * CENTER;
+        fy[i] += -positions[i].y * CENTER;
+      }
+
+      // 套用速度 + damping
+      for (let i = 0; i < N; i++) {
+        vx[i] = (vx[i] + fx[i]) * DAMPING;
+        vy[i] = (vy[i] + fy[i]) * DAMPING;
+        positions[i].x += vx[i];
+        positions[i].y += vy[i];
+        // 寬鬆的整體邊界(防止意外飛走)
+        const maxR = 60;
+        const r2 = positions[i].x * positions[i].x + positions[i].y * positions[i].y;
+        if (r2 > maxR * maxR) {
+          const r = Math.sqrt(r2);
+          positions[i].x = positions[i].x / r * maxR;
+          positions[i].y = positions[i].y / r * maxR;
+        }
+      }
+    }
+
+    return { positions, orderedCompanies };
+  }
+
+  // ========== 公司圖譜 ==========
+  let companyPoints = null;
+  let visibleCompanies = [];
+  let companySizes;
+  let companyOriginalSizes;
+  let currentLayout = 'grid';
+
+  function buildCompanyGraph(companies) {
+    if (companyPoints) {
+      scene.remove(companyPoints);
+      companyPoints.geometry.dispose();
+      companyPoints.material.dispose();
+    }
+    if (companies.length === 0) return;
+
+    const layoutResult = currentLayout === 'force'
+      ? computeForceLayout(companies)
+      : computeGridLayout(companies);
+
+    visibleCompanies = layoutResult.orderedCompanies;
+    const N = visibleCompanies.length;
+
+    const positions = new Float32Array(N * 3);
+    const colors = new Float32Array(N * 3);
+    companySizes = new Float32Array(N);
+    companyOriginalSizes = new Float32Array(N);
+
+    visibleCompanies.forEach((company, i) => {
+      const p = layoutResult.positions[i];
+      positions[i*3] = p.x;
+      positions[i*3 + 1] = p.y;
+      positions[i*3 + 2] = p.z;
+
+      const col = categoryColors[company.mainCategory]?.color || new THREE.Color(0xCCCCCC);
+      colors[i*3] = col.r;
+      colors[i*3 + 1] = col.g;
+      colors[i*3 + 2] = col.b;
+
+      const s = Math.min(24, 5 + Math.sqrt(company.displayPatents) * 1.7);
+      companyOriginalSizes[i] = s;
+      companySizes[i] = s;
+    });
+
+    const geom = new THREE.BufferGeometry();
+    geom.setAttribute('position', new THREE.BufferAttribute(positions, 3));
+    geom.setAttribute('color', new THREE.BufferAttribute(colors, 3));
+    geom.setAttribute('size', new THREE.BufferAttribute(companySizes, 1));
+
+    // 強化亮度的 shader: 中心用近白核心 + 強光暈,並支援聚焦變暗
+    const mat = new THREE.ShaderMaterial({
+      uniforms: {
+        pixelRatio: { value: renderer.getPixelRatio() },
+        focusIdx: { value: -1.0 },  // -1 = 無聚焦,所有點正常亮度
+      },
+      vertexShader: `
+        attribute float size;
+        varying vec3 vColor;
+        varying float vDepth;
+        varying float vDim;
+        uniform float pixelRatio;
+        uniform float focusIdx;
+        void main() {
+          vColor = color;
+          // 計算 dim 因子:focusIdx >= 0 且非當前點時,變暗
+          float vid = float(gl_VertexID);
+          if (focusIdx >= 0.0 && abs(vid - focusIdx) > 0.5) {
+            vDim = 0.18;  // 非聚焦點降到 18%
+          } else {
+            vDim = 1.0;
+          }
+          vec4 mv = modelViewMatrix * vec4(position, 1.0);
+          vDepth = -mv.z;
+          gl_PointSize = size * pixelRatio * (350.0 / -mv.z);
+          gl_Position = projectionMatrix * mv;
+        }
+      `,
+      fragmentShader: `
+        varying vec3 vColor;
+        varying float vDepth;
+        varying float vDim;
+        void main() {
+          vec2 c = gl_PointCoord - vec2(0.5);
+          float d = length(c);
+          if (d > 0.5) discard;
+          float core  = smoothstep(0.18, 0.0, d);
+          float mid   = smoothstep(0.5, 0.05, d);
+          float halo  = smoothstep(0.5, 0.30, d);
+          float alpha = core * 1.0 + mid * 0.7 + halo * 0.35;
+          alpha = min(alpha, 1.0);
+          float fade = smoothstep(220.0, 15.0, vDepth);
+          alpha *= fade * vDim;
+          vec3 col = mix(vColor, vec3(1.0), core * 0.85);
+          gl_FragColor = vec4(col, alpha);
+        }
+      `,
+      transparent: true,
+      depthWrite: false,
+      blending: THREE.NormalBlending,
+      vertexColors: true,
+    });
+
+    companyPoints = new THREE.Points(geom, mat);
+    scene.add(companyPoints);
+
+    // === 焦點連線(預設不顯示,點擊公司時顯示)===
+    if (focusLines) {
+      scene.remove(focusLines);
+      focusLines.geometry.dispose();
+      focusLines.material.dispose();
+      focusLines = null;
+    }
+  }
+
+  let focusLines = null;
+  function showFocusLines(centerIdx) {
+    // 先清掉舊的
+    if (focusLines) {
+      scene.remove(focusLines);
+      focusLines.geometry.dispose();
+      focusLines.material.dispose();
+      focusLines = null;
+    }
+    if (centerIdx < 0 || !companyPoints) return;
+
+    const positions = companyPoints.geometry.attributes.position.array;
+    const cx = positions[centerIdx*3];
+    const cy = positions[centerIdx*3 + 1];
+    const cz = positions[centerIdx*3 + 2];
+    const centerCat = visibleCompanies[centerIdx].mainCategory;
+
+    // 找出同 category 的所有公司,按距離排序,取最近 6 家
+    const neighbors = [];
+    visibleCompanies.forEach((c, i) => {
+      if (i === centerIdx) return;
+      if (c.mainCategory !== centerCat) return;
+      const dx = positions[i*3] - cx;
+      const dy = positions[i*3 + 1] - cy;
+      const dz = positions[i*3 + 2] - cz;
+      const d2 = dx*dx + dy*dy + dz*dz;
+      neighbors.push({ idx: i, dist: Math.sqrt(d2) });
+    });
+    neighbors.sort((a, b) => a.dist - b.dist);
+    const topN = neighbors.slice(0, 6);
+
+    if (topN.length === 0) return;
+
+    const linePos = new Float32Array(topN.length * 6);
+    topN.forEach((n, i) => {
+      linePos[i*6]     = cx;
+      linePos[i*6 + 1] = cy;
+      linePos[i*6 + 2] = cz;
+      linePos[i*6 + 3] = positions[n.idx*3];
+      linePos[i*6 + 4] = positions[n.idx*3 + 1];
+      linePos[i*6 + 5] = positions[n.idx*3 + 2];
+    });
+
+    const lg = new THREE.BufferGeometry();
+    lg.setAttribute('position', new THREE.BufferAttribute(linePos, 3));
+    const catColor = categoryColors[centerCat]?.color || new THREE.Color(0xCCCCCC);
+    const lm = new THREE.LineBasicMaterial({
+      color: catColor,
+      transparent: true,
+      opacity: 0.45,
+      depthWrite: false,
+    });
+    focusLines = new THREE.LineSegments(lg, lm);
+    scene.add(focusLines);
+  }
+
+  function hashString(str) {
+    let h = 0;
+    for (let i = 0; i < str.length; i++) {
+      h = ((h << 5) - h) + str.charCodeAt(i);
+      h |= 0;
+    }
+    return Math.abs(h);
+  }
+
+  // ========== Category 標籤已移除(不再有固定分區)==========
+  // 改由 Legend 提供 category 識別 + 點擊聚焦功能
+  function updateCategoryLabels() { /* no-op */ }
+
+  // ========== Legend ==========
+  const legendEl = document.getElementById('legend');
+  let legendActiveCategory = null;
+  sortedCategories.forEach(cat => {
+    const item = document.createElement('div');
+    item.className = 'legend-item';
+    item.dataset.category = cat;
+    const hex = categoryColors[cat].hex;
+    item.innerHTML = `
+      <span class="legend-dot" style="background:${hex}; color:${hex};"></span>
+      <span>${cat}</span>
+      <span class="legend-count">${catCounts[cat] || 0}</span>
+    `;
+    item.addEventListener('click', () => {
+      legendActiveCategory = (legendActiveCategory === cat) ? null : cat;
+      document.querySelectorAll('.legend-item').forEach(li => {
+        li.classList.toggle('active', li.dataset.category === legendActiveCategory);
+        li.classList.toggle('dim', legendActiveCategory && li.dataset.category !== legendActiveCategory);
+      });
+      refresh();
+      // 聚焦到該 category 的質心
+      if (legendActiveCategory && companyPoints) {
+        // 計算 visibleCompanies 中該 category 的質心
+        const positions = companyPoints.geometry.attributes.position.array;
+        let sumX = 0, sumY = 0, count = 0;
+        visibleCompanies.forEach((c, i) => {
+          if (c.mainCategory === legendActiveCategory) {
+            sumX += positions[i*3];
+            sumY += positions[i*3 + 1];
+            count++;
+          }
+        });
+        if (count > 0) {
+          cameraTarget.x = sumX / count;
+          cameraTarget.y = sumY / count;
+          cameraTarget.distance = 38;
+        }
+      } else {
+        cameraTarget.x = 0;
+        cameraTarget.y = 0;
+        cameraTarget.distance = 80;
+      }
+    });
+    legendEl.appendChild(item);
+  });
+
+  // ========== 控制 ==========
+  const monthSelect = document.getElementById('month-select');
+  dataset.months.forEach(m => {
+    const opt = document.createElement('option');
+    opt.value = m; opt.textContent = m.replace('-', '.');
+    monthSelect.appendChild(opt);
+  });
+
+  let currentMonth = 'all';
+  let currentMode = 'cumulative';
+  let currentBranch = 'all';
+
+  monthSelect.addEventListener('change', () => { currentMonth = monthSelect.value; refresh(); });
+  document.querySelectorAll('#mode-pills .filter-pill').forEach(pill => {
+    pill.addEventListener('click', () => {
+      document.querySelectorAll('#mode-pills .filter-pill').forEach(p => p.classList.remove('active'));
+      pill.classList.add('active');
+      currentMode = pill.dataset.mode;
+      refresh();
+    });
+  });
+  document.querySelectorAll('#branch-pills .filter-pill').forEach(pill => {
+    pill.addEventListener('click', () => {
+      document.querySelectorAll('#branch-pills .filter-pill').forEach(p => p.classList.remove('active'));
+      pill.classList.add('active');
+      currentBranch = pill.dataset.branch;
+      refresh();
+    });
+  });
+  document.querySelectorAll('#layout-pills .filter-pill').forEach(pill => {
+    pill.addEventListener('click', () => {
+      document.querySelectorAll('#layout-pills .filter-pill').forEach(p => p.classList.remove('active'));
+      pill.classList.add('active');
+      currentLayout = pill.dataset.layout;
+      refresh();
+    });
+  });
+
+  function refresh() {
+    let filteredPatents = dataset.patents;
+    if (currentMonth !== 'all') {
+      if (currentMode === 'monthly') filteredPatents = filteredPatents.filter(p => p.month === currentMonth);
+      else filteredPatents = filteredPatents.filter(p => p.month <= currentMonth);
+    }
+    if (currentBranch !== 'all') filteredPatents = filteredPatents.filter(p => p.branch === currentBranch);
+
+    const companyMap = {};
+    filteredPatents.forEach(p => {
+      if (!companyMap[p.company]) {
+        const orig = dataset.companies.find(c => c.name === p.company);
+        companyMap[p.company] = {
+          name: p.company, displayPatents: 0, patents: [],
+          mainCategory: orig?.mainCategory,
+          industry: orig?.industry, stockCode: orig?.stockCode,
+          isPublic: orig?.isPublic, totalPatents: orig?.totalPatents,
+        };
+      }
+      companyMap[p.company].displayPatents++;
+      companyMap[p.company].patents.push(p);
+    });
+
+    let visibleArr = Object.values(companyMap);
+    if (legendActiveCategory) visibleArr = visibleArr.filter(c => c.mainCategory === legendActiveCategory);
+
+    buildCompanyGraph(visibleArr);
+    // 重建圖譜 = 之前的 focus index 已失效,清掉清單高亮
+    cpHighlightedName = null;
+    renderCompanyList();
+
+    document.getElementById('stat-companies').textContent = visibleArr.length;
+    document.getElementById('stat-patents').textContent = filteredPatents.length;
+    let periodText = 'All';
+    if (currentMonth !== 'all') {
+      periodText = (currentMode === 'monthly' ? '' : '≤ ') + currentMonth.replace('-', '.');
+    }
+    document.getElementById('stat-period').textContent = periodText;
+  }
+
+  // ========== 公司清單面板 ==========
+  let cpSearchQuery = '';
+  let cpSortBy = 'patents';
+  let cpHighlightedName = null;
+
+  const cpListEl = document.getElementById('cp-list');
+  const cpCountEl = document.getElementById('cp-count');
+  const cpSearchInput = document.getElementById('cp-search');
+  const cpPanel = document.getElementById('company-panel');
+  const cpToggle = document.getElementById('cp-toggle');
+
+  // Toggle 收合/展開
+  cpToggle.addEventListener('click', () => {
+    const collapsed = cpPanel.classList.toggle('collapsed');
+    cpToggle.textContent = collapsed ? '›' : '‹';
+  });
+
+  // Search
+  cpSearchInput.addEventListener('input', (e) => {
+    cpSearchQuery = e.target.value.trim().toLowerCase();
+    renderCompanyList();
+  });
+
+  // Sort tabs
+  document.querySelectorAll('.company-sort-tab').forEach(tab => {
+    tab.addEventListener('click', () => {
+      document.querySelectorAll('.company-sort-tab').forEach(t => t.classList.remove('active'));
+      tab.classList.add('active');
+      cpSortBy = tab.dataset.sort;
+      renderCompanyList();
+    });
+  });
+
+  function renderCompanyList() {
+    if (!visibleCompanies || visibleCompanies.length === 0) {
+      cpListEl.innerHTML = '<div class="company-list-empty">No Companies</div>';
+      cpCountEl.textContent = '0';
+      return;
+    }
+
+    // 篩選(搜尋字串)
+    let list = visibleCompanies.slice();
+    if (cpSearchQuery) {
+      list = list.filter(c => c.name.toLowerCase().includes(cpSearchQuery));
+    }
+
+    // 排序
+    if (cpSortBy === 'patents') {
+      list.sort((a, b) => b.displayPatents - a.displayPatents);
+    } else if (cpSortBy === 'name') {
+      list.sort((a, b) => a.name.localeCompare(b.name, 'zh-Hant'));
+    } else if (cpSortBy === 'category') {
+      list.sort((a, b) => {
+        const ca = a.mainCategory || '';
+        const cb = b.mainCategory || '';
+        if (ca !== cb) return ca.localeCompare(cb, 'zh-Hant');
+        return b.displayPatents - a.displayPatents;
+      });
+    }
+
+    cpCountEl.textContent = list.length;
+
+    // 為了效能,大量公司時限制顯示前 200 筆(搜尋過濾後通常會很短)
+    const displayList = list.slice(0, 300);
+
+    // 用 fragment 一次寫入避免重排
+    const frag = document.createDocumentFragment();
+    displayList.forEach(c => {
+      const item = document.createElement('div');
+      item.className = 'company-item';
+      if (cpHighlightedName === c.name) item.classList.add('highlighted');
+
+      const hex = categoryColors[c.mainCategory]?.hex || '#999';
+      const stockTag = c.stockCode ? ` · ${c.stockCode}` : '';
+      const publicTag = c.isPublic ? ' · 上市' : '';
+
+      item.innerHTML = `
+        <span class="ci-dot" style="background:${hex}; color:${hex};"></span>
+        <div class="ci-info">
+          <div class="ci-name">${c.name}</div>
+          <div class="ci-meta">${c.mainCategory || '--'}${publicTag}${stockTag}</div>
+        </div>
+        <span class="ci-count">${c.displayPatents}</span>
+      `;
+      item.addEventListener('click', () => {
+        // 在 visibleCompanies 中找出 idx,定位 3D 點位置
+        const idx = visibleCompanies.findIndex(vc => vc.name === c.name);
+        if (idx >= 0 && companyPoints) {
+          const pos = companyPoints.geometry.attributes.position.array;
+          // 鏡頭聚焦到該點,但因右側面板會遮住,把鏡頭往左偏(讓點顯示在畫面中偏左位置)
+          cameraTarget.x = pos[idx*3] + 8;  // 往右偏一點 = 視野中心右移 = 點看起來在偏左
+          cameraTarget.y = pos[idx*3 + 1];
+          cameraTarget.distance = 28;
+          // 高亮
+          cpHighlightedName = c.name;
+          // 短暫放大該點 + 設定 shader 聚焦索引(其他點變暗)
+          if (companyOriginalSizes && companySizes) {
+            for (let i = 0; i < companySizes.length; i++) {
+              companySizes[i] = companyOriginalSizes[i];
+            }
+            companySizes[idx] = companyOriginalSizes[idx] * 2.2;
+            companyPoints.geometry.attributes.size.needsUpdate = true;
+          }
+          // 設定 focus uniform → 觸發其他點變暗
+          companyPoints.material.uniforms.focusIdx.value = idx;
+          showFocusLines(idx);
+          // 開啟卡片
+          openCompanyModal(c);
+          renderCompanyList();
+        }
+      });
+      frag.appendChild(item);
+    });
+
+    cpListEl.innerHTML = '';
+    cpListEl.appendChild(frag);
+
+    if (list.length > displayList.length) {
+      const more = document.createElement('div');
+      more.className = 'company-list-empty';
+      more.textContent = `+ ${list.length - displayList.length} more · 請搜尋縮小範圍`;
+      cpListEl.appendChild(more);
+    }
+  }
+
+  // ========== Hover & Click ==========
+  const raycaster = new THREE.Raycaster();
+  raycaster.params.Points.threshold = 1.2;
+  const mouseNDC = new THREE.Vector2();
+  const tooltipEl = document.getElementById('tooltip');
+  let hoveredIdx = -1;
+
+  function onPointerMove(e) {
+    const rect = canvas.getBoundingClientRect();
+    mouseNDC.x = ((e.clientX - rect.left) / rect.width) * 2 - 1;
+    mouseNDC.y = -((e.clientY - rect.top) / rect.height) * 2 + 1;
+    if (isDragging) return;
+
+    if (!companyPoints) return;
+    raycaster.setFromCamera(mouseNDC, camera);
+    const hits = raycaster.intersectObject(companyPoints);
+    if (hits.length > 0) {
+      const idx = hits[0].index;
+      if (idx !== hoveredIdx) {
+        if (hoveredIdx >= 0) companySizes[hoveredIdx] = companyOriginalSizes[hoveredIdx];
+        hoveredIdx = idx;
+        companySizes[idx] = companyOriginalSizes[idx] * 1.7;
+        companyPoints.geometry.attributes.size.needsUpdate = true;
+      }
+      const c = visibleCompanies[idx];
+      document.getElementById('tip-cat').textContent = c.mainCategory || '--';
+      document.getElementById('tip-name').textContent = c.name;
+      document.getElementById('tip-meta').textContent =
+        `${c.displayPatents} 筆專利${c.isPublic ? ' · 上市' : ''}${c.stockCode ? ' · ' + c.stockCode : ''}`;
+      tooltipEl.style.left = (e.clientX + 14) + 'px';
+      tooltipEl.style.top = (e.clientY + 14) + 'px';
+      tooltipEl.classList.add('visible');
+      canvas.style.cursor = 'pointer';
+    } else {
+      if (hoveredIdx >= 0) {
+        companySizes[hoveredIdx] = companyOriginalSizes[hoveredIdx];
+        companyPoints.geometry.attributes.size.needsUpdate = true;
+        hoveredIdx = -1;
+      }
+      tooltipEl.classList.remove('visible');
+      canvas.style.cursor = isDragging ? 'grabbing' : 'grab';
+    }
+  }
+
+  function onClick(e) {
+    if (didDrag) return;
+    if (!companyPoints) return;
+    const rect = canvas.getBoundingClientRect();
+    mouseNDC.x = ((e.clientX - rect.left) / rect.width) * 2 - 1;
+    mouseNDC.y = -((e.clientY - rect.top) / rect.height) * 2 + 1;
+    raycaster.setFromCamera(mouseNDC, camera);
+    const hits = raycaster.intersectObject(companyPoints);
+    if (hits.length > 0) {
+      const idx = hits[0].index;
+      const c = visibleCompanies[idx];
+      // 設定 shader 聚焦索引(其他點變暗)
+      companyPoints.material.uniforms.focusIdx.value = idx;
+      showFocusLines(idx);
+      // 在清單中也標示為 highlighted
+      cpHighlightedName = c.name;
+      renderCompanyList();
+      openCompanyModal(c);
+    }
+  }
+
+  canvas.addEventListener('mousemove', onPointerMove);
+  canvas.addEventListener('click', onClick);
+
+  // Modal
+  function openCompanyModal(company) {
+    document.getElementById('m1-name').textContent = company.name;
+    const meta = document.getElementById('m1-meta');
+    meta.innerHTML = '';
+    [
+      { cls: '', text: company.mainCategory },
+      company.industry ? { cls: 'industry', text: company.industry } : null,
+      company.stockCode ? { cls: 'stock', text: company.stockCode } : null,
+      company.isPublic ? { cls: 'public', text: 'PUBLIC' } : null,
+    ].filter(Boolean).forEach(t => {
+      const span = document.createElement('span');
+      span.className = 'meta-tag ' + t.cls;
+      span.textContent = t.text;
+      meta.appendChild(span);
+    });
+    document.getElementById('m1-total').textContent = company.displayPatents;
+    document.getElementById('m1-cat').textContent = company.mainCategory || '--';
+    const monthsSet = new Set(company.patents.map(p => p.month));
+    document.getElementById('m1-months').textContent = monthsSet.size;
+    const list = document.getElementById('m1-patents');
+    list.innerHTML = '';
+    document.getElementById('m1-pcount').textContent = company.patents.length;
+    company.patents.forEach(p => {
+      const row = document.createElement('div');
+      row.className = 'patent-row';
+      row.innerHTML = `
+        <span class="patent-id">${p.id}</span>
+        <span class="patent-title">${p.title || '(無標題)'}</span>
+        <span class="patent-date">${p.date}</span>
+        <span class="patent-arrow">→</span>
+      `;
+      row.addEventListener('click', () => openPatentModal(p));
+      list.appendChild(row);
+    });
+    // 開啟側邊面板
+    document.getElementById('detail-panel').classList.add('open');
+    document.body.classList.add('detail-open');
+  }
+
+  function openPatentModal(patent) {
+    document.getElementById('m2-id').textContent = patent.id;
+    document.getElementById('m2-title').textContent = patent.title || '(無標題)';
+    const meta = document.getElementById('m2-meta');
+    meta.innerHTML = '';
+    [
+      { cls: '', text: patent.category },
+      { cls: '', text: patent.date },
+      patent.pr !== null ? { cls: '', text: 'PR ' + patent.pr } : null,
+    ].filter(Boolean).forEach(t => {
+      const span = document.createElement('span');
+      span.className = 'meta-tag ' + t.cls;
+      span.textContent = t.text;
+      meta.appendChild(span);
+    });
+    document.getElementById('m2-abstract').textContent = patent.abstract || '此專利尚無摘要資料。';
+    document.getElementById('modal-2').classList.add('show');
+  }
+
+  // 清除聚焦狀態(所有點恢復原本亮度)
+  function clearFocus() {
+    if (companyPoints) {
+      companyPoints.material.uniforms.focusIdx.value = -1.0;
+      if (companyOriginalSizes && companySizes) {
+        for (let i = 0; i < companySizes.length; i++) {
+          companySizes[i] = companyOriginalSizes[i];
+        }
+        companyPoints.geometry.attributes.size.needsUpdate = true;
+      }
+    }
+    // 清掉連線
+    if (focusLines) {
+      scene.remove(focusLines);
+      focusLines.geometry.dispose();
+      focusLines.material.dispose();
+      focusLines = null;
+    }
+    cpHighlightedName = null;
+    renderCompanyList();
+  }
+
+  // 關閉公司詳情面板
+  function closeDetailPanel() {
+    document.getElementById('detail-panel').classList.remove('open');
+    document.body.classList.remove('detail-open');
+    clearFocus();
+  }
+
+  // 詳情面板關閉鈕
+  document.getElementById('detail-close-btn').addEventListener('click', closeDetailPanel);
+
+  // 第二層 Modal(專利摘要)的關閉
+  document.querySelectorAll('.modal-close').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const lvl = btn.dataset.close;
+      document.getElementById('modal-' + lvl).classList.remove('show');
+    });
+  });
+  document.querySelectorAll('.modal-backdrop').forEach(bg => {
+    bg.addEventListener('click', (e) => {
+      if (e.target === bg) bg.classList.remove('show');
+    });
+  });
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      const m2 = document.getElementById('modal-2');
+      const dp = document.getElementById('detail-panel');
+      if (m2.classList.contains('show')) {
+        m2.classList.remove('show');
+      } else if (dp.classList.contains('open')) {
+        closeDetailPanel();
+      }
+    }
+  });
+
+  // 鏡頭
+  let isDragging = false;
+  let didDrag = false;
+  let dragStart = { x: 0, y: 0 };
+  let cameraState = { x: 0, y: 0, distance: 80, pitch: 0 };
+  const cameraTarget = { x: 0, y: 0, distance: 80, pitch: 0 };
+
+  canvas.addEventListener('mousedown', (e) => {
+    isDragging = true; didDrag = false;
+    dragStart.x = e.clientX; dragStart.y = e.clientY;
+  });
+  window.addEventListener('mouseup', () => { isDragging = false; });
+  canvas.addEventListener('mousemove', (e) => {
+    if (isDragging) {
+      const dx = e.clientX - dragStart.x;
+      const dy = e.clientY - dragStart.y;
+      if (Math.abs(dx) > 3 || Math.abs(dy) > 3) didDrag = true;
+      cameraTarget.x -= dx * 0.08;
+      cameraTarget.y += dy * 0.08;
+      dragStart.x = e.clientX; dragStart.y = e.clientY;
+    }
+  });
+  canvas.addEventListener('wheel', (e) => {
+    e.preventDefault();
+    cameraTarget.distance = Math.max(20, Math.min(160, cameraTarget.distance + e.deltaY * 0.06));
+  }, { passive: false });
+
+  window.addEventListener('resize', () => {
+    camera.aspect = window.innerWidth / window.innerHeight;
+    camera.updateProjectionMatrix();
+    renderer.setSize(window.innerWidth, window.innerHeight);
+  });
+
+  refresh();
+  setTimeout(() => { document.getElementById('loading').classList.add('hidden'); }, 600);
+
+  const clock = new THREE.Clock();
+  let lastTime = 0;
+  function animate() {
+    requestAnimationFrame(animate);
+    const time = clock.getElapsedTime();
+    const dt = Math.min(0.05, time - lastTime);
+    lastTime = time;
+
+    cameraState.x += (cameraTarget.x - cameraState.x) * 0.08;
+    cameraState.y += (cameraTarget.y - cameraState.y) * 0.08;
+    cameraState.distance += (cameraTarget.distance - cameraState.distance) * 0.08;
+
+    camera.position.x = cameraState.x;
+    camera.position.y = cameraState.y;
+    camera.position.z = cameraState.distance;
+    camera.lookAt(cameraState.x, cameraState.y, 0);
+
+    const npa = noiseGeom.attributes.position.array;
+    for (let i = 0; i < NOISE_COUNT; i++) {
+      npa[i*3]     += Math.sin(time * 0.3 + i) * 0.005;
+      npa[i*3 + 1] += Math.cos(time * 0.25 + i * 1.3) * 0.005;
+    }
+    noiseGeom.attributes.position.needsUpdate = true;
+
+    updateCategoryLabels();
+
+    renderer.render(scene, camera);
+  }
+  animate();
+</script>
+
+</body>
+</html>

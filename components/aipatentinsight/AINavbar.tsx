@@ -1,0 +1,33 @@
+import Image from "next/image";
+import Link from "next/link";
+
+export default function AINavbar() {
+  return (
+    <nav className="ai-nav">
+      <Link href="/" className="ai-logo">
+        <span className="ai-logo-mark">
+          <Image
+            src="/logo-icon.svg"
+            alt="AIPatentInsight logo"
+            width={34}
+            height={34}
+            priority
+            unoptimized
+          />
+        </span>
+        <span className="ai-logo-text">AIPatentInsight</span>
+      </Link>
+
+      <div className="ai-nav-menu">
+        <Link href="/" className="ai-nav-link">Home</Link>
+        <Link href="/patent-map" className="ai-nav-link">Patent Map</Link>
+        <Link href="/market-signals" className="ai-nav-link">Market Signals</Link>
+        <Link href="/industry-trends" className="ai-nav-link">Industry Trends</Link>
+      </div>
+
+      <Link href="/patent-map" className="ai-nav-cta">
+        Enter Map
+      </Link>
+    </nav>
+  );
+}

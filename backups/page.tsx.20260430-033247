@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
 import { useMemo, useState } from "react";
 import AINavbar from "@/components/aipatentinsight/AINavbar";
@@ -55,17 +54,6 @@ export default function HomePage() {
         <span className="ai-hud-label bottom-right">Insight Map</span>
 
         <section className="ai-hero-content ocean-content">
-          <div className="ai-hero-logo">
-            <Image
-              src="/logo-icon.svg"
-              alt="AIPatentInsight logo"
-              width={88}
-              height={88}
-              priority
-              unoptimized
-            />
-          </div>
-
           <div className="ai-eyebrow ocean-eyebrow">Patent Intelligence System</div>
 
           <h1 className="ai-hero-title ocean-title">

@@ -1,0 +1,11 @@
+import AINavbar from "@/components/aipatentinsight/AINavbar";
+import MarketSignalsClient from "@/components/aipatentinsight/MarketSignalsClient";
+
+export default function MarketSignalsPage() {
+  return (
+    <div className="ai-shell">
+      <AINavbar />
+      <MarketSignalsClient />
+    </div>
+  );
+}

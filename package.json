@@ -3,16 +3,22 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "node scripts/build-snapshot-index.mjs && next dev",
+    "prebuild": "node scripts/build-snapshot-index.mjs",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "snapshots:index": "node scripts/build-snapshot-index.mjs"
   },
   "dependencies": {
+    "@types/three": "^0.184.0",
+    "d3": "^7.9.0",
     "next": "16.1.6",
+    "papaparse": "^5.5.3",
     "react": "19.2.3",
     "react-dom": "19.2.3",
     "react-hook-form": "^7.71.2",
+    "three": "^0.184.0",
     "zod": "^4.3.6"
   },
   "devDependencies": {

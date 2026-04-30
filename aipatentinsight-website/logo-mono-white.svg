@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 120" width="540" height="120">
+  <g transform="translate(8, 10)" stroke="#FFFFFF" fill="none">
+    <g stroke-width="0.8" opacity="0.7">
+      <path d="M 4 12 L 4 4 L 12 4"/>
+      <path d="M 88 4 L 96 4 L 96 12"/>
+      <path d="M 4 88 L 4 96 L 12 96"/>
+      <path d="M 88 96 L 96 96 L 96 88"/>
+    </g>
+
+    <!-- 三層精度環 -->
+    <circle cx="50" cy="50" r="36.5" stroke-width="0.3" stroke-dasharray="1 2" opacity="0.5"/>
+    <circle cx="50" cy="50" r="32" stroke-width="2.2"/>
+    <circle cx="50" cy="50" r="28.5" stroke-width="0.4" opacity="0.5"/>
+
+    <!-- 主刻度 -->
+    <g stroke-width="0.8">
+      <line x1="50" y1="14" x2="50" y2="19"/>
+      <line x1="50" y1="81" x2="50" y2="86"/>
+      <line x1="14" y1="50" x2="19" y2="50"/>
+      <line x1="81" y1="50" x2="86" y2="50"/>
+    </g>
+
+    <!-- die 三層方框 -->
+    <rect x="38" y="38" width="24" height="24" stroke-width="0.5"/>
+    <rect x="42" y="42" width="16" height="16" stroke-width="0.4" opacity="0.7"/>
+    <rect x="46" y="46" width="8" height="8" stroke-width="0.4"/>
+
+    <!-- reticle 對焦十字 -->
+    <g stroke-width="0.5">
+      <line x1="44" y1="50" x2="48" y2="50"/>
+      <line x1="52" y1="50" x2="56" y2="50"/>
+      <line x1="50" y1="44" x2="50" y2="48"/>
+      <line x1="50" y1="52" x2="50" y2="56"/>
+    </g>
+
+    <!-- 角落金屬接點（白色實心方塊） -->
+    <g fill="#FFFFFF" stroke="none">
+      <rect x="38" y="38" width="2" height="2"/>
+      <rect x="60" y="38" width="2" height="2"/>
+      <rect x="38" y="60" width="2" height="2"/>
+      <rect x="60" y="60" width="2" height="2"/>
+
+      <!-- 焊墊（簡化） -->
+      <rect x="40" y="36.5" width="1.5" height="1.5"/>
+      <rect x="48" y="36.5" width="1.5" height="1.5"/>
+      <rect x="56" y="36.5" width="1.5" height="1.5"/>
+      <rect x="40" y="62" width="1.5" height="1.5"/>
+      <rect x="48" y="62" width="1.5" height="1.5"/>
+      <rect x="56" y="62" width="1.5" height="1.5"/>
+      <rect x="36.5" y="40" width="1.5" height="1.5"/>
+      <rect x="36.5" y="48" width="1.5" height="1.5"/>
+      <rect x="36.5" y="56" width="1.5" height="1.5"/>
+      <rect x="62" y="40" width="1.5" height="1.5"/>
+      <rect x="62" y="48" width="1.5" height="1.5"/>
+      <rect x="62" y="56" width="1.5" height="1.5"/>
+
+      <!-- 中心目標 -->
+      <circle cx="50" cy="50" r="2.5"/>
+    </g>
+
+    <!-- 探針 -->
+    <line x1="50" y1="22" x2="50" y2="42" stroke-width="0.6"/>
+    <path d="M 47 22 L 53 22 L 50 26 Z" fill="#FFFFFF" stroke="none"/>
+
+    <!-- 握把 -->
+    <line x1="74" y1="74" x2="93" y2="93" stroke-width="4.5" stroke-linecap="round"/>
+    <circle cx="93" cy="93" r="2.5" fill="#FFFFFF" stroke="none"/>
+  </g>
+
+  <g transform="translate(124, 0)">
+    <g stroke="#FFFFFF" stroke-width="0.4" opacity="0.5">
+      <line x1="0" y1="20" x2="80" y2="20"/>
+      <line x1="0" y1="20" x2="0" y2="24"/>
+      <line x1="40" y1="20" x2="40" y2="22"/>
+      <line x1="80" y1="20" x2="80" y2="24"/>
+    </g>
+
+    <text x="0" y="62" font-family="'Space Grotesk', 'Helvetica Neue', sans-serif" font-size="36" font-weight="700" letter-spacing="-1.5" fill="#FFFFFF">
+      AIPatentInsight
+    </text>
+
+    <g transform="translate(2, 88)">
+      <line x1="0" y1="0" x2="6" y2="0" stroke="#FFFFFF" stroke-width="1"/>
+      <text x="12" y="3" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="500" letter-spacing="3.5" fill="#FFFFFF" opacity="0.9">
+        INTELLIGENCE · DISCOVERY · EDGE
+      </text>
+    </g>
+
+    <g transform="translate(2, 104)" font-family="'JetBrains Mono', monospace" font-size="6" letter-spacing="1.2">
+      <circle cx="0" cy="-2" r="1" fill="#FFFFFF"/>
+      <text x="6" y="0" fill="#FFFFFF" opacity="0.7">[SYSTEM ONLINE]</text>
+      <text x="92" y="0" fill="#FFFFFF" opacity="0.6">PATENT INTEL ENGINE</text>
+    </g>
+  </g>
+</svg>

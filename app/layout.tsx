@@ -1,80 +1,100 @@
 import "./globals.css";
-import type { Metadata } from "next";
-import { IBM_Plex_Mono, Jost } from "next/font/google";
-import SchemaScript from "@/components/SchemaScript";
-import { siteConfig } from "@/lib/site";
-import { getOrganizationSchema, getWebSiteSchema } from "@/lib/siteSchema";
+import "./aipatentinsight.css";
+import type { Metadata, Viewport } from "next";
 
-const jost = Jost({
-  subsets: ["latin"],
-  variable: "--font-sans",
-  weight: ["300", "400", "500"],
-});
+// === SEO / Social metadata ===
+// metadataBase 用 env var 控制,Vercel 部署時設 NEXT_PUBLIC_SITE_URL=https://你的網域
+// 沒設的話 fallback 到 vercel 預設網域,OG 圖會用相對路徑(社群分享可能抓不到)
+const siteUrl =
+  process.env.NEXT_PUBLIC_SITE_URL || "https://aipatentinsight.vercel.app";
 
-const ibmPlexMono = IBM_Plex_Mono({
-  subsets: ["latin"],
-  variable: "--font-mono",
-  weight: ["400", "500", "600"],
-});
+const SITE_NAME = "AIPatentInsight";
+const SITE_TITLE = "AIPatentInsight — 專利情報視覺化平台";
+const SITE_DESCRIPTION =
+  "從專利技術佈局，看見產業題材如何生成、擴散與演化。Mapping patent intelligence across market signals, companies and technology trajectories.";
 
 export const metadata: Metadata = {
-  metadataBase: new URL(siteConfig.url),
+  metadataBase: new URL(siteUrl),
   title: {
-    default: "AI Patent Insight｜熊貓看產業",
-    template: "%s｜AI Patent Insight",
+    default: SITE_TITLE,
+    template: "%s | " + SITE_NAME,
   },
-  description: siteConfig.description,
-  applicationName: siteConfig.name,
+  description: SITE_DESCRIPTION,
+  applicationName: SITE_NAME,
   keywords: [
-    "AI Patent Insight",
-    "熊貓看產業",
-    "技術演化",
-    "專利分析",
-    "產業研究",
-    "技術地圖",
+    "patent intelligence",
+    "patent map",
+    "AI patent",
+    "semiconductor",
+    "technology trends",
+    "industry analysis",
+    "專利情報",
+    "專利圖譜",
+    "技術趨勢",
+    "產業分析",
     "半導體",
-    "AI晶片",
-    "產業趨勢",
   ],
-  authors: [{ name: "AI Patent Insight" }],
-  creator: "AI Patent Insight",
-  publisher: "AI Patent Insight",
-  alternates: {
-    canonical: siteConfig.url,
+  authors: [{ name: SITE_NAME }],
+  creator: SITE_NAME,
+  publisher: SITE_NAME,
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
   },
+  icons: {
+    icon: [
+      { url: "/favicon-16.png", sizes: "16x16", type: "image/png" },
+      { url: "/favicon-32.png", sizes: "32x32", type: "image/png" },
+      { url: "/favicon-192.png", sizes: "192x192", type: "image/png" },
+      { url: "/favicon-512.png", sizes: "512x512", type: "image/png" },
+      { url: "/logo-icon.svg", type: "image/svg+xml" },
+    ],
+    apple: { url: "/favicon-180.png", sizes: "180x180" },
+    shortcut: "/favicon.png",
+  },
+  manifest: "/manifest.json",
   openGraph: {
     type: "website",
-    url: siteConfig.url,
-    siteName: siteConfig.name,
-    title: "AI Patent Insight｜熊貓看產業",
-    description: siteConfig.description,
-    locale: siteConfig.locale,
+    locale: "zh_TW",
+    alternateLocale: ["en_US"],
+    url: siteUrl,
+    siteName: SITE_NAME,
+    title: SITE_TITLE,
+    description: SITE_DESCRIPTION,
     images: [
       {
-        url: siteConfig.url + "/opengraph-image",
+        url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "AI Patent Insight 熊貓看產業",
+        alt: SITE_NAME,
+        type: "image/png",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "AI Patent Insight｜熊貓看產業",
-    description: siteConfig.description,
-    images: [siteConfig.url + "/twitter-image"],
-    creator: "AI Patent Insight",
+    title: SITE_TITLE,
+    description: SITE_DESCRIPTION,
+    images: ["/og-image.png"],
   },
   robots: {
     index: true,
     follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
   },
-  icons: {
-    icon: "/brand/logo-panda.png",
-    shortcut: "/brand/logo-panda.png",
-    apple: "/brand/logo-panda.png",
-  },
-  manifest: "/manifest.webmanifest",
+};
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  themeColor: "#02040C",
+  colorScheme: "dark",
 };
 
 export default function RootLayout({
@@ -82,52 +102,9 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const organizationSchema = getOrganizationSchema();
-  const websiteSchema = getWebSiteSchema();
-
   return (
-    <html
-      lang="zh-Hant"
-      className={`${jost.variable} ${ibmPlexMono.variable}`}
-    >
-      <body className="brand-shell text-[var(--brand-ink)] antialiased">
-        <SchemaScript data={organizationSchema} />
-        <SchemaScript data={websiteSchema} />
-
-        <header className="sticky top-0 z-40 bg-[linear-gradient(180deg,rgba(2,4,12,0.82)_0%,rgba(2,4,12,0.34)_100%)] backdrop-blur-md">
-          <div className="mx-auto flex max-w-7xl items-center justify-between gap-6 px-6 py-5">
-            <div className="flex min-w-0 items-center gap-3">
-              <img
-                src="/brand/logo-panda.png"
-                alt="AI Patent Insight 熊貓看產業"
-                className="h-10 w-10 rounded-full border border-[var(--brand-line)] bg-[var(--brand-surface)] p-1"
-              />
-              <div className="min-w-0">
-                <p className="truncate text-lg font-normal tracking-[0.08em] text-[var(--brand-ink)]">
-                  AI Patent Insight
-                </p>
-                <p className="truncate font-mono text-[10px] uppercase tracking-[0.28em] text-[var(--brand-text-muted)]">
-                  Patent Intelligence Terminal
-                </p>
-              </div>
-            </div>
-            <span className="font-mono text-[10px] uppercase tracking-[0.28em] text-[var(--brand-text-muted)]">
-              Reset State
-            </span>
-          </div>
-        </header>
-
-        {children}
-
-        <footer className="border-t border-[var(--brand-line)] bg-[rgba(2,4,12,0.82)]">
-          <div className="mx-auto max-w-7xl px-6 py-10">
-            <div className="flex items-center justify-between gap-6 text-sm text-[var(--brand-text-muted)]">
-              <span>© AI Patent Insight</span>
-              <span className="font-mono text-[10px] uppercase tracking-[0.24em]">All content removed</span>
-            </div>
-          </div>
-        </footer>
-      </body>
+    <html lang="zh-Hant">
+      <body>{children}</body>
     </html>
   );
 }

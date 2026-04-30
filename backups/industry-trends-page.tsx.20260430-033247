@@ -1,0 +1,11 @@
+import AINavbar from "@/components/aipatentinsight/AINavbar";
+import IndustryTrendsClient from "@/components/aipatentinsight/IndustryTrendsClient";
+
+export default function IndustryTrendsPage() {
+  return (
+    <div className="ai-shell">
+      <AINavbar />
+      <IndustryTrendsClient />
+    </div>
+  );
+}

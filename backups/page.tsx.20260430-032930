@@ -1,0 +1,25 @@
+import Link from "next/link";
+import AINavbar from "@/components/aipatentinsight/AINavbar";
+import "./aipatentinsight.css";
+
+export default function HomePage() {
+  return (
+    <div className="ai-shell">
+      <AINavbar />
+      <main className="ai-hero-page">
+        <div className="ai-hero-orb" />
+        <section className="ai-hero-content">
+          <div className="ai-eyebrow">Patent Intelligence System</div>
+          <h1 className="ai-hero-title">AIPatentInsight</h1>
+          <p className="ai-hero-subtitle">
+            從專利技術佈局，看見產業題材如何生成、擴散與演化。Mapping patent intelligence across market signals,
+            companies and technology trajectories.
+          </p>
+          <Link href="/patent-map" className="ai-primary-button">
+            Enter Insight Map
+          </Link>
+        </section>
+      </main>
+    </div>
+  );
+}

@@ -1,0 +1,31 @@
+{
+  "name": "AIPatentInsight",
+  "short_name": "AIPatentInsight",
+  "description": "從專利技術佈局，看見產業題材如何生成、擴散與演化。",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#02040C",
+  "theme_color": "#02040C",
+  "orientation": "any",
+  "lang": "zh-Hant",
+  "icons": [
+    {
+      "src": "/favicon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/favicon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/logo-icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

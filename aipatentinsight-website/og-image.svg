@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#01030A"/>
+      <stop offset="50%" stop-color="#03050F"/>
+      <stop offset="100%" stop-color="#0A1235"/>
+    </linearGradient>
+    <radialGradient id="glow1" cx="20%" cy="30%" r="40%">
+      <stop offset="0%" stop-color="#7B3FFF" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#7B3FFF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="80%" cy="80%" r="40%">
+      <stop offset="0%" stop-color="#7DF9FF" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#7DF9FF" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7DF9FF"/>
+      <stop offset="50%" stop-color="#5B7FFF"/>
+      <stop offset="100%" stop-color="#7B3FFF"/>
+    </linearGradient>
+    <pattern id="bgGrid" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#5B7FFF" stroke-width="0.4" opacity="0.15"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#bgGrid)"/>
+  <rect width="1200" height="630" fill="url(#glow1)"/>
+  <rect width="1200" height="630" fill="url(#glow2)"/>
+
+  <!-- 四角 HUD -->
+  <g stroke="#7DF9FF" stroke-width="1.5" fill="none" opacity="0.5">
+    <path d="M 40 60 L 40 40 L 60 40"/>
+    <path d="M 1140 40 L 1160 40 L 1160 60"/>
+    <path d="M 40 570 L 40 590 L 60 590"/>
+    <path d="M 1140 590 L 1160 590 L 1160 570"/>
+  </g>
+  <text x="60" y="55" font-family="JetBrains Mono, monospace" font-size="14" fill="#7DF9FF" opacity="0.6" letter-spacing="2">AIPI-2026</text>
+  <text x="1080" y="600" font-family="JetBrains Mono, monospace" font-size="14" fill="#7DF9FF" opacity="0.6" letter-spacing="2">v1.0</text>
+
+  <!-- 標尺 -->
+  <g stroke="#5B7FFF" stroke-width="0.6" opacity="0.5">
+    <line x1="100" y1="200" x2="280" y2="200"/>
+    <line x1="100" y1="200" x2="100" y2="208"/>
+    <line x1="190" y1="200" x2="190" y2="206"/>
+    <line x1="280" y1="200" x2="280" y2="208"/>
+  </g>
+  <text x="100" y="190" font-family="JetBrains Mono, monospace" font-size="14" fill="#5B7FFF" opacity="0.7" letter-spacing="3">// PATENT INTEL ENGINE</text>
+
+  <!-- 主標 -->
+  <text x="100" y="320" font-family="Space Grotesk, sans-serif" font-size="110" font-weight="700" letter-spacing="-4" fill="#FFFFFF">AI<tspan fill="url(#textGrad)">Patent</tspan></text>
+  <text x="100" y="430" font-family="Space Grotesk, sans-serif" font-size="110" font-weight="700" letter-spacing="-4" fill="#FFFFFF">Insight</text>
+
+  <!-- 副標 -->
+  <g transform="translate(102, 480)">
+    <line x1="0" y1="0" x2="20" y2="0" stroke="#7DF9FF" stroke-width="2"/>
+    <text x="32" y="6" font-family="JetBrains Mono, monospace" font-size="20" letter-spacing="6" fill="#7DF9FF" opacity="0.9">INTELLIGENCE  ·  DISCOVERY  ·  EDGE</text>
+  </g>
+</svg>

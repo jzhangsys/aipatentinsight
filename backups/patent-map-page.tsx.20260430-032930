@@ -1,0 +1,12 @@
+import AINavbar from "@/components/aipatentinsight/AINavbar";
+import PatentMapClient from "@/components/aipatentinsight/PatentMapClient";
+import "../aipatentinsight.css";
+
+export default function PatentMapPage() {
+  return (
+    <div className="ai-shell">
+      <AINavbar />
+      <PatentMapClient />
+    </div>
+  );
+}
