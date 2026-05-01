@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Suspense } from "react";
 import AINavbar from "@/components/aipatentinsight/AINavbar";
 import PatentMapClient from "@/components/aipatentinsight/PatentMapClient";
+import AIFooter from "@/components/aipatentinsight/AIFooter";
 
 export const metadata: Metadata = {
   title: "Patent Map",
@@ -22,6 +23,7 @@ export default function PatentMapPage() {
       <Suspense fallback={null}>
         <PatentMapClient />
       </Suspense>
+      <AIFooter />
     </div>
   );
 }

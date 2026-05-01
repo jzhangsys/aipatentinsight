@@ -13,6 +13,7 @@
 import { useEffect, useRef, useState } from "react";
 import AINavbar from "@/components/aipatentinsight/AINavbar";
 import AIHeroOcean from "@/components/aipatentinsight/AIHeroOcean";
+import AIFooter from "@/components/aipatentinsight/AIFooter";
 
 const CURRENTS: { name: string; color: number }[] = [
   { name: "矽光子",     color: 0x9DEBFF },
@@ -217,6 +218,8 @@ export default function HomePage() {
           </section>
         </div>
       </main>
+
+      <AIFooter />
     </div>
   );
 }

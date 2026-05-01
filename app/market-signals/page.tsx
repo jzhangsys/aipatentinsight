@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Suspense } from "react";
 import AINavbar from "@/components/aipatentinsight/AINavbar";
 import MarketSignalsClient from "@/components/aipatentinsight/MarketSignalsClient";
+import AIFooter from "@/components/aipatentinsight/AIFooter";
 
 export const metadata: Metadata = {
   title: "Market Signals",
@@ -21,6 +22,7 @@ export default function MarketSignalsPage() {
       <Suspense fallback={null}>
         <MarketSignalsClient />
       </Suspense>
+      <AIFooter />
     </div>
   );
 }

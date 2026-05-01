@@ -4271,3 +4271,104 @@
     padding: 12px 12px 14px 12px;
   }
 }
+
+/* ============================================================
+   Market Signals 精度免責 banner
+   ============================================================ */
+.ai-signals-page .ai-signals-precision-note {
+  max-width: 980px;
+  margin: 16px 0 24px;
+  padding: 12px 16px;
+  border: 1px solid rgba(252, 165, 165, 0.25);
+  border-left: 3px solid rgba(252, 165, 165, 0.6);
+  border-radius: 4px;
+  background: rgba(252, 165, 165, 0.04);
+  font-family: 'Manrope', system-ui, sans-serif;
+  font-size: 12px;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.72);
+  letter-spacing: 0.01em;
+}
+.ai-signals-page .ai-signals-precision-note strong {
+  color: rgba(252, 165, 165, 0.95);
+  font-weight: 500;
+}
+
+/* ============================================================
+   全站 Footer
+   結構:
+   ┌──────────────────────────────────────────────┐
+   │ © YEAR AIPatentInsight. All rights reserved. │  ← copyright
+   │  ┌─ 免責聲明 / Disclaimer ──────────────────┐ │
+   │  │  小小一段獨立框內聲明,投資建議責任切割    │ │  ← disclaimer box
+   │  └──────────────────────────────────────────┘ │
+   └──────────────────────────────────────────────┘
+   ============================================================ */
+.ai-footer {
+  position: relative;
+  z-index: 5;
+  margin-top: 60px;
+  padding: 22px 32px 28px;
+  border-top: 1px solid rgba(125, 249, 255, 0.12);
+  background: rgba(2, 4, 12, 0.65);
+  backdrop-filter: blur(8px);
+}
+.ai-footer-inner {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;       /* copyright + disclaimer 都置中 */
+}
+.ai-footer-copy {
+  font-family: 'JetBrains Mono', 'Courier New', monospace;
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba(125, 249, 255, 0.55);
+}
+
+/* 獨立有邊框的免責聲明小欄目 */
+.ai-footer-disclaimer-box {
+  display: block;
+  max-width: 720px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 4px;
+  padding: 10px 14px 12px;
+  background: rgba(255, 255, 255, 0.015);
+  position: relative;
+}
+.ai-footer-disclaimer-title {
+  display: block;
+  font-family: 'JetBrains Mono', 'Courier New', monospace;
+  font-size: 9px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: rgba(252, 165, 165, 0.7);  /* 偏粉警示色,但低調 */
+  margin-bottom: 6px;
+}
+.ai-footer-disclaimer-box p {
+  font-family: 'Manrope', system-ui, sans-serif;
+  font-size: 10px;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.42);
+  letter-spacing: 0.01em;
+  margin: 0 0 6px;
+  text-align: justify;
+}
+.ai-footer-disclaimer-box p:last-child {
+  margin-bottom: 0;
+}
+.ai-footer-disclaimer-box strong {
+  color: rgba(252, 165, 165, 0.85);
+  font-weight: 500;
+}
+
+@media (max-width: 720px) {
+  .ai-footer { padding: 18px 14px 22px; }
+  .ai-footer-disclaimer-box {
+    padding: 9px 12px;
+  }
+  .ai-footer-disclaimer-box p { font-size: 9.5px; }
+}

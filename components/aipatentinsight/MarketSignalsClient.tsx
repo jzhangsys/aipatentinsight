@@ -179,6 +179,14 @@ export default function MarketSignalsClient() {
         />
       </header>
 
+      <div className="ai-signals-precision-note" role="note">
+        <strong>關於精度</strong>:本頁的「題材分類」是從<strong>新聞與網路發布用語</strong>
+        撈取的關鍵字命中,題材語意天生隨媒體口徑變動、混雜炒作與雜訊,
+        <strong>並非如 Patent Map 中專利分類那樣的精準分類體系</strong>。
+        排序與分類僅反映媒體聲量趨勢,使用時請以「市場 narrative」視角理解,
+        不應作為投資決策依據。
+      </div>
+
       {loading && <div className="ai-signals-loading">Loading {selectedDate} signals…</div>}
 
       {!loading && !data && selectedDate && (

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import AINavbar from "@/components/aipatentinsight/AINavbar";
 import IndustryTrendsClient from "@/components/aipatentinsight/IndustryTrendsClient";
+import AIFooter from "@/components/aipatentinsight/AIFooter";
 
 export const metadata: Metadata = {
   title: "Industry Trends",
@@ -17,6 +18,7 @@ export default function IndustryTrendsPage() {
     <div className="ai-shell">
       <AINavbar />
       <IndustryTrendsClient />
+      <AIFooter />
     </div>
   );
 }

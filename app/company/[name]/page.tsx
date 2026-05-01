@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import AINavbar from "@/components/aipatentinsight/AINavbar";
 import CompanyTimelineClient from "@/components/aipatentinsight/CompanyTimelineClient";
+import AIFooter from "@/components/aipatentinsight/AIFooter";
 
 type Params = { name: string };
 
@@ -28,6 +29,7 @@ export default async function CompanyPage(props: {
     <div className="ai-shell">
       <AINavbar />
       <CompanyTimelineClient companyName={decoded} />
+      <AIFooter />
     </div>
   );
 }
