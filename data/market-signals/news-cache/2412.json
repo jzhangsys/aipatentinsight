@@ -1,0 +1,30 @@
+{
+  "stockCode": "2412",
+  "name": "中華電",
+  "scrapedAt": "2026-05-01T10:42:11.373Z",
+  "devSeed": true,
+  "sourceCounts": {
+    "yahoo": 1,
+    "ltn": 1,
+    "mops": 0,
+    "technews": 0,
+    "digitimes": 0,
+    "anue": 0
+  },
+  "news": [
+    {
+      "title": "5G 用戶滲透率提升 中華電投資加碼",
+      "url": "https://tw.stock.yahoo.com/news/2412-5G 用戶滲-2026-01-20.html",
+      "source": "yahoo",
+      "date": "2026-01-20",
+      "snippet": ""
+    },
+    {
+      "title": "低軌衛星合作 中華電與 SpaceX 接洽",
+      "url": "https://search.ltn.com.tw/list?keyword=%E4%B8%AD%E8%8F%AF%E9%9B%BB#2026-01-10",
+      "source": "ltn",
+      "date": "2026-01-10",
+      "snippet": ""
+    }
+  ]
+}

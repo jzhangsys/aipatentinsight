@@ -1,0 +1,44 @@
+{
+  "stockCode": "2317",
+  "name": "鴻海",
+  "scrapedAt": "2026-05-01T10:42:11.357Z",
+  "devSeed": true,
+  "sourceCounts": {
+    "yahoo": 3,
+    "ltn": 1,
+    "mops": 0,
+    "technews": 0,
+    "digitimes": 0,
+    "anue": 0
+  },
+  "news": [
+    {
+      "title": "鴻海 AI 伺服器營收成長 100% 上修全年展望",
+      "url": "https://tw.stock.yahoo.com/news/2317-鴻海 AI -2026-01-28.html",
+      "source": "yahoo",
+      "date": "2026-01-28",
+      "snippet": ""
+    },
+    {
+      "title": "鴻海擴大電動車與機器人布局 Tesla 訂單續增",
+      "url": "https://search.ltn.com.tw/list?keyword=%E9%B4%BB%E6%B5%B7#2026-01-18",
+      "source": "ltn",
+      "date": "2026-01-18",
+      "snippet": ""
+    },
+    {
+      "title": "人形機器人 Optimus 鴻海掌握關鍵零組件供應",
+      "url": "https://tw.stock.yahoo.com/news/2317-人形機器人 -2026-01-12.html",
+      "source": "yahoo",
+      "date": "2026-01-12",
+      "snippet": ""
+    },
+    {
+      "title": "鴻海集團 2026 三大主軸:AI、EV、半導體",
+      "url": "https://tw.stock.yahoo.com/news/2317-鴻海集團 2-2025-12-28.html",
+      "source": "yahoo",
+      "date": "2025-12-28",
+      "snippet": ""
+    }
+  ]
+}

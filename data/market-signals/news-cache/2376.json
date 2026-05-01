@@ -1,0 +1,23 @@
+{
+  "stockCode": "2376",
+  "name": "技嘉",
+  "scrapedAt": "2026-05-01T10:42:11.376Z",
+  "devSeed": true,
+  "sourceCounts": {
+    "yahoo": 1,
+    "ltn": 0,
+    "mops": 0,
+    "technews": 0,
+    "digitimes": 0,
+    "anue": 0
+  },
+  "news": [
+    {
+      "title": "技嘉 AI 伺服器 NVIDIA HGX H200 出貨增",
+      "url": "https://tw.stock.yahoo.com/news/2376-技嘉 AI -2026-01-26.html",
+      "source": "yahoo",
+      "date": "2026-01-26",
+      "snippet": ""
+    }
+  ]
+}

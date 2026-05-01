@@ -1,0 +1,37 @@
+{
+  "stockCode": "3017",
+  "name": "奇鋐",
+  "scrapedAt": "2026-05-01T10:42:11.368Z",
+  "devSeed": true,
+  "sourceCounts": {
+    "yahoo": 2,
+    "ltn": 1,
+    "mops": 0,
+    "technews": 0,
+    "digitimes": 0,
+    "anue": 0
+  },
+  "news": [
+    {
+      "title": "奇鋐液冷散熱 GB200 機櫃供應鏈核心",
+      "url": "https://tw.stock.yahoo.com/news/3017-奇鋐液冷散熱-2026-02-01.html",
+      "source": "yahoo",
+      "date": "2026-02-01",
+      "snippet": ""
+    },
+    {
+      "title": "奇鋐 vapor chamber 出貨 AI 伺服器需求強",
+      "url": "https://search.ltn.com.tw/list?keyword=%E5%A5%87%E9%8B%90#2026-01-22",
+      "source": "ltn",
+      "date": "2026-01-22",
+      "snippet": ""
+    },
+    {
+      "title": "散熱供應鏈 奇鋐法說展望樂觀",
+      "url": "https://tw.stock.yahoo.com/news/3017-散熱供應鏈 -2026-01-12.html",
+      "source": "yahoo",
+      "date": "2026-01-12",
+      "snippet": ""
+    }
+  ]
+}

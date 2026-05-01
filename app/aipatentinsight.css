@@ -4024,3 +4024,306 @@
   color: rgba(125, 249, 255, 1);
   background: rgba(125, 249, 255, 0.08);
 }
+
+/* ============================================================
+   Market Signals v3 — top 20 themes ranked list
+   ============================================================ */
+
+.ai-signals-page .ai-signals-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin: 18px 0 24px;
+  font-family: 'JetBrains Mono', 'Courier New', monospace;
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.5);
+  letter-spacing: 0.04em;
+}
+.ai-signals-page .ai-signals-meta strong {
+  color: rgba(125, 249, 255, 0.9);
+  font-weight: 500;
+  font-size: 13px;
+  margin-right: 4px;
+  font-family: 'Futura', 'Jost', system-ui, sans-serif;
+}
+
+.ai-signals-page .ai-signals-loading,
+.ai-signals-page .ai-signals-empty {
+  font-family: 'Manrope', system-ui, sans-serif;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.55);
+  padding: 30px;
+  text-align: center;
+}
+.ai-signals-page .ai-signals-empty-hint {
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.4);
+  font-family: 'JetBrains Mono', monospace;
+  margin-top: 10px;
+}
+.ai-signals-page .ai-signals-empty-hint code {
+  background: rgba(125, 249, 255, 0.06);
+  padding: 1px 6px;
+  border-radius: 3px;
+  color: rgba(125, 249, 255, 0.85);
+  font-size: 11px;
+}
+
+/* === themes list === */
+.ai-signals-page .ai-signals-themes {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  max-width: 1100px;
+}
+.ai-signals-page .ai-signals-theme {
+  background: rgba(6, 10, 28, 0.6);
+  border: 1px solid rgba(125, 249, 255, 0.1);
+  border-radius: 6px;
+  overflow: hidden;
+  transition: border-color 0.15s, background 0.15s;
+}
+.ai-signals-page .ai-signals-theme:hover { border-color: rgba(125, 249, 255, 0.25); }
+.ai-signals-page .ai-signals-theme.expanded {
+  border-color: rgba(125, 249, 255, 0.4);
+  background: rgba(6, 10, 28, 0.85);
+}
+
+.ai-signals-page .ai-signals-theme-row {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 50px minmax(160px, 1fr) minmax(200px, 2.4fr) 60px 18px;
+  align-items: center;
+  gap: 14px;
+  padding: 12px 16px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  font-family: inherit;
+  color: inherit;
+}
+.ai-signals-page .ai-signals-updated {
+  font-family: 'JetBrains Mono', 'Courier New', monospace;
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.5);
+  letter-spacing: 0.04em;
+  margin-top: 6px;
+}
+.ai-signals-page .ai-signals-theme-row:focus-visible {
+  outline: 1px solid rgba(125, 249, 255, 0.5);
+  outline-offset: -2px;
+}
+
+.ai-signals-page .ai-signals-theme-rank {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  color: rgba(125, 249, 255, 0.7);
+  letter-spacing: 0.05em;
+  font-variant-numeric: tabular-nums;
+}
+.ai-signals-page .ai-signals-theme-name {
+  font-family: 'Manrope', system-ui, sans-serif;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.95);
+  letter-spacing: 0.01em;
+  font-weight: 500;
+}
+.ai-signals-page .ai-signals-theme-bar {
+  position: relative;
+  height: 8px;
+  background: rgba(125, 249, 255, 0.06);
+  border-radius: 2px;
+  overflow: hidden;
+}
+.ai-signals-page .ai-signals-theme-bar-fill {
+  display: block;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    rgba(125, 249, 255, 0.85) 0%,
+    rgba(125, 249, 255, 0.45) 100%
+  );
+  border-radius: 2px;
+  transition: width 0.4s ease-out;
+}
+.ai-signals-page .ai-signals-theme-volume {
+  font-family: 'Futura', 'Jost', system-ui, sans-serif;
+  font-size: 14px;
+  color: rgba(125, 249, 255, 0.85);
+  font-variant-numeric: tabular-nums;
+  text-align: right;
+}
+.ai-signals-page .ai-signals-theme-companies {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.7);
+  font-variant-numeric: tabular-nums;
+  text-align: right;
+}
+.ai-signals-page .ai-signals-theme-companies-sub {
+  color: rgba(255, 255, 255, 0.35);
+}
+.ai-signals-page .ai-signals-theme-arrow {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.4);
+  transition: transform 0.18s;
+  text-align: center;
+}
+.ai-signals-page .ai-signals-theme.expanded .ai-signals-theme-arrow {
+  color: rgba(125, 249, 255, 0.7);
+}
+
+/* === expanded detail === */
+.ai-signals-page .ai-signals-theme-detail {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 12px 18px 18px 65px;
+  border-top: 1px solid rgba(125, 249, 255, 0.1);
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.ai-signals-page .ai-signals-company {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.ai-signals-page .ai-signals-company-head {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.ai-signals-page .ai-signals-company-name {
+  background: transparent;
+  border: none;
+  font-family: 'Manrope', system-ui, sans-serif;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.95);
+  letter-spacing: 0.01em;
+  cursor: pointer;
+  padding: 0;
+  text-decoration: underline;
+  text-decoration-color: rgba(125, 249, 255, 0.3);
+  text-underline-offset: 3px;
+}
+.ai-signals-page .ai-signals-company-name:hover {
+  color: rgba(125, 249, 255, 1);
+  text-decoration-color: rgba(125, 249, 255, 0.85);
+}
+.ai-signals-page .ai-signals-company-code {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  color: rgba(125, 249, 255, 0.65);
+  letter-spacing: 0.08em;
+}
+.ai-signals-page .ai-signals-company-primary-tag {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 9px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba(125, 249, 255, 0.9);
+  border: 1px solid rgba(125, 249, 255, 0.4);
+  padding: 1px 6px;
+  border-radius: 2px;
+  background: rgba(125, 249, 255, 0.06);
+}
+.ai-signals-page .ai-signals-company-hits {
+  margin-left: auto;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.ai-signals-page .ai-signals-news-list {
+  list-style: none;
+  margin: 0 0 0 4px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  border-left: 1px solid rgba(125, 249, 255, 0.12);
+  padding-left: 10px;
+}
+.ai-signals-page .ai-signals-news-item {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 3px 0;
+}
+.ai-signals-page .ai-signals-news-link {
+  font-family: 'Manrope', system-ui, sans-serif;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.85);
+  text-decoration: none;
+  line-height: 1.4;
+  transition: color 0.12s;
+}
+.ai-signals-page .ai-signals-news-link:hover {
+  color: rgba(125, 249, 255, 1);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.ai-signals-page .ai-signals-news-meta {
+  display: flex;
+  gap: 10px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 9px;
+  color: rgba(255, 255, 255, 0.45);
+  letter-spacing: 0.04em;
+}
+.ai-signals-page .ai-signals-news-source {
+  padding: 0 4px;
+  border-radius: 2px;
+}
+.ai-signals-page .ai-signals-news-source.src-yahoo {
+  color: #B89C00;
+  background: rgba(184, 156, 0, 0.1);
+}
+.ai-signals-page .ai-signals-news-source.src-ltn {
+  color: #4ade80;
+  background: rgba(74, 222, 128, 0.1);
+}
+.ai-signals-page .ai-signals-news-source.src-mops {
+  color: #93c5fd;
+  background: rgba(147, 197, 253, 0.1);
+}
+.ai-signals-page .ai-signals-news-source.src-technews {
+  color: #fca5a5;
+  background: rgba(252, 165, 165, 0.1);
+}
+.ai-signals-page .ai-signals-news-source.src-digitimes {
+  color: #fdba74;
+  background: rgba(253, 186, 116, 0.1);
+}
+.ai-signals-page .ai-signals-news-source.src-anue {
+  color: #c4b5fd;
+  background: rgba(196, 181, 253, 0.1);
+}
+.ai-signals-page .ai-signals-news-date {
+  font-variant-numeric: tabular-nums;
+}
+
+/* === Mobile === */
+@media (max-width: 720px) {
+  .ai-signals-page .ai-signals-theme-row {
+    grid-template-columns: 38px 1fr 60px 18px;
+    grid-template-rows: auto auto;
+    gap: 8px 10px;
+    padding: 10px 12px;
+  }
+  .ai-signals-page .ai-signals-theme-rank { grid-row: 1; grid-column: 1; }
+  .ai-signals-page .ai-signals-theme-name { grid-row: 1; grid-column: 2; }
+  .ai-signals-page .ai-signals-theme-volume { grid-row: 1; grid-column: 3; }
+  .ai-signals-page .ai-signals-theme-arrow { grid-row: 1; grid-column: 4; }
+  .ai-signals-page .ai-signals-theme-bar {
+    grid-row: 2;
+    grid-column: 1 / span 4;
+    height: 5px;
+  }
+  .ai-signals-page .ai-signals-theme-detail {
+    padding: 12px 12px 14px 12px;
+  }
+}

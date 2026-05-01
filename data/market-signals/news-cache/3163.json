@@ -1,0 +1,23 @@
+{
+  "stockCode": "3163",
+  "name": "波若威",
+  "scrapedAt": "2026-05-01T10:42:11.371Z",
+  "devSeed": true,
+  "sourceCounts": {
+    "yahoo": 1,
+    "ltn": 0,
+    "mops": 0,
+    "technews": 0,
+    "digitimes": 0,
+    "anue": 0
+  },
+  "news": [
+    {
+      "title": "波若威 矽光子被動元件出貨增 客戶遍及北美",
+      "url": "https://tw.stock.yahoo.com/news/3163-波若威 矽光-2026-01-17.html",
+      "source": "yahoo",
+      "date": "2026-01-17",
+      "snippet": ""
+    }
+  ]
+}

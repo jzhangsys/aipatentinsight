@@ -1,0 +1,30 @@
+{
+  "stockCode": "2337",
+  "name": "旺宏",
+  "scrapedAt": "2026-05-01T10:42:11.364Z",
+  "devSeed": true,
+  "sourceCounts": {
+    "yahoo": 2,
+    "ltn": 0,
+    "mops": 0,
+    "technews": 0,
+    "digitimes": 0,
+    "anue": 0
+  },
+  "news": [
+    {
+      "title": "旺宏 NOR Flash 出貨增 車用客戶導入加速",
+      "url": "https://tw.stock.yahoo.com/news/2337-旺宏 NOR-2026-01-15.html",
+      "source": "yahoo",
+      "date": "2026-01-15",
+      "snippet": ""
+    },
+    {
+      "title": "旺宏 3D NAND ROM 開發進度更新",
+      "url": "https://tw.stock.yahoo.com/news/2337-旺宏 3D -2025-12-25.html",
+      "source": "yahoo",
+      "date": "2025-12-25",
+      "snippet": ""
+    }
+  ]
+}

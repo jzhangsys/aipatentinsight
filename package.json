@@ -9,7 +9,13 @@
     "start": "next start",
     "lint": "eslint",
     "snapshots:index": "node scripts/build-snapshot-index.mjs",
-    "snapshots:import": "node scripts/import-csv-snapshots.mjs"
+    "snapshots:import": "node scripts/import-csv-snapshots.mjs",
+    "signals:companies": "node scripts/market-signals/extract-stockcode-companies.mjs",
+    "signals:scrape": "node scripts/market-signals/scrape-news.mjs",
+    "signals:scrape:force": "node scripts/market-signals/scrape-news.mjs --force",
+    "signals:seed": "node scripts/market-signals/generate-dev-seed.mjs",
+    "signals:build": "node scripts/market-signals/build-market-signals.mjs",
+    "signals:all": "npm run signals:companies && npm run signals:scrape && npm run signals:build"
   },
   "dependencies": {
     "@types/three": "^0.184.0",

@@ -1,0 +1,23 @@
+{
+  "stockCode": "8046",
+  "name": "南電",
+  "scrapedAt": "2026-05-01T10:42:11.370Z",
+  "devSeed": true,
+  "sourceCounts": {
+    "yahoo": 1,
+    "ltn": 0,
+    "mops": 0,
+    "technews": 0,
+    "digitimes": 0,
+    "anue": 0
+  },
+  "news": [
+    {
+      "title": "南電 ABF 載板需求回溫 利用率提升",
+      "url": "https://tw.stock.yahoo.com/news/8046-南電 ABF-2026-01-18.html",
+      "source": "yahoo",
+      "date": "2026-01-18",
+      "snippet": ""
+    }
+  ]
+}

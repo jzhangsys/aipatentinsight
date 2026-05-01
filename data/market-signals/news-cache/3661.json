@@ -1,0 +1,30 @@
+{
+  "stockCode": "3661",
+  "name": "世芯",
+  "scrapedAt": "2026-05-01T10:42:11.364Z",
+  "devSeed": true,
+  "sourceCounts": {
+    "yahoo": 1,
+    "ltn": 1,
+    "mops": 0,
+    "technews": 0,
+    "digitimes": 0,
+    "anue": 0
+  },
+  "news": [
+    {
+      "title": "世芯-KY ASIC 大廠 AI accelerator 訂單放量",
+      "url": "https://tw.stock.yahoo.com/news/3661-世芯-KY -2026-01-20.html",
+      "source": "yahoo",
+      "date": "2026-01-20",
+      "snippet": ""
+    },
+    {
+      "title": "世芯 5nm/3nm 晶片進入量產 客戶遍及北美",
+      "url": "https://search.ltn.com.tw/list?keyword=%E4%B8%96%E8%8A%AF#2026-01-12",
+      "source": "ltn",
+      "date": "2026-01-12",
+      "snippet": ""
+    }
+  ]
+}

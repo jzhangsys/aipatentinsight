@@ -1,0 +1,51 @@
+{
+  "stockCode": "2454",
+  "name": "聯發科",
+  "scrapedAt": "2026-05-01T10:42:11.363Z",
+  "devSeed": true,
+  "sourceCounts": {
+    "yahoo": 3,
+    "ltn": 1,
+    "mops": 0,
+    "technews": 1,
+    "digitimes": 0,
+    "anue": 0
+  },
+  "news": [
+    {
+      "title": "聯發科天璣 9400+ 旗艦 SoC 出貨升溫",
+      "url": "https://tw.stock.yahoo.com/news/2454-聯發科天璣 -2026-01-26.html",
+      "source": "yahoo",
+      "date": "2026-01-26",
+      "snippet": ""
+    },
+    {
+      "title": "AI 晶片布局 聯發科 NVIDIA 合作客製化 ASIC",
+      "url": "https://search.ltn.com.tw/list?keyword=%E8%81%AF%E7%99%BC%E7%A7%91#2026-01-15",
+      "source": "ltn",
+      "date": "2026-01-15",
+      "snippet": ""
+    },
+    {
+      "title": "5G 數據機晶片 聯發科市佔超越高通",
+      "url": "https://tw.stock.yahoo.com/news/2454-5G 數據機-2026-01-04.html",
+      "source": "yahoo",
+      "date": "2026-01-04",
+      "snippet": ""
+    },
+    {
+      "title": "AI PC SoC 客戶採用聯發科 天璣 AI",
+      "url": "https://tw.stock.yahoo.com/news/2454-AI PC -2025-12-20.html",
+      "source": "yahoo",
+      "date": "2025-12-20",
+      "snippet": ""
+    },
+    {
+      "title": "MediaTek 客製化 AI ASIC 路線圖:從 SoC 走向資料中心",
+      "url": "https://technews.tw/?s=%E8%81%AF%E7%99%BC%E7%A7%91#2026-01-18",
+      "source": "technews",
+      "date": "2026-01-18",
+      "snippet": ""
+    }
+  ]
+}

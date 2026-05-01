@@ -1,0 +1,30 @@
+{
+  "stockCode": "3450",
+  "name": "聯鈞",
+  "scrapedAt": "2026-05-01T10:42:11.370Z",
+  "devSeed": true,
+  "sourceCounts": {
+    "yahoo": 1,
+    "ltn": 1,
+    "mops": 0,
+    "technews": 0,
+    "digitimes": 0,
+    "anue": 0
+  },
+  "news": [
+    {
+      "title": "矽光子 CPO 模組 聯鈞與 NVIDIA 合作試產",
+      "url": "https://tw.stock.yahoo.com/news/3450-矽光子 CP-2026-01-31.html",
+      "source": "yahoo",
+      "date": "2026-01-31",
+      "snippet": ""
+    },
+    {
+      "title": "光通訊 800G 模組 聯鈞放量出貨",
+      "url": "https://search.ltn.com.tw/list?keyword=%E8%81%AF%E9%88%9E#2026-01-19",
+      "source": "ltn",
+      "date": "2026-01-19",
+      "snippet": ""
+    }
+  ]
+}

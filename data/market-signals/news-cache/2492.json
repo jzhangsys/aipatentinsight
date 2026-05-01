@@ -1,0 +1,23 @@
+{
+  "stockCode": "2492",
+  "name": "華新科",
+  "scrapedAt": "2026-05-01T10:42:11.374Z",
+  "devSeed": true,
+  "sourceCounts": {
+    "yahoo": 1,
+    "ltn": 0,
+    "mops": 0,
+    "technews": 0,
+    "digitimes": 0,
+    "anue": 0
+  },
+  "news": [
+    {
+      "title": "華新科 MLCC 漲價 車用市場帶動",
+      "url": "https://tw.stock.yahoo.com/news/2492-華新科 ML-2026-01-15.html",
+      "source": "yahoo",
+      "date": "2026-01-15",
+      "snippet": ""
+    }
+  ]
+}

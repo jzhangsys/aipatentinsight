@@ -1,0 +1,23 @@
+{
+  "stockCode": "3515",
+  "name": "華擎",
+  "scrapedAt": "2026-05-01T10:42:11.375Z",
+  "devSeed": true,
+  "sourceCounts": {
+    "yahoo": 1,
+    "ltn": 0,
+    "mops": 0,
+    "technews": 0,
+    "digitimes": 0,
+    "anue": 0
+  },
+  "news": [
+    {
+      "title": "AI Server 主機板 華擎打入 NVIDIA HGX 供應鏈",
+      "url": "https://tw.stock.yahoo.com/news/3515-AI Ser-2026-01-25.html",
+      "source": "yahoo",
+      "date": "2026-01-25",
+      "snippet": ""
+    }
+  ]
+}

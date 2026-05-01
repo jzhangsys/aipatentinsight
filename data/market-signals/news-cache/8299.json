@@ -1,0 +1,30 @@
+{
+  "stockCode": "8299",
+  "name": "群聯",
+  "scrapedAt": "2026-05-01T10:42:11.365Z",
+  "devSeed": true,
+  "sourceCounts": {
+    "yahoo": 1,
+    "ltn": 1,
+    "mops": 0,
+    "technews": 0,
+    "digitimes": 0,
+    "anue": 0
+  },
+  "news": [
+    {
+      "title": "群聯 PCIe Gen5 SSD 控制器 主流大廠採用",
+      "url": "https://tw.stock.yahoo.com/news/8299-群聯 PCI-2026-01-26.html",
+      "source": "yahoo",
+      "date": "2026-01-26",
+      "snippet": ""
+    },
+    {
+      "title": "AI 伺服器企業級 SSD 需求帶動 群聯出貨成長",
+      "url": "https://search.ltn.com.tw/list?keyword=%E7%BE%A4%E8%81%AF#2026-01-14",
+      "source": "ltn",
+      "date": "2026-01-14",
+      "snippet": ""
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "stockCode": "2344",
+  "name": "華邦電",
+  "scrapedAt": "2026-05-01T10:42:11.365Z",
+  "devSeed": true,
+  "sourceCounts": {
+    "yahoo": 1,
+    "ltn": 1,
+    "mops": 0,
+    "technews": 0,
+    "digitimes": 0,
+    "anue": 0
+  },
+  "news": [
+    {
+      "title": "華邦電 DRAM 報價落底回升 Q1 營收看增",
+      "url": "https://tw.stock.yahoo.com/news/2344-華邦電 DR-2026-01-23.html",
+      "source": "yahoo",
+      "date": "2026-01-23",
+      "snippet": ""
+    },
+    {
+      "title": "記憶體市場 LPDDR5X 華邦電打入 AI Edge",
+      "url": "https://search.ltn.com.tw/list?keyword=%E8%8F%AF%E9%82%A6%E9%9B%BB#2026-01-08",
+      "source": "ltn",
+      "date": "2026-01-08",
+      "snippet": ""
+    }
+  ]
+}

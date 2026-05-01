@@ -1,0 +1,30 @@
+{
+  "stockCode": "3443",
+  "name": "創意",
+  "scrapedAt": "2026-05-01T10:42:11.363Z",
+  "devSeed": true,
+  "sourceCounts": {
+    "yahoo": 1,
+    "ltn": 1,
+    "mops": 0,
+    "technews": 0,
+    "digitimes": 0,
+    "anue": 0
+  },
+  "news": [
+    {
+      "title": "創意 ASIC 設計服務 接連拿下美系大客戶",
+      "url": "https://tw.stock.yahoo.com/news/3443-創意 ASI-2026-01-22.html",
+      "source": "yahoo",
+      "date": "2026-01-22",
+      "snippet": ""
+    },
+    {
+      "title": "AI 晶片代工 創意 2026 年營收看翻倍成長",
+      "url": "https://search.ltn.com.tw/list?keyword=%E5%89%B5%E6%84%8F#2026-01-10",
+      "source": "ltn",
+      "date": "2026-01-10",
+      "snippet": ""
+    }
+  ]
+}

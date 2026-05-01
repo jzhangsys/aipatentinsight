@@ -1,0 +1,30 @@
+{
+  "stockCode": "5274",
+  "name": "信驊",
+  "scrapedAt": "2026-05-01T10:42:11.374Z",
+  "devSeed": true,
+  "sourceCounts": {
+    "yahoo": 1,
+    "ltn": 1,
+    "mops": 0,
+    "technews": 0,
+    "digitimes": 0,
+    "anue": 0
+  },
+  "news": [
+    {
+      "title": "信驊 BMC 晶片 AI 伺服器導入率攀升",
+      "url": "https://tw.stock.yahoo.com/news/5274-信驊 BMC-2026-01-30.html",
+      "source": "yahoo",
+      "date": "2026-01-30",
+      "snippet": ""
+    },
+    {
+      "title": "AI Server 開機晶片 信驊掌握獨家供應",
+      "url": "https://search.ltn.com.tw/list?keyword=%E4%BF%A1%E9%A9%8A#2026-01-18",
+      "source": "ltn",
+      "date": "2026-01-18",
+      "snippet": ""
+    }
+  ]
+}

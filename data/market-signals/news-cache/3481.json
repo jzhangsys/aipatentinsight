@@ -1,0 +1,30 @@
+{
+  "stockCode": "3481",
+  "name": "群創",
+  "scrapedAt": "2026-05-01T10:42:11.366Z",
+  "devSeed": true,
+  "sourceCounts": {
+    "yahoo": 1,
+    "ltn": 1,
+    "mops": 0,
+    "technews": 0,
+    "digitimes": 0,
+    "anue": 0
+  },
+  "news": [
+    {
+      "title": "群創切入車用顯示 取得歐系車廠認證",
+      "url": "https://tw.stock.yahoo.com/news/3481-群創切入車用-2026-01-16.html",
+      "source": "yahoo",
+      "date": "2026-01-16",
+      "snippet": ""
+    },
+    {
+      "title": "TFT-LCD 報價持平 群創 Q4 營運穩健",
+      "url": "https://search.ltn.com.tw/list?keyword=%E7%BE%A4%E5%89%B5#2026-01-05",
+      "source": "ltn",
+      "date": "2026-01-05",
+      "snippet": ""
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "stockCode": "6669",
+  "name": "緯穎",
+  "scrapedAt": "2026-05-01T10:42:11.356Z",
+  "devSeed": true,
+  "sourceCounts": {
+    "yahoo": 2,
+    "ltn": 1,
+    "mops": 0,
+    "technews": 0,
+    "digitimes": 0,
+    "anue": 0
+  },
+  "news": [
+    {
+      "title": "緯穎 AI 伺服器 ODM 訂單能見度直達 2026 H2",
+      "url": "https://tw.stock.yahoo.com/news/6669-緯穎 AI -2026-01-30.html",
+      "source": "yahoo",
+      "date": "2026-01-30",
+      "snippet": ""
+    },
+    {
+      "title": "Meta Microsoft 雲端客戶下單 緯穎 AI Server 出貨倍增",
+      "url": "https://search.ltn.com.tw/list?keyword=%E7%B7%AF%E7%A9%8E#2026-01-20",
+      "source": "ltn",
+      "date": "2026-01-20",
+      "snippet": ""
+    },
+    {
+      "title": "緯穎 GB200 NVL72 機櫃量產 毛利率提升",
+      "url": "https://tw.stock.yahoo.com/news/6669-緯穎 GB2-2026-01-05.html",
+      "source": "yahoo",
+      "date": "2026-01-05",
+      "snippet": ""
+    }
+  ]
+}

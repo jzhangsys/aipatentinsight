@@ -1,0 +1,37 @@
+{
+  "stockCode": "2308",
+  "name": "台達電",
+  "scrapedAt": "2026-05-01T10:42:11.372Z",
+  "devSeed": true,
+  "sourceCounts": {
+    "yahoo": 2,
+    "ltn": 1,
+    "mops": 0,
+    "technews": 0,
+    "digitimes": 0,
+    "anue": 0
+  },
+  "news": [
+    {
+      "title": "台達電電動車充電樁出貨北美",
+      "url": "https://tw.stock.yahoo.com/news/2308-台達電電動車-2026-01-26.html",
+      "source": "yahoo",
+      "date": "2026-01-26",
+      "snippet": ""
+    },
+    {
+      "title": "AI 伺服器電源 台達電市佔提升",
+      "url": "https://search.ltn.com.tw/list?keyword=%E5%8F%B0%E9%81%94%E9%9B%BB#2026-01-12",
+      "source": "ltn",
+      "date": "2026-01-12",
+      "snippet": ""
+    },
+    {
+      "title": "儲能 ESS 系統 台達電取得歐系大單",
+      "url": "https://tw.stock.yahoo.com/news/2308-儲能 ESS-2025-12-28.html",
+      "source": "yahoo",
+      "date": "2025-12-28",
+      "snippet": ""
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "stockCode": "3324",
+  "name": "雙鴻",
+  "scrapedAt": "2026-05-01T10:42:11.368Z",
+  "devSeed": true,
+  "sourceCounts": {
+    "yahoo": 1,
+    "ltn": 1,
+    "mops": 0,
+    "technews": 0,
+    "digitimes": 0,
+    "anue": 0
+  },
+  "news": [
+    {
+      "title": "雙鴻 AI 伺服器液冷散熱 取得 NVIDIA 認證",
+      "url": "https://tw.stock.yahoo.com/news/3324-雙鴻 AI -2026-01-28.html",
+      "source": "yahoo",
+      "date": "2026-01-28",
+      "snippet": ""
+    },
+    {
+      "title": "雙鴻 cold plate 出貨北美雲端客戶",
+      "url": "https://search.ltn.com.tw/list?keyword=%E9%9B%99%E9%B4%BB#2026-01-14",
+      "source": "ltn",
+      "date": "2026-01-14",
+      "snippet": ""
+    }
+  ]
+}

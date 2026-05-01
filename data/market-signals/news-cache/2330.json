@@ -1,0 +1,79 @@
+{
+  "stockCode": "2330",
+  "name": "台積電",
+  "scrapedAt": "2026-05-01T10:42:11.355Z",
+  "devSeed": true,
+  "sourceCounts": {
+    "yahoo": 3,
+    "ltn": 2,
+    "mops": 1,
+    "technews": 1,
+    "digitimes": 1,
+    "anue": 1
+  },
+  "news": [
+    {
+      "title": "CoWoS 產能大擴張 台積電 2026 年將翻倍",
+      "url": "https://tw.stock.yahoo.com/news/2330-CoWoS -2026-01-28.html",
+      "source": "yahoo",
+      "date": "2026-01-28",
+      "snippet": ""
+    },
+    {
+      "title": "NVIDIA 下單 H200/B200,台積電先進製程吃滿",
+      "url": "https://search.ltn.com.tw/list?keyword=%E5%8F%B0%E7%A9%8D%E9%9B%BB#2026-01-22",
+      "source": "ltn",
+      "date": "2026-01-22",
+      "snippet": ""
+    },
+    {
+      "title": "台積電 2 奈米 N2 進入試產 客戶導入加速",
+      "url": "https://tw.stock.yahoo.com/news/2330-台積電 2 -2026-01-15.html",
+      "source": "yahoo",
+      "date": "2026-01-15",
+      "snippet": ""
+    },
+    {
+      "title": "台積電法說會展望:AI 帶動營收年增 25-30%",
+      "url": "https://tw.stock.yahoo.com/news/2330-台積電法說會-2026-01-10.html",
+      "source": "yahoo",
+      "date": "2026-01-10",
+      "snippet": ""
+    },
+    {
+      "title": "3nm 5nm 製程大客戶 NVIDIA AMD 需求強勁",
+      "url": "https://search.ltn.com.tw/list?keyword=%E5%8F%B0%E7%A9%8D%E9%9B%BB#2025-12-22",
+      "source": "ltn",
+      "date": "2025-12-22",
+      "snippet": ""
+    },
+    {
+      "title": "公告本公司董事會決議重要決議事項",
+      "url": "https://mops.twse.com.tw/mops/web/t05st02#2330-2026-01-15",
+      "source": "mops",
+      "date": "2026-01-15",
+      "snippet": ""
+    },
+    {
+      "title": "TSMC 2nm GAA 製程技術節點解析:AI 晶片新世代起點",
+      "url": "https://technews.tw/?s=%E5%8F%B0%E7%A9%8D%E9%9B%BB#2026-01-20",
+      "source": "technews",
+      "date": "2026-01-20",
+      "snippet": ""
+    },
+    {
+      "title": "先進封裝 CoWoS-L 與 SoIC 路線圖深度解析",
+      "url": "https://www.digitimes.com.tw/search/result.asp?keyword=%E5%8F%B0%E7%A9%8D%E9%9B%BB#2026-01-08",
+      "source": "digitimes",
+      "date": "2026-01-08",
+      "snippet": ""
+    },
+    {
+      "title": "台積電 AI 伺服器晶片市佔再上修",
+      "url": "https://news.cnyes.com/search/?keyword=%E5%8F%B0%E7%A9%8D%E9%9B%BB#2026-01-26",
+      "source": "anue",
+      "date": "2026-01-26",
+      "snippet": ""
+    }
+  ]
+}

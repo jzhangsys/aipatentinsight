@@ -1,0 +1,30 @@
+{
+  "stockCode": "3714",
+  "name": "富采",
+  "scrapedAt": "2026-05-01T10:42:11.366Z",
+  "devSeed": true,
+  "sourceCounts": {
+    "yahoo": 1,
+    "ltn": 1,
+    "mops": 0,
+    "technews": 0,
+    "digitimes": 0,
+    "anue": 0
+  },
+  "news": [
+    {
+      "title": "MicroLED 量產進度 富采與 Apple 合作緊密",
+      "url": "https://tw.stock.yahoo.com/news/3714-MicroL-2026-01-29.html",
+      "source": "yahoo",
+      "date": "2026-01-29",
+      "snippet": ""
+    },
+    {
+      "title": "MicroLED 顯示器 富采 2026 H2 量產",
+      "url": "https://search.ltn.com.tw/list?keyword=%E5%AF%8C%E9%87%87#2026-01-18",
+      "source": "ltn",
+      "date": "2026-01-18",
+      "snippet": ""
+    }
+  ]
+}

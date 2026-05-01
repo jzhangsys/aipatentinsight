@@ -1,0 +1,30 @@
+{
+  "stockCode": "2409",
+  "name": "友達",
+  "scrapedAt": "2026-05-01T10:42:11.365Z",
+  "devSeed": true,
+  "sourceCounts": {
+    "yahoo": 1,
+    "ltn": 1,
+    "mops": 0,
+    "technews": 0,
+    "digitimes": 0,
+    "anue": 0
+  },
+  "news": [
+    {
+      "title": "友達 Mini LED 車用面板出貨爆發",
+      "url": "https://tw.stock.yahoo.com/news/2409-友達 Min-2026-01-19.html",
+      "source": "yahoo",
+      "date": "2026-01-19",
+      "snippet": ""
+    },
+    {
+      "title": "友達 OLED 面板 出貨平板與筆電市場",
+      "url": "https://search.ltn.com.tw/list?keyword=%E5%8F%8B%E9%81%94#2025-12-30",
+      "source": "ltn",
+      "date": "2025-12-30",
+      "snippet": ""
+    }
+  ]
+}

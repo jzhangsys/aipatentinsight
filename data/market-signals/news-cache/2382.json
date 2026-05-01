@@ -1,0 +1,65 @@
+{
+  "stockCode": "2382",
+  "name": "廣達",
+  "scrapedAt": "2026-05-01T10:42:11.356Z",
+  "devSeed": true,
+  "sourceCounts": {
+    "yahoo": 3,
+    "ltn": 1,
+    "mops": 1,
+    "technews": 0,
+    "digitimes": 1,
+    "anue": 1
+  },
+  "news": [
+    {
+      "title": "廣達 AI 伺服器拉貨爆發 GB200 出貨放量",
+      "url": "https://tw.stock.yahoo.com/news/2382-廣達 AI -2026-02-01.html",
+      "source": "yahoo",
+      "date": "2026-02-01",
+      "snippet": ""
+    },
+    {
+      "title": "NVIDIA HGX H200 廣達掌握主要訂單",
+      "url": "https://search.ltn.com.tw/list?keyword=%E5%BB%A3%E9%81%94#2026-01-25",
+      "source": "ltn",
+      "date": "2026-01-25",
+      "snippet": ""
+    },
+    {
+      "title": "AI 機櫃 GB200 NVL72 廣達取得大單",
+      "url": "https://tw.stock.yahoo.com/news/2382-AI 機櫃 -2026-01-12.html",
+      "source": "yahoo",
+      "date": "2026-01-12",
+      "snippet": ""
+    },
+    {
+      "title": "廣達 2025 Q4 營收創高 AI 伺服器佔比攀升",
+      "url": "https://tw.stock.yahoo.com/news/2382-廣達 202-2026-01-08.html",
+      "source": "yahoo",
+      "date": "2026-01-08",
+      "snippet": ""
+    },
+    {
+      "title": "廣達電腦公告營收與重大訊息",
+      "url": "https://mops.twse.com.tw/mops/web/t05st02#2382-2026-01-10",
+      "source": "mops",
+      "date": "2026-01-10",
+      "snippet": ""
+    },
+    {
+      "title": "AI Server ODM 戰況:廣達在 GB200 NVL72 取得關鍵供應地位",
+      "url": "https://www.digitimes.com.tw/search/result.asp?keyword=%E5%BB%A3%E9%81%94#2026-01-26",
+      "source": "digitimes",
+      "date": "2026-01-26",
+      "snippet": ""
+    },
+    {
+      "title": "廣達股價評析 AI 伺服器題材續強",
+      "url": "https://news.cnyes.com/search/?keyword=%E5%BB%A3%E9%81%94#2026-01-30",
+      "source": "anue",
+      "date": "2026-01-30",
+      "snippet": ""
+    }
+  ]
+}

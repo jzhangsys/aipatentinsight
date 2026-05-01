@@ -1,0 +1,411 @@
+{
+  "date": "2026-01-15",
+  "generatedAt": "2026-05-01T10:14:10.339Z",
+  "totalCompanies": 91,
+  "totalCompaniesWithNews": 11,
+  "totalNewsAnalyzed": 21,
+  "themes": [
+    {
+      "rank": 1,
+      "name": "PC / NB",
+      "volume": 2,
+      "primaryCompanyCount": 0,
+      "totalCompanyCount": 2,
+      "companies": [
+        {
+          "name": "聯發科技",
+          "stockCode": "2454",
+          "newsHits": 1,
+          "isPrimary": false,
+          "sampleNews": [
+            {
+              "title": "AI PC SoC 客戶採用聯發科 天璣 AI",
+              "url": "https://tw.stock.yahoo.com/news/2454-AI PC -2025-12-20.html",
+              "source": "yahoo",
+              "date": "2025-12-20"
+            }
+          ]
+        },
+        {
+          "name": "友達光電",
+          "stockCode": "2409",
+          "newsHits": 1,
+          "isPrimary": false,
+          "sampleNews": [
+            {
+              "title": "友達 OLED 面板 出貨平板與筆電市場",
+              "url": "https://search.ltn.com.tw/list?keyword=%E5%8F%8B%E9%81%94#2025-12-30",
+              "source": "ltn",
+              "date": "2025-12-30"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "name": "面板 / TFT-LCD",
+      "volume": 2,
+      "primaryCompanyCount": 1,
+      "totalCompanyCount": 2,
+      "companies": [
+        {
+          "name": "友達光電",
+          "stockCode": "2409",
+          "newsHits": 1,
+          "isPrimary": false,
+          "sampleNews": [
+            {
+              "title": "友達 OLED 面板 出貨平板與筆電市場",
+              "url": "https://search.ltn.com.tw/list?keyword=%E5%8F%8B%E9%81%94#2025-12-30",
+              "source": "ltn",
+              "date": "2025-12-30"
+            }
+          ]
+        },
+        {
+          "name": "群創光電",
+          "stockCode": "3481",
+          "newsHits": 1,
+          "isPrimary": true,
+          "sampleNews": [
+            {
+              "title": "TFT-LCD 報價持平 群創 Q4 營運穩健",
+              "url": "https://search.ltn.com.tw/list?keyword=%E7%BE%A4%E5%89%B5#2026-01-05",
+              "source": "ltn",
+              "date": "2026-01-05"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "name": "Flash / NAND",
+      "volume": 2,
+      "primaryCompanyCount": 1,
+      "totalCompanyCount": 1,
+      "companies": [
+        {
+          "name": "旺宏電子",
+          "stockCode": "2337",
+          "newsHits": 2,
+          "isPrimary": true,
+          "sampleNews": [
+            {
+              "title": "旺宏 NOR Flash 出貨增 車用客戶導入加速",
+              "url": "https://tw.stock.yahoo.com/news/2337-旺宏 NOR-2026-01-15.html",
+              "source": "yahoo",
+              "date": "2026-01-15"
+            },
+            {
+              "title": "旺宏 3D NAND ROM 開發進度更新",
+              "url": "https://tw.stock.yahoo.com/news/2337-旺宏 3D -2025-12-25.html",
+              "source": "yahoo",
+              "date": "2025-12-25"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "name": "AI 晶片 / ASIC",
+      "volume": 1,
+      "primaryCompanyCount": 1,
+      "totalCompanyCount": 1,
+      "companies": [
+        {
+          "name": "聯發科技",
+          "stockCode": "2454",
+          "newsHits": 1,
+          "isPrimary": true,
+          "sampleNews": [
+            {
+              "title": "AI 晶片布局 聯發科 NVIDIA 合作客製化 ASIC",
+              "url": "https://search.ltn.com.tw/list?keyword=%E8%81%AF%E7%99%BC%E7%A7%91#2026-01-15",
+              "source": "ltn",
+              "date": "2026-01-15"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rank": 5,
+      "name": "5G 通訊",
+      "volume": 1,
+      "primaryCompanyCount": 0,
+      "totalCompanyCount": 1,
+      "companies": [
+        {
+          "name": "聯發科技",
+          "stockCode": "2454",
+          "newsHits": 1,
+          "isPrimary": false,
+          "sampleNews": [
+            {
+              "title": "5G 數據機晶片 聯發科市佔超越高通",
+              "url": "https://tw.stock.yahoo.com/news/2454-5G 數據機-2026-01-04.html",
+              "source": "yahoo",
+              "date": "2026-01-04"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rank": 6,
+      "name": "儲能 / 電池",
+      "volume": 1,
+      "primaryCompanyCount": 1,
+      "totalCompanyCount": 1,
+      "companies": [
+        {
+          "name": "台達電子工業",
+          "stockCode": "2308",
+          "newsHits": 1,
+          "isPrimary": true,
+          "sampleNews": [
+            {
+              "title": "儲能 ESS 系統 台達電取得歐系大單",
+              "url": "https://tw.stock.yahoo.com/news/2308-儲能 ESS-2025-12-28.html",
+              "source": "yahoo",
+              "date": "2025-12-28"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rank": 7,
+      "name": "先進製程 (3nm/2nm)",
+      "volume": 1,
+      "primaryCompanyCount": 1,
+      "totalCompanyCount": 1,
+      "companies": [
+        {
+          "name": "台灣積體電路製造",
+          "stockCode": "2330",
+          "newsHits": 1,
+          "isPrimary": true,
+          "sampleNews": [
+            {
+              "title": "3nm 5nm 製程大客戶 NVIDIA AMD 需求強勁",
+              "url": "https://search.ltn.com.tw/list?keyword=%E5%8F%B0%E7%A9%8D%E9%9B%BB#2025-12-22",
+              "source": "ltn",
+              "date": "2025-12-22"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rank": 8,
+      "name": "SSD / 儲存",
+      "volume": 1,
+      "primaryCompanyCount": 1,
+      "totalCompanyCount": 1,
+      "companies": [
+        {
+          "name": "群聯電子",
+          "stockCode": "8299",
+          "newsHits": 1,
+          "isPrimary": true,
+          "sampleNews": [
+            {
+              "title": "AI 伺服器企業級 SSD 需求帶動 群聯出貨成長",
+              "url": "https://search.ltn.com.tw/list?keyword=%E7%BE%A4%E8%81%AF#2026-01-14",
+              "source": "ltn",
+              "date": "2026-01-14"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rank": 9,
+      "name": "OLED",
+      "volume": 1,
+      "primaryCompanyCount": 1,
+      "totalCompanyCount": 1,
+      "companies": [
+        {
+          "name": "友達光電",
+          "stockCode": "2409",
+          "newsHits": 1,
+          "isPrimary": true,
+          "sampleNews": [
+            {
+              "title": "友達 OLED 面板 出貨平板與筆電市場",
+              "url": "https://search.ltn.com.tw/list?keyword=%E5%8F%8B%E9%81%94#2025-12-30",
+              "source": "ltn",
+              "date": "2025-12-30"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rank": 10,
+      "name": "人形機器人",
+      "volume": 1,
+      "primaryCompanyCount": 1,
+      "totalCompanyCount": 1,
+      "companies": [
+        {
+          "name": "鴻海精密工業",
+          "stockCode": "2317",
+          "newsHits": 1,
+          "isPrimary": true,
+          "sampleNews": [
+            {
+              "title": "人形機器人 Optimus 鴻海掌握關鍵零組件供應",
+              "url": "https://tw.stock.yahoo.com/news/2317-人形機器人 -2026-01-12.html",
+              "source": "yahoo",
+              "date": "2026-01-12"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rank": 11,
+      "name": "電動車 / EV",
+      "volume": 1,
+      "primaryCompanyCount": 0,
+      "totalCompanyCount": 1,
+      "companies": [
+        {
+          "name": "鴻海精密工業",
+          "stockCode": "2317",
+          "newsHits": 1,
+          "isPrimary": false,
+          "sampleNews": [
+            {
+              "title": "鴻海集團 2026 三大主軸:AI、EV、半導體",
+              "url": "https://tw.stock.yahoo.com/news/2317-鴻海集團 2-2025-12-28.html",
+              "source": "yahoo",
+              "date": "2025-12-28"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rank": 12,
+      "name": "衛星通訊",
+      "volume": 1,
+      "primaryCompanyCount": 1,
+      "totalCompanyCount": 1,
+      "companies": [
+        {
+          "name": "中華電信",
+          "stockCode": "2412",
+          "newsHits": 1,
+          "isPrimary": true,
+          "sampleNews": [
+            {
+              "title": "低軌衛星合作 中華電與 SpaceX 接洽",
+              "url": "https://search.ltn.com.tw/list?keyword=%E4%B8%AD%E8%8F%AF%E9%9B%BB#2026-01-10",
+              "source": "ltn",
+              "date": "2026-01-10"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rank": 13,
+      "name": "電源管理 PMIC",
+      "volume": 1,
+      "primaryCompanyCount": 1,
+      "totalCompanyCount": 1,
+      "companies": [
+        {
+          "name": "光寶科技",
+          "stockCode": "2301",
+          "newsHits": 1,
+          "isPrimary": true,
+          "sampleNews": [
+            {
+              "title": "電源管理 PMIC 光寶科取得多家雲端客戶",
+              "url": "https://tw.stock.yahoo.com/news/2301-電源管理 P-2026-01-08.html",
+              "source": "yahoo",
+              "date": "2026-01-08"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rank": 14,
+      "name": "PCB 印刷電路板",
+      "volume": 1,
+      "primaryCompanyCount": 1,
+      "totalCompanyCount": 1,
+      "companies": [
+        {
+          "name": "欣興電子",
+          "stockCode": "3037",
+          "newsHits": 1,
+          "isPrimary": true,
+          "sampleNews": [
+            {
+              "title": "欣興 HDI PCB 供應 Apple iPhone 17",
+              "url": "https://search.ltn.com.tw/list?keyword=%E6%AC%A3%E8%88%88#2026-01-15",
+              "source": "ltn",
+              "date": "2026-01-15"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rank": 15,
+      "name": "智慧手機",
+      "volume": 1,
+      "primaryCompanyCount": 0,
+      "totalCompanyCount": 1,
+      "companies": [
+        {
+          "name": "欣興電子",
+          "stockCode": "3037",
+          "newsHits": 1,
+          "isPrimary": false,
+          "sampleNews": [
+            {
+              "title": "欣興 HDI PCB 供應 Apple iPhone 17",
+              "url": "https://search.ltn.com.tw/list?keyword=%E6%AC%A3%E8%88%88#2026-01-15",
+              "source": "ltn",
+              "date": "2026-01-15"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rank": 16,
+      "name": "ABF 載板",
+      "volume": 1,
+      "primaryCompanyCount": 0,
+      "totalCompanyCount": 1,
+      "companies": [
+        {
+          "name": "欣興電子",
+          "stockCode": "3037",
+          "newsHits": 1,
+          "isPrimary": false,
+          "sampleNews": [
+            {
+              "title": "ABF 載板 欣興 2026 擴產時程加速",
+              "url": "https://tw.stock.yahoo.com/news/3037-ABF 載板-2025-12-22.html",
+              "source": "yahoo",
+              "date": "2025-12-22"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

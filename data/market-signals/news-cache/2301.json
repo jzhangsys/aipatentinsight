@@ -1,0 +1,37 @@
+{
+  "stockCode": "2301",
+  "name": "光寶科",
+  "scrapedAt": "2026-05-01T10:42:11.367Z",
+  "devSeed": true,
+  "sourceCounts": {
+    "yahoo": 2,
+    "ltn": 1,
+    "mops": 0,
+    "technews": 0,
+    "digitimes": 0,
+    "anue": 0
+  },
+  "news": [
+    {
+      "title": "AI 伺服器電源 光寶科 PSU 出貨倍數成長",
+      "url": "https://tw.stock.yahoo.com/news/2301-AI 伺服器-2026-01-30.html",
+      "source": "yahoo",
+      "date": "2026-01-30",
+      "snippet": ""
+    },
+    {
+      "title": "光寶科 800V 電源系統 AI 機櫃導入",
+      "url": "https://search.ltn.com.tw/list?keyword=%E5%85%89%E5%AF%B6%E7%A7%91#2026-01-20",
+      "source": "ltn",
+      "date": "2026-01-20",
+      "snippet": ""
+    },
+    {
+      "title": "電源管理 PMIC 光寶科取得多家雲端客戶",
+      "url": "https://tw.stock.yahoo.com/news/2301-電源管理 P-2026-01-08.html",
+      "source": "yahoo",
+      "date": "2026-01-08",
+      "snippet": ""
+    }
+  ]
+}
