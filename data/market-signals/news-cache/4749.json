@@ -1,10 +1,14 @@
 {
   "stockCode": "4749",
   "name": "新應材",
-  "scrapedAt": "2026-05-01T11:30:08.304Z",
+  "scrapedAt": "2026-05-01T12:13:24.955Z",
   "sourceCounts": {
-    "yahoo": 20,
+    "yahoo": 0,
     "ltn": 20
+  },
+  "enrichStats": {
+    "fetched": 0,
+    "filled": 0
   },
   "news": [
     {
@@ -145,146 +149,6 @@
       "url": "https://ec.ltn.com.tw/article/breakingnews/5073175",
       "source": "ltn",
       "date": "2025-06-12",
-      "snippet": ""
-    },
-    {
-      "title": "【公告】新應材115年第1季財務報告董事會預計召開日期為115年5月8日",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%96%B0%E6%87%89%E6%9D%90115%E5%B9%B4%E7%AC%AC1%E5%AD%A3%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A%E8%91%A3%E4%BA%8B%E6%9C%83%E9%A0%90%E8%A8%88%E5%8F%AC%E9%96%8B%E6%97%A5%E6%9C%9F%E7%82%BA115%E5%B9%B45%E6%9C%888%E6%97%A5-101023579.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】新應材有價證券達公布注意交易資訊標準，故公布相關訊息，以利投資人區別瞭解。",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%96%B0%E6%87%89%E6%9D%90%E6%9C%89%E5%83%B9%E8%AD%89%E5%88%B8%E9%81%94%E5%85%AC%E5%B8%83%E6%B3%A8%E6%84%8F%E4%BA%A4%E6%98%93%E8%B3%87%E8%A8%8A%E6%A8%99%E6%BA%96-%E6%95%85%E5%85%AC%E5%B8%83%E7%9B%B8%E9%97%9C%E8%A8%8A%E6%81%AF-%E4%BB%A5%E5%88%A9%E6%8A%95%E8%B3%87%E4%BA%BA%E5%8D%80%E5%88%A5%E7%9E%AD%E8%A7%A3-061406080.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】新應材以租地委建方式簽訂龍科廠廠房興建工程案",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%96%B0%E6%87%89%E6%9D%90%E4%BB%A5%E7%A7%9F%E5%9C%B0%E5%A7%94%E5%BB%BA%E6%96%B9%E5%BC%8F%E7%B0%BD%E8%A8%82%E9%BE%8D%E7%A7%91%E5%BB%A0%E5%BB%A0%E6%88%BF%E8%88%88%E5%BB%BA%E5%B7%A5%E7%A8%8B%E6%A1%88-102530891.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】新應材 2026年3月合併營收4.33億元 年增32.67%",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%96%B0%E6%87%89%E6%9D%90-2026%E5%B9%B43%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B64-33%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E32-092304519.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】更正新應材115/3/11公告的發行國內第一次無擔保轉換公司債案募得價款之用途及運用計畫，及辦理現金增資發行新股案之本次增資資金用途",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%9B%B4%E6%AD%A3%E6%96%B0%E6%87%89%E6%9D%90115-3-11%E5%85%AC%E5%91%8A%E7%9A%84%E7%99%BC%E8%A1%8C%E5%9C%8B%E5%85%A7%E7%AC%AC-%E6%AC%A1%E7%84%A1%E6%93%94%E4%BF%9D%E8%BD%89%E6%8F%9B%E5%85%AC%E5%8F%B8%E5%82%B5%E6%A1%88%E5%8B%9F%E5%BE%97%E5%83%B9%E6%AC%BE%E4%B9%8B%E7%94%A8%E9%80%94%E5%8F%8A%E9%81%8B%E7%94%A8%E8%A8%88%E7%95%AB-141253731.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】新應材董事會決議股利分派",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%96%B0%E6%87%89%E6%9D%90%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E8%82%A1%E5%88%A9%E5%88%86%E6%B4%BE-081410725.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】新應材董事會決議召開115年股東常會公告",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%96%B0%E6%87%89%E6%9D%90%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E5%8F%AC%E9%96%8B115%E5%B9%B4%E8%82%A1%E6%9D%B1%E5%B8%B8%E6%9C%83%E5%85%AC%E5%91%8A-081408859.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】新應材有價證券達公布注意交易資訊標準，故公布相關訊息，以利投資人區別瞭解。",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%96%B0%E6%87%89%E6%9D%90%E6%9C%89%E5%83%B9%E8%AD%89%E5%88%B8%E9%81%94%E5%85%AC%E5%B8%83%E6%B3%A8%E6%84%8F%E4%BA%A4%E6%98%93%E8%B3%87%E8%A8%8A%E6%A8%99%E6%BA%96-%E6%95%85%E5%85%AC%E5%B8%83%E7%9B%B8%E9%97%9C%E8%A8%8A%E6%81%AF-%E4%BB%A5%E5%88%A9%E6%8A%95%E8%B3%87%E4%BA%BA%E5%8D%80%E5%88%A5%E7%9E%AD%E8%A7%A3-074601523.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】新應材董事會通過114年度財務報告",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%96%B0%E6%87%89%E6%9D%90%E8%91%A3%E4%BA%8B%E6%9C%83%E9%80%9A%E9%81%8E114%E5%B9%B4%E5%BA%A6%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A-073552194.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】新應材董事會決議辦理現金增資發行新股",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%96%B0%E6%87%89%E6%9D%90%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E8%BE%A6%E7%90%86%E7%8F%BE%E9%87%91%E5%A2%9E%E8%B3%87%E7%99%BC%E8%A1%8C%E6%96%B0%E8%82%A1-073549625.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】新應材董事會決議辦理發行國內第一次無擔保轉換公司債案",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%96%B0%E6%87%89%E6%9D%90%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E8%BE%A6%E7%90%86%E7%99%BC%E8%A1%8C%E5%9C%8B%E5%85%A7%E7%AC%AC-%E6%AC%A1%E7%84%A1%E6%93%94%E4%BF%9D%E8%BD%89%E6%8F%9B%E5%85%AC%E5%8F%B8%E5%82%B5%E6%A1%88-073543944.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】新應材董事會決議通過興建龍科廠資本支出修正案",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%96%B0%E6%87%89%E6%9D%90%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E9%80%9A%E9%81%8E%E8%88%88%E5%BB%BA%E9%BE%8D%E7%A7%91%E5%BB%A0%E8%B3%87%E6%9C%AC%E6%94%AF%E5%87%BA%E4%BF%AE%E6%AD%A3%E6%A1%88-073307493.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】新應材取得私募有價證券",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%96%B0%E6%87%89%E6%9D%90%E5%8F%96%E5%BE%97%E7%A7%81%E5%8B%9F%E6%9C%89%E5%83%B9%E8%AD%89%E5%88%B8-073510212.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】新應材 2026年2月合併營收4.46億元 年增40.63%",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%96%B0%E6%87%89%E6%9D%90-2026%E5%B9%B42%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B64-46%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E40-091255445.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】新應材受邀參加機構投資人說明會",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%96%B0%E6%87%89%E6%9D%90%E5%8F%97%E9%82%80%E5%8F%83%E5%8A%A0%E6%A9%9F%E6%A7%8B%E6%8A%95%E8%B3%87%E4%BA%BA%E8%AA%AA%E6%98%8E%E6%9C%83-083053504.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】新應材受邀參加機構投資人說明會",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%96%B0%E6%87%89%E6%9D%90%E5%8F%97%E9%82%80%E5%8F%83%E5%8A%A0%E6%A9%9F%E6%A7%8B%E6%8A%95%E8%B3%87%E4%BA%BA%E8%AA%AA%E6%98%8E%E6%9C%83-083051322.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】新應材受邀參加機構投資人說明會",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%96%B0%E6%87%89%E6%9D%90%E5%8F%97%E9%82%80%E5%8F%83%E5%8A%A0%E6%A9%9F%E6%A7%8B%E6%8A%95%E8%B3%87%E4%BA%BA%E8%AA%AA%E6%98%8E%E6%9C%83-083049426.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】新應材114年第4季財務報告董事會預計召開日期為115年3月11日",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%96%B0%E6%87%89%E6%9D%90114%E5%B9%B4%E7%AC%AC4%E5%AD%A3%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A%E8%91%A3%E4%BA%8B%E6%9C%83%E9%A0%90%E8%A8%88%E5%8F%AC%E9%96%8B%E6%97%A5%E6%9C%9F%E7%82%BA115%E5%B9%B43%E6%9C%8811%E6%97%A5-093516990.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "櫃買3/12起舉辦業績發表會 18家企業參與",
-      "url": "https://tw.stock.yahoo.com/news/%E6%AB%83%E8%B2%B73-12%E8%B5%B7%E8%88%89%E8%BE%A6%E6%A5%AD%E7%B8%BE%E7%99%BC%E8%A1%A8%E6%9C%83-18%E5%AE%B6%E4%BC%81%E6%A5%AD%E5%8F%83%E8%88%87-084928297.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】新應材 2026年1月合併營收3.67億元 年增16.13%",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%96%B0%E6%87%89%E6%9D%90-2026%E5%B9%B41%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B63-67%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E16-080302943.html",
-      "source": "yahoo",
-      "date": null,
       "snippet": ""
     }
   ]

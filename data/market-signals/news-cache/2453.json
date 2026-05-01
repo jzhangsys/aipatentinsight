@@ -1,12 +1,156 @@
 {
   "stockCode": "2453",
   "name": "凌群電腦",
-  "scrapedAt": "2026-05-01T11:29:02.244Z",
+  "scrapedAt": "2026-05-01T12:10:10.691Z",
   "sourceCounts": {
     "yahoo": 20,
     "ltn": 20
   },
+  "enrichStats": {
+    "fetched": 20,
+    "filled": 20
+  },
   "news": [
+    {
+      "title": "【公告】凌群 2026年3月合併營收6.05億元 年增9.04%",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%87%8C%E7%BE%A4-2026%E5%B9%B43%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B66-05%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E9-064304039.html",
+      "source": "yahoo",
+      "date": "2026-04-09",
+      "snippet": ""
+    },
+    {
+      "title": "【公告】凌群召開法人說明會相關資訊",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%87%8C%E7%BE%A4%E5%8F%AC%E9%96%8B%E6%B3%95%E4%BA%BA%E8%AA%AA%E6%98%8E%E6%9C%83%E7%9B%B8%E9%97%9C%E8%B3%87%E8%A8%8A-065617158.html",
+      "source": "yahoo",
+      "date": "2026-03-30",
+      "snippet": ""
+    },
+    {
+      "title": "凌群：AI將成新型員工 80人公司有30名「電腦人」",
+      "url": "https://tw.stock.yahoo.com/news/%E5%87%8C%E7%BE%A4-ai%E5%B0%87%E6%88%90%E6%96%B0%E5%9E%8B%E5%93%A1%E5%B7%A5-80%E4%BA%BA%E5%85%AC%E5%8F%B8%E6%9C%8930%E5%90%8D-%E9%9B%BB%E8%85%A6%E4%BA%BA-124425411.html",
+      "source": "yahoo",
+      "date": "2026-03-17",
+      "snippet": ""
+    },
+    {
+      "title": "【公告】凌群董事會決議股利分派",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%87%8C%E7%BE%A4%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E8%82%A1%E5%88%A9%E5%88%86%E6%B4%BE-073416885.html",
+      "source": "yahoo",
+      "date": "2026-03-13",
+      "snippet": ""
+    },
+    {
+      "title": "【公告】凌群董事會決議召開115年股東常會",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%87%8C%E7%BE%A4%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E5%8F%AC%E9%96%8B115%E5%B9%B4%E8%82%A1%E6%9D%B1%E5%B8%B8%E6%9C%83-065817814.html",
+      "source": "yahoo",
+      "date": "2026-03-13",
+      "snippet": ""
+    },
+    {
+      "title": "【公告】凌群114年度合併財務報告業經董事會決議通過",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%87%8C%E7%BE%A4114%E5%B9%B4%E5%BA%A6%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A%E6%A5%AD%E7%B6%93%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E9%80%9A%E9%81%8E-064154646.html",
+      "source": "yahoo",
+      "date": "2026-03-13",
+      "snippet": ""
+    },
+    {
+      "title": "【公告】凌群 2026年2月合併營收5.17億元 年增4.68%",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%87%8C%E7%BE%A4-2026%E5%B9%B42%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B65-17%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E4-064325140.html",
+      "source": "yahoo",
+      "date": "2026-03-06",
+      "snippet": ""
+    },
+    {
+      "title": "【公告】凌群114年度財務報告董事會預計召開日期為115年3月13日",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%87%8C%E7%BE%A4114%E5%B9%B4%E5%BA%A6%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A%E8%91%A3%E4%BA%8B%E6%9C%83%E9%A0%90%E8%A8%88%E5%8F%AC%E9%96%8B%E6%97%A5%E6%9C%9F%E7%82%BA115%E5%B9%B43%E6%9C%8813%E6%97%A5-073456699.html",
+      "source": "yahoo",
+      "date": "2026-03-05",
+      "snippet": ""
+    },
+    {
+      "title": "【公告】凌群 2026年1月合併營收4.61億元 年增8.68%",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%87%8C%E7%BE%A4-2026%E5%B9%B41%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B64-61%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E8-060314494.html",
+      "source": "yahoo",
+      "date": "2026-02-09",
+      "snippet": ""
+    },
+    {
+      "title": "【公告】凌群 2025年12月合併營收9.94億元 年增6.43%",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%87%8C%E7%BE%A4-2025%E5%B9%B412%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B69-94%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E6-060400027.html",
+      "source": "yahoo",
+      "date": "2026-01-09",
+      "snippet": ""
+    },
+    {
+      "title": "【公告】凌群 2025年11月合併營收7.75億元 年增4.85%",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%87%8C%E7%BE%A4-2025%E5%B9%B411%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B67-75%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E4-064202244.html",
+      "source": "yahoo",
+      "date": "2025-12-08",
+      "snippet": ""
+    },
+    {
+      "title": "【公告】凌群向關係人取得使用權資產",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%87%8C%E7%BE%A4%E5%90%91%E9%97%9C%E4%BF%82%E4%BA%BA%E5%8F%96%E5%BE%97%E4%BD%BF%E7%94%A8%E6%AC%8A%E8%B3%87%E7%94%A2-084252236.html",
+      "source": "yahoo",
+      "date": "2025-11-11",
+      "snippet": ""
+    },
+    {
+      "title": "【公告】凌群114年度第3季合併財務報告業經董事會決議通過",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%87%8C%E7%BE%A4114%E5%B9%B4%E5%BA%A6%E7%AC%AC3%E5%AD%A3%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A%E6%A5%AD%E7%B6%93%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E9%80%9A%E9%81%8E-074939760.html",
+      "source": "yahoo",
+      "date": "2025-11-11",
+      "snippet": ""
+    },
+    {
+      "title": "【公告】凌群 2025年10月合併營收6.32億元 年增5.58%",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%87%8C%E7%BE%A4-2025%E5%B9%B410%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B66-32%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E5-060145068.html",
+      "source": "yahoo",
+      "date": "2025-11-07",
+      "snippet": ""
+    },
+    {
+      "title": "【公告】凌群114年第三季財務報告董事會預計召開日期為114年11月11日",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%87%8C%E7%BE%A4114%E5%B9%B4%E7%AC%AC%E4%B8%89%E5%AD%A3%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A%E8%91%A3%E4%BA%8B%E6%9C%83%E9%A0%90%E8%A8%88%E5%8F%AC%E9%96%8B%E6%97%A5%E6%9C%9F%E7%82%BA114%E5%B9%B411%E6%9C%8811%E6%97%A5-085706094.html",
+      "source": "yahoo",
+      "date": "2025-11-03",
+      "snippet": ""
+    },
+    {
+      "title": "【公告】凌群 2025年9月合併營收7.27億元 年增8.38%",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%87%8C%E7%BE%A4-2025%E5%B9%B49%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B67-27%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E8-065211561.html",
+      "source": "yahoo",
+      "date": "2025-10-08",
+      "snippet": ""
+    },
+    {
+      "title": "【公告】凌群 2025年8月合併營收5.66億元 年增9.71%",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%87%8C%E7%BE%A4-2025%E5%B9%B48%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B65-66%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E9-094225182.html",
+      "source": "yahoo",
+      "date": "2025-09-08",
+      "snippet": ""
+    },
+    {
+      "title": "【公告】凌群董事會通過間接對大陸投資案",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%87%8C%E7%BE%A4%E8%91%A3%E4%BA%8B%E6%9C%83%E9%80%9A%E9%81%8E%E9%96%93%E6%8E%A5%E5%B0%8D%E5%A4%A7%E9%99%B8%E6%8A%95%E8%B3%87%E6%A1%88-084536819.html",
+      "source": "yahoo",
+      "date": "2025-08-11",
+      "snippet": ""
+    },
+    {
+      "title": "【公告】凌群114年度第2季合併財務報告業經董事會決議通過",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%87%8C%E7%BE%A4114%E5%B9%B4%E5%BA%A6%E7%AC%AC2%E5%AD%A3%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A%E6%A5%AD%E7%B6%93%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E9%80%9A%E9%81%8E-073242818.html",
+      "source": "yahoo",
+      "date": "2025-08-11",
+      "snippet": ""
+    },
+    {
+      "title": "【公告】凌群 2025年7月合併營收5.58億元 年增5.89%",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%87%8C%E7%BE%A4-2025%E5%B9%B47%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B65-58%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E5-060304019.html",
+      "source": "yahoo",
+      "date": "2025-08-08",
+      "snippet": ""
+    },
     {
       "title": "凌群AI智慧電腦人、智慧藥櫃應用 打入醫療院所",
       "url": "https://ec.ltn.com.tw/article/breakingnews/4984110",
@@ -145,146 +289,6 @@
       "url": "https://ec.ltn.com.tw/article/breakingnews/3367074",
       "source": "ltn",
       "date": "2020-11-30",
-      "snippet": ""
-    },
-    {
-      "title": "【公告】凌群 2026年3月合併營收6.05億元 年增9.04%",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%87%8C%E7%BE%A4-2026%E5%B9%B43%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B66-05%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E9-064304039.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】凌群召開法人說明會相關資訊",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%87%8C%E7%BE%A4%E5%8F%AC%E9%96%8B%E6%B3%95%E4%BA%BA%E8%AA%AA%E6%98%8E%E6%9C%83%E7%9B%B8%E9%97%9C%E8%B3%87%E8%A8%8A-065617158.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "凌群：AI將成新型員工 80人公司有30名「電腦人」",
-      "url": "https://tw.stock.yahoo.com/news/%E5%87%8C%E7%BE%A4-ai%E5%B0%87%E6%88%90%E6%96%B0%E5%9E%8B%E5%93%A1%E5%B7%A5-80%E4%BA%BA%E5%85%AC%E5%8F%B8%E6%9C%8930%E5%90%8D-%E9%9B%BB%E8%85%A6%E4%BA%BA-124425411.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】凌群董事會決議股利分派",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%87%8C%E7%BE%A4%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E8%82%A1%E5%88%A9%E5%88%86%E6%B4%BE-073416885.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】凌群董事會決議召開115年股東常會",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%87%8C%E7%BE%A4%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E5%8F%AC%E9%96%8B115%E5%B9%B4%E8%82%A1%E6%9D%B1%E5%B8%B8%E6%9C%83-065817814.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】凌群114年度合併財務報告業經董事會決議通過",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%87%8C%E7%BE%A4114%E5%B9%B4%E5%BA%A6%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A%E6%A5%AD%E7%B6%93%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E9%80%9A%E9%81%8E-064154646.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】凌群 2026年2月合併營收5.17億元 年增4.68%",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%87%8C%E7%BE%A4-2026%E5%B9%B42%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B65-17%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E4-064325140.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】凌群114年度財務報告董事會預計召開日期為115年3月13日",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%87%8C%E7%BE%A4114%E5%B9%B4%E5%BA%A6%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A%E8%91%A3%E4%BA%8B%E6%9C%83%E9%A0%90%E8%A8%88%E5%8F%AC%E9%96%8B%E6%97%A5%E6%9C%9F%E7%82%BA115%E5%B9%B43%E6%9C%8813%E6%97%A5-073456699.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】凌群 2026年1月合併營收4.61億元 年增8.68%",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%87%8C%E7%BE%A4-2026%E5%B9%B41%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B64-61%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E8-060314494.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】凌群 2025年12月合併營收9.94億元 年增6.43%",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%87%8C%E7%BE%A4-2025%E5%B9%B412%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B69-94%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E6-060400027.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】凌群 2025年11月合併營收7.75億元 年增4.85%",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%87%8C%E7%BE%A4-2025%E5%B9%B411%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B67-75%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E4-064202244.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】凌群向關係人取得使用權資產",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%87%8C%E7%BE%A4%E5%90%91%E9%97%9C%E4%BF%82%E4%BA%BA%E5%8F%96%E5%BE%97%E4%BD%BF%E7%94%A8%E6%AC%8A%E8%B3%87%E7%94%A2-084252236.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】凌群114年度第3季合併財務報告業經董事會決議通過",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%87%8C%E7%BE%A4114%E5%B9%B4%E5%BA%A6%E7%AC%AC3%E5%AD%A3%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A%E6%A5%AD%E7%B6%93%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E9%80%9A%E9%81%8E-074939760.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】凌群 2025年10月合併營收6.32億元 年增5.58%",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%87%8C%E7%BE%A4-2025%E5%B9%B410%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B66-32%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E5-060145068.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】凌群114年第三季財務報告董事會預計召開日期為114年11月11日",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%87%8C%E7%BE%A4114%E5%B9%B4%E7%AC%AC%E4%B8%89%E5%AD%A3%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A%E8%91%A3%E4%BA%8B%E6%9C%83%E9%A0%90%E8%A8%88%E5%8F%AC%E9%96%8B%E6%97%A5%E6%9C%9F%E7%82%BA114%E5%B9%B411%E6%9C%8811%E6%97%A5-085706094.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】凌群 2025年9月合併營收7.27億元 年增8.38%",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%87%8C%E7%BE%A4-2025%E5%B9%B49%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B67-27%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E8-065211561.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】凌群 2025年8月合併營收5.66億元 年增9.71%",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%87%8C%E7%BE%A4-2025%E5%B9%B48%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B65-66%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E9-094225182.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】凌群董事會通過間接對大陸投資案",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%87%8C%E7%BE%A4%E8%91%A3%E4%BA%8B%E6%9C%83%E9%80%9A%E9%81%8E%E9%96%93%E6%8E%A5%E5%B0%8D%E5%A4%A7%E9%99%B8%E6%8A%95%E8%B3%87%E6%A1%88-084536819.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】凌群114年度第2季合併財務報告業經董事會決議通過",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%87%8C%E7%BE%A4114%E5%B9%B4%E5%BA%A6%E7%AC%AC2%E5%AD%A3%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A%E6%A5%AD%E7%B6%93%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E9%80%9A%E9%81%8E-073242818.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】凌群 2025年7月合併營收5.58億元 年增5.89%",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%87%8C%E7%BE%A4-2025%E5%B9%B47%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B65-58%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E5-060304019.html",
-      "source": "yahoo",
-      "date": null,
       "snippet": ""
     }
   ]

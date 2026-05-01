@@ -1,25 +1,154 @@
 {
   "stockCode": "5274",
-  "name": "信驊",
-  "scrapedAt": "2026-05-01T11:51:03.847Z",
-  "devSeed": true,
+  "name": "信驊科技",
+  "scrapedAt": "2026-05-01T12:14:10.407Z",
   "sourceCounts": {
-    "yahoo": 1,
-    "ltn": 1
+    "yahoo": 0,
+    "ltn": 20
+  },
+  "enrichStats": {
+    "fetched": 0,
+    "filled": 0
   },
   "news": [
     {
-      "title": "信驊 BMC 晶片 AI 伺服器導入率攀升",
-      "url": "https://tw.stock.yahoo.com/news/5274-信驊 BMC-2026-01-30.html",
-      "source": "yahoo",
-      "date": "2026-01-30",
+      "title": "信驊：最新OBMF-ICP over USB解決方案  簡化資料中心管理",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5419848",
+      "source": "ltn",
+      "date": "2026-04-29",
       "snippet": ""
     },
     {
-      "title": "AI Server 開機晶片 信驊掌握獨家供應",
-      "url": "https://search.ltn.com.tw/list?keyword=%E4%BF%A1%E9%A9%8A#2026-01-18",
+      "title": "攻進股王供應鏈！Exein攜手信驊、聯發科 搶攻資料中心與IoT資安",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5405598",
       "source": "ltn",
-      "date": "2026-01-18",
+      "date": "2026-04-16",
+      "snippet": ""
+    },
+    {
+      "title": "橋科首家企業廠房落成 記憶體模組「華騰」拔頭籌",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5308837",
+      "source": "ltn",
+      "date": "2026-01-13",
+      "snippet": ""
+    },
+    {
+      "title": "完備南部半導體S廊帶！亞灣2.0吸引23家ICT公司落地、建置3座算力中心",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5250454",
+      "source": "ltn",
+      "date": "2025-11-18",
+      "snippet": ""
+    },
+    {
+      "title": "陳其邁上任累計招商逾9100億 台積電P4廠也動工了",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5195031",
+      "source": "ltn",
+      "date": "2025-09-29",
+      "snippet": ""
+    },
+    {
+      "title": "SEMICON Taiwan下周登場   17個國家館參與創紀錄",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5165676",
+      "source": "ltn",
+      "date": "2025-09-03",
+      "snippet": ""
+    },
+    {
+      "title": "華碩：台北國際自動化大展秀實力 首度完整公開AI全場景應用",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5150569",
+      "source": "ltn",
+      "date": "2025-08-20",
+      "snippet": ""
+    },
+    {
+      "title": "台肥竹科D7-B科技研發大樓動土 李孫榮：成為高科技產業鏈整合平台",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5036266",
+      "source": "ltn",
+      "date": "2025-05-08",
+      "snippet": ""
+    },
+    {
+      "title": "台肥新竹科技園區第三期核心工程 即將啟動",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5035291",
+      "source": "ltn",
+      "date": "2025-05-07",
+      "snippet": ""
+    },
+    {
+      "title": "棧貳庫+大港倉遊客快破400萬！土開公司：旗鼓鹽共存共榮",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4998490",
+      "source": "ltn",
+      "date": "2025-04-01",
+      "snippet": ""
+    },
+    {
+      "title": "亞灣智慧公宅公辦都更案評選出爐 高市府：估引資逾110億元",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4982398",
+      "source": "ltn",
+      "date": "2025-03-17",
+      "snippet": ""
+    },
+    {
+      "title": "焦點股》信驊：GB300降低BMC用量？外資砍目標價",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4902456",
+      "source": "ltn",
+      "date": "2024-12-24",
+      "snippet": ""
+    },
+    {
+      "title": "輝達等4公司將進駐高雄香蕉碼頭  成立生成式主權AI辦公室",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4901862",
+      "source": "ltn",
+      "date": "2024-12-23",
+      "snippet": ""
+    },
+    {
+      "title": "信驊科技20週年慶宣布在高雄設研發中心 陳其邁：感謝看好高雄",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4894222",
+      "source": "ltn",
+      "date": "2024-12-15",
+      "snippet": ""
+    },
+    {
+      "title": "盟立AMR導入信驊全景相機 為機器人添「慧眼」",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4791041",
+      "source": "ltn",
+      "date": "2024-09-05",
+      "snippet": ""
+    },
+    {
+      "title": "超微在高雄設研發中心有譜 資深副總拜會陳其邁",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4775304",
+      "source": "ltn",
+      "date": "2024-08-21",
+      "snippet": ""
+    },
+    {
+      "title": "完成高雄半導體產業鏈最後拼圖  南部晶片設計產業推動基地成立",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4763950",
+      "source": "ltn",
+      "date": "2024-08-09",
+      "snippet": ""
+    },
+    {
+      "title": "焦點股》信驊：搭上輝達列車 股價飆新高",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4695593",
+      "source": "ltn",
+      "date": "2024-06-05",
+      "snippet": ""
+    },
+    {
+      "title": "專家指高雄AI潛力最大 AI產業鏈地圖曝光",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4694205",
+      "source": "ltn",
+      "date": "2024-06-04",
+      "snippet": ""
+    },
+    {
+      "title": "「放視大賞」數位設計展登場 陳其邁證實爭取AMD落腳高雄",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4689276",
+      "source": "ltn",
+      "date": "2024-05-30",
       "snippet": ""
     }
   ]

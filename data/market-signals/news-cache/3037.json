@@ -1,32 +1,154 @@
 {
   "stockCode": "3037",
-  "name": "欣興",
-  "scrapedAt": "2026-05-01T11:51:03.842Z",
-  "devSeed": true,
+  "name": "欣興電子",
+  "scrapedAt": "2026-05-01T12:11:19.648Z",
   "sourceCounts": {
-    "yahoo": 2,
-    "ltn": 1
+    "yahoo": 0,
+    "ltn": 20
+  },
+  "enrichStats": {
+    "fetched": 0,
+    "filled": 0
   },
   "news": [
     {
-      "title": "欣興 ABF 載板 NVIDIA 主力供應商",
-      "url": "https://tw.stock.yahoo.com/news/3037-欣興 ABF-2026-01-25.html",
-      "source": "yahoo",
-      "date": "2026-01-25",
-      "snippet": ""
-    },
-    {
-      "title": "欣興 HDI PCB 供應 Apple iPhone 17",
-      "url": "https://search.ltn.com.tw/list?keyword=%E6%AC%A3%E8%88%88#2026-01-15",
+      "title": "聯電高階人事異動  王石升任執行長  徐明志擔任總經理暨營運長",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5351317",
       "source": "ltn",
-      "date": "2026-01-15",
+      "date": "2026-02-25",
       "snippet": ""
     },
     {
-      "title": "ABF 載板 欣興 2026 擴產時程加速",
-      "url": "https://tw.stock.yahoo.com/news/3037-ABF 載板-2025-12-22.html",
-      "source": "yahoo",
-      "date": "2025-12-22",
+      "title": "欣興申購最後1天 吸引51萬人搶購 中籤率0.76％",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5301023",
+      "source": "ltn",
+      "date": "2026-01-06",
+      "snippet": ""
+    },
+    {
+      "title": "潛在報酬率高達99％！PCB大廠欣興申購明最後1天 抽中可望賺11.5萬",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5299590",
+      "source": "ltn",
+      "date": "2026-01-05",
+      "snippet": ""
+    },
+    {
+      "title": "聯電股價重返50元 下午重訊說明這事",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5281200",
+      "source": "ltn",
+      "date": "2025-12-17",
+      "snippet": ""
+    },
+    {
+      "title": "3DIC先進封裝製造聯盟啟動 打造異質整合新局",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5172459",
+      "source": "ltn",
+      "date": "2025-09-09",
+      "snippet": ""
+    },
+    {
+      "title": "TPCA：2025軟板產值破200億美元 AI眼鏡成新亮點",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5152775",
+      "source": "ltn",
+      "date": "2025-08-22",
+      "snippet": ""
+    },
+    {
+      "title": "沃旭35億美元增資大彰化西南風場 投審會通過",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4962614",
+      "source": "ltn",
+      "date": "2025-02-25",
+      "snippet": ""
+    },
+    {
+      "title": "聯電「綠獎」今頒獎  推動維護生物多樣性累計81件",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4879421",
+      "source": "ltn",
+      "date": "2024-11-29",
+      "snippet": ""
+    },
+    {
+      "title": "恆勁科技前董事長胡竹青逝世 享壽64歲",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4742143",
+      "source": "ltn",
+      "date": "2024-07-19",
+      "snippet": ""
+    },
+    {
+      "title": "輝達技術支持 台灣打造繁體中文AI模型開放免費下載",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4722004",
+      "source": "ltn",
+      "date": "2024-07-01",
+      "snippet": ""
+    },
+    {
+      "title": "日月光舉辦「最佳供應商頒獎典禮」 印能等22家獲獎",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4704701",
+      "source": "ltn",
+      "date": "2024-06-13",
+      "snippet": ""
+    },
+    {
+      "title": "新竹產業園區徵才活動6/13登場  工程師、技術師薪資上看70K",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4698105",
+      "source": "ltn",
+      "date": "2024-06-07",
+      "snippet": ""
+    },
+    {
+      "title": "陳雅倫力推龜山籲張善政別錯過輝達 桃市府：積極爭取中",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4697059",
+      "source": "ltn",
+      "date": "2024-06-06",
+      "snippet": ""
+    },
+    {
+      "title": "聯電第九屆「綠獎」今開跑 為守護台灣獨特生物盡心力",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4649106",
+      "source": "ltn",
+      "date": "2024-04-22",
+      "snippet": ""
+    },
+    {
+      "title": "聯電第八屆綠獎頒獎 8年催生68件環境解方",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4500598",
+      "source": "ltn",
+      "date": "2023-11-24",
+      "snippet": ""
+    },
+    {
+      "title": "批准台積電35億歐元赴德設廠  投審會：無高階技術外流之虞",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4471083",
+      "source": "ltn",
+      "date": "2023-10-26",
+      "snippet": ""
+    },
+    {
+      "title": "台積電3DFabric聯盟夥伴達21個 三星記憶體赫然在列",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4442003",
+      "source": "ltn",
+      "date": "2023-09-28",
+      "snippet": ""
+    },
+    {
+      "title": "台資PCB廠去年市占近32% 全球第一",
+      "url": "https://ec.ltn.com.tw/article/paper/1606954",
+      "source": "ltn",
+      "date": "2023-09-27",
+      "snippet": ""
+    },
+    {
+      "title": "台資PCB產值市佔居全球之冠！中資PCB急起直追",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4439869",
+      "source": "ltn",
+      "date": "2023-09-26",
+      "snippet": ""
+    },
+    {
+      "title": "焦點股》欣興：英特爾推玻璃基板封裝 有望占先機",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4432677",
+      "source": "ltn",
+      "date": "2023-09-19",
       "snippet": ""
     }
   ]

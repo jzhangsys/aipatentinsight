@@ -83,20 +83,26 @@ console.log(`[build-market-signals] 載入 ${newsByCode.size} 家公司 news cac
 /**
  * 判斷新聞是否落在「上一期 snapshot ~ 本期 snapshot」的時間窗口。
  * 第一期 snapshot 沒有「上一期」,fallback 用 (D - N 天) 當起點。
+ *
+ * Strict 時間對齊:沒日期的新聞**直接拒絕**,不進任何窗口。
+ *   - Yahoo 列表頁不附日期 → 該源的新聞會大量被排除
+ *   - LTN 顯示「2 小時前」這種相對時間 → 也會被排除(date parse 失敗)
+ *   - LTN 顯示明確日期(YYYY/MM/DD)的新聞 → 正常落入對應窗口
+ *
+ * 這是為了避免「現在爬到的新聞混進歷史 snapshot 的分析」。
+ * 寧可掉資料,也不要時間錯位。
  */
 function inWindow(newsDate, snapshotDate, prevSnapshotDate) {
-  if (!newsDate) return true; // 沒日期 → 視為近期,算進來
+  if (!newsDate) return false;
   const snapTs = new Date(snapshotDate + "T23:59:59").getTime();
   const newsTs = new Date(newsDate + "T00:00:00").getTime();
-  if (Number.isNaN(newsTs)) return true;
+  if (Number.isNaN(newsTs)) return false;
   if (newsTs > snapTs) return false; // 新聞晚於 snapshot 不算
   let startTs;
   if (prevSnapshotDate) {
-    // 起點 = 上一期 snapshot 之後(>),所以 newsTs 必須嚴格大於 prev
     startTs = new Date(prevSnapshotDate + "T23:59:59").getTime();
     return newsTs > startTs;
   } else {
-    // 第一期沒有 prev → 用 D - N 天 fallback
     startTs = snapTs - FIRST_SNAPSHOT_FALLBACK_DAYS * 86400 * 1000;
     return newsTs >= startTs;
   }

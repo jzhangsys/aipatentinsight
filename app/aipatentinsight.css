@@ -3649,6 +3649,10 @@
   border: 1px solid rgba(125, 249, 255, 0.18);
   border-radius: 8px;
   min-height: 56px;
+  /* 在 flex 容器(如 market signals 的 ai-page-header)裡會自動 grow,
+     拿到足夠寬度讓 ticks 散開;在 grid 容器(patent map)中此屬性被忽略,無影響。*/
+  flex: 1;
+  min-width: 0;
 }
 
 .ai-map-timeline-all {

@@ -1,12 +1,51 @@
 {
   "stockCode": "2458",
   "name": "義隆電子",
-  "scrapedAt": "2026-05-01T11:29:05.057Z",
+  "scrapedAt": "2026-05-01T12:10:26.862Z",
   "sourceCounts": {
     "yahoo": 20,
     "ltn": 20
   },
+  "enrichStats": {
+    "fetched": 20,
+    "filled": 5
+  },
   "news": [
+    {
+      "title": "【公告】「115年第一季合併財務報告董事會預計召開日期為115年5月7日。」",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-115%E5%B9%B4%E7%AC%AC-%E5%AD%A3%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A%E8%91%A3%E4%BA%8B%E6%9C%83%E9%A0%90%E8%A8%88%E5%8F%AC%E9%96%8B%E6%97%A5%E6%9C%9F%E7%82%BA115%E5%B9%B45%E6%9C%887%E6%97%A5-093453915.html",
+      "source": "yahoo",
+      "date": "2026-04-29",
+      "snippet": ""
+    },
+    {
+      "title": "義隆轉攻中高階產品，無人機新應用可望挹注H2",
+      "url": "https://tw.stock.yahoo.com/news/%E7%BE%A9%E9%9A%86%E8%BD%89%E6%94%BB%E4%B8%AD%E9%AB%98%E9%9A%8E%E7%94%A2%E5%93%81-%E7%84%A1%E4%BA%BA%E6%A9%9F%E6%96%B0%E6%87%89%E7%94%A8%E5%8F%AF%E6%9C%9B%E6%8C%B9%E6%B3%A8h2-023300689.html",
+      "source": "yahoo",
+      "date": "2026-04-22",
+      "snippet": ""
+    },
+    {
+      "title": "國防預算持續擴張 群益論壇看好軍工本土供應鏈將加速升級",
+      "url": "https://tw.stock.yahoo.com/news/%E5%9C%8B%E9%98%B2%E9%A0%90%E7%AE%97%E6%8C%81%E7%BA%8C%E6%93%B4%E5%BC%B5-%E7%BE%A4%E7%9B%8A%E8%AB%96%E5%A3%87%E7%9C%8B%E5%A5%BD%E8%BB%8D%E5%B7%A5%E6%9C%AC%E5%9C%9F%E4%BE%9B%E6%87%89%E9%8F%88%E5%B0%87%E5%8A%A0%E9%80%9F%E5%8D%87%E7%B4%9A-093840801.html",
+      "source": "yahoo",
+      "date": "2026-04-20",
+      "snippet": ""
+    },
+    {
+      "title": "【公告】義隆受邀參加黑石財經主辦之「堅韌台灣 群益軍工論壇」",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E7%BE%A9%E9%9A%86%E5%8F%97%E9%82%80%E5%8F%83%E5%8A%A0%E9%BB%91%E7%9F%B3%E8%B2%A1%E7%B6%93%E4%B8%BB%E8%BE%A6%E4%B9%8B-%E5%A0%85%E9%9F%8C%E5%8F%B0%E7%81%A3-%E7%BE%A4%E7%9B%8A%E8%BB%8D%E5%B7%A5%E8%AB%96%E5%A3%87-092426345.html",
+      "source": "yahoo",
+      "date": "2026-04-16",
+      "snippet": ""
+    },
+    {
+      "title": "元大投顧：AI動能續強 半導體3月營收優於預期 靜待台積電法說",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%83%E5%A4%A7%E6%8A%95%E9%A1%A7-ai%E5%8B%95%E8%83%BD%E7%BA%8C%E5%BC%B7-%E5%8D%8A%E5%B0%8E%E9%AB%943%E6%9C%88%E7%87%9F%E6%94%B6%E5%84%AA%E6%96%BC%E9%A0%90%E6%9C%9F-%E9%9D%9C%E5%BE%85%E5%8F%B0%E7%A9%8D%E9%9B%BB%E6%B3%95%E8%AA%AA-022421192.html",
+      "source": "yahoo",
+      "date": "2026-04-13",
+      "snippet": ""
+    },
     {
       "title": "經部A+淬鍊計畫再+2 義隆電子開發Lv2+智慧座艙系統",
       "url": "https://ec.ltn.com.tw/article/breakingnews/5286554",
@@ -145,41 +184,6 @@
       "url": "https://ec.ltn.com.tw/article/breakingnews/4299422",
       "source": "ltn",
       "date": "2023-05-12",
-      "snippet": ""
-    },
-    {
-      "title": "【公告】「115年第一季合併財務報告董事會預計召開日期為115年5月7日。」",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-115%E5%B9%B4%E7%AC%AC-%E5%AD%A3%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A%E8%91%A3%E4%BA%8B%E6%9C%83%E9%A0%90%E8%A8%88%E5%8F%AC%E9%96%8B%E6%97%A5%E6%9C%9F%E7%82%BA115%E5%B9%B45%E6%9C%887%E6%97%A5-093453915.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "義隆轉攻中高階產品，無人機新應用可望挹注H2",
-      "url": "https://tw.stock.yahoo.com/news/%E7%BE%A9%E9%9A%86%E8%BD%89%E6%94%BB%E4%B8%AD%E9%AB%98%E9%9A%8E%E7%94%A2%E5%93%81-%E7%84%A1%E4%BA%BA%E6%A9%9F%E6%96%B0%E6%87%89%E7%94%A8%E5%8F%AF%E6%9C%9B%E6%8C%B9%E6%B3%A8h2-023300689.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "國防預算持續擴張 群益論壇看好軍工本土供應鏈將加速升級",
-      "url": "https://tw.stock.yahoo.com/news/%E5%9C%8B%E9%98%B2%E9%A0%90%E7%AE%97%E6%8C%81%E7%BA%8C%E6%93%B4%E5%BC%B5-%E7%BE%A4%E7%9B%8A%E8%AB%96%E5%A3%87%E7%9C%8B%E5%A5%BD%E8%BB%8D%E5%B7%A5%E6%9C%AC%E5%9C%9F%E4%BE%9B%E6%87%89%E9%8F%88%E5%B0%87%E5%8A%A0%E9%80%9F%E5%8D%87%E7%B4%9A-093840801.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】義隆受邀參加黑石財經主辦之「堅韌台灣 群益軍工論壇」",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E7%BE%A9%E9%9A%86%E5%8F%97%E9%82%80%E5%8F%83%E5%8A%A0%E9%BB%91%E7%9F%B3%E8%B2%A1%E7%B6%93%E4%B8%BB%E8%BE%A6%E4%B9%8B-%E5%A0%85%E9%9F%8C%E5%8F%B0%E7%81%A3-%E7%BE%A4%E7%9B%8A%E8%BB%8D%E5%B7%A5%E8%AB%96%E5%A3%87-092426345.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "元大投顧：AI動能續強 半導體3月營收優於預期 靜待台積電法說",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%83%E5%A4%A7%E6%8A%95%E9%A1%A7-ai%E5%8B%95%E8%83%BD%E7%BA%8C%E5%BC%B7-%E5%8D%8A%E5%B0%8E%E9%AB%943%E6%9C%88%E7%87%9F%E6%94%B6%E5%84%AA%E6%96%BC%E9%A0%90%E6%9C%9F-%E9%9D%9C%E5%BE%85%E5%8F%B0%E7%A9%8D%E9%9B%BB%E6%B3%95%E8%AA%AA-022421192.html",
-      "source": "yahoo",
-      "date": null,
       "snippet": ""
     },
     {

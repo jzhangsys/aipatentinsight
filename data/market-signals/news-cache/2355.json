@@ -1,12 +1,156 @@
 {
   "stockCode": "2355",
   "name": "敬鵬工業",
-  "scrapedAt": "2026-05-01T11:28:44.688Z",
+  "scrapedAt": "2026-05-01T12:09:20.798Z",
   "sourceCounts": {
     "yahoo": 20,
     "ltn": 7
   },
+  "enrichStats": {
+    "fetched": 20,
+    "filled": 20
+  },
   "news": [
+    {
+      "title": "【公告】敬鵬115年第一季合併財務報告董事會召開日期預計召開日期為115年5月12日",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%95%AC%E9%B5%AC115%E5%B9%B4%E7%AC%AC-%E5%AD%A3%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A%E8%91%A3%E4%BA%8B%E6%9C%83%E5%8F%AC%E9%96%8B%E6%97%A5%E6%9C%9F%E9%A0%90%E8%A8%88%E5%8F%AC%E9%96%8B%E6%97%A5%E6%9C%9F%E7%82%BA115%E5%B9%B45%E6%9C%8812%E6%97%A5-054317733.html",
+      "source": "yahoo",
+      "date": "2026-04-30",
+      "snippet": ""
+    },
+    {
+      "title": "【公告】敬鵬 2026年3月合併營收14.1億元 年增5.7%",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%95%AC%E9%B5%AC-2026%E5%B9%B43%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B614-1%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E5-054317713.html",
+      "source": "yahoo",
+      "date": "2026-04-10",
+      "snippet": ""
+    },
+    {
+      "title": "【公告】敬鵬董事會通過第七次買回庫藏股",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%95%AC%E9%B5%AC%E8%91%A3%E4%BA%8B%E6%9C%83%E9%80%9A%E9%81%8E%E7%AC%AC%E4%B8%83%E6%AC%A1%E8%B2%B7%E5%9B%9E%E5%BA%AB%E8%97%8F%E8%82%A1-101931607.html",
+      "source": "yahoo",
+      "date": "2026-03-10",
+      "snippet": ""
+    },
+    {
+      "title": "【公告】敬鵬新設永續長",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%95%AC%E9%B5%AC%E6%96%B0%E8%A8%AD%E6%B0%B8%E7%BA%8C%E9%95%B7-092934834.html",
+      "source": "yahoo",
+      "date": "2026-03-10",
+      "snippet": ""
+    },
+    {
+      "title": "【公告】敬鵬董事會決議股利分派",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%95%AC%E9%B5%AC%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E8%82%A1%E5%88%A9%E5%88%86%E6%B4%BE-091841818.html",
+      "source": "yahoo",
+      "date": "2026-03-10",
+      "snippet": ""
+    },
+    {
+      "title": "【公告】敬鵬董事會決議召開115年股東常會公告",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%95%AC%E9%B5%AC%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E5%8F%AC%E9%96%8B115%E5%B9%B4%E8%82%A1%E6%9D%B1%E5%B8%B8%E6%9C%83%E5%85%AC%E5%91%8A-090858196.html",
+      "source": "yahoo",
+      "date": "2026-03-10",
+      "snippet": ""
+    },
+    {
+      "title": "【公告】敬鵬董事會通過114年度第四季合併財務報告",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%95%AC%E9%B5%AC%E8%91%A3%E4%BA%8B%E6%9C%83%E9%80%9A%E9%81%8E114%E5%B9%B4%E5%BA%A6%E7%AC%AC%E5%9B%9B%E5%AD%A3%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A-071608882.html",
+      "source": "yahoo",
+      "date": "2026-03-10",
+      "snippet": ""
+    },
+    {
+      "title": "【公告】敬鵬 2026年2月合併營收12.09億元 年增-4.9%",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%95%AC%E9%B5%AC-2026%E5%B9%B42%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B612-09%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E-063250862.html",
+      "source": "yahoo",
+      "date": "2026-03-10",
+      "snippet": ""
+    },
+    {
+      "title": "【公告】敬鵬114年第四季合併財務報告董事會召開日期預計召開日期為115年03月10日",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%95%AC%E9%B5%AC114%E5%B9%B4%E7%AC%AC%E5%9B%9B%E5%AD%A3%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A%E8%91%A3%E4%BA%8B%E6%9C%83%E5%8F%AC%E9%96%8B%E6%97%A5%E6%9C%9F%E9%A0%90%E8%A8%88%E5%8F%AC%E9%96%8B%E6%97%A5%E6%9C%9F%E7%82%BA115%E5%B9%B403%E6%9C%8810%E6%97%A5-061816943.html",
+      "source": "yahoo",
+      "date": "2026-02-26",
+      "snippet": ""
+    },
+    {
+      "title": "【公告】敬鵬 2026年1月合併營收14.14億元 年增14.49%",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%95%AC%E9%B5%AC-2026%E5%B9%B41%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B614-14%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E14-060230600.html",
+      "source": "yahoo",
+      "date": "2026-02-10",
+      "snippet": ""
+    },
+    {
+      "title": "【公告】敬鵬 2025年12月合併營收13.25億元 年增7.68%",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%95%AC%E9%B5%AC-2025%E5%B9%B412%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B613-25%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E7-061244675.html",
+      "source": "yahoo",
+      "date": "2026-01-09",
+      "snippet": ""
+    },
+    {
+      "title": "【公告】敬鵬召開法人說明會相關訊息",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%95%AC%E9%B5%AC%E5%8F%AC%E9%96%8B%E6%B3%95%E4%BA%BA%E8%AA%AA%E6%98%8E%E6%9C%83%E7%9B%B8%E9%97%9C%E8%A8%8A%E6%81%AF-064825953.html",
+      "source": "yahoo",
+      "date": "2025-12-10",
+      "snippet": ""
+    },
+    {
+      "title": "【公告】敬鵬 2025年11月合併營收12.43億元 年增-10.17%",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%95%AC%E9%B5%AC-2025%E5%B9%B411%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B612-43%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E-054204152.html",
+      "source": "yahoo",
+      "date": "2025-12-10",
+      "snippet": ""
+    },
+    {
+      "title": "【公告】敬鵬董事會通過114年度第三季合併財務報告",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%95%AC%E9%B5%AC%E8%91%A3%E4%BA%8B%E6%9C%83%E9%80%9A%E9%81%8E114%E5%B9%B4%E5%BA%A6%E7%AC%AC%E4%B8%89%E5%AD%A3%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A-085230359.html",
+      "source": "yahoo",
+      "date": "2025-11-12",
+      "snippet": ""
+    },
+    {
+      "title": "【公告】敬鵬代子公司 Chin Poon Electronics (Thailand) Public Co., Ltd.公告擬簽訂工程承攬契約",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%95%AC%E9%B5%AC%E4%BB%A3%E5%AD%90%E5%85%AC%E5%8F%B8-chin-poon-electronics-055431615.html",
+      "source": "yahoo",
+      "date": "2025-11-11",
+      "snippet": ""
+    },
+    {
+      "title": "【公告】敬鵬 2025年10月合併營收13.92億元 年增-0.99%",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%95%AC%E9%B5%AC-2025%E5%B9%B410%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B613-92%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E-055243062.html",
+      "source": "yahoo",
+      "date": "2025-11-10",
+      "snippet": ""
+    },
+    {
+      "title": "【公告】敬鵬114年第三季合併財務報告董事會召開日期預計召開日期為114年11月12日",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%95%AC%E9%B5%AC114%E5%B9%B4%E7%AC%AC%E4%B8%89%E5%AD%A3%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A%E8%91%A3%E4%BA%8B%E6%9C%83%E5%8F%AC%E9%96%8B%E6%97%A5%E6%9C%9F%E9%A0%90%E8%A8%88%E5%8F%AC%E9%96%8B%E6%97%A5%E6%9C%9F%E7%82%BA114%E5%B9%B411%E6%9C%8812%E6%97%A5-061450361.html",
+      "source": "yahoo",
+      "date": "2025-11-03",
+      "snippet": ""
+    },
+    {
+      "title": "【公告】敬鵬 2025年9月合併營收12.96億元 年增-5.57%",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%95%AC%E9%B5%AC-2025%E5%B9%B49%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B612-96%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E-061201918.html",
+      "source": "yahoo",
+      "date": "2025-10-09",
+      "snippet": ""
+    },
+    {
+      "title": "【公告】敬鵬 2025年8月合併營收12.95億元 年增-6.44%",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%95%AC%E9%B5%AC-2025%E5%B9%B48%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B612-95%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E-060152507.html",
+      "source": "yahoo",
+      "date": "2025-09-10",
+      "snippet": ""
+    },
+    {
+      "title": "【公告】敬鵬總經理異動",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%95%AC%E9%B5%AC%E7%B8%BD%E7%B6%93%E7%90%86%E7%95%B0%E5%8B%95-095954342.html",
+      "source": "yahoo",
+      "date": "2025-08-12",
+      "snippet": ""
+    },
     {
       "title": "衛報：SpaceX要供應商外移產線 台灣內部有怨言",
       "url": "https://ec.ltn.com.tw/article/breakingnews/4857160",
@@ -54,146 +198,6 @@
       "url": "https://ec.ltn.com.tw/article/paper/605145",
       "source": "ltn",
       "date": "2012-08-06",
-      "snippet": ""
-    },
-    {
-      "title": "【公告】敬鵬115年第一季合併財務報告董事會召開日期預計召開日期為115年5月12日",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%95%AC%E9%B5%AC115%E5%B9%B4%E7%AC%AC-%E5%AD%A3%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A%E8%91%A3%E4%BA%8B%E6%9C%83%E5%8F%AC%E9%96%8B%E6%97%A5%E6%9C%9F%E9%A0%90%E8%A8%88%E5%8F%AC%E9%96%8B%E6%97%A5%E6%9C%9F%E7%82%BA115%E5%B9%B45%E6%9C%8812%E6%97%A5-054317733.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】敬鵬 2026年3月合併營收14.1億元 年增5.7%",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%95%AC%E9%B5%AC-2026%E5%B9%B43%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B614-1%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E5-054317713.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】敬鵬董事會通過第七次買回庫藏股",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%95%AC%E9%B5%AC%E8%91%A3%E4%BA%8B%E6%9C%83%E9%80%9A%E9%81%8E%E7%AC%AC%E4%B8%83%E6%AC%A1%E8%B2%B7%E5%9B%9E%E5%BA%AB%E8%97%8F%E8%82%A1-101931607.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】敬鵬新設永續長",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%95%AC%E9%B5%AC%E6%96%B0%E8%A8%AD%E6%B0%B8%E7%BA%8C%E9%95%B7-092934834.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】敬鵬董事會決議股利分派",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%95%AC%E9%B5%AC%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E8%82%A1%E5%88%A9%E5%88%86%E6%B4%BE-091841818.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】敬鵬董事會決議召開115年股東常會公告",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%95%AC%E9%B5%AC%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E5%8F%AC%E9%96%8B115%E5%B9%B4%E8%82%A1%E6%9D%B1%E5%B8%B8%E6%9C%83%E5%85%AC%E5%91%8A-090858196.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】敬鵬董事會通過114年度第四季合併財務報告",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%95%AC%E9%B5%AC%E8%91%A3%E4%BA%8B%E6%9C%83%E9%80%9A%E9%81%8E114%E5%B9%B4%E5%BA%A6%E7%AC%AC%E5%9B%9B%E5%AD%A3%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A-071608882.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】敬鵬 2026年2月合併營收12.09億元 年增-4.9%",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%95%AC%E9%B5%AC-2026%E5%B9%B42%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B612-09%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E-063250862.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】敬鵬114年第四季合併財務報告董事會召開日期預計召開日期為115年03月10日",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%95%AC%E9%B5%AC114%E5%B9%B4%E7%AC%AC%E5%9B%9B%E5%AD%A3%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A%E8%91%A3%E4%BA%8B%E6%9C%83%E5%8F%AC%E9%96%8B%E6%97%A5%E6%9C%9F%E9%A0%90%E8%A8%88%E5%8F%AC%E9%96%8B%E6%97%A5%E6%9C%9F%E7%82%BA115%E5%B9%B403%E6%9C%8810%E6%97%A5-061816943.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】敬鵬 2026年1月合併營收14.14億元 年增14.49%",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%95%AC%E9%B5%AC-2026%E5%B9%B41%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B614-14%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E14-060230600.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】敬鵬 2025年12月合併營收13.25億元 年增7.68%",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%95%AC%E9%B5%AC-2025%E5%B9%B412%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B613-25%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E7-061244675.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】敬鵬召開法人說明會相關訊息",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%95%AC%E9%B5%AC%E5%8F%AC%E9%96%8B%E6%B3%95%E4%BA%BA%E8%AA%AA%E6%98%8E%E6%9C%83%E7%9B%B8%E9%97%9C%E8%A8%8A%E6%81%AF-064825953.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】敬鵬 2025年11月合併營收12.43億元 年增-10.17%",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%95%AC%E9%B5%AC-2025%E5%B9%B411%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B612-43%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E-054204152.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】敬鵬董事會通過114年度第三季合併財務報告",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%95%AC%E9%B5%AC%E8%91%A3%E4%BA%8B%E6%9C%83%E9%80%9A%E9%81%8E114%E5%B9%B4%E5%BA%A6%E7%AC%AC%E4%B8%89%E5%AD%A3%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A-085230359.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】敬鵬代子公司 Chin Poon Electronics (Thailand) Public Co., Ltd.公告擬簽訂工程承攬契約",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%95%AC%E9%B5%AC%E4%BB%A3%E5%AD%90%E5%85%AC%E5%8F%B8-chin-poon-electronics-055431615.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】敬鵬 2025年10月合併營收13.92億元 年增-0.99%",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%95%AC%E9%B5%AC-2025%E5%B9%B410%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B613-92%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E-055243062.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】敬鵬114年第三季合併財務報告董事會召開日期預計召開日期為114年11月12日",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%95%AC%E9%B5%AC114%E5%B9%B4%E7%AC%AC%E4%B8%89%E5%AD%A3%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A%E8%91%A3%E4%BA%8B%E6%9C%83%E5%8F%AC%E9%96%8B%E6%97%A5%E6%9C%9F%E9%A0%90%E8%A8%88%E5%8F%AC%E9%96%8B%E6%97%A5%E6%9C%9F%E7%82%BA114%E5%B9%B411%E6%9C%8812%E6%97%A5-061450361.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】敬鵬 2025年9月合併營收12.96億元 年增-5.57%",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%95%AC%E9%B5%AC-2025%E5%B9%B49%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B612-96%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E-061201918.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】敬鵬 2025年8月合併營收12.95億元 年增-6.44%",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%95%AC%E9%B5%AC-2025%E5%B9%B48%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B612-95%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E-060152507.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】敬鵬總經理異動",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%95%AC%E9%B5%AC%E7%B8%BD%E7%B6%93%E7%90%86%E7%95%B0%E5%8B%95-095954342.html",
-      "source": "yahoo",
-      "date": null,
       "snippet": ""
     }
   ]

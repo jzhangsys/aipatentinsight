@@ -1,10 +1,14 @@
 {
   "stockCode": "8040",
   "name": "九暘電子",
-  "scrapedAt": "2026-05-01T11:31:41.745Z",
+  "scrapedAt": "2026-05-01T12:17:40.215Z",
   "sourceCounts": {
-    "yahoo": 20,
+    "yahoo": 0,
     "ltn": 6
+  },
+  "enrichStats": {
+    "fetched": 0,
+    "filled": 0
   },
   "news": [
     {
@@ -47,146 +51,6 @@
       "url": "https://ec.ltn.com.tw/article/paper/126974",
       "source": "ltn",
       "date": "2007-04-24",
-      "snippet": ""
-    },
-    {
-      "title": "【公告】九暘董事會通過一一五年第一季個別財務報告",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E4%B9%9D%E6%9A%98%E8%91%A3%E4%BA%8B%E6%9C%83%E9%80%9A%E9%81%8E-%E4%BA%94%E5%B9%B4%E7%AC%AC-%E5%AD%A3%E5%80%8B%E5%88%A5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A-071847145.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】九暘115年第1季財務報告董事會召開日期(更正日期)",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E4%B9%9D%E6%9A%98115%E5%B9%B4%E7%AC%AC1%E5%AD%A3%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A%E8%91%A3%E4%BA%8B%E6%9C%83%E5%8F%AC%E9%96%8B%E6%97%A5%E6%9C%9F-%E6%9B%B4%E6%AD%A3%E6%97%A5%E6%9C%9F-093210275.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】九暘115年第1季財務報告董事會召開日期",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E4%B9%9D%E6%9A%98115%E5%B9%B4%E7%AC%AC1%E5%AD%A3%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A%E8%91%A3%E4%BA%8B%E6%9C%83%E5%8F%AC%E9%96%8B%E6%97%A5%E6%9C%9F-084542428.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】九暘 2026年3月合併營收7366萬元 年增46.02%",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E4%B9%9D%E6%9A%98-2026%E5%B9%B43%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B67366%E8%90%AC%E5%85%83-%E5%B9%B4%E5%A2%9E46-02-072448674.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】九暘 2026年2月合併營收5945.9萬元 年增-0.38%",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E4%B9%9D%E6%9A%98-2026%E5%B9%B42%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B65945-9%E8%90%AC%E5%85%83-%E5%B9%B4%E5%A2%9E-061341657.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】九暘董事會決議一一五年股東常會事宜",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E4%B9%9D%E6%9A%98%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0-%E4%BA%94%E5%B9%B4%E8%82%A1%E6%9D%B1%E5%B8%B8%E6%9C%83%E4%BA%8B%E5%AE%9C-092722513.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】九暘董事會通過一一四年度第四季個別財務報告",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E4%B9%9D%E6%9A%98%E8%91%A3%E4%BA%8B%E6%9C%83%E9%80%9A%E9%81%8E-%E5%9B%9B%E5%B9%B4%E5%BA%A6%E7%AC%AC%E5%9B%9B%E5%AD%A3%E5%80%8B%E5%88%A5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A-092720690.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】九暘董事會決議不分派股利",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E4%B9%9D%E6%9A%98%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E4%B8%8D%E5%88%86%E6%B4%BE%E8%82%A1%E5%88%A9-092718275.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】九暘 2026年1月合併營收6317.3萬元 年增19.77%",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E4%B9%9D%E6%9A%98-2026%E5%B9%B41%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B66317-3%E8%90%AC%E5%85%83-%E5%B9%B4%E5%A2%9E19-072218593.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】九暘114年第4季財務報告董事會召開日期",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E4%B9%9D%E6%9A%98114%E5%B9%B4%E7%AC%AC4%E5%AD%A3%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A%E8%91%A3%E4%BA%8B%E6%9C%83%E5%8F%AC%E9%96%8B%E6%97%A5%E6%9C%9F-083038161.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】九暘法人董事改派代表人",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E4%B9%9D%E6%9A%98%E6%B3%95%E4%BA%BA%E8%91%A3%E4%BA%8B%E6%94%B9%E6%B4%BE%E4%BB%A3%E8%A1%A8%E4%BA%BA-092218349.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】九暘 2025年12月合併營收4882.2萬元 年增-11.72%",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E4%B9%9D%E6%9A%98-2025%E5%B9%B412%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B64882-2%E8%90%AC%E5%85%83-%E5%B9%B4%E5%A2%9E-085306461.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】九暘 2025年11月合併營收5297.4萬元 年增-11.7%",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E4%B9%9D%E6%9A%98-2025%E5%B9%B411%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B65297-4%E8%90%AC%E5%85%83-%E5%B9%B4%E5%A2%9E-072305347.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】九暘 2025年10月合併營收5348.4萬元 年增-4.48%",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E4%B9%9D%E6%9A%98-2025%E5%B9%B410%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B65348-4%E8%90%AC%E5%85%83-%E5%B9%B4%E5%A2%9E-085116797.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】九暘董事會通過一一四年第三季個別財務報告",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E4%B9%9D%E6%9A%98%E8%91%A3%E4%BA%8B%E6%9C%83%E9%80%9A%E9%81%8E-%E5%9B%9B%E5%B9%B4%E7%AC%AC%E4%B8%89%E5%AD%A3%E5%80%8B%E5%88%A5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A-084838666.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】九暘114年第3季財務報告董事會召開日期",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E4%B9%9D%E6%9A%98114%E5%B9%B4%E7%AC%AC3%E5%AD%A3%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A%E8%91%A3%E4%BA%8B%E6%9C%83%E5%8F%AC%E9%96%8B%E6%97%A5%E6%9C%9F-075442354.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】九暘 2025年9月合併營收5877.3萬元 年增1.62%",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E4%B9%9D%E6%9A%98-2025%E5%B9%B49%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B65877-3%E8%90%AC%E5%85%83-%E5%B9%B4%E5%A2%9E1-083204899.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】九暘 2025年8月合併營收5627.1萬元 年增-2.3%",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E4%B9%9D%E6%9A%98-2025%E5%B9%B48%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B65627-1%E8%90%AC%E5%85%83-%E5%B9%B4%E5%A2%9E-070206895.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】九暘受邀參加永豐金證券舉辦之2025Q2線上法人說明會",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E4%B9%9D%E6%9A%98%E5%8F%97%E9%82%80%E5%8F%83%E5%8A%A0%E6%B0%B8%E8%B1%90%E9%87%91%E8%AD%89%E5%88%B8%E8%88%89%E8%BE%A6%E4%B9%8B2025q2%E7%B7%9A%E4%B8%8A%E6%B3%95%E4%BA%BA%E8%AA%AA%E6%98%8E%E6%9C%83-091819302.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】九暘 2025年7月合併營收5885.7萬元 年增12.94%",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E4%B9%9D%E6%9A%98-2025%E5%B9%B47%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B65885-7%E8%90%AC%E5%85%83-%E5%B9%B4%E5%A2%9E12-090230510.html",
-      "source": "yahoo",
-      "date": null,
       "snippet": ""
     }
   ]

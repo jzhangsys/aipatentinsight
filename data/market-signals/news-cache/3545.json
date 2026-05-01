@@ -1,10 +1,14 @@
 {
   "stockCode": "3545",
   "name": "敦泰電子",
-  "scrapedAt": "2026-05-01T11:29:53.426Z",
+  "scrapedAt": "2026-05-01T12:12:43.466Z",
   "sourceCounts": {
-    "yahoo": 20,
+    "yahoo": 0,
     "ltn": 13
+  },
+  "enrichStats": {
+    "fetched": 0,
+    "filled": 0
   },
   "news": [
     {
@@ -96,146 +100,6 @@
       "url": "https://ec.ltn.com.tw/article/breakingnews/1401809",
       "source": "ltn",
       "date": "2015-08-05",
-      "snippet": ""
-    },
-    {
-      "title": "【公告】敦泰新任代理發言人",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%95%A6%E6%B3%B0%E6%96%B0%E4%BB%BB%E4%BB%A3%E7%90%86%E7%99%BC%E8%A8%80%E4%BA%BA-101058121.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】敦泰受邀參加富邦證券舉辦之線上法人說明會",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%95%A6%E6%B3%B0%E5%8F%97%E9%82%80%E5%8F%83%E5%8A%A0%E5%AF%8C%E9%82%A6%E8%AD%89%E5%88%B8%E8%88%89%E8%BE%A6%E4%B9%8B%E7%B7%9A%E4%B8%8A%E6%B3%95%E4%BA%BA%E8%AA%AA%E6%98%8E%E6%9C%83-061417620.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】敦泰第8次買回公司股份執行完畢",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%95%A6%E6%B3%B0%E7%AC%AC8%E6%AC%A1%E8%B2%B7%E5%9B%9E%E5%85%AC%E5%8F%B8%E8%82%A1%E4%BB%BD%E5%9F%B7%E8%A1%8C%E5%AE%8C%E7%95%A2-111344950.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】敦泰限制員工權利新股註銷完成變更登記",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%95%A6%E6%B3%B0%E9%99%90%E5%88%B6%E5%93%A1%E5%B7%A5%E6%AC%8A%E5%88%A9%E6%96%B0%E8%82%A1%E8%A8%BB%E9%8A%B7%E5%AE%8C%E6%88%90%E8%AE%8A%E6%9B%B4%E7%99%BB%E8%A8%98-111327920.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】敦泰董事會決議115年辦理私募普通股案",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%95%A6%E6%B3%B0%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0115%E5%B9%B4%E8%BE%A6%E7%90%86%E7%A7%81%E5%8B%9F%E6%99%AE%E9%80%9A%E8%82%A1%E6%A1%88-092501773.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】敦泰 2026年3月合併營收9億元 年增-14.36%",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%95%A6%E6%B3%B0-2026%E5%B9%B43%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B69%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E-14-071308734.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】敦泰 2026年2月合併營收7.25億元 年增-22.07%",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%95%A6%E6%B3%B0-2026%E5%B9%B42%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B67-25%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E-070339151.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】敦泰董事會決議買回公司股份",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%95%A6%E6%B3%B0%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E8%B2%B7%E5%9B%9E%E5%85%AC%E5%8F%B8%E8%82%A1%E4%BB%BD-072446157.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "敦泰認列商譽減損12.37億元 2025年每股虧損4.64元",
-      "url": "https://tw.stock.yahoo.com/news/%E6%95%A6%E6%B3%B0%E8%AA%8D%E5%88%97%E5%95%86%E8%AD%BD%E6%B8%9B%E6%90%8D12-37%E5%84%84%E5%85%83-2025%E5%B9%B4%E6%AF%8F%E8%82%A1%E8%99%A7%E6%90%8D4-64%E5%85%83-065409542.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】敦泰董事會決議資本公積發放現金",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%95%A6%E6%B3%B0%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E8%B3%87%E6%9C%AC%E5%85%AC%E7%A9%8D%E7%99%BC%E6%94%BE%E7%8F%BE%E9%87%91-065346591.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "敦泰2/26起暫停交易 將召開記者會說明",
-      "url": "https://tw.stock.yahoo.com/news/%E6%95%A6%E6%B3%B02-26%E8%B5%B7%E6%9A%AB%E5%81%9C%E4%BA%A4%E6%98%93-%E5%B0%87%E5%8F%AC%E9%96%8B%E8%A8%98%E8%80%85%E6%9C%83%E8%AA%AA%E6%98%8E-131210943.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】敦泰115年2月26日召開重大訊息說明記者會",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%95%A6%E6%B3%B0115%E5%B9%B42%E6%9C%8826%E6%97%A5%E5%8F%AC%E9%96%8B%E9%87%8D%E5%A4%A7%E8%A8%8A%E6%81%AF%E8%AA%AA%E6%98%8E%E8%A8%98%E8%80%85%E6%9C%83-102043391.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】敦泰受邀參加富邦證券舉辦之線上法人說明會",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%95%A6%E6%B3%B0%E5%8F%97%E9%82%80%E5%8F%83%E5%8A%A0%E5%AF%8C%E9%82%A6%E8%AD%89%E5%88%B8%E8%88%89%E8%BE%A6%E4%B9%8B%E7%B7%9A%E4%B8%8A%E6%B3%95%E4%BA%BA%E8%AA%AA%E6%98%8E%E6%9C%83-070136707.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】敦泰 2026年1月合併營收8.48億元 年增-16.06%",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%95%A6%E6%B3%B0-2026%E5%B9%B41%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B68-48%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E-063226512.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】敦泰 2025年12月合併營收8.73億元 年增-29.82%",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%95%A6%E6%B3%B0-2025%E5%B9%B412%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B68-73%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E-070318526.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】敦泰 2025年11月合併營收9.7億元 年增-36.23%",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%95%A6%E6%B3%B0-2025%E5%B9%B411%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B69-7%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E-071218947.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】敦泰限制員工權利新股註銷完成變更登記",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%95%A6%E6%B3%B0%E9%99%90%E5%88%B6%E5%93%A1%E5%B7%A5%E6%AC%8A%E5%88%A9%E6%96%B0%E8%82%A1%E8%A8%BB%E9%8A%B7%E5%AE%8C%E6%88%90%E8%AE%8A%E6%9B%B4%E7%99%BB%E8%A8%98-094851588.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】敦泰 2025年10月合併營收9.58億元 年增-32.67%",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%95%A6%E6%B3%B0-2025%E5%B9%B410%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B69-58%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E-061210166.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】敦泰受邀參加富邦證券舉辦之線上法人說明會",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%95%A6%E6%B3%B0%E5%8F%97%E9%82%80%E5%8F%83%E5%8A%A0%E5%AF%8C%E9%82%A6%E8%AD%89%E5%88%B8%E8%88%89%E8%BE%A6%E4%B9%8B%E7%B7%9A%E4%B8%8A%E6%B3%95%E4%BA%BA%E8%AA%AA%E6%98%8E%E6%9C%83-085501077.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】敦泰 2025年9月合併營收10.49億元 年增-26.15%",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%95%A6%E6%B3%B0-2025%E5%B9%B49%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B610-49%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E-064153449.html",
-      "source": "yahoo",
-      "date": null,
       "snippet": ""
     }
   ]

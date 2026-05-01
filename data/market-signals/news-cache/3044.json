@@ -1,10 +1,14 @@
 {
   "stockCode": "3044",
   "name": "健鼎科技",
-  "scrapedAt": "2026-05-01T11:29:25.202Z",
+  "scrapedAt": "2026-05-01T12:11:25.091Z",
   "sourceCounts": {
-    "yahoo": 20,
+    "yahoo": 0,
     "ltn": 14
+  },
+  "enrichStats": {
+    "fetched": 0,
+    "filled": 0
   },
   "news": [
     {
@@ -103,146 +107,6 @@
       "url": "https://ec.ltn.com.tw/article/paper/16263",
       "source": "ltn",
       "date": "2005-05-02",
-      "snippet": ""
-    },
-    {
-      "title": "【公告】健鼎115年第一季財務報告董事會召開日期為115年05月08日",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%81%A5%E9%BC%8E115%E5%B9%B4%E7%AC%AC-%E5%AD%A3%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A%E8%91%A3%E4%BA%8B%E6%9C%83%E5%8F%AC%E9%96%8B%E6%97%A5%E6%9C%9F%E7%82%BA115%E5%B9%B405%E6%9C%8808%E6%97%A5-065749272.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "〈台股開盤〉台積電2330元新天價 漲逾1200點飛越4萬點大關",
-      "url": "https://tw.stock.yahoo.com/news/%E5%8F%B0%E8%82%A1%E9%96%8B%E7%9B%A4-%E5%8F%B0%E7%A9%8D%E9%9B%BB2330%E5%85%83%E6%96%B0%E5%A4%A9%E5%83%B9-%E6%BC%B2%E9%80%BE1200%E9%BB%9E%E9%A3%9B%E8%B6%8A4%E8%90%AC%E9%BB%9E%E5%A4%A7%E9%97%9C-020106988.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "〈熱門股〉健鼎獲外資喊高目標價 滾量創天價497.5元周漲16%",
-      "url": "https://tw.stock.yahoo.com/news/%E7%86%B1%E9%96%80%E8%82%A1-%E5%81%A5%E9%BC%8E%E7%8D%B2%E5%A4%96%E8%B3%87%E5%96%8A%E9%AB%98%E7%9B%AE%E6%A8%99%E5%83%B9-%E6%BB%BE%E9%87%8F%E5%89%B5%E5%A4%A9%E5%83%B9497-5%E5%85%83%E5%91%A8%E6%BC%B216-024219446.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "花旗環球調升PCB雙雄目標價",
-      "url": "https://tw.stock.yahoo.com/news/%E8%8A%B1%E6%97%97%E7%92%B0%E7%90%83%E8%AA%BF%E5%8D%87pcb%E9%9B%99%E9%9B%84%E7%9B%AE%E6%A8%99%E5%83%B9-201000801.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "〈焦點股〉健鼎接單強勁獲外資積極買盤 滾量以485元改寫新天價",
-      "url": "https://tw.stock.yahoo.com/news/%E7%84%A6%E9%BB%9E%E8%82%A1-%E5%81%A5%E9%BC%8E%E6%8E%A5%E5%96%AE%E5%BC%B7%E5%8B%81%E7%8D%B2%E5%A4%96%E8%B3%87%E7%A9%8D%E6%A5%B5%E8%B2%B7%E7%9B%A4-%E6%BB%BE%E9%87%8F%E4%BB%A5485%E5%85%83%E6%94%B9%E5%AF%AB%E6%96%B0%E5%A4%A9%E5%83%B9-034422868.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "健鼎Q1營收創高/毛利率增，Q2挑戰季增1成",
-      "url": "https://tw.stock.yahoo.com/news/%E5%81%A5%E9%BC%8Eq1%E7%87%9F%E6%94%B6%E5%89%B5%E9%AB%98-%E6%AF%9B%E5%88%A9%E7%8E%87%E5%A2%9E-q2%E6%8C%91%E6%88%B0%E5%AD%A3%E5%A2%9E1%E6%88%90-031300777.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "健鼎3月營收寫同期新高、Q1創單季新高",
-      "url": "https://tw.stock.yahoo.com/news/%E5%81%A5%E9%BC%8E3%E6%9C%88%E7%87%9F%E6%94%B6%E5%AF%AB%E5%90%8C%E6%9C%9F%E6%96%B0%E9%AB%98-q1%E5%89%B5%E5%96%AE%E5%AD%A3%E6%96%B0%E9%AB%98-003700498.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "利多激勵 健鼎、景碩權證火",
-      "url": "https://tw.stock.yahoo.com/news/%E5%88%A9%E5%A4%9A%E6%BF%80%E5%8B%B5-%E5%81%A5%E9%BC%8E-%E6%99%AF%E7%A2%A9%E6%AC%8A%E8%AD%89%E7%81%AB-201000177.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "台商汽車板陷下滑 前三大仍各撑百億元營收 健鼎去年出貨139億元續稱霸",
-      "url": "https://tw.stock.yahoo.com/news/%E5%8F%B0%E5%95%86%E6%B1%BD%E8%BB%8A%E6%9D%BF%E9%99%B7%E4%B8%8B%E6%BB%91-%E5%89%8D%E4%B8%89%E5%A4%A7%E4%BB%8D%E5%90%84%E6%92%91%E7%99%BE%E5%84%84%E5%85%83%E7%87%9F%E6%94%B6-%E5%81%A5%E9%BC%8E%E5%8E%BB%E5%B9%B4%E5%87%BA%E8%B2%A8139%E5%84%84%E5%85%83%E7%BA%8C%E7%A8%B1%E9%9C%B8-015047244.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "伺服器、記憶體齊發 健鼎Q1營收創高",
-      "url": "https://tw.stock.yahoo.com/news/%E4%BC%BA%E6%9C%8D%E5%99%A8-%E8%A8%98%E6%86%B6%E9%AB%94%E9%BD%8A%E7%99%BC-%E5%81%A5%E9%BC%8Eq1%E7%87%9F%E6%94%B6%E5%89%B5%E9%AB%98-201000588.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "健鼎淡季不淡2026年首季跨越209億元創新高 年增22%",
-      "url": "https://tw.stock.yahoo.com/news/%E5%81%A5%E9%BC%8E%E6%B7%A1%E5%AD%A3%E4%B8%8D%E6%B7%A12026%E5%B9%B4%E9%A6%96%E5%AD%A3%E8%B7%A8%E8%B6%8A209%E5%84%84%E5%85%83%E5%89%B5%E6%96%B0%E9%AB%98-%E5%B9%B4%E5%A2%9E22-085800063.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】健鼎 2026年3月合併營收73.18億元 年增24.38%",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%81%A5%E9%BC%8E-2026%E5%B9%B43%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B673-18%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E24-071320253.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "健鼎提升伺服器與記憶體模組產品佔比，今年營收、毛利率與獲利三揚",
-      "url": "https://tw.stock.yahoo.com/news/%E5%81%A5%E9%BC%8E%E6%8F%90%E5%8D%87%E4%BC%BA%E6%9C%8D%E5%99%A8%E8%88%87%E8%A8%98%E6%86%B6%E9%AB%94%E6%A8%A1%E7%B5%84%E7%94%A2%E5%93%81%E4%BD%94%E6%AF%94-%E4%BB%8A%E5%B9%B4%E7%87%9F%E6%94%B6-%E6%AF%9B%E5%88%A9%E7%8E%87%E8%88%87%E7%8D%B2%E5%88%A9%E4%B8%89%E6%8F%9A-041236132.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "楠梓電去年EPS13.38元擬配發2元股息 加速開發AI高速運算板",
-      "url": "https://tw.stock.yahoo.com/news/%E6%A5%A0%E6%A2%93%E9%9B%BB%E5%8E%BB%E5%B9%B4eps13-38%E5%85%83%E6%93%AC%E9%85%8D%E7%99%BC2%E5%85%83%E8%82%A1%E6%81%AF-%E5%8A%A0%E9%80%9F%E9%96%8B%E7%99%BCai%E9%AB%98%E9%80%9F%E9%81%8B%E7%AE%97%E6%9D%BF-104302713.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "《台北股市》投信19日賣超股：華新、國巨*、大聯大",
-      "url": "https://tw.stock.yahoo.com/news/%E5%8F%B0%E5%8C%97%E8%82%A1%E5%B8%82-%E6%8A%95%E4%BF%A119%E6%97%A5%E8%B3%A3%E8%B6%85%E8%82%A1-%E8%8F%AF%E6%96%B0-%E5%9C%8B%E5%B7%A8-%E5%A4%A7%E8%81%AF%E5%A4%A7-233827241.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "《台北股市》投信19日賣超前十大 華新打入冷宮 3檔百元電子股不妙！",
-      "url": "https://tw.stock.yahoo.com/news/%E5%8F%B0%E5%8C%97%E8%82%A1%E5%B8%82-%E6%8A%95%E4%BF%A119%E6%97%A5%E8%B3%A3%E8%B6%85%E5%89%8D%E5%8D%81%E5%A4%A7-%E8%8F%AF%E6%96%B0%E6%89%93%E5%85%A5%E5%86%B7%E5%AE%AE-3%E6%AA%94%E7%99%BE%E5%85%83%E9%9B%BB%E5%AD%90%E8%82%A1%E4%B8%8D%E5%A6%99-082951360.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】健鼎受邀參加美銀證券2026 Asia Tech Conference",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%81%A5%E9%BC%8E%E5%8F%97%E9%82%80%E5%8F%83%E5%8A%A0%E7%BE%8E%E9%8A%80%E8%AD%89%E5%88%B82026-asia-tech-conference-070646729.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "《電零組》去年EPS19.45元締新猷 產能貢獻提升 健鼎Q1拚季增",
-      "url": "https://tw.stock.yahoo.com/news/%E9%9B%BB%E9%9B%B6%E7%B5%84-%E5%8E%BB%E5%B9%B4eps19-45%E5%85%83%E7%B7%A0%E6%96%B0%E7%8C%B7-%E7%94%A2%E8%83%BD%E8%B2%A2%E7%8D%BB%E6%8F%90%E5%8D%87-%E5%81%A5%E9%BC%8Eq1%E6%8B%9A%E5%AD%A3%E5%A2%9E-235826168.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "去年EPS19.45元締新猷 產能貢獻提升 健鼎Q1拚季增",
-      "url": "https://tw.stock.yahoo.com/news/%E5%8E%BB%E5%B9%B4eps19-45%E5%85%83%E7%B7%A0%E6%96%B0%E7%8C%B7-%E7%94%A2%E8%83%BD%E8%B2%A2%E7%8D%BB%E6%8F%90%E5%8D%87-%E5%81%A5%E9%BC%8Eq1%E6%8B%9A%E5%AD%A3%E5%A2%9E-201000380.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "〈台股盤後〉跌181點收33400點失守月線 上沖下洗後周線收紅但跌199點",
-      "url": "https://tw.stock.yahoo.com/news/%E5%8F%B0%E8%82%A1%E7%9B%A4%E5%BE%8C-%E8%B7%8C181%E9%BB%9E%E6%94%B633400%E9%BB%9E%E5%A4%B1%E5%AE%88%E6%9C%88%E7%B7%9A-%E4%B8%8A%E6%B2%96%E4%B8%8B%E6%B4%97%E5%BE%8C%E5%91%A8%E7%B7%9A%E6%94%B6%E7%B4%85%E4%BD%86%E8%B7%8C199%E9%BB%9E-062333406.html",
-      "source": "yahoo",
-      "date": null,
       "snippet": ""
     }
   ]

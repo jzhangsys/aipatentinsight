@@ -1,10 +1,14 @@
 {
   "stockCode": "3454",
   "name": "晶睿通訊",
-  "scrapedAt": "2026-05-01T11:29:45.902Z",
+  "scrapedAt": "2026-05-01T12:12:22.914Z",
   "sourceCounts": {
     "yahoo": 0,
     "ltn": 20
+  },
+  "enrichStats": {
+    "fetched": 0,
+    "filled": 0
   },
   "news": [
     {

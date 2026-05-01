@@ -1,10 +1,14 @@
 {
   "stockCode": "6533",
   "name": "晶心科技",
-  "scrapedAt": "2026-05-01T11:31:17.594Z",
+  "scrapedAt": "2026-05-01T12:16:34.146Z",
   "sourceCounts": {
-    "yahoo": 20,
+    "yahoo": 0,
     "ltn": 13
+  },
+  "enrichStats": {
+    "fetched": 0,
+    "filled": 0
   },
   "news": [
     {
@@ -96,146 +100,6 @@
       "url": "https://ec.ltn.com.tw/article/paper/580088",
       "source": "ltn",
       "date": "2012-04-30",
-      "snippet": ""
-    },
-    {
-      "title": "【公告】晶心科115年第1季合併財務報告董事會預計召開日期為115年05月11日",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%99%B6%E5%BF%83%E7%A7%91115%E5%B9%B4%E7%AC%AC1%E5%AD%A3%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A%E8%91%A3%E4%BA%8B%E6%9C%83%E9%A0%90%E8%A8%88%E5%8F%AC%E9%96%8B%E6%97%A5%E6%9C%9F%E7%82%BA115%E5%B9%B405%E6%9C%8811%E6%97%A5-101019642.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "晶心科 公告本公司115年第1季合併財務報告董事會預計召開日期為115年05月11日",
-      "url": "https://tw.stock.yahoo.com/news/%E6%99%B6%E5%BF%83%E7%A7%91-%E5%85%AC%E5%91%8A%E6%9C%AC%E5%85%AC%E5%8F%B8115%E5%B9%B4%E7%AC%AC1%E5%AD%A3%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A%E8%91%A3%E4%BA%8B%E6%9C%83%E9%A0%90%E8%A8%88%E5%8F%AC%E9%96%8B%E6%97%A5%E6%9C%9F%E7%82%BA115%E5%B9%B405%E6%9C%8811%E6%97%A5-094700857.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】因晶心科有價證券於集中交易市場達公布注意交易資訊標準，故公布相關財務業務等重大訊息，以利投資人區別瞭解。",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%9B%A0%E6%99%B6%E5%BF%83%E7%A7%91%E6%9C%89%E5%83%B9%E8%AD%89%E5%88%B8%E6%96%BC%E9%9B%86%E4%B8%AD%E4%BA%A4%E6%98%93%E5%B8%82%E5%A0%B4%E9%81%94%E5%85%AC%E5%B8%83%E6%B3%A8%E6%84%8F%E4%BA%A4%E6%98%93%E8%B3%87%E8%A8%8A%E6%A8%99%E6%BA%96-%E6%95%85%E5%85%AC%E5%B8%83%E7%9B%B8%E9%97%9C%E8%B2%A1%E5%8B%99%E6%A5%AD%E5%8B%99%E7%AD%89%E9%87%8D%E5%A4%A7%E8%A8%8A%E6%81%AF-%E4%BB%A5%E5%88%A9%E6%8A%95%E8%B3%87%E4%BA%BA%E5%8D%80%E5%88%A5%E7%9E%AD%E8%A7%A3-084235773.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "晶心科自結第一季虧損1.84億元，每股稅後 -3.63元",
-      "url": "https://tw.stock.yahoo.com/news/%E6%99%B6%E5%BF%83%E7%A7%91%E8%87%AA%E7%B5%90%E7%AC%AC-%E5%AD%A3%E8%99%A7%E6%90%8D1-84%E5%84%84%E5%85%83-%E6%AF%8F%E8%82%A1%E7%A8%85%E5%BE%8C-3-081000922.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "晶心科 因本公司有價證券於集中交易市場達公布注意交易資訊標準，故公布相關財務業務等重大訊息，以利投資人區別瞭解。",
-      "url": "https://tw.stock.yahoo.com/news/%E6%99%B6%E5%BF%83%E7%A7%91-%E5%9B%A0%E6%9C%AC%E5%85%AC%E5%8F%B8%E6%9C%89%E5%83%B9%E8%AD%89%E5%88%B8%E6%96%BC%E9%9B%86%E4%B8%AD%E4%BA%A4%E6%98%93%E5%B8%82%E5%A0%B4%E9%81%94%E5%85%AC%E5%B8%83%E6%B3%A8%E6%84%8F%E4%BA%A4%E6%98%93%E8%B3%87%E8%A8%8A%E6%A8%99%E6%BA%96-%E6%95%85%E5%85%AC%E5%B8%83%E7%9B%B8%E9%97%9C%E8%B2%A1%E5%8B%99%E6%A5%AD%E5%8B%99%E7%AD%89%E9%87%8D%E5%A4%A7%E8%A8%8A%E6%81%AF-%E4%BB%A5%E5%88%A9%E6%8A%95%E8%B3%87%E4%BA%BA%E5%8D%80%E5%88%A5%E7%9E%AD%E8%A7%A3-080300677.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "台股多頭續強，IC設計、PCB、CPO、半導體設備及工業電腦表現佳",
-      "url": "https://tw.stock.yahoo.com/news/%E5%8F%B0%E8%82%A1%E5%A4%9A%E9%A0%AD%E7%BA%8C%E5%BC%B7-ic%E8%A8%AD%E8%A8%88-pcb-cpo-%E5%8D%8A%E5%B0%8E%E9%AB%94%E8%A8%AD%E5%82%99%E5%8F%8A%E5%B7%A5%E6%A5%AD%E9%9B%BB%E8%85%A6%E8%A1%A8%E7%8F%BE%E4%BD%B3-033004718.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "晶心科高階矽智財放量，應用延伸至AI推論晶片",
-      "url": "https://tw.stock.yahoo.com/news/%E6%99%B6%E5%BF%83%E7%A7%91%E9%AB%98%E9%9A%8E%E7%9F%BD%E6%99%BA%E8%B2%A1%E6%94%BE%E9%87%8F-%E6%87%89%E7%94%A8%E5%BB%B6%E4%BC%B8%E8%87%B3ai%E6%8E%A8%E8%AB%96%E6%99%B6%E7%89%87-022000886.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "焦點股：搭Meta自研晶片順風車，晶心科強勢攻高",
-      "url": "https://tw.stock.yahoo.com/news/%E7%84%A6%E9%BB%9E%E8%82%A1-%E6%90%ADmeta%E8%87%AA%E7%A0%94%E6%99%B6%E7%89%87%E9%A0%86%E9%A2%A8%E8%BB%8A-%E6%99%B6%E5%BF%83%E7%A7%91%E5%BC%B7%E5%8B%A2%E6%94%BB%E9%AB%98-043330905.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【台股盤中】台積電法說會前翻黑 台股盤中漲逾200點",
-      "url": "https://tw.stock.yahoo.com/news/%E5%8F%B0%E8%82%A1%E7%9B%A4%E4%B8%AD-%E5%8F%B0%E7%A9%8D%E9%9B%BB%E6%B3%95%E8%AA%AA%E6%9C%83%E5%89%8D%E7%BF%BB%E9%BB%91-%E5%8F%B0%E8%82%A1%E7%9B%A4%E4%B8%AD%E6%BC%B2%E9%80%BE200%E9%BB%9E-031208346.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "今年營收有望雙位數成長？晶心科：以公告為準",
-      "url": "https://tw.stock.yahoo.com/news/%E4%BB%8A%E5%B9%B4%E7%87%9F%E6%94%B6%E6%9C%89%E6%9C%9B%E9%9B%99%E4%BD%8D%E6%95%B8%E6%88%90%E9%95%B7-%E6%99%B6%E5%BF%83%E7%A7%91-%E4%BB%A5%E5%85%AC%E5%91%8A%E7%82%BA%E6%BA%96-023800414.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "晶心科 澄清工商時報報導",
-      "url": "https://tw.stock.yahoo.com/news/%E6%99%B6%E5%BF%83%E7%A7%91-%E6%BE%84%E6%B8%85%E5%B7%A5%E5%95%86%E6%99%82%E5%A0%B1%E5%A0%B1%E5%B0%8E-021300843.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "晶心科高階IP釀發酵，強化Meta合作關係",
-      "url": "https://tw.stock.yahoo.com/news/%E6%99%B6%E5%BF%83%E7%A7%91%E9%AB%98%E9%9A%8Eip%E9%87%80%E7%99%BC%E9%85%B5-%E5%BC%B7%E5%8C%96meta%E5%90%88%E4%BD%9C%E9%97%9C%E4%BF%82-014700189.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "晶心科看好RISC-V迎爆發，今年力拚損益兩平",
-      "url": "https://tw.stock.yahoo.com/news/%E6%99%B6%E5%BF%83%E7%A7%91%E7%9C%8B%E5%A5%BDrisc-v%E8%BF%8E%E7%88%86%E7%99%BC-%E4%BB%8A%E5%B9%B4%E5%8A%9B%E6%8B%9A%E6%90%8D%E7%9B%8A%E5%85%A9%E5%B9%B3-014300867.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "晶心科董座：RISC-V邁入爆發期",
-      "url": "https://tw.stock.yahoo.com/news/%E6%99%B6%E5%BF%83%E7%A7%91%E8%91%A3%E5%BA%A7-risc-v%E9%82%81%E5%85%A5%E7%88%86%E7%99%BC%E6%9C%9F-201000374.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "晶心科、群聯 聯手進攻AI基建",
-      "url": "https://tw.stock.yahoo.com/news/%E6%99%B6%E5%BF%83%E7%A7%91-%E7%BE%A4%E8%81%AF-%E8%81%AF%E6%89%8B%E9%80%B2%E6%94%BBai%E5%9F%BA%E5%BB%BA-201000689.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】晶心科 2026年3月合併營收1.34億元 年增39.51%",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%99%B6%E5%BF%83%E7%A7%91-2026%E5%B9%B43%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B61-34%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E39-071407964.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】晶心科代理發言人異動",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%99%B6%E5%BF%83%E7%A7%91%E4%BB%A3%E7%90%86%E7%99%BC%E8%A8%80%E4%BA%BA%E7%95%B0%E5%8B%95-060544819.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "晶心科 公告本公司代理發言人異動",
-      "url": "https://tw.stock.yahoo.com/news/%E6%99%B6%E5%BF%83%E7%A7%91-%E5%85%AC%E5%91%8A%E6%9C%AC%E5%85%AC%E5%8F%B8%E4%BB%A3%E7%90%86%E7%99%BC%E8%A8%80%E4%BA%BA%E7%95%B0%E5%8B%95-055300899.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "晶心科高階Cuzco盼切入Meta下世代晶片供應鏈",
-      "url": "https://tw.stock.yahoo.com/news/%E6%99%B6%E5%BF%83%E7%A7%91%E9%AB%98%E9%9A%8Ecuzco%E7%9B%BC%E5%88%87%E5%85%A5meta%E4%B8%8B%E4%B8%96%E4%BB%A3%E6%99%B6%E7%89%87%E4%BE%9B%E6%87%89%E9%8F%88-024200296.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "晶心科聚焦三大成長動能，車用、IoT與AI為主軸",
-      "url": "https://tw.stock.yahoo.com/news/%E6%99%B6%E5%BF%83%E7%A7%91%E8%81%9A%E7%84%A6%E4%B8%89%E5%A4%A7%E6%88%90%E9%95%B7%E5%8B%95%E8%83%BD-%E8%BB%8A%E7%94%A8-iot%E8%88%87ai%E7%82%BA%E4%B8%BB%E8%BB%B8-014600882.html",
-      "source": "yahoo",
-      "date": null,
       "snippet": ""
     }
   ]

@@ -1,25 +1,294 @@
 {
   "stockCode": "2409",
-  "name": "友達",
-  "scrapedAt": "2026-05-01T11:51:03.839Z",
-  "devSeed": true,
+  "name": "友達光電",
+  "scrapedAt": "2026-05-01T12:09:55.646Z",
   "sourceCounts": {
-    "yahoo": 1,
-    "ltn": 1
+    "yahoo": 20,
+    "ltn": 20
+  },
+  "enrichStats": {
+    "fetched": 20,
+    "filled": 20
   },
   "news": [
     {
-      "title": "友達 Mini LED 車用面板出貨爆發",
-      "url": "https://tw.stock.yahoo.com/news/2409-友達 Min-2026-01-19.html",
+      "title": "友達：CPO成果2、3年可見 拚車用墨西哥新產線明年投產",
+      "url": "https://tw.stock.yahoo.com/news/%E5%8F%8B%E9%81%94-cpo%E6%88%90%E6%9E%9C2-3%E5%B9%B4%E5%8F%AF%E8%A6%8B-%E6%8B%9A%E8%BB%8A%E7%94%A8%E5%A2%A8%E8%A5%BF%E5%93%A5%E6%96%B0%E7%94%A2%E7%B7%9A%E6%98%8E%E5%B9%B4%E6%8A%95%E7%94%A2-121954704.html",
       "source": "yahoo",
-      "date": "2026-01-19",
+      "date": "2026-04-30",
       "snippet": ""
     },
     {
-      "title": "友達 OLED 面板 出貨平板與筆電市場",
-      "url": "https://search.ltn.com.tw/list?keyword=%E5%8F%8B%E9%81%94#2025-12-30",
+      "title": "友達第1季淨損11.4億元 每股虧損0.15元",
+      "url": "https://tw.stock.yahoo.com/news/%E5%8F%8B%E9%81%94%E7%AC%AC1%E5%AD%A3%E6%B7%A8%E6%90%8D11-4%E5%84%84%E5%85%83-%E6%AF%8F%E8%82%A1%E8%99%A7%E6%90%8D0-15%E5%85%83-061943940.html",
+      "source": "yahoo",
+      "date": "2026-04-30",
+      "snippet": ""
+    },
+    {
+      "title": "【公告】友達代重要子公司達擎股份有限公司公告董事同意114年度盈餘分派",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%8F%8B%E9%81%94%E4%BB%A3%E9%87%8D%E8%A6%81%E5%AD%90%E5%85%AC%E5%8F%B8%E9%81%94%E6%93%8E%E8%82%A1%E4%BB%BD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%E5%85%AC%E5%91%8A%E8%91%A3%E4%BA%8B%E5%90%8C%E6%84%8F114%E5%B9%B4%E5%BA%A6%E7%9B%88%E9%A4%98%E5%88%86%E6%B4%BE-060416157.html",
+      "source": "yahoo",
+      "date": "2026-04-30",
+      "snippet": ""
+    },
+    {
+      "title": "【公告】友達對子公司友達智慧移動股份有限公司現金增資",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%8F%8B%E9%81%94%E5%B0%8D%E5%AD%90%E5%85%AC%E5%8F%B8%E5%8F%8B%E9%81%94%E6%99%BA%E6%85%A7%E7%A7%BB%E5%8B%95%E8%82%A1%E4%BB%BD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%E7%8F%BE%E9%87%91%E5%A2%9E%E8%B3%87-055801838.html",
+      "source": "yahoo",
+      "date": "2026-04-30",
+      "snippet": ""
+    },
+    {
+      "title": "【公告】友達董事會通過115年第1季合併財務報告",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%8F%8B%E9%81%94%E8%91%A3%E4%BA%8B%E6%9C%83%E9%80%9A%E9%81%8E115%E5%B9%B4%E7%AC%AC1%E5%AD%A3%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A-055651860.html",
+      "source": "yahoo",
+      "date": "2026-04-30",
+      "snippet": ""
+    },
+    {
+      "title": "【公告】友達115年第1季合併財務報告提報董事會決議日期",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%8F%8B%E9%81%94115%E5%B9%B4%E7%AC%AC1%E5%AD%A3%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A%E6%8F%90%E5%A0%B1%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E6%97%A5%E6%9C%9F-085432742.html",
+      "source": "yahoo",
+      "date": "2026-04-21",
+      "snippet": ""
+    },
+    {
+      "title": "友達擬分割處分能源事業 推動公司化提升營運效率",
+      "url": "https://tw.stock.yahoo.com/news/%E5%8F%8B%E9%81%94%E6%93%AC%E5%88%86%E5%89%B2%E8%99%95%E5%88%86%E8%83%BD%E6%BA%90%E4%BA%8B%E6%A5%AD-%E6%8E%A8%E5%8B%95%E5%85%AC%E5%8F%B8%E5%8C%96%E6%8F%90%E5%8D%87%E7%87%9F%E9%81%8B%E6%95%88%E7%8E%87-072545143.html",
+      "source": "yahoo",
+      "date": "2026-04-13",
+      "snippet": ""
+    },
+    {
+      "title": "【公告】友達代子公司星河能源股份有限公司公告處分電廠案",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%8F%8B%E9%81%94%E4%BB%A3%E5%AD%90%E5%85%AC%E5%8F%B8%E6%98%9F%E6%B2%B3%E8%83%BD%E6%BA%90%E8%82%A1%E4%BB%BD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%E5%85%AC%E5%91%8A%E8%99%95%E5%88%86%E9%9B%BB%E5%BB%A0%E6%A1%88-065549525.html",
+      "source": "yahoo",
+      "date": "2026-04-13",
+      "snippet": ""
+    },
+    {
+      "title": "【公告】友達董事會通過能源事業分割讓與百分之百持有之子公司及其分割計畫書案",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%8F%8B%E9%81%94%E8%91%A3%E4%BA%8B%E6%9C%83%E9%80%9A%E9%81%8E%E8%83%BD%E6%BA%90%E4%BA%8B%E6%A5%AD%E5%88%86%E5%89%B2%E8%AE%93%E8%88%87%E7%99%BE%E5%88%86%E4%B9%8B%E7%99%BE%E6%8C%81%E6%9C%89%E4%B9%8B%E5%AD%90%E5%85%AC%E5%8F%B8%E5%8F%8A%E5%85%B6%E5%88%86%E5%89%B2%E8%A8%88%E7%95%AB%E6%9B%B8%E6%A1%88-065442284.html",
+      "source": "yahoo",
+      "date": "2026-04-13",
+      "snippet": ""
+    },
+    {
+      "title": "【公告】友達董事會通過能源事業相關公司股權出售案",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%8F%8B%E9%81%94%E8%91%A3%E4%BA%8B%E6%9C%83%E9%80%9A%E9%81%8E%E8%83%BD%E6%BA%90%E4%BA%8B%E6%A5%AD%E7%9B%B8%E9%97%9C%E5%85%AC%E5%8F%B8%E8%82%A1%E6%AC%8A%E5%87%BA%E5%94%AE%E6%A1%88-065440722.html",
+      "source": "yahoo",
+      "date": "2026-04-13",
+      "snippet": ""
+    },
+    {
+      "title": "全球創新百大機構 台連5年列第3",
+      "url": "https://ec.ltn.com.tw/article/paper/1750244",
       "source": "ltn",
-      "date": "2025-12-30",
+      "date": "2026-04-10",
+      "snippet": ""
+    },
+    {
+      "title": "智慧顯示展拚Micro LED 友達3月營收月增26.9%",
+      "url": "https://tw.stock.yahoo.com/news/%E6%99%BA%E6%85%A7%E9%A1%AF%E7%A4%BA%E5%B1%95%E6%8B%9Amicro-led-%E5%8F%8B%E9%81%943%E6%9C%88%E7%87%9F%E6%94%B6%E6%9C%88%E5%A2%9E26-9-142422358.html",
+      "source": "yahoo",
+      "date": "2026-04-09",
+      "snippet": ""
+    },
+    {
+      "title": "外資買超317億元連3買 加碼友達13萬張排第1",
+      "url": "https://tw.stock.yahoo.com/news/%E5%A4%96%E8%B3%87%E8%B2%B7%E8%B6%85317%E5%84%84%E5%85%83%E9%80%A33%E8%B2%B7-%E5%8A%A0%E7%A2%BC%E5%8F%8B%E9%81%9413%E8%90%AC%E5%BC%B5%E6%8E%92%E7%AC%AC1-084132190.html",
+      "source": "yahoo",
+      "date": "2026-04-09",
+      "snippet": ""
+    },
+    {
+      "title": "【公告】友達 2026年3月合併營收260.21億元 年增0.65%",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%8F%8B%E9%81%94-2026%E5%B9%B43%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B6260-21%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E0-055234553.html",
+      "source": "yahoo",
+      "date": "2026-04-09",
+      "snippet": ""
+    },
+    {
+      "title": "智慧顯示展友達攻光通訊衛星 群創拚半導體封裝車載",
+      "url": "https://tw.stock.yahoo.com/news/%E6%99%BA%E6%85%A7%E9%A1%AF%E7%A4%BA%E5%B1%95%E5%8F%8B%E9%81%94%E6%94%BB%E5%85%89%E9%80%9A%E8%A8%8A%E8%A1%9B%E6%98%9F-%E7%BE%A4%E5%89%B5%E6%8B%9A%E5%8D%8A%E5%B0%8E%E9%AB%94%E5%B0%81%E8%A3%9D%E8%BB%8A%E8%BC%89-131803587.html",
+      "source": "yahoo",
+      "date": "2026-04-08",
+      "snippet": ""
+    },
+    {
+      "title": "【公告】友達將於4月30日召開法人說明會",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%8F%8B%E9%81%94%E5%B0%87%E6%96%BC4%E6%9C%8830%E6%97%A5%E5%8F%AC%E9%96%8B%E6%B3%95%E4%BA%BA%E8%AA%AA%E6%98%8E%E6%9C%83-074334487.html",
+      "source": "yahoo",
+      "date": "2026-04-01",
+      "snippet": ""
+    },
+    {
+      "title": "友達技術長廖唯倫 榮獲「傑出人士貢獻獎」",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5390090",
+      "source": "ltn",
+      "date": "2026-04-01",
+      "snippet": ""
+    },
+    {
+      "title": "智慧顯示展 達擎秀醫療、智慧零售等場域創新成果",
+      "url": "https://tw.stock.yahoo.com/news/%E6%99%BA%E6%85%A7%E9%A1%AF%E7%A4%BA%E5%B1%95-%E9%81%94%E6%93%8E%E7%A7%80%E9%86%AB%E7%99%82-%E6%99%BA%E6%85%A7%E9%9B%B6%E5%94%AE%E7%AD%89%E5%A0%B4%E5%9F%9F%E5%89%B5%E6%96%B0%E6%88%90%E6%9E%9C-151806576.html",
+      "source": "yahoo",
+      "date": "2026-03-31",
+      "snippet": ""
+    },
+    {
+      "title": "【公告】友達將參加凱基證券邀請舉辦之法人座談會",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%8F%8B%E9%81%94%E5%B0%87%E5%8F%83%E5%8A%A0%E5%87%B1%E5%9F%BA%E8%AD%89%E5%88%B8%E9%82%80%E8%AB%8B%E8%88%89%E8%BE%A6%E4%B9%8B%E6%B3%95%E4%BA%BA%E5%BA%A7%E8%AB%87%E6%9C%83-074431996.html",
+      "source": "yahoo",
+      "date": "2026-03-27",
+      "snippet": ""
+    },
+    {
+      "title": "【公告】友達將參加第一金證券邀請舉辦之法人座談會",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%8F%8B%E9%81%94%E5%B0%87%E5%8F%83%E5%8A%A0%E7%AC%AC-%E9%87%91%E8%AD%89%E5%88%B8%E9%82%80%E8%AB%8B%E8%88%89%E8%BE%A6%E4%B9%8B%E6%B3%95%E4%BA%BA%E5%BA%A7%E8%AB%87%E6%9C%83-080321570.html",
+      "source": "yahoo",
+      "date": "2026-03-25",
+      "snippet": ""
+    },
+    {
+      "title": "GTC春風吹向電子股 鴻海配7.2元股價獨自憔悴｜Yahoo財經掃描",
+      "url": "https://tw.stock.yahoo.com/news/gtc%E6%98%A5%E9%A2%A8%E5%90%B9%E5%90%91%E9%9B%BB%E5%AD%90%E8%82%A1-%E9%B4%BB%E6%B5%B7%E9%85%8D72%E5%85%83%E8%82%A1%E5%83%B9%E7%8D%A8%E8%87%AA%E6%86%94%E6%82%B4%EF%BD%9Cyahoo%E8%B2%A1%E7%B6%93%E6%8E%83%E6%8F%8F-090205844.html",
+      "source": "yahoo",
+      "date": "2026-03-17",
+      "snippet": ""
+    },
+    {
+      "title": "外資賣超439億元 調節友達、元大台灣50",
+      "url": "https://tw.stock.yahoo.com/news/%E5%A4%96%E8%B3%87%E8%B3%A3%E8%B6%85439%E5%84%84%E5%85%83-%E8%AA%BF%E7%AF%80%E5%8F%8B%E9%81%94-%E5%85%83%E5%A4%A7%E5%8F%B0%E7%81%A350-102212303.html",
+      "source": "yahoo",
+      "date": "2026-03-16",
+      "snippet": ""
+    },
+    {
+      "title": "友達今年股東紀念品是這個 零股也可擁有",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5363020",
+      "source": "ltn",
+      "date": "2026-03-08",
+      "snippet": ""
+    },
+    {
+      "title": "友達德州專利戰告捷！陪審團判未侵權、還宣告對手專利無效 ",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5323716",
+      "source": "ltn",
+      "date": "2026-01-27",
+      "snippet": ""
+    },
+    {
+      "title": "友達蘇州廠獲WEF「人才燈塔工廠」肯定 AI人資轉型成顯示器產業新標竿",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5312630",
+      "source": "ltn",
+      "date": "2026-01-16",
+      "snippet": ""
+    },
+    {
+      "title": "群創認列Pioneer營收、12月破200億元   友達創9個月新高",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5304825",
+      "source": "ltn",
+      "date": "2026-01-09",
+      "snippet": ""
+    },
+    {
+      "title": "完備南部半導體S廊帶！亞灣2.0吸引23家ICT公司落地、建置3座算力中心",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5250454",
+      "source": "ltn",
+      "date": "2025-11-18",
+      "snippet": ""
+    },
+    {
+      "title": "半導體專利申請》台積電連10年穩坐專利王",
+      "url": "https://ec.ltn.com.tw/article/paper/1731348",
+      "source": "ltn",
+      "date": "2025-11-09",
+      "snippet": ""
+    },
+    {
+      "title": "半導體專利競逐！台積電連10年封王 應材、信越各創單季新高",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5239045",
+      "source": "ltn",
+      "date": "2025-11-08",
+      "snippet": ""
+    },
+    {
+      "title": "元太、StellarLink攜手 推日本永續電子紙看板解決方案",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5227662",
+      "source": "ltn",
+      "date": "2025-10-29",
+      "snippet": ""
+    },
+    {
+      "title": "友達打造智慧能源生態圈 迎戰「表後儲能元年」",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5225368",
+      "source": "ltn",
+      "date": "2025-10-27",
+      "snippet": ""
+    },
+    {
+      "title": "2025全球最佳企業名單「沒有台積電」10家台灣公司進榜 輝達奪冠",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5177698",
+      "source": "ltn",
+      "date": "2025-09-14",
+      "snippet": ""
+    },
+    {
+      "title": "模範環境專責人員名單公布 成企業推動綠色轉型重要力量",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5169693",
+      "source": "ltn",
+      "date": "2025-09-07",
+      "snippet": ""
+    },
+    {
+      "title": "友達攜手Garmin  推出全球首款Micro LED智慧手錶",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5166756",
+      "source": "ltn",
+      "date": "2025-09-04",
+      "snippet": ""
+    },
+    {
+      "title": "今年西進投資比重僅3％ 學者：衰退趨勢續發酵",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5109499",
+      "source": "ltn",
+      "date": "2025-07-16",
+      "snippet": ""
+    },
+    {
+      "title": "友達結合循環經濟展位設計 蟬聯Touch Taiwan綠色裝潢設計獎",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5015718",
+      "source": "ltn",
+      "date": "2025-04-18",
+      "snippet": ""
+    },
+    {
+      "title": "科睿唯安「全球百大創新機構」台灣13家入選創新高",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5014244",
+      "source": "ltn",
+      "date": "2025-04-16",
+      "snippet": ""
+    },
+    {
+      "title": "桃園燈塔工廠城市論壇   聯電副總吳宗賢：AI是工具  人類才能引領改變",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4994472",
+      "source": "ltn",
+      "date": "2025-03-28",
+      "snippet": ""
+    },
+    {
+      "title": "台商回流 藉「轉投資」撤資中國",
+      "url": "https://ec.ltn.com.tw/article/paper/1698098",
+      "source": "ltn",
+      "date": "2025-03-24",
+      "snippet": ""
+    },
+    {
+      "title": "中資來台投資增加 主因台商轉投資、反映台商撤資中國",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4989182",
+      "source": "ltn",
+      "date": "2025-03-23",
       "snippet": ""
     }
   ]

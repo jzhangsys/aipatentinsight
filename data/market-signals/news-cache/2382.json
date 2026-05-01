@@ -1,39 +1,294 @@
 {
   "stockCode": "2382",
-  "name": "廣達",
-  "scrapedAt": "2026-05-01T11:51:03.833Z",
-  "devSeed": true,
+  "name": "廣達電腦",
+  "scrapedAt": "2026-05-01T12:09:40.269Z",
   "sourceCounts": {
-    "yahoo": 3,
-    "ltn": 1
+    "yahoo": 20,
+    "ltn": 20
+  },
+  "enrichStats": {
+    "fetched": 20,
+    "filled": 20
   },
   "news": [
     {
-      "title": "廣達 AI 伺服器拉貨爆發 GB200 出貨放量",
-      "url": "https://tw.stock.yahoo.com/news/2382-廣達 AI -2026-02-01.html",
+      "title": "尾盤賣壓殺出「3萬9失守」！台股開高走低收跌376點 台積電收2135元",
+      "url": "https://tw.stock.yahoo.com/news/%E5%B0%BE%E7%9B%A4%E8%B3%A3%E5%A3%93%E6%AE%BA%E5%87%BA-3%E8%90%AC9%E5%A4%B1%E5%AE%88-%E5%8F%B0%E8%82%A1%E9%96%8B%E9%AB%98%E8%B5%B0%E4%BD%8E%E6%94%B6%E8%B7%8C376%E9%BB%9E-%E5%8F%B0%E7%A9%8D%E9%9B%BB%E6%94%B62135%E5%85%83-054817703.html",
       "source": "yahoo",
-      "date": "2026-02-01",
+      "date": "2026-04-30",
       "snippet": ""
     },
     {
-      "title": "NVIDIA HGX H200 廣達掌握主要訂單",
-      "url": "https://search.ltn.com.tw/list?keyword=%E5%BB%A3%E9%81%94#2026-01-25",
+      "title": "《DJ在線》AI帶動需求轉移，記憶體模組廠強攻工控",
+      "url": "https://tw.stock.yahoo.com/news/dj%E5%9C%A8%E7%B7%9A-ai%E5%B8%B6%E5%8B%95%E9%9C%80%E6%B1%82%E8%BD%89%E7%A7%BB-%E8%A8%98%E6%86%B6%E9%AB%94%E6%A8%A1%E7%B5%84%E5%BB%A0%E5%BC%B7%E6%94%BB%E5%B7%A5%E6%8E%A7-011900596.html",
+      "source": "yahoo",
+      "date": "2026-04-30",
+      "snippet": ""
+    },
+    {
+      "title": "續朝4萬大關挺進！台股早盤上漲385點 台積電開2205元",
+      "url": "https://tw.stock.yahoo.com/news/%E7%BA%8C%E6%9C%9D4%E8%90%AC%E5%A4%A7%E9%97%9C%E6%8C%BA%E9%80%B2-%E5%8F%B0%E8%82%A1%E6%97%A9%E7%9B%A4%E4%B8%8A%E6%BC%B2385%E9%BB%9E-%E5%8F%B0%E7%A9%8D%E9%9B%BB%E9%96%8B2205%E5%85%83-011033191.html",
+      "source": "yahoo",
+      "date": "2026-04-30",
+      "snippet": ""
+    },
+    {
+      "title": "輝達AI代理大躍進 整合語音、視覺與推理能力",
+      "url": "https://tw.stock.yahoo.com/news/%E8%BC%9D%E9%81%94ai%E4%BB%A3%E7%90%86%E5%A4%A7%E8%BA%8D%E9%80%B2-%E6%95%B4%E5%90%88%E8%AA%9E%E9%9F%B3-%E8%A6%96%E8%A6%BA%E8%88%87%E6%8E%A8%E7%90%86%E8%83%BD%E5%8A%9B-201000827.html",
+      "source": "yahoo",
+      "date": "2026-04-29",
+      "snippet": ""
+    },
+    {
+      "title": "【公告】廣穎電通115年第1季財務報告董事會預計召開日期為115年05月08日",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%BB%A3%E7%A9%8E%E9%9B%BB%E9%80%9A115%E5%B9%B4%E7%AC%AC1%E5%AD%A3%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A%E8%91%A3%E4%BA%8B%E6%9C%83%E9%A0%90%E8%A8%88%E5%8F%AC%E9%96%8B%E6%97%A5%E6%9C%9F%E7%82%BA115%E5%B9%B405%E6%9C%8808%E6%97%A5-083821473.html",
+      "source": "yahoo",
+      "date": "2026-04-29",
+      "snippet": ""
+    },
+    {
+      "title": "廣明攻AI視覺/協作機器人，光電儲存設備供應穩",
+      "url": "https://tw.stock.yahoo.com/news/%E5%BB%A3%E6%98%8E%E6%94%BBai%E8%A6%96%E8%A6%BA-%E5%8D%94%E4%BD%9C%E6%A9%9F%E5%99%A8%E4%BA%BA-%E5%85%89%E9%9B%BB%E5%84%B2%E5%AD%98%E8%A8%AD%E5%82%99%E4%BE%9B%E6%87%89%E7%A9%A9-021300570.html",
+      "source": "yahoo",
+      "date": "2026-04-29",
+      "snippet": ""
+    },
+    {
+      "title": "〈台股開盤〉回測5日線退守3萬9 電子權值股回檔 金融股挺身撐盤",
+      "url": "https://tw.stock.yahoo.com/news/%E5%8F%B0%E8%82%A1%E9%96%8B%E7%9B%A4-%E5%9B%9E%E6%B8%AC5%E6%97%A5%E7%B7%9A%E9%80%80%E5%AE%883%E8%90%AC9-%E9%9B%BB%E5%AD%90%E6%AC%8A%E5%80%BC%E8%82%A1%E5%9B%9E%E6%AA%94-%E9%87%91%E8%9E%8D%E8%82%A1%E6%8C%BA%E8%BA%AB%E6%92%90%E7%9B%A4-013540578.html",
+      "source": "yahoo",
+      "date": "2026-04-29",
+      "snippet": ""
+    },
+    {
+      "title": "廣達：AI進入大規模工業化擴張期；已做足準備",
+      "url": "https://tw.stock.yahoo.com/news/%E5%BB%A3%E9%81%94-ai%E9%80%B2%E5%85%A5%E5%A4%A7%E8%A6%8F%E6%A8%A1%E5%B7%A5%E6%A5%AD%E5%8C%96%E6%93%B4%E5%BC%B5%E6%9C%9F-%E5%B7%B2%E5%81%9A%E8%B6%B3%E6%BA%96%E5%82%99-005600977.html",
+      "source": "yahoo",
+      "date": "2026-04-29",
+      "snippet": ""
+    },
+    {
+      "title": "迎AI成長 廣達產能全速運轉",
+      "url": "https://tw.stock.yahoo.com/news/%E8%BF%8Eai%E6%88%90%E9%95%B7-%E5%BB%A3%E9%81%94%E7%94%A2%E8%83%BD%E5%85%A8%E9%80%9F%E9%81%8B%E8%BD%89-201000518.html",
+      "source": "yahoo",
+      "date": "2026-04-28",
+      "snippet": ""
+    },
+    {
+      "title": "廣達：高階AI伺服器產能全速運轉 擴廠計畫接續展開",
+      "url": "https://tw.stock.yahoo.com/news/%E5%BB%A3%E9%81%94-%E9%AB%98%E9%9A%8Eai%E4%BC%BA%E6%9C%8D%E5%99%A8%E7%94%A2%E8%83%BD%E5%85%A8%E9%80%9F%E9%81%8B%E8%BD%89-%E6%93%B4%E5%BB%A0%E8%A8%88%E7%95%AB%E6%8E%A5%E7%BA%8C%E5%B1%95%E9%96%8B-130412825.html",
+      "source": "yahoo",
+      "date": "2026-04-28",
+      "snippet": ""
+    },
+    {
+      "title": "台股4萬點 元大證金賣廣達1800張股票「變現」5億元",
+      "url": "https://tw.stock.yahoo.com/news/%E5%8F%B0%E8%82%A14%E8%90%AC%E9%BB%9E-%E5%85%83%E5%A4%A7%E8%AD%89%E9%87%91%E8%B3%A3%E5%BB%A3%E9%81%941800%E5%BC%B5%E8%82%A1%E7%A5%A8%E3%80%8C%E8%AE%8A%E7%8F%BE%E3%80%8D5%E5%84%84%E5%85%83-103517577.html",
+      "source": "yahoo",
+      "date": "2026-04-28",
+      "snippet": ""
+    },
+    {
+      "title": "早盤再突破4萬點卻後繼無力！台股終場小跌94點 台積電收2215元",
+      "url": "https://tw.stock.yahoo.com/news/%E6%97%A9%E7%9B%A4%E5%86%8D%E7%AA%81%E7%A0%B44%E8%90%AC%E9%BB%9E%E5%8D%BB%E5%BE%8C%E7%B9%BC%E7%84%A1%E5%8A%9B-%E5%8F%B0%E8%82%A1%E7%B5%82%E5%A0%B4%E5%B0%8F%E8%B7%8C94%E9%BB%9E-%E5%8F%B0%E7%A9%8D%E9%9B%BB%E6%94%B62215%E5%85%83-055313417.html",
+      "source": "yahoo",
+      "date": "2026-04-28",
+      "snippet": ""
+    },
+    {
+      "title": "智邦創天價也要來打卡股號價 市值排名坐九望八擠下廣達、富邦金",
+      "url": "https://tw.stock.yahoo.com/news/%E6%99%BA%E9%82%A6%E5%89%B5%E5%A4%A9%E5%83%B9%E4%B9%9F%E8%A6%81%E4%BE%86%E6%89%93%E5%8D%A1%E8%82%A1%E8%99%9F%E5%83%B9-%E5%B8%82%E5%80%BC%E6%8E%92%E5%90%8D%E5%9D%90%E4%B9%9D%E6%9C%9B%E5%85%AB%E6%93%A0%E4%B8%8B%E5%BB%A3%E9%81%94-%E5%AF%8C%E9%82%A6%E9%87%91-050114692.html",
+      "source": "yahoo",
+      "date": "2026-04-28",
+      "snippet": ""
+    },
+    {
+      "title": "廣達高階AI伺服器產能全速運轉 成為AI基建浪潮中的「世界建構者」",
+      "url": "https://tw.stock.yahoo.com/news/%E5%BB%A3%E9%81%94%E9%AB%98%E9%9A%8Eai%E4%BC%BA%E6%9C%8D%E5%99%A8%E7%94%A2%E8%83%BD%E5%85%A8%E9%80%9F%E9%81%8B%E8%BD%89-%E6%88%90%E7%82%BAai%E5%9F%BA%E5%BB%BA%E6%B5%AA%E6%BD%AE%E4%B8%AD%E7%9A%84-%E4%B8%96%E7%95%8C%E5%BB%BA%E6%A7%8B%E8%80%85-015748807.html",
+      "source": "yahoo",
+      "date": "2026-04-28",
+      "snippet": ""
+    },
+    {
+      "title": "台股早盤陷平盤震盪 台積電開2245元",
+      "url": "https://tw.stock.yahoo.com/news/%E5%8F%B0%E8%82%A1%E6%97%A9%E7%9B%A4%E9%99%B7%E5%B9%B3%E7%9B%A4%E9%9C%87%E7%9B%AA-%E5%8F%B0%E7%A9%8D%E9%9B%BB%E9%96%8B2245%E5%85%83-011337768.html",
+      "source": "yahoo",
+      "date": "2026-04-28",
+      "snippet": ""
+    },
+    {
+      "title": "台灣邁向「量子島」！經部點名產業鏈 金寶緯創廣達全入列",
+      "url": "https://tw.stock.yahoo.com/news/%E5%8F%B0%E7%81%A3%E9%82%81%E5%90%91%E3%80%8C%E9%87%8F%E5%AD%90%E5%B3%B6%E3%80%8D%EF%BC%81%E7%B6%93%E9%83%A8%E9%BB%9E%E5%90%8D%E7%94%A2%E6%A5%AD%E9%8F%88-%E9%87%91%E5%AF%B6%E7%B7%AF%E5%89%B5%E5%BB%A3%E9%81%94%E5%85%A8%E5%85%A5%E5%88%97-064920078.html",
+      "source": "yahoo",
+      "date": "2026-04-27",
+      "snippet": ""
+    },
+    {
+      "title": "00981A越跌越買！再爆百萬張大量 台股成交王",
+      "url": "https://tw.stock.yahoo.com/news/00981a%E8%B6%8A%E8%B7%8C%E8%B6%8A%E8%B2%B7%EF%BC%81%E5%86%8D%E7%88%86%E7%99%BE%E8%90%AC%E5%BC%B5%E5%A4%A7%E9%87%8F-%E5%8F%B0%E8%82%A1%E6%88%90%E4%BA%A4%E7%8E%8B-050716631.html",
+      "source": "yahoo",
+      "date": "2026-04-27",
+      "snippet": ""
+    },
+    {
+      "title": "〈台股開盤〉台積電2330元新天價 漲逾1200點飛越4萬點大關",
+      "url": "https://tw.stock.yahoo.com/news/%E5%8F%B0%E8%82%A1%E9%96%8B%E7%9B%A4-%E5%8F%B0%E7%A9%8D%E9%9B%BB2330%E5%85%83%E6%96%B0%E5%A4%A9%E5%83%B9-%E6%BC%B2%E9%80%BE1200%E9%BB%9E%E9%A3%9B%E8%B6%8A4%E8%90%AC%E9%BB%9E%E5%A4%A7%E9%97%9C-020106988.html",
+      "source": "yahoo",
+      "date": "2026-04-27",
+      "snippet": ""
+    },
+    {
+      "title": "台股一度衝破4萬點十大權值股不同調！聯發科日月光意外翻黑 台達電收跌2%最疲弱",
+      "url": "https://tw.stock.yahoo.com/news/%E5%8F%B0%E8%82%A1%E4%B8%80%E5%BA%A6%E8%A1%9D%E7%A0%B44%E8%90%AC%E9%BB%9E%E5%8D%81%E5%A4%A7%E6%AC%8A%E5%80%BC%E8%82%A1%E4%B8%8D%E5%90%8C%E8%AA%BF%EF%BC%81%E8%81%AF%E7%99%BC%E7%A7%91%E6%97%A5%E6%9C%88%E5%85%89%E6%84%8F%E5%A4%96%E7%BF%BB%E9%BB%91-%E5%8F%B0%E9%81%94%E9%9B%BB%E6%94%B6%E8%B7%8C2%E6%9C%80%E7%96%B2%E5%BC%B1-015645091.html",
+      "source": "yahoo",
+      "date": "2026-04-27",
+      "snippet": ""
+    },
+    {
+      "title": "台股衝上4萬點大關！早盤大漲1220點 台積電衝2305元新天價",
+      "url": "https://tw.stock.yahoo.com/news/%E5%8F%B0%E8%82%A1%E8%A1%9D%E4%B8%8A4%E8%90%AC%E9%BB%9E%E5%A4%A7%E9%97%9C-%E6%97%A9%E7%9B%A4%E5%A4%A7%E6%BC%B21220%E9%BB%9E-%E5%8F%B0%E7%A9%8D%E9%9B%BB%E8%A1%9D2305%E5%85%83%E6%96%B0%E5%A4%A9%E5%83%B9-011321479.html",
+      "source": "yahoo",
+      "date": "2026-04-27",
+      "snippet": ""
+    },
+    {
+      "title": "台灣3產業領袖登富比士關注名單！身價狂飆背後真相曝光",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5405558",
       "source": "ltn",
-      "date": "2026-01-25",
+      "date": "2026-04-16",
       "snippet": ""
     },
     {
-      "title": "AI 機櫃 GB200 NVL72 廣達取得大單",
-      "url": "https://tw.stock.yahoo.com/news/2382-AI 機櫃 -2026-01-12.html",
-      "source": "yahoo",
-      "date": "2026-01-12",
+      "title": "台灣港務公司成立AI委員會 外部專家名單曝",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5380615",
+      "source": "ltn",
+      "date": "2026-03-24",
       "snippet": ""
     },
     {
-      "title": "廣達 2025 Q4 營收創高 AI 伺服器佔比攀升",
-      "url": "https://tw.stock.yahoo.com/news/2382-廣達 202-2026-01-08.html",
-      "source": "yahoo",
-      "date": "2026-01-08",
+      "title": "台積電第1名！全球非美科技公司排行 台灣有「這麼多」公司上榜",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5324463",
+      "source": "ltn",
+      "date": "2026-01-28",
+      "snippet": ""
+    },
+    {
+      "title": "宜進處分廣達1496張  每張賺9532元",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5184129",
+      "source": "ltn",
+      "date": "2025-09-19",
+      "snippet": ""
+    },
+    {
+      "title": "廣達楊麒令：Q4迎今年營運高峰 墨國新廠明年初投產",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5176072",
+      "source": "ltn",
+      "date": "2025-09-12",
+      "snippet": ""
+    },
+    {
+      "title": "AI全都是泡沫？廣達楊麒令分析：只會更好",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5175986",
+      "source": "ltn",
+      "date": "2025-09-12",
+      "snippet": ""
+    },
+    {
+      "title": "2025《財富》世界500強出爐！台積電、鴻海、廣達上榜",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5125326",
+      "source": "ltn",
+      "date": "2025-07-29",
+      "snippet": ""
+    },
+    {
+      "title": "台灣經濟去中化？紐時1文剖析背後挑戰",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5099977",
+      "source": "ltn",
+      "date": "2025-07-08",
+      "snippet": ""
+    },
+    {
+      "title": "迎接輝達最新AI伺服器出貨 5台廠供應商衝刺",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5092452",
+      "source": "ltn",
+      "date": "2025-07-01",
+      "snippet": ""
+    },
+    {
+      "title": "廣達強化智醫生態系 攜手軍醫切入電子傷票領域",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5077804",
+      "source": "ltn",
+      "date": "2025-06-17",
+      "snippet": ""
+    },
+    {
+      "title": "蔡司首度參展COMPUTEX 助客戶加速發展AI應用",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5049299",
+      "source": "ltn",
+      "date": "2025-05-20",
+      "snippet": ""
+    },
+    {
+      "title": "Startup Global Program計畫滿10年 推動上百家國際新創與台合作",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5036825",
+      "source": "ltn",
+      "date": "2025-05-08",
+      "snippet": ""
+    },
+    {
+      "title": "科睿唯安「全球百大創新機構」台灣13家入選創新高",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5014244",
+      "source": "ltn",
+      "date": "2025-04-16",
+      "snippet": ""
+    },
+    {
+      "title": "2025《富比士》全球富豪榜出爐！台灣首富是「他」 5人擠進前500",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4999538",
+      "source": "ltn",
+      "date": "2025-04-02",
+      "snippet": ""
+    },
+    {
+      "title": "彭博：關稅施壓 迫使台灣科技業加速赴美",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4984882",
+      "source": "ltn",
+      "date": "2025-03-19",
+      "snippet": ""
+    },
+    {
+      "title": "雲達揮軍MWC 攜手達明、所羅門展現AI生態系",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4968271",
+      "source": "ltn",
+      "date": "2025-03-03",
+      "snippet": ""
+    },
+    {
+      "title": "AMD爆要賣廠？彭博點名台灣「這幾間電子大廠」有興趣",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4959029",
+      "source": "ltn",
+      "date": "2025-02-22",
+      "snippet": ""
+    },
+    {
+      "title": "廣達持續壯大美國產能 第3季出貨GB300",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4911819",
+      "source": "ltn",
+      "date": "2025-01-02",
+      "snippet": ""
+    },
+    {
+      "title": "廣達3年前察覺AI趨勢 繼續擴大美國製造能量",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4881558",
+      "source": "ltn",
+      "date": "2024-12-02",
+      "snippet": ""
+    },
+    {
+      "title": "APEC企業家對話 聚焦川普2.0供應鏈變化",
+      "url": "https://ec.ltn.com.tw/article/paper/1677563",
+      "source": "ltn",
+      "date": "2024-11-17",
       "snippet": ""
     }
   ]

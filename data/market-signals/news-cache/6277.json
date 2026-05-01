@@ -1,10 +1,14 @@
 {
   "stockCode": "6277",
   "name": "宏正自動科技",
-  "scrapedAt": "2026-05-01T11:31:03.118Z",
+  "scrapedAt": "2026-05-01T12:15:52.795Z",
   "sourceCounts": {
-    "yahoo": 20,
+    "yahoo": 0,
     "ltn": 20
+  },
+  "enrichStats": {
+    "fetched": 0,
+    "filled": 0
   },
   "news": [
     {
@@ -145,146 +149,6 @@
       "url": "https://ec.ltn.com.tw/article/breakingnews/1325802",
       "source": "ltn",
       "date": "2015-05-22",
-      "snippet": ""
-    },
-    {
-      "title": "【公告】宏正董事會決議115年第一季暫不分派股利",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%AE%8F%E6%AD%A3%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0115%E5%B9%B4%E7%AC%AC-%E5%AD%A3%E6%9A%AB%E4%B8%8D%E5%88%86%E6%B4%BE%E8%82%A1%E5%88%A9-101507228.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "宏正自結第一季合併營收12.93億元，年增7.34%",
-      "url": "https://tw.stock.yahoo.com/news/%E5%AE%8F%E6%AD%A3%E8%87%AA%E7%B5%90%E7%AC%AC-%E5%AD%A3%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B612-93%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E7-34-070500219.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "宏正 宏正115年3月合併營收達新台幣4.45億元",
-      "url": "https://tw.stock.yahoo.com/news/%E5%AE%8F%E6%AD%A3-%E5%AE%8F%E6%AD%A3115%E5%B9%B43%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B6%E9%81%94%E6%96%B0%E5%8F%B0%E5%B9%A34-45%E5%84%84%E5%85%83-065700786.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】宏正 2026年3月合併營收4.45億元 年增-0.33%",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%AE%8F%E6%AD%A3-2026%E5%B9%B43%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B64-45%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E-053304188.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "宏正前2月機櫃營收3位數成長 6月推符合輝達規格新品",
-      "url": "https://tw.stock.yahoo.com/news/%E5%AE%8F%E6%AD%A3%E5%89%8D2%E6%9C%88%E6%A9%9F%E6%AB%83%E7%87%9F%E6%94%B63%E4%BD%8D%E6%95%B8%E6%88%90%E9%95%B7-6%E6%9C%88%E6%8E%A8%E7%AC%A6%E5%90%88%E8%BC%9D%E9%81%94%E8%A6%8F%E6%A0%BC%E6%96%B0%E5%93%81-080148622.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】宏正115年3月26日召開線上法人說明會",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%AE%8F%E6%AD%A3115%E5%B9%B43%E6%9C%8826%E6%97%A5%E5%8F%AC%E9%96%8B%E7%B7%9A%E4%B8%8A%E6%B3%95%E4%BA%BA%E8%AA%AA%E6%98%8E%E6%9C%83-035555938.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】宏正115年2月合併營收達新台幣4.1億元",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%AE%8F%E6%AD%A3115%E5%B9%B42%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B6%E9%81%94%E6%96%B0%E5%8F%B0%E5%B9%A34-1%E5%84%84%E5%85%83-084113464.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】董事會決議114年第四季股利分派",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0114%E5%B9%B4%E7%AC%AC%E5%9B%9B%E5%AD%A3%E8%82%A1%E5%88%A9%E5%88%86%E6%B4%BE-084110821.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "宏正自結前2月合併營收8.48億元，年增11.87%",
-      "url": "https://tw.stock.yahoo.com/news/%E5%AE%8F%E6%AD%A3%E8%87%AA%E7%B5%90%E5%89%8D2%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B68-48%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E11-87-083400258.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】宏正 2026年2月合併營收4.1億元 年增10.91%",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%AE%8F%E6%AD%A3-2026%E5%B9%B42%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B64-1%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E10-082345721.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "宏正 宏正115年2月合併營收達新台幣4.1億元",
-      "url": "https://tw.stock.yahoo.com/news/%E5%AE%8F%E6%AD%A3-%E5%AE%8F%E6%AD%A3115%E5%B9%B42%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B6%E9%81%94%E6%96%B0%E5%8F%B0%E5%B9%A34-1%E5%84%84%E5%85%83-082300723.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】宏正董事辭任",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%AE%8F%E6%AD%A3%E8%91%A3%E4%BA%8B%E8%BE%AD%E4%BB%BB-073722273.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】宏正115年1月合併營收達新台幣4.38億元",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%AE%8F%E6%AD%A3115%E5%B9%B41%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B6%E9%81%94%E6%96%B0%E5%8F%B0%E5%B9%A34-38%E5%84%84%E5%85%83-084749618.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】宏正 2026年1月合併營收4.38億元 年增12.79%",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%AE%8F%E6%AD%A3-2026%E5%B9%B41%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B64-38%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E12-084314023.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "宏正去年12月營收衝2年多新高 機櫃營收年增203%",
-      "url": "https://tw.stock.yahoo.com/news/%E5%AE%8F%E6%AD%A3%E5%8E%BB%E5%B9%B412%E6%9C%88%E7%87%9F%E6%94%B6%E8%A1%9D2%E5%B9%B4%E5%A4%9A%E6%96%B0%E9%AB%98-%E6%A9%9F%E6%AB%83%E7%87%9F%E6%94%B6%E5%B9%B4%E5%A2%9E203-093647477.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】宏正114年12月合併營收達新台幣4.84億元",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%AE%8F%E6%AD%A3114%E5%B9%B412%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B6%E9%81%94%E6%96%B0%E5%8F%B0%E5%B9%A34-84%E5%84%84%E5%85%83-102415968.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】宏正 2025年12月合併營收4.84億元 年增6.17%",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%AE%8F%E6%AD%A3-2025%E5%B9%B412%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B64-84%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E6-102311984.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】宏正 2025年11月合併營收4.35億元 年增-2.08%",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%AE%8F%E6%AD%A3-2025%E5%B9%B411%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B64-35%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E-081144501.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "宏正看好2026年AI市場走向百家爭鳴 營運展望正向",
-      "url": "https://tw.stock.yahoo.com/news/%E5%AE%8F%E6%AD%A3%E7%9C%8B%E5%A5%BD2026%E5%B9%B4ai%E5%B8%82%E5%A0%B4%E8%B5%B0%E5%90%91%E7%99%BE%E5%AE%B6%E7%88%AD%E9%B3%B4-%E7%87%9F%E9%81%8B%E5%B1%95%E6%9C%9B%E6%AD%A3%E5%90%91-080720580.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】宏正114年10月合併營收達新台幣4.62億元",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%AE%8F%E6%AD%A3114%E5%B9%B410%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B6%E9%81%94%E6%96%B0%E5%8F%B0%E5%B9%A34-62%E5%84%84%E5%85%83-101450813.html",
-      "source": "yahoo",
-      "date": null,
       "snippet": ""
     }
   ]

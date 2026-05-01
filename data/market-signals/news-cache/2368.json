@@ -1,12 +1,156 @@
 {
   "stockCode": "2368",
   "name": "金像電子",
-  "scrapedAt": "2026-05-01T11:28:47.940Z",
+  "scrapedAt": "2026-05-01T12:09:31.737Z",
   "sourceCounts": {
     "yahoo": 20,
     "ltn": 3
   },
+  "enrichStats": {
+    "fetched": 20,
+    "filled": 20
+  },
   "news": [
+    {
+      "title": "【公告】金像電代重要子公司Gold Circuit Enterprise Limited公告董事會決議發放股利事宜",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E9%87%91%E5%83%8F%E9%9B%BB%E4%BB%A3%E9%87%8D%E8%A6%81%E5%AD%90%E5%85%AC%E5%8F%B8gold-circuit-enterprise-limited%E5%85%AC%E5%91%8A%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E7%99%BC%E6%94%BE%E8%82%A1%E5%88%A9%E4%BA%8B%E5%AE%9C-073100364.html",
+      "source": "yahoo",
+      "date": "2026-04-30",
+      "snippet": ""
+    },
+    {
+      "title": "【公告】金像電代重要子公司常熟金像電子有限公司公告董事會決議發放股利事宜",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E9%87%91%E5%83%8F%E9%9B%BB%E4%BB%A3%E9%87%8D%E8%A6%81%E5%AD%90%E5%85%AC%E5%8F%B8%E5%B8%B8%E7%86%9F%E9%87%91%E5%83%8F%E9%9B%BB%E5%AD%90%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%E5%85%AC%E5%91%8A%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E7%99%BC%E6%94%BE%E8%82%A1%E5%88%A9%E4%BA%8B%E5%AE%9C-072950853.html",
+      "source": "yahoo",
+      "date": "2026-04-30",
+      "snippet": ""
+    },
+    {
+      "title": "【公告】金像電獨立董事逝世解任",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E9%87%91%E5%83%8F%E9%9B%BB%E7%8D%A8%E7%AB%8B%E8%91%A3%E4%BA%8B%E9%80%9D%E4%B8%96%E8%A7%A3%E4%BB%BB-074541597.html",
+      "source": "yahoo",
+      "date": "2026-04-17",
+      "snippet": ""
+    },
+    {
+      "title": "【公告】金像電董事會決議辦理私募現金增資發行新股",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E9%87%91%E5%83%8F%E9%9B%BB%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E8%BE%A6%E7%90%86%E7%A7%81%E5%8B%9F%E7%8F%BE%E9%87%91%E5%A2%9E%E8%B3%87%E7%99%BC%E8%A1%8C%E6%96%B0%E8%82%A1-080436862.html",
+      "source": "yahoo",
+      "date": "2026-04-16",
+      "snippet": ""
+    },
+    {
+      "title": "【公告】金像電公告擬認購尖點科技股份有限公司私募無擔保轉換公司債",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E9%87%91%E5%83%8F%E9%9B%BB%E5%85%AC%E5%91%8A%E6%93%AC%E8%AA%8D%E8%B3%BC%E5%B0%96%E9%BB%9E%E7%A7%91%E6%8A%80%E8%82%A1%E4%BB%BD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%E7%A7%81%E5%8B%9F%E7%84%A1%E6%93%94%E4%BF%9D%E8%BD%89%E6%8F%9B%E5%85%AC%E5%8F%B8%E5%82%B5-080434133.html",
+      "source": "yahoo",
+      "date": "2026-04-16",
+      "snippet": ""
+    },
+    {
+      "title": "金像電 本公司依公開發行公司資金貸與及背書保證處理準則第二十五條第一項第四款規定公告",
+      "url": "https://tw.stock.yahoo.com/news/%E9%87%91%E5%83%8F%E9%9B%BB-%E6%9C%AC%E5%85%AC%E5%8F%B8%E4%BE%9D%E5%85%AC%E9%96%8B%E7%99%BC%E8%A1%8C%E5%85%AC%E5%8F%B8%E8%B3%87%E9%87%91%E8%B2%B8%E8%88%87%E5%8F%8A%E8%83%8C%E6%9B%B8%E4%BF%9D%E8%AD%89%E8%99%95%E7%90%86%E6%BA%96%E5%89%87%E7%AC%AC%E4%BA%8C%E5%8D%81%E4%BA%94%E6%A2%9D%E7%AC%AC-%E9%A0%85%E7%AC%AC%E5%9B%9B%E6%AC%BE%E8%A6%8F%E5%AE%9A%E5%85%AC%E5%91%8A-075300638.html",
+      "source": "yahoo",
+      "date": "2026-04-16",
+      "snippet": ""
+    },
+    {
+      "title": "【公告】更正金像電114年關係企業合併營業報告書資訊",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%9B%B4%E6%AD%A3%E9%87%91%E5%83%8F%E9%9B%BB114%E5%B9%B4%E9%97%9C%E4%BF%82%E4%BC%81%E6%A5%AD%E5%90%88%E4%BD%B5%E7%87%9F%E6%A5%AD%E5%A0%B1%E5%91%8A%E6%9B%B8%E8%B3%87%E8%A8%8A-094054419.html",
+      "source": "yahoo",
+      "date": "2026-04-14",
+      "snippet": ""
+    },
+    {
+      "title": "【公告】金像電 2026年3月合併營收73.85億元 年增63.14%",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E9%87%91%E5%83%8F%E9%9B%BB-2026%E5%B9%B43%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B673-85%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E63-075251581.html",
+      "source": "yahoo",
+      "date": "2026-04-08",
+      "snippet": ""
+    },
+    {
+      "title": "【公告】金像電受邀參加BofA舉辦之2026 Asia Tech Conference",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E9%87%91%E5%83%8F%E9%9B%BB%E5%8F%97%E9%82%80%E5%8F%83%E5%8A%A0bofa%E8%88%89%E8%BE%A6%E4%B9%8B2026-asia-tech-conference-082734558.html",
+      "source": "yahoo",
+      "date": "2026-03-13",
+      "snippet": ""
+    },
+    {
+      "title": "【公告】金像電係因有價證券於集中交易市場達公布注意交易資訊標準，故公布相關財務業務等重大訊息，以利投資人區別瞭解",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E9%87%91%E5%83%8F%E9%9B%BB%E4%BF%82%E5%9B%A0%E6%9C%89%E5%83%B9%E8%AD%89%E5%88%B8%E6%96%BC%E9%9B%86%E4%B8%AD%E4%BA%A4%E6%98%93%E5%B8%82%E5%A0%B4%E9%81%94%E5%85%AC%E5%B8%83%E6%B3%A8%E6%84%8F%E4%BA%A4%E6%98%93%E8%B3%87%E8%A8%8A%E6%A8%99%E6%BA%96-%E6%95%85%E5%85%AC%E5%B8%83%E7%9B%B8%E9%97%9C%E8%B2%A1%E5%8B%99%E6%A5%AD%E5%8B%99%E7%AD%89%E9%87%8D%E5%A4%A7%E8%A8%8A%E6%81%AF-%E4%BB%A5%E5%88%A9%E6%8A%95%E8%B3%87%E4%BA%BA%E5%8D%80%E5%88%A5%E7%9E%AD%E8%A7%A3-073540616.html",
+      "source": "yahoo",
+      "date": "2026-03-13",
+      "snippet": ""
+    },
+    {
+      "title": "【公告】金像電代子公司泰國金像公告董事會決議通過銀行聯貸案",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E9%87%91%E5%83%8F%E9%9B%BB%E4%BB%A3%E5%AD%90%E5%85%AC%E5%8F%B8%E6%B3%B0%E5%9C%8B%E9%87%91%E5%83%8F%E5%85%AC%E5%91%8A%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E9%80%9A%E9%81%8E%E9%8A%80%E8%A1%8C%E8%81%AF%E8%B2%B8%E6%A1%88-100826303.html",
+      "source": "yahoo",
+      "date": "2026-03-10",
+      "snippet": ""
+    },
+    {
+      "title": "【公告】金像電代子公司GCE(Thailand) Co., Ltd.公告董事會決議向關係人Crystalrock Enterprise Co., Ltd.取得土地",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E9%87%91%E5%83%8F%E9%9B%BB%E4%BB%A3%E5%AD%90%E5%85%AC%E5%8F%B8gce-thailand-co-ltd-100824452.html",
+      "source": "yahoo",
+      "date": "2026-03-10",
+      "snippet": ""
+    },
+    {
+      "title": "【公告】金像電代子公司Crystalrock Enterprise Co., Ltd.公告董事會決議出售土地予關係人GCE(Thailand) Co., Ltd.",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E9%87%91%E5%83%8F%E9%9B%BB%E4%BB%A3%E5%AD%90%E5%85%AC%E5%8F%B8crystalrock-enterprise-co-ltd-100822799.html",
+      "source": "yahoo",
+      "date": "2026-03-10",
+      "snippet": ""
+    },
+    {
+      "title": "【公告】金像電董事會決議股利分派",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E9%87%91%E5%83%8F%E9%9B%BB%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E8%82%A1%E5%88%A9%E5%88%86%E6%B4%BE-090854820.html",
+      "source": "yahoo",
+      "date": "2026-03-10",
+      "snippet": ""
+    },
+    {
+      "title": "台灣50指數成分股調整 新加入金像電等5檔",
+      "url": "https://tw.stock.yahoo.com/news/%E5%8F%B0%E7%81%A350%E6%8C%87%E6%95%B8%E6%88%90%E5%88%86%E8%82%A1%E8%AA%BF%E6%95%B4-%E6%96%B0%E5%8A%A0%E5%85%A5%E9%87%91%E5%83%8F%E9%9B%BB%E7%AD%895%E6%AA%94-092838473.html",
+      "source": "yahoo",
+      "date": "2026-03-06",
+      "snippet": ""
+    },
+    {
+      "title": "【公告】金像電 2026年2月合併營收59.42億元 年增53.91%",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E9%87%91%E5%83%8F%E9%9B%BB-2026%E5%B9%B42%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B659-42%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E53-085223035.html",
+      "source": "yahoo",
+      "date": "2026-03-06",
+      "snippet": ""
+    },
+    {
+      "title": "【公告】金像電114年度財務報告董事會召開日期為115年3月10日",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E9%87%91%E5%83%8F%E9%9B%BB114%E5%B9%B4%E5%BA%A6%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A%E8%91%A3%E4%BA%8B%E6%9C%83%E5%8F%AC%E9%96%8B%E6%97%A5%E6%9C%9F%E7%82%BA115%E5%B9%B43%E6%9C%8810%E6%97%A5-081521905.html",
+      "source": "yahoo",
+      "date": "2026-03-02",
+      "snippet": ""
+    },
+    {
+      "title": "【公告】金像電 2026年1月合併營收60.16億元 年增68.54%",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E9%87%91%E5%83%8F%E9%9B%BB-2026%E5%B9%B41%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B660-16%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E68-072250135.html",
+      "source": "yahoo",
+      "date": "2026-02-06",
+      "snippet": ""
+    },
+    {
+      "title": "【公告】金像電董事會決議取得使用權資產",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E9%87%91%E5%83%8F%E9%9B%BB%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E5%8F%96%E5%BE%97%E4%BD%BF%E7%94%A8%E6%AC%8A%E8%B3%87%E7%94%A2-083518557.html",
+      "source": "yahoo",
+      "date": "2026-01-22",
+      "snippet": ""
+    },
+    {
+      "title": "【公告】金像電受邀參加富邦證券舉辦之座談會",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E9%87%91%E5%83%8F%E9%9B%BB%E5%8F%97%E9%82%80%E5%8F%83%E5%8A%A0%E5%AF%8C%E9%82%A6%E8%AD%89%E5%88%B8%E8%88%89%E8%BE%A6%E4%B9%8B%E5%BA%A7%E8%AB%87%E6%9C%83-080707320.html",
+      "source": "yahoo",
+      "date": "2026-01-12",
+      "snippet": ""
+    },
     {
       "title": "熱門概念股》雲端運算",
       "url": "https://ec.ltn.com.tw/article/breakingnews/4562135",
@@ -26,146 +170,6 @@
       "url": "https://ec.ltn.com.tw/article/paper/416139",
       "source": "ltn",
       "date": "2010-08-02",
-      "snippet": ""
-    },
-    {
-      "title": "【公告】金像電代重要子公司Gold Circuit Enterprise Limited公告董事會決議發放股利事宜",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E9%87%91%E5%83%8F%E9%9B%BB%E4%BB%A3%E9%87%8D%E8%A6%81%E5%AD%90%E5%85%AC%E5%8F%B8gold-circuit-enterprise-limited%E5%85%AC%E5%91%8A%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E7%99%BC%E6%94%BE%E8%82%A1%E5%88%A9%E4%BA%8B%E5%AE%9C-073100364.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】金像電代重要子公司常熟金像電子有限公司公告董事會決議發放股利事宜",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E9%87%91%E5%83%8F%E9%9B%BB%E4%BB%A3%E9%87%8D%E8%A6%81%E5%AD%90%E5%85%AC%E5%8F%B8%E5%B8%B8%E7%86%9F%E9%87%91%E5%83%8F%E9%9B%BB%E5%AD%90%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%E5%85%AC%E5%91%8A%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E7%99%BC%E6%94%BE%E8%82%A1%E5%88%A9%E4%BA%8B%E5%AE%9C-072950853.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】金像電獨立董事逝世解任",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E9%87%91%E5%83%8F%E9%9B%BB%E7%8D%A8%E7%AB%8B%E8%91%A3%E4%BA%8B%E9%80%9D%E4%B8%96%E8%A7%A3%E4%BB%BB-074541597.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】金像電董事會決議辦理私募現金增資發行新股",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E9%87%91%E5%83%8F%E9%9B%BB%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E8%BE%A6%E7%90%86%E7%A7%81%E5%8B%9F%E7%8F%BE%E9%87%91%E5%A2%9E%E8%B3%87%E7%99%BC%E8%A1%8C%E6%96%B0%E8%82%A1-080436862.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】金像電公告擬認購尖點科技股份有限公司私募無擔保轉換公司債",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E9%87%91%E5%83%8F%E9%9B%BB%E5%85%AC%E5%91%8A%E6%93%AC%E8%AA%8D%E8%B3%BC%E5%B0%96%E9%BB%9E%E7%A7%91%E6%8A%80%E8%82%A1%E4%BB%BD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%E7%A7%81%E5%8B%9F%E7%84%A1%E6%93%94%E4%BF%9D%E8%BD%89%E6%8F%9B%E5%85%AC%E5%8F%B8%E5%82%B5-080434133.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "金像電 本公司依公開發行公司資金貸與及背書保證處理準則第二十五條第一項第四款規定公告",
-      "url": "https://tw.stock.yahoo.com/news/%E9%87%91%E5%83%8F%E9%9B%BB-%E6%9C%AC%E5%85%AC%E5%8F%B8%E4%BE%9D%E5%85%AC%E9%96%8B%E7%99%BC%E8%A1%8C%E5%85%AC%E5%8F%B8%E8%B3%87%E9%87%91%E8%B2%B8%E8%88%87%E5%8F%8A%E8%83%8C%E6%9B%B8%E4%BF%9D%E8%AD%89%E8%99%95%E7%90%86%E6%BA%96%E5%89%87%E7%AC%AC%E4%BA%8C%E5%8D%81%E4%BA%94%E6%A2%9D%E7%AC%AC-%E9%A0%85%E7%AC%AC%E5%9B%9B%E6%AC%BE%E8%A6%8F%E5%AE%9A%E5%85%AC%E5%91%8A-075300638.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】更正金像電114年關係企業合併營業報告書資訊",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%9B%B4%E6%AD%A3%E9%87%91%E5%83%8F%E9%9B%BB114%E5%B9%B4%E9%97%9C%E4%BF%82%E4%BC%81%E6%A5%AD%E5%90%88%E4%BD%B5%E7%87%9F%E6%A5%AD%E5%A0%B1%E5%91%8A%E6%9B%B8%E8%B3%87%E8%A8%8A-094054419.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】金像電 2026年3月合併營收73.85億元 年增63.14%",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E9%87%91%E5%83%8F%E9%9B%BB-2026%E5%B9%B43%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B673-85%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E63-075251581.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】金像電受邀參加BofA舉辦之2026 Asia Tech Conference",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E9%87%91%E5%83%8F%E9%9B%BB%E5%8F%97%E9%82%80%E5%8F%83%E5%8A%A0bofa%E8%88%89%E8%BE%A6%E4%B9%8B2026-asia-tech-conference-082734558.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】金像電係因有價證券於集中交易市場達公布注意交易資訊標準，故公布相關財務業務等重大訊息，以利投資人區別瞭解",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E9%87%91%E5%83%8F%E9%9B%BB%E4%BF%82%E5%9B%A0%E6%9C%89%E5%83%B9%E8%AD%89%E5%88%B8%E6%96%BC%E9%9B%86%E4%B8%AD%E4%BA%A4%E6%98%93%E5%B8%82%E5%A0%B4%E9%81%94%E5%85%AC%E5%B8%83%E6%B3%A8%E6%84%8F%E4%BA%A4%E6%98%93%E8%B3%87%E8%A8%8A%E6%A8%99%E6%BA%96-%E6%95%85%E5%85%AC%E5%B8%83%E7%9B%B8%E9%97%9C%E8%B2%A1%E5%8B%99%E6%A5%AD%E5%8B%99%E7%AD%89%E9%87%8D%E5%A4%A7%E8%A8%8A%E6%81%AF-%E4%BB%A5%E5%88%A9%E6%8A%95%E8%B3%87%E4%BA%BA%E5%8D%80%E5%88%A5%E7%9E%AD%E8%A7%A3-073540616.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】金像電代子公司泰國金像公告董事會決議通過銀行聯貸案",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E9%87%91%E5%83%8F%E9%9B%BB%E4%BB%A3%E5%AD%90%E5%85%AC%E5%8F%B8%E6%B3%B0%E5%9C%8B%E9%87%91%E5%83%8F%E5%85%AC%E5%91%8A%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E9%80%9A%E9%81%8E%E9%8A%80%E8%A1%8C%E8%81%AF%E8%B2%B8%E6%A1%88-100826303.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】金像電代子公司GCE(Thailand) Co., Ltd.公告董事會決議向關係人Crystalrock Enterprise Co., Ltd.取得土地",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E9%87%91%E5%83%8F%E9%9B%BB%E4%BB%A3%E5%AD%90%E5%85%AC%E5%8F%B8gce-thailand-co-ltd-100824452.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】金像電代子公司Crystalrock Enterprise Co., Ltd.公告董事會決議出售土地予關係人GCE(Thailand) Co., Ltd.",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E9%87%91%E5%83%8F%E9%9B%BB%E4%BB%A3%E5%AD%90%E5%85%AC%E5%8F%B8crystalrock-enterprise-co-ltd-100822799.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】金像電董事會決議股利分派",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E9%87%91%E5%83%8F%E9%9B%BB%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E8%82%A1%E5%88%A9%E5%88%86%E6%B4%BE-090854820.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "台灣50指數成分股調整 新加入金像電等5檔",
-      "url": "https://tw.stock.yahoo.com/news/%E5%8F%B0%E7%81%A350%E6%8C%87%E6%95%B8%E6%88%90%E5%88%86%E8%82%A1%E8%AA%BF%E6%95%B4-%E6%96%B0%E5%8A%A0%E5%85%A5%E9%87%91%E5%83%8F%E9%9B%BB%E7%AD%895%E6%AA%94-092838473.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】金像電 2026年2月合併營收59.42億元 年增53.91%",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E9%87%91%E5%83%8F%E9%9B%BB-2026%E5%B9%B42%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B659-42%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E53-085223035.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】金像電114年度財務報告董事會召開日期為115年3月10日",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E9%87%91%E5%83%8F%E9%9B%BB114%E5%B9%B4%E5%BA%A6%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A%E8%91%A3%E4%BA%8B%E6%9C%83%E5%8F%AC%E9%96%8B%E6%97%A5%E6%9C%9F%E7%82%BA115%E5%B9%B43%E6%9C%8810%E6%97%A5-081521905.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】金像電 2026年1月合併營收60.16億元 年增68.54%",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E9%87%91%E5%83%8F%E9%9B%BB-2026%E5%B9%B41%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B660-16%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E68-072250135.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】金像電董事會決議取得使用權資產",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E9%87%91%E5%83%8F%E9%9B%BB%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E5%8F%96%E5%BE%97%E4%BD%BF%E7%94%A8%E6%AC%8A%E8%B3%87%E7%94%A2-083518557.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】金像電受邀參加富邦證券舉辦之座談會",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E9%87%91%E5%83%8F%E9%9B%BB%E5%8F%97%E9%82%80%E5%8F%83%E5%8A%A0%E5%AF%8C%E9%82%A6%E8%AD%89%E5%88%B8%E8%88%89%E8%BE%A6%E4%B9%8B%E5%BA%A7%E8%AB%87%E6%9C%83-080707320.html",
-      "source": "yahoo",
-      "date": null,
       "snippet": ""
     }
   ]

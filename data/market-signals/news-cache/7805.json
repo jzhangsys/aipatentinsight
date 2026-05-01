@@ -1,10 +1,14 @@
 {
   "stockCode": "7805",
   "name": "威聯通科技",
-  "scrapedAt": "2026-05-01T11:31:40.253Z",
+  "scrapedAt": "2026-05-01T12:17:36.098Z",
   "sourceCounts": {
-    "yahoo": 20,
+    "yahoo": 0,
     "ltn": 4
+  },
+  "enrichStats": {
+    "fetched": 0,
+    "filled": 0
   },
   "news": [
     {
@@ -33,146 +37,6 @@
       "url": "https://ec.ltn.com.tw/article/breakingnews/2264487",
       "source": "ltn",
       "date": "2017-11-25",
-      "snippet": ""
-    },
-    {
-      "title": "【公告】威聯通115年第一季合併財務報告董事會召開日期",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%A8%81%E8%81%AF%E9%80%9A115%E5%B9%B4%E7%AC%AC-%E5%AD%A3%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A%E8%91%A3%E4%BA%8B%E6%9C%83%E5%8F%AC%E9%96%8B%E6%97%A5%E6%9C%9F-104628873.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】威聯通取得有價證券",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%A8%81%E8%81%AF%E9%80%9A%E5%8F%96%E5%BE%97%E6%9C%89%E5%83%B9%E8%AD%89%E5%88%B8-104626973.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】威聯通取得有價證券",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%A8%81%E8%81%AF%E9%80%9A%E5%8F%96%E5%BE%97%E6%9C%89%E5%83%B9%E8%AD%89%E5%88%B8-102258858.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】威聯通受邀參加凱基證券舉辦之法人說明會",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%A8%81%E8%81%AF%E9%80%9A%E5%8F%97%E9%82%80%E5%8F%83%E5%8A%A0%E5%87%B1%E5%9F%BA%E8%AD%89%E5%88%B8%E8%88%89%E8%BE%A6%E4%B9%8B%E6%B3%95%E4%BA%BA%E8%AA%AA%E6%98%8E%E6%9C%83-065248091.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】更正威聯通114年10-12月及115年1-2月關係人交易-應收款申報數",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%9B%B4%E6%AD%A3%E5%A8%81%E8%81%AF%E9%80%9A114%E5%B9%B410-12%E6%9C%88%E5%8F%8A115%E5%B9%B41-2%E6%9C%88%E9%97%9C%E4%BF%82%E4%BA%BA%E4%BA%A4%E6%98%93-%E6%87%89%E6%94%B6%E6%AC%BE%E7%94%B3%E5%A0%B1%E6%95%B8-075903285.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】威聯通 2026年3月合併營收5.86億元 年增1.96%",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%A8%81%E8%81%AF%E9%80%9A-2026%E5%B9%B43%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B65-86%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E1-080433732.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】威聯通 2026年2月合併營收5.72億元 年增11.99%",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%A8%81%E8%81%AF%E9%80%9A-2026%E5%B9%B42%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B65-72%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E11-105311665.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】威聯通董事會決議股利分派情形",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%A8%81%E8%81%AF%E9%80%9A%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E8%82%A1%E5%88%A9%E5%88%86%E6%B4%BE%E6%83%85%E5%BD%A2-095402970.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】威聯通 2026年1月合併營收6.11億元 年增14.95%",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%A8%81%E8%81%AF%E9%80%9A-2026%E5%B9%B41%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B66-11%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E14-010129150.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】威聯通董事會決議現金增資子公司QTOWN LIMITED",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%A8%81%E8%81%AF%E9%80%9A%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E7%8F%BE%E9%87%91%E5%A2%9E%E8%B3%87%E5%AD%90%E5%85%AC%E5%8F%B8qtown-limited-104525515.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】威聯通 2025年12月合併營收5.08億元 年增17.88%",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%A8%81%E8%81%AF%E9%80%9A-2025%E5%B9%B412%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B65-08%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E17-083223890.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】威聯通初次上櫃掛牌首五個營業日穩定價格操作結果",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%A8%81%E8%81%AF%E9%80%9A%E5%88%9D%E6%AC%A1%E4%B8%8A%E6%AB%83%E6%8E%9B%E7%89%8C%E9%A6%96%E4%BA%94%E5%80%8B%E7%87%9F%E6%A5%AD%E6%97%A5%E7%A9%A9%E5%AE%9A%E5%83%B9%E6%A0%BC%E6%93%8D%E4%BD%9C%E7%B5%90%E6%9E%9C-105741299.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】威聯通洽定上櫃買賣開始日並自同日起終止興櫃買賣",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%A8%81%E8%81%AF%E9%80%9A%E6%B4%BD%E5%AE%9A%E4%B8%8A%E6%AB%83%E8%B2%B7%E8%B3%A3%E9%96%8B%E5%A7%8B%E6%97%A5%E4%B8%A6%E8%87%AA%E5%90%8C%E6%97%A5%E8%B5%B7%E7%B5%82%E6%AD%A2%E8%88%88%E6%AB%83%E8%B2%B7%E8%B3%A3-095601727.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】威聯通初次上櫃前現金增資收足股款暨現金增資基準日",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%A8%81%E8%81%AF%E9%80%9A%E5%88%9D%E6%AC%A1%E4%B8%8A%E6%AB%83%E5%89%8D%E7%8F%BE%E9%87%91%E5%A2%9E%E8%B3%87%E6%94%B6%E8%B6%B3%E8%82%A1%E6%AC%BE%E6%9A%A8%E7%8F%BE%E9%87%91%E5%A2%9E%E8%B3%87%E5%9F%BA%E6%BA%96%E6%97%A5-073622114.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】威聯通辦理初次上櫃過額配售內容",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%A8%81%E8%81%AF%E9%80%9A%E8%BE%A6%E7%90%86%E5%88%9D%E6%AC%A1%E4%B8%8A%E6%AB%83%E9%81%8E%E9%A1%8D%E9%85%8D%E5%94%AE%E5%85%A7%E5%AE%B9-083119771.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】威聯通股票初次上櫃前現金增資員工認購股款催繳事宜",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%A8%81%E8%81%AF%E9%80%9A%E8%82%A1%E7%A5%A8%E5%88%9D%E6%AC%A1%E4%B8%8A%E6%AB%83%E5%89%8D%E7%8F%BE%E9%87%91%E5%A2%9E%E8%B3%87%E5%93%A1%E5%B7%A5%E8%AA%8D%E8%B3%BC%E8%82%A1%E6%AC%BE%E5%82%AC%E7%B9%B3%E4%BA%8B%E5%AE%9C-084657692.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "威聯通公開申購凍結逾800億資金 預計12/22上櫃",
-      "url": "https://tw.stock.yahoo.com/news/%E5%A8%81%E8%81%AF%E9%80%9A%E5%85%AC%E9%96%8B%E7%94%B3%E8%B3%BC%E5%87%8D%E7%B5%90%E9%80%BE800%E5%84%84%E8%B3%87%E9%87%91-%E9%A0%90%E8%A8%8812-22%E4%B8%8A%E6%AB%83-052845386.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】威聯通員工酬勞轉增資發行新股基準日",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%A8%81%E8%81%AF%E9%80%9A%E5%93%A1%E5%B7%A5%E9%85%AC%E5%8B%9E%E8%BD%89%E5%A2%9E%E8%B3%87%E7%99%BC%E8%A1%8C%E6%96%B0%E8%82%A1%E5%9F%BA%E6%BA%96%E6%97%A5-083333259.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】威聯通股票初次上櫃前現金增資發行新股承銷價格",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%A8%81%E8%81%AF%E9%80%9A%E8%82%A1%E7%A5%A8%E5%88%9D%E6%AC%A1%E4%B8%8A%E6%AB%83%E5%89%8D%E7%8F%BE%E9%87%91%E5%A2%9E%E8%B3%87%E7%99%BC%E8%A1%8C%E6%96%B0%E8%82%A1%E6%89%BF%E9%8A%B7%E5%83%B9%E6%A0%BC-092831938.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "威聯通前3季每股賺30.84元 12/10起公開申購",
-      "url": "https://tw.stock.yahoo.com/news/%E5%A8%81%E8%81%AF%E9%80%9A%E5%89%8D3%E5%AD%A3%E6%AF%8F%E8%82%A1%E8%B3%BA30-84%E5%85%83-12-10%E8%B5%B7%E5%85%AC%E9%96%8B%E7%94%B3%E8%B3%BC-083030232.html",
-      "source": "yahoo",
-      "date": null,
       "snippet": ""
     }
   ]

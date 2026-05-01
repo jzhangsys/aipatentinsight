@@ -1,10 +1,14 @@
 {
   "stockCode": "6488",
   "name": "環球晶圓",
-  "scrapedAt": "2026-05-01T11:31:12.170Z",
+  "scrapedAt": "2026-05-01T12:16:18.800Z",
   "sourceCounts": {
-    "yahoo": 20,
+    "yahoo": 0,
     "ltn": 20
+  },
+  "enrichStats": {
+    "fetched": 0,
+    "filled": 0
   },
   "news": [
     {
@@ -145,146 +149,6 @@
       "url": "https://ec.ltn.com.tw/article/breakingnews/4809025",
       "source": "ltn",
       "date": "2024-09-24",
-      "snippet": ""
-    },
-    {
-      "title": "【公告】環球晶召開2026Q1英文線上法說會",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E7%92%B0%E7%90%83%E6%99%B6%E5%8F%AC%E9%96%8B2026q1%E8%8B%B1%E6%96%87%E7%B7%9A%E4%B8%8A%E6%B3%95%E8%AA%AA%E6%9C%83-072312340.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】環球晶 2026年3月合併營收54.46億元 年增0.09%",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E7%92%B0%E7%90%83%E6%99%B6-2026%E5%B9%B43%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B654-46%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E0-091311696.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【盤前焦點】台指期夜盤挫297點 台股34000點保衛戰",
-      "url": "https://tw.stock.yahoo.com/news/%E7%9B%A4%E5%89%8D%E7%84%A6%E9%BB%9E-%E5%8F%B0%E6%8C%87%E6%9C%9F%E5%A4%9C%E7%9B%A4%E6%8C%AB297%E9%BB%9E-%E5%8F%B0%E8%82%A134000%E9%BB%9E%E4%BF%9D%E8%A1%9B%E6%88%B0-002928196.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "環球晶估2026年營收持平或略增 中美晶營運趨穩定",
-      "url": "https://tw.stock.yahoo.com/news/%E7%92%B0%E7%90%83%E6%99%B6%E4%BC%B02026%E5%B9%B4%E7%87%9F%E6%94%B6%E6%8C%81%E5%B9%B3%E6%88%96%E7%95%A5%E5%A2%9E-%E4%B8%AD%E7%BE%8E%E6%99%B6%E7%87%9F%E9%81%8B%E8%B6%A8%E7%A9%A9%E5%AE%9A-093432255.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "中東局勢緊張 環球晶中美晶：目前營運影響有限",
-      "url": "https://tw.stock.yahoo.com/news/%E4%B8%AD%E6%9D%B1%E5%B1%80%E5%8B%A2%E7%B7%8A%E5%BC%B5-%E7%92%B0%E7%90%83%E6%99%B6%E4%B8%AD%E7%BE%8E%E6%99%B6-%E7%9B%AE%E5%89%8D%E7%87%9F%E9%81%8B%E5%BD%B1%E9%9F%BF%E6%9C%89%E9%99%90-092353198.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】環球晶 2026年2月合併營收44億元 年增-17.37%",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E7%92%B0%E7%90%83%E6%99%B6-2026%E5%B9%B42%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B644%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E-17-091325067.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】環球晶董事會決議股利分派",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E7%92%B0%E7%90%83%E6%99%B6%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E8%82%A1%E5%88%A9%E5%88%86%E6%B4%BE-082827467.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】環球晶與中美矽晶製品股份有限公司聯合召開FY2025英文線上法說會",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E7%92%B0%E7%90%83%E6%99%B6%E8%88%87%E4%B8%AD%E7%BE%8E%E7%9F%BD%E6%99%B6%E8%A3%BD%E5%93%81%E8%82%A1%E4%BB%BD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%E8%81%AF%E5%90%88%E5%8F%AC%E9%96%8Bfy2025%E8%8B%B1%E6%96%87%E7%B7%9A%E4%B8%8A%E6%B3%95%E8%AA%AA%E6%9C%83-072407451.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】環球晶114年度財務報告董事會預計召開日期為115年03月03日",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E7%92%B0%E7%90%83%E6%99%B6114%E5%B9%B4%E5%BA%A6%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A%E8%91%A3%E4%BA%8B%E6%9C%83%E9%A0%90%E8%A8%88%E5%8F%AC%E9%96%8B%E6%97%A5%E6%9C%9F%E7%82%BA115%E5%B9%B403%E6%9C%8803%E6%97%A5-085036843.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】環球晶 2026年1月合併營收41.39億元 年增-14.29%",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E7%92%B0%E7%90%83%E6%99%B6-2026%E5%B9%B41%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B641-39%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E-091351679.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "環球晶：2026年是半導體業好年 庫存將更健康、營收可望逐季攀升",
-      "url": "https://tw.stock.yahoo.com/news/%E7%92%B0%E7%90%83%E6%99%B6-2026%E5%B9%B4%E6%98%AF%E5%8D%8A%E5%B0%8E%E9%AB%94%E6%A5%AD%E5%A5%BD%E5%B9%B4-%E5%BA%AB%E5%AD%98%E5%B0%87%E6%9B%B4%E5%81%A5%E5%BA%B7-%E7%87%9F%E6%94%B6%E5%8F%AF%E6%9C%9B%E9%80%90%E5%AD%A3%E6%94%80%E5%8D%87-083019533.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "環球晶：台美關稅談判結果正面 展開德州二期廠設計",
-      "url": "https://tw.stock.yahoo.com/news/%E7%92%B0%E7%90%83%E6%99%B6-%E5%8F%B0%E7%BE%8E%E9%97%9C%E7%A8%85%E8%AB%87%E5%88%A4%E7%B5%90%E6%9E%9C%E6%AD%A3%E9%9D%A2-%E5%B1%95%E9%96%8B%E5%BE%B7%E5%B7%9E%E4%BA%8C%E6%9C%9F%E5%BB%A0%E8%A8%AD%E8%A8%88-074438630.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "環球晶布局量子科技 丹麥子公司成果登Nature期刊",
-      "url": "https://tw.stock.yahoo.com/news/%E7%92%B0%E7%90%83%E6%99%B6%E5%B8%83%E5%B1%80%E9%87%8F%E5%AD%90%E7%A7%91%E6%8A%80-%E4%B8%B9%E9%BA%A5%E5%AD%90%E5%85%AC%E5%8F%B8%E6%88%90%E6%9E%9C%E7%99%BBnature%E6%9C%9F%E5%88%8A-084922370.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "環球晶12月營收月增16% 合晶年增22%",
-      "url": "https://tw.stock.yahoo.com/news/%E7%92%B0%E7%90%83%E6%99%B612%E6%9C%88%E7%87%9F%E6%94%B6%E6%9C%88%E5%A2%9E16-%E5%90%88%E6%99%B6%E5%B9%B4%E5%A2%9E22-113559178.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】環球晶 2025年12月合併營收55.06億元 年增0.27%",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E7%92%B0%E7%90%83%E6%99%B6-2025%E5%B9%B412%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B655-06%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E0-091153214.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】環球晶董事會決議股利分派",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E7%92%B0%E7%90%83%E6%99%B6%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E8%82%A1%E5%88%A9%E5%88%86%E6%B4%BE-071336976.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】環球晶 2025年11月合併營收47.12億元 年增-7.94%",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E7%92%B0%E7%90%83%E6%99%B6-2025%E5%B9%B411%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B647-12%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E-091159410.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】環球晶受邀參加「永豐金證券2025年第四季產業投資論壇」",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E7%92%B0%E7%90%83%E6%99%B6%E5%8F%97%E9%82%80%E5%8F%83%E5%8A%A0-%E6%B0%B8%E8%B1%90%E9%87%91%E8%AD%89%E5%88%B82025%E5%B9%B4%E7%AC%AC%E5%9B%9B%E5%AD%A3%E7%94%A2%E6%A5%AD%E6%8A%95%E8%B3%87%E8%AB%96%E5%A3%87-073553647.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】環球晶有價證券達公布注意交易資訊標準，故公告相關訊息，以利投資人區別瞭解。",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E7%92%B0%E7%90%83%E6%99%B6%E6%9C%89%E5%83%B9%E8%AD%89%E5%88%B8%E9%81%94%E5%85%AC%E5%B8%83%E6%B3%A8%E6%84%8F%E4%BA%A4%E6%98%93%E8%B3%87%E8%A8%8A%E6%A8%99%E6%BA%96-%E6%95%85%E5%85%AC%E5%91%8A%E7%9B%B8%E9%97%9C%E8%A8%8A%E6%81%AF-%E4%BB%A5%E5%88%A9%E6%8A%95%E8%B3%87%E4%BA%BA%E5%8D%80%E5%88%A5%E7%9E%AD%E8%A7%A3-074929755.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】環球晶 2025年10月合併營收42.85億元 年增-25.28%",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E7%92%B0%E7%90%83%E6%99%B6-2025%E5%B9%B410%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B642-85%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E-091244028.html",
-      "source": "yahoo",
-      "date": null,
       "snippet": ""
     }
   ]

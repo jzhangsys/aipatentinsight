@@ -1,25 +1,154 @@
 {
   "stockCode": "3481",
-  "name": "群創",
-  "scrapedAt": "2026-05-01T11:51:03.839Z",
-  "devSeed": true,
+  "name": "群創光電",
+  "scrapedAt": "2026-05-01T12:12:27.048Z",
   "sourceCounts": {
-    "yahoo": 1,
-    "ltn": 1
+    "yahoo": 0,
+    "ltn": 20
+  },
+  "enrichStats": {
+    "fetched": 0,
+    "filled": 0
   },
   "news": [
     {
-      "title": "群創切入車用顯示 取得歐系車廠認證",
-      "url": "https://tw.stock.yahoo.com/news/3481-群創切入車用-2026-01-16.html",
-      "source": "yahoo",
-      "date": "2026-01-16",
+      "title": "AI熱潮帶動人才需求 南科4/10聯合徵才釋出1300職缺",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5396795",
+      "source": "ltn",
+      "date": "2026-04-08",
       "snippet": ""
     },
     {
-      "title": "TFT-LCD 報價持平 群創 Q4 營運穩健",
-      "url": "https://search.ltn.com.tw/list?keyword=%E7%BE%A4%E5%89%B5#2026-01-05",
+      "title": "群創爆出近169萬張天量 董座洪進揚首談股價：轉型成果被看見",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5368539",
       "source": "ltn",
-      "date": "2026-01-05",
+      "date": "2026-03-12",
+      "snippet": ""
+    },
+    {
+      "title": "鴻海子公司鴻揚創投處分群創套現24億元 持股比例近乎為零",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5365747",
+      "source": "ltn",
+      "date": "2026-03-10",
+      "snippet": ""
+    },
+    {
+      "title": "鴻海處分群創4萬張套現10億 還有8.6萬張持股可賣",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5351504",
+      "source": "ltn",
+      "date": "2026-02-25",
+      "snippet": ""
+    },
+    {
+      "title": "南科30周年   首頒「功在南科」給台積電等16家廠商",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5327668",
+      "source": "ltn",
+      "date": "2026-01-30",
+      "snippet": ""
+    },
+    {
+      "title": "南科30年盛典  邀台積電共同營運長秦永沛今晚開講",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5327517",
+      "source": "ltn",
+      "date": "2026-01-30",
+      "snippet": ""
+    },
+    {
+      "title": "群創認列Pioneer營收、12月破200億元   友達創9個月新高",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5304825",
+      "source": "ltn",
+      "date": "2026-01-09",
+      "snippet": ""
+    },
+    {
+      "title": "環球晶奪竹科研發成效獎   群創等8家廠商獲優良廠商創新產品獎",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5279203",
+      "source": "ltn",
+      "date": "2025-12-15",
+      "snippet": ""
+    },
+    {
+      "title": "TDUA第六屆理監事改選 群創董座洪進揚高票出任理事長",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5268821",
+      "source": "ltn",
+      "date": "2025-12-05",
+      "snippet": ""
+    },
+    {
+      "title": "併購熊貓台灣？酷澎再增資247.5億耐人尋味",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5253859",
+      "source": "ltn",
+      "date": "2025-11-21",
+      "snippet": ""
+    },
+    {
+      "title": "半導體專利申請》台積電連10年穩坐專利王",
+      "url": "https://ec.ltn.com.tw/article/paper/1731348",
+      "source": "ltn",
+      "date": "2025-11-09",
+      "snippet": ""
+    },
+    {
+      "title": "半導體專利競逐！台積電連10年封王 應材、信越各創單季新高",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5239045",
+      "source": "ltn",
+      "date": "2025-11-08",
+      "snippet": ""
+    },
+    {
+      "title": "首屆南方人才永續展開幕  地主南市展現AI治理解方",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5112511",
+      "source": "ltn",
+      "date": "2025-07-18",
+      "snippet": ""
+    },
+    {
+      "title": "LTN經濟通》日本百年音響車載巨頭 納進台商版圖",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5096020",
+      "source": "ltn",
+      "date": "2025-07-04",
+      "snippet": ""
+    },
+    {
+      "title": "群創人事異動！楊弘文接任總經理、楊柱祥專任睿生董事長",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5044104",
+      "source": "ltn",
+      "date": "2025-05-15",
+      "snippet": ""
+    },
+    {
+      "title": "桃園燈塔工廠城市論壇   聯電副總吳宗賢：AI是工具  人類才能引領改變",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4994472",
+      "source": "ltn",
+      "date": "2025-03-28",
+      "snippet": ""
+    },
+    {
+      "title": "1/21南台灣大震 集邦：Q1電視面板供需將更吃緊",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4930691",
+      "source": "ltn",
+      "date": "2025-01-21",
+      "snippet": ""
+    },
+    {
+      "title": "去年底綠色投融資餘額5870億   北富銀蟬聯台灣最佳ESG銀行",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4744868",
+      "source": "ltn",
+      "date": "2024-07-22",
+      "snippet": ""
+    },
+    {
+      "title": "掌握領域專業新趨勢 中華開發資本延攬王必勝",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4682002",
+      "source": "ltn",
+      "date": "2024-05-23",
+      "snippet": ""
+    },
+    {
+      "title": "中華開發資本二度攜手群創  成立「群創開發貳基金」",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4651001",
+      "source": "ltn",
+      "date": "2024-04-23",
       "snippet": ""
     }
   ]

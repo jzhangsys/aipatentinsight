@@ -1,10 +1,14 @@
 {
   "stockCode": "6485",
   "name": "點序科技",
-  "scrapedAt": "2026-05-01T11:31:11.589Z",
+  "scrapedAt": "2026-05-01T12:16:17.606Z",
   "sourceCounts": {
-    "yahoo": 11,
+    "yahoo": 0,
     "ltn": 1
+  },
+  "enrichStats": {
+    "fetched": 0,
+    "filled": 0
   },
   "news": [
     {
@@ -12,83 +16,6 @@
       "url": "https://ec.ltn.com.tw/article/breakingnews/1422351",
       "source": "ltn",
       "date": "2015-08-24",
-      "snippet": ""
-    },
-    {
-      "title": "【公告】點序 2026年3月合併營收1.19億元 年增-13.12%",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E9%BB%9E%E5%BA%8F-2026%E5%B9%B43%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B61-19%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E-060248046.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】點序董事會決議股利分派",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E9%BB%9E%E5%BA%8F%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E8%82%A1%E5%88%A9%E5%88%86%E6%B4%BE-085437140.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】點序 2026年2月合併營收8217.7萬元 年增-39.64%",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E9%BB%9E%E5%BA%8F-2026%E5%B9%B42%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B68217-7%E8%90%AC%E5%85%83-%E5%B9%B4%E5%A2%9E-063231835.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】點序 2026年1月合併營收1.37億元 年增10.55%",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E9%BB%9E%E5%BA%8F-2026%E5%B9%B41%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B61-37%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E10-055215738.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】點序 2025年12月合併營收1.46億元 年增21.35%",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E9%BB%9E%E5%BA%8F-2025%E5%B9%B412%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B61-46%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E21-055122070.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】點序 2025年11月合併營收1.38億元 年增22.68%",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E9%BB%9E%E5%BA%8F-2025%E5%B9%B411%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B61-38%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E22-055123096.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】點序 2025年10月合併營收1.36億元 年增23.74%",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E9%BB%9E%E5%BA%8F-2025%E5%B9%B410%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B61-36%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E23-055156361.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】點序 2025年9月合併營收1.18億元 年增-1.92%",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E9%BB%9E%E5%BA%8F-2025%E5%B9%B49%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B61-18%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E-055231660.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】點序有價證券近期多次達公佈注意交易資訊標準，故相關訊息，以利投資人區別暸解",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E9%BB%9E%E5%BA%8F%E6%9C%89%E5%83%B9%E8%AD%89%E5%88%B8%E8%BF%91%E6%9C%9F%E5%A4%9A%E6%AC%A1%E9%81%94%E5%85%AC%E4%BD%88%E6%B3%A8%E6%84%8F%E4%BA%A4%E6%98%93%E8%B3%87%E8%A8%8A%E6%A8%99%E6%BA%96-%E6%95%85%E7%9B%B8%E9%97%9C%E8%A8%8A%E6%81%AF-%E4%BB%A5%E5%88%A9%E6%8A%95%E8%B3%87%E4%BA%BA%E5%8D%80%E5%88%A5%E6%9A%B8%E8%A7%A3-071340910.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】點序 2025年8月合併營收1.02億元 年增-9.19%",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E9%BB%9E%E5%BA%8F-2025%E5%B9%B48%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B61-02%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E-055152903.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】點序 2025年7月合併營收1.03億元 年增-3.39%",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E9%BB%9E%E5%BA%8F-2025%E5%B9%B47%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B61-03%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E-061217587.html",
-      "source": "yahoo",
-      "date": null,
       "snippet": ""
     }
   ]

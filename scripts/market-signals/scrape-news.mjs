@@ -216,6 +216,75 @@ function nearbyDate(html, idx, matchLen, windowBefore = 200, windowAfter = 800) 
 }
 
 // =====================================================
+// 文章頁日期抽取(用來補列表頁拿不到日期的新聞)
+// =====================================================
+/**
+ * 對單篇文章 URL 拉一次 HTML,從以下 patterns 抽 publish date:
+ *  1. <meta property="article:published_time" content="2025-04-30T...">  (OG)
+ *  2. <meta name="pubdate" content="...">
+ *  3. <meta itemprop="datePublished" content="...">
+ *  4. JSON-LD <script type="application/ld+json"> 內的 datePublished
+ *  5. <time datetime="YYYY-MM-DD">
+ *
+ * 抓不到回 null。
+ */
+async function fetchArticleDate(url) {
+  let html;
+  try {
+    html = await fetchWithRetry(url, {
+      headers: {
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "Accept-Language": "zh-TW,zh;q=0.9,en;q=0.8",
+      },
+    });
+  } catch {
+    return null;
+  }
+  // 1. OG meta
+  let m = html.match(/<meta[^>]+property="article:published_time"[^>]+content="(\d{4}-\d{2}-\d{2})/i);
+  if (m) return m[1];
+  // 2. pubdate meta
+  m = html.match(/<meta[^>]+name="pubdate"[^>]+content="(\d{4}-\d{2}-\d{2})/i);
+  if (m) return m[1];
+  // 3. itemprop datePublished
+  m = html.match(/<meta[^>]+itemprop="datePublished"[^>]+content="(\d{4}-\d{2}-\d{2})/i);
+  if (m) return m[1];
+  // 4. JSON-LD datePublished
+  m = html.match(/"datePublished"\s*:\s*"(\d{4}-\d{2}-\d{2})/);
+  if (m) return m[1];
+  // 5. <time datetime="...">
+  m = html.match(/<time[^>]+datetime="(\d{4}-\d{2}-\d{2})/);
+  if (m) return m[1];
+  return null;
+}
+
+/**
+ * 對 news[] 中所有 date=null 的 item,並發 fetch article 頁補日期。
+ * 並發 5,完成後 sort。
+ */
+async function enrichDates(news) {
+  const need = news.filter((n) => !n.date && n.url && n.url.startsWith("http"));
+  if (need.length === 0) return { fetched: 0, filled: 0 };
+  let i = 0;
+  let filled = 0;
+  async function worker() {
+    while (i < need.length) {
+      const idx = i++;
+      const item = need[idx];
+      const date = await fetchArticleDate(item.url);
+      if (date) {
+        item.date = date;
+        filled++;
+      }
+      await sleep(150);
+    }
+  }
+  const CONCURRENCY = 5;
+  await Promise.all(Array.from({ length: CONCURRENCY }, worker));
+  return { fetched: need.length, filled };
+}
+
+// =====================================================
 // 主流程
 // =====================================================
 async function scrapeOne({ name, stockCode }) {
@@ -242,12 +311,15 @@ async function scrapeOne({ name, stockCode }) {
     seen.add(n.url);
     news.push(n);
   }
+  // Step 2:對列表頁沒拿到日期的,逐篇 fetch article 頁補 publish date
+  const enrichStats = await enrichDates(news);
   news.sort((a, b) => {
     if (!a.date && !b.date) return 0;
     if (!a.date) return 1;
     if (!b.date) return -1;
     return b.date.localeCompare(a.date);
   });
+  const dated = news.filter((n) => n.date).length;
   const result = {
     stockCode,
     name,
@@ -256,11 +328,14 @@ async function scrapeOne({ name, stockCode }) {
       yahoo: yahoo.length,
       ltn: ltn.length,
     },
+    enrichStats,
     news,
   };
   writeFileSync(cachePath, JSON.stringify(result, null, 2));
   console.log(
-    `    → 共 ${news.length} 則 (yahoo=${yahoo.length}, ltn=${ltn.length})`
+    `    → 共 ${news.length} 則 (yahoo=${yahoo.length}, ltn=${ltn.length}); ` +
+      `enrich: ${enrichStats.filled}/${enrichStats.fetched} 補到日期; ` +
+      `最終有日期 ${dated}/${news.length}`
   );
   return result;
 }

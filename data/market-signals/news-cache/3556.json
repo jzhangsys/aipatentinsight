@@ -1,88 +1,14 @@
 {
   "stockCode": "3556",
   "name": "禾瑞亞科技",
-  "scrapedAt": "2026-05-01T11:29:54.893Z",
+  "scrapedAt": "2026-05-01T12:12:47.724Z",
   "sourceCounts": {
-    "yahoo": 11,
+    "yahoo": 0,
     "ltn": 0
   },
-  "news": [
-    {
-      "title": "【公告】禾瑞亞 2026年3月合併營收1.18億元 年增24.41%",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E7%A6%BE%E7%91%9E%E4%BA%9E-2026%E5%B9%B43%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B61-18%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E24-084253273.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】禾瑞亞 2026年2月合併營收6127.5萬元 年增-35.97%",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E7%A6%BE%E7%91%9E%E4%BA%9E-2026%E5%B9%B42%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B66127-5%E8%90%AC%E5%85%83-%E5%B9%B4%E5%A2%9E-084234609.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】禾瑞亞董事會決議股利分派",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E7%A6%BE%E7%91%9E%E4%BA%9E%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E8%82%A1%E5%88%A9%E5%88%86%E6%B4%BE-085526410.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】禾瑞亞 2026年1月合併營收1.3億元 年增113.89%",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E7%A6%BE%E7%91%9E%E4%BA%9E-2026%E5%B9%B41%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B61-3%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E113-083139046.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】禾瑞亞 2025年12月合併營收7890.5萬元 年增7.52%",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E7%A6%BE%E7%91%9E%E4%BA%9E-2025%E5%B9%B412%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B67890-5%E8%90%AC%E5%85%83-%E5%B9%B4%E5%A2%9E7-082109424.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】禾瑞亞 2025年11月合併營收7566.8萬元 年增12%",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E7%A6%BE%E7%91%9E%E4%BA%9E-2025%E5%B9%B411%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B67566-8%E8%90%AC%E5%85%83-%E5%B9%B4%E5%A2%9E12-083231275.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】禾瑞亞受邀參加兆豐證券舉辦之線上法說會",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E7%A6%BE%E7%91%9E%E4%BA%9E%E5%8F%97%E9%82%80%E5%8F%83%E5%8A%A0%E5%85%86%E8%B1%90%E8%AD%89%E5%88%B8%E8%88%89%E8%BE%A6%E4%B9%8B%E7%B7%9A%E4%B8%8A%E6%B3%95%E8%AA%AA%E6%9C%83-083330594.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】禾瑞亞 2025年10月合併營收9449.4萬元 年增19.18%",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E7%A6%BE%E7%91%9E%E4%BA%9E-2025%E5%B9%B410%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B69449-4%E8%90%AC%E5%85%83-%E5%B9%B4%E5%A2%9E19-070159384.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】禾瑞亞 2025年9月合併營收7820.1萬元 年增15.24%",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E7%A6%BE%E7%91%9E%E4%BA%9E-2025%E5%B9%B49%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B67820-1%E8%90%AC%E5%85%83-%E5%B9%B4%E5%A2%9E15-083155328.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】禾瑞亞 2025年8月合併營收6723.3萬元 年增-13.25%",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E7%A6%BE%E7%91%9E%E4%BA%9E-2025%E5%B9%B48%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B66723-3%E8%90%AC%E5%85%83-%E5%B9%B4%E5%A2%9E-082223961.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】禾瑞亞 2025年7月合併營收6658.5萬元 年增-12.95%",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E7%A6%BE%E7%91%9E%E4%BA%9E-2025%E5%B9%B47%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B66658-5%E8%90%AC%E5%85%83-%E5%B9%B4%E5%A2%9E-071138731.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    }
-  ]
+  "enrichStats": {
+    "fetched": 0,
+    "filled": 0
+  },
+  "news": []
 }

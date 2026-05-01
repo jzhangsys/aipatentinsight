@@ -1,17 +1,21 @@
 {
   "stockCode": "2461",
   "name": "光群雷射科技",
-  "scrapedAt": "2026-05-01T11:29:05.722Z",
+  "scrapedAt": "2026-05-01T12:10:29.940Z",
   "sourceCounts": {
     "yahoo": 20,
     "ltn": 0
+  },
+  "enrichStats": {
+    "fetched": 20,
+    "filled": 1
   },
   "news": [
     {
       "title": "【公告】光群雷庫藏股買回達一定標準申報",
       "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%85%89%E7%BE%A4%E9%9B%B7%E5%BA%AB%E8%97%8F%E8%82%A1%E8%B2%B7%E5%9B%9E%E9%81%94-%E5%AE%9A%E6%A8%99%E6%BA%96%E7%94%B3%E5%A0%B1-094833560.html",
       "source": "yahoo",
-      "date": null,
+      "date": "2026-04-28",
       "snippet": ""
     },
     {

@@ -1,25 +1,287 @@
 {
   "stockCode": "2337",
-  "name": "旺宏",
-  "scrapedAt": "2026-05-01T11:51:03.837Z",
-  "devSeed": true,
+  "name": "旺宏電子",
+  "scrapedAt": "2026-05-01T12:09:05.536Z",
   "sourceCounts": {
-    "yahoo": 2,
-    "ltn": 0
+    "yahoo": 19,
+    "ltn": 20
+  },
+  "enrichStats": {
+    "fetched": 19,
+    "filled": 19
   },
   "news": [
     {
-      "title": "旺宏 NOR Flash 出貨增 車用客戶導入加速",
-      "url": "https://tw.stock.yahoo.com/news/2337-旺宏 NOR-2026-01-15.html",
+      "title": "【公告】皇翔取得有價證券",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E7%9A%87%E7%BF%94%E5%8F%96%E5%BE%97%E6%9C%89%E5%83%B9%E8%AD%89%E5%88%B8-104234198.html",
       "source": "yahoo",
-      "date": "2026-01-15",
+      "date": "2026-04-30",
       "snippet": ""
     },
     {
-      "title": "旺宏 3D NAND ROM 開發進度更新",
-      "url": "https://tw.stock.yahoo.com/news/2337-旺宏 3D -2025-12-25.html",
+      "title": "要畢業了…南亞科、旺宏又遭血洗！「記憶體5苦主」神祕兇手竟是同一人",
+      "url": "https://tw.stock.yahoo.com/news/%E8%A6%81%E7%95%A2%E6%A5%AD%E4%BA%86-%E5%8D%97%E4%BA%9E%E7%A7%91-%E6%97%BA%E5%AE%8F%E5%8F%88%E9%81%AD%E8%A1%80%E6%B4%97-%E8%A8%98%E6%86%B6%E9%AB%945%E8%8B%A6%E4%B8%BB-%E7%A5%9E%E7%A5%95%E5%85%87%E6%89%8B%E7%AB%9F%E6%98%AF%E5%90%8C-101206315.html",
       "source": "yahoo",
-      "date": "2025-12-25",
+      "date": "2026-04-30",
+      "snippet": ""
+    },
+    {
+      "title": "台股4萬點外資天天賣 單周賣超1922億元 台積電遭連4賣共7.8萬張",
+      "url": "https://tw.stock.yahoo.com/news/%E5%8F%B0%E8%82%A14%E8%90%AC%E9%BB%9E%E5%A4%96%E8%B3%87%E5%A4%A9%E5%A4%A9%E8%B3%A3-%E5%96%AE%E5%91%A8%E8%B3%A3%E8%B6%851922%E5%84%84%E5%85%83-%E5%8F%B0%E7%A9%8D%E9%9B%BB%E9%81%AD%E9%80%A34%E8%B3%A3%E5%85%B17-8%E8%90%AC%E5%BC%B5-100113931.html",
+      "source": "yahoo",
+      "date": "2026-04-30",
+      "snippet": ""
+    },
+    {
+      "title": "美伊又打?台股翻黑震盪921點 4月大漲7203點",
+      "url": "https://tw.stock.yahoo.com/news/%E7%BE%8E%E4%BC%8A%E5%8F%88%E6%89%93-%E5%8F%B0%E8%82%A1%E7%BF%BB%E9%BB%91%E9%9C%87%E7%9B%AA921%E9%BB%9E-4%E6%9C%88%E5%A4%A7%E6%BC%B27203%E9%BB%9E-073602526.html",
+      "source": "yahoo",
+      "date": "2026-04-30",
+      "snippet": ""
+    },
+    {
+      "title": "【Follow法人】外資本周提款1922億元！連4砍台積電 合計賣超7.8萬張",
+      "url": "https://tw.stock.yahoo.com/news/%E3%80%90follow%E6%B3%95%E4%BA%BA%E3%80%91%E5%A4%96%E8%B3%87%E6%9C%AC%E5%91%A8%E6%8F%90%E6%AC%BE1922%E5%84%84%E5%85%83%EF%BC%81%E9%80%A34%E7%A0%8D%E5%8F%B0%E7%A9%8D%E9%9B%BB-%E5%90%88%E8%A8%88%E8%B3%A3%E8%B6%8578%E8%90%AC%E5%BC%B5-071135238.html",
+      "source": "yahoo",
+      "date": "2026-04-30",
+      "snippet": ""
+    },
+    {
+      "title": "【台北股市】跌376.87點",
+      "url": "https://tw.stock.yahoo.com/news/%E5%8F%B0%E5%8C%97%E8%82%A1%E5%B8%82-%E8%B7%8C376-87%E9%BB%9E-055121710.html",
+      "source": "yahoo",
+      "date": "2026-04-30",
+      "snippet": ""
+    },
+    {
+      "title": "台積電尾盤遭獵殺！外資又爆砍近500億 狂掃第1名竟是「這檔記憶體」",
+      "url": "https://tw.stock.yahoo.com/news/%E5%8F%B0%E7%A9%8D%E9%9B%BB%E5%B0%BE%E7%9B%A4%E9%81%AD%E7%8D%B5%E6%AE%BA-%E5%A4%96%E8%B3%87%E5%8F%88%E7%88%86%E7%A0%8D%E8%BF%91500%E5%84%84-%E7%8B%82%E6%8E%83%E7%AC%AC1%E5%90%8D%E7%AB%9F%E6%98%AF-%E9%80%99%E6%AA%94%E8%A8%98%E6%86%B6%E9%AB%94-095921673.html",
+      "source": "yahoo",
+      "date": "2026-04-29",
+      "snippet": ""
+    },
+    {
+      "title": "【公告】奉櫃買中心通知旺宏可轉換公司債旺宏二(代號:23372)價格變動達應公布注意交易資訊標準，而公布相關資訊事",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%A5%89%E6%AB%83%E8%B2%B7%E4%B8%AD%E5%BF%83%E9%80%9A%E7%9F%A5%E6%97%BA%E5%AE%8F%E5%8F%AF%E8%BD%89%E6%8F%9B%E5%85%AC%E5%8F%B8%E5%82%B5%E6%97%BA%E5%AE%8F%E4%BA%8C-%E4%BB%A3%E8%99%9F-23372-%E5%83%B9%E6%A0%BC%E8%AE%8A%E5%8B%95%E9%81%94%E6%87%89%E5%85%AC%E5%B8%83%E6%B3%A8%E6%84%8F%E4%BA%A4%E6%98%93%E8%B3%87%E8%A8%8A%E6%A8%99%E6%BA%96-093637807.html",
+      "source": "yahoo",
+      "date": "2026-04-29",
+      "snippet": ""
+    },
+    {
+      "title": "旺宏 奉櫃買中心通知本公司可轉換公司債旺宏二(代號:23372)價格變動達應公布注意交易資訊標準，而公布相關資訊事",
+      "url": "https://tw.stock.yahoo.com/news/%E6%97%BA%E5%AE%8F-%E5%A5%89%E6%AB%83%E8%B2%B7%E4%B8%AD%E5%BF%83%E9%80%9A%E7%9F%A5%E6%9C%AC%E5%85%AC%E5%8F%B8%E5%8F%AF%E8%BD%89%E6%8F%9B%E5%85%AC%E5%8F%B8%E5%82%B5%E6%97%BA%E5%AE%8F%E4%BA%8C-%E4%BB%A3%E8%99%9F-23372-%E5%83%B9%E6%A0%BC%E8%AE%8A%E5%8B%95%E9%81%94%E6%87%89%E5%85%AC%E5%B8%83%E6%B3%A8%E6%84%8F%E4%BA%A4%E6%98%93%E8%B3%87%E8%A8%8A%E6%A8%99%E6%BA%96-092700612.html",
+      "source": "yahoo",
+      "date": "2026-04-29",
+      "snippet": ""
+    },
+    {
+      "title": "三星棄守低階產品！「1台廠」受惠營收季增90%",
+      "url": "https://tw.stock.yahoo.com/news/%E4%B8%89%E6%98%9F%E6%A3%84%E5%AE%88%E4%BD%8E%E9%9A%8E%E7%94%A2%E5%93%81-1%E5%8F%B0%E5%BB%A0-%E5%8F%97%E6%83%A0%E7%87%9F%E6%94%B6%E5%AD%A3%E5%A2%9E90-090306392.html",
+      "source": "yahoo",
+      "date": "2026-04-29",
+      "snippet": ""
+    },
+    {
+      "title": "外資賣超481億元連3賣 減碼元大台灣50居首",
+      "url": "https://tw.stock.yahoo.com/news/%E5%A4%96%E8%B3%87%E8%B3%A3%E8%B6%85481%E5%84%84%E5%85%83%E9%80%A33%E8%B3%A3-%E6%B8%9B%E7%A2%BC%E5%85%83%E5%A4%A7%E5%8F%B0%E7%81%A350%E5%B1%85%E9%A6%96-085046116.html",
+      "source": "yahoo",
+      "date": "2026-04-29",
+      "snippet": ""
+    },
+    {
+      "title": "旺宏自結3月合併獲利12.03億元，每股稅後0.61元",
+      "url": "https://tw.stock.yahoo.com/news/%E6%97%BA%E5%AE%8F%E8%87%AA%E7%B5%903%E6%9C%88%E5%90%88%E4%BD%B5%E7%8D%B2%E5%88%A912-03%E5%84%84%E5%85%83-%E6%AF%8F%E8%82%A1%E7%A8%85%E5%BE%8C0-61%E5%85%83-081000683.html",
+      "source": "yahoo",
+      "date": "2026-04-29",
+      "snippet": ""
+    },
+    {
+      "title": "【公告】旺宏奉證券交易所通知股價變動達應公布注意交易資訊標準，而公布相關資訊事",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%97%BA%E5%AE%8F%E5%A5%89%E8%AD%89%E5%88%B8%E4%BA%A4%E6%98%93%E6%89%80%E9%80%9A%E7%9F%A5%E8%82%A1%E5%83%B9%E8%AE%8A%E5%8B%95%E9%81%94%E6%87%89%E5%85%AC%E5%B8%83%E6%B3%A8%E6%84%8F%E4%BA%A4%E6%98%93%E8%B3%87%E8%A8%8A%E6%A8%99%E6%BA%96-%E8%80%8C%E5%85%AC%E5%B8%83%E7%9B%B8%E9%97%9C%E8%B3%87%E8%A8%8A%E4%BA%8B-075524109.html",
+      "source": "yahoo",
+      "date": "2026-04-29",
+      "snippet": ""
+    },
+    {
+      "title": "【台北股市】跌218.23點",
+      "url": "https://tw.stock.yahoo.com/news/%E5%8F%B0%E5%8C%97%E8%82%A1%E5%B8%82-%E8%B7%8C218-23%E9%BB%9E-060349492.html",
+      "source": "yahoo",
+      "date": "2026-04-29",
+      "snippet": ""
+    },
+    {
+      "title": "台股再攻四萬點失利 櫃買爆投信今年最大賣超 記憶體有望再起?",
+      "url": "https://tw.stock.yahoo.com/news/%E5%8F%B0%E8%82%A1%E5%86%8D%E6%94%BB%E5%9B%9B%E8%90%AC%E9%BB%9E%E5%A4%B1%E5%88%A9-%E6%AB%83%E8%B2%B7%E7%88%86%E6%8A%95%E4%BF%A1%E4%BB%8A%E5%B9%B4%E6%9C%80%E5%A4%A7%E8%B3%A3%E8%B6%85-%E8%A8%98%E6%86%B6%E9%AB%94%E6%9C%89%E6%9C%9B%E5%86%8D%E8%B5%B7-030102160.html",
+      "source": "yahoo",
+      "date": "2026-04-29",
+      "snippet": ""
+    },
+    {
+      "title": "記憶體新霸主！三星退出1台廠吃到肥肉 營收激爆70％超狂",
+      "url": "https://tw.stock.yahoo.com/news/%E8%A8%98%E6%86%B6%E9%AB%94%E6%96%B0%E9%9C%B8%E4%B8%BB-%E4%B8%89%E6%98%9F%E9%80%80%E5%87%BA1%E5%8F%B0%E5%BB%A0%E5%90%83%E5%88%B0%E8%82%A5%E8%82%89-%E7%87%9F%E6%94%B6%E6%BF%80%E7%88%8670-%E8%B6%85%E7%8B%82-022336910.html",
+      "source": "yahoo",
+      "date": "2026-04-29",
+      "snippet": ""
+    },
+    {
+      "title": "記憶體兩樣情！威剛十銓首季爆賺股價走疲 創見大漲逾半根停板成領頭羊",
+      "url": "https://tw.stock.yahoo.com/news/%E8%A8%98%E6%86%B6%E9%AB%94%E5%85%A9%E6%A8%A3%E6%83%85%EF%BC%81%E5%A8%81%E5%89%9B%E5%8D%81%E9%8A%93%E9%A6%96%E5%AD%A3%E7%88%86%E8%B3%BA%E8%82%A1%E5%83%B9%E8%B5%B0%E7%96%B2-%E5%89%B5%E8%A6%8B%E5%A4%A7%E6%BC%B2%E9%80%BE%E5%8D%8A%E6%A0%B9%E5%81%9C%E6%9D%BF%E6%88%90%E9%A0%98%E9%A0%AD%E7%BE%8A-021120663.html",
+      "source": "yahoo",
+      "date": "2026-04-29",
+      "snippet": ""
+    },
+    {
+      "title": "旺宏因應波動改為月報價，拚提升H2產能利用率",
+      "url": "https://tw.stock.yahoo.com/news/%E6%97%BA%E5%AE%8F%E5%9B%A0%E6%87%89%E6%B3%A2%E5%8B%95%E6%94%B9%E7%82%BA%E6%9C%88%E5%A0%B1%E5%83%B9-%E6%8B%9A%E6%8F%90%E5%8D%87h2%E7%94%A2%E8%83%BD%E5%88%A9%E7%94%A8%E7%8E%87-021100581.html",
+      "source": "yahoo",
+      "date": "2026-04-29",
+      "snippet": ""
+    },
+    {
+      "title": "台積電跌50元！台股重挫621點 失守39000大關",
+      "url": "https://tw.stock.yahoo.com/news/%E5%8F%B0%E7%A9%8D%E9%9B%BB%E8%B7%8C50%E5%85%83-%E5%8F%B0%E8%82%A1%E9%87%8D%E6%8C%AB621%E9%BB%9E-%E5%A4%B1%E5%AE%8839000%E5%A4%A7%E9%97%9C-011000829.html",
+      "source": "yahoo",
+      "date": "2026-04-29",
+      "snippet": ""
+    },
+    {
+      "title": "三星退出「這個產品」市場 1台廠吃到肥肉！營收激爆",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5418981",
+      "source": "ltn",
+      "date": "2026-04-28",
+      "snippet": ""
+    },
+    {
+      "title": "沈慶京抨擊寶佳割稻尾  籲股東將委託書交給中工現有團隊",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5401636",
+      "source": "ltn",
+      "date": "2026-04-12",
+      "snippet": ""
+    },
+    {
+      "title": "AI機器人論壇 吳敏求：跨域整合打造「護人神山」",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5389170",
+      "source": "ltn",
+      "date": "2026-03-31",
+      "snippet": ""
+    },
+    {
+      "title": "環球晶奪竹科研發成效獎   群創等8家廠商獲優良廠商創新產品獎",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5279203",
+      "source": "ltn",
+      "date": "2025-12-15",
+      "snippet": ""
+    },
+    {
+      "title": "旺宏董事長吳敏求獲頒「潘文淵獎」 他遺憾到第19屆才得獎",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5264270",
+      "source": "ltn",
+      "date": "2025-12-01",
+      "snippet": ""
+    },
+    {
+      "title": "成電論壇》吳敏求：AI驅動智慧製造  助台灣產業鏈成長",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5241394",
+      "source": "ltn",
+      "date": "2025-11-10",
+      "snippet": ""
+    },
+    {
+      "title": "旺宏10月營收26.52億元 月減8.6％",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5237984",
+      "source": "ltn",
+      "date": "2025-11-07",
+      "snippet": ""
+    },
+    {
+      "title": "工研院院長佈達交接 張培仁期許三方向",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5225017",
+      "source": "ltn",
+      "date": "2025-10-27",
+      "snippet": ""
+    },
+    {
+      "title": "開創非揮發性記憶體新紀元 旺宏盧志遠獲「未來科學大獎」",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5144163",
+      "source": "ltn",
+      "date": "2025-08-14",
+      "snippet": ""
+    },
+    {
+      "title": "SEMICON Taiwan將邀記憶體三雄同台 舉辦高峰論壇論AI",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5125431",
+      "source": "ltn",
+      "date": "2025-07-29",
+      "snippet": ""
+    },
+    {
+      "title": "測試大廠欣銓包7場「造山者」 鼓勵員工繼續為台灣半導體業努力",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5088396",
+      "source": "ltn",
+      "date": "2025-06-27",
+      "snippet": ""
+    },
+    {
+      "title": "旺宏4月營收23.3億元 近7個月新高",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5035276",
+      "source": "ltn",
+      "date": "2025-05-07",
+      "snippet": ""
+    },
+    {
+      "title": "敦泰董事長胡正大：不擔心晶片被課關稅 擔心市場需求下滑",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5006937",
+      "source": "ltn",
+      "date": "2025-04-09",
+      "snippet": ""
+    },
+    {
+      "title": "鈺創董事長盧超群：三星期內是關稅混亂不清期",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5006929",
+      "source": "ltn",
+      "date": "2025-04-09",
+      "snippet": ""
+    },
+    {
+      "title": "台灣偷晶片生意？鄭崇華：美國那傢伙是用搶的",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5006882",
+      "source": "ltn",
+      "date": "2025-04-09",
+      "snippet": ""
+    },
+    {
+      "title": "旺宏3月營收22.51億元 近6個月新高",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5004103",
+      "source": "ltn",
+      "date": "2025-04-07",
+      "snippet": ""
+    },
+    {
+      "title": "國研院攜手旺宏 開發新型3D記憶體",
+      "url": "https://ec.ltn.com.tw/article/paper/1693584",
+      "source": "ltn",
+      "date": "2025-02-26",
+      "snippet": ""
+    },
+    {
+      "title": "台股今日重點 特斯拉暴跌8％",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4962208",
+      "source": "ltn",
+      "date": "2025-02-25",
+      "snippet": ""
+    },
+    {
+      "title": "躋身世界先進！國研院半導體中心偕旺宏  成功開發新型高密度高頻寬3D記憶體",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4961809",
+      "source": "ltn",
+      "date": "2025-02-25",
+      "snippet": ""
+    },
+    {
+      "title": "旺宏去年營收258.83億元年減6.3％ 創近8年新低",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4915888",
+      "source": "ltn",
+      "date": "2025-01-07",
       "snippet": ""
     }
   ]

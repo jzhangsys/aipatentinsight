@@ -1,10 +1,14 @@
 {
   "stockCode": "7734",
   "name": "印能科技",
-  "scrapedAt": "2026-05-01T11:31:38.554Z",
+  "scrapedAt": "2026-05-01T12:17:31.950Z",
   "sourceCounts": {
-    "yahoo": 20,
+    "yahoo": 0,
     "ltn": 20
+  },
+  "enrichStats": {
+    "fetched": 0,
+    "filled": 0
   },
   "news": [
     {
@@ -145,146 +149,6 @@
       "url": "https://ec.ltn.com.tw/article/breakingnews/4410208",
       "source": "ltn",
       "date": "2023-08-28",
-      "snippet": ""
-    },
-    {
-      "title": "【公告】印能科技有價證券近期多次達公布注意交易資訊標準，故公告相關訊息，以利投資人區別暸解",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%8D%B0%E8%83%BD%E7%A7%91%E6%8A%80%E6%9C%89%E5%83%B9%E8%AD%89%E5%88%B8%E8%BF%91%E6%9C%9F%E5%A4%9A%E6%AC%A1%E9%81%94%E5%85%AC%E5%B8%83%E6%B3%A8%E6%84%8F%E4%BA%A4%E6%98%93%E8%B3%87%E8%A8%8A%E6%A8%99%E6%BA%96-%E6%95%85%E5%85%AC%E5%91%8A%E7%9B%B8%E9%97%9C%E8%A8%8A%E6%81%AF-%E4%BB%A5%E5%88%A9%E6%8A%95%E8%B3%87%E4%BA%BA%E5%8D%80%E5%88%A5%E6%9A%B8%E8%A7%A3-061354340.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】印能科技 2026年3月合併營收2.92億元 年增66.03%",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%8D%B0%E8%83%BD%E7%A7%91%E6%8A%80-2026%E5%B9%B43%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B62-92%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E66-060353177.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】印能科技有價證券近期多次達公布注意交易資訊標準，故公告相關訊息，以利投資人區別暸解",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%8D%B0%E8%83%BD%E7%A7%91%E6%8A%80%E6%9C%89%E5%83%B9%E8%AD%89%E5%88%B8%E8%BF%91%E6%9C%9F%E5%A4%9A%E6%AC%A1%E9%81%94%E5%85%AC%E5%B8%83%E6%B3%A8%E6%84%8F%E4%BA%A4%E6%98%93%E8%B3%87%E8%A8%8A%E6%A8%99%E6%BA%96-%E6%95%85%E5%85%AC%E5%91%8A%E7%9B%B8%E9%97%9C%E8%A8%8A%E6%81%AF-%E4%BB%A5%E5%88%A9%E6%8A%95%E8%B3%87%E4%BA%BA%E5%8D%80%E5%88%A5%E6%9A%B8%E8%A7%A3-064556626.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】印能科技受邀參加群益金鼎證券舉辦之投資論壇",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%8D%B0%E8%83%BD%E7%A7%91%E6%8A%80%E5%8F%97%E9%82%80%E5%8F%83%E5%8A%A0%E7%BE%A4%E7%9B%8A%E9%87%91%E9%BC%8E%E8%AD%89%E5%88%B8%E8%88%89%E8%BE%A6%E4%B9%8B%E6%8A%95%E8%B3%87%E8%AB%96%E5%A3%87-070503689.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】印能科技受邀參加BofA Securities 2026 Asia Tech Conference",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%8D%B0%E8%83%BD%E7%A7%91%E6%8A%80%E5%8F%97%E9%82%80%E5%8F%83%E5%8A%A0bofa-securities-2026-asia-070501469.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】印能科技受邀參加宏遠證券舉辦之產業論壇",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%8D%B0%E8%83%BD%E7%A7%91%E6%8A%80%E5%8F%97%E9%82%80%E5%8F%83%E5%8A%A0%E5%AE%8F%E9%81%A0%E8%AD%89%E5%88%B8%E8%88%89%E8%BE%A6%E4%B9%8B%E7%94%A2%E6%A5%AD%E8%AB%96%E5%A3%87-071619054.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】印能科技 2026年2月合併營收2.8億元 年增55.59%",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%8D%B0%E8%83%BD%E7%A7%91%E6%8A%80-2026%E5%B9%B42%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B62-8%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E55-061337569.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】印能科技董事會決議114年度股利分派",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%8D%B0%E8%83%BD%E7%A7%91%E6%8A%80%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0114%E5%B9%B4%E5%BA%A6%E8%82%A1%E5%88%A9%E5%88%86%E6%B4%BE-082852714.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】印能科技董事會決議召開115年股東常會事宜",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%8D%B0%E8%83%BD%E7%A7%91%E6%8A%80%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E5%8F%AC%E9%96%8B115%E5%B9%B4%E8%82%A1%E6%9D%B1%E5%B8%B8%E6%9C%83%E4%BA%8B%E5%AE%9C-080357976.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】印能科技董事會通過114年度合併財務報告",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%8D%B0%E8%83%BD%E7%A7%91%E6%8A%80%E8%91%A3%E4%BA%8B%E6%9C%83%E9%80%9A%E9%81%8E114%E5%B9%B4%E5%BA%A6%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A-074459749.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】印能科技114年第四季合併財務報告董事會召開日期",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%8D%B0%E8%83%BD%E7%A7%91%E6%8A%80114%E5%B9%B4%E7%AC%AC%E5%9B%9B%E5%AD%A3%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A%E8%91%A3%E4%BA%8B%E6%9C%83%E5%8F%AC%E9%96%8B%E6%97%A5%E6%9C%9F-074331412.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】印能科技 2026年1月合併營收3.04億元 年增142%",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%8D%B0%E8%83%BD%E7%A7%91%E6%8A%80-2026%E5%B9%B41%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B63-04%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E142-062403323.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】印能科技有價證券近期多次達公布注意交易資訊標準，故公告相關訊息，以利投資人區別暸解",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%8D%B0%E8%83%BD%E7%A7%91%E6%8A%80%E6%9C%89%E5%83%B9%E8%AD%89%E5%88%B8%E8%BF%91%E6%9C%9F%E5%A4%9A%E6%AC%A1%E9%81%94%E5%85%AC%E5%B8%83%E6%B3%A8%E6%84%8F%E4%BA%A4%E6%98%93%E8%B3%87%E8%A8%8A%E6%A8%99%E6%BA%96-%E6%95%85%E5%85%AC%E5%91%8A%E7%9B%B8%E9%97%9C%E8%A8%8A%E6%81%AF-%E4%BB%A5%E5%88%A9%E6%8A%95%E8%B3%87%E4%BA%BA%E5%8D%80%E5%88%A5%E6%9A%B8%E8%A7%A3-064451299.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】更正印能科技114年12月合併營收及累計合併營收公告申報",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%9B%B4%E6%AD%A3%E5%8D%B0%E8%83%BD%E7%A7%91%E6%8A%80114%E5%B9%B412%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B6%E5%8F%8A%E7%B4%AF%E8%A8%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B6%E5%85%AC%E5%91%8A%E7%94%B3%E5%A0%B1-101029416.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】印能科技 2025年12月合併營收1.9億元 年增2.46%",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%8D%B0%E8%83%BD%E7%A7%91%E6%8A%80-2025%E5%B9%B412%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B61-9%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E2-062147583.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】印能科技 2025年11月合併營收1.6億元 年增6.31%",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%8D%B0%E8%83%BD%E7%A7%91%E6%8A%80-2025%E5%B9%B411%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B61-6%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E6-062521973.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】印能科技董事會通過114年第三季合併財務報告",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%8D%B0%E8%83%BD%E7%A7%91%E6%8A%80%E8%91%A3%E4%BA%8B%E6%9C%83%E9%80%9A%E9%81%8E114%E5%B9%B4%E7%AC%AC%E4%B8%89%E5%AD%A3%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A-083347805.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】印能科技 2025年10月合併營收1.3億元 年增-34.11%",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%8D%B0%E8%83%BD%E7%A7%91%E6%8A%80-2025%E5%B9%B410%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B61-3%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E-063235235.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】印能科技配合檢調單位執行搜索調查",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%8D%B0%E8%83%BD%E7%A7%91%E6%8A%80%E9%85%8D%E5%90%88%E6%AA%A2%E8%AA%BF%E5%96%AE%E4%BD%8D%E5%9F%B7%E8%A1%8C%E6%90%9C%E7%B4%A2%E8%AA%BF%E6%9F%A5-024540050.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】印能科技114年第三季合併財務報告董事會召開日期",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%8D%B0%E8%83%BD%E7%A7%91%E6%8A%80114%E5%B9%B4%E7%AC%AC%E4%B8%89%E5%AD%A3%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A%E8%91%A3%E4%BA%8B%E6%9C%83%E5%8F%AC%E9%96%8B%E6%97%A5%E6%9C%9F-073916700.html",
-      "source": "yahoo",
-      "date": null,
       "snippet": ""
     }
   ]

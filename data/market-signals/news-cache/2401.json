@@ -1,12 +1,156 @@
 {
   "stockCode": "2401",
   "name": "凌陽科技",
-  "scrapedAt": "2026-05-01T11:28:55.301Z",
+  "scrapedAt": "2026-05-01T12:09:52.043Z",
   "sourceCounts": {
     "yahoo": 20,
     "ltn": 20
   },
+  "enrichStats": {
+    "fetched": 20,
+    "filled": 20
+  },
   "news": [
+    {
+      "title": "凌陽衝刺MCU/生物辨識，擴物聯網/邊緣運算市占",
+      "url": "https://tw.stock.yahoo.com/news/%E5%87%8C%E9%99%BD%E8%A1%9D%E5%88%BAmcu-%E7%94%9F%E7%89%A9%E8%BE%A8%E8%AD%98-%E6%93%B4%E7%89%A9%E8%81%AF%E7%B6%B2-%E9%82%8A%E7%B7%A3%E9%81%8B%E7%AE%97%E5%B8%82%E5%8D%A0-024000354.html",
+      "source": "yahoo",
+      "date": "2026-04-30",
+      "snippet": ""
+    },
+    {
+      "title": "【公告】凌陽創新一一五年第一季財務報告董事會預計召開日期為115年5月7日",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%87%8C%E9%99%BD%E5%89%B5%E6%96%B0-%E4%BA%94%E5%B9%B4%E7%AC%AC-%E5%AD%A3%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A%E8%91%A3%E4%BA%8B%E6%9C%83%E9%A0%90%E8%A8%88%E5%8F%AC%E9%96%8B%E6%97%A5%E6%9C%9F%E7%82%BA115%E5%B9%B45%E6%9C%887%E6%97%A5-082101744.html",
+      "source": "yahoo",
+      "date": "2026-04-29",
+      "snippet": ""
+    },
+    {
+      "title": "證交所：凌陽創新科技送件申請上市 今年第4家",
+      "url": "https://tw.stock.yahoo.com/news/%E8%AD%89%E4%BA%A4%E6%89%80-%E5%87%8C%E9%99%BD%E5%89%B5%E6%96%B0%E7%A7%91%E6%8A%80%E9%80%81%E4%BB%B6%E7%94%B3%E8%AB%8B%E4%B8%8A%E5%B8%82-%E4%BB%8A%E5%B9%B4%E7%AC%AC4%E5%AE%B6-085004915.html",
+      "source": "yahoo",
+      "date": "2026-04-16",
+      "snippet": ""
+    },
+    {
+      "title": "【公告】凌陽 2026年3月合併營收7.25億元 年增22.14%",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%87%8C%E9%99%BD-2026%E5%B9%B43%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B67-25%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E22-071312742.html",
+      "source": "yahoo",
+      "date": "2026-04-10",
+      "snippet": ""
+    },
+    {
+      "title": "【公告】凌陽創新 2026年3月合併營收2.35億元 年增40.06%",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%87%8C%E9%99%BD%E5%89%B5%E6%96%B0-2026%E5%B9%B43%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B62-35%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E40-092306541.html",
+      "source": "yahoo",
+      "date": "2026-04-07",
+      "snippet": ""
+    },
+    {
+      "title": "凌陽轉嫁部分記憶體成本，Q1營運可望優於去年",
+      "url": "https://tw.stock.yahoo.com/news/%E5%87%8C%E9%99%BD%E8%BD%89%E5%AB%81%E9%83%A8%E5%88%86%E8%A8%98%E6%86%B6%E9%AB%94%E6%88%90%E6%9C%AC-q1%E7%87%9F%E9%81%8B%E5%8F%AF%E6%9C%9B%E5%84%AA%E6%96%BC%E5%8E%BB%E5%B9%B4-025100581.html",
+      "source": "yahoo",
+      "date": "2026-03-25",
+      "snippet": ""
+    },
+    {
+      "title": "【公告】凌陽代子公司凌陽創業投資(股)公司公告預計參與喬鼎資訊(股)公司私募案",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%87%8C%E9%99%BD%E4%BB%A3%E5%AD%90%E5%85%AC%E5%8F%B8%E5%87%8C%E9%99%BD%E5%89%B5%E6%A5%AD%E6%8A%95%E8%B3%87-%E8%82%A1-%E5%85%AC%E5%8F%B8%E5%85%AC%E5%91%8A%E9%A0%90%E8%A8%88%E5%8F%83%E8%88%87%E5%96%AC%E9%BC%8E%E8%B3%87%E8%A8%8A-%E8%82%A1-112337564.html",
+      "source": "yahoo",
+      "date": "2026-03-17",
+      "snippet": ""
+    },
+    {
+      "title": "【公告】凌陽創新與天淵實業簽訂合作備忘錄",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%87%8C%E9%99%BD%E5%89%B5%E6%96%B0%E8%88%87%E5%A4%A9%E6%B7%B5%E5%AF%A6%E6%A5%AD%E7%B0%BD%E8%A8%82%E5%90%88%E4%BD%9C%E5%82%99%E5%BF%98%E9%8C%84-083334096.html",
+      "source": "yahoo",
+      "date": "2026-03-16",
+      "snippet": ""
+    },
+    {
+      "title": "《半導體》凌陽創新與天淵實業簽訂合作備忘錄",
+      "url": "https://tw.stock.yahoo.com/news/%E5%8D%8A%E5%B0%8E%E9%AB%94-%E5%87%8C%E9%99%BD%E5%89%B5%E6%96%B0%E8%88%87%E5%A4%A9%E6%B7%B5%E5%AF%A6%E6%A5%AD%E7%B0%BD%E8%A8%82%E5%90%88%E4%BD%9C%E5%82%99%E5%BF%98%E9%8C%84-082907859.html",
+      "source": "yahoo",
+      "date": "2026-03-16",
+      "snippet": ""
+    },
+    {
+      "title": "凌陽創新與天淵實業簽訂共同開發與推廣適用於熱成像應用晶片等合作備忘錄",
+      "url": "https://tw.stock.yahoo.com/news/%E5%87%8C%E9%99%BD%E5%89%B5%E6%96%B0%E8%88%87%E5%A4%A9%E6%B7%B5%E5%AF%A6%E6%A5%AD%E7%B0%BD%E8%A8%82%E5%85%B1%E5%90%8C%E9%96%8B%E7%99%BC%E8%88%87%E6%8E%A8%E5%BB%A3%E9%81%A9%E7%94%A8%E6%96%BC%E7%86%B1%E6%88%90%E5%83%8F%E6%87%89%E7%94%A8%E6%99%B6%E7%89%87%E7%AD%89%E5%90%88%E4%BD%9C%E5%82%99%E5%BF%98%E9%8C%84-082500752.html",
+      "source": "yahoo",
+      "date": "2026-03-16",
+      "snippet": ""
+    },
+    {
+      "title": "【公告】凌陽董事會決議不分派股利",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%87%8C%E9%99%BD%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E4%B8%8D%E5%88%86%E6%B4%BE%E8%82%A1%E5%88%A9-103312204.html",
+      "source": "yahoo",
+      "date": "2026-03-13",
+      "snippet": ""
+    },
+    {
+      "title": "【公告】凌陽董事會決議召開115年股東常會公告",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%87%8C%E9%99%BD%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E5%8F%AC%E9%96%8B115%E5%B9%B4%E8%82%A1%E6%9D%B1%E5%B8%B8%E6%9C%83%E5%85%AC%E5%91%8A-103043670.html",
+      "source": "yahoo",
+      "date": "2026-03-13",
+      "snippet": ""
+    },
+    {
+      "title": "凌陽 發佈本公司2025年第四季合併營運報告之相關內容",
+      "url": "https://tw.stock.yahoo.com/news/%E5%87%8C%E9%99%BD-%E7%99%BC%E4%BD%88%E6%9C%AC%E5%85%AC%E5%8F%B82025%E5%B9%B4%E7%AC%AC%E5%9B%9B%E5%AD%A3%E5%90%88%E4%BD%B5%E7%87%9F%E9%81%8B%E5%A0%B1%E5%91%8A%E4%B9%8B%E7%9B%B8%E9%97%9C%E5%85%A7%E5%AE%B9-101700853.html",
+      "source": "yahoo",
+      "date": "2026-03-13",
+      "snippet": ""
+    },
+    {
+      "title": "【公告】凌陽 2026年2月合併營收4.65億元 年增-7.21%",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%87%8C%E9%99%BD-2026%E5%B9%B42%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B64-65%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E-082259899.html",
+      "source": "yahoo",
+      "date": "2026-03-10",
+      "snippet": ""
+    },
+    {
+      "title": "【公告】凌陽114年度個體暨合併財務報告董事會預計召開日期為115年03月13日",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%87%8C%E9%99%BD114%E5%B9%B4%E5%BA%A6%E5%80%8B%E9%AB%94%E6%9A%A8%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A%E8%91%A3%E4%BA%8B%E6%9C%83%E9%A0%90%E8%A8%88%E5%8F%AC%E9%96%8B%E6%97%A5%E6%9C%9F%E7%82%BA115%E5%B9%B403%E6%9C%8813%E6%97%A5-103445565.html",
+      "source": "yahoo",
+      "date": "2026-03-05",
+      "snippet": ""
+    },
+    {
+      "title": "凌陽創新 本公司董事會決議召開115年股東常會相關事宜(更正召集事由三為選舉事項)",
+      "url": "https://tw.stock.yahoo.com/news/%E5%87%8C%E9%99%BD%E5%89%B5%E6%96%B0-%E6%9C%AC%E5%85%AC%E5%8F%B8%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E5%8F%AC%E9%96%8B115%E5%B9%B4%E8%82%A1%E6%9D%B1%E5%B8%B8%E6%9C%83%E7%9B%B8%E9%97%9C%E4%BA%8B%E5%AE%9C-%E6%9B%B4%E6%AD%A3%E5%8F%AC%E9%9B%86%E4%BA%8B%E7%94%B1%E4%B8%89%E7%82%BA%E9%81%B8%E8%88%89%E4%BA%8B%E9%A0%85-105300313.html",
+      "source": "yahoo",
+      "date": "2026-02-26",
+      "snippet": ""
+    },
+    {
+      "title": "《半導體》凌陽創新大方配息9元",
+      "url": "https://tw.stock.yahoo.com/news/%E5%8D%8A%E5%B0%8E%E9%AB%94-%E5%87%8C%E9%99%BD%E5%89%B5%E6%96%B0%E5%A4%A7%E6%96%B9%E9%85%8D%E6%81%AF9%E5%85%83-091030791.html",
+      "source": "yahoo",
+      "date": "2026-02-26",
+      "snippet": ""
+    },
+    {
+      "title": "《半導體》凌陽創新去年每股盈餘8.59元",
+      "url": "https://tw.stock.yahoo.com/news/%E5%8D%8A%E5%B0%8E%E9%AB%94-%E5%87%8C%E9%99%BD%E5%89%B5%E6%96%B0%E5%8E%BB%E5%B9%B4%E6%AF%8F%E8%82%A1%E7%9B%88%E9%A4%988-59%E5%85%83-083456897.html",
+      "source": "yahoo",
+      "date": "2026-02-26",
+      "snippet": ""
+    },
+    {
+      "title": "【公告】凌陽創新114年度財務報告董事會預計召開日期為115年2月26日",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%87%8C%E9%99%BD%E5%89%B5%E6%96%B0114%E5%B9%B4%E5%BA%A6%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A%E8%91%A3%E4%BA%8B%E6%9C%83%E9%A0%90%E8%A8%88%E5%8F%AC%E9%96%8B%E6%97%A5%E6%9C%9F%E7%82%BA115%E5%B9%B42%E6%9C%8826%E6%97%A5-030303549.html",
+      "source": "yahoo",
+      "date": "2026-02-13",
+      "snippet": ""
+    },
+    {
+      "title": "【公告】凌陽 2026年1月合併營收5.49億元 年增22.79%",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%87%8C%E9%99%BD-2026%E5%B9%B41%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B65-49%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E22-081253033.html",
+      "source": "yahoo",
+      "date": "2026-02-10",
+      "snippet": ""
+    },
     {
       "title": "掌握技術話語權  經部續推晶創IC設計計畫聚焦「信賴晶片」",
       "url": "https://ec.ltn.com.tw/article/breakingnews/5257937",
@@ -145,146 +289,6 @@
       "url": "https://ec.ltn.com.tw/article/paper/152809",
       "source": "ltn",
       "date": "2007-09-07",
-      "snippet": ""
-    },
-    {
-      "title": "凌陽衝刺MCU/生物辨識，擴物聯網/邊緣運算市占",
-      "url": "https://tw.stock.yahoo.com/news/%E5%87%8C%E9%99%BD%E8%A1%9D%E5%88%BAmcu-%E7%94%9F%E7%89%A9%E8%BE%A8%E8%AD%98-%E6%93%B4%E7%89%A9%E8%81%AF%E7%B6%B2-%E9%82%8A%E7%B7%A3%E9%81%8B%E7%AE%97%E5%B8%82%E5%8D%A0-024000354.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】凌陽創新一一五年第一季財務報告董事會預計召開日期為115年5月7日",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%87%8C%E9%99%BD%E5%89%B5%E6%96%B0-%E4%BA%94%E5%B9%B4%E7%AC%AC-%E5%AD%A3%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A%E8%91%A3%E4%BA%8B%E6%9C%83%E9%A0%90%E8%A8%88%E5%8F%AC%E9%96%8B%E6%97%A5%E6%9C%9F%E7%82%BA115%E5%B9%B45%E6%9C%887%E6%97%A5-082101744.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "證交所：凌陽創新科技送件申請上市 今年第4家",
-      "url": "https://tw.stock.yahoo.com/news/%E8%AD%89%E4%BA%A4%E6%89%80-%E5%87%8C%E9%99%BD%E5%89%B5%E6%96%B0%E7%A7%91%E6%8A%80%E9%80%81%E4%BB%B6%E7%94%B3%E8%AB%8B%E4%B8%8A%E5%B8%82-%E4%BB%8A%E5%B9%B4%E7%AC%AC4%E5%AE%B6-085004915.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】凌陽 2026年3月合併營收7.25億元 年增22.14%",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%87%8C%E9%99%BD-2026%E5%B9%B43%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B67-25%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E22-071312742.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】凌陽創新 2026年3月合併營收2.35億元 年增40.06%",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%87%8C%E9%99%BD%E5%89%B5%E6%96%B0-2026%E5%B9%B43%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B62-35%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E40-092306541.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "凌陽轉嫁部分記憶體成本，Q1營運可望優於去年",
-      "url": "https://tw.stock.yahoo.com/news/%E5%87%8C%E9%99%BD%E8%BD%89%E5%AB%81%E9%83%A8%E5%88%86%E8%A8%98%E6%86%B6%E9%AB%94%E6%88%90%E6%9C%AC-q1%E7%87%9F%E9%81%8B%E5%8F%AF%E6%9C%9B%E5%84%AA%E6%96%BC%E5%8E%BB%E5%B9%B4-025100581.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】凌陽代子公司凌陽創業投資(股)公司公告預計參與喬鼎資訊(股)公司私募案",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%87%8C%E9%99%BD%E4%BB%A3%E5%AD%90%E5%85%AC%E5%8F%B8%E5%87%8C%E9%99%BD%E5%89%B5%E6%A5%AD%E6%8A%95%E8%B3%87-%E8%82%A1-%E5%85%AC%E5%8F%B8%E5%85%AC%E5%91%8A%E9%A0%90%E8%A8%88%E5%8F%83%E8%88%87%E5%96%AC%E9%BC%8E%E8%B3%87%E8%A8%8A-%E8%82%A1-112337564.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】凌陽創新與天淵實業簽訂合作備忘錄",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%87%8C%E9%99%BD%E5%89%B5%E6%96%B0%E8%88%87%E5%A4%A9%E6%B7%B5%E5%AF%A6%E6%A5%AD%E7%B0%BD%E8%A8%82%E5%90%88%E4%BD%9C%E5%82%99%E5%BF%98%E9%8C%84-083334096.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "《半導體》凌陽創新與天淵實業簽訂合作備忘錄",
-      "url": "https://tw.stock.yahoo.com/news/%E5%8D%8A%E5%B0%8E%E9%AB%94-%E5%87%8C%E9%99%BD%E5%89%B5%E6%96%B0%E8%88%87%E5%A4%A9%E6%B7%B5%E5%AF%A6%E6%A5%AD%E7%B0%BD%E8%A8%82%E5%90%88%E4%BD%9C%E5%82%99%E5%BF%98%E9%8C%84-082907859.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "凌陽創新與天淵實業簽訂共同開發與推廣適用於熱成像應用晶片等合作備忘錄",
-      "url": "https://tw.stock.yahoo.com/news/%E5%87%8C%E9%99%BD%E5%89%B5%E6%96%B0%E8%88%87%E5%A4%A9%E6%B7%B5%E5%AF%A6%E6%A5%AD%E7%B0%BD%E8%A8%82%E5%85%B1%E5%90%8C%E9%96%8B%E7%99%BC%E8%88%87%E6%8E%A8%E5%BB%A3%E9%81%A9%E7%94%A8%E6%96%BC%E7%86%B1%E6%88%90%E5%83%8F%E6%87%89%E7%94%A8%E6%99%B6%E7%89%87%E7%AD%89%E5%90%88%E4%BD%9C%E5%82%99%E5%BF%98%E9%8C%84-082500752.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】凌陽董事會決議不分派股利",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%87%8C%E9%99%BD%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E4%B8%8D%E5%88%86%E6%B4%BE%E8%82%A1%E5%88%A9-103312204.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】凌陽董事會決議召開115年股東常會公告",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%87%8C%E9%99%BD%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E5%8F%AC%E9%96%8B115%E5%B9%B4%E8%82%A1%E6%9D%B1%E5%B8%B8%E6%9C%83%E5%85%AC%E5%91%8A-103043670.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "凌陽 發佈本公司2025年第四季合併營運報告之相關內容",
-      "url": "https://tw.stock.yahoo.com/news/%E5%87%8C%E9%99%BD-%E7%99%BC%E4%BD%88%E6%9C%AC%E5%85%AC%E5%8F%B82025%E5%B9%B4%E7%AC%AC%E5%9B%9B%E5%AD%A3%E5%90%88%E4%BD%B5%E7%87%9F%E9%81%8B%E5%A0%B1%E5%91%8A%E4%B9%8B%E7%9B%B8%E9%97%9C%E5%85%A7%E5%AE%B9-101700853.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】凌陽 2026年2月合併營收4.65億元 年增-7.21%",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%87%8C%E9%99%BD-2026%E5%B9%B42%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B64-65%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E-082259899.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】凌陽114年度個體暨合併財務報告董事會預計召開日期為115年03月13日",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%87%8C%E9%99%BD114%E5%B9%B4%E5%BA%A6%E5%80%8B%E9%AB%94%E6%9A%A8%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A%E8%91%A3%E4%BA%8B%E6%9C%83%E9%A0%90%E8%A8%88%E5%8F%AC%E9%96%8B%E6%97%A5%E6%9C%9F%E7%82%BA115%E5%B9%B403%E6%9C%8813%E6%97%A5-103445565.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "凌陽創新 本公司董事會決議召開115年股東常會相關事宜(更正召集事由三為選舉事項)",
-      "url": "https://tw.stock.yahoo.com/news/%E5%87%8C%E9%99%BD%E5%89%B5%E6%96%B0-%E6%9C%AC%E5%85%AC%E5%8F%B8%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E5%8F%AC%E9%96%8B115%E5%B9%B4%E8%82%A1%E6%9D%B1%E5%B8%B8%E6%9C%83%E7%9B%B8%E9%97%9C%E4%BA%8B%E5%AE%9C-%E6%9B%B4%E6%AD%A3%E5%8F%AC%E9%9B%86%E4%BA%8B%E7%94%B1%E4%B8%89%E7%82%BA%E9%81%B8%E8%88%89%E4%BA%8B%E9%A0%85-105300313.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "《半導體》凌陽創新大方配息9元",
-      "url": "https://tw.stock.yahoo.com/news/%E5%8D%8A%E5%B0%8E%E9%AB%94-%E5%87%8C%E9%99%BD%E5%89%B5%E6%96%B0%E5%A4%A7%E6%96%B9%E9%85%8D%E6%81%AF9%E5%85%83-091030791.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "《半導體》凌陽創新去年每股盈餘8.59元",
-      "url": "https://tw.stock.yahoo.com/news/%E5%8D%8A%E5%B0%8E%E9%AB%94-%E5%87%8C%E9%99%BD%E5%89%B5%E6%96%B0%E5%8E%BB%E5%B9%B4%E6%AF%8F%E8%82%A1%E7%9B%88%E9%A4%988-59%E5%85%83-083456897.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】凌陽創新114年度財務報告董事會預計召開日期為115年2月26日",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%87%8C%E9%99%BD%E5%89%B5%E6%96%B0114%E5%B9%B4%E5%BA%A6%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A%E8%91%A3%E4%BA%8B%E6%9C%83%E9%A0%90%E8%A8%88%E5%8F%AC%E9%96%8B%E6%97%A5%E6%9C%9F%E7%82%BA115%E5%B9%B42%E6%9C%8826%E6%97%A5-030303549.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】凌陽 2026年1月合併營收5.49億元 年增22.79%",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%87%8C%E9%99%BD-2026%E5%B9%B41%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B65-49%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E22-081253033.html",
-      "source": "yahoo",
-      "date": null,
       "snippet": ""
     }
   ]

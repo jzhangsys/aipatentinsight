@@ -1,10 +1,14 @@
 {
   "stockCode": "8114",
   "name": "振樺電子",
-  "scrapedAt": "2026-05-01T11:31:47.468Z",
+  "scrapedAt": "2026-05-01T12:17:58.067Z",
   "sourceCounts": {
-    "yahoo": 20,
+    "yahoo": 0,
     "ltn": 12
+  },
+  "enrichStats": {
+    "fetched": 0,
+    "filled": 0
   },
   "news": [
     {
@@ -89,146 +93,6 @@
       "url": "https://ec.ltn.com.tw/article/breakingnews/1792628",
       "source": "ltn",
       "date": "2016-08-11",
-      "snippet": ""
-    },
-    {
-      "title": "【公告】振樺電115年第一季合併財務報告",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%8C%AF%E6%A8%BA%E9%9B%BB115%E5%B9%B4%E7%AC%AC-%E5%AD%A3%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A-100949240.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】振樺電115年度第一季財務報告董事會預計召開日期為115年04月30日",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%8C%AF%E6%A8%BA%E9%9B%BB115%E5%B9%B4%E5%BA%A6%E7%AC%AC-%E5%AD%A3%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A%E8%91%A3%E4%BA%8B%E6%9C%83%E9%A0%90%E8%A8%88%E5%8F%AC%E9%96%8B%E6%97%A5%E6%9C%9F%E7%82%BA115%E5%B9%B404%E6%9C%8830%E6%97%A5-075752759.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】代子公司瑞傳科技股份有限公司公告董事會決議股東股利分派情形",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E4%BB%A3%E5%AD%90%E5%85%AC%E5%8F%B8%E7%91%9E%E5%82%B3%E7%A7%91%E6%8A%80%E8%82%A1%E4%BB%BD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%E5%85%AC%E5%91%8A%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E8%82%A1%E6%9D%B1%E8%82%A1%E5%88%A9%E5%88%86%E6%B4%BE%E6%83%85%E5%BD%A2-094405344.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】代子公司瑞傳科技股份有限公司公告董事會決議召開115年股東常會公告(新增召集事由)",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E4%BB%A3%E5%AD%90%E5%85%AC%E5%8F%B8%E7%91%9E%E5%82%B3%E7%A7%91%E6%8A%80%E8%82%A1%E4%BB%BD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%E5%85%AC%E5%91%8A%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E5%8F%AC%E9%96%8B115%E5%B9%B4%E8%82%A1%E6%9D%B1%E5%B8%B8%E6%9C%83%E5%85%AC%E5%91%8A-%E6%96%B0%E5%A2%9E%E5%8F%AC%E9%9B%86%E4%BA%8B%E7%94%B1-094403447.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】振樺電 2026年3月合併營收12.99億元 年增-50.71%",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%8C%AF%E6%A8%BA%E9%9B%BB-2026%E5%B9%B43%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B612-99%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E-111237905.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】振樺電資安事件之說明",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%8C%AF%E6%A8%BA%E9%9B%BB%E8%B3%87%E5%AE%89%E4%BA%8B%E4%BB%B6%E4%B9%8B%E8%AA%AA%E6%98%8E-095049208.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】振樺電 2026年2月合併營收11.91億元 年增-37.28%",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%8C%AF%E6%A8%BA%E9%9B%BB-2026%E5%B9%B42%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B611-91%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E-094239892.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】振樺電董事會決議召開115年股東常會",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%8C%AF%E6%A8%BA%E9%9B%BB%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E5%8F%AC%E9%96%8B115%E5%B9%B4%E8%82%A1%E6%9D%B1%E5%B8%B8%E6%9C%83-121335458.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】振樺電董事會決議分派普通股股利",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%8C%AF%E6%A8%BA%E9%9B%BB%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E5%88%86%E6%B4%BE%E6%99%AE%E9%80%9A%E8%82%A1%E8%82%A1%E5%88%A9-111828089.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】振樺電董事會決議分派甲種特別股股利",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%8C%AF%E6%A8%BA%E9%9B%BB%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E5%88%86%E6%B4%BE%E7%94%B2%E7%A8%AE%E7%89%B9%E5%88%A5%E8%82%A1%E8%82%A1%E5%88%A9-105238653.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】振樺電114年度合併財務報告",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%8C%AF%E6%A8%BA%E9%9B%BB114%E5%B9%B4%E5%BA%A6%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A-104335760.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】代子公司瑞傳科技股份有限公司公告董事會決議召開115年股東常會公告",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E4%BB%A3%E5%AD%90%E5%85%AC%E5%8F%B8%E7%91%9E%E5%82%B3%E7%A7%91%E6%8A%80%E8%82%A1%E4%BB%BD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%E5%85%AC%E5%91%8A%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E5%8F%AC%E9%96%8B115%E5%B9%B4%E8%82%A1%E6%9D%B1%E5%B8%B8%E6%9C%83%E5%85%AC%E5%91%8A-101342908.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】振樺電114年度第四季財務報告董事會預計召開日期為115年03月05日",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%8C%AF%E6%A8%BA%E9%9B%BB114%E5%B9%B4%E5%BA%A6%E7%AC%AC%E5%9B%9B%E5%AD%A3%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A%E8%91%A3%E4%BA%8B%E6%9C%83%E9%A0%90%E8%A8%88%E5%8F%AC%E9%96%8B%E6%97%A5%E6%9C%9F%E7%82%BA115%E5%B9%B403%E6%9C%8805%E6%97%A5-083300734.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】振樺電 2026年1月合併營收10.49億元 年增-24.27%",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%8C%AF%E6%A8%BA%E9%9B%BB-2026%E5%B9%B41%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B610-49%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E-092319871.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】振樺電取得誠拓興業(股)有限公司之股權",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%8C%AF%E6%A8%BA%E9%9B%BB%E5%8F%96%E5%BE%97%E8%AA%A0%E6%8B%93%E8%88%88%E6%A5%AD-%E8%82%A1-%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%E4%B9%8B%E8%82%A1%E6%AC%8A-093543456.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】振樺電 2025年12月合併營收10.74億元 年增-43.48%",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%8C%AF%E6%A8%BA%E9%9B%BB-2025%E5%B9%B412%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B610-74%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E-104148145.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】振樺電受邀參加凱基證券舉辦之線上法人說明會",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%8C%AF%E6%A8%BA%E9%9B%BB%E5%8F%97%E9%82%80%E5%8F%83%E5%8A%A0%E5%87%B1%E5%9F%BA%E8%AD%89%E5%88%B8%E8%88%89%E8%BE%A6%E4%B9%8B%E7%B7%9A%E4%B8%8A%E6%B3%95%E4%BA%BA%E8%AA%AA%E6%98%8E%E6%9C%83-082620818.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】振樺電 2025年11月合併營收8.66億元 年增-49.23%",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%8C%AF%E6%A8%BA%E9%9B%BB-2025%E5%B9%B411%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B68-66%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E-112136624.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】振樺電 2025年10月合併營收9.56億元 年增-25.35%",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%8C%AF%E6%A8%BA%E9%9B%BB-2025%E5%B9%B410%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B69-56%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E-112146563.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】振樺電114年第三季合併財務報告",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%8C%AF%E6%A8%BA%E9%9B%BB114%E5%B9%B4%E7%AC%AC%E4%B8%89%E5%AD%A3%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A-104052785.html",
-      "source": "yahoo",
-      "date": null,
       "snippet": ""
     }
   ]

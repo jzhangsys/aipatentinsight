@@ -1,25 +1,154 @@
 {
   "stockCode": "3443",
-  "name": "創意",
-  "scrapedAt": "2026-05-01T11:51:03.836Z",
-  "devSeed": true,
+  "name": "創意電子",
+  "scrapedAt": "2026-05-01T12:12:21.658Z",
   "sourceCounts": {
-    "yahoo": 1,
-    "ltn": 1
+    "yahoo": 0,
+    "ltn": 20
+  },
+  "enrichStats": {
+    "fetched": 0,
+    "filled": 0
   },
   "news": [
     {
-      "title": "創意 ASIC 設計服務 接連拿下美系大客戶",
-      "url": "https://tw.stock.yahoo.com/news/3443-創意 ASI-2026-01-22.html",
-      "source": "yahoo",
-      "date": "2026-01-22",
+      "title": "張忠謀最佳戰友曾繁城今年退休 告別長達23年創意董事長職務",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5373467",
+      "source": "ltn",
+      "date": "2026-03-17",
       "snippet": ""
     },
     {
-      "title": "AI 晶片代工 創意 2026 年營收看翻倍成長",
-      "url": "https://search.ltn.com.tw/list?keyword=%E5%89%B5%E6%84%8F#2026-01-10",
+      "title": "創意Q3與全年營收估年增率雙位數   美國營收比拉高至50-60％",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5129028",
       "source": "ltn",
-      "date": "2026-01-10",
+      "date": "2025-08-01",
+      "snippet": ""
+    },
+    {
+      "title": "侯永清蟬聯TSIA理事長 相信台灣半導體業可克服關稅挑戰",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4995207",
+      "source": "ltn",
+      "date": "2025-03-29",
+      "snippet": ""
+    },
+    {
+      "title": "證交所董座︰立足台灣科技島 拚全球前10大交易所",
+      "url": "https://ec.ltn.com.tw/article/paper/1685360",
+      "source": "ltn",
+      "date": "2025-01-03",
+      "snippet": ""
+    },
+    {
+      "title": "TESDA延攬AMD副總裁王啟尚進入董事會",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4730859",
+      "source": "ltn",
+      "date": "2024-07-09",
+      "snippet": ""
+    },
+    {
+      "title": "輝達在台設研發中心 黃偉哲：台南有南科與沙崙優勢",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4694575",
+      "source": "ltn",
+      "date": "2024-06-04",
+      "snippet": ""
+    },
+    {
+      "title": "外媒：張忠謀老戰友躋身億萬富翁 台積電傳奇推手",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4679693",
+      "source": "ltn",
+      "date": "2024-05-21",
+      "snippet": ""
+    },
+    {
+      "title": "準總統賴清德今參訪台積電 並與竹科業界大老密門商討五缺對策",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4612054",
+      "source": "ltn",
+      "date": "2024-03-19",
+      "snippet": ""
+    },
+    {
+      "title": "熱門概念股》HBM高頻寬記憶體",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4589394",
+      "source": "ltn",
+      "date": "2024-02-25",
+      "snippet": ""
+    },
+    {
+      "title": "晶圓女王徐秀蘭、元大投信董事長劉宗聖獲「國家卓越成就獎」",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4516278",
+      "source": "ltn",
+      "date": "2023-12-10",
+      "snippet": ""
+    },
+    {
+      "title": "〈財經週報-高頻寬記憶體〉大啖AI晶片 高速運算平台居營收之冠",
+      "url": "https://ec.ltn.com.tw/article/paper/1619875",
+      "source": "ltn",
+      "date": "2023-12-10",
+      "snippet": ""
+    },
+    {
+      "title": "名師解盤》黃文清：8月上旬指數區間震盪 聚焦財報、展望佳個股",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4381390",
+      "source": "ltn",
+      "date": "2023-07-31",
+      "snippet": ""
+    },
+    {
+      "title": "〈財經週報-獨董爭議〉退休高官新天地 上市櫃獨董好大咖",
+      "url": "https://ec.ltn.com.tw/article/paper/1585457",
+      "source": "ltn",
+      "date": "2023-05-29",
+      "snippet": ""
+    },
+    {
+      "title": "飆股幕後》外資投信買超6300張 創意12天漲71%",
+      "url": "https://ec.ltn.com.tw/article/paper/1551125",
+      "source": "ltn",
+      "date": "2022-11-12",
+      "snippet": ""
+    },
+    {
+      "title": "台積電成立 半導體業第1個3D IC聯盟",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4102854",
+      "source": "ltn",
+      "date": "2022-10-27",
+      "snippet": ""
+    },
+    {
+      "title": "台北港特定區等4筆土地標售 底價每坪33萬元起跳",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4007028",
+      "source": "ltn",
+      "date": "2022-07-28",
+      "snippet": ""
+    },
+    {
+      "title": "IC設計偉詮電世代交替   董座兒林崇燾接總經理",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/3980991",
+      "source": "ltn",
+      "date": "2022-07-04",
+      "snippet": ""
+    },
+    {
+      "title": "猛！IC設計新秀創鑫智慧  一出手就投產台積7奈米",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/3980849",
+      "source": "ltn",
+      "date": "2022-07-04",
+      "snippet": ""
+    },
+    {
+      "title": "凱基銀推綠色存款 產品計畫交第3方機構審查",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/3944293",
+      "source": "ltn",
+      "date": "2022-05-30",
+      "snippet": ""
+    },
+    {
+      "title": "台積電董事長劉德音蟬聯TSIA理事長",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/3484071",
+      "source": "ltn",
+      "date": "2021-03-30",
       "snippet": ""
     }
   ]

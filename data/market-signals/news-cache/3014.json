@@ -1,10 +1,14 @@
 {
   "stockCode": "3014",
   "name": "聯陽半導體",
-  "scrapedAt": "2026-05-01T11:29:18.397Z",
+  "scrapedAt": "2026-05-01T12:11:07.270Z",
   "sourceCounts": {
-    "yahoo": 20,
+    "yahoo": 0,
     "ltn": 7
+  },
+  "enrichStats": {
+    "fetched": 0,
+    "filled": 0
   },
   "news": [
     {
@@ -54,146 +58,6 @@
       "url": "https://ec.ltn.com.tw/article/paper/6020",
       "source": "ltn",
       "date": "2005-03-16",
-      "snippet": ""
-    },
-    {
-      "title": "【公告】聯陽 2026年3月合併營收5.54億元 年增7.65%",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E8%81%AF%E9%99%BD-2026%E5%B9%B43%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B65-54%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E7-073252918.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】聯陽 2026年2月合併營收4.61億元 年增-13.96%",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E8%81%AF%E9%99%BD-2026%E5%B9%B42%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B64-61%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E-071323319.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】聯陽董事會決議收買已發行之限制員工權利新股註銷減資事宜",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E8%81%AF%E9%99%BD%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E6%94%B6%E8%B2%B7%E5%B7%B2%E7%99%BC%E8%A1%8C%E4%B9%8B%E9%99%90%E5%88%B6%E5%93%A1%E5%B7%A5%E6%AC%8A%E5%88%A9%E6%96%B0%E8%82%A1%E8%A8%BB%E9%8A%B7%E6%B8%9B%E8%B3%87%E4%BA%8B%E5%AE%9C-065553959.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】聯陽董事會決議股利分派",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E8%81%AF%E9%99%BD%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E8%82%A1%E5%88%A9%E5%88%86%E6%B4%BE-065438009.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】聯陽受邀參加宏遠證券股份有限公司所舉辦之「2026年趨勢產業論壇」",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E8%81%AF%E9%99%BD%E5%8F%97%E9%82%80%E5%8F%83%E5%8A%A0%E5%AE%8F%E9%81%A0%E8%AD%89%E5%88%B8%E8%82%A1%E4%BB%BD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%E6%89%80%E8%88%89%E8%BE%A6%E4%B9%8B-2026%E5%B9%B4%E8%B6%A8%E5%8B%A2%E7%94%A2%E6%A5%AD%E8%AB%96%E5%A3%87-063115692.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】聯陽 2026年1月合併營收7.19億元 年增7.02%",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E8%81%AF%E9%99%BD-2026%E5%B9%B41%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B67-19%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E7-071259681.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】聯陽 2025年12月合併營收4.75億元 年增-0.85%",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E8%81%AF%E9%99%BD-2025%E5%B9%B412%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B64-75%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E-071117527.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】聯陽 2025年11月合併營收5.22億元 年增-8.14%",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E8%81%AF%E9%99%BD-2025%E5%B9%B411%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B65-22%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E-071215370.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】聯陽受邀參加宏遠證券股份有限公司所舉辦之法人說明會",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E8%81%AF%E9%99%BD%E5%8F%97%E9%82%80%E5%8F%83%E5%8A%A0%E5%AE%8F%E9%81%A0%E8%AD%89%E5%88%B8%E8%82%A1%E4%BB%BD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%E6%89%80%E8%88%89%E8%BE%A6%E4%B9%8B%E6%B3%95%E4%BA%BA%E8%AA%AA%E6%98%8E%E6%9C%83-060628446.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】聯陽 2025年10月合併營收5.1億元 年增-13.95%",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E8%81%AF%E9%99%BD-2025%E5%B9%B410%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B65-1%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E-071119614.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】聯陽 2025年9月合併營收6.05億元 年增-5.24%",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E8%81%AF%E9%99%BD-2025%E5%B9%B49%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B66-05%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E-071144722.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】聯陽 2025年8月合併營收5.99億元 年增-9.05%",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E8%81%AF%E9%99%BD-2025%E5%B9%B48%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B65-99%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E-071124815.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】聯陽受邀參加宏遠證券股份有限公司所舉辦之法人說明會",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E8%81%AF%E9%99%BD%E5%8F%97%E9%82%80%E5%8F%83%E5%8A%A0%E5%AE%8F%E9%81%A0%E8%AD%89%E5%88%B8%E8%82%A1%E4%BB%BD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%E6%89%80%E8%88%89%E8%BE%A6%E4%B9%8B%E6%B3%95%E4%BA%BA%E8%AA%AA%E6%98%8E%E6%9C%83-061243185.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】聯陽 2025年7月合併營收5.91億元 年增4.23%",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E8%81%AF%E9%99%BD-2025%E5%B9%B47%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B65-91%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E4-071236756.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "《半導體》聯陽7月8日除息",
-      "url": "https://tw.stock.yahoo.com/news/%E5%8D%8A%E5%B0%8E%E9%AB%94-%E8%81%AF%E9%99%BD7%E6%9C%888%E6%97%A5%E9%99%A4%E6%81%AF-063915651.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "《半導體》注意股：聯陽 近5日漲0.37%",
-      "url": "https://tw.stock.yahoo.com/news/%E5%8D%8A%E5%B0%8E%E9%AB%94-%E6%B3%A8%E6%84%8F%E8%82%A1-%E8%81%AF%E9%99%BD-%E8%BF%915%E6%97%A5%E6%BC%B20-37-001118547.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "《半導體》聯陽列注意股 4月每股盈餘1.02元",
-      "url": "https://tw.stock.yahoo.com/news/%E5%8D%8A%E5%B0%8E%E9%AB%94-%E8%81%AF%E9%99%BD%E5%88%97%E6%B3%A8%E6%84%8F%E8%82%A1-4%E6%9C%88%E6%AF%8F%E8%82%A1%E7%9B%88%E9%A4%981-02%E5%85%83-081841005.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "《半導體》注意股：聯陽 近5日跌1.48%",
-      "url": "https://tw.stock.yahoo.com/news/%E5%8D%8A%E5%B0%8E%E9%AB%94-%E6%B3%A8%E6%84%8F%E8%82%A1-%E8%81%AF%E9%99%BD-%E8%BF%915%E6%97%A5%E8%B7%8C1-48-000418216.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "《半導體》注意股：聯陽 近5日跌2.17%",
-      "url": "https://tw.stock.yahoo.com/news/%E5%8D%8A%E5%B0%8E%E9%AB%94-%E6%B3%A8%E6%84%8F%E8%82%A1-%E8%81%AF%E9%99%BD-%E8%BF%915%E6%97%A5%E8%B7%8C2-17-235653951.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "《半導體》注意股：聯陽 近5日跌3.94%",
-      "url": "https://tw.stock.yahoo.com/news/%E5%8D%8A%E5%B0%8E%E9%AB%94-%E6%B3%A8%E6%84%8F%E8%82%A1-%E8%81%AF%E9%99%BD-%E8%BF%915%E6%97%A5%E8%B7%8C3-94-002502374.html",
-      "source": "yahoo",
-      "date": null,
       "snippet": ""
     }
   ]

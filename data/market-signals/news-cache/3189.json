@@ -1,18 +1,154 @@
 {
   "stockCode": "3189",
-  "name": "景碩",
-  "scrapedAt": "2026-05-01T11:51:03.842Z",
-  "devSeed": true,
+  "name": "景碩科技",
+  "scrapedAt": "2026-05-01T12:11:41.709Z",
   "sourceCounts": {
-    "yahoo": 1,
-    "ltn": 0
+    "yahoo": 0,
+    "ltn": 20
+  },
+  "enrichStats": {
+    "fetched": 0,
+    "filled": 0
   },
   "news": [
     {
-      "title": "景碩 ABF 載板 出貨 AMD AI 處理器",
-      "url": "https://tw.stock.yahoo.com/news/3189-景碩 ABF-2026-01-20.html",
-      "source": "yahoo",
-      "date": "2026-01-20",
+      "title": "竹北年後首場徵才活動 42家廠商提供2911個職缺",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4949356",
+      "source": "ltn",
+      "date": "2025-02-12",
+      "snippet": ""
+    },
+    {
+      "title": "日月光舉辦「最佳供應商頒獎典禮」 印能等22家獲獎",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4704701",
+      "source": "ltn",
+      "date": "2024-06-13",
+      "snippet": ""
+    },
+    {
+      "title": "新竹產業園區徵才活動6/13登場  工程師、技術師薪資上看70K",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4698105",
+      "source": "ltn",
+      "date": "2024-06-07",
+      "snippet": ""
+    },
+    {
+      "title": "桃園市6場徵才接力登場 日月光工程師最高薪資可達10萬",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4260580",
+      "source": "ltn",
+      "date": "2023-04-04",
+      "snippet": ""
+    },
+    {
+      "title": "半導體與重點科技產業人才發展基地揭牌 提供待業者跨領域學習機會",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4163341",
+      "source": "ltn",
+      "date": "2022-12-23",
+      "snippet": ""
+    },
+    {
+      "title": "桃園徵才活動 日月光IT分析師開出100K",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4055846",
+      "source": "ltn",
+      "date": "2022-09-12",
+      "snippet": ""
+    },
+    {
+      "title": "台商PCB好威！市佔率32.8％居全球第1",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4034260",
+      "source": "ltn",
+      "date": "2022-08-23",
+      "snippet": ""
+    },
+    {
+      "title": "桃竹苗就博會登場 6成起薪超過30K",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4001513",
+      "source": "ltn",
+      "date": "2022-07-23",
+      "snippet": ""
+    },
+    {
+      "title": "自用搶買 工業地產上半年交易總額593億元 創歷史新高",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/3610610",
+      "source": "ltn",
+      "date": "2021-07-21",
+      "snippet": ""
+    },
+    {
+      "title": "北市推疫情加薪2萬專案 175家企業釋6644個工作機會",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/3591509",
+      "source": "ltn",
+      "date": "2021-07-04",
+      "snippet": ""
+    },
+    {
+      "title": "台商回台真的不是0元！ 新建廠名單經部全都露",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/2983204",
+      "source": "ltn",
+      "date": "2019-11-19",
+      "snippet": ""
+    },
+    {
+      "title": "台商回台再添5家  總投資金額已破3300億",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/2807388",
+      "source": "ltn",
+      "date": "2019-05-30",
+      "snippet": ""
+    },
+    {
+      "title": "〈財經週報-熱門話題〉企業員工幼兒園 孩子跟著爸媽上學",
+      "url": "https://ec.ltn.com.tw/article/paper/1271539",
+      "source": "ltn",
+      "date": "2019-03-04",
+      "snippet": ""
+    },
+    {
+      "title": "蘋果新機帶動 供應鏈搶人大作戰",
+      "url": "https://ec.ltn.com.tw/article/paper/1234935",
+      "source": "ltn",
+      "date": "2018-09-26",
+      "snippet": ""
+    },
+    {
+      "title": "蘋果新機帶動！光學產業徵才人數 創近6年同月新高",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/2561755",
+      "source": "ltn",
+      "date": "2018-09-25",
+      "snippet": ""
+    },
+    {
+      "title": "日月光 今年起對供應商加入「永續經營」評分機制",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/1641813",
+      "source": "ltn",
+      "date": "2016-03-23",
+      "snippet": ""
+    },
+    {
+      "title": "童子賢:大學虛榮心毀掉技職教育",
+      "url": "https://ec.ltn.com.tw/article/paper/652307",
+      "source": "ltn",
+      "date": "2013-02-04",
+      "snippet": ""
+    },
+    {
+      "title": "節能，中鋼連續三年獲傑出獎",
+      "url": "https://ec.ltn.com.tw/article/paper/138777",
+      "source": "ltn",
+      "date": "2007-07-01",
+      "snippet": ""
+    },
+    {
+      "title": "飛利浦發行ADR 台積電點頭",
+      "url": "https://ec.ltn.com.tw/article/paper/123558",
+      "source": "ltn",
+      "date": "2007-04-03",
+      "snippet": ""
+    },
+    {
+      "title": "景碩總座郭明棟 拿音樂當心靈藥方",
+      "url": "https://ec.ltn.com.tw/article/paper/122493",
+      "source": "ltn",
+      "date": "2007-03-28",
       "snippet": ""
     }
   ]

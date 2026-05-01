@@ -1,10 +1,14 @@
 {
   "stockCode": "2467",
   "name": "志聖工業",
-  "scrapedAt": "2026-05-01T11:29:07.848Z",
+  "scrapedAt": "2026-05-01T12:10:35.054Z",
   "sourceCounts": {
-    "yahoo": 20,
+    "yahoo": 0,
     "ltn": 20
+  },
+  "enrichStats": {
+    "fetched": 0,
+    "filled": 0
   },
   "news": [
     {
@@ -145,146 +149,6 @@
       "url": "https://ec.ltn.com.tw/article/paper/132856",
       "source": "ltn",
       "date": "2007-05-30",
-      "snippet": ""
-    },
-    {
-      "title": "【公告】代重要子公司志聖科技(廣州)有限公司公告2026年第二次股東臨時會重要決議事項",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E4%BB%A3%E9%87%8D%E8%A6%81%E5%AD%90%E5%85%AC%E5%8F%B8%E5%BF%97%E8%81%96%E7%A7%91%E6%8A%80-%E5%BB%A3%E5%B7%9E-%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%E5%85%AC%E5%91%8A2026%E5%B9%B4%E7%AC%AC%E4%BA%8C%E6%AC%A1%E8%82%A1%E6%9D%B1%E8%87%A8%E6%99%82%E6%9C%83%E9%87%8D%E8%A6%81%E6%B1%BA%E8%AD%B0%E4%BA%8B%E9%A0%85-090610145.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】代重要子公司志聖科技(廣州)有限公司公告股東臨時會決議通過盈餘匯回議案",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E4%BB%A3%E9%87%8D%E8%A6%81%E5%AD%90%E5%85%AC%E5%8F%B8%E5%BF%97%E8%81%96%E7%A7%91%E6%8A%80-%E5%BB%A3%E5%B7%9E-%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%E5%85%AC%E5%91%8A%E8%82%A1%E6%9D%B1%E8%87%A8%E6%99%82%E6%9C%83%E6%B1%BA%E8%AD%B0%E9%80%9A%E9%81%8E%E7%9B%88%E9%A4%98%E5%8C%AF%E5%9B%9E%E8%AD%B0%E6%A1%88-090608267.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】志聖代重要子公司蘇州創峰光電科技有限公司公告董事會決議不分派股利",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%BF%97%E8%81%96%E4%BB%A3%E9%87%8D%E8%A6%81%E5%AD%90%E5%85%AC%E5%8F%B8%E8%98%87%E5%B7%9E%E5%89%B5%E5%B3%B0%E5%85%89%E9%9B%BB%E7%A7%91%E6%8A%80%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%E5%85%AC%E5%91%8A%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E4%B8%8D%E5%88%86%E6%B4%BE%E8%82%A1%E5%88%A9-072509550.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】志聖代重要子公司志聖科技(廣州)有限公司公告董事變更案",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%BF%97%E8%81%96%E4%BB%A3%E9%87%8D%E8%A6%81%E5%AD%90%E5%85%AC%E5%8F%B8%E5%BF%97%E8%81%96%E7%A7%91%E6%8A%80-%E5%BB%A3%E5%B7%9E-%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%E5%85%AC%E5%91%8A%E8%91%A3%E4%BA%8B%E8%AE%8A%E6%9B%B4%E6%A1%88-072505808.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】志聖代重要子公司志聖科技(廣州)有限公司公告2026年第一次股東臨時會重要決議事項",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%BF%97%E8%81%96%E4%BB%A3%E9%87%8D%E8%A6%81%E5%AD%90%E5%85%AC%E5%8F%B8%E5%BF%97%E8%81%96%E7%A7%91%E6%8A%80-%E5%BB%A3%E5%B7%9E-%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%E5%85%AC%E5%91%8A2026%E5%B9%B4%E7%AC%AC-%E6%AC%A1%E8%82%A1%E6%9D%B1%E8%87%A8%E6%99%82%E6%9C%83%E9%87%8D%E8%A6%81%E6%B1%BA%E8%AD%B0%E4%BA%8B%E9%A0%85-072401250.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】志聖受邀參加寬量國際主辦之「19th Taiwan CEO Week」，會中就志聖115年第1季之財務報告相關資訊暨營運概況進行說明。",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%BF%97%E8%81%96%E5%8F%97%E9%82%80%E5%8F%83%E5%8A%A0%E5%AF%AC%E9%87%8F%E5%9C%8B%E9%9A%9B%E4%B8%BB%E8%BE%A6%E4%B9%8B-19th-taiwan-ceo-075555586.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】志聖115年Q1累計合併稅後自結損益",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%BF%97%E8%81%96115%E5%B9%B4q1%E7%B4%AF%E8%A8%88%E5%90%88%E4%BD%B5%E7%A8%85%E5%BE%8C%E8%87%AA%E7%B5%90%E6%90%8D%E7%9B%8A-074913842.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】因志聖有價證券於集中交易市場達公布注意交易資訊標準，故公布相關財務業務等重大訊息，以利投資人區別瞭解",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%9B%A0%E5%BF%97%E8%81%96%E6%9C%89%E5%83%B9%E8%AD%89%E5%88%B8%E6%96%BC%E9%9B%86%E4%B8%AD%E4%BA%A4%E6%98%93%E5%B8%82%E5%A0%B4%E9%81%94%E5%85%AC%E5%B8%83%E6%B3%A8%E6%84%8F%E4%BA%A4%E6%98%93%E8%B3%87%E8%A8%8A%E6%A8%99%E6%BA%96-%E6%95%85%E5%85%AC%E5%B8%83%E7%9B%B8%E9%97%9C%E8%B2%A1%E5%8B%99%E6%A5%AD%E5%8B%99%E7%AD%89%E9%87%8D%E5%A4%A7%E8%A8%8A%E6%81%AF-%E4%BB%A5%E5%88%A9%E6%8A%95%E8%B3%87%E4%BA%BA%E5%8D%80%E5%88%A5%E7%9E%AD%E8%A7%A3-074911877.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】志聖 2026年3月合併營收8.93億元 年增77.59%",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%BF%97%E8%81%96-2026%E5%B9%B43%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B68-93%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E77-074218714.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】志聖受邀參加BoFA外資論壇，會中就志聖114年第4季之財務報告相關資訊暨營運概況進行說明。",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%BF%97%E8%81%96%E5%8F%97%E9%82%80%E5%8F%83%E5%8A%A0bofa%E5%A4%96%E8%B3%87%E8%AB%96%E5%A3%87-%E6%9C%83%E4%B8%AD%E5%B0%B1%E5%BF%97%E8%81%96114%E5%B9%B4%E7%AC%AC4%E5%AD%A3%E4%B9%8B%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A%E7%9B%B8%E9%97%9C%E8%B3%87%E8%A8%8A%E6%9A%A8%E7%87%9F%E9%81%8B%E6%A6%82%E6%B3%81%E9%80%B2%E8%A1%8C%E8%AA%AA%E6%98%8E-085630102.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】志聖 2026年2月合併營收3.74億元 年增3.25%",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%BF%97%E8%81%96-2026%E5%B9%B42%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B63-74%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E3-011129783.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】志聖受邀參加Citi&#x27;&#x27;s 2026 Taiwan Corporate Day，會中就志聖114年第4季之財務報告相關資訊暨營運概況進行說明。",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%BF%97%E8%81%96%E5%8F%97%E9%82%80%E5%8F%83%E5%8A%A0citis-2026-taiwan-corporate-082714454.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】志聖代重要子公司志聖科技(廣州)有限公司公告總經理異動案",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%BF%97%E8%81%96%E4%BB%A3%E9%87%8D%E8%A6%81%E5%AD%90%E5%85%AC%E5%8F%B8%E5%BF%97%E8%81%96%E7%A7%91%E6%8A%80-%E5%BB%A3%E5%B7%9E-%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%E5%85%AC%E5%91%8A%E7%B8%BD%E7%B6%93%E7%90%86%E7%95%B0%E5%8B%95%E6%A1%88-094933384.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】因志聖有價證券於集中交易市場達公布注意交易資訊標準，故公布相關財務業務等重大訊息，以利投資人區別瞭解",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%9B%A0%E5%BF%97%E8%81%96%E6%9C%89%E5%83%B9%E8%AD%89%E5%88%B8%E6%96%BC%E9%9B%86%E4%B8%AD%E4%BA%A4%E6%98%93%E5%B8%82%E5%A0%B4%E9%81%94%E5%85%AC%E5%B8%83%E6%B3%A8%E6%84%8F%E4%BA%A4%E6%98%93%E8%B3%87%E8%A8%8A%E6%A8%99%E6%BA%96-%E6%95%85%E5%85%AC%E5%B8%83%E7%9B%B8%E9%97%9C%E8%B2%A1%E5%8B%99%E6%A5%AD%E5%8B%99%E7%AD%89%E9%87%8D%E5%A4%A7%E8%A8%8A%E6%81%AF-%E4%BB%A5%E5%88%A9%E6%8A%95%E8%B3%87%E4%BA%BA%E5%8D%80%E5%88%A5%E7%9E%AD%E8%A7%A3-072426271.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】志聖受邀參加元大證券2026 第一季投資論壇，會中就志聖114年第4季之財務報告相關資訊暨營運概況進行說明。",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%BF%97%E8%81%96%E5%8F%97%E9%82%80%E5%8F%83%E5%8A%A0%E5%85%83%E5%A4%A7%E8%AD%89%E5%88%B82026-%E7%AC%AC-%E5%AD%A3%E6%8A%95%E8%B3%87%E8%AB%96%E5%A3%87-%E6%9C%83%E4%B8%AD%E5%B0%B1%E5%BF%97%E8%81%96114%E5%B9%B4%E7%AC%AC4%E5%AD%A3%E4%B9%8B%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A%E7%9B%B8%E9%97%9C%E8%B3%87%E8%A8%8A%E6%9A%A8%E7%87%9F%E9%81%8B%E6%A6%82%E6%B3%81%E9%80%B2%E8%A1%8C%E8%AA%AA%E6%98%8E-084347114.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "MSCI甩尾大洗牌 台股噴「1.1兆」史上最大天量｜Yahoo財經掃描",
-      "url": "https://tw.stock.yahoo.com/news/msci%E7%94%A9%E5%B0%BE%E5%A4%A7%E6%B4%97%E7%89%8C-%E5%8F%B0%E8%82%A1%E5%99%B4%E3%80%8C11%E5%85%86%E3%80%8D%E5%8F%B2%E4%B8%8A%E6%9C%80%E5%A4%A7%E5%A4%A9%E9%87%8F%EF%BD%9Cyahoo%E8%B2%A1%E7%B6%93%E6%8E%83%E6%8F%8F-092802551.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】志聖董事會決議114年度合併財務報告",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%BF%97%E8%81%96%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0114%E5%B9%B4%E5%BA%A6%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A-095905494.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】董事會決議股利分派",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E8%82%A1%E5%88%A9%E5%88%86%E6%B4%BE-095902030.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】志聖庫藏股轉讓員工認股基準日",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%BF%97%E8%81%96%E5%BA%AB%E8%97%8F%E8%82%A1%E8%BD%89%E8%AE%93%E5%93%A1%E5%B7%A5%E8%AA%8D%E8%82%A1%E5%9F%BA%E6%BA%96%E6%97%A5-095900195.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】志聖執行長及行政副總異動案",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%BF%97%E8%81%96%E5%9F%B7%E8%A1%8C%E9%95%B7%E5%8F%8A%E8%A1%8C%E6%94%BF%E5%89%AF%E7%B8%BD%E7%95%B0%E5%8B%95%E6%A1%88-095858808.html",
-      "source": "yahoo",
-      "date": null,
       "snippet": ""
     }
   ]

@@ -1,10 +1,14 @@
 {
   "stockCode": "6735",
   "name": "美達科技",
-  "scrapedAt": "2026-05-01T11:31:26.420Z",
+  "scrapedAt": "2026-05-01T12:16:58.980Z",
   "sourceCounts": {
-    "yahoo": 20,
+    "yahoo": 0,
     "ltn": 3
+  },
+  "enrichStats": {
+    "fetched": 0,
+    "filled": 0
   },
   "news": [
     {
@@ -26,146 +30,6 @@
       "url": "https://ec.ltn.com.tw/article/breakingnews/3877047",
       "source": "ltn",
       "date": "2022-03-30",
-      "snippet": ""
-    },
-    {
-      "title": "【公告】美達科技115年第1季合併財務報告董事會預計召開日期115年5月7日",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E7%BE%8E%E9%81%94%E7%A7%91%E6%8A%80115%E5%B9%B4%E7%AC%AC1%E5%AD%A3%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A%E8%91%A3%E4%BA%8B%E6%9C%83%E9%A0%90%E8%A8%88%E5%8F%AC%E9%96%8B%E6%97%A5%E6%9C%9F115%E5%B9%B45%E6%9C%887%E6%97%A5-103638504.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】美達科技有價證券近期多次達公布注意交易資訊標準，故公告相關訊息，以利投資人區別暸解",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E7%BE%8E%E9%81%94%E7%A7%91%E6%8A%80%E6%9C%89%E5%83%B9%E8%AD%89%E5%88%B8%E8%BF%91%E6%9C%9F%E5%A4%9A%E6%AC%A1%E9%81%94%E5%85%AC%E5%B8%83%E6%B3%A8%E6%84%8F%E4%BA%A4%E6%98%93%E8%B3%87%E8%A8%8A%E6%A8%99%E6%BA%96-%E6%95%85%E5%85%AC%E5%91%8A%E7%9B%B8%E9%97%9C%E8%A8%8A%E6%81%AF-%E4%BB%A5%E5%88%A9%E6%8A%95%E8%B3%87%E4%BA%BA%E5%8D%80%E5%88%A5%E6%9A%B8%E8%A7%A3-072431150.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】更正美達科技114年關係企業合併營業報告書資訊",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%9B%B4%E6%AD%A3%E7%BE%8E%E9%81%94%E7%A7%91%E6%8A%80114%E5%B9%B4%E9%97%9C%E4%BF%82%E4%BC%81%E6%A5%AD%E5%90%88%E4%BD%B5%E7%87%9F%E6%A5%AD%E5%A0%B1%E5%91%8A%E6%9B%B8%E8%B3%87%E8%A8%8A-112246350.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】美達科技董事會決議召開115年股東常會相關事宜(更正-無討論事項)",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E7%BE%8E%E9%81%94%E7%A7%91%E6%8A%80%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E5%8F%AC%E9%96%8B115%E5%B9%B4%E8%82%A1%E6%9D%B1%E5%B8%B8%E6%9C%83%E7%9B%B8%E9%97%9C%E4%BA%8B%E5%AE%9C-%E6%9B%B4%E6%AD%A3-%E7%84%A1%E8%A8%8E%E8%AB%96%E4%BA%8B%E9%A0%85-101401794.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】美達科技 2026年3月合併營收4386.3萬元 年增299.59%",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E7%BE%8E%E9%81%94%E7%A7%91%E6%8A%80-2026%E5%B9%B43%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B64386-3%E8%90%AC%E5%85%83-%E5%B9%B4%E5%A2%9E299-093306668.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】美達科技董事會決議召開115年股東常會相關事宜",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E7%BE%8E%E9%81%94%E7%A7%91%E6%8A%80%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E5%8F%AC%E9%96%8B115%E5%B9%B4%E8%82%A1%E6%9D%B1%E5%B8%B8%E6%9C%83%E7%9B%B8%E9%97%9C%E4%BA%8B%E5%AE%9C-131311808.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】美達科技董事會通過114度合併財務報告",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E7%BE%8E%E9%81%94%E7%A7%91%E6%8A%80%E8%91%A3%E4%BA%8B%E6%9C%83%E9%80%9A%E9%81%8E114%E5%BA%A6%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A-131309730.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】美達科技董事會重要決議事項",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E7%BE%8E%E9%81%94%E7%A7%91%E6%8A%80%E8%91%A3%E4%BA%8B%E6%9C%83%E9%87%8D%E8%A6%81%E6%B1%BA%E8%AD%B0%E4%BA%8B%E9%A0%85-130644756.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】美達科技董事會決議股利分派",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E7%BE%8E%E9%81%94%E7%A7%91%E6%8A%80%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E8%82%A1%E5%88%A9%E5%88%86%E6%B4%BE-130642205.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】美達科技 2026年2月合併營收2436.4萬元 年增16.14%",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E7%BE%8E%E9%81%94%E7%A7%91%E6%8A%80-2026%E5%B9%B42%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B62436-4%E8%90%AC%E5%85%83-%E5%B9%B4%E5%A2%9E16-101350353.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】美達科技114年度合併暨個體財務報告董事會預計召開日期115年3月9日",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E7%BE%8E%E9%81%94%E7%A7%91%E6%8A%80114%E5%B9%B4%E5%BA%A6%E5%90%88%E4%BD%B5%E6%9A%A8%E5%80%8B%E9%AB%94%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A%E8%91%A3%E4%BA%8B%E6%9C%83%E9%A0%90%E8%A8%88%E5%8F%AC%E9%96%8B%E6%97%A5%E6%9C%9F115%E5%B9%B43%E6%9C%889%E6%97%A5-115429569.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】美達科技業務副總異動",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E7%BE%8E%E9%81%94%E7%A7%91%E6%8A%80%E6%A5%AD%E5%8B%99%E5%89%AF%E7%B8%BD%E7%95%B0%E5%8B%95-115427031.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】美達科技 2026年1月合併營收2545萬元 年增-21.34%",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E7%BE%8E%E9%81%94%E7%A7%91%E6%8A%80-2026%E5%B9%B41%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B62545%E8%90%AC%E5%85%83-%E5%B9%B4%E5%A2%9E-21-102406258.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】美達科技 2025年12月合併營收3967.5萬元 年增60.6%",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E7%BE%8E%E9%81%94%E7%A7%91%E6%8A%80-2025%E5%B9%B412%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B63967-5%E8%90%AC%E5%85%83-%E5%B9%B4%E5%A2%9E60-110157173.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】美達科技受邀參加群益金鼎證券舉辦之法人說明會",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E7%BE%8E%E9%81%94%E7%A7%91%E6%8A%80%E5%8F%97%E9%82%80%E5%8F%83%E5%8A%A0%E7%BE%A4%E7%9B%8A%E9%87%91%E9%BC%8E%E8%AD%89%E5%88%B8%E8%88%89%E8%BE%A6%E4%B9%8B%E6%B3%95%E4%BA%BA%E8%AA%AA%E6%98%8E%E6%9C%83-095540928.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】美達科技 2025年11月合併營收3972萬元 年增64.95%",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E7%BE%8E%E9%81%94%E7%A7%91%E6%8A%80-2025%E5%B9%B411%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B63972%E8%90%AC%E5%85%83-%E5%B9%B4%E5%A2%9E64-95-101137245.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】美達科技 2025年10月合併營收4138.2萬元 年增102.73%",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E7%BE%8E%E9%81%94%E7%A7%91%E6%8A%80-2025%E5%B9%B410%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B64138-2%E8%90%AC%E5%85%83-%E5%B9%B4%E5%A2%9E102-094135854.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】美達科技董事會重要決議事項",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E7%BE%8E%E9%81%94%E7%A7%91%E6%8A%80%E8%91%A3%E4%BA%8B%E6%9C%83%E9%87%8D%E8%A6%81%E6%B1%BA%E8%AD%B0%E4%BA%8B%E9%A0%85-094521776.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】美達科技董事會通過114年第3季合併財務報表",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E7%BE%8E%E9%81%94%E7%A7%91%E6%8A%80%E8%91%A3%E4%BA%8B%E6%9C%83%E9%80%9A%E9%81%8E114%E5%B9%B4%E7%AC%AC3%E5%AD%A3%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E8%A1%A8-094519584.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】美達科技114年第3季合併財務報告董事會預計召開日期114年11月5日",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E7%BE%8E%E9%81%94%E7%A7%91%E6%8A%80114%E5%B9%B4%E7%AC%AC3%E5%AD%A3%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A%E8%91%A3%E4%BA%8B%E6%9C%83%E9%A0%90%E8%A8%88%E5%8F%AC%E9%96%8B%E6%97%A5%E6%9C%9F114%E5%B9%B411%E6%9C%885%E6%97%A5-072235648.html",
-      "source": "yahoo",
-      "date": null,
       "snippet": ""
     }
   ]

@@ -1,12 +1,156 @@
 {
   "stockCode": "2444",
   "name": "兆勁科技",
-  "scrapedAt": "2026-05-01T11:29:00.411Z",
+  "scrapedAt": "2026-05-01T12:10:03.432Z",
   "sourceCounts": {
     "yahoo": 20,
     "ltn": 3
   },
+  "enrichStats": {
+    "fetched": 20,
+    "filled": 20
+  },
   "news": [
+    {
+      "title": "【公告】兆勁115年第一季合併財務報告董事會預計召開日期為115年05月13日",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%85%86%E5%8B%81115%E5%B9%B4%E7%AC%AC-%E5%AD%A3%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A%E8%91%A3%E4%BA%8B%E6%9C%83%E9%A0%90%E8%A8%88%E5%8F%AC%E9%96%8B%E6%97%A5%E6%9C%9F%E7%82%BA115%E5%B9%B405%E6%9C%8813%E6%97%A5-074609819.html",
+      "source": "yahoo",
+      "date": "2026-04-30",
+      "snippet": ""
+    },
+    {
+      "title": "【公告】兆勁 2026年3月合併營收7263.4萬元 年增-26.89%",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%85%86%E5%8B%81-2026%E5%B9%B43%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B67263-4%E8%90%AC%E5%85%83-%E5%B9%B4%E5%A2%9E-072506428.html",
+      "source": "yahoo",
+      "date": "2026-04-10",
+      "snippet": ""
+    },
+    {
+      "title": "【公告】兆勁 2026年2月合併營收5319.2萬元 年增-45.06%",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%85%86%E5%8B%81-2026%E5%B9%B42%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B65319-2%E8%90%AC%E5%85%83-%E5%B9%B4%E5%A2%9E-065222559.html",
+      "source": "yahoo",
+      "date": "2026-03-10",
+      "snippet": ""
+    },
+    {
+      "title": "【公告】兆勁董事會決議召開115年股東常會相關事宜",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%85%86%E5%8B%81%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E5%8F%AC%E9%96%8B115%E5%B9%B4%E8%82%A1%E6%9D%B1%E5%B8%B8%E6%9C%83%E7%9B%B8%E9%97%9C%E4%BA%8B%E5%AE%9C-103448971.html",
+      "source": "yahoo",
+      "date": "2026-03-03",
+      "snippet": ""
+    },
+    {
+      "title": "【公告】兆勁董事會決議擬辦理私募有價證券案",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%85%86%E5%8B%81%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E6%93%AC%E8%BE%A6%E7%90%86%E7%A7%81%E5%8B%9F%E6%9C%89%E5%83%B9%E8%AD%89%E5%88%B8%E6%A1%88-103427557.html",
+      "source": "yahoo",
+      "date": "2026-03-03",
+      "snippet": ""
+    },
+    {
+      "title": "【公告】兆勁董事會決議通過114年第四季合併財務報表",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%85%86%E5%8B%81%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E9%80%9A%E9%81%8E114%E5%B9%B4%E7%AC%AC%E5%9B%9B%E5%AD%A3%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E8%A1%A8-103425594.html",
+      "source": "yahoo",
+      "date": "2026-03-03",
+      "snippet": ""
+    },
+    {
+      "title": "【公告】兆勁董事會決議114年度不分派股利",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%85%86%E5%8B%81%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0114%E5%B9%B4%E5%BA%A6%E4%B8%8D%E5%88%86%E6%B4%BE%E8%82%A1%E5%88%A9-103422089.html",
+      "source": "yahoo",
+      "date": "2026-03-03",
+      "snippet": ""
+    },
+    {
+      "title": "【公告】兆勁114年度財務報告董事會預計召開日期為115年3月3日",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%85%86%E5%8B%81114%E5%B9%B4%E5%BA%A6%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A%E8%91%A3%E4%BA%8B%E6%9C%83%E9%A0%90%E8%A8%88%E5%8F%AC%E9%96%8B%E6%97%A5%E6%9C%9F%E7%82%BA115%E5%B9%B43%E6%9C%883%E6%97%A5-072730635.html",
+      "source": "yahoo",
+      "date": "2026-02-11",
+      "snippet": ""
+    },
+    {
+      "title": "【公告】兆勁 2026年1月合併營收7757.3萬元 年增-20.41%",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%85%86%E5%8B%81-2026%E5%B9%B41%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B67757-3%E8%90%AC%E5%85%83-%E5%B9%B4%E5%A2%9E-070254586.html",
+      "source": "yahoo",
+      "date": "2026-02-10",
+      "snippet": ""
+    },
+    {
+      "title": "【公告】兆勁 2025年12月合併營收1.34億元 年增31.22%",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%85%86%E5%8B%81-2025%E5%B9%B412%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B61-34%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E31-070305795.html",
+      "source": "yahoo",
+      "date": "2026-01-09",
+      "snippet": ""
+    },
+    {
+      "title": "【公告】兆勁 2025年11月合併營收5348.7萬元 年增-60.35%",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%85%86%E5%8B%81-2025%E5%B9%B411%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B65348-7%E8%90%AC%E5%85%83-%E5%B9%B4%E5%A2%9E-072312783.html",
+      "source": "yahoo",
+      "date": "2025-12-09",
+      "snippet": ""
+    },
+    {
+      "title": "【公告】兆勁董事會決議通過114年第三季合併財務報表",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%85%86%E5%8B%81%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E9%80%9A%E9%81%8E114%E5%B9%B4%E7%AC%AC%E4%B8%89%E5%AD%A3%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E8%A1%A8-083649430.html",
+      "source": "yahoo",
+      "date": "2025-11-12",
+      "snippet": ""
+    },
+    {
+      "title": "【公告】兆勁 2025年10月合併營收7477.4萬元 年增-52.69%",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%85%86%E5%8B%81-2025%E5%B9%B410%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B67477-4%E8%90%AC%E5%85%83-%E5%B9%B4%E5%A2%9E-113127944.html",
+      "source": "yahoo",
+      "date": "2025-11-10",
+      "snippet": ""
+    },
+    {
+      "title": "【公告】兆勁114年第三季合併財務報告董事會預計召開日期為114年11月12日",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%85%86%E5%8B%81114%E5%B9%B4%E7%AC%AC%E4%B8%89%E5%AD%A3%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A%E8%91%A3%E4%BA%8B%E6%9C%83%E9%A0%90%E8%A8%88%E5%8F%AC%E9%96%8B%E6%97%A5%E6%9C%9F%E7%82%BA114%E5%B9%B411%E6%9C%8812%E6%97%A5-075658191.html",
+      "source": "yahoo",
+      "date": "2025-10-29",
+      "snippet": ""
+    },
+    {
+      "title": "【公告】兆勁將於114年10月22日舉辦法人說明會",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%85%86%E5%8B%81%E5%B0%87%E6%96%BC114%E5%B9%B410%E6%9C%8822%E6%97%A5%E8%88%89%E8%BE%A6%E6%B3%95%E4%BA%BA%E8%AA%AA%E6%98%8E%E6%9C%83-062553531.html",
+      "source": "yahoo",
+      "date": "2025-10-21",
+      "snippet": ""
+    },
+    {
+      "title": "【公告】兆勁 2025年9月合併營收1.02億元 年增-10.19%",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%85%86%E5%8B%81-2025%E5%B9%B49%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B61-02%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E-100201772.html",
+      "source": "yahoo",
+      "date": "2025-10-08",
+      "snippet": ""
+    },
+    {
+      "title": "【公告】兆勁 2025年8月合併營收8464.5萬元 年增-43.65%",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%85%86%E5%8B%81-2025%E5%B9%B48%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B68464-5%E8%90%AC%E5%85%83-%E5%B9%B4%E5%A2%9E-064202010.html",
+      "source": "yahoo",
+      "date": "2025-09-08",
+      "snippet": ""
+    },
+    {
+      "title": "【公告】兆勁 2025年7月合併營收8614.3萬元 年增-11.63%",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%85%86%E5%8B%81-2025%E5%B9%B47%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B68614-3%E8%90%AC%E5%85%83-%E5%B9%B4%E5%A2%9E-075354294.html",
+      "source": "yahoo",
+      "date": "2025-08-08",
+      "snippet": ""
+    },
+    {
+      "title": "【公告】兆勁 2025年5月合併營收1.1億元 年增13.29%",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%85%86%E5%8B%81-2025%E5%B9%B45%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B61-1%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E13-083203209.html",
+      "source": "yahoo",
+      "date": "2025-06-09",
+      "snippet": ""
+    },
+    {
+      "title": "《業績-通網》兆勁5月營收為1.10億元，年增13.29%",
+      "url": "https://tw.stock.yahoo.com/news/%E6%A5%AD%E7%B8%BE-%E9%80%9A%E7%B6%B2-%E5%85%86%E5%8B%815%E6%9C%88%E7%87%9F%E6%94%B6%E7%82%BA1-10%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E13-082812683.html",
+      "source": "yahoo",
+      "date": "2025-06-09",
+      "snippet": ""
+    },
     {
       "title": "涉配合股市作手男友炒股 兆勁副董李蕎咪20萬元交保",
       "url": "https://ec.ltn.com.tw/article/breakingnews/4464086",
@@ -26,146 +170,6 @@
       "url": "https://ec.ltn.com.tw/article/breakingnews/2704748",
       "source": "ltn",
       "date": "2019-02-20",
-      "snippet": ""
-    },
-    {
-      "title": "【公告】兆勁115年第一季合併財務報告董事會預計召開日期為115年05月13日",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%85%86%E5%8B%81115%E5%B9%B4%E7%AC%AC-%E5%AD%A3%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A%E8%91%A3%E4%BA%8B%E6%9C%83%E9%A0%90%E8%A8%88%E5%8F%AC%E9%96%8B%E6%97%A5%E6%9C%9F%E7%82%BA115%E5%B9%B405%E6%9C%8813%E6%97%A5-074609819.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】兆勁 2026年3月合併營收7263.4萬元 年增-26.89%",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%85%86%E5%8B%81-2026%E5%B9%B43%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B67263-4%E8%90%AC%E5%85%83-%E5%B9%B4%E5%A2%9E-072506428.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】兆勁 2026年2月合併營收5319.2萬元 年增-45.06%",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%85%86%E5%8B%81-2026%E5%B9%B42%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B65319-2%E8%90%AC%E5%85%83-%E5%B9%B4%E5%A2%9E-065222559.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】兆勁董事會決議召開115年股東常會相關事宜",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%85%86%E5%8B%81%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E5%8F%AC%E9%96%8B115%E5%B9%B4%E8%82%A1%E6%9D%B1%E5%B8%B8%E6%9C%83%E7%9B%B8%E9%97%9C%E4%BA%8B%E5%AE%9C-103448971.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】兆勁董事會決議擬辦理私募有價證券案",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%85%86%E5%8B%81%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E6%93%AC%E8%BE%A6%E7%90%86%E7%A7%81%E5%8B%9F%E6%9C%89%E5%83%B9%E8%AD%89%E5%88%B8%E6%A1%88-103427557.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】兆勁董事會決議通過114年第四季合併財務報表",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%85%86%E5%8B%81%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E9%80%9A%E9%81%8E114%E5%B9%B4%E7%AC%AC%E5%9B%9B%E5%AD%A3%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E8%A1%A8-103425594.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】兆勁董事會決議114年度不分派股利",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%85%86%E5%8B%81%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0114%E5%B9%B4%E5%BA%A6%E4%B8%8D%E5%88%86%E6%B4%BE%E8%82%A1%E5%88%A9-103422089.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】兆勁114年度財務報告董事會預計召開日期為115年3月3日",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%85%86%E5%8B%81114%E5%B9%B4%E5%BA%A6%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A%E8%91%A3%E4%BA%8B%E6%9C%83%E9%A0%90%E8%A8%88%E5%8F%AC%E9%96%8B%E6%97%A5%E6%9C%9F%E7%82%BA115%E5%B9%B43%E6%9C%883%E6%97%A5-072730635.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】兆勁 2026年1月合併營收7757.3萬元 年增-20.41%",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%85%86%E5%8B%81-2026%E5%B9%B41%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B67757-3%E8%90%AC%E5%85%83-%E5%B9%B4%E5%A2%9E-070254586.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】兆勁 2025年12月合併營收1.34億元 年增31.22%",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%85%86%E5%8B%81-2025%E5%B9%B412%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B61-34%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E31-070305795.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】兆勁 2025年11月合併營收5348.7萬元 年增-60.35%",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%85%86%E5%8B%81-2025%E5%B9%B411%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B65348-7%E8%90%AC%E5%85%83-%E5%B9%B4%E5%A2%9E-072312783.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】兆勁董事會決議通過114年第三季合併財務報表",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%85%86%E5%8B%81%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E9%80%9A%E9%81%8E114%E5%B9%B4%E7%AC%AC%E4%B8%89%E5%AD%A3%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E8%A1%A8-083649430.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】兆勁 2025年10月合併營收7477.4萬元 年增-52.69%",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%85%86%E5%8B%81-2025%E5%B9%B410%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B67477-4%E8%90%AC%E5%85%83-%E5%B9%B4%E5%A2%9E-113127944.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】兆勁114年第三季合併財務報告董事會預計召開日期為114年11月12日",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%85%86%E5%8B%81114%E5%B9%B4%E7%AC%AC%E4%B8%89%E5%AD%A3%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A%E8%91%A3%E4%BA%8B%E6%9C%83%E9%A0%90%E8%A8%88%E5%8F%AC%E9%96%8B%E6%97%A5%E6%9C%9F%E7%82%BA114%E5%B9%B411%E6%9C%8812%E6%97%A5-075658191.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】兆勁將於114年10月22日舉辦法人說明會",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%85%86%E5%8B%81%E5%B0%87%E6%96%BC114%E5%B9%B410%E6%9C%8822%E6%97%A5%E8%88%89%E8%BE%A6%E6%B3%95%E4%BA%BA%E8%AA%AA%E6%98%8E%E6%9C%83-062553531.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】兆勁 2025年9月合併營收1.02億元 年增-10.19%",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%85%86%E5%8B%81-2025%E5%B9%B49%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B61-02%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E-100201772.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】兆勁 2025年8月合併營收8464.5萬元 年增-43.65%",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%85%86%E5%8B%81-2025%E5%B9%B48%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B68464-5%E8%90%AC%E5%85%83-%E5%B9%B4%E5%A2%9E-064202010.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】兆勁 2025年7月合併營收8614.3萬元 年增-11.63%",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%85%86%E5%8B%81-2025%E5%B9%B47%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B68614-3%E8%90%AC%E5%85%83-%E5%B9%B4%E5%A2%9E-075354294.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】兆勁 2025年5月合併營收1.1億元 年增13.29%",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%85%86%E5%8B%81-2025%E5%B9%B45%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B61-1%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E13-083203209.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "《業績-通網》兆勁5月營收為1.10億元，年增13.29%",
-      "url": "https://tw.stock.yahoo.com/news/%E6%A5%AD%E7%B8%BE-%E9%80%9A%E7%B6%B2-%E5%85%86%E5%8B%815%E6%9C%88%E7%87%9F%E6%94%B6%E7%82%BA1-10%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E13-082812683.html",
-      "source": "yahoo",
-      "date": null,
       "snippet": ""
     }
   ]
