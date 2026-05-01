@@ -88,7 +88,12 @@ export type SnapshotEntry = {
   label: string;
   /** placeholder 為 true 時表示「預期會有但還沒實際存在」,以下欄位都是 undefined */
   placeholder: boolean;
+  /** -light 版 URL(無 abstract,主要使用) */
   url?: string;
+  /** 完整 URL(含 abstract,目前不主動載) */
+  urlFull?: string;
+  /** abstracts only URL({ id: abstract } map),lazy load 用 */
+  urlAbstracts?: string;
   region?: string | null;
   totalCompanies?: number;
   totalPatents?: number;
@@ -155,8 +160,48 @@ export async function loadSnapshotByDate(
 
 // ============== Loader (fetch + Promise cache) ==============
 
-/** 預設 snapshot 路徑(以後若要支援多快照切換,改寫成 loadInsights(date) 即可) */
-const DEFAULT_INSIGHTS_URL = "/data/insights-2025-02-15.json";
+/**
+ * 預設 snapshot 路徑 — 用 -light 版本(無 abstract,~1.16MB → gzip ~250KB)。
+ * abstract 透過 getPatentAbstract(id) lazy load,只在 patent modal 開啟時才需要。
+ */
+const DEFAULT_INSIGHTS_URL = "/data/insights-2025-02-15-light.json";
+
+// ============== Abstract lazy loader ==============
+
+const ABSTRACTS_URL = "/data/insights-2025-02-15-abstracts.json";
+let abstractsCache: Promise<Record<string, string>> | null = null;
+
+/**
+ * 取得某 patent 的 abstract(lazy)。
+ * 第一次呼叫會 fetch ~1.7MB 的 abstracts 檔(整批快取);之後 O(1) 查表。
+ */
+export async function getPatentAbstract(patentId: string): Promise<string> {
+  if (!abstractsCache) {
+    abstractsCache = fetch(ABSTRACTS_URL)
+      .then((r) => {
+        if (!r.ok) throw new Error("Failed to load abstracts: HTTP " + r.status);
+        return r.json() as Promise<Record<string, string>>;
+      })
+      .catch((err) => {
+        abstractsCache = null;
+        throw err;
+      });
+  }
+  const map = await abstractsCache;
+  return map[patentId] || "";
+}
+
+/** 預先 prefetch abstracts,讓使用者一進站就在背景下載(可選) */
+export function prefetchAbstracts(): void {
+  if (!abstractsCache) {
+    abstractsCache = fetch(ABSTRACTS_URL)
+      .then((r) => r.json() as Promise<Record<string, string>>)
+      .catch((err) => {
+        abstractsCache = null;
+        throw err;
+      });
+  }
+}
 
 let cachedPromise: Promise<InsightsDataset> | null = null;
 

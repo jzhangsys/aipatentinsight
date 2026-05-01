@@ -196,9 +196,40 @@ export default function PatentMapClient() {
   if (!dataset) {
     return (
       <main className="ai-page ai-patent-map">
-        <div className="ai-map-loading">
-          <div className="ai-map-loading-text">Loading Patent Graph</div>
-          <div className="ai-map-loading-bar" />
+        {/* 結構骨架:暗示 header + canvas + legend + stats 位置,讓使用者第一秒就看到「框」 */}
+        <header className="ai-page-header">
+          <div>
+            <h1 className="ai-page-title">Patent Intelligence Map</h1>
+            <p className="ai-page-description">載入專利資料中…</p>
+          </div>
+          <div className="ai-controls ai-skeleton-controls" aria-hidden="true">
+            <span className="ai-skeleton-block" style={{ width: 110, height: 28 }} />
+            <span className="ai-skeleton-block" style={{ width: 140, height: 28 }} />
+            <span className="ai-skeleton-block" style={{ width: 180, height: 28 }} />
+            <span className="ai-skeleton-block" style={{ width: 100, height: 28 }} />
+          </div>
+        </header>
+        <div className="ai-map-skeleton-canvas" aria-hidden="true" />
+        <aside className="ai-map-legend ai-skeleton-legend" aria-hidden="true">
+          <div className="ai-skeleton-block" style={{ width: 120, height: 10, marginBottom: 12 }} />
+          {Array.from({ length: 8 }).map((_, i) => (
+            <div key={i} className="ai-skeleton-row">
+              <span className="ai-skeleton-dot" />
+              <span className="ai-skeleton-block" style={{ flex: 1, height: 10 }} />
+            </div>
+          ))}
+        </aside>
+        <div className="ai-map-stats ai-skeleton-stats" aria-hidden="true">
+          {Array.from({ length: 3 }).map((_, i) => (
+            <div key={i} className="ai-map-stat">
+              <span className="ai-skeleton-block" style={{ width: 60, height: 8, marginBottom: 4 }} />
+              <span className="ai-skeleton-block" style={{ width: 50, height: 18 }} />
+            </div>
+          ))}
+        </div>
+        <div className="ai-map-loading-pill" aria-live="polite">
+          <span className="ai-map-loading-spinner" />
+          Loading Patent Graph
         </div>
       </main>
     );

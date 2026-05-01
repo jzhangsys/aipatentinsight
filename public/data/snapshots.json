@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-30T14:21:44.404Z",
+  "generatedAt": "2026-05-01T01:49:21.594Z",
   "totalActual": 1,
   "totalExpected": 6,
   "timeline": [
@@ -30,7 +30,9 @@
     },
     {
       "date": "2025-02-15",
-      "url": "/data/insights-2025-02-15.json",
+      "url": "/data/insights-2025-02-15-light.json",
+      "urlFull": "/data/insights-2025-02-15.json",
+      "urlAbstracts": "/data/insights-2025-02-15-abstracts.json",
       "label": "2025/02",
       "region": "台灣",
       "totalCompanies": 719,

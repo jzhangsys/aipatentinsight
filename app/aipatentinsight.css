@@ -3420,3 +3420,95 @@
   .ai-hero-page.ocean .ai-hero-ruler-date { font-size: 26px; margin-bottom: 14px; }
   .ai-hero-page.ocean .ai-hero-ruler-years { font-size: 9px; }
 }
+
+/* ============================================================
+   Patent Map Loading Skeleton(R6 升級)
+   暗示 header + canvas + legend + stats 位置,讓首載第一秒就有結構感
+   ============================================================ */
+
+.ai-patent-map .ai-skeleton-controls {
+  background: rgba(3, 5, 15, 0.55) !important;
+  border-color: rgba(125, 249, 255, 0.08) !important;
+}
+
+.ai-patent-map .ai-skeleton-block {
+  display: inline-block;
+  background: linear-gradient(
+    90deg,
+    rgba(125, 249, 255, 0.06) 0%,
+    rgba(125, 249, 255, 0.18) 50%,
+    rgba(125, 249, 255, 0.06) 100%
+  );
+  background-size: 200% 100%;
+  border-radius: 3px;
+  animation: aiSkeletonShimmer 1.6s ease-in-out infinite;
+}
+
+.ai-patent-map .ai-skeleton-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: rgba(125, 249, 255, 0.18);
+  flex-shrink: 0;
+  animation: aiSkeletonShimmer 1.6s ease-in-out infinite;
+}
+
+.ai-patent-map .ai-skeleton-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 5px 6px;
+}
+
+@keyframes aiSkeletonShimmer {
+  0%   { background-position: -100% 0; opacity: 0.7; }
+  50%  { opacity: 1; }
+  100% { background-position: 100% 0; opacity: 0.7; }
+}
+
+/* Skeleton canvas:暗示中央有大塊互動區 */
+.ai-patent-map .ai-map-skeleton-canvas {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  background:
+    radial-gradient(ellipse at 50% 60%, rgba(6, 10, 28, 0.6) 0%, rgba(3, 5, 15, 0.85) 60%, rgba(1, 3, 10, 0.95) 100%);
+  pointer-events: none;
+}
+
+.ai-patent-map .ai-skeleton-legend {
+  display: flex;
+  flex-direction: column;
+}
+.ai-patent-map .ai-skeleton-stats { gap: 16px; }
+
+/* 中央 loading pill:取代之前的 fullscreen overlay,讓骨架看得到 */
+.ai-patent-map .ai-map-loading-pill {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 30;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 18px;
+  background: rgba(3, 5, 15, 0.92);
+  border: 1px solid rgba(125, 249, 255, 0.3);
+  border-radius: 999px;
+  font-family: 'JetBrains Mono', 'Courier New', monospace;
+  font-size: 10px;
+  letter-spacing: 0.3em;
+  color: rgba(125, 249, 255, 0.9);
+  text-transform: uppercase;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+}
+.ai-patent-map .ai-map-loading-spinner {
+  width: 12px;
+  height: 12px;
+  border: 1.5px solid rgba(125, 249, 255, 0.2);
+  border-top-color: rgba(125, 249, 255, 0.9);
+  border-radius: 50%;
+  animation: aiMapSpin 0.7s linear infinite;
+}
