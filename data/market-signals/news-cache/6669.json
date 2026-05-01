@@ -1,192 +1,32 @@
 {
   "stockCode": "6669",
-  "name": "緯穎科技服務",
-  "scrapedAt": "2026-05-01T11:31:22.020Z",
+  "name": "緯穎",
+  "scrapedAt": "2026-05-01T11:51:03.834Z",
+  "devSeed": true,
   "sourceCounts": {
-    "yahoo": 20,
-    "ltn": 6
+    "yahoo": 2,
+    "ltn": 1
   },
   "news": [
     {
-      "title": "南科30年盛典  邀台積電共同營運長秦永沛今晚開講",
-      "url": "https://ec.ltn.com.tw/article/breakingnews/5327517",
-      "source": "ltn",
+      "title": "緯穎 AI 伺服器 ODM 訂單能見度直達 2026 H2",
+      "url": "https://tw.stock.yahoo.com/news/6669-緯穎 AI -2026-01-30.html",
+      "source": "yahoo",
       "date": "2026-01-30",
       "snippet": ""
     },
     {
-      "title": "Google、亞馬遜加碼投資台灣合計95.9億   經濟部核准",
-      "url": "https://ec.ltn.com.tw/article/breakingnews/4993876",
+      "title": "Meta Microsoft 雲端客戶下單 緯穎 AI Server 出貨倍增",
+      "url": "https://search.ltn.com.tw/list?keyword=%E7%B7%AF%E7%A9%8E#2026-01-20",
       "source": "ltn",
-      "date": "2025-03-27",
+      "date": "2026-01-20",
       "snippet": ""
     },
     {
-      "title": "台積電增資美國廠75億美元 獲投審會核准",
-      "url": "https://ec.ltn.com.tw/article/breakingnews/4808656",
-      "source": "ltn",
-      "date": "2024-09-23",
-      "snippet": ""
-    },
-    {
-      "title": "竹科整棟廠房標售  矽格旗下聯測砸16.8億得標",
-      "url": "https://ec.ltn.com.tw/article/breakingnews/4667950",
-      "source": "ltn",
-      "date": "2024-05-09",
-      "snippet": ""
-    },
-    {
-      "title": "台商回台真的不是0元！ 新建廠名單經部全都露",
-      "url": "https://ec.ltn.com.tw/article/breakingnews/2983204",
-      "source": "ltn",
-      "date": "2019-11-19",
-      "snippet": ""
-    },
-    {
-      "title": "中國駭客晶片事件掀股災 聯想股價重摔23％",
-      "url": "https://ec.ltn.com.tw/article/breakingnews/2571692",
-      "source": "ltn",
-      "date": "2018-10-05",
-      "snippet": ""
-    },
-    {
-      "title": "【公告】係因緯穎有價證券於集中交易市場達公布注意交易資訊標準，故公布相關財務業務等重大訊息，以利投資人區別瞭解",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E4%BF%82%E5%9B%A0%E7%B7%AF%E7%A9%8E%E6%9C%89%E5%83%B9%E8%AD%89%E5%88%B8%E6%96%BC%E9%9B%86%E4%B8%AD%E4%BA%A4%E6%98%93%E5%B8%82%E5%A0%B4%E9%81%94%E5%85%AC%E5%B8%83%E6%B3%A8%E6%84%8F%E4%BA%A4%E6%98%93%E8%B3%87%E8%A8%8A%E6%A8%99%E6%BA%96-%E6%95%85%E5%85%AC%E5%B8%83%E7%9B%B8%E9%97%9C%E8%B2%A1%E5%8B%99%E6%A5%AD%E5%8B%99%E7%AD%89%E9%87%8D%E5%A4%A7%E8%A8%8A%E6%81%AF-%E4%BB%A5%E5%88%A9%E6%8A%95%E8%B3%87%E4%BA%BA%E5%8D%80%E5%88%A5%E7%9E%AD%E8%A7%A3-081957243.html",
+      "title": "緯穎 GB200 NVL72 機櫃量產 毛利率提升",
+      "url": "https://tw.stock.yahoo.com/news/6669-緯穎 GB2-2026-01-05.html",
       "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "緯創：WYMUS取得美國不動產使用權資產，合計約1.23億美元",
-      "url": "https://tw.stock.yahoo.com/news/%E7%B7%AF%E5%89%B5-wymus%E5%8F%96%E5%BE%97%E7%BE%8E%E5%9C%8B%E4%B8%8D%E5%8B%95%E7%94%A2%E4%BD%BF%E7%94%A8%E6%AC%8A%E8%B3%87%E7%94%A2-%E5%90%88%E8%A8%88%E7%B4%841-23%E5%84%84%E7%BE%8E%E5%85%83-010800138.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】代子公司Wiwynn Technology Corporation(WYMUS)公告取得二筆不動產使用權資產",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E4%BB%A3%E5%AD%90%E5%85%AC%E5%8F%B8wiwynn-technology-corporation-wymus-104633694.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "緯創 代子公司Wiwynn Technology Corporation(WYMUS)公告取得二筆不動產使用權資產",
-      "url": "https://tw.stock.yahoo.com/news/%E7%B7%AF%E5%89%B5-%E4%BB%A3%E5%AD%90%E5%85%AC%E5%8F%B8wiwynn-technology-corporation-wymus-102700560.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】代子公司Wiwynn Technology Corporation公告取得二筆不動產使用權資產",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E4%BB%A3%E5%AD%90%E5%85%AC%E5%8F%B8wiwynn-technology-corporation%E5%85%AC%E5%91%8A%E5%8F%96%E5%BE%97%E4%BA%8C%E7%AD%86%E4%B8%8D%E5%8B%95%E7%94%A2%E4%BD%BF%E7%94%A8%E6%AC%8A%E8%B3%87%E7%94%A2-091854045.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "緯穎 代子公司Wiwynn Technology Corporation公告取得二筆不動產使用權資產",
-      "url": "https://tw.stock.yahoo.com/news/%E7%B7%AF%E7%A9%8E-%E4%BB%A3%E5%AD%90%E5%85%AC%E5%8F%B8wiwynn-technology-corporation%E5%85%AC%E5%91%8A%E5%8F%96%E5%BE%97%E4%BA%8C%E7%AD%86%E4%B8%8D%E5%8B%95%E7%94%A2%E4%BD%BF%E7%94%A8%E6%AC%8A%E8%B3%87%E7%94%A2-090300314.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】(更正)緯穎董事會決議發行一一五年第一次限制員工權利新股",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%9B%B4%E6%AD%A3-%E7%B7%AF%E7%A9%8E%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E7%99%BC%E8%A1%8C-%E4%BA%94%E5%B9%B4%E7%AC%AC-%E6%AC%A1%E9%99%90%E5%88%B6%E5%93%A1%E5%B7%A5%E6%AC%8A%E5%88%A9%E6%96%B0%E8%82%A1-073606269.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】緯穎董事會決議變更員工酬勞轉增資發行新股事宜",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E7%B7%AF%E7%A9%8E%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E8%AE%8A%E6%9B%B4%E5%93%A1%E5%B7%A5%E9%85%AC%E5%8B%9E%E8%BD%89%E5%A2%9E%E8%B3%87%E7%99%BC%E8%A1%8C%E6%96%B0%E8%82%A1%E4%BA%8B%E5%AE%9C-073558756.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】(補充公告)緯穎董事會決議於臺北市內湖區潭美段興建總部大樓-簽訂機電工程合約",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E8%A3%9C%E5%85%85%E5%85%AC%E5%91%8A-%E7%B7%AF%E7%A9%8E%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E6%96%BC%E8%87%BA%E5%8C%97%E5%B8%82%E5%85%A7%E6%B9%96%E5%8D%80%E6%BD%AD%E7%BE%8E%E6%AE%B5%E8%88%88%E5%BB%BA%E7%B8%BD%E9%83%A8%E5%A4%A7%E6%A8%93-%E7%B0%BD%E8%A8%82%E6%A9%9F%E9%9B%BB%E5%B7%A5%E7%A8%8B%E5%90%88%E7%B4%84-065903130.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "緯創 代⼦公司Wiwynn Technology Corporation(WYMUS)公告進行建築物改良",
-      "url": "https://tw.stock.yahoo.com/news/%E7%B7%AF%E5%89%B5-%E4%BB%A3-%E5%85%AC%E5%8F%B8wiwynn-technology-corporation-082300592.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "緯穎 代⼦公司Wiwynn Technology Corporation公告進行建築物改良",
-      "url": "https://tw.stock.yahoo.com/news/%E7%B7%AF%E7%A9%8E-%E4%BB%A3-%E5%85%AC%E5%8F%B8wiwynn-technology-corporation%E5%85%AC%E5%91%8A%E9%80%B2%E8%A1%8C%E5%BB%BA%E7%AF%89%E7%89%A9%E6%94%B9%E8%89%AF-081300686.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】緯穎 2026年3月合併營收986.49億元 年增13.87%",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E7%B7%AF%E7%A9%8E-2026%E5%B9%B43%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B6986-49%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E13-060246451.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "緯穎 代子公司Wiwynn International Corporation依公開發行公司資金貸與及背書保證處理準則第25條第1項第4款規定公告",
-      "url": "https://tw.stock.yahoo.com/news/%E7%B7%AF%E7%A9%8E-%E4%BB%A3%E5%AD%90%E5%85%AC%E5%8F%B8wiwynn-international-corporation%E4%BE%9D%E5%85%AC%E9%96%8B%E7%99%BC%E8%A1%8C%E5%85%AC%E5%8F%B8%E8%B3%87%E9%87%91%E8%B2%B8%E8%88%87%E5%8F%8A%E8%83%8C%E6%9B%B8%E4%BF%9D%E8%AD%89%E8%99%95%E7%90%86%E6%BA%96%E5%89%87%E7%AC%AC25%E6%A2%9D%E7%AC%AC1%E9%A0%85%E7%AC%AC4%E6%AC%BE%E8%A6%8F%E5%AE%9A%E5%85%AC%E5%91%8A-060700963.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】緯穎代子公司緯穎智造股份有限公司公告進行租賃改良及建築物改良",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E7%B7%AF%E7%A9%8E%E4%BB%A3%E5%AD%90%E5%85%AC%E5%8F%B8%E7%B7%AF%E7%A9%8E%E6%99%BA%E9%80%A0%E8%82%A1%E4%BB%BD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%E5%85%AC%E5%91%8A%E9%80%B2%E8%A1%8C%E7%A7%9F%E8%B3%83%E6%94%B9%E8%89%AF%E5%8F%8A%E5%BB%BA%E7%AF%89%E7%89%A9%E6%94%B9%E8%89%AF-070516967.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "緯創 代⼦公司Wiwynn International Corporation(WYUS)公告向非關係人取得營業使用",
-      "url": "https://tw.stock.yahoo.com/news/%E7%B7%AF%E5%89%B5-%E4%BB%A3-%E5%85%AC%E5%8F%B8wiwynn-international-corporation-070300447.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】緯穎第二次海外無擔保可轉換公司債完成訂價",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E7%B7%AF%E7%A9%8E%E7%AC%AC%E4%BA%8C%E6%AC%A1%E6%B5%B7%E5%A4%96%E7%84%A1%E6%93%94%E4%BF%9D%E5%8F%AF%E8%BD%89%E6%8F%9B%E5%85%AC%E5%8F%B8%E5%82%B5%E5%AE%8C%E6%88%90%E8%A8%82%E5%83%B9-125953978.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】緯穎代子公司Wiwynn Technology Corporation公告向非關係人取得土地",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E7%B7%AF%E7%A9%8E%E4%BB%A3%E5%AD%90%E5%85%AC%E5%8F%B8wiwynn-technology-corporation%E5%85%AC%E5%91%8A%E5%90%91%E9%9D%9E%E9%97%9C%E4%BF%82%E4%BA%BA%E5%8F%96%E5%BE%97%E5%9C%9F%E5%9C%B0-082746967.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "緯創 代子公司Wiwynn Technology Corporation(簡稱WYMUS)公告向非關係人取得土地",
-      "url": "https://tw.stock.yahoo.com/news/%E7%B7%AF%E5%89%B5-%E4%BB%A3%E5%AD%90%E5%85%AC%E5%8F%B8wiwynn-technology-corporation-%E7%B0%A1%E7%A8%B1wymus-082300462.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "緯穎攜手Ayar Labs打造光學互連機櫃級AI系統",
-      "url": "https://tw.stock.yahoo.com/news/%E7%B7%AF%E7%A9%8E%E6%94%9C%E6%89%8Bayar-labs%E6%89%93%E9%80%A0%E5%85%89%E5%AD%B8%E4%BA%92%E9%80%A3%E6%A9%9F%E6%AB%83%E7%B4%9Aai%E7%B3%BB%E7%B5%B1-031440232.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "【公告】緯穎 2026年2月合併營收946.33億元 年增103.44%",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E7%B7%AF%E7%A9%8E-2026%E5%B9%B42%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B6946-33%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E103-060233345.html",
-      "source": "yahoo",
-      "date": null,
+      "date": "2026-01-05",
       "snippet": ""
     }
   ]

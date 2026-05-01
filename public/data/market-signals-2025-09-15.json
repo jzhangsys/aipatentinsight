@@ -1,66 +1,58 @@
 {
   "date": "2025-09-15",
-  "generatedAt": "2026-05-01T11:32:01.524Z",
+  "generatedAt": "2026-05-01T11:51:04.040Z",
+  "newsWindow": {
+    "start": "2025-03-01",
+    "end": "2025-09-15"
+  },
   "totalCompanies": 54,
-  "totalCompaniesAnalyzed": 28,
+  "totalCompaniesAnalyzed": 19,
   "themes": [
     {
       "rank": 1,
-      "name": "AI 晶片 / ASIC",
-      "volume": 7,
+      "name": "衛星通訊",
+      "volume": 5,
       "totalCompanyCount": 2,
       "companies": [
         {
-          "name": "聯發科技",
-          "stockCode": "2454",
+          "name": "穩懋半導體",
+          "stockCode": "3105",
           "hits": 4,
           "isPrimary": true
         },
         {
-          "name": "智原科技",
-          "stockCode": "3035",
-          "hits": 3,
+          "name": "和碩聯合科技",
+          "stockCode": "4938",
+          "hits": 1,
           "isPrimary": true
         }
       ]
     },
     {
       "rank": 2,
-      "name": "矽光子 / 光通訊",
-      "volume": 6,
-      "totalCompanyCount": 4,
+      "name": "AI 晶片 / ASIC",
+      "volume": 4,
+      "totalCompanyCount": 2,
       "companies": [
         {
-          "name": "鴻海精密工業",
-          "stockCode": "2317",
-          "hits": 2,
+          "name": "智原科技",
+          "stockCode": "3035",
+          "hits": 3,
           "isPrimary": true
         },
         {
-          "name": "友達光電",
-          "stockCode": "2409",
-          "hits": 2,
-          "isPrimary": false
-        },
-        {
-          "name": "台達電子工業",
-          "stockCode": "2308",
+          "name": "力旺電子",
+          "stockCode": "3529",
           "hits": 1,
-          "isPrimary": false
-        },
-        {
-          "name": "穩懋半導體",
-          "stockCode": "3105",
-          "hits": 1,
-          "isPrimary": false
+          "isPrimary": true
         }
       ]
     },
     {
       "rank": 3,
       "name": "PC / NB",
-      "volume": 5,
-      "totalCompanyCount": 3,
+      "volume": 4,
+      "totalCompanyCount": 2,
       "companies": [
         {
           "name": "宏碁",
@@ -73,69 +65,31 @@
           "stockCode": "2324",
           "hits": 1,
           "isPrimary": true
-        },
-        {
-          "name": "信驊科技",
-          "stockCode": "5274",
-          "hits": 1,
-          "isPrimary": false
         }
       ]
     },
     {
       "rank": 4,
-      "name": "智慧手機",
+      "name": "成熟製程",
       "volume": 4,
-      "totalCompanyCount": 3,
+      "totalCompanyCount": 2,
       "companies": [
         {
-          "name": "旺宏電子",
-          "stockCode": "2337",
-          "hits": 2,
+          "name": "新唐科技",
+          "stockCode": "4919",
+          "hits": 3,
           "isPrimary": true
         },
         {
-          "name": "台灣積體電路製造",
-          "stockCode": "2330",
-          "hits": 1,
-          "isPrimary": true
-        },
-        {
-          "name": "華邦電子",
-          "stockCode": "2344",
-          "hits": 1,
-          "isPrimary": false
-        }
-      ]
-    },
-    {
-      "rank": 5,
-      "name": "AI 伺服器",
-      "volume": 4,
-      "totalCompanyCount": 3,
-      "companies": [
-        {
-          "name": "英業達",
-          "stockCode": "2356",
-          "hits": 2,
-          "isPrimary": true
-        },
-        {
-          "name": "華邦電子",
-          "stockCode": "2344",
-          "hits": 1,
-          "isPrimary": true
-        },
-        {
-          "name": "信驊科技",
-          "stockCode": "5274",
+          "name": "聯華電子",
+          "stockCode": "2303",
           "hits": 1,
           "isPrimary": true
         }
       ]
     },
     {
-      "rank": 6,
+      "rank": 5,
       "name": "先進製程 (3nm/2nm)",
       "volume": 4,
       "totalCompanyCount": 2,
@@ -155,73 +109,7 @@
       ]
     },
     {
-      "rank": 7,
-      "name": "衛星通訊",
-      "volume": 4,
-      "totalCompanyCount": 3,
-      "companies": [
-        {
-          "name": "穩懋半導體",
-          "stockCode": "3105",
-          "hits": 2,
-          "isPrimary": true
-        },
-        {
-          "name": "友達光電",
-          "stockCode": "2409",
-          "hits": 1,
-          "isPrimary": false
-        },
-        {
-          "name": "和碩聯合科技",
-          "stockCode": "4938",
-          "hits": 1,
-          "isPrimary": true
-        }
-      ]
-    },
-    {
-      "rank": 8,
-      "name": "DRAM / 記憶體",
-      "volume": 3,
-      "totalCompanyCount": 3,
-      "companies": [
-        {
-          "name": "華邦電子",
-          "stockCode": "2344",
-          "hits": 1,
-          "isPrimary": false
-        },
-        {
-          "name": "宏碁",
-          "stockCode": "2353",
-          "hits": 1,
-          "isPrimary": false
-        },
-        {
-          "name": "鈺創科技",
-          "stockCode": "5351",
-          "hits": 1,
-          "isPrimary": true
-        }
-      ]
-    },
-    {
-      "rank": 9,
-      "name": "成熟製程",
-      "volume": 3,
-      "totalCompanyCount": 1,
-      "companies": [
-        {
-          "name": "新唐科技",
-          "stockCode": "4919",
-          "hits": 3,
-          "isPrimary": true
-        }
-      ]
-    },
-    {
-      "rank": 10,
+      "rank": 6,
       "name": "晶圓代工",
       "volume": 3,
       "totalCompanyCount": 1,
@@ -235,33 +123,7 @@
       ]
     },
     {
-      "rank": 11,
-      "name": "面板 / TFT-LCD",
-      "volume": 3,
-      "totalCompanyCount": 3,
-      "companies": [
-        {
-          "name": "群創光電",
-          "stockCode": "3481",
-          "hits": 1,
-          "isPrimary": true
-        },
-        {
-          "name": "天虹科技",
-          "stockCode": "6937",
-          "hits": 1,
-          "isPrimary": true
-        },
-        {
-          "name": "仁寶電腦工業",
-          "stockCode": "2324",
-          "hits": 1,
-          "isPrimary": false
-        }
-      ]
-    },
-    {
-      "rank": 12,
+      "rank": 7,
       "name": "資安",
       "volume": 3,
       "totalCompanyCount": 2,
@@ -281,27 +143,7 @@
       ]
     },
     {
-      "rank": 13,
-      "name": "CoWoS / 先進封裝",
-      "volume": 3,
-      "totalCompanyCount": 2,
-      "companies": [
-        {
-          "name": "新應材",
-          "stockCode": "4749",
-          "hits": 2,
-          "isPrimary": true
-        },
-        {
-          "name": "欣興電子",
-          "stockCode": "3037",
-          "hits": 1,
-          "isPrimary": true
-        }
-      ]
-    },
-    {
-      "rank": 14,
+      "rank": 8,
       "name": "5G 通訊",
       "volume": 2,
       "totalCompanyCount": 1,
@@ -315,41 +157,75 @@
       ]
     },
     {
-      "rank": 15,
-      "name": "ABF 載板",
+      "rank": 9,
+      "name": "DRAM / 記憶體",
       "volume": 2,
       "totalCompanyCount": 2,
       "companies": [
         {
-          "name": "台達電子工業",
-          "stockCode": "2308",
+          "name": "宏碁",
+          "stockCode": "2353",
           "hits": 1,
           "isPrimary": false
         },
         {
-          "name": "欣興電子",
-          "stockCode": "3037",
+          "name": "鈺創科技",
+          "stockCode": "5351",
           "hits": 1,
           "isPrimary": false
         }
       ]
     },
     {
-      "rank": 16,
-      "name": "MicroLED",
+      "rank": 10,
+      "name": "AI 伺服器",
       "volume": 2,
       "totalCompanyCount": 1,
       "companies": [
         {
-          "name": "友達光電",
-          "stockCode": "2409",
+          "name": "英業達",
+          "stockCode": "2356",
           "hits": 2,
           "isPrimary": true
         }
       ]
     },
     {
-      "rank": 17,
+      "rank": 11,
+      "name": "面板 / TFT-LCD",
+      "volume": 2,
+      "totalCompanyCount": 2,
+      "companies": [
+        {
+          "name": "天虹科技",
+          "stockCode": "6937",
+          "hits": 1,
+          "isPrimary": true
+        },
+        {
+          "name": "仁寶電腦工業",
+          "stockCode": "2324",
+          "hits": 1,
+          "isPrimary": false
+        }
+      ]
+    },
+    {
+      "rank": 12,
+      "name": "CoWoS / 先進封裝",
+      "volume": 2,
+      "totalCompanyCount": 1,
+      "companies": [
+        {
+          "name": "新應材",
+          "stockCode": "4749",
+          "hits": 2,
+          "isPrimary": true
+        }
+      ]
+    },
+    {
+      "rank": 13,
       "name": "金融科技 FinTech",
       "volume": 2,
       "totalCompanyCount": 1,
@@ -363,7 +239,7 @@
       ]
     },
     {
-      "rank": 18,
+      "rank": 14,
       "name": "穿戴 / AR/VR",
       "volume": 1,
       "totalCompanyCount": 1,
@@ -377,14 +253,70 @@
       ]
     },
     {
-      "rank": 19,
-      "name": "Flash / NAND",
+      "rank": 15,
+      "name": "IC 設計",
       "volume": 1,
       "totalCompanyCount": 1,
       "companies": [
         {
-          "name": "群創光電",
-          "stockCode": "3481",
+          "name": "智原科技",
+          "stockCode": "3035",
+          "hits": 1,
+          "isPrimary": false
+        }
+      ]
+    },
+    {
+      "rank": 16,
+      "name": "智慧手機",
+      "volume": 1,
+      "totalCompanyCount": 1,
+      "companies": [
+        {
+          "name": "鈺創科技",
+          "stockCode": "5351",
+          "hits": 1,
+          "isPrimary": true
+        }
+      ]
+    },
+    {
+      "rank": 17,
+      "name": "電動車 / EV",
+      "volume": 1,
+      "totalCompanyCount": 1,
+      "companies": [
+        {
+          "name": "和碩聯合科技",
+          "stockCode": "4938",
+          "hits": 1,
+          "isPrimary": false
+        }
+      ]
+    },
+    {
+      "rank": 18,
+      "name": "化合物半導體",
+      "volume": 1,
+      "totalCompanyCount": 1,
+      "companies": [
+        {
+          "name": "台亞半導體",
+          "stockCode": "2340",
+          "hits": 1,
+          "isPrimary": true
+        }
+      ]
+    },
+    {
+      "rank": 19,
+      "name": "矽光子 / 光通訊",
+      "volume": 1,
+      "totalCompanyCount": 1,
+      "companies": [
+        {
+          "name": "穩懋半導體",
+          "stockCode": "3105",
           "hits": 1,
           "isPrimary": false
         }
@@ -392,15 +324,15 @@
     },
     {
       "rank": 20,
-      "name": "風電",
+      "name": "雲端運算",
       "volume": 1,
       "totalCompanyCount": 1,
       "companies": [
         {
-          "name": "鴻海精密工業",
-          "stockCode": "2317",
+          "name": "凌陽科技",
+          "stockCode": "2401",
           "hits": 1,
-          "isPrimary": false
+          "isPrimary": true
         }
       ]
     }

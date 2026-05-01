@@ -58,7 +58,8 @@ const ARG_DATE = (() => {
   return i >= 0 ? process.argv[i + 1] : null;
 })();
 const TOP_N_THEMES = 20;
-const NEWS_WINDOW_DAYS = 60; // 該 snapshot 之前 60 天的新聞算進來
+// 第一期 snapshot 沒有「上一期」的 fallback 窗口(往前推 N 天)
+const FIRST_SNAPSHOT_FALLBACK_DAYS = 60;
 
 const compiled = compileThemesRegex();
 const companiesData = JSON.parse(readFileSync(COMPANIES_PATH, "utf8"));
@@ -79,16 +80,29 @@ if (existsSync(CACHE_DIR)) {
 }
 console.log(`[build-market-signals] 載入 ${newsByCode.size} 家公司 news cache`);
 
-function inWindow(newsDate, snapshotDate) {
+/**
+ * 判斷新聞是否落在「上一期 snapshot ~ 本期 snapshot」的時間窗口。
+ * 第一期 snapshot 沒有「上一期」,fallback 用 (D - N 天) 當起點。
+ */
+function inWindow(newsDate, snapshotDate, prevSnapshotDate) {
   if (!newsDate) return true; // 沒日期 → 視為近期,算進來
   const snapTs = new Date(snapshotDate + "T23:59:59").getTime();
   const newsTs = new Date(newsDate + "T00:00:00").getTime();
   if (Number.isNaN(newsTs)) return true;
   if (newsTs > snapTs) return false; // 新聞晚於 snapshot 不算
-  return snapTs - newsTs <= NEWS_WINDOW_DAYS * 86400 * 1000;
+  let startTs;
+  if (prevSnapshotDate) {
+    // 起點 = 上一期 snapshot 之後(>),所以 newsTs 必須嚴格大於 prev
+    startTs = new Date(prevSnapshotDate + "T23:59:59").getTime();
+    return newsTs > startTs;
+  } else {
+    // 第一期沒有 prev → 用 D - N 天 fallback
+    startTs = snapTs - FIRST_SNAPSHOT_FALLBACK_DAYS * 86400 * 1000;
+    return newsTs >= startTs;
+  }
 }
 
-function buildOne(snapshotDate) {
+function buildOne(snapshotDate, prevSnapshotDate) {
   const companies = companiesData.bySnapshot[snapshotDate];
   if (!companies) {
     console.log(`  [skip] ${snapshotDate}:companies.json 沒這期`);
@@ -110,7 +124,7 @@ function buildOne(snapshotDate) {
 
   for (const co of companies) {
     const news = newsByCode.get(co.stockCode) || [];
-    const inwin = news.filter((n) => inWindow(n.date, snapshotDate));
+    const inwin = news.filter((n) => inWindow(n.date, snapshotDate, prevSnapshotDate));
     if (inwin.length === 0) continue;
 
     const cthemes = new Map();
@@ -186,9 +200,20 @@ function buildOne(snapshotDate) {
     };
   });
 
+  // 對外公布窗口邊界(沒有曝露新聞,只是時間範圍)
+  const windowStart = prevSnapshotDate
+    ? prevSnapshotDate
+    : new Date(
+        new Date(snapshotDate).getTime() -
+          FIRST_SNAPSHOT_FALLBACK_DAYS * 86400 * 1000
+      )
+        .toISOString()
+        .slice(0, 10);
+
   return {
     date: snapshotDate,
     generatedAt: new Date().toISOString(),
+    newsWindow: { start: windowStart, end: snapshotDate },
     totalCompanies: companies.length,
     totalCompaniesAnalyzed: companyThemes.size,
     themes,
@@ -197,17 +222,27 @@ function buildOne(snapshotDate) {
 
 // === 跑 ===
 const snapshotsIdx = JSON.parse(readFileSync(join(PUBLIC_DATA, "snapshots.json"), "utf8"));
-const targetDates = ARG_DATE
-  ? [ARG_DATE]
-  : snapshotsIdx.timeline.filter((s) => !s.placeholder).map((s) => s.date);
+const allActualDates = snapshotsIdx.timeline
+  .filter((s) => !s.placeholder)
+  .map((s) => s.date)
+  .sort(); // 確保升序;可建 prev map
+
+// 建 prevDate map: D → 在 allActualDates 中前一個 actual snapshot
+const prevDateMap = new Map();
+for (let i = 0; i < allActualDates.length; i++) {
+  prevDateMap.set(allActualDates[i], i > 0 ? allActualDates[i - 1] : null);
+}
+
+const targetDates = ARG_DATE ? [ARG_DATE] : allActualDates;
 
 for (const d of targetDates) {
-  const out = buildOne(d);
+  const out = buildOne(d, prevDateMap.get(d) || null);
   if (!out) continue;
   const outPath = join(PUBLIC_DATA, `market-signals-${d}.json`);
   writeFileSync(outPath, JSON.stringify(out, null, 2));
   console.log(
-    `  ✓ ${d}: ${out.themes.length} themes, ` +
+    `  ✓ ${d} [window ${out.newsWindow.start}~${out.newsWindow.end}]: ` +
+      `${out.themes.length} themes, ` +
       `${out.totalCompaniesAnalyzed}/${out.totalCompanies} companies classified`
   );
 }

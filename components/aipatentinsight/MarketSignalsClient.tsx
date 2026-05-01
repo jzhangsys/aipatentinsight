@@ -44,6 +44,7 @@ type ThemeEntry = {
 type MarketSignalsData = {
   date: string;
   generatedAt?: string;
+  newsWindow?: { start: string; end: string };
   totalCompanies: number;
   totalCompaniesAnalyzed: number;
   themes: ThemeEntry[];
@@ -150,9 +151,18 @@ export default function MarketSignalsClient() {
       <header className="ai-page-header">
         <div>
           <h1 className="ai-page-title">Market Signals</h1>
-          {data?.generatedAt && (
+          {data && (
             <p className="ai-page-description ai-signals-updated">
-              資料更新時間:{formatGeneratedAt(data.generatedAt)}
+              {data.newsWindow && (
+                <>
+                  分析區間:{data.newsWindow.start.replace(/-/g, ".")} ~{" "}
+                  {data.newsWindow.end.replace(/-/g, ".")}
+                  {data.generatedAt && " · "}
+                </>
+              )}
+              {data.generatedAt && (
+                <>資料更新:{formatGeneratedAt(data.generatedAt)}</>
+              )}
             </p>
           )}
         </div>

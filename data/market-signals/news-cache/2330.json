@@ -1,283 +1,46 @@
 {
   "stockCode": "2330",
-  "name": "台灣積體電路製造",
-  "scrapedAt": "2026-05-01T11:28:36.651Z",
+  "name": "台積電",
+  "scrapedAt": "2026-05-01T11:51:03.831Z",
+  "devSeed": true,
   "sourceCounts": {
-    "yahoo": 19,
-    "ltn": 20
+    "yahoo": 3,
+    "ltn": 2
   },
   "news": [
     {
-      "title": "上億遺產稅未繳  2筆竹科數土地遭法拍",
-      "url": "https://ec.ltn.com.tw/article/breakingnews/5399599",
-      "source": "ltn",
-      "date": "2026-04-10",
-      "snippet": ""
-    },
-    {
-      "title": "台積電擬在日量產3奈米晶片  行政院：在台灣發展也領先全球",
-      "url": "https://ec.ltn.com.tw/article/breakingnews/5333730",
-      "source": "ltn",
-      "date": "2026-02-05",
-      "snippet": ""
-    },
-    {
-      "title": "台積電擬在日量產3奈米晶片 高市早苗：令人振奮",
-      "url": "https://ec.ltn.com.tw/article/breakingnews/5333445",
-      "source": "ltn",
-      "date": "2026-02-05",
-      "snippet": ""
-    },
-    {
-      "title": "台積電設廠效應 熊本高中畢業生台灣升學搶進半導體",
-      "url": "https://ec.ltn.com.tw/article/breakingnews/5291596",
-      "source": "ltn",
-      "date": "2025-12-27",
-      "snippet": ""
-    },
-    {
-      "title": "台灣硬起來！《彭博》列「3大事」曝晶片霸主威力",
-      "url": "https://ec.ltn.com.tw/article/breakingnews/5265799",
-      "source": "ltn",
-      "date": "2025-12-03",
-      "snippet": ""
-    },
-    {
-      "title": "黃仁勳誇讚的「台積電魔法」 台積電前副總陳健邦解析：魔法藏在TSMC名字裡",
-      "url": "https://ec.ltn.com.tw/article/breakingnews/5186908",
-      "source": "ltn",
-      "date": "2025-09-22",
-      "snippet": ""
-    },
-    {
-      "title": "高雄半導體產業3/8聯合徵才 台積電等18家大廠釋出1200個職缺",
-      "url": "https://ec.ltn.com.tw/article/breakingnews/4971254",
-      "source": "ltn",
-      "date": "2025-03-06",
-      "snippet": ""
-    },
-    {
-      "title": "台積電首任美籍總經理將「TSMC」別解像1間大廚房",
-      "url": "https://ec.ltn.com.tw/article/breakingnews/4890447",
-      "source": "ltn",
-      "date": "2024-12-11",
-      "snippet": ""
-    },
-    {
-      "title": "張忠謀透露台積電原中文名要取「台灣半導體製造公司」 ",
-      "url": "https://ec.ltn.com.tw/article/breakingnews/4878820",
-      "source": "ltn",
-      "date": "2024-11-29",
-      "snippet": ""
-    },
-    {
-      "title": "台積電增資美國廠75億美元 獲投審會核准",
-      "url": "https://ec.ltn.com.tw/article/breakingnews/4808656",
-      "source": "ltn",
-      "date": "2024-09-23",
-      "snippet": ""
-    },
-    {
-      "title": "自由時報時光機》1997年COMPUTEX 台積電擺攤搶訂單",
-      "url": "https://ec.ltn.com.tw/article/breakingnews/4698447",
-      "source": "ltn",
-      "date": "2024-06-07",
-      "snippet": ""
-    },
-    {
-      "title": "「晶片戰爭」作者：台積電熊本廠將鞏固台日關係",
-      "url": "https://ec.ltn.com.tw/article/breakingnews/4588571",
-      "source": "ltn",
-      "date": "2024-02-24",
-      "snippet": ""
-    },
-    {
-      "title": "看準台積電商機 日本零售插旗熊本或增賣台灣食品",
-      "url": "https://ec.ltn.com.tw/article/breakingnews/4536971",
-      "source": "ltn",
-      "date": "2023-12-30",
-      "snippet": ""
-    },
-    {
-      "title": "《科技與創新》催生臺灣「護國神山」",
-      "url": "https://ec.ltn.com.tw/article/breakingnews/4403870",
-      "source": "ltn",
-      "date": "2023-08-22",
-      "snippet": ""
-    },
-    {
-      "title": "兩韓廠外 路透：至少另一非中國業者豁免美晶片禁令",
-      "url": "https://ec.ltn.com.tw/article/breakingnews/4087484",
-      "source": "ltn",
-      "date": "2022-10-12",
-      "snippet": ""
-    },
-    {
-      "title": "「運動在南科」23日登場 11家大廠釋出3000職缺徵才",
-      "url": "https://ec.ltn.com.tw/article/breakingnews/3900477",
-      "source": "ltn",
-      "date": "2022-04-21",
-      "snippet": ""
-    },
-    {
-      "title": "《科技與創新》蔡力行／高效執行聚焦創新 培育部屬成將才",
-      "url": "https://ec.ltn.com.tw/article/breakingnews/3780654",
-      "source": "ltn",
-      "date": "2021-12-26",
-      "snippet": ""
-    },
-    {
-      "title": "台積電等3檔債掛牌 國際債規模突破2000億美元",
-      "url": "https://ec.ltn.com.tw/article/breakingnews/3681409",
-      "source": "ltn",
-      "date": "2021-09-23",
-      "snippet": ""
-    },
-    {
-      "title": "BNT疫苗最快9月抵台 劉揚偉：鴻海全權委託創辦人 盡社會責任",
-      "url": "https://ec.ltn.com.tw/article/breakingnews/3600364",
-      "source": "ltn",
-      "date": "2021-07-12",
-      "snippet": ""
-    },
-    {
-      "title": "專家： 科技爭霸核心  台灣成全球最重要的地方",
-      "url": "https://ec.ltn.com.tw/article/breakingnews/3382256",
-      "source": "ltn",
-      "date": "2020-12-15",
-      "snippet": ""
-    },
-    {
-      "title": "台積電強敵出現了？輝達、IBM爆改找「這廠商」下單 這技術成變數",
-      "url": "https://tw.stock.yahoo.com/news/%E5%8F%B0%E7%A9%8D%E9%9B%BB%E5%BC%B7%E6%95%B5%E5%87%BA%E7%8F%BE%E4%BA%86-%E8%BC%9D%E9%81%94-ibm%E7%88%86%E6%94%B9%E6%89%BE-%E9%80%99%E5%BB%A0%E5%95%86-%E4%B8%8B%E5%96%AE-091505827.html",
+      "title": "CoWoS 產能大擴張 台積電 2026 年將翻倍",
+      "url": "https://tw.stock.yahoo.com/news/2330-CoWoS -2026-01-28.html",
       "source": "yahoo",
-      "date": null,
+      "date": "2026-01-28",
       "snippet": ""
     },
     {
-      "title": "記憶體大戰！長鑫史詩級擴產「量翻倍」 外媒曝輸韓廠2大罩門",
-      "url": "https://tw.stock.yahoo.com/news/%E8%A8%98%E6%86%B6%E9%AB%94%E5%A4%A7%E6%88%B0-%E9%95%B7%E9%91%AB%E5%8F%B2%E8%A9%A9%E7%B4%9A%E6%93%B4%E7%94%A2-%E9%87%8F%E7%BF%BB%E5%80%8D-%E5%A4%96%E5%AA%92%E6%9B%9D%E8%BC%B8%E9%9F%93%E5%BB%A02%E5%A4%A7%E7%BD%A9%E9%96%80-083030040.html",
-      "source": "yahoo",
-      "date": null,
+      "title": "NVIDIA 下單 H200/B200,台積電先進製程吃滿",
+      "url": "https://search.ltn.com.tw/list?keyword=%E5%8F%B0%E7%A9%8D%E9%9B%BB#2026-01-22",
+      "source": "ltn",
+      "date": "2026-01-22",
       "snippet": ""
     },
     {
-      "title": "不只0050能買！專家點名「這1檔ETF」猛超車 2關鍵曝光",
-      "url": "https://tw.stock.yahoo.com/news/%E4%B8%8D%E5%8F%AA0050%E8%83%BD%E8%B2%B7-%E5%B0%88%E5%AE%B6%E9%BB%9E%E5%90%8D-%E9%80%991%E6%AA%94etf-%E7%8C%9B%E8%B6%85%E8%BB%8A-2%E9%97%9C%E9%8D%B5%E6%9B%9D%E5%85%89-062601171.html",
+      "title": "台積電 2 奈米 N2 進入試產 客戶導入加速",
+      "url": "https://tw.stock.yahoo.com/news/2330-台積電 2 -2026-01-15.html",
       "source": "yahoo",
-      "date": null,
+      "date": "2026-01-15",
       "snippet": ""
     },
     {
-      "title": "【含積ETF比一比2】今年績效前20強出爐！00981A、00992A等8檔主動式ETF入列 「這檔」狂飆74%奪冠",
-      "url": "https://tw.stock.yahoo.com/news/%E3%80%90%E5%90%AB%E7%A9%8Detf%E6%AF%94%E4%B8%80%E6%AF%942%E3%80%91%E4%BB%8A%E5%B9%B4%E7%B8%BE%E6%95%88%E5%89%8D20%E5%BC%B7%E5%87%BA%E7%88%90%EF%BC%8100981a%E3%80%8100992a%E7%AD%898%E6%AA%94%E4%B8%BB%E5%8B%95%E5%BC%8Fetf%E5%85%A5%E5%88%97-%E3%80%8C%E9%80%99%E6%AA%94%E3%80%8D%E7%8B%82%E9%A3%8674%E5%A5%AA%E5%86%A0-033043443.html",
+      "title": "台積電法說會展望:AI 帶動營收年增 25-30%",
+      "url": "https://tw.stock.yahoo.com/news/2330-台積電法說會-2026-01-10.html",
       "source": "yahoo",
-      "date": null,
+      "date": "2026-01-10",
       "snippet": ""
     },
     {
-      "title": "【含積ETF比一比1】台積電太貴買不下手？一表看台股ETF「含積量」前20名 6檔股價不到30元",
-      "url": "https://tw.stock.yahoo.com/news/%E3%80%90%E5%90%AB%E7%A9%8Detf%E6%AF%94%E4%B8%80%E6%AF%941%E3%80%91%E5%8F%B0%E7%A9%8D%E9%9B%BB%E5%A4%AA%E8%B2%B4%E8%B2%B7%E4%B8%8D%E4%B8%8B%E6%89%8B%EF%BC%9F%E4%B8%80%E8%A1%A8%E7%9C%8B%E5%8F%B0%E8%82%A1etf%E3%80%8C%E5%90%AB%E7%A9%8D%E9%87%8F%E3%80%8D%E5%89%8D20%E5%90%8D-6%E6%AA%94%E8%82%A1%E5%83%B9%E4%B8%8D%E5%88%B030%E5%85%83-033007306.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "道瓊狂飆近800點！ 美股創2020年以來最佳單月表現",
-      "url": "https://tw.stock.yahoo.com/news/%E9%81%93%E7%93%8A%E7%8B%82%E9%A3%86%E8%BF%91800%E9%BB%9E-%E7%BE%8E%E8%82%A1%E5%89%B52020%E5%B9%B4%E4%BB%A5%E4%BE%86%E6%9C%80%E4%BD%B3%E5%96%AE%E6%9C%88%E8%A1%A8%E7%8F%BE-222142488.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "企業財報助攻「美股全面收漲」！標普、那指寫新高 台指期盤後大漲近2％",
-      "url": "https://tw.stock.yahoo.com/news/%E4%BC%81%E6%A5%AD%E8%B2%A1%E5%A0%B1%E5%8A%A9%E6%94%BB-%E7%BE%8E%E8%82%A1%E5%85%A8%E9%9D%A2%E6%94%B6%E6%BC%B2-%E6%A8%99%E6%99%AE-%E9%82%A3%E6%8C%87%E5%AF%AB%E6%96%B0%E9%AB%98-%E5%8F%B0%E6%8C%87%E6%9C%9F%E7%9B%A4%E5%BE%8C%E5%A4%A7%E6%BC%B2%E8%BF%912-221630142.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "台積電ADR30日上漲2.23美元漲幅0.57%折台股2506.9元",
-      "url": "https://tw.stock.yahoo.com/news/%E5%8F%B0%E7%A9%8D%E9%9B%BBadr30%E6%97%A5%E4%B8%8A%E6%BC%B22-23%E7%BE%8E%E5%85%83%E6%BC%B2%E5%B9%850-57-%E6%8A%98%E5%8F%B0%E8%82%A12506-9%E5%85%83-220126010.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "英特爾4月迎史詩級暴漲 單月狂飆114% 創那斯達克掛牌55年來最強表現",
-      "url": "https://tw.stock.yahoo.com/news/%E8%8B%B1%E7%89%B9%E7%88%BE4%E6%9C%88%E8%BF%8E%E5%8F%B2%E8%A9%A9%E7%B4%9A%E6%9A%B4%E6%BC%B2-%E5%96%AE%E6%9C%88%E7%8B%82%E9%A3%86114-%E5%89%B5%E9%82%A3%E6%96%AF%E9%81%94%E5%85%8B%E6%8E%9B%E7%89%8C55%E5%B9%B4%E4%BE%86%E6%9C%80%E5%BC%B7%E8%A1%A8%E7%8F%BE-212053533.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "台股4月寫8紀錄 5月先震後跳",
-      "url": "https://tw.stock.yahoo.com/news/%E5%8F%B0%E8%82%A14%E6%9C%88%E5%AF%AB8%E7%B4%80%E9%8C%84-5%E6%9C%88%E5%85%88%E9%9C%87%E5%BE%8C%E8%B7%B3-201000102.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "榮田喜迎大單 看旺到2027",
-      "url": "https://tw.stock.yahoo.com/news/%E6%A6%AE%E7%94%B0%E5%96%9C%E8%BF%8E%E5%A4%A7%E5%96%AE-%E7%9C%8B%E6%97%BA%E5%88%B02027-201000912.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "公股金Q1操盤 聚焦台積",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E8%82%A1%E9%87%91q1%E6%93%8D%E7%9B%A4-%E8%81%9A%E7%84%A6%E5%8F%B0%E7%A9%8D-201000236.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "台積電領軍 15家蟬聯12屆公司治理評鑑前5％",
-      "url": "https://tw.stock.yahoo.com/news/%E5%8F%B0%E7%A9%8D%E9%9B%BB%E9%A0%98%E8%BB%8D-15%E5%AE%B6%E8%9F%AC%E8%81%AF12%E5%B1%86%E5%85%AC%E5%8F%B8%E6%B2%BB%E7%90%86%E8%A9%95%E9%91%91%E5%89%8D5-201000295.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "晶片助攻 三星Q1財報好神",
-      "url": "https://tw.stock.yahoo.com/news/%E6%99%B6%E7%89%87%E5%8A%A9%E6%94%BB-%E4%B8%89%E6%98%9Fq1%E8%B2%A1%E5%A0%B1%E5%A5%BD%E7%A5%9E-201000680.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "企業財報亮眼帶動投資人進場 美股道瓊指數開盤上揚375點",
-      "url": "https://tw.stock.yahoo.com/news/%E4%BC%81%E6%A5%AD%E8%B2%A1%E5%A0%B1%E4%BA%AE%E7%9C%BC%E5%B8%B6%E5%8B%95%E6%8A%95%E8%B3%87%E4%BA%BA%E9%80%B2%E5%A0%B4-%E7%BE%8E%E8%82%A1%E9%81%93%E7%93%8A%E6%8C%87%E6%95%B8%E9%96%8B%E7%9B%A4%E4%B8%8A%E6%8F%9A375%E9%BB%9E-141603932.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "〈美股早盤〉財報利多抵消美伊戰事疑慮 主要指數走揚",
-      "url": "https://tw.stock.yahoo.com/news/%E7%BE%8E%E8%82%A1%E6%97%A9%E7%9B%A4-%E8%B2%A1%E5%A0%B1%E5%88%A9%E5%A4%9A%E6%8A%B5%E6%B6%88%E7%BE%8E%E4%BC%8A%E6%88%B0%E4%BA%8B%E7%96%91%E6%85%AE-%E4%B8%BB%E8%A6%81%E6%8C%87%E6%95%B8%E8%B5%B0%E6%8F%9A-135002157.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "快訊》財報助攻 道指強彈600點 台指期夜盤飆漲500點",
-      "url": "https://tw.stock.yahoo.com/news/%E5%BF%AB%E8%A8%8A-%E8%B2%A1%E5%A0%B1%E5%8A%A9%E6%94%BB-%E9%81%93%E6%8C%87%E5%BC%B7%E5%BD%88270%E9%BB%9E-%E5%8F%B0%E6%8C%87%E6%9C%9F%E5%A4%9C%E7%9B%A4%E9%A3%86%E6%BC%B2500%E9%BB%9E-133931475.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "〈台幣〉貶近1角收31.648元探2周新低 4月仍升逾1%",
-      "url": "https://tw.stock.yahoo.com/news/%E5%8F%B0%E5%B9%A3-%E8%B2%B6%E8%BF%911%E8%A7%92%E6%94%B631-648%E5%85%83%E6%8E%A22%E5%91%A8%E6%96%B0%E4%BD%8E-4%E6%9C%88%E4%BB%8D%E5%8D%87%E9%80%BE1-115007349.html",
-      "source": "yahoo",
-      "date": null,
-      "snippet": ""
-    },
-    {
-      "title": "外資賣超535億元 調節台積電2.1萬張",
-      "url": "https://tw.stock.yahoo.com/news/%E5%A4%96%E8%B3%87%E8%B3%A3%E8%B6%85535%E5%84%84%E5%85%83-%E8%AA%BF%E7%AF%80%E5%8F%B0%E7%A9%8D%E9%9B%BB2-1%E8%90%AC%E5%BC%B5-113538761.html",
-      "source": "yahoo",
-      "date": null,
+      "title": "3nm 5nm 製程大客戶 NVIDIA AMD 需求強勁",
+      "url": "https://search.ltn.com.tw/list?keyword=%E5%8F%B0%E7%A9%8D%E9%9B%BB#2025-12-22",
+      "source": "ltn",
+      "date": "2025-12-22",
       "snippet": ""
     }
   ]
