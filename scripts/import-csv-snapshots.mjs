@@ -162,15 +162,21 @@ function processCsv(filePath, srcName) {
   }
 
   // ===== Process patents =====
+  // 同個 patent ID 在 CSV 中可能被多家共同申請人各列一 row(共同申請),
+  // 早期版本 dedupe 用 seen.has(id) 會把後面的申請人吃掉 —
+  // 結果有股號的台灣公司可能因為被前一行的無股號陸商/外商「先佔走」而完全消失。
+  //
+  // 修法:同 patent ID 多 row 時,優先保留有 stockCode 的那筆(因為我們最終
+  // 只保留有股號的公司,有股號的版本能避免該專利完全被丟掉)。
+  // 註:這仍是 whole-counting-style dedupe(每個 patent 只算一家),不是替每家
+  // 共同申請人都記一筆。如未來想做 fractional/whole counting 再調。
   const patents = [];
-  const seen = new Set();
-  for (const row of records) {
-    if (!row || row.length === 0) continue;
+  const patentIdxById = new Map(); // patent id → patents[] index
+
+  function buildPatentRow(row) {
     const company = trimOrEmpty(idx.company >= 0 ? row[idx.company] : "");
     const id = trimOrEmpty(idx.patentId >= 0 ? row[idx.patentId] : "");
-    if (!company || !id) continue;
-    if (seen.has(id)) continue;
-    seen.add(id);
+    if (!company || !id) return null;
 
     const date =
       parseDate(idx.appDate >= 0 ? row[idx.appDate] : null) || snapshotDate;
@@ -196,7 +202,6 @@ function processCsv(filePath, srcName) {
     }
 
     const titleVal = trimOrEmpty(idx.title >= 0 ? row[idx.title] : "");
-    // 若 schema 沒有「專利摘要」欄(Schema D),把標題當 abstract
     const abstractVal =
       idx.abstract >= 0
         ? trimOrEmpty(row[idx.abstract])
@@ -204,12 +209,11 @@ function processCsv(filePath, srcName) {
 
     let categoryVal =
       trimOrEmpty(idx.category >= 0 ? row[idx.category] : "") || "其他";
-    // 「其他」用標題 + 摘要關鍵字重新分類(早期 schema 約 25-38% 是「其他」)
     if (categoryVal === "其他") {
       categoryVal = reclassifyOther(titleVal, abstractVal);
     }
 
-    patents.push({
+    return {
       id,
       company,
       date,
@@ -222,7 +226,26 @@ function processCsv(filePath, srcName) {
       industry: nullIfEmpty(idx.industry >= 0 ? row[idx.industry] : ""),
       stockCode,
       isPublic,
-    });
+    };
+  }
+
+  for (const row of records) {
+    if (!row || row.length === 0) continue;
+    const newPatent = buildPatentRow(row);
+    if (!newPatent) continue;
+
+    const existingIdx = patentIdxById.get(newPatent.id);
+    if (existingIdx !== undefined) {
+      const existing = patents[existingIdx];
+      // 已存在同 patent ID。新的有股號 / 舊的沒有 → 用新的取代
+      if (!existing.stockCode && newPatent.stockCode) {
+        patents[existingIdx] = newPatent;
+      }
+      // 否則維持原狀(舊的有股號或兩者都沒有)
+      continue;
+    }
+    patentIdxById.set(newPatent.id, patents.length);
+    patents.push(newPatent);
   }
 
   if (patents.length === 0) {

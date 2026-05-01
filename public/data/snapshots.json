@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-01T08:37:47.216Z",
+  "generatedAt": "2026-05-01T09:12:39.858Z",
   "totalActual": 16,
   "totalExpected": 0,
   "timeline": [
@@ -10,8 +10,8 @@
       "urlAbstracts": "/data/insights-2024-07-29-abstracts.json",
       "label": "2024/07",
       "region": "台灣",
-      "totalCompanies": 41,
-      "totalPatents": 213,
+      "totalCompanies": 43,
+      "totalPatents": 215,
       "companyNames": [
         "世界先進積體電路",
         "力晶積成電子製造",
@@ -47,13 +47,15 @@
         "緯創資通",
         "京元電子",
         "創意電子",
+        "瀚宇彩晶",
         "頎邦科技",
         "達發科技",
         "啟碁科技",
         "睿生光電",
         "力旺電子",
         "精英電腦",
-        "遊戲橘子數位科技"
+        "遊戲橘子數位科技",
+        "鈺創科技"
       ],
       "placeholder": false
     },
@@ -64,8 +66,8 @@
       "urlAbstracts": "/data/insights-2024-08-19-abstracts.json",
       "label": "2024/08",
       "region": "台灣",
-      "totalCompanies": 41,
-      "totalPatents": 211,
+      "totalCompanies": 43,
+      "totalPatents": 213,
       "companyNames": [
         "世界先進積體電路",
         "力晶積成電子製造",
@@ -101,13 +103,15 @@
         "緯創資通",
         "京元電子",
         "創意電子",
+        "瀚宇彩晶",
         "頎邦科技",
         "達發科技",
         "啟碁科技",
         "睿生光電",
         "力旺電子",
         "精英電腦",
-        "遊戲橘子數位科技"
+        "遊戲橘子數位科技",
+        "鈺創科技"
       ],
       "placeholder": false
     },
@@ -118,8 +122,8 @@
       "urlAbstracts": "/data/insights-2024-09-01-abstracts.json",
       "label": "2024/09",
       "region": "台灣",
-      "totalCompanies": 41,
-      "totalPatents": 213,
+      "totalCompanies": 43,
+      "totalPatents": 215,
       "companyNames": [
         "世界先進積體電路",
         "力晶積成電子製造",
@@ -155,13 +159,15 @@
         "緯創資通",
         "京元電子",
         "創意電子",
+        "瀚宇彩晶",
         "頎邦科技",
         "達發科技",
         "啟碁科技",
         "睿生光電",
         "力旺電子",
         "精英電腦",
-        "遊戲橘子數位科技"
+        "遊戲橘子數位科技",
+        "鈺創科技"
       ],
       "placeholder": false
     },
@@ -172,8 +178,8 @@
       "urlAbstracts": "/data/insights-2024-09-16-abstracts.json",
       "label": "2024/09",
       "region": "台灣",
-      "totalCompanies": 41,
-      "totalPatents": 213,
+      "totalCompanies": 43,
+      "totalPatents": 215,
       "companyNames": [
         "世界先進積體電路",
         "力晶積成電子製造",
@@ -209,13 +215,15 @@
         "緯創資通",
         "京元電子",
         "創意電子",
+        "瀚宇彩晶",
         "頎邦科技",
         "達發科技",
         "啟碁科技",
         "睿生光電",
         "力旺電子",
         "精英電腦",
-        "遊戲橘子數位科技"
+        "遊戲橘子數位科技",
+        "鈺創科技"
       ],
       "placeholder": false
     },
@@ -226,8 +234,8 @@
       "urlAbstracts": "/data/insights-2024-10-01-abstracts.json",
       "label": "2024/10",
       "region": "台灣",
-      "totalCompanies": 65,
-      "totalPatents": 1178,
+      "totalCompanies": 68,
+      "totalPatents": 1189,
       "companyNames": [
         "中華電信",
         "力晶積成電子製造",
@@ -258,7 +266,9 @@
         "聯詠科技",
         "天擎積體電路",
         "元太科技工業",
+        "微星科技",
         "采鈺科技",
+        "弘凱光電",
         "彰化商業銀行",
         "神盾",
         "頎邦科技",
@@ -270,11 +280,13 @@
         "立端科技",
         "凌群電腦",
         "台灣大哥大",
+        "瀚宇彩晶",
         "威盛電子",
         "欣興電子",
         "中興保全科技",
         "凌華科技",
         "京元電子",
+        "鈺創科技",
         "達運精密工業",
         "凌巨科技",
         "東元電機",
@@ -292,8 +304,7 @@
         "東捷科技",
         "網路家庭國際資訊",
         "家登精密工業",
-        "達發科技",
-        "鈺創科技"
+        "達發科技"
       ],
       "placeholder": false
     },
@@ -304,8 +315,8 @@
       "urlAbstracts": "/data/insights-2024-11-01-abstracts.json",
       "label": "2024/11",
       "region": "台灣",
-      "totalCompanies": 65,
-      "totalPatents": 1178,
+      "totalCompanies": 68,
+      "totalPatents": 1189,
       "companyNames": [
         "中華電信",
         "力晶積成電子製造",
@@ -336,7 +347,9 @@
         "聯詠科技",
         "天擎積體電路",
         "元太科技工業",
+        "微星科技",
         "采鈺科技",
+        "弘凱光電",
         "彰化商業銀行",
         "神盾",
         "頎邦科技",
@@ -348,11 +361,13 @@
         "立端科技",
         "凌群電腦",
         "台灣大哥大",
+        "瀚宇彩晶",
         "威盛電子",
         "欣興電子",
         "中興保全科技",
         "凌華科技",
         "京元電子",
+        "鈺創科技",
         "達運精密工業",
         "凌巨科技",
         "東元電機",
@@ -370,8 +385,7 @@
         "東捷科技",
         "網路家庭國際資訊",
         "家登精密工業",
-        "達發科技",
-        "鈺創科技"
+        "達發科技"
       ],
       "placeholder": false
     },
