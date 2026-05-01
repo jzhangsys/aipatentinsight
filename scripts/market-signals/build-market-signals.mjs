@@ -96,10 +96,12 @@ function buildOne(snapshotDate) {
   }
 
   /**
-   * 組: theme → {
-   *   volume: 命中次數總和,
-   *   companyHits: Map<stockCode, { count, sampleNews[] }>
-   * }
+   * 著作權保護:本 build 階段只產出「彙總指標」,不輸出任何新聞標題 / URL / 來源,
+   * 也不輸出樣本內容。新聞原始檔留在本地 data/market-signals/news-cache/(.gitignore),
+   * 只用來做 in-memory 分析。
+   *
+   * 結構:
+   *   theme → { volume, companyHits: Map<stockCode, { name, count }> }
    */
   const themeAggregate = new Map();
   /** company → { code, name, themeHits: Map<theme, count>, totalHits } */
@@ -131,19 +133,9 @@ function buildOne(snapshotDate) {
             name: co.name,
             stockCode: co.stockCode,
             count: 0,
-            sampleNews: [],
           });
         }
-        const ch = tagg.companyHits.get(co.stockCode);
-        ch.count++;
-        if (ch.sampleNews.length < 3) {
-          ch.sampleNews.push({
-            title: n.title,
-            url: n.url,
-            source: n.source,
-            date: n.date,
-          });
-        }
+        tagg.companyHits.get(co.stockCode).count++;
       }
     }
     if (cthemes.size > 0) {
@@ -181,15 +173,14 @@ function buildOne(snapshotDate) {
       .map((ch) => ({
         name: ch.name,
         stockCode: ch.stockCode,
-        newsHits: ch.count,
+        // 注意:此處的 hits 是聚合指標(分析結果),非原始新聞內容。
+        hits: ch.count,
         isPrimary: primarySet.has(ch.stockCode),
-        sampleNews: ch.sampleNews,
       }));
     return {
       rank: i + 1,
       name,
       volume: agg.volume,
-      primaryCompanyCount: companies.filter((c) => c.isPrimary).length,
       totalCompanyCount: companies.length,
       companies,
     };
@@ -199,8 +190,7 @@ function buildOne(snapshotDate) {
     date: snapshotDate,
     generatedAt: new Date().toISOString(),
     totalCompanies: companies.length,
-    totalCompaniesWithNews: companyThemes.size,
-    totalNewsAnalyzed: totalAnalyzed,
+    totalCompaniesAnalyzed: companyThemes.size,
     themes,
   };
 }
@@ -218,8 +208,7 @@ for (const d of targetDates) {
   writeFileSync(outPath, JSON.stringify(out, null, 2));
   console.log(
     `  ✓ ${d}: ${out.themes.length} themes, ` +
-      `${out.totalCompaniesWithNews}/${out.totalCompanies} companies, ` +
-      `${out.totalNewsAnalyzed} news analyzed`
+      `${out.totalCompaniesAnalyzed}/${out.totalCompanies} companies classified`
   );
 }
 

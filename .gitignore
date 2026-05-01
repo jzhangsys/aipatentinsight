@@ -39,3 +39,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Market signals scraped news cache(著作權保護:本地分析用,不進版控)
+/data/market-signals/news-cache/

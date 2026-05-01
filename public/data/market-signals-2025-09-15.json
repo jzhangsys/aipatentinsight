@@ -1,68 +1,26 @@
 {
   "date": "2025-09-15",
-  "generatedAt": "2026-05-01T11:18:31.878Z",
+  "generatedAt": "2026-05-01T11:32:01.524Z",
   "totalCompanies": 54,
-  "totalCompaniesWithNews": 28,
-  "totalNewsAnalyzed": 1087,
+  "totalCompaniesAnalyzed": 28,
   "themes": [
     {
       "rank": 1,
       "name": "AI 晶片 / ASIC",
       "volume": 7,
-      "primaryCompanyCount": 2,
       "totalCompanyCount": 2,
       "companies": [
         {
           "name": "聯發科技",
           "stockCode": "2454",
-          "newsHits": 4,
-          "isPrimary": true,
-          "sampleNews": [
-            {
-              "title": "聯發科衝刺ASIC 商機引爆",
-              "url": "https://tw.stock.yahoo.com/news/%E8%81%AF%E7%99%BC%E7%A7%91%E8%A1%9D%E5%88%BAasic-%E5%95%86%E6%A9%9F%E5%BC%95%E7%88%86-201000066.html",
-              "source": "yahoo",
-              "date": null
-            },
-            {
-              "title": "聯發科法說》AI ASIC營收翻倍上修至20億美元 蔡力行：目標搶15%市占",
-              "url": "https://tw.stock.yahoo.com/news/%E8%81%AF%E7%99%BC%E7%A7%91%E6%B3%95%E8%AA%AA%E3%80%8Bai-asic%E7%87%9F%E6%94%B6%E7%BF%BB%E5%80%8D%E4%B8%8A%E4%BF%AE%E8%87%B320%E5%84%84%E7%BE%8E%E5%85%83-%E8%94%A1%E5%8A%9B%E8%A1%8C%EF%BC%9A%E7%9B%AE%E6%A8%99%E6%90%B615%E5%B8%82%E5%8D%A0-101158516.html",
-              "source": "yahoo",
-              "date": null
-            },
-            {
-              "title": "聯發科：AI ASIC市場加速成長 2027年估800億美元",
-              "url": "https://tw.stock.yahoo.com/news/%E8%81%AF%E7%99%BC%E7%A7%91-ai-asic%E5%B8%82%E5%A0%B4%E5%8A%A0%E9%80%9F%E6%88%90%E9%95%B7-2027%E5%B9%B4%E4%BC%B0800%E5%84%84%E7%BE%8E%E5%85%83-092955466.html",
-              "source": "yahoo",
-              "date": null
-            }
-          ]
+          "hits": 4,
+          "isPrimary": true
         },
         {
           "name": "智原科技",
           "stockCode": "3035",
-          "newsHits": 3,
-          "isPrimary": true,
-          "sampleNews": [
-            {
-              "title": "智原Q1 EPS 0.4元 拿下14奈米AI ASIC新案",
-              "url": "https://tw.stock.yahoo.com/news/%E6%99%BA%E5%8E%9Fq1-eps-0-4%E5%85%83-%E6%8B%BF%E4%B8%8B14%E5%A5%88%E7%B1%B3ai-090832650.html",
-              "source": "yahoo",
-              "date": null
-            },
-            {
-              "title": "獲14nm AI ASIC與高階封裝新案，智原Q2看成長",
-              "url": "https://tw.stock.yahoo.com/news/%E7%8D%B214nm-ai-asic%E8%88%87%E9%AB%98%E9%9A%8E%E5%B0%81%E8%A3%9D%E6%96%B0%E6%A1%88-%E6%99%BA%E5%8E%9Fq2%E7%9C%8B%E6%88%90%E9%95%B7-070000433.html",
-              "source": "yahoo",
-              "date": null
-            },
-            {
-              "title": "ASIC設計廠 營運分歧加劇",
-              "url": "https://tw.stock.yahoo.com/news/asic%E8%A8%AD%E8%A8%88%E5%BB%A0-%E7%87%9F%E9%81%8B%E5%88%86%E6%AD%A7%E5%8A%A0%E5%8A%87-201000407.html",
-              "source": "yahoo",
-              "date": null
-            }
-          ]
+          "hits": 3,
+          "isPrimary": true
         }
       ]
     },
@@ -70,76 +28,31 @@
       "rank": 2,
       "name": "矽光子 / 光通訊",
       "volume": 6,
-      "primaryCompanyCount": 1,
       "totalCompanyCount": 4,
       "companies": [
         {
           "name": "鴻海精密工業",
           "stockCode": "2317",
-          "newsHits": 2,
-          "isPrimary": true,
-          "sampleNews": [
-            {
-              "title": "CPO太夯 鴻勁上修產能規模",
-              "url": "https://tw.stock.yahoo.com/news/cpo%E5%A4%AA%E5%A4%AF-%E9%B4%BB%E5%8B%81%E4%B8%8A%E4%BF%AE%E7%94%A2%E8%83%BD%E8%A6%8F%E6%A8%A1-201000404.html",
-              "source": "yahoo",
-              "date": null
-            },
-            {
-              "title": "鴻勁搶CPO測試商機 設備年底量產、明年放大量",
-              "url": "https://tw.stock.yahoo.com/news/%E9%B4%BB%E5%8B%81%E6%90%B6cpo%E6%B8%AC%E8%A9%A6%E5%95%86%E6%A9%9F-%E8%A8%AD%E5%82%99%E5%B9%B4%E5%BA%95%E9%87%8F%E7%94%A2-%E6%98%8E%E5%B9%B4%E6%94%BE%E5%A4%A7%E9%87%8F-102114744.html",
-              "source": "yahoo",
-              "date": null
-            }
-          ]
+          "hits": 2,
+          "isPrimary": true
         },
         {
           "name": "友達光電",
           "stockCode": "2409",
-          "newsHits": 2,
-          "isPrimary": false,
-          "sampleNews": [
-            {
-              "title": "友達：CPO成果2、3年可見 拚車用墨西哥新產線明年投產",
-              "url": "https://tw.stock.yahoo.com/news/%E5%8F%8B%E9%81%94-cpo%E6%88%90%E6%9E%9C2-3%E5%B9%B4%E5%8F%AF%E8%A6%8B-%E6%8B%9A%E8%BB%8A%E7%94%A8%E5%A2%A8%E8%A5%BF%E5%93%A5%E6%96%B0%E7%94%A2%E7%B7%9A%E6%98%8E%E5%B9%B4%E6%8A%95%E7%94%A2-121954704.html",
-              "source": "yahoo",
-              "date": null
-            },
-            {
-              "title": "智慧顯示展友達攻光通訊衛星 群創拚半導體封裝車載",
-              "url": "https://tw.stock.yahoo.com/news/%E6%99%BA%E6%85%A7%E9%A1%AF%E7%A4%BA%E5%B1%95%E5%8F%8B%E9%81%94%E6%94%BB%E5%85%89%E9%80%9A%E8%A8%8A%E8%A1%9B%E6%98%9F-%E7%BE%A4%E5%89%B5%E6%8B%9A%E5%8D%8A%E5%B0%8E%E9%AB%94%E5%B0%81%E8%A3%9D%E8%BB%8A%E8%BC%89-131803587.html",
-              "source": "yahoo",
-              "date": null
-            }
-          ]
+          "hits": 2,
+          "isPrimary": false
         },
         {
           "name": "台達電子工業",
           "stockCode": "2308",
-          "newsHits": 1,
-          "isPrimary": false,
-          "sampleNews": [
-            {
-              "title": "【台股盤中】台股開高震盪 ABF、光通訊族群勁揚",
-              "url": "https://tw.stock.yahoo.com/news/%E5%8F%B0%E8%82%A1%E7%9B%A4%E4%B8%AD-%E5%8F%B0%E8%82%A1%E9%96%8B%E9%AB%98%E9%9C%87%E7%9B%AA-abf-%E5%85%89%E9%80%9A%E8%A8%8A%E6%97%8F%E7%BE%A4%E5%8B%81%E6%8F%9A-035656956.html",
-              "source": "yahoo",
-              "date": null
-            }
-          ]
+          "hits": 1,
+          "isPrimary": false
         },
         {
           "name": "穩懋半導體",
           "stockCode": "3105",
-          "newsHits": 1,
-          "isPrimary": false,
-          "sampleNews": [
-            {
-              "title": "穩懋低軌衛星/AI光通訊獲驗證，增資本支出衝產能",
-              "url": "https://tw.stock.yahoo.com/news/%E7%A9%A9%E6%87%8B%E4%BD%8E%E8%BB%8C%E8%A1%9B%E6%98%9F-ai%E5%85%89%E9%80%9A%E8%A8%8A%E7%8D%B2%E9%A9%97%E8%AD%89-%E5%A2%9E%E8%B3%87%E6%9C%AC%E6%94%AF%E5%87%BA%E8%A1%9D%E7%94%A2%E8%83%BD-025100898.html",
-              "source": "yahoo",
-              "date": null
-            }
-          ]
+          "hits": 1,
+          "isPrimary": false
         }
       ]
     },
@@ -147,62 +60,25 @@
       "rank": 3,
       "name": "PC / NB",
       "volume": 5,
-      "primaryCompanyCount": 2,
       "totalCompanyCount": 3,
       "companies": [
         {
           "name": "宏碁",
           "stockCode": "2353",
-          "newsHits": 3,
-          "isPrimary": true,
-          "sampleNews": [
-            {
-              "title": "PC品牌Q2迎補貨旺季 華碩、宏碁全年獲利展望維持正向",
-              "url": "https://tw.stock.yahoo.com/news/pc%E5%93%81%E7%89%8Cq2%E8%BF%8E%E8%A3%9C%E8%B2%A8%E6%97%BA%E5%AD%A3-%E8%8F%AF%E7%A2%A9-%E5%AE%8F%E7%A2%81%E5%85%A8%E5%B9%B4%E7%8D%B2%E5%88%A9%E5%B1%95%E6%9C%9B%E7%B6%AD%E6%8C%81%E6%AD%A3%E5%90%91-001004728.html",
-              "source": "yahoo",
-              "date": null
-            },
-            {
-              "title": "微軟Surface產品加入筆電漲價行列",
-              "url": "https://tw.stock.yahoo.com/news/%E5%BE%AE%E8%BB%9Fsurface%E7%94%A2%E5%93%81%E5%8A%A0%E5%85%A5%E7%AD%86%E9%9B%BB%E6%BC%B2%E5%83%B9%E8%A1%8C%E5%88%97-003100954.html",
-              "source": "yahoo",
-              "date": null
-            },
-            {
-              "title": "筆電漲價潮 微軟Surface跟進",
-              "url": "https://tw.stock.yahoo.com/news/%E7%AD%86%E9%9B%BB%E6%BC%B2%E5%83%B9%E6%BD%AE-%E5%BE%AE%E8%BB%9Fsurface%E8%B7%9F%E9%80%B2-201000670.html",
-              "source": "yahoo",
-              "date": null
-            }
-          ]
+          "hits": 3,
+          "isPrimary": true
         },
         {
           "name": "仁寶電腦工業",
           "stockCode": "2324",
-          "newsHits": 1,
-          "isPrimary": true,
-          "sampleNews": [
-            {
-              "title": "仁寶拚四大策略返成長軌道、續推升非PC占比",
-              "url": "https://tw.stock.yahoo.com/news/%E4%BB%81%E5%AF%B6%E6%8B%9A%E5%9B%9B%E5%A4%A7%E7%AD%96%E7%95%A5%E8%BF%94%E6%88%90%E9%95%B7%E8%BB%8C%E9%81%93-%E7%BA%8C%E6%8E%A8%E5%8D%87%E9%9D%9Epc%E5%8D%A0%E6%AF%94-015100356.html",
-              "source": "yahoo",
-              "date": null
-            }
-          ]
+          "hits": 1,
+          "isPrimary": true
         },
         {
           "name": "信驊科技",
           "stockCode": "5274",
-          "newsHits": 1,
-          "isPrimary": false,
-          "sampleNews": [
-            {
-              "title": "《資服股》系微開發TapRUUT為AI PC、AI伺服器與資料中心打造基礎平台",
-              "url": "https://tw.stock.yahoo.com/news/%E8%B3%87%E6%9C%8D%E8%82%A1-%E7%B3%BB%E5%BE%AE%E9%96%8B%E7%99%BCtapruut%E7%82%BAai-pc-ai%E4%BC%BA%E6%9C%8D%E5%99%A8%E8%88%87%E8%B3%87%E6%96%99%E4%B8%AD%E5%BF%83%E6%89%93%E9%80%A0%E5%9F%BA%E7%A4%8E%E5%B9%B3%E5%8F%B0-020531211.html",
-              "source": "yahoo",
-              "date": null
-            }
-          ]
+          "hits": 1,
+          "isPrimary": false
         }
       ]
     },
@@ -210,56 +86,25 @@
       "rank": 4,
       "name": "智慧手機",
       "volume": 4,
-      "primaryCompanyCount": 2,
       "totalCompanyCount": 3,
       "companies": [
         {
           "name": "旺宏電子",
           "stockCode": "2337",
-          "newsHits": 2,
-          "isPrimary": true,
-          "sampleNews": [
-            {
-              "title": "三星棄守低階產品！「1台廠」受惠營收季增90%",
-              "url": "https://tw.stock.yahoo.com/news/%E4%B8%89%E6%98%9F%E6%A3%84%E5%AE%88%E4%BD%8E%E9%9A%8E%E7%94%A2%E5%93%81-1%E5%8F%B0%E5%BB%A0-%E5%8F%97%E6%83%A0%E7%87%9F%E6%94%B6%E5%AD%A3%E5%A2%9E90-090306392.html",
-              "source": "yahoo",
-              "date": null
-            },
-            {
-              "title": "記憶體新霸主！三星退出1台廠吃到肥肉 營收激爆70％超狂",
-              "url": "https://tw.stock.yahoo.com/news/%E8%A8%98%E6%86%B6%E9%AB%94%E6%96%B0%E9%9C%B8%E4%B8%BB-%E4%B8%89%E6%98%9F%E9%80%80%E5%87%BA1%E5%8F%B0%E5%BB%A0%E5%90%83%E5%88%B0%E8%82%A5%E8%82%89-%E7%87%9F%E6%94%B6%E6%BF%80%E7%88%8670-%E8%B6%85%E7%8B%82-022336910.html",
-              "source": "yahoo",
-              "date": null
-            }
-          ]
+          "hits": 2,
+          "isPrimary": true
         },
         {
           "name": "台灣積體電路製造",
           "stockCode": "2330",
-          "newsHits": 1,
-          "isPrimary": true,
-          "sampleNews": [
-            {
-              "title": "晶片助攻 三星Q1財報好神",
-              "url": "https://tw.stock.yahoo.com/news/%E6%99%B6%E7%89%87%E5%8A%A9%E6%94%BB-%E4%B8%89%E6%98%9Fq1%E8%B2%A1%E5%A0%B1%E5%A5%BD%E7%A5%9E-201000680.html",
-              "source": "yahoo",
-              "date": null
-            }
-          ]
+          "hits": 1,
+          "isPrimary": true
         },
         {
           "name": "華邦電子",
           "stockCode": "2344",
-          "newsHits": 1,
-          "isPrimary": false,
-          "sampleNews": [
-            {
-              "title": "三星罷工倒數計時 DRAM雙雄重返多頭",
-              "url": "https://tw.stock.yahoo.com/news/%E4%B8%89%E6%98%9F%E7%BD%B7%E5%B7%A5%E5%80%92%E6%95%B8%E8%A8%88%E6%99%82-dram%E9%9B%99%E9%9B%84%E9%87%8D%E8%BF%94%E5%A4%9A%E9%A0%AD-201000003.html",
-              "source": "yahoo",
-              "date": null
-            }
-          ]
+          "hits": 1,
+          "isPrimary": false
         }
       ]
     },
@@ -267,56 +112,25 @@
       "rank": 5,
       "name": "AI 伺服器",
       "volume": 4,
-      "primaryCompanyCount": 3,
       "totalCompanyCount": 3,
       "companies": [
         {
           "name": "英業達",
           "stockCode": "2356",
-          "newsHits": 2,
-          "isPrimary": true,
-          "sampleNews": [
-            {
-              "title": "英業達砸32億元擴充桃園大溪廠AI伺服器產能 年底投產",
-              "url": "https://tw.stock.yahoo.com/news/%E8%8B%B1%E6%A5%AD%E9%81%94%E7%A0%B832%E5%84%84%E5%85%83%E6%93%B4%E5%85%85%E6%A1%83%E5%9C%92%E5%A4%A7%E6%BA%AA%E5%BB%A0ai%E4%BC%BA%E6%9C%8D%E5%99%A8%E7%94%A2%E8%83%BD-%E5%B9%B4%E5%BA%95%E6%8A%95%E7%94%A2-100215095.html",
-              "source": "yahoo",
-              "date": null
-            },
-            {
-              "title": "英業達AI伺服器動能強勁 預期今年伺服器業務營收獲利將顯著成長",
-              "url": "https://tw.stock.yahoo.com/news/%E8%8B%B1%E6%A5%AD%E9%81%94ai%E4%BC%BA%E6%9C%8D%E5%99%A8%E5%8B%95%E8%83%BD%E5%BC%B7%E5%8B%81-%E9%A0%90%E6%9C%9F%E4%BB%8A%E5%B9%B4%E4%BC%BA%E6%9C%8D%E5%99%A8%E6%A5%AD%E5%8B%99%E7%87%9F%E6%94%B6%E7%8D%B2%E5%88%A9%E5%B0%87%E9%A1%AF%E8%91%97%E6%88%90%E9%95%B7-111242753.html",
-              "source": "yahoo",
-              "date": null
-            }
-          ]
+          "hits": 2,
+          "isPrimary": true
         },
         {
           "name": "華邦電子",
           "stockCode": "2344",
-          "newsHits": 1,
-          "isPrimary": true,
-          "sampleNews": [
-            {
-              "title": "華邦電CSP客戶比重升，AI伺服器周邊需求同步轉強",
-              "url": "https://tw.stock.yahoo.com/news/%E8%8F%AF%E9%82%A6%E9%9B%BBcsp%E5%AE%A2%E6%88%B6%E6%AF%94%E9%87%8D%E5%8D%87-ai%E4%BC%BA%E6%9C%8D%E5%99%A8%E5%91%A8%E9%82%8A%E9%9C%80%E6%B1%82%E5%90%8C%E6%AD%A5%E8%BD%89%E5%BC%B7-050300774.html",
-              "source": "yahoo",
-              "date": null
-            }
-          ]
+          "hits": 1,
+          "isPrimary": true
         },
         {
           "name": "信驊科技",
           "stockCode": "5274",
-          "newsHits": 1,
-          "isPrimary": true,
-          "sampleNews": [
-            {
-              "title": "《資服股》系微開發TapRUUT為AI PC、AI伺服器與資料中心打造基礎平台",
-              "url": "https://tw.stock.yahoo.com/news/%E8%B3%87%E6%9C%8D%E8%82%A1-%E7%B3%BB%E5%BE%AE%E9%96%8B%E7%99%BCtapruut%E7%82%BAai-pc-ai%E4%BC%BA%E6%9C%8D%E5%99%A8%E8%88%87%E8%B3%87%E6%96%99%E4%B8%AD%E5%BF%83%E6%89%93%E9%80%A0%E5%9F%BA%E7%A4%8E%E5%B9%B3%E5%8F%B0-020531211.html",
-              "source": "yahoo",
-              "date": null
-            }
-          ]
+          "hits": 1,
+          "isPrimary": true
         }
       ]
     },
@@ -324,48 +138,19 @@
       "rank": 6,
       "name": "先進製程 (3nm/2nm)",
       "volume": 4,
-      "primaryCompanyCount": 1,
       "totalCompanyCount": 2,
       "companies": [
         {
           "name": "智原科技",
           "stockCode": "3035",
-          "newsHits": 2,
-          "isPrimary": false,
-          "sampleNews": [
-            {
-              "title": "智原先進製程封裝邁量產初升段、明年看明顯爬升",
-              "url": "https://tw.stock.yahoo.com/news/%E6%99%BA%E5%8E%9F%E5%85%88%E9%80%B2%E8%A3%BD%E7%A8%8B%E5%B0%81%E8%A3%9D%E9%82%81%E9%87%8F%E7%94%A2%E5%88%9D%E5%8D%87%E6%AE%B5-%E6%98%8E%E5%B9%B4%E7%9C%8B%E6%98%8E%E9%A1%AF%E7%88%AC%E5%8D%87-051800890.html",
-              "source": "yahoo",
-              "date": null
-            },
-            {
-              "title": "智原先進製程與封裝進入量產初升段，Q2營收續成長、毛利率落45%上下",
-              "url": "https://tw.stock.yahoo.com/news/%E6%99%BA%E5%8E%9F%E5%85%88%E9%80%B2%E8%A3%BD%E7%A8%8B%E8%88%87%E5%B0%81%E8%A3%9D%E9%80%B2%E5%85%A5%E9%87%8F%E7%94%A2%E5%88%9D%E5%8D%87%E6%AE%B5-q2%E7%87%9F%E6%94%B6%E7%BA%8C%E6%88%90%E9%95%B7-%E6%AF%9B%E5%88%A9%E7%8E%87%E8%90%BD45-%E4%B8%8A%E4%B8%8B-030624332.html",
-              "source": "yahoo",
-              "date": null
-            }
-          ]
+          "hits": 2,
+          "isPrimary": false
         },
         {
           "name": "崇越科技",
           "stockCode": "5434",
-          "newsHits": 2,
-          "isPrimary": true,
-          "sampleNews": [
-            {
-              "title": "半導體先進製程需求旺 崇越3月營收首度衝破70億元",
-              "url": "https://tw.stock.yahoo.com/news/%E5%8D%8A%E5%B0%8E%E9%AB%94%E5%85%88%E9%80%B2%E8%A3%BD%E7%A8%8B%E9%9C%80%E6%B1%82%E6%97%BA-%E5%B4%87%E8%B6%8A3%E6%9C%88%E7%87%9F%E6%94%B6%E9%A6%96%E5%BA%A6%E8%A1%9D%E7%A0%B470%E5%84%84%E5%85%83-073417946.html",
-              "source": "yahoo",
-              "date": null
-            },
-            {
-              "title": "崇越今年營收拚雙位數成長 擁先進製程記憶體雙動能",
-              "url": "https://tw.stock.yahoo.com/news/%E5%B4%87%E8%B6%8A%E4%BB%8A%E5%B9%B4%E7%87%9F%E6%94%B6%E6%8B%9A%E9%9B%99%E4%BD%8D%E6%95%B8%E6%88%90%E9%95%B7-%E6%93%81%E5%85%88%E9%80%B2%E8%A3%BD%E7%A8%8B%E8%A8%98%E6%86%B6%E9%AB%94%E9%9B%99%E5%8B%95%E8%83%BD-071557509.html",
-              "source": "yahoo",
-              "date": null
-            }
-          ]
+          "hits": 2,
+          "isPrimary": true
         }
       ]
     },
@@ -373,56 +158,25 @@
       "rank": 7,
       "name": "衛星通訊",
       "volume": 4,
-      "primaryCompanyCount": 2,
       "totalCompanyCount": 3,
       "companies": [
         {
           "name": "穩懋半導體",
           "stockCode": "3105",
-          "newsHits": 2,
-          "isPrimary": true,
-          "sampleNews": [
-            {
-              "title": "穩懋低軌衛星/AI光通訊獲驗證，增資本支出衝產能",
-              "url": "https://tw.stock.yahoo.com/news/%E7%A9%A9%E6%87%8B%E4%BD%8E%E8%BB%8C%E8%A1%9B%E6%98%9F-ai%E5%85%89%E9%80%9A%E8%A8%8A%E7%8D%B2%E9%A9%97%E8%AD%89-%E5%A2%9E%E8%B3%87%E6%9C%AC%E6%94%AF%E5%87%BA%E8%A1%9D%E7%94%A2%E8%83%BD-025100898.html",
-              "source": "yahoo",
-              "date": null
-            },
-            {
-              "title": "低軌衛星需求勁，穩懋製程布局完整卡位升級商機",
-              "url": "https://tw.stock.yahoo.com/news/%E4%BD%8E%E8%BB%8C%E8%A1%9B%E6%98%9F%E9%9C%80%E6%B1%82%E5%8B%81-%E7%A9%A9%E6%87%8B%E8%A3%BD%E7%A8%8B%E5%B8%83%E5%B1%80%E5%AE%8C%E6%95%B4%E5%8D%A1%E4%BD%8D%E5%8D%87%E7%B4%9A%E5%95%86%E6%A9%9F-043500068.html",
-              "source": "yahoo",
-              "date": null
-            }
-          ]
+          "hits": 2,
+          "isPrimary": true
         },
         {
           "name": "友達光電",
           "stockCode": "2409",
-          "newsHits": 1,
-          "isPrimary": false,
-          "sampleNews": [
-            {
-              "title": "智慧顯示展友達攻光通訊衛星 群創拚半導體封裝車載",
-              "url": "https://tw.stock.yahoo.com/news/%E6%99%BA%E6%85%A7%E9%A1%AF%E7%A4%BA%E5%B1%95%E5%8F%8B%E9%81%94%E6%94%BB%E5%85%89%E9%80%9A%E8%A8%8A%E8%A1%9B%E6%98%9F-%E7%BE%A4%E5%89%B5%E6%8B%9A%E5%8D%8A%E5%B0%8E%E9%AB%94%E5%B0%81%E8%A3%9D%E8%BB%8A%E8%BC%89-131803587.html",
-              "source": "yahoo",
-              "date": null
-            }
-          ]
+          "hits": 1,
+          "isPrimary": false
         },
         {
           "name": "和碩聯合科技",
           "stockCode": "4938",
-          "newsHits": 1,
-          "isPrimary": true,
-          "sampleNews": [
-            {
-              "title": "和碩今年伺服器營收將顯著成長 同步拓展機器人、能源、衛星新事業",
-              "url": "https://tw.stock.yahoo.com/news/%E5%92%8C%E7%A2%A9%E4%BB%8A%E5%B9%B4%E4%BC%BA%E6%9C%8D%E5%99%A8%E7%87%9F%E6%94%B6%E5%B0%87%E9%A1%AF%E8%91%97%E6%88%90%E9%95%B7-%E5%90%8C%E6%AD%A5%E6%8B%93%E5%B1%95%E6%A9%9F%E5%99%A8%E4%BA%BA-%E8%83%BD%E6%BA%90-%E8%A1%9B%E6%98%9F%E6%96%B0%E4%BA%8B%E6%A5%AD-105346760.html",
-              "source": "yahoo",
-              "date": null
-            }
-          ]
+          "hits": 1,
+          "isPrimary": true
         }
       ]
     },
@@ -430,50 +184,25 @@
       "rank": 8,
       "name": "DRAM / 記憶體",
       "volume": 3,
-      "primaryCompanyCount": 1,
       "totalCompanyCount": 3,
       "companies": [
         {
           "name": "華邦電子",
           "stockCode": "2344",
-          "newsHits": 1,
-          "isPrimary": false,
-          "sampleNews": [
-            {
-              "title": "三星罷工倒數計時 DRAM雙雄重返多頭",
-              "url": "https://tw.stock.yahoo.com/news/%E4%B8%89%E6%98%9F%E7%BD%B7%E5%B7%A5%E5%80%92%E6%95%B8%E8%A8%88%E6%99%82-dram%E9%9B%99%E9%9B%84%E9%87%8D%E8%BF%94%E5%A4%9A%E9%A0%AD-201000003.html",
-              "source": "yahoo",
-              "date": null
-            }
-          ]
+          "hits": 1,
+          "isPrimary": false
         },
         {
           "name": "宏碁",
           "stockCode": "2353",
-          "newsHits": 1,
-          "isPrimary": false,
-          "sampleNews": [
-            {
-              "title": "宏碁施振榮投資記憶體設計廠NEO 力促3D X-DRAM技術填補台灣AI記憶體缺口",
-              "url": "https://tw.stock.yahoo.com/news/%E5%AE%8F%E7%A2%81%E6%96%BD%E6%8C%AF%E6%A6%AE%E6%8A%95%E8%B3%87%E8%A8%98%E6%86%B6%E9%AB%94%E8%A8%AD%E8%A8%88%E5%BB%A0neo-%E5%8A%9B%E4%BF%833d-x-dram%E6%8A%80%E8%A1%93%E5%A1%AB%E8%A3%9C%E5%8F%B0%E7%81%A3ai%E8%A8%98%E6%86%B6%E9%AB%94%E7%BC%BA%E5%8F%A3-100242419.html",
-              "source": "yahoo",
-              "date": null
-            }
-          ]
+          "hits": 1,
+          "isPrimary": false
         },
         {
           "name": "鈺創科技",
           "stockCode": "5351",
-          "newsHits": 1,
-          "isPrimary": true,
-          "sampleNews": [
-            {
-              "title": "鈺創：DRAM可能缺貨到2027年 營運有望受惠漲價",
-              "url": "https://tw.stock.yahoo.com/news/%E9%88%BA%E5%89%B5-dram%E5%8F%AF%E8%83%BD%E7%BC%BA%E8%B2%A8%E5%88%B02027%E5%B9%B4-%E7%87%9F%E9%81%8B%E6%9C%89%E6%9C%9B%E5%8F%97%E6%83%A0%E6%BC%B2%E5%83%B9-085743480.html",
-              "source": "yahoo",
-              "date": null
-            }
-          ]
+          "hits": 1,
+          "isPrimary": true
         }
       ]
     },
@@ -481,34 +210,13 @@
       "rank": 9,
       "name": "成熟製程",
       "volume": 3,
-      "primaryCompanyCount": 1,
       "totalCompanyCount": 1,
       "companies": [
         {
           "name": "新唐科技",
           "stockCode": "4919",
-          "newsHits": 3,
-          "isPrimary": true,
-          "sampleNews": [
-            {
-              "title": "新唐子公司NTCJ擬100%持有TPSCo，聚焦8吋晶圓廠",
-              "url": "https://tw.stock.yahoo.com/news/%E6%96%B0%E5%94%90%E5%AD%90%E5%85%AC%E5%8F%B8ntcj%E6%93%AC100-%E6%8C%81%E6%9C%89tpsco-%E8%81%9A%E7%84%A68%E5%90%8B%E6%99%B6%E5%9C%93%E5%BB%A0-011100499.html",
-              "source": "yahoo",
-              "date": null
-            },
-            {
-              "title": "《半導體》新唐出手！NTCJ砸8億元拿下8吋晶圓廠",
-              "url": "https://tw.stock.yahoo.com/news/%E5%8D%8A%E5%B0%8E%E9%AB%94-%E6%96%B0%E5%94%90%E5%87%BA%E6%89%8B-ntcj%E7%A0%B88%E5%84%84%E5%85%83%E6%8B%BF%E4%B8%8B8%E5%90%8B%E6%99%B6%E5%9C%93%E5%BB%A0-235349472.html",
-              "source": "yahoo",
-              "date": null
-            },
-            {
-              "title": "新唐子公司NTCJ 斥資8億元取得8吋晶圓廠",
-              "url": "https://tw.stock.yahoo.com/news/%E6%96%B0%E5%94%90%E5%AD%90%E5%85%AC%E5%8F%B8ntcj-%E6%96%A5%E8%B3%878%E5%84%84%E5%85%83%E5%8F%96%E5%BE%978%E5%90%8B%E6%99%B6%E5%9C%93%E5%BB%A0-134838336.html",
-              "source": "yahoo",
-              "date": null
-            }
-          ]
+          "hits": 3,
+          "isPrimary": true
         }
       ]
     },
@@ -516,34 +224,13 @@
       "rank": 10,
       "name": "晶圓代工",
       "volume": 3,
-      "primaryCompanyCount": 0,
       "totalCompanyCount": 1,
       "companies": [
         {
           "name": "新唐科技",
           "stockCode": "4919",
-          "newsHits": 3,
-          "isPrimary": false,
-          "sampleNews": [
-            {
-              "title": "新唐子公司NTCJ擬100%持有TPSCo，聚焦8吋晶圓廠",
-              "url": "https://tw.stock.yahoo.com/news/%E6%96%B0%E5%94%90%E5%AD%90%E5%85%AC%E5%8F%B8ntcj%E6%93%AC100-%E6%8C%81%E6%9C%89tpsco-%E8%81%9A%E7%84%A68%E5%90%8B%E6%99%B6%E5%9C%93%E5%BB%A0-011100499.html",
-              "source": "yahoo",
-              "date": null
-            },
-            {
-              "title": "《半導體》新唐出手！NTCJ砸8億元拿下8吋晶圓廠",
-              "url": "https://tw.stock.yahoo.com/news/%E5%8D%8A%E5%B0%8E%E9%AB%94-%E6%96%B0%E5%94%90%E5%87%BA%E6%89%8B-ntcj%E7%A0%B88%E5%84%84%E5%85%83%E6%8B%BF%E4%B8%8B8%E5%90%8B%E6%99%B6%E5%9C%93%E5%BB%A0-235349472.html",
-              "source": "yahoo",
-              "date": null
-            },
-            {
-              "title": "新唐子公司NTCJ 斥資8億元取得8吋晶圓廠",
-              "url": "https://tw.stock.yahoo.com/news/%E6%96%B0%E5%94%90%E5%AD%90%E5%85%AC%E5%8F%B8ntcj-%E6%96%A5%E8%B3%878%E5%84%84%E5%85%83%E5%8F%96%E5%BE%978%E5%90%8B%E6%99%B6%E5%9C%93%E5%BB%A0-134838336.html",
-              "source": "yahoo",
-              "date": null
-            }
-          ]
+          "hits": 3,
+          "isPrimary": false
         }
       ]
     },
@@ -551,50 +238,25 @@
       "rank": 11,
       "name": "面板 / TFT-LCD",
       "volume": 3,
-      "primaryCompanyCount": 2,
       "totalCompanyCount": 3,
       "companies": [
         {
           "name": "群創光電",
           "stockCode": "3481",
-          "newsHits": 1,
-          "isPrimary": true,
-          "sampleNews": [
-            {
-              "title": "【Follow法人】外資連3摜台積電！3天賣超5.6萬張 面板雙虎也遭調節",
-              "url": "https://tw.stock.yahoo.com/news/%E3%80%90follow%E6%B3%95%E4%BA%BA%E3%80%91%E5%A4%96%E8%B3%87%E9%80%A33%E6%91%9C%E5%8F%B0%E7%A9%8D%E9%9B%BB%EF%BC%813%E5%A4%A9%E8%B3%A3%E8%B6%8556%E8%90%AC%E5%BC%B5-%E9%9D%A2%E6%9D%BF%E9%9B%99%E8%99%8E%E4%B9%9F%E9%81%AD%E8%AA%BF%E7%AF%80-070551228.html",
-              "source": "yahoo",
-              "date": null
-            }
-          ]
+          "hits": 1,
+          "isPrimary": true
         },
         {
           "name": "天虹科技",
           "stockCode": "6937",
-          "newsHits": 1,
-          "isPrimary": true,
-          "sampleNews": [
-            {
-              "title": "天虹：面板級封裝設備交機高雄客戶 今年營收戰新高",
-              "url": "https://tw.stock.yahoo.com/news/%E5%A4%A9%E8%99%B9-%E9%9D%A2%E6%9D%BF%E7%B4%9A%E5%B0%81%E8%A3%9D%E8%A8%AD%E5%82%99%E4%BA%A4%E6%A9%9F%E9%AB%98%E9%9B%84%E5%AE%A2%E6%88%B6-%E4%BB%8A%E5%B9%B4%E7%87%9F%E6%94%B6%E6%88%B0%E6%96%B0%E9%AB%98-050741134.html",
-              "source": "yahoo",
-              "date": null
-            }
-          ]
+          "hits": 1,
+          "isPrimary": true
         },
         {
           "name": "仁寶電腦工業",
           "stockCode": "2324",
-          "newsHits": 1,
-          "isPrimary": false,
-          "sampleNews": [
-            {
-              "title": "三大法人同步賣超台股 外資調節面板雙虎、敲進聯電",
-              "url": "https://tw.stock.yahoo.com/news/%E4%B8%89%E5%A4%A7%E6%B3%95%E4%BA%BA%E5%90%8C%E6%AD%A5%E8%B3%A3%E8%B6%85%E5%8F%B0%E8%82%A1-%E5%A4%96%E8%B3%87%E8%AA%BF%E7%AF%80%E9%9D%A2%E6%9D%BF%E9%9B%99%E8%99%8E-%E6%95%B2%E9%80%B2%E8%81%AF%E9%9B%BB-110027159.html",
-              "source": "yahoo",
-              "date": null
-            }
-          ]
+          "hits": 1,
+          "isPrimary": false
         }
       ]
     },
@@ -602,42 +264,19 @@
       "rank": 12,
       "name": "資安",
       "volume": 3,
-      "primaryCompanyCount": 2,
       "totalCompanyCount": 2,
       "companies": [
         {
           "name": "中國鋼鐵",
           "stockCode": "2002",
-          "newsHits": 2,
-          "isPrimary": true,
-          "sampleNews": [
-            {
-              "title": "【公告】中鋼執行副總經理、發言人暨資訊安全長變動",
-              "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E4%B8%AD%E9%8B%BC%E5%9F%B7%E8%A1%8C%E5%89%AF%E7%B8%BD%E7%B6%93%E7%90%86-%E7%99%BC%E8%A8%80%E4%BA%BA%E6%9A%A8%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8%E9%95%B7%E8%AE%8A%E5%8B%95-083831347.html",
-              "source": "yahoo",
-              "date": null
-            },
-            {
-              "title": "中鋼 公告本公司執行副總經理、發言人暨資訊安全長變動",
-              "url": "https://tw.stock.yahoo.com/news/%E4%B8%AD%E9%8B%BC-%E5%85%AC%E5%91%8A%E6%9C%AC%E5%85%AC%E5%8F%B8%E5%9F%B7%E8%A1%8C%E5%89%AF%E7%B8%BD%E7%B6%93%E7%90%86-%E7%99%BC%E8%A8%80%E4%BA%BA%E6%9A%A8%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8%E9%95%B7%E8%AE%8A%E5%8B%95-082300744.html",
-              "source": "yahoo",
-              "date": null
-            }
-          ]
+          "hits": 2,
+          "isPrimary": true
         },
         {
           "name": "關貿網路",
           "stockCode": "6183",
-          "newsHits": 1,
-          "isPrimary": true,
-          "sampleNews": [
-            {
-              "title": "【公告】關貿資安長及代理發言人異動",
-              "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E9%97%9C%E8%B2%BF%E8%B3%87%E5%AE%89%E9%95%B7%E5%8F%8A%E4%BB%A3%E7%90%86%E7%99%BC%E8%A8%80%E4%BA%BA%E7%95%B0%E5%8B%95-082456157.html",
-              "source": "yahoo",
-              "date": null
-            }
-          ]
+          "hits": 1,
+          "isPrimary": true
         }
       ]
     },
@@ -645,42 +284,19 @@
       "rank": 13,
       "name": "CoWoS / 先進封裝",
       "volume": 3,
-      "primaryCompanyCount": 2,
       "totalCompanyCount": 2,
       "companies": [
         {
           "name": "新應材",
           "stockCode": "4749",
-          "newsHits": 2,
-          "isPrimary": true,
-          "sampleNews": [
-            {
-              "title": "新應材、南寶、信紘科合組新寳紘  攻先進封裝高階膠材市場",
-              "url": "https://ec.ltn.com.tw/article/breakingnews/5159500",
-              "source": "ltn",
-              "date": "2025-08-28"
-            },
-            {
-              "title": "南寶攜手新應材、信紘科  投入半導體先進封裝用高階膠材商機",
-              "url": "https://ec.ltn.com.tw/article/breakingnews/5159463",
-              "source": "ltn",
-              "date": "2025-08-28"
-            }
-          ]
+          "hits": 2,
+          "isPrimary": true
         },
         {
           "name": "欣興電子",
           "stockCode": "3037",
-          "newsHits": 1,
-          "isPrimary": true,
-          "sampleNews": [
-            {
-              "title": "3DIC先進封裝製造聯盟啟動 打造異質整合新局",
-              "url": "https://ec.ltn.com.tw/article/breakingnews/5172459",
-              "source": "ltn",
-              "date": "2025-09-09"
-            }
-          ]
+          "hits": 1,
+          "isPrimary": true
         }
       ]
     },
@@ -688,28 +304,13 @@
       "rank": 14,
       "name": "5G 通訊",
       "volume": 2,
-      "primaryCompanyCount": 1,
       "totalCompanyCount": 1,
       "companies": [
         {
           "name": "宏達國際電子",
           "stockCode": "2498",
-          "newsHits": 2,
-          "isPrimary": true,
-          "sampleNews": [
-            {
-              "title": "宏達電攜手光寶科亮相MWC 展出德國5G專網商轉實績",
-              "url": "https://tw.stock.yahoo.com/news/%E5%AE%8F%E9%81%94%E9%9B%BB%E6%94%9C%E6%89%8B%E5%85%89%E5%AF%B6%E7%A7%91%E4%BA%AE%E7%9B%B8mwc-%E5%B1%95%E5%87%BA%E5%BE%B7%E5%9C%8B5g%E5%B0%88%E7%B6%B2%E5%95%86%E8%BD%89%E5%AF%A6%E7%B8%BE-021213284.html",
-              "source": "yahoo",
-              "date": null
-            },
-            {
-              "title": "HTC G REIGNS與光寶科登MWC，秀5G專網商轉實績",
-              "url": "https://tw.stock.yahoo.com/news/htc-g-reigns%E8%88%87%E5%85%89%E5%AF%B6%E7%A7%91%E7%99%BBmwc-%E7%A7%805g%E5%B0%88%E7%B6%B2%E5%95%86%E8%BD%89%E5%AF%A6%E7%B8%BE-091400616.html",
-              "source": "yahoo",
-              "date": null
-            }
-          ]
+          "hits": 2,
+          "isPrimary": true
         }
       ]
     },
@@ -717,36 +318,19 @@
       "rank": 15,
       "name": "ABF 載板",
       "volume": 2,
-      "primaryCompanyCount": 0,
       "totalCompanyCount": 2,
       "companies": [
         {
           "name": "台達電子工業",
           "stockCode": "2308",
-          "newsHits": 1,
-          "isPrimary": false,
-          "sampleNews": [
-            {
-              "title": "【台股盤中】台股開高震盪 ABF、光通訊族群勁揚",
-              "url": "https://tw.stock.yahoo.com/news/%E5%8F%B0%E8%82%A1%E7%9B%A4%E4%B8%AD-%E5%8F%B0%E8%82%A1%E9%96%8B%E9%AB%98%E9%9C%87%E7%9B%AA-abf-%E5%85%89%E9%80%9A%E8%A8%8A%E6%97%8F%E7%BE%A4%E5%8B%81%E6%8F%9A-035656956.html",
-              "source": "yahoo",
-              "date": null
-            }
-          ]
+          "hits": 1,
+          "isPrimary": false
         },
         {
           "name": "欣興電子",
           "stockCode": "3037",
-          "newsHits": 1,
-          "isPrimary": false,
-          "sampleNews": [
-            {
-              "title": "ABF雙箭頭目標價 法人喊千元",
-              "url": "https://tw.stock.yahoo.com/news/abf%E9%9B%99%E7%AE%AD%E9%A0%AD%E7%9B%AE%E6%A8%99%E5%83%B9-%E6%B3%95%E4%BA%BA%E5%96%8A%E5%8D%83%E5%85%83-201000057.html",
-              "source": "yahoo",
-              "date": null
-            }
-          ]
+          "hits": 1,
+          "isPrimary": false
         }
       ]
     },
@@ -754,28 +338,13 @@
       "rank": 16,
       "name": "MicroLED",
       "volume": 2,
-      "primaryCompanyCount": 1,
       "totalCompanyCount": 1,
       "companies": [
         {
           "name": "友達光電",
           "stockCode": "2409",
-          "newsHits": 2,
-          "isPrimary": true,
-          "sampleNews": [
-            {
-              "title": "友達攜手Garmin  推出全球首款Micro LED智慧手錶",
-              "url": "https://ec.ltn.com.tw/article/breakingnews/5166756",
-              "source": "ltn",
-              "date": "2025-09-04"
-            },
-            {
-              "title": "智慧顯示展拚Micro LED 友達3月營收月增26.9%",
-              "url": "https://tw.stock.yahoo.com/news/%E6%99%BA%E6%85%A7%E9%A1%AF%E7%A4%BA%E5%B1%95%E6%8B%9Amicro-led-%E5%8F%8B%E9%81%943%E6%9C%88%E7%87%9F%E6%94%B6%E6%9C%88%E5%A2%9E26-9-142422358.html",
-              "source": "yahoo",
-              "date": null
-            }
-          ]
+          "hits": 2,
+          "isPrimary": true
         }
       ]
     },
@@ -783,28 +352,13 @@
       "rank": 17,
       "name": "金融科技 FinTech",
       "volume": 2,
-      "primaryCompanyCount": 1,
       "totalCompanyCount": 1,
       "companies": [
         {
           "name": "遊戲橘子數位科技",
           "stockCode": "6180",
-          "newsHits": 2,
-          "isPrimary": true,
-          "sampleNews": [
-            {
-              "title": "【公告】代重要子公司橘子支行動支付(股)公司公告董事會決議召開115年股東常會事宜",
-              "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E4%BB%A3%E9%87%8D%E8%A6%81%E5%AD%90%E5%85%AC%E5%8F%B8%E6%A9%98%E5%AD%90%E6%94%AF%E8%A1%8C%E5%8B%95%E6%94%AF%E4%BB%98-%E8%82%A1-%E5%85%AC%E5%8F%B8%E5%85%AC%E5%91%8A%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E5%8F%AC%E9%96%8B115%E5%B9%B4%E8%82%A1%E6%9D%B1%E5%B8%B8%E6%9C%83%E4%BA%8B%E5%AE%9C-093951422.html",
-              "source": "yahoo",
-              "date": null
-            },
-            {
-              "title": "【公告】橘子代重要子公司橘子支行動支付股份有限公司公告訂定減資基準日及其他相關事宜",
-              "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%A9%98%E5%AD%90%E4%BB%A3%E9%87%8D%E8%A6%81%E5%AD%90%E5%85%AC%E5%8F%B8%E6%A9%98%E5%AD%90%E6%94%AF%E8%A1%8C%E5%8B%95%E6%94%AF%E4%BB%98%E8%82%A1%E4%BB%BD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%E5%85%AC%E5%91%8A%E8%A8%82%E5%AE%9A%E6%B8%9B%E8%B3%87%E5%9F%BA%E6%BA%96%E6%97%A5%E5%8F%8A%E5%85%B6%E4%BB%96%E7%9B%B8%E9%97%9C%E4%BA%8B%E5%AE%9C-085556866.html",
-              "source": "yahoo",
-              "date": null
-            }
-          ]
+          "hits": 2,
+          "isPrimary": true
         }
       ]
     },
@@ -812,22 +366,13 @@
       "rank": 18,
       "name": "穿戴 / AR/VR",
       "volume": 1,
-      "primaryCompanyCount": 0,
       "totalCompanyCount": 1,
       "companies": [
         {
           "name": "宏達國際電子",
           "stockCode": "2498",
-          "newsHits": 1,
-          "isPrimary": false,
-          "sampleNews": [
-            {
-              "title": "宏達電智慧眼鏡進軍新加坡 拓展海外AI穿戴版圖",
-              "url": "https://tw.stock.yahoo.com/news/%E5%AE%8F%E9%81%94%E9%9B%BB%E6%99%BA%E6%85%A7%E7%9C%BC%E9%8F%A1%E9%80%B2%E8%BB%8D%E6%96%B0%E5%8A%A0%E5%9D%A1-%E6%8B%93%E5%B1%95%E6%B5%B7%E5%A4%96ai%E7%A9%BF%E6%88%B4%E7%89%88%E5%9C%96-090754516.html",
-              "source": "yahoo",
-              "date": null
-            }
-          ]
+          "hits": 1,
+          "isPrimary": false
         }
       ]
     },
@@ -835,22 +380,13 @@
       "rank": 19,
       "name": "Flash / NAND",
       "volume": 1,
-      "primaryCompanyCount": 0,
       "totalCompanyCount": 1,
       "companies": [
         {
           "name": "群創光電",
           "stockCode": "3481",
-          "newsHits": 1,
-          "isPrimary": false,
-          "sampleNews": [
-            {
-              "title": "宜鼎看AI網通需求續強，NAND成Q2漲價主軸",
-              "url": "https://tw.stock.yahoo.com/news/%E5%AE%9C%E9%BC%8E%E7%9C%8Bai%E7%B6%B2%E9%80%9A%E9%9C%80%E6%B1%82%E7%BA%8C%E5%BC%B7-nand%E6%88%90q2%E6%BC%B2%E5%83%B9%E4%B8%BB%E8%BB%B8-035200708.html",
-              "source": "yahoo",
-              "date": null
-            }
-          ]
+          "hits": 1,
+          "isPrimary": false
         }
       ]
     },
@@ -858,22 +394,13 @@
       "rank": 20,
       "name": "風電",
       "volume": 1,
-      "primaryCompanyCount": 0,
       "totalCompanyCount": 1,
       "companies": [
         {
           "name": "鴻海精密工業",
           "stockCode": "2317",
-          "newsHits": 1,
-          "isPrimary": false,
-          "sampleNews": [
-            {
-              "title": "前8月僑外投資年增59.7％ 離岸風電佔大宗3.5成",
-              "url": "https://ec.ltn.com.tw/article/breakingnews/5179071",
-              "source": "ltn",
-              "date": "2025-09-15"
-            }
-          ]
+          "hits": 1,
+          "isPrimary": false
         }
       ]
     }
