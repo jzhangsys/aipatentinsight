@@ -1,9 +1,10 @@
 {
   "date": "2025-09-15",
-  "generatedAt": "2026-05-01T12:19:02.167Z",
+  "generatedAt": "2026-05-01T12:40:06.497Z",
   "newsWindow": {
     "start": "2025-03-01",
-    "end": "2025-09-15"
+    "end": "2025-09-15",
+    "mode": "inter_snapshot"
   },
   "totalCompanies": 54,
   "totalCompaniesAnalyzed": 10,

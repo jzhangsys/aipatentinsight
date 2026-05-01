@@ -81,39 +81,63 @@ if (existsSync(CACHE_DIR)) {
 console.log(`[build-market-signals] 載入 ${newsByCode.size} 家公司 news cache`);
 
 /**
- * 判斷新聞是否落在「上一期 snapshot ~ 本期 snapshot」的時間窗口。
- * 第一期 snapshot 沒有「上一期」,fallback 用 (D - N 天) 當起點。
+ * 給定明確的 (windowStart, windowEnd) — 日期都是 YYYY-MM-DD —
+ * 判斷新聞是否落在窗口內。
  *
- * Strict 時間對齊:沒日期的新聞**直接拒絕**,不進任何窗口。
- *   - Yahoo 列表頁不附日期 → 該源的新聞會大量被排除
- *   - LTN 顯示「2 小時前」這種相對時間 → 也會被排除(date parse 失敗)
- *   - LTN 顯示明確日期(YYYY/MM/DD)的新聞 → 正常落入對應窗口
- *
- * 這是為了避免「現在爬到的新聞混進歷史 snapshot 的分析」。
- * 寧可掉資料,也不要時間錯位。
+ * Strict 時間對齊:沒日期的新聞**直接拒絕**,避免「現在爬到的新聞」
+ * 被誤分配到任何 snapshot。
  */
-function inWindow(newsDate, snapshotDate, prevSnapshotDate) {
+function inWindow(newsDate, windowStart, windowEnd) {
   if (!newsDate) return false;
-  const snapTs = new Date(snapshotDate + "T23:59:59").getTime();
+  const startTs = new Date(windowStart + "T00:00:00").getTime();
+  const endTs = new Date(windowEnd + "T23:59:59").getTime();
   const newsTs = new Date(newsDate + "T00:00:00").getTime();
   if (Number.isNaN(newsTs)) return false;
-  if (newsTs > snapTs) return false; // 新聞晚於 snapshot 不算
-  let startTs;
-  if (prevSnapshotDate) {
-    startTs = new Date(prevSnapshotDate + "T23:59:59").getTime();
-    return newsTs > startTs;
-  } else {
-    startTs = snapTs - FIRST_SNAPSHOT_FALLBACK_DAYS * 86400 * 1000;
-    return newsTs >= startTs;
-  }
+  return newsTs >= startTs && newsTs <= endTs;
 }
 
-function buildOne(snapshotDate, prevSnapshotDate) {
+/**
+ * 計算某 snapshot 的 news window:
+ *  - isLatest: latest snapshot 用 [today-90d, today],反映「現在市場在講什麼」
+ *  - 有 prevSnapshotDate: [prev+1, current] 嚴格 inter-snapshot
+ *  - 沒 prev(第一期): [current - FIRST_SNAPSHOT_FALLBACK_DAYS, current]
+ */
+function computeWindow(snapshotDate, prevSnapshotDate, isLatest) {
+  if (isLatest) {
+    const today = new Date();
+    const back = new Date(today.getTime() - 90 * 86400 * 1000);
+    return {
+      start: back.toISOString().slice(0, 10),
+      end: today.toISOString().slice(0, 10),
+      label: "latest_fresh_90d",
+    };
+  }
+  if (prevSnapshotDate) {
+    // 起點:prev snapshot 之後的第一天
+    const prevDate = new Date(prevSnapshotDate + "T00:00:00");
+    const dayAfterPrev = new Date(prevDate.getTime() + 86400 * 1000);
+    return {
+      start: dayAfterPrev.toISOString().slice(0, 10),
+      end: snapshotDate,
+      label: "inter_snapshot",
+    };
+  }
+  const snap = new Date(snapshotDate + "T00:00:00");
+  const fallback = new Date(snap.getTime() - FIRST_SNAPSHOT_FALLBACK_DAYS * 86400 * 1000);
+  return {
+    start: fallback.toISOString().slice(0, 10),
+    end: snapshotDate,
+    label: "first_fallback_60d",
+  };
+}
+
+function buildOne(snapshotDate, prevSnapshotDate, isLatest) {
   const companies = companiesData.bySnapshot[snapshotDate];
   if (!companies) {
     console.log(`  [skip] ${snapshotDate}:companies.json 沒這期`);
     return null;
   }
+  const win = computeWindow(snapshotDate, prevSnapshotDate, isLatest);
 
   /**
    * 著作權保護:本 build 階段只產出「彙總指標」,不輸出任何新聞標題 / URL / 來源,
@@ -130,7 +154,7 @@ function buildOne(snapshotDate, prevSnapshotDate) {
 
   for (const co of companies) {
     const news = newsByCode.get(co.stockCode) || [];
-    const inwin = news.filter((n) => inWindow(n.date, snapshotDate, prevSnapshotDate));
+    const inwin = news.filter((n) => inWindow(n.date, win.start, win.end));
     if (inwin.length === 0) continue;
 
     const cthemes = new Map();
@@ -206,20 +230,10 @@ function buildOne(snapshotDate, prevSnapshotDate) {
     };
   });
 
-  // 對外公布窗口邊界(沒有曝露新聞,只是時間範圍)
-  const windowStart = prevSnapshotDate
-    ? prevSnapshotDate
-    : new Date(
-        new Date(snapshotDate).getTime() -
-          FIRST_SNAPSHOT_FALLBACK_DAYS * 86400 * 1000
-      )
-        .toISOString()
-        .slice(0, 10);
-
   return {
     date: snapshotDate,
     generatedAt: new Date().toISOString(),
-    newsWindow: { start: windowStart, end: snapshotDate },
+    newsWindow: { start: win.start, end: win.end, mode: win.label },
     totalCompanies: companies.length,
     totalCompaniesAnalyzed: companyThemes.size,
     themes,
@@ -240,9 +254,11 @@ for (let i = 0; i < allActualDates.length; i++) {
 }
 
 const targetDates = ARG_DATE ? [ARG_DATE] : allActualDates;
+const latestDate = allActualDates[allActualDates.length - 1];
 
 for (const d of targetDates) {
-  const out = buildOne(d, prevDateMap.get(d) || null);
+  const isLatest = d === latestDate;
+  const out = buildOne(d, prevDateMap.get(d) || null, isLatest);
   if (!out) continue;
   const outPath = join(PUBLIC_DATA, `market-signals-${d}.json`);
   writeFileSync(outPath, JSON.stringify(out, null, 2));

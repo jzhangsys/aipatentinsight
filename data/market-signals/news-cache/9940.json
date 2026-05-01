@@ -1,7 +1,7 @@
 {
   "stockCode": "9940",
   "name": "信義房屋",
-  "scrapedAt": "2026-05-01T12:18:33.812Z",
+  "scrapedAt": "2026-05-01T12:40:05.532Z",
   "sourceCounts": {
     "yahoo": 0,
     "ltn": 20
@@ -103,15 +103,15 @@
       "snippet": ""
     },
     {
-      "title": "銀行挑客戶 房貸審核趨嚴",
-      "url": "https://ec.ltn.com.tw/article/paper/1751588",
+      "title": "新青安2.0額度 61％盼延續8成、1千萬",
+      "url": "https://ec.ltn.com.tw/article/paper/1751587",
       "source": "ltn",
       "date": "2026-04-20",
       "snippet": ""
     },
     {
-      "title": "新青安2.0額度 61％盼延續8成、1千萬",
-      "url": "https://ec.ltn.com.tw/article/paper/1751587",
+      "title": "銀行挑客戶 房貸審核趨嚴",
+      "url": "https://ec.ltn.com.tw/article/paper/1751588",
       "source": "ltn",
       "date": "2026-04-20",
       "snippet": ""

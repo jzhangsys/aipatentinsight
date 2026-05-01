@@ -1,11 +1,27 @@
 {
   "date": "2024-12-01",
-  "generatedAt": "2026-05-01T12:19:02.159Z",
+  "generatedAt": "2026-05-01T12:40:06.489Z",
   "newsWindow": {
     "start": "2024-11-15",
-    "end": "2024-12-01"
+    "end": "2024-12-01",
+    "mode": "inter_snapshot"
   },
   "totalCompanies": 123,
-  "totalCompaniesAnalyzed": 0,
-  "themes": []
+  "totalCompaniesAnalyzed": 1,
+  "themes": [
+    {
+      "rank": 1,
+      "name": "區塊鏈 / 加密貨幣",
+      "volume": 1,
+      "totalCompanyCount": 1,
+      "companies": [
+        {
+          "name": "精英電腦",
+          "stockCode": "2331",
+          "hits": 1,
+          "isPrimary": true
+        }
+      ]
+    }
+  ]
 }

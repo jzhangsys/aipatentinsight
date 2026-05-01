@@ -1,9 +1,10 @@
 {
   "date": "2024-07-29",
-  "generatedAt": "2026-05-01T12:19:02.152Z",
+  "generatedAt": "2026-05-01T12:40:06.483Z",
   "newsWindow": {
-    "start": "2024-05-30",
-    "end": "2024-07-29"
+    "start": "2024-05-29",
+    "end": "2024-07-29",
+    "mode": "first_fallback_60d"
   },
   "totalCompanies": 43,
   "totalCompaniesAnalyzed": 0,

@@ -1,156 +1,16 @@
 {
   "stockCode": "2454",
   "name": "聯發科技",
-  "scrapedAt": "2026-05-01T12:10:11.137Z",
+  "scrapedAt": "2026-05-01T12:31:51.015Z",
   "sourceCounts": {
-    "yahoo": 20,
+    "yahoo": 0,
     "ltn": 20
   },
   "enrichStats": {
-    "fetched": 20,
-    "filled": 20
+    "fetched": 0,
+    "filled": 0
   },
   "news": [
-    {
-      "title": "陳建全：聯發科最強小金雞 AI ASIC季季成長",
-      "url": "https://tw.stock.yahoo.com/news/%E9%99%B3%E5%BB%BA%E5%85%A8-%E8%81%AF%E7%99%BC%E7%A7%91%E6%9C%80%E5%BC%B7%E5%B0%8F%E9%87%91%E9%9B%9E-ai-asic%E5%AD%A3%E5%AD%A3%E6%88%90%E9%95%B7-115511096.html",
-      "source": "yahoo",
-      "date": "2026-05-01",
-      "snippet": ""
-    },
-    {
-      "title": "不只0050能買！專家點名「這1檔ETF」猛超車 2關鍵曝光",
-      "url": "https://tw.stock.yahoo.com/news/%E4%B8%8D%E5%8F%AA0050%E8%83%BD%E8%B2%B7-%E5%B0%88%E5%AE%B6%E9%BB%9E%E5%90%8D-%E9%80%991%E6%AA%94etf-%E7%8C%9B%E8%B6%85%E8%BB%8A-2%E9%97%9C%E9%8D%B5%E6%9B%9D%E5%85%89-062601171.html",
-      "source": "yahoo",
-      "date": "2026-05-01",
-      "snippet": ""
-    },
-    {
-      "title": "超級法說周助攻4萬點、台灣Q1 GDP狂飆13.69%、統一超入主台灣LOPIA 本周大事回顧",
-      "url": "https://tw.stock.yahoo.com/news/%E8%B6%85%E7%B4%9A%E6%B3%95%E8%AA%AA%E5%91%A8%E5%8A%A9%E6%94%BB4%E8%90%AC%E9%BB%9E-%E5%8F%B0%E7%81%A3q1-gdp%E7%8B%82%E9%A3%8613-69-%E7%B5%B1-020758953.html",
-      "source": "yahoo",
-      "date": "2026-05-01",
-      "snippet": ""
-    },
-    {
-      "title": "聯發科衝刺ASIC 商機引爆",
-      "url": "https://tw.stock.yahoo.com/news/%E8%81%AF%E7%99%BC%E7%A7%91%E8%A1%9D%E5%88%BAasic-%E5%95%86%E6%A9%9F%E5%BC%95%E7%88%86-201000066.html",
-      "source": "yahoo",
-      "date": "2026-04-30",
-      "snippet": ""
-    },
-    {
-      "title": "聯發科子公司投資昆橋三期(上海)科技產業股權投資合夥企業，上限3億人民幣",
-      "url": "https://tw.stock.yahoo.com/news/%E8%81%AF%E7%99%BC%E7%A7%91%E5%AD%90%E5%85%AC%E5%8F%B8%E6%8A%95%E8%B3%87%E6%98%86%E6%A9%8B%E4%B8%89%E6%9C%9F-%E4%B8%8A%E6%B5%B7-%E7%A7%91%E6%8A%80%E7%94%A2%E6%A5%AD%E8%82%A1%E6%AC%8A%E6%8A%95%E8%B3%87%E5%90%88%E5%A4%A5%E4%BC%81%E6%A5%AD-%E4%B8%8A%E9%99%903%E5%84%84%E4%BA%BA%E6%B0%91%E5%B9%A3-142100911.html",
-      "source": "yahoo",
-      "date": "2026-04-30",
-      "snippet": ""
-    },
-    {
-      "title": "聯發科第一季合併獲利241.54億元，每股稅後15.17元",
-      "url": "https://tw.stock.yahoo.com/news/%E8%81%AF%E7%99%BC%E7%A7%91%E7%AC%AC-%E5%AD%A3%E5%90%88%E4%BD%B5%E7%8D%B2%E5%88%A9241-54%E5%84%84%E5%85%83-%E6%AF%8F%E8%82%A1%E7%A8%85%E5%BE%8C15-17%E5%85%83-142100134.html",
-      "source": "yahoo",
-      "date": "2026-04-30",
-      "snippet": ""
-    },
-    {
-      "title": "聯發科Q2展望：單季營收1,402~1,492億元 、毛利率44.5~47.5%",
-      "url": "https://tw.stock.yahoo.com/news/%E8%81%AF%E7%99%BC%E7%A7%91q2%E5%B1%95%E6%9C%9B-%E5%96%AE%E5%AD%A3%E7%87%9F%E6%94%B61-402-1-492%E5%84%84%E5%85%83-142100994.html",
-      "source": "yahoo",
-      "date": "2026-04-30",
-      "snippet": ""
-    },
-    {
-      "title": "【公告】聯發科董事會決議辦理限制員工權利新股收回註銷減資事宜",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E8%81%AF%E7%99%BC%E7%A7%91%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E8%BE%A6%E7%90%86%E9%99%90%E5%88%B6%E5%93%A1%E5%B7%A5%E6%AC%8A%E5%88%A9%E6%96%B0%E8%82%A1%E6%94%B6%E5%9B%9E%E8%A8%BB%E9%8A%B7%E6%B8%9B%E8%B3%87%E4%BA%8B%E5%AE%9C-101641913.html",
-      "source": "yahoo",
-      "date": "2026-04-30",
-      "snippet": ""
-    },
-    {
-      "title": "【公告】聯發科2026年第1季合併財務報告",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E8%81%AF%E7%99%BC%E7%A7%912026%E5%B9%B4%E7%AC%AC1%E5%AD%A3%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A-101639400.html",
-      "source": "yahoo",
-      "date": "2026-04-30",
-      "snippet": ""
-    },
-    {
-      "title": "【公告】代子公司旭徽聯芯公告取得金融資產",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E4%BB%A3%E5%AD%90%E5%85%AC%E5%8F%B8%E6%97%AD%E5%BE%BD%E8%81%AF%E8%8A%AF%E5%85%AC%E5%91%8A%E5%8F%96%E5%BE%97%E9%87%91%E8%9E%8D%E8%B3%87%E7%94%A2-101637139.html",
-      "source": "yahoo",
-      "date": "2026-04-30",
-      "snippet": ""
-    },
-    {
-      "title": "【公告】聯發科民國115年度第二季簡式合併財務預測公告",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E8%81%AF%E7%99%BC%E7%A7%91%E6%B0%91%E5%9C%8B115%E5%B9%B4%E5%BA%A6%E7%AC%AC%E4%BA%8C%E5%AD%A3%E7%B0%A1%E5%BC%8F%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E9%A0%90%E6%B8%AC%E5%85%AC%E5%91%8A-101509563.html",
-      "source": "yahoo",
-      "date": "2026-04-30",
-      "snippet": ""
-    },
-    {
-      "title": "聯發科法說》AI ASIC營收翻倍上修至20億美元 蔡力行：目標搶15%市占",
-      "url": "https://tw.stock.yahoo.com/news/%E8%81%AF%E7%99%BC%E7%A7%91%E6%B3%95%E8%AA%AA%E3%80%8Bai-asic%E7%87%9F%E6%94%B6%E7%BF%BB%E5%80%8D%E4%B8%8A%E4%BF%AE%E8%87%B320%E5%84%84%E7%BE%8E%E5%85%83-%E8%94%A1%E5%8A%9B%E8%A1%8C%EF%BC%9A%E7%9B%AE%E6%A8%99%E6%90%B615%E5%B8%82%E5%8D%A0-101158516.html",
-      "source": "yahoo",
-      "date": "2026-04-30",
-      "snippet": ""
-    },
-    {
-      "title": "聯發科 公告本公司115年第1季合併財務報告業經董事會決議通過",
-      "url": "https://tw.stock.yahoo.com/news/%E8%81%AF%E7%99%BC%E7%A7%91-%E5%85%AC%E5%91%8A%E6%9C%AC%E5%85%AC%E5%8F%B8115%E5%B9%B4%E7%AC%AC1%E5%AD%A3%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A%E6%A5%AD%E7%B6%93%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E9%80%9A%E9%81%8E-100300972.html",
-      "source": "yahoo",
-      "date": "2026-04-30",
-      "snippet": ""
-    },
-    {
-      "title": "聯發科 本公司2026年第1季合併財務報告",
-      "url": "https://tw.stock.yahoo.com/news/%E8%81%AF%E7%99%BC%E7%A7%91-%E6%9C%AC%E5%85%AC%E5%8F%B82026%E5%B9%B4%E7%AC%AC1%E5%AD%A3%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A-100300343.html",
-      "source": "yahoo",
-      "date": "2026-04-30",
-      "snippet": ""
-    },
-    {
-      "title": "聯發科 公告本公司董事會決議辦理限制員工權利新股收回註銷減資事宜",
-      "url": "https://tw.stock.yahoo.com/news/%E8%81%AF%E7%99%BC%E7%A7%91-%E5%85%AC%E5%91%8A%E6%9C%AC%E5%85%AC%E5%8F%B8%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E8%BE%A6%E7%90%86%E9%99%90%E5%88%B6%E5%93%A1%E5%B7%A5%E6%AC%8A%E5%88%A9%E6%96%B0%E8%82%A1%E6%94%B6%E5%9B%9E%E8%A8%BB%E9%8A%B7%E6%B8%9B%E8%B3%87%E4%BA%8B%E5%AE%9C-100300885.html",
-      "source": "yahoo",
-      "date": "2026-04-30",
-      "snippet": ""
-    },
-    {
-      "title": "聯發科法說》第二季營收估季減6%內 蔡力行：手機轉弱、全年仍拚新高",
-      "url": "https://tw.stock.yahoo.com/news/%E8%81%AF%E7%99%BC%E7%A7%91%E6%B3%95%E8%AA%AA%E3%80%8B%E7%AC%AC%E4%BA%8C%E5%AD%A3%E7%87%9F%E6%94%B6%E4%BC%B0%E5%AD%A3%E6%B8%9B6%E5%85%A7-%E8%94%A1%E5%8A%9B%E8%A1%8C%EF%BC%9A%E6%89%8B%E6%A9%9F%E8%BD%89%E5%BC%B1%E3%80%81%E5%85%A8%E5%B9%B4%E4%BB%8D%E6%8B%9A%E6%96%B0%E9%AB%98-093953199.html",
-      "source": "yahoo",
-      "date": "2026-04-30",
-      "snippet": ""
-    },
-    {
-      "title": "聯發科：AI ASIC市場加速成長 2027年估800億美元",
-      "url": "https://tw.stock.yahoo.com/news/%E8%81%AF%E7%99%BC%E7%A7%91-ai-asic%E5%B8%82%E5%A0%B4%E5%8A%A0%E9%80%9F%E6%88%90%E9%95%B7-2027%E5%B9%B4%E4%BC%B0800%E5%84%84%E7%BE%8E%E5%85%83-092955466.html",
-      "source": "yahoo",
-      "date": "2026-04-30",
-      "snippet": ""
-    },
-    {
-      "title": "〈聯發科法說〉AI ASIC爆發！市場規模上看800億美元 明年提前達陣",
-      "url": "https://tw.stock.yahoo.com/news/%E8%81%AF%E7%99%BC%E7%A7%91%E6%B3%95%E8%AA%AA-ai-asic%E7%88%86%E7%99%BC-%E5%B8%82%E5%A0%B4%E8%A6%8F%E6%A8%A1%E4%B8%8A%E7%9C%8B800%E5%84%84%E7%BE%8E%E5%85%83-%E6%98%8E%E5%B9%B4%E6%8F%90%E5%89%8D%E9%81%94%E9%99%A3-090850451.html",
-      "source": "yahoo",
-      "date": "2026-04-30",
-      "snippet": ""
-    },
-    {
-      "title": "聯發科估第2季營收持平至季減6% 全年看增9%",
-      "url": "https://tw.stock.yahoo.com/news/%E8%81%AF%E7%99%BC%E7%A7%91%E4%BC%B0%E7%AC%AC2%E5%AD%A3%E7%87%9F%E6%94%B6%E6%8C%81%E5%B9%B3%E8%87%B3%E5%AD%A3%E6%B8%9B6-%E5%85%A8%E5%B9%B4%E7%9C%8B%E5%A2%9E9-085714667.html",
-      "source": "yahoo",
-      "date": "2026-04-30",
-      "snippet": ""
-    },
-    {
-      "title": "聯發科首季營收微降 獲利逆勢增長 EPS 15.17元",
-      "url": "https://tw.stock.yahoo.com/news/%E8%81%AF%E7%99%BC%E7%A7%91%E9%A6%96%E5%AD%A3%E7%87%9F%E6%94%B6%E5%BE%AE%E9%99%8D-%E7%8D%B2%E5%88%A9%E9%80%86%E5%8B%A2%E5%A2%9E%E9%95%B7-eps-15-17%E5%85%83-085100759.html",
-      "source": "yahoo",
-      "date": "2026-04-30",
-      "snippet": ""
-    },
     {
       "title": "聯發科「主動式AI智慧座艙」正式登場   邁入「AI定義汽車」新時代",
       "url": "https://ec.ltn.com.tw/article/breakingnews/5414929",

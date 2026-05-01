@@ -1,156 +1,16 @@
 {
   "stockCode": "2457",
   "name": "飛宏科技",
-  "scrapedAt": "2026-05-01T12:10:14.739Z",
+  "scrapedAt": "2026-05-01T12:31:55.174Z",
   "sourceCounts": {
-    "yahoo": 20,
+    "yahoo": 0,
     "ltn": 20
   },
   "enrichStats": {
-    "fetched": 20,
-    "filled": 20
+    "fetched": 0,
+    "filled": 0
   },
   "news": [
-    {
-      "title": "【公告】飛宏代子公司飛宏電子(蘇州)有限公司公告投資東莞達宏電子有限公司",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E9%A3%9B%E5%AE%8F%E4%BB%A3%E5%AD%90%E5%85%AC%E5%8F%B8%E9%A3%9B%E5%AE%8F%E9%9B%BB%E5%AD%90-%E8%98%87%E5%B7%9E-%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%E5%85%AC%E5%91%8A%E6%8A%95%E8%B3%87%E6%9D%B1%E8%8E%9E%E9%81%94%E5%AE%8F%E9%9B%BB%E5%AD%90%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8-075402562.html",
-      "source": "yahoo",
-      "date": "2026-04-16",
-      "snippet": ""
-    },
-    {
-      "title": "【公告】飛宏 2026年3月合併營收7.78億元 年增-12.07%",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E9%A3%9B%E5%AE%8F-2026%E5%B9%B43%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B67-78%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E-055236116.html",
-      "source": "yahoo",
-      "date": "2026-04-09",
-      "snippet": ""
-    },
-    {
-      "title": "【公告】飛宏董事會決議不分派股利",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E9%A3%9B%E5%AE%8F%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E4%B8%8D%E5%88%86%E6%B4%BE%E8%82%A1%E5%88%A9-085801063.html",
-      "source": "yahoo",
-      "date": "2026-03-12",
-      "snippet": ""
-    },
-    {
-      "title": "【公告】飛宏 2026年2月合併營收6.01億元 年增-4.93%",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E9%A3%9B%E5%AE%8F-2026%E5%B9%B42%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B66-01%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E-081320384.html",
-      "source": "yahoo",
-      "date": "2026-03-09",
-      "snippet": ""
-    },
-    {
-      "title": "【公告】飛宏 2026年1月合併營收7.17億元 年增-3.37%",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E9%A3%9B%E5%AE%8F-2026%E5%B9%B41%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B67-17%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E-083334971.html",
-      "source": "yahoo",
-      "date": "2026-02-09",
-      "snippet": ""
-    },
-    {
-      "title": "【公告】飛宏董事會決議增資子公司Phihong Vietnam Co., Ltd.(補充公告)",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E9%A3%9B%E5%AE%8F%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E5%A2%9E%E8%B3%87%E5%AD%90%E5%85%AC%E5%8F%B8phihong-vietnam-co-ltd-085646492.html",
-      "source": "yahoo",
-      "date": "2026-02-05",
-      "snippet": ""
-    },
-    {
-      "title": "【公告】係因飛宏有價證券於集中交易市場達公布注意交易資訊標準，故公布相關財務業務等重大訊息，以利投資人區別瞭解",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E4%BF%82%E5%9B%A0%E9%A3%9B%E5%AE%8F%E6%9C%89%E5%83%B9%E8%AD%89%E5%88%B8%E6%96%BC%E9%9B%86%E4%B8%AD%E4%BA%A4%E6%98%93%E5%B8%82%E5%A0%B4%E9%81%94%E5%85%AC%E5%B8%83%E6%B3%A8%E6%84%8F%E4%BA%A4%E6%98%93%E8%B3%87%E8%A8%8A%E6%A8%99%E6%BA%96-%E6%95%85%E5%85%AC%E5%B8%83%E7%9B%B8%E9%97%9C%E8%B2%A1%E5%8B%99%E6%A5%AD%E5%8B%99%E7%AD%89%E9%87%8D%E5%A4%A7%E8%A8%8A%E6%81%AF-%E4%BB%A5%E5%88%A9%E6%8A%95%E8%B3%87%E4%BA%BA%E5%8D%80%E5%88%A5%E7%9E%AD%E8%A7%A3-085244624.html",
-      "source": "yahoo",
-      "date": "2026-01-22",
-      "snippet": ""
-    },
-    {
-      "title": "【公告】飛宏 2025年12月合併營收8.05億元 年增-30.27%",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E9%A3%9B%E5%AE%8F-2025%E5%B9%B412%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B68-05%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E-055148489.html",
-      "source": "yahoo",
-      "date": "2026-01-09",
-      "snippet": ""
-    },
-    {
-      "title": "【公告】飛宏官方網站代管廠商遭受網路DDoS攻擊",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E9%A3%9B%E5%AE%8F%E5%AE%98%E6%96%B9%E7%B6%B2%E7%AB%99%E4%BB%A3%E7%AE%A1%E5%BB%A0%E5%95%86%E9%81%AD%E5%8F%97%E7%B6%B2%E8%B7%AFddos%E6%94%BB%E6%93%8A-102712850.html",
-      "source": "yahoo",
-      "date": "2025-12-31",
-      "snippet": ""
-    },
-    {
-      "title": "飛宏啟動轉型2.0瞄準高功率電源 提高與AI連結度",
-      "url": "https://tw.stock.yahoo.com/news/%E9%A3%9B%E5%AE%8F%E5%95%9F%E5%8B%95%E8%BD%89%E5%9E%8B2-0%E7%9E%84%E6%BA%96%E9%AB%98%E5%8A%9F%E7%8E%87%E9%9B%BB%E6%BA%90-%E6%8F%90%E9%AB%98%E8%88%87ai%E9%80%A3%E7%B5%90%E5%BA%A6-071358376.html",
-      "source": "yahoo",
-      "date": "2025-12-10",
-      "snippet": ""
-    },
-    {
-      "title": "【公告】飛宏 2025年11月合併營收7.56億元 年增-28.85%",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E9%A3%9B%E5%AE%8F-2025%E5%B9%B411%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B67-56%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E-054114685.html",
-      "source": "yahoo",
-      "date": "2025-12-09",
-      "snippet": ""
-    },
-    {
-      "title": "【公告】飛宏召開114年第三季營運成果線上法人說明會",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E9%A3%9B%E5%AE%8F%E5%8F%AC%E9%96%8B114%E5%B9%B4%E7%AC%AC%E4%B8%89%E5%AD%A3%E7%87%9F%E9%81%8B%E6%88%90%E6%9E%9C%E7%B7%9A%E4%B8%8A%E6%B3%95%E4%BA%BA%E8%AA%AA%E6%98%8E%E6%9C%83-074432553.html",
-      "source": "yahoo",
-      "date": "2025-12-03",
-      "snippet": ""
-    },
-    {
-      "title": "【公告】飛宏 2025年10月合併營收7.9億元 年增1.86%",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E9%A3%9B%E5%AE%8F-2025%E5%B9%B410%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B67-9%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E1-055253947.html",
-      "source": "yahoo",
-      "date": "2025-11-10",
-      "snippet": ""
-    },
-    {
-      "title": "【公告】飛宏董事會決議增資子公司Phihong Vietnam Co., Ltd.",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E9%A3%9B%E5%AE%8F%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E5%A2%9E%E8%B3%87%E5%AD%90%E5%85%AC%E5%8F%B8phihong-vietnam-co-ltd-110439910.html",
-      "source": "yahoo",
-      "date": "2025-11-07",
-      "snippet": ""
-    },
-    {
-      "title": "【公告】飛宏註銷庫藏股辦理變更登記完成",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E9%A3%9B%E5%AE%8F%E8%A8%BB%E9%8A%B7%E5%BA%AB%E8%97%8F%E8%82%A1%E8%BE%A6%E7%90%86%E8%AE%8A%E6%9B%B4%E7%99%BB%E8%A8%98%E5%AE%8C%E6%88%90-063537839.html",
-      "source": "yahoo",
-      "date": "2025-10-22",
-      "snippet": ""
-    },
-    {
-      "title": "【公告】飛宏 2025年9月合併營收8.41億元 年增2.34%",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E9%A3%9B%E5%AE%8F-2025%E5%B9%B49%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B68-41%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E2-054122570.html",
-      "source": "yahoo",
-      "date": "2025-10-09",
-      "snippet": ""
-    },
-    {
-      "title": "【公告】飛宏召開114年第二季營運成果線上法人說明會",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E9%A3%9B%E5%AE%8F%E5%8F%AC%E9%96%8B114%E5%B9%B4%E7%AC%AC%E4%BA%8C%E5%AD%A3%E7%87%9F%E9%81%8B%E6%88%90%E6%9E%9C%E7%B7%9A%E4%B8%8A%E6%B3%95%E4%BA%BA%E8%AA%AA%E6%98%8E%E6%9C%83-062618083.html",
-      "source": "yahoo",
-      "date": "2025-08-20",
-      "snippet": ""
-    },
-    {
-      "title": "【公告】飛宏法人董事辭任",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E9%A3%9B%E5%AE%8F%E6%B3%95%E4%BA%BA%E8%91%A3%E4%BA%8B%E8%BE%AD%E4%BB%BB-103238498.html",
-      "source": "yahoo",
-      "date": "2025-08-14",
-      "snippet": ""
-    },
-    {
-      "title": "【公告】飛宏 2025年7月合併營收9.96億元 年增-7.54%",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E9%A3%9B%E5%AE%8F-2025%E5%B9%B47%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B69-96%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E-055325046.html",
-      "source": "yahoo",
-      "date": "2025-08-08",
-      "snippet": ""
-    },
-    {
-      "title": "【公告】飛宏114年第二季財務報告董事會召開日期",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E9%A3%9B%E5%AE%8F114%E5%B9%B4%E7%AC%AC%E4%BA%8C%E5%AD%A3%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A%E8%91%A3%E4%BA%8B%E6%9C%83%E5%8F%AC%E9%96%8B%E6%97%A5%E6%9C%9F-084704502.html",
-      "source": "yahoo",
-      "date": "2025-08-04",
-      "snippet": ""
-    },
     {
       "title": "熱門概念股》充電樁",
       "url": "https://ec.ltn.com.tw/article/breakingnews/4594332",
