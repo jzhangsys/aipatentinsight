@@ -1,12 +1,45 @@
 {
   "date": "2024-09-16",
-  "generatedAt": "2026-05-01T12:40:06.485Z",
+  "generatedAt": "2026-05-01T20:38:59.558Z",
   "newsWindow": {
-    "start": "2024-09-01",
+    "start": "2024-09-02",
     "end": "2024-09-16",
     "mode": "inter_snapshot"
   },
   "totalCompanies": 43,
   "totalCompaniesAnalyzed": 0,
-  "themes": []
+  "themes": [
+    {
+      "rank": 1,
+      "name": "矽光子 / 光通訊",
+      "volume": 1,
+      "totalCompanyCount": 1,
+      "companies": [
+        {
+          "name": "達發科技",
+          "stockCode": "6526",
+          "hits": 1,
+          "isPrimary": true
+        }
+      ],
+      "carriedFromPrev": true,
+      "carriedFromDate": "2024-09-01"
+    },
+    {
+      "name": "衛星通訊",
+      "volume": 1,
+      "totalCompanyCount": 1,
+      "companies": [
+        {
+          "name": "達發科技",
+          "stockCode": "6526",
+          "hits": 1,
+          "isPrimary": false
+        }
+      ],
+      "extendedWindow": true,
+      "extendedWindowDays": 180,
+      "rank": 2
+    }
+  ]
 }

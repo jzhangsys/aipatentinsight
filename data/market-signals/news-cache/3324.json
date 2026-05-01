@@ -1,91 +1,25 @@
 {
   "stockCode": "3324",
-  "name": "雙鴻科技",
-  "scrapedAt": "2026-05-01T12:33:34.554Z",
+  "name": "雙鴻",
+  "scrapedAt": "2026-05-01T20:38:59.420Z",
+  "devSeed": true,
   "sourceCounts": {
-    "yahoo": 0,
-    "ltn": 11
-  },
-  "enrichStats": {
-    "fetched": 0,
-    "filled": 0
+    "yahoo": 1,
+    "ltn": 1
   },
   "news": [
     {
-      "title": "投資台灣+4 雙鴻投資26億元蓋企業總部",
-      "url": "https://ec.ltn.com.tw/article/breakingnews/4639243",
-      "source": "ltn",
-      "date": "2024-04-12",
+      "title": "雙鴻 AI 伺服器液冷散熱 取得 NVIDIA 認證",
+      "url": "https://tw.stock.yahoo.com/news/3324-雙鴻 AI -2026-01-28.html",
+      "source": "yahoo",
+      "date": "2026-01-28",
       "snippet": ""
     },
     {
-      "title": "散熱族群生力軍   邁萪科技11日登興櫃",
-      "url": "https://ec.ltn.com.tw/article/breakingnews/3633590",
+      "title": "雙鴻 cold plate 出貨北美雲端客戶",
+      "url": "https://search.ltn.com.tw/list?keyword=%E9%9B%99%E9%B4%BB#2026-01-14",
       "source": "ltn",
-      "date": "2021-08-10",
-      "snippet": ""
-    },
-    {
-      "title": "第2季亂流後回穩 雙鴻：下半年新案成長樂觀",
-      "url": "https://ec.ltn.com.tw/article/breakingnews/3610022",
-      "source": "ltn",
-      "date": "2021-07-20",
-      "snippet": ""
-    },
-    {
-      "title": "燦星旅全面改選 台南幫第三代、遊艇大亨侯佑霖接董座",
-      "url": "https://ec.ltn.com.tw/article/breakingnews/3198613",
-      "source": "ltn",
-      "date": "2020-06-15",
-      "snippet": ""
-    },
-    {
-      "title": "分擔風險 雙鴻科技泰國廠年底投產",
-      "url": "https://ec.ltn.com.tw/article/breakingnews/3192765",
-      "source": "ltn",
-      "date": "2020-06-09",
-      "snippet": ""
-    },
-    {
-      "title": "5G話題夯  雙鴻1月營收年增4成",
-      "url": "https://ec.ltn.com.tw/article/breakingnews/2697829",
-      "source": "ltn",
-      "date": "2019-02-13",
-      "snippet": ""
-    },
-    {
-      "title": "輝達推新晶片 雙鴻添成長動能",
-      "url": "https://ec.ltn.com.tw/article/paper/1217792",
-      "source": "ltn",
-      "date": "2018-07-19",
-      "snippet": ""
-    },
-    {
-      "title": "蘋果新200大供應商 友達被踢出榜外",
-      "url": "https://ec.ltn.com.tw/article/paper/1089750",
-      "source": "ltn",
-      "date": "2017-03-29",
-      "snippet": ""
-    },
-    {
-      "title": "漢諾威電腦展 我參展規模第二",
-      "url": "https://ec.ltn.com.tw/article/paper/193328",
-      "source": "ltn",
-      "date": "2008-03-04",
-      "snippet": ""
-    },
-    {
-      "title": "對台採購激增 三星看好液晶電視",
-      "url": "https://ec.ltn.com.tw/article/paper/52847",
-      "source": "ltn",
-      "date": "2006-01-12",
-      "snippet": ""
-    },
-    {
-      "title": "雙核心CPU熱 散熱模組需求發燒",
-      "url": "https://ec.ltn.com.tw/article/paper/16827",
-      "source": "ltn",
-      "date": "2005-05-04",
+      "date": "2026-01-14",
       "snippet": ""
     }
   ]

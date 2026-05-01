@@ -1,19 +1,35 @@
 {
   "date": "2025-03-01",
-  "generatedAt": "2026-05-01T12:40:06.496Z",
+  "generatedAt": "2026-05-01T20:38:59.571Z",
   "newsWindow": {
-    "start": "2025-02-15",
+    "start": "2025-02-16",
     "end": "2025-03-01",
     "mode": "inter_snapshot"
   },
   "totalCompanies": 177,
-  "totalCompaniesAnalyzed": 4,
+  "totalCompaniesAnalyzed": 2,
   "themes": [
     {
       "rank": 1,
-      "name": "DRAM / 記憶體",
+      "name": "Wi-Fi / 網通",
       "volume": 3,
-      "totalCompanyCount": 3,
+      "totalCompanyCount": 1,
+      "companies": [
+        {
+          "name": "達發科技",
+          "stockCode": "6526",
+          "hits": 3,
+          "isPrimary": true
+        }
+      ],
+      "carriedFromPrev": true,
+      "carriedFromDate": "2025-02-15"
+    },
+    {
+      "rank": 2,
+      "name": "DRAM / 記憶體",
+      "volume": 2,
+      "totalCompanyCount": 2,
       "companies": [
         {
           "name": "南亞科技",
@@ -26,42 +42,136 @@
           "stockCode": "8131",
           "hits": 1,
           "isPrimary": true
-        },
-        {
-          "name": "華邦電子",
-          "stockCode": "2344",
-          "hits": 1,
-          "isPrimary": true
-        }
-      ]
-    },
-    {
-      "rank": 2,
-      "name": "電動車 / EV",
-      "volume": 1,
-      "totalCompanyCount": 1,
-      "companies": [
-        {
-          "name": "旺宏電子",
-          "stockCode": "2337",
-          "hits": 1,
-          "isPrimary": true
         }
       ]
     },
     {
       "rank": 3,
-      "name": "HBM 高頻寬記憶體",
+      "name": "MicroLED",
+      "volume": 2,
+      "totalCompanyCount": 1,
+      "companies": [
+        {
+          "name": "晶呈科技",
+          "stockCode": "4768",
+          "hits": 2,
+          "isPrimary": true
+        }
+      ],
+      "carriedFromPrev": true,
+      "carriedFromDate": "2025-02-15"
+    },
+    {
+      "rank": 4,
+      "name": "IC 設計",
+      "volume": 2,
+      "totalCompanyCount": 1,
+      "companies": [
+        {
+          "name": "聯詠科技",
+          "stockCode": "3034",
+          "hits": 2,
+          "isPrimary": true
+        }
+      ],
+      "carriedFromPrev": true,
+      "carriedFromDate": "2025-02-15"
+    },
+    {
+      "rank": 5,
+      "name": "CoWoS / 先進封裝",
+      "volume": 2,
+      "totalCompanyCount": 1,
+      "companies": [
+        {
+          "name": "晶呈科技",
+          "stockCode": "4768",
+          "hits": 2,
+          "isPrimary": true
+        }
+      ],
+      "carriedFromPrev": true,
+      "carriedFromDate": "2025-02-15"
+    },
+    {
+      "name": "PC / NB",
+      "volume": 2,
+      "totalCompanyCount": 1,
+      "companies": [
+        {
+          "name": "系微",
+          "stockCode": "6231",
+          "hits": 2,
+          "isPrimary": false
+        }
+      ],
+      "extendedWindow": true,
+      "extendedWindowDays": 180,
+      "rank": 6
+    },
+    {
+      "rank": 7,
+      "name": "先進製程 (3nm/2nm)",
       "volume": 1,
       "totalCompanyCount": 1,
       "companies": [
         {
-          "name": "旺宏電子",
-          "stockCode": "2337",
+          "name": "聯詠科技",
+          "stockCode": "3034",
           "hits": 1,
           "isPrimary": false
         }
-      ]
+      ],
+      "carriedFromPrev": true,
+      "carriedFromDate": "2025-02-15"
+    },
+    {
+      "rank": 8,
+      "name": "PCB 印刷電路板",
+      "volume": 1,
+      "totalCompanyCount": 1,
+      "companies": [
+        {
+          "name": "啟碁科技",
+          "stockCode": "6285",
+          "hits": 1,
+          "isPrimary": true
+        }
+      ],
+      "carriedFromPrev": true,
+      "carriedFromDate": "2025-02-15"
+    },
+    {
+      "rank": 9,
+      "name": "工具機",
+      "volume": 1,
+      "totalCompanyCount": 1,
+      "companies": [
+        {
+          "name": "東捷科技",
+          "stockCode": "8064",
+          "hits": 1,
+          "isPrimary": true
+        }
+      ],
+      "carriedFromPrev": true,
+      "carriedFromDate": "2025-02-15"
+    },
+    {
+      "rank": 10,
+      "name": "矽光子 / 光通訊",
+      "volume": 1,
+      "totalCompanyCount": 1,
+      "companies": [
+        {
+          "name": "達發科技",
+          "stockCode": "6526",
+          "hits": 1,
+          "isPrimary": true
+        }
+      ],
+      "carriedFromPrev": true,
+      "carriedFromDate": "2025-02-15"
     }
   ]
 }

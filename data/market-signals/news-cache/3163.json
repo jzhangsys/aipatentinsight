@@ -1,35 +1,18 @@
 {
   "stockCode": "3163",
-  "name": "波若威科技",
-  "scrapedAt": "2026-05-01T12:33:09.696Z",
+  "name": "波若威",
+  "scrapedAt": "2026-05-01T20:38:59.424Z",
+  "devSeed": true,
   "sourceCounts": {
-    "yahoo": 0,
-    "ltn": 3
-  },
-  "enrichStats": {
-    "fetched": 0,
-    "filled": 0
+    "yahoo": 1,
+    "ltn": 0
   },
   "news": [
     {
-      "title": "光罩執行長吳國精涉炒股 更一審判刑3年2月、限境8月",
-      "url": "https://ec.ltn.com.tw/article/breakingnews/4507370",
-      "source": "ltn",
-      "date": "2023-12-01",
-      "snippet": ""
-    },
-    {
-      "title": "陳有諒回鍋蔚華科董事長  總經理高瀚宇接任",
-      "url": "https://ec.ltn.com.tw/article/breakingnews/2564998",
-      "source": "ltn",
-      "date": "2018-09-28",
-      "snippet": ""
-    },
-    {
-      "title": "獲利亮眼 波若威漲停鎖死",
-      "url": "https://ec.ltn.com.tw/article/paper/641231",
-      "source": "ltn",
-      "date": "2012-12-26",
+      "title": "波若威 矽光子被動元件出貨增 客戶遍及北美",
+      "url": "https://tw.stock.yahoo.com/news/3163-波若威 矽光-2026-01-17.html",
+      "source": "yahoo",
+      "date": "2026-01-17",
       "snippet": ""
     }
   ]

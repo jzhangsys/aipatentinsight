@@ -1,154 +1,18 @@
 {
   "stockCode": "8046",
-  "name": "南亞電路板",
-  "scrapedAt": "2026-05-01T12:39:15.593Z",
+  "name": "南電",
+  "scrapedAt": "2026-05-01T20:38:59.422Z",
+  "devSeed": true,
   "sourceCounts": {
-    "yahoo": 0,
-    "ltn": 20
-  },
-  "enrichStats": {
-    "fetched": 0,
-    "filled": 0
+    "yahoo": 1,
+    "ltn": 0
   },
   "news": [
     {
-      "title": "塑化報價大漲 台塑四寶3月營收大爆發Q1全數轉盈",
-      "url": "https://ec.ltn.com.tw/article/breakingnews/5399452",
-      "source": "ltn",
-      "date": "2026-04-10",
-      "snippet": ""
-    },
-    {
-      "title": "台塑去年大虧百億 四寶合計虧損11億",
-      "url": "https://ec.ltn.com.tw/article/paper/1739757",
-      "source": "ltn",
-      "date": "2026-01-13",
-      "snippet": ""
-    },
-    {
-      "title": "母以子貴！南亞去年Q4 EPS0.62元 單季創近14季以來新高",
-      "url": "https://ec.ltn.com.tw/article/breakingnews/5307195",
-      "source": "ltn",
-      "date": "2026-01-12",
-      "snippet": ""
-    },
-    {
-      "title": "萬潤等17家廠商獲日月光最佳供應商獎",
-      "url": "https://ec.ltn.com.tw/article/breakingnews/5009181",
-      "source": "ltn",
-      "date": "2025-04-11",
-      "snippet": ""
-    },
-    {
-      "title": "日月光偕逾百家供應商宣示減碳淨零",
-      "url": "https://ec.ltn.com.tw/article/breakingnews/4400648",
-      "source": "ltn",
-      "date": "2023-08-18",
-      "snippet": ""
-    },
-    {
-      "title": "台商PCB好威！市佔率32.8％居全球第1",
-      "url": "https://ec.ltn.com.tw/article/breakingnews/4034260",
-      "source": "ltn",
-      "date": "2022-08-23",
-      "snippet": ""
-    },
-    {
-      "title": "新北開春就博會2800職缺 科技製造業近半",
-      "url": "https://ec.ltn.com.tw/article/breakingnews/3823407",
-      "source": "ltn",
-      "date": "2022-02-08",
-      "snippet": ""
-    },
-    {
-      "title": "新北與南亞合作專案徵才 600職缺夜班起薪最高達43K",
-      "url": "https://ec.ltn.com.tw/article/breakingnews/3674993",
-      "source": "ltn",
-      "date": "2021-09-17",
-      "snippet": ""
-    },
-    {
-      "title": "台塑南亞專案徵才  600多個職缺別錯過",
-      "url": "https://ec.ltn.com.tw/article/breakingnews/3658611",
-      "source": "ltn",
-      "date": "2021-09-02",
-      "snippet": ""
-    },
-    {
-      "title": "勞動基金上半年賺逾3千億 收益率6.59％",
-      "url": "https://ec.ltn.com.tw/article/paper/1464567",
-      "source": "ltn",
-      "date": "2021-08-03",
-      "snippet": ""
-    },
-    {
-      "title": "3大勞動基金前10大持股    占比最高都是台積電",
-      "url": "https://ec.ltn.com.tw/article/breakingnews/3624754",
-      "source": "ltn",
-      "date": "2021-08-02",
-      "snippet": ""
-    },
-    {
-      "title": "力成CEO：台灣供應鏈競爭力 仍居全球之冠",
-      "url": "https://ec.ltn.com.tw/article/paper/1450039",
-      "source": "ltn",
-      "date": "2021-05-21",
-      "snippet": ""
-    },
-    {
-      "title": "力成CEO：台灣競爭力NO.1   無意將產線擴至美國",
-      "url": "https://ec.ltn.com.tw/article/breakingnews/3540322",
-      "source": "ltn",
-      "date": "2021-05-20",
-      "snippet": ""
-    },
-    {
-      "title": "中壢、桃園大型徵才 釋出逾1200個職缺",
-      "url": "https://ec.ltn.com.tw/article/breakingnews/3174277",
-      "source": "ltn",
-      "date": "2020-05-22",
-      "snippet": ""
-    },
-    {
-      "title": "用電大戶設備故障 北北桃驚傳跳電",
-      "url": "https://ec.ltn.com.tw/article/paper/1232056",
-      "source": "ltn",
-      "date": "2018-09-14",
-      "snippet": ""
-    },
-    {
-      "title": "大用戶跳電影響電網 經長：將請台電找解方",
-      "url": "https://ec.ltn.com.tw/article/breakingnews/2550024",
-      "source": "ltn",
-      "date": "2018-09-13",
-      "snippet": ""
-    },
-    {
-      "title": "桃煉冒火光 中油：電壓下降安全機制啟動",
-      "url": "https://ec.ltn.com.tw/article/breakingnews/2549882",
-      "source": "ltn",
-      "date": "2018-09-13",
-      "snippet": ""
-    },
-    {
-      "title": "南亞電路設備故障導致大跳電  台電：高階製程廠商需裝穩壓設備保護",
-      "url": "https://ec.ltn.com.tw/article/breakingnews/2549804",
-      "source": "ltn",
-      "date": "2018-09-13",
-      "snippet": ""
-    },
-    {
-      "title": "世界先進桃園晶圓三廠遭停電停產 影響待評估",
-      "url": "https://ec.ltn.com.tw/article/breakingnews/2549731",
-      "source": "ltn",
-      "date": "2018-09-13",
-      "snippet": ""
-    },
-    {
-      "title": "推動環保 台塑與中山大學合作",
-      "url": "https://ec.ltn.com.tw/article/breakingnews/2235474",
-      "source": "ltn",
-      "date": "2017-10-27",
+      "title": "南電 ABF 載板需求回溫 利用率提升",
+      "url": "https://tw.stock.yahoo.com/news/8046-南電 ABF-2026-01-18.html",
+      "source": "yahoo",
+      "date": "2026-01-18",
       "snippet": ""
     }
   ]

@@ -1,16 +1,32 @@
 {
   "date": "2025-01-15",
-  "generatedAt": "2026-05-01T12:40:06.493Z",
+  "generatedAt": "2026-05-01T20:38:59.565Z",
   "newsWindow": {
-    "start": "2025-01-01",
+    "start": "2025-01-02",
     "end": "2025-01-15",
     "mode": "inter_snapshot"
   },
   "totalCompanies": 122,
-  "totalCompaniesAnalyzed": 2,
+  "totalCompaniesAnalyzed": 1,
   "themes": [
     {
       "rank": 1,
+      "name": "Wi-Fi / 網通",
+      "volume": 3,
+      "totalCompanyCount": 1,
+      "companies": [
+        {
+          "name": "達發科技",
+          "stockCode": "6526",
+          "hits": 3,
+          "isPrimary": true
+        }
+      ],
+      "carriedFromPrev": true,
+      "carriedFromDate": "2025-01-01"
+    },
+    {
+      "rank": 2,
       "name": "IC 設計",
       "volume": 2,
       "totalCompanyCount": 1,
@@ -24,21 +40,39 @@
       ]
     },
     {
-      "rank": 2,
-      "name": "AI 伺服器",
-      "volume": 1,
+      "rank": 3,
+      "name": "CoWoS / 先進封裝",
+      "volume": 2,
       "totalCompanyCount": 1,
       "companies": [
         {
-          "name": "廣達電腦",
-          "stockCode": "2382",
-          "hits": 1,
+          "name": "晶呈科技",
+          "stockCode": "4768",
+          "hits": 2,
           "isPrimary": true
         }
-      ]
+      ],
+      "carriedFromPrev": true,
+      "carriedFromDate": "2025-01-01"
     },
     {
-      "rank": 3,
+      "name": "晶圓代工",
+      "volume": 2,
+      "totalCompanyCount": 1,
+      "companies": [
+        {
+          "name": "愛普科技",
+          "stockCode": "6531",
+          "hits": 2,
+          "isPrimary": false
+        }
+      ],
+      "extendedWindow": true,
+      "extendedWindowDays": 180,
+      "rank": 4
+    },
+    {
+      "rank": 5,
       "name": "先進製程 (3nm/2nm)",
       "volume": 1,
       "totalCompanyCount": 1,
@@ -50,6 +84,86 @@
           "isPrimary": false
         }
       ]
+    },
+    {
+      "rank": 6,
+      "name": "PCB 印刷電路板",
+      "volume": 1,
+      "totalCompanyCount": 1,
+      "companies": [
+        {
+          "name": "啟碁科技",
+          "stockCode": "6285",
+          "hits": 1,
+          "isPrimary": true
+        }
+      ],
+      "carriedFromPrev": true,
+      "carriedFromDate": "2025-01-01"
+    },
+    {
+      "rank": 7,
+      "name": "工具機",
+      "volume": 1,
+      "totalCompanyCount": 1,
+      "companies": [
+        {
+          "name": "東捷科技",
+          "stockCode": "8064",
+          "hits": 1,
+          "isPrimary": true
+        }
+      ],
+      "carriedFromPrev": true,
+      "carriedFromDate": "2025-01-01"
+    },
+    {
+      "rank": 8,
+      "name": "矽光子 / 光通訊",
+      "volume": 1,
+      "totalCompanyCount": 1,
+      "companies": [
+        {
+          "name": "達發科技",
+          "stockCode": "6526",
+          "hits": 1,
+          "isPrimary": true
+        }
+      ],
+      "carriedFromPrev": true,
+      "carriedFromDate": "2025-01-01"
+    },
+    {
+      "name": "智慧手機",
+      "volume": 1,
+      "totalCompanyCount": 1,
+      "companies": [
+        {
+          "name": "天虹科技",
+          "stockCode": "6937",
+          "hits": 1,
+          "isPrimary": false
+        }
+      ],
+      "extendedWindow": true,
+      "extendedWindowDays": 180,
+      "rank": 9
+    },
+    {
+      "name": "金融科技 FinTech",
+      "volume": 1,
+      "totalCompanyCount": 1,
+      "companies": [
+        {
+          "name": "精誠資訊",
+          "stockCode": "6214",
+          "hits": 1,
+          "isPrimary": false
+        }
+      ],
+      "extendedWindow": true,
+      "extendedWindowDays": 180,
+      "rank": 10
     }
   ]
 }

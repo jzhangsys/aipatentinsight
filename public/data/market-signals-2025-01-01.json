@@ -1,12 +1,173 @@
 {
   "date": "2025-01-01",
-  "generatedAt": "2026-05-01T12:40:06.492Z",
+  "generatedAt": "2026-05-01T20:38:59.564Z",
   "newsWindow": {
-    "start": "2024-12-15",
+    "start": "2024-12-16",
     "end": "2025-01-01",
     "mode": "inter_snapshot"
   },
   "totalCompanies": 124,
   "totalCompaniesAnalyzed": 0,
-  "themes": []
+  "themes": [
+    {
+      "rank": 1,
+      "name": "Wi-Fi / 網通",
+      "volume": 3,
+      "totalCompanyCount": 1,
+      "companies": [
+        {
+          "name": "達發科技",
+          "stockCode": "6526",
+          "hits": 3,
+          "isPrimary": true
+        }
+      ],
+      "carriedFromPrev": true,
+      "carriedFromDate": "2024-12-15"
+    },
+    {
+      "rank": 2,
+      "name": "CoWoS / 先進封裝",
+      "volume": 2,
+      "totalCompanyCount": 1,
+      "companies": [
+        {
+          "name": "晶呈科技",
+          "stockCode": "4768",
+          "hits": 2,
+          "isPrimary": true
+        }
+      ],
+      "carriedFromPrev": true,
+      "carriedFromDate": "2024-12-15"
+    },
+    {
+      "name": "晶圓代工",
+      "volume": 2,
+      "totalCompanyCount": 1,
+      "companies": [
+        {
+          "name": "愛普科技",
+          "stockCode": "6531",
+          "hits": 2,
+          "isPrimary": false
+        }
+      ],
+      "extendedWindow": true,
+      "extendedWindowDays": 180,
+      "rank": 3
+    },
+    {
+      "rank": 4,
+      "name": "PCB 印刷電路板",
+      "volume": 1,
+      "totalCompanyCount": 1,
+      "companies": [
+        {
+          "name": "啟碁科技",
+          "stockCode": "6285",
+          "hits": 1,
+          "isPrimary": true
+        }
+      ],
+      "carriedFromPrev": true,
+      "carriedFromDate": "2024-12-15"
+    },
+    {
+      "rank": 5,
+      "name": "先進製程 (3nm/2nm)",
+      "volume": 1,
+      "totalCompanyCount": 1,
+      "companies": [
+        {
+          "name": "微星科技",
+          "stockCode": "2377",
+          "hits": 1,
+          "isPrimary": true
+        }
+      ],
+      "carriedFromPrev": true,
+      "carriedFromDate": "2024-12-15"
+    },
+    {
+      "rank": 6,
+      "name": "工具機",
+      "volume": 1,
+      "totalCompanyCount": 1,
+      "companies": [
+        {
+          "name": "東捷科技",
+          "stockCode": "8064",
+          "hits": 1,
+          "isPrimary": true
+        }
+      ],
+      "carriedFromPrev": true,
+      "carriedFromDate": "2024-12-15"
+    },
+    {
+      "rank": 7,
+      "name": "矽光子 / 光通訊",
+      "volume": 1,
+      "totalCompanyCount": 1,
+      "companies": [
+        {
+          "name": "達發科技",
+          "stockCode": "6526",
+          "hits": 1,
+          "isPrimary": true
+        }
+      ],
+      "carriedFromPrev": true,
+      "carriedFromDate": "2024-12-15"
+    },
+    {
+      "name": "智慧手機",
+      "volume": 1,
+      "totalCompanyCount": 1,
+      "companies": [
+        {
+          "name": "天虹科技",
+          "stockCode": "6937",
+          "hits": 1,
+          "isPrimary": false
+        }
+      ],
+      "extendedWindow": true,
+      "extendedWindowDays": 180,
+      "rank": 8
+    },
+    {
+      "name": "儲能 / 電池",
+      "volume": 1,
+      "totalCompanyCount": 1,
+      "companies": [
+        {
+          "name": "聯策科技",
+          "stockCode": "6658",
+          "hits": 1,
+          "isPrimary": false
+        }
+      ],
+      "extendedWindow": true,
+      "extendedWindowDays": 180,
+      "rank": 9
+    },
+    {
+      "name": "電動車 / EV",
+      "volume": 1,
+      "totalCompanyCount": 1,
+      "companies": [
+        {
+          "name": "致茂電子",
+          "stockCode": "2360",
+          "hits": 1,
+          "isPrimary": false
+        }
+      ],
+      "extendedWindow": true,
+      "extendedWindowDays": 180,
+      "rank": 10
+    }
+  ]
 }

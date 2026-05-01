@@ -1,294 +1,32 @@
 {
   "stockCode": "2301",
-  "name": "光寶科技",
-  "scrapedAt": "2026-05-01T12:30:18.970Z",
+  "name": "光寶科",
+  "scrapedAt": "2026-05-01T20:38:59.419Z",
+  "devSeed": true,
   "sourceCounts": {
-    "yahoo": 20,
-    "ltn": 20
-  },
-  "enrichStats": {
-    "fetched": 20,
-    "filled": 20
+    "yahoo": 2,
+    "ltn": 1
   },
   "news": [
     {
-      "title": "【公告】光寶科重要子公司LITE-ON SINGAPORE PTE. LTD.取得DAIZU PROPERTY HOLDING PTE. LTD. 100%股權",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%85%89%E5%AF%B6%E7%A7%91%E9%87%8D%E8%A6%81%E5%AD%90%E5%85%AC%E5%8F%B8lite-singapore-pte-ltd-085342330.html",
+      "title": "AI 伺服器電源 光寶科 PSU 出貨倍數成長",
+      "url": "https://tw.stock.yahoo.com/news/2301-AI 伺服器-2026-01-30.html",
       "source": "yahoo",
-      "date": "2026-04-30",
+      "date": "2026-01-30",
       "snippet": ""
     },
     {
-      "title": "光寶科子公司取得DAIZU PROPERTY HOLDING 100%股權，計4685萬新幣",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%89%E5%AF%B6%E7%A7%91%E5%AD%90%E5%85%AC%E5%8F%B8%E5%8F%96%E5%BE%97daizu-property-holding-100-%E8%82%A1%E6%AC%8A-071000899.html",
+      "title": "光寶科 800V 電源系統 AI 機櫃導入",
+      "url": "https://search.ltn.com.tw/list?keyword=%E5%85%89%E5%AF%B6%E7%A7%91#2026-01-20",
+      "source": "ltn",
+      "date": "2026-01-20",
+      "snippet": ""
+    },
+    {
+      "title": "電源管理 PMIC 光寶科取得多家雲端客戶",
+      "url": "https://tw.stock.yahoo.com/news/2301-電源管理 P-2026-01-08.html",
       "source": "yahoo",
-      "date": "2026-04-30",
-      "snippet": ""
-    },
-    {
-      "title": "【公告】光寶科(更正項目4,17,18,19,20)代子公司LITE-ON TECHNOLOGY USA, INC.公告投資MESH LIGHT FUND I, L.P.",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%85%89%E5%AF%B6%E7%A7%91-%E6%9B%B4%E6%AD%A3%E9%A0%85%E7%9B%AE4-17-18-070853860.html",
-      "source": "yahoo",
-      "date": "2026-04-30",
-      "snippet": ""
-    },
-    {
-      "title": "光寶科 (更正項目4,17,18,19,20)代子公司LITE-ON TECHNOLOGY USA, INC.公告投資MESH LIGHT FUND ...",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%89%E5%AF%B6%E7%A7%91-%E6%9B%B4%E6%AD%A3%E9%A0%85%E7%9B%AE4-17-18-19-065300452.html",
-      "source": "yahoo",
-      "date": "2026-04-30",
-      "snippet": ""
-    },
-    {
-      "title": "光寶科 公告本公司重要子公司LITE-ON SINGAPORE PTE. LTD.取得DAIZU PROPERTY HOLDING PTE. LTD....",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%89%E5%AF%B6%E7%A7%91-%E5%85%AC%E5%91%8A%E6%9C%AC%E5%85%AC%E5%8F%B8%E9%87%8D%E8%A6%81%E5%AD%90%E5%85%AC%E5%8F%B8lite-singapore-pte-ltd-064300411.html",
-      "source": "yahoo",
-      "date": "2026-04-30",
-      "snippet": ""
-    },
-    {
-      "title": "光寶科Q1毛利率看觸底；資通訊H2需求存變數",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%89%E5%AF%B6%E7%A7%91q1%E6%AF%9B%E5%88%A9%E7%8E%87%E7%9C%8B%E8%A7%B8%E5%BA%95-%E8%B3%87%E9%80%9A%E8%A8%8Ah2%E9%9C%80%E6%B1%82%E5%AD%98%E8%AE%8A%E6%95%B8-034900174.html",
-      "source": "yahoo",
-      "date": "2026-04-30",
-      "snippet": ""
-    },
-    {
-      "title": "光寶科擴大資本支出，加速美/越布局AI商機",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%89%E5%AF%B6%E7%A7%91%E6%93%B4%E5%A4%A7%E8%B3%87%E6%9C%AC%E6%94%AF%E5%87%BA-%E5%8A%A0%E9%80%9F%E7%BE%8E-%E8%B6%8A%E5%B8%83%E5%B1%80ai%E5%95%86%E6%A9%9F-032000587.html",
-      "source": "yahoo",
-      "date": "2026-04-30",
-      "snippet": ""
-    },
-    {
-      "title": "光寶科AI衝，800V架構/液冷/高功率產品H2量產",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%89%E5%AF%B6%E7%A7%91ai%E8%A1%9D-800v%E6%9E%B6%E6%A7%8B-%E6%B6%B2%E5%86%B7-%E9%AB%98%E5%8A%9F%E7%8E%87%E7%94%A2%E5%93%81h2%E9%87%8F%E7%94%A2-031000274.html",
-      "source": "yahoo",
-      "date": "2026-04-30",
-      "snippet": ""
-    },
-    {
-      "title": "光寶科衝刺AI營收占比3成！盤中翻紅急拉4%再翻黑 分析師揭原因",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%89%E5%AF%B6%E7%A7%91%E8%A1%9D%E5%88%BAai%E7%87%9F%E6%94%B6%E5%8D%A0%E6%AF%943%E6%88%90%EF%BC%81%E7%9B%A4%E4%B8%AD%E7%BF%BB%E7%B4%85%E6%80%A5%E6%8B%894%E5%86%8D%E7%BF%BB%E9%BB%91-%E5%88%86%E6%9E%90%E5%B8%AB%E6%8F%AD%E5%8E%9F%E5%9B%A0-025304837.html",
-      "source": "yahoo",
-      "date": "2026-04-30",
-      "snippet": ""
-    },
-    {
-      "title": "光寶科Q2拚雙升 拉高資本支出",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%89%E5%AF%B6%E7%A7%91q2%E6%8B%9A%E9%9B%99%E5%8D%87-%E6%8B%89%E9%AB%98%E8%B3%87%E6%9C%AC%E6%94%AF%E5%87%BA-201000531.html",
-      "source": "yahoo",
-      "date": "2026-04-29",
-      "snippet": ""
-    },
-    {
-      "title": "光寶科Q1獲利37.8億近5年新高 EPS達1.66元",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%89%E5%AF%B6%E7%A7%91q1%E7%8D%B2%E5%88%A937-8%E5%84%84%E8%BF%915%E5%B9%B4%E6%96%B0%E9%AB%98-eps%E9%81%941-66%E5%85%83-100002635.html",
-      "source": "yahoo",
-      "date": "2026-04-29",
-      "snippet": ""
-    },
-    {
-      "title": "電源成AI核心戰場！光寶營收獲利雙升、加碼全球布局",
-      "url": "https://tw.stock.yahoo.com/news/%E9%9B%BB%E6%BA%90%E6%88%90ai%E6%A0%B8%E5%BF%83%E6%88%B0%E5%A0%B4-%E5%85%89%E5%AF%B6%E7%87%9F%E6%94%B6%E7%8D%B2%E5%88%A9%E9%9B%99%E5%8D%87-%E5%8A%A0%E7%A2%BC%E5%85%A8%E7%90%83%E5%B8%83%E5%B1%80-094549187.html",
-      "source": "yahoo",
-      "date": "2026-04-29",
-      "snippet": ""
-    },
-    {
-      "title": "光寶科 115年第1季綜合損益表，每股盈餘1.66元",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%89%E5%AF%B6%E7%A7%91-115%E5%B9%B4%E7%AC%AC1%E5%AD%A3%E7%B6%9C%E5%90%88%E6%90%8D%E7%9B%8A%E8%A1%A8-%E6%AF%8F%E8%82%A1%E7%9B%88%E9%A4%981-66%E5%85%83-092700934.html",
-      "source": "yahoo",
-      "date": "2026-04-29",
-      "snippet": ""
-    },
-    {
-      "title": "光寶科337億元布局美國與越南 第1季是今年谷底",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%89%E5%AF%B6%E7%A7%91337%E5%84%84%E5%85%83%E5%B8%83%E5%B1%80%E7%BE%8E%E5%9C%8B%E8%88%87%E8%B6%8A%E5%8D%97-%E7%AC%AC1%E5%AD%A3%E6%98%AF%E4%BB%8A%E5%B9%B4%E8%B0%B7%E5%BA%95-085201622.html",
-      "source": "yahoo",
-      "date": "2026-04-29",
-      "snippet": ""
-    },
-    {
-      "title": "〈光寶科法說〉光寶科布局 AI 能源基建砸逾340億元美越擴產 衝刺AI營收占比三成",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%89%E5%AF%B6%E7%A7%91%E6%B3%95%E8%AA%AA-%E5%85%89%E5%AF%B6%E7%A7%91%E5%B8%83%E5%B1%80-ai-%E8%83%BD%E6%BA%90%E5%9F%BA%E5%BB%BA%E7%A0%B8%E9%80%BE340%E5%84%84%E5%85%83%E7%BE%8E%E8%B6%8A%E6%93%B4%E7%94%A2-%E8%A1%9D%E5%88%BAai%E7%87%9F%E6%94%B6%E5%8D%A0%E6%AF%94%E4%B8%89%E6%88%90-082709785.html",
-      "source": "yahoo",
-      "date": "2026-04-29",
-      "snippet": ""
-    },
-    {
-      "title": "光寶科Q1每股賺1.66元；Q2核心事業強勁成長",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%89%E5%AF%B6%E7%A7%91q1%E6%AF%8F%E8%82%A1%E8%B3%BA1-66%E5%85%83-q2%E6%A0%B8%E5%BF%83%E4%BA%8B%E6%A5%AD%E5%BC%B7%E5%8B%81%E6%88%90%E9%95%B7-081100988.html",
-      "source": "yahoo",
-      "date": "2026-04-29",
-      "snippet": ""
-    },
-    {
-      "title": "〈光寶科法說〉Q1賺37.8億元年增近一成 EPS 1.66元 雲端營收占比突破5成刷新紀錄",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%89%E5%AF%B6%E7%A7%91%E6%B3%95%E8%AA%AA-q1%E8%B3%BA37-8%E5%84%84%E5%85%83%E5%B9%B4%E5%A2%9E%E8%BF%91-%E6%88%90-eps-075443764.html",
-      "source": "yahoo",
-      "date": "2026-04-29",
-      "snippet": ""
-    },
-    {
-      "title": "AI電源需求強 光寶科首季獲利5年新高",
-      "url": "https://tw.stock.yahoo.com/news/ai%E9%9B%BB%E6%BA%90%E9%9C%80%E6%B1%82%E5%BC%B7-%E5%85%89%E5%AF%B6%E7%A7%91%E9%A6%96%E5%AD%A3%E7%8D%B2%E5%88%A95%E5%B9%B4%E6%96%B0%E9%AB%98-073042625.html",
-      "source": "yahoo",
-      "date": "2026-04-29",
-      "snippet": ""
-    },
-    {
-      "title": "光寶科Q1雲端業務狂飆7成、獲利創5年同期新高，估Q2核心事業季年雙增",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%89%E5%AF%B6%E7%A7%91q1%E9%9B%B2%E7%AB%AF%E6%A5%AD%E5%8B%99%E7%8B%82%E9%A3%867%E6%88%90-%E7%8D%B2%E5%88%A9%E5%89%B55%E5%B9%B4%E5%90%8C%E6%9C%9F%E6%96%B0%E9%AB%98-%E4%BC%B0q2%E6%A0%B8%E5%BF%83%E4%BA%8B%E6%A5%AD%E5%AD%A3%E5%B9%B4%E9%9B%99%E5%A2%9E-071135014.html",
-      "source": "yahoo",
-      "date": "2026-04-29",
-      "snippet": ""
-    },
-    {
-      "title": "光寶科首季每股賺1.66元 創近五年同期新高 總座邱森彬看旺第二季",
-      "url": "https://tw.stock.yahoo.com/news/%E5%85%89%E5%AF%B6%E7%A7%91%E9%A6%96%E5%AD%A3%E6%AF%8F%E8%82%A1%E8%B3%BA166%E5%85%83-%E5%89%B5%E8%BF%91%E4%BA%94%E5%B9%B4%E5%90%8C%E6%9C%9F%E6%96%B0%E9%AB%98-%E7%B8%BD%E5%BA%A7%E9%82%B1%E6%A3%AE%E5%BD%AC%E7%9C%8B%E6%97%BA%E7%AC%AC%E4%BA%8C%E5%AD%A3-065056848.html",
-      "source": "yahoo",
-      "date": "2026-04-29",
-      "snippet": ""
-    },
-    {
-      "title": "光寶科鎖定兆瓦級AI商機 電源前瞻方案揮軍GTC",
-      "url": "https://ec.ltn.com.tw/article/breakingnews/5373475",
-      "source": "ltn",
-      "date": "2026-03-17",
-      "snippet": ""
-    },
-    {
-      "title": "台股收盤》ABF載板、AI股救援 指數急拉387點收跌181點",
-      "url": "https://ec.ltn.com.tw/article/breakingnews/5368718",
-      "source": "ltn",
-      "date": "2026-03-13",
-      "snippet": ""
-    },
-    {
-      "title": "宏達電攜手光寶 MWC 2026  秀5G 專網商業應用",
-      "url": "https://ec.ltn.com.tw/article/breakingnews/5357579",
-      "source": "ltn",
-      "date": "2026-03-03",
-      "snippet": ""
-    },
-    {
-      "title": "總統接見2025年企經協會得獎人 期勉全面提升產業",
-      "url": "https://ec.ltn.com.tw/article/breakingnews/5356379",
-      "source": "ltn",
-      "date": "2026-03-02",
-      "snippet": ""
-    },
-    {
-      "title": "緯穎、仁寶布局海外資料中心、伺服器業務 經濟部核准",
-      "url": "https://ec.ltn.com.tw/article/breakingnews/5295749",
-      "source": "ltn",
-      "date": "2025-12-31",
-      "snippet": ""
-    },
-    {
-      "title": "光寶創辦人宋恭源伉儷捐股設立恩慈愛鄉獎學金 扶助嘉義新港子弟",
-      "url": "https://ec.ltn.com.tw/article/breakingnews/5238945",
-      "source": "ltn",
-      "date": "2025-11-08",
-      "snippet": ""
-    },
-    {
-      "title": "焦點股》光寶科：法說會在即 帶量創新高",
-      "url": "https://ec.ltn.com.tw/article/breakingnews/5225899",
-      "source": "ltn",
-      "date": "2025-10-28",
-      "snippet": ""
-    },
-    {
-      "title": "輝達AI鏈齊聚OCP神仙打架 台廠大秀先進整合實力",
-      "url": "https://ec.ltn.com.tw/article/breakingnews/5211076",
-      "source": "ltn",
-      "date": "2025-10-14",
-      "snippet": ""
-    },
-    {
-      "title": "光寶科9月營收年增3成 前3季業績成長23％",
-      "url": "https://ec.ltn.com.tw/article/breakingnews/5204909",
-      "source": "ltn",
-      "date": "2025-10-08",
-      "snippet": ""
-    },
-    {
-      "title": "陳其邁上任累計招商逾9100億 台積電P4廠也動工了",
-      "url": "https://ec.ltn.com.tw/article/breakingnews/5195031",
-      "source": "ltn",
-      "date": "2025-09-29",
-      "snippet": ""
-    },
-    {
-      "title": "光寶創辦人宋恭源挺母校  高雄高工邁向智慧製造教學基地",
-      "url": "https://ec.ltn.com.tw/article/breakingnews/5111335",
-      "source": "ltn",
-      "date": "2025-07-17",
-      "snippet": ""
-    },
-    {
-      "title": "光寶科總經理：企業韌性不靠預測政局 靠提早準備",
-      "url": "https://ec.ltn.com.tw/article/breakingnews/5094182",
-      "source": "ltn",
-      "date": "2025-07-02",
-      "snippet": ""
-    },
-    {
-      "title": "宏達電5月營收雙增  全年拚獲利",
-      "url": "https://ec.ltn.com.tw/article/breakingnews/5066773",
-      "source": "ltn",
-      "date": "2025-06-06",
-      "snippet": ""
-    },
-    {
-      "title": "光寶科再與日本新創簽MoU 聚焦FPCB技術導入產線",
-      "url": "https://ec.ltn.com.tw/article/breakingnews/5020355",
-      "source": "ltn",
-      "date": "2025-04-22",
-      "snippet": ""
-    },
-    {
-      "title": "光寶科創辦人宋恭源  捐價值1億元股票回饋高雄高工",
-      "url": "https://ec.ltn.com.tw/article/breakingnews/4903758",
-      "source": "ltn",
-      "date": "2024-12-25",
-      "snippet": ""
-    },
-    {
-      "title": "光寶新AI電源下季放量 液對液散熱明年出貨",
-      "url": "https://ec.ltn.com.tw/article/breakingnews/4846877",
-      "source": "ltn",
-      "date": "2024-10-30",
-      "snippet": ""
-    },
-    {
-      "title": "光寶科第3季營收寫同期新低 前3季觸12年低點",
-      "url": "https://ec.ltn.com.tw/article/breakingnews/4825991",
-      "source": "ltn",
-      "date": "2024-10-09",
-      "snippet": ""
-    },
-    {
-      "title": "西進衰弱僅年增32％ 經部：新南向投資成長156％",
-      "url": "https://ec.ltn.com.tw/article/breakingnews/4802056",
-      "source": "ltn",
-      "date": "2024-09-16",
-      "snippet": ""
-    },
-    {
-      "title": "光寶攜手英飛凌簽署備忘錄 連結雙方新創平台",
-      "url": "https://ec.ltn.com.tw/article/breakingnews/4766888",
-      "source": "ltn",
-      "date": "2024-08-12",
-      "snippet": ""
-    },
-    {
-      "title": "光寶科Q2獲利年減26％ Q3季對季成長",
-      "url": "https://ec.ltn.com.tw/article/breakingnews/4754424",
-      "source": "ltn",
-      "date": "2024-07-31",
+      "date": "2026-01-08",
       "snippet": ""
     }
   ]

@@ -1,154 +1,25 @@
 {
   "stockCode": "2412",
-  "name": "中華電信",
-  "scrapedAt": "2026-05-01T12:31:34.476Z",
+  "name": "中華電",
+  "scrapedAt": "2026-05-01T20:38:59.426Z",
+  "devSeed": true,
   "sourceCounts": {
-    "yahoo": 0,
-    "ltn": 20
-  },
-  "enrichStats": {
-    "fetched": 0,
-    "filled": 0
+    "yahoo": 1,
+    "ltn": 1
   },
   "news": [
     {
-      "title": "剩6天！去年11-12月統一發票19張大獎未領  消費地點在這裡",
-      "url": "https://ec.ltn.com.tw/article/breakingnews/5420291",
-      "source": "ltn",
-      "date": "2026-04-29",
+      "title": "5G 用戶滲透率提升 中華電投資加碼",
+      "url": "https://tw.stock.yahoo.com/news/2412-5G 用戶滲-2026-01-20.html",
+      "source": "yahoo",
+      "date": "2026-01-20",
       "snippet": ""
     },
     {
-      "title": "臺馬三號北竿東引段海纜全斷  數發部啟動微波備援",
-      "url": "https://ec.ltn.com.tw/article/breakingnews/5420382",
+      "title": "低軌衛星合作 中華電與 SpaceX 接洽",
+      "url": "https://search.ltn.com.tw/list?keyword=%E4%B8%AD%E8%8F%AF%E9%9B%BB#2026-01-10",
       "source": "ltn",
-      "date": "2026-04-29",
-      "snippet": ""
-    },
-    {
-      "title": "ViVi PARK攜手3大停車同業啟動「月租大聯盟」",
-      "url": "https://ec.ltn.com.tw/article/breakingnews/5419540",
-      "source": "ltn",
-      "date": "2026-04-29",
-      "snippet": ""
-    },
-    {
-      "title": "中華電信、智邦、NTT展示跨國IOWN全光算力網路 應用在AI智慧城市",
-      "url": "https://ec.ltn.com.tw/article/breakingnews/5418916",
-      "source": "ltn",
-      "date": "2026-04-28",
-      "snippet": ""
-    },
-    {
-      "title": "尋找中獎人！去年11-12月千萬發票6張未領  消費地點一次看",
-      "url": "https://ec.ltn.com.tw/article/breakingnews/5416740",
-      "source": "ltn",
-      "date": "2026-04-26",
-      "snippet": ""
-    },
-    {
-      "title": "中華電信簡志誠：挖掘內部更多小金雞  將市值向上推進",
-      "url": "https://ec.ltn.com.tw/article/breakingnews/5415036",
-      "source": "ltn",
-      "date": "2026-04-24",
-      "snippet": ""
-    },
-    {
-      "title": "台股創新高486先生揭驚人數據 這類人看得到吃不到",
-      "url": "https://ec.ltn.com.tw/article/breakingnews/5412952",
-      "source": "ltn",
-      "date": "2026-04-23",
-      "snippet": ""
-    },
-    {
-      "title": "＜財經週報-低軌衛星＞決戰外太空 電信三雄衛布建全方位網",
-      "url": "https://ec.ltn.com.tw/article/breakingnews/5409241",
-      "source": "ltn",
-      "date": "2026-04-20",
-      "snippet": ""
-    },
-    {
-      "title": "〈財經週報-低軌衛星〉決戰外太空 電信三雄各擁強援",
-      "url": "https://ec.ltn.com.tw/article/paper/1751568",
-      "source": "ltn",
-      "date": "2026-04-20",
-      "snippet": ""
-    },
-    {
-      "title": "〈財經週報-低軌衛星〉低軌衛星點火 台廠太空供應鏈升空",
-      "url": "https://ec.ltn.com.tw/article/paper/1751564",
-      "source": "ltn",
-      "date": "2026-04-20",
-      "snippet": ""
-    },
-    {
-      "title": "＜財經週報-低軌衛星＞SpaceX IPO炒熱低軌衛星 台廠供應鏈不看淡",
-      "url": "https://ec.ltn.com.tw/article/breakingnews/5409231",
-      "source": "ltn",
-      "date": "2026-04-19",
-      "snippet": ""
-    },
-    {
-      "title": "3大產品線同步成長 中華資安Q1獲利創新高",
-      "url": "https://ec.ltn.com.tw/article/breakingnews/5404927",
-      "source": "ltn",
-      "date": "2026-04-15",
-      "snippet": ""
-    },
-    {
-      "title": "天能綠電營運創新高 5月掛牌上櫃",
-      "url": "https://ec.ltn.com.tw/article/breakingnews/5404705",
-      "source": "ltn",
-      "date": "2026-04-15",
-      "snippet": ""
-    },
-    {
-      "title": "產學聯手解鎖衛星應用場景 從災防通訊到智慧海事全面落地",
-      "url": "https://ec.ltn.com.tw/article/breakingnews/5404203",
-      "source": "ltn",
-      "date": "2026-04-15",
-      "snippet": ""
-    },
-    {
-      "title": "低軌衛星應援粉紅超跑  中華電信護白沙屯媽祖進香",
-      "url": "https://ec.ltn.com.tw/article/breakingnews/5398655",
-      "source": "ltn",
-      "date": "2026-04-09",
-      "snippet": ""
-    },
-    {
-      "title": "填補海纜法制真空！數發部建立破壞鑑定標準、反制灰區攻擊",
-      "url": "https://ec.ltn.com.tw/article/breakingnews/5392164",
-      "source": "ltn",
-      "date": "2026-04-03",
-      "snippet": ""
-    },
-    {
-      "title": "統一發票千萬大獎累積304張未領  這6張還在領獎期限",
-      "url": "https://ec.ltn.com.tw/article/breakingnews/5391544",
-      "source": "ltn",
-      "date": "2026-04-02",
-      "snippet": ""
-    },
-    {
-      "title": "LINE爆盜帳風暴！數發部出手補漏洞：原台星語音信箱預設密碼成破口",
-      "url": "https://ec.ltn.com.tw/article/breakingnews/5390345",
-      "source": "ltn",
-      "date": "2026-04-01",
-      "snippet": ""
-    },
-    {
-      "title": "臺馬三號海纜東引段受損 數發部：已完成訊務調度、最快7月完成修復",
-      "url": "https://ec.ltn.com.tw/article/breakingnews/5389542",
-      "source": "ltn",
-      "date": "2026-04-01",
-      "snippet": ""
-    },
-    {
-      "title": "羽球天后戴資穎跨界代言！將來銀行4週年力拚2027年轉盈",
-      "url": "https://ec.ltn.com.tw/article/breakingnews/5384324",
-      "source": "ltn",
-      "date": "2026-03-27",
+      "date": "2026-01-10",
       "snippet": ""
     }
   ]

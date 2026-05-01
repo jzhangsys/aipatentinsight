@@ -1,154 +1,25 @@
 {
   "stockCode": "8299",
-  "name": "群聯電子",
-  "scrapedAt": "2026-05-01T12:40:01.204Z",
+  "name": "群聯",
+  "scrapedAt": "2026-05-01T20:38:59.417Z",
+  "devSeed": true,
   "sourceCounts": {
-    "yahoo": 0,
-    "ltn": 20
-  },
-  "enrichStats": {
-    "fetched": 0,
-    "filled": 0
+    "yahoo": 1,
+    "ltn": 1
   },
   "news": [
     {
-      "title": "士電、群聯、技嘉都是法人大股東！阿波羅電力4月底登錄興櫃",
-      "url": "https://ec.ltn.com.tw/article/breakingnews/5411049",
-      "source": "ltn",
-      "date": "2026-04-21",
+      "title": "群聯 PCIe Gen5 SSD 控制器 主流大廠採用",
+      "url": "https://tw.stock.yahoo.com/news/8299-群聯 PCI-2026-01-26.html",
+      "source": "yahoo",
+      "date": "2026-01-26",
       "snippet": ""
     },
     {
-      "title": "苗栗縣府攜手群聯導入AI智慧客服  提升公共服務效率",
-      "url": "https://ec.ltn.com.tw/article/breakingnews/5402296",
+      "title": "AI 伺服器企業級 SSD 需求帶動 群聯出貨成長",
+      "url": "https://search.ltn.com.tw/list?keyword=%E7%BE%A4%E8%81%AF#2026-01-14",
       "source": "ltn",
-      "date": "2026-04-13",
-      "snippet": ""
-    },
-    {
-      "title": "近期記憶體價格鬆動？ 群聯潘健成：零售市場短期供需波動",
-      "url": "https://ec.ltn.com.tw/article/breakingnews/5397134",
-      "source": "ltn",
-      "date": "2026-04-08",
-      "snippet": ""
-    },
-    {
-      "title": "群聯全球首款「養龍蝦神器」熱賣 將與台商合推「龍蝦神機」",
-      "url": "https://ec.ltn.com.tw/article/breakingnews/5396390",
-      "source": "ltn",
-      "date": "2026-04-08",
-      "snippet": ""
-    },
-    {
-      "title": "群聯助攻 台南智慧城市AI登上GTC 2026",
-      "url": "https://ec.ltn.com.tw/article/breakingnews/5375193",
-      "source": "ltn",
-      "date": "2026-03-19",
-      "snippet": ""
-    },
-    {
-      "title": "群聯去年Q4獲利創新高   潘健成：不依賴低價庫存或短期景氣操作",
-      "url": "https://ec.ltn.com.tw/article/breakingnews/5361351",
-      "source": "ltn",
-      "date": "2026-03-06",
-      "snippet": ""
-    },
-    {
-      "title": "群聯等6家公司獲核准進駐竹科  投資總金額12.36億元",
-      "url": "https://ec.ltn.com.tw/article/breakingnews/5326580",
-      "source": "ltn",
-      "date": "2026-01-29",
-      "snippet": ""
-    },
-    {
-      "title": "焦點股》群聯：猛虎出關 股價創史高",
-      "url": "https://ec.ltn.com.tw/article/breakingnews/5316780",
-      "source": "ltn",
-      "date": "2026-01-21",
-      "snippet": ""
-    },
-    {
-      "title": "群聯股價還有高點? 潘健成上個月斥資逾4700萬買股",
-      "url": "https://ec.ltn.com.tw/article/breakingnews/5297498",
-      "source": "ltn",
-      "date": "2026-01-02",
-      "snippet": ""
-    },
-    {
-      "title": "焦點股》群聯：11月獲利爆增 開盤就漲停再創天價",
-      "url": "https://ec.ltn.com.tw/article/breakingnews/5294854",
-      "source": "ltn",
-      "date": "2025-12-31",
-      "snippet": ""
-    },
-    {
-      "title": "苗栗工程師年薪全台衝第二 縣府揭「高技術密度」是關鍵",
-      "url": "https://ec.ltn.com.tw/article/breakingnews/5212634",
-      "source": "ltn",
-      "date": "2025-10-15",
-      "snippet": ""
-    },
-    {
-      "title": "Cheap酸黃偉哲不懂輝達 許美華：全台前十大IC設計公司都在工業園區內",
-      "url": "https://ec.ltn.com.tw/article/breakingnews/5210439",
-      "source": "ltn",
-      "date": "2025-10-14",
-      "snippet": ""
-    },
-    {
-      "title": "鎖定非本科背景職場新鮮人！陽明交大攜手業界培育AI人才",
-      "url": "https://ec.ltn.com.tw/article/breakingnews/5183851",
-      "source": "ltn",
-      "date": "2025-09-19",
-      "snippet": ""
-    },
-    {
-      "title": "IMA 推Taiwan Tongues   AI 再也不是外國腔",
-      "url": "https://ec.ltn.com.tw/article/breakingnews/5096635",
-      "source": "ltn",
-      "date": "2025-07-04",
-      "snippet": ""
-    },
-    {
-      "title": "AI EXPO Taiwan 2025月底登場 推動AI應用快速落地",
-      "url": "https://ec.ltn.com.tw/article/breakingnews/4969633",
-      "source": "ltn",
-      "date": "2025-03-04",
-      "snippet": ""
-    },
-    {
-      "title": "非紅鏈扮要角 經長：打造台灣製造日不落國",
-      "url": "https://ec.ltn.com.tw/article/paper/1692977",
-      "source": "ltn",
-      "date": "2025-02-22",
-      "snippet": ""
-    },
-    {
-      "title": "看準非紅供應鏈潛力 郭智輝：籌組國家隊實現製造日不落國",
-      "url": "https://ec.ltn.com.tw/article/breakingnews/4958795",
-      "source": "ltn",
-      "date": "2025-02-21",
-      "snippet": ""
-    },
-    {
-      "title": "緯創、群聯與陽明交大攜手 23億打造AI半導體人才基地",
-      "url": "https://ec.ltn.com.tw/article/breakingnews/4871815",
-      "source": "ltn",
-      "date": "2024-11-22",
-      "snippet": ""
-    },
-    {
-      "title": "北漂變南漂 台南失業率3.3％創新低",
-      "url": "https://ec.ltn.com.tw/article/breakingnews/4809799",
-      "source": "ltn",
-      "date": "2024-09-24",
-      "snippet": ""
-    },
-    {
-      "title": "斥資逾23億！緯創、群聯攜手陽明交大  台南沙崙建置教研大樓",
-      "url": "https://ec.ltn.com.tw/article/breakingnews/4791985",
-      "source": "ltn",
-      "date": "2024-09-06",
+      "date": "2026-01-14",
       "snippet": ""
     }
   ]

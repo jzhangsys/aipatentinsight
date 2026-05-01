@@ -39,6 +39,12 @@ type ThemeEntry = {
   volume: number;        // 該題材整體聲量
   totalCompanyCount: number;
   companies: ThemeCompany[];
+  // Layer 1 延續題材:當期 < 10 時,從上一期 top themes 補入
+  carriedFromPrev?: boolean;
+  carriedFromDate?: string;
+  // Layer 2 延伸窗口題材:延續後仍 < 10 時,擴大成 [snap - 180d, snap] 重分析的補充
+  extendedWindow?: boolean;
+  extendedWindowDays?: number;
 };
 
 type MarketSignalsData = {
@@ -207,7 +213,22 @@ export default function MarketSignalsClient() {
                   aria-expanded={isOpen}
                 >
                   <span className="ai-signals-theme-rank">#{theme.rank}</span>
-                  <span className="ai-signals-theme-name">{theme.name}</span>
+                  <span className="ai-signals-theme-name">
+                    {theme.name}
+                    {theme.carriedFromPrev && theme.carriedFromDate && (
+                      <span className="ai-signals-theme-carried" title="從上一期延續">
+                        ↩ {theme.carriedFromDate.replace(/-/g, ".")}
+                      </span>
+                    )}
+                    {theme.extendedWindow && (
+                      <span
+                        className="ai-signals-theme-extended"
+                        title={`延伸窗口分析(${theme.extendedWindowDays || 180} 天)`}
+                      >
+                        {theme.extendedWindowDays || 180}d
+                      </span>
+                    )}
+                  </span>
                   <span className="ai-signals-theme-bar">
                     <span
                       className="ai-signals-theme-bar-fill"

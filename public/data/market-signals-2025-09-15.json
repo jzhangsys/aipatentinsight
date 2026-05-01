@@ -1,70 +1,46 @@
 {
   "date": "2025-09-15",
-  "generatedAt": "2026-05-01T12:40:06.497Z",
+  "generatedAt": "2026-05-01T20:38:59.572Z",
   "newsWindow": {
-    "start": "2025-03-01",
+    "start": "2025-03-02",
     "end": "2025-09-15",
     "mode": "inter_snapshot"
   },
   "totalCompanies": 54,
-  "totalCompaniesAnalyzed": 10,
+  "totalCompaniesAnalyzed": 5,
   "themes": [
     {
       "rank": 1,
-      "name": "風電",
+      "name": "Wi-Fi / 網通",
       "volume": 3,
       "totalCompanyCount": 1,
       "companies": [
         {
-          "name": "鴻海精密工業",
-          "stockCode": "2317",
+          "name": "達發科技",
+          "stockCode": "6526",
           "hits": 3,
           "isPrimary": true
         }
-      ]
+      ],
+      "carriedFromPrev": true,
+      "carriedFromDate": "2025-03-01"
     },
     {
       "rank": 2,
       "name": "CoWoS / 先進封裝",
-      "volume": 3,
-      "totalCompanyCount": 2,
+      "volume": 2,
+      "totalCompanyCount": 1,
       "companies": [
         {
           "name": "新應材",
           "stockCode": "4749",
           "hits": 2,
           "isPrimary": true
-        },
-        {
-          "name": "欣興電子",
-          "stockCode": "3037",
-          "hits": 1,
-          "isPrimary": true
         }
       ]
     },
     {
       "rank": 3,
-      "name": "智慧手機",
-      "volume": 2,
-      "totalCompanyCount": 2,
-      "companies": [
-        {
-          "name": "旺宏電子",
-          "stockCode": "2337",
-          "hits": 1,
-          "isPrimary": true
-        },
-        {
-          "name": "鈺創科技",
-          "stockCode": "5351",
-          "hits": 1,
-          "isPrimary": true
-        }
-      ]
-    },
-    {
-      "rank": 4,
       "name": "衛星通訊",
       "volume": 2,
       "totalCompanyCount": 1,
@@ -78,7 +54,61 @@
       ]
     },
     {
+      "rank": 4,
+      "name": "DRAM / 記憶體",
+      "volume": 2,
+      "totalCompanyCount": 2,
+      "companies": [
+        {
+          "name": "南亞科技",
+          "stockCode": "2408",
+          "hits": 1,
+          "isPrimary": true
+        },
+        {
+          "name": "福懋科技",
+          "stockCode": "8131",
+          "hits": 1,
+          "isPrimary": true
+        }
+      ],
+      "carriedFromPrev": true,
+      "carriedFromDate": "2025-03-01"
+    },
+    {
       "rank": 5,
+      "name": "MicroLED",
+      "volume": 2,
+      "totalCompanyCount": 1,
+      "companies": [
+        {
+          "name": "晶呈科技",
+          "stockCode": "4768",
+          "hits": 2,
+          "isPrimary": true
+        }
+      ],
+      "carriedFromPrev": true,
+      "carriedFromDate": "2025-03-01"
+    },
+    {
+      "rank": 6,
+      "name": "IC 設計",
+      "volume": 2,
+      "totalCompanyCount": 1,
+      "companies": [
+        {
+          "name": "聯詠科技",
+          "stockCode": "3034",
+          "hits": 2,
+          "isPrimary": true
+        }
+      ],
+      "carriedFromPrev": true,
+      "carriedFromDate": "2025-03-01"
+    },
+    {
+      "rank": 7,
       "name": "AI 晶片 / ASIC",
       "volume": 1,
       "totalCompanyCount": 1,
@@ -92,7 +122,7 @@
       ]
     },
     {
-      "rank": 6,
+      "rank": 8,
       "name": "成熟製程",
       "volume": 1,
       "totalCompanyCount": 1,
@@ -106,46 +136,34 @@
       ]
     },
     {
-      "rank": 7,
-      "name": "MicroLED",
+      "rank": 9,
+      "name": "智慧手機",
       "volume": 1,
       "totalCompanyCount": 1,
       "companies": [
         {
-          "name": "友達光電",
-          "stockCode": "2409",
+          "name": "鈺創科技",
+          "stockCode": "5351",
           "hits": 1,
           "isPrimary": true
         }
       ]
     },
     {
-      "rank": 8,
-      "name": "PCB 印刷電路板",
+      "rank": 10,
+      "name": "先進製程 (3nm/2nm)",
       "volume": 1,
       "totalCompanyCount": 1,
       "companies": [
         {
-          "name": "欣興電子",
-          "stockCode": "3037",
+          "name": "聯詠科技",
+          "stockCode": "3034",
           "hits": 1,
           "isPrimary": false
         }
-      ]
-    },
-    {
-      "rank": 9,
-      "name": "工業機器人 / 自動化",
-      "volume": 1,
-      "totalCompanyCount": 1,
-      "companies": [
-        {
-          "name": "光寶科技",
-          "stockCode": "2301",
-          "hits": 1,
-          "isPrimary": true
-        }
-      ]
+      ],
+      "carriedFromPrev": true,
+      "carriedFromDate": "2025-03-01"
     }
   ]
 }

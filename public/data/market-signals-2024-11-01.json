@@ -1,16 +1,32 @@
 {
   "date": "2024-11-01",
-  "generatedAt": "2026-05-01T12:40:06.487Z",
+  "generatedAt": "2026-05-01T20:38:59.559Z",
   "newsWindow": {
-    "start": "2024-10-01",
+    "start": "2024-10-02",
     "end": "2024-11-01",
     "mode": "inter_snapshot"
   },
   "totalCompanies": 68,
-  "totalCompaniesAnalyzed": 4,
+  "totalCompaniesAnalyzed": 3,
   "themes": [
     {
       "rank": 1,
+      "name": "Wi-Fi / 網通",
+      "volume": 3,
+      "totalCompanyCount": 1,
+      "companies": [
+        {
+          "name": "達發科技",
+          "stockCode": "6526",
+          "hits": 3,
+          "isPrimary": true
+        }
+      ],
+      "carriedFromPrev": true,
+      "carriedFromDate": "2024-10-01"
+    },
+    {
+      "rank": 2,
       "name": "CoWoS / 先進封裝",
       "volume": 2,
       "totalCompanyCount": 1,
@@ -18,20 +34,6 @@
         {
           "name": "晶呈科技",
           "stockCode": "4768",
-          "hits": 2,
-          "isPrimary": true
-        }
-      ]
-    },
-    {
-      "rank": 2,
-      "name": "Wi-Fi / 網通",
-      "volume": 2,
-      "totalCompanyCount": 1,
-      "companies": [
-        {
-          "name": "達發科技",
-          "stockCode": "6526",
           "hits": 2,
           "isPrimary": true
         }
@@ -64,6 +66,38 @@
           "isPrimary": true
         }
       ]
+    },
+    {
+      "rank": 5,
+      "name": "矽光子 / 光通訊",
+      "volume": 1,
+      "totalCompanyCount": 1,
+      "companies": [
+        {
+          "name": "達發科技",
+          "stockCode": "6526",
+          "hits": 1,
+          "isPrimary": true
+        }
+      ],
+      "carriedFromPrev": true,
+      "carriedFromDate": "2024-10-01"
+    },
+    {
+      "name": "衛星通訊",
+      "volume": 1,
+      "totalCompanyCount": 1,
+      "companies": [
+        {
+          "name": "凌群電腦",
+          "stockCode": "2453",
+          "hits": 1,
+          "isPrimary": false
+        }
+      ],
+      "extendedWindow": true,
+      "extendedWindowDays": 180,
+      "rank": 6
     }
   ]
 }

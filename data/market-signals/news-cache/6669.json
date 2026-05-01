@@ -1,56 +1,32 @@
 {
   "stockCode": "6669",
-  "name": "緯穎科技服務",
-  "scrapedAt": "2026-05-01T12:38:17.449Z",
+  "name": "緯穎",
+  "scrapedAt": "2026-05-01T20:38:59.413Z",
+  "devSeed": true,
   "sourceCounts": {
-    "yahoo": 0,
-    "ltn": 6
-  },
-  "enrichStats": {
-    "fetched": 0,
-    "filled": 0
+    "yahoo": 2,
+    "ltn": 1
   },
   "news": [
     {
-      "title": "南科30年盛典  邀台積電共同營運長秦永沛今晚開講",
-      "url": "https://ec.ltn.com.tw/article/breakingnews/5327517",
-      "source": "ltn",
+      "title": "緯穎 AI 伺服器 ODM 訂單能見度直達 2026 H2",
+      "url": "https://tw.stock.yahoo.com/news/6669-緯穎 AI -2026-01-30.html",
+      "source": "yahoo",
       "date": "2026-01-30",
       "snippet": ""
     },
     {
-      "title": "Google、亞馬遜加碼投資台灣合計95.9億   經濟部核准",
-      "url": "https://ec.ltn.com.tw/article/breakingnews/4993876",
+      "title": "Meta Microsoft 雲端客戶下單 緯穎 AI Server 出貨倍增",
+      "url": "https://search.ltn.com.tw/list?keyword=%E7%B7%AF%E7%A9%8E#2026-01-20",
       "source": "ltn",
-      "date": "2025-03-27",
+      "date": "2026-01-20",
       "snippet": ""
     },
     {
-      "title": "台積電增資美國廠75億美元 獲投審會核准",
-      "url": "https://ec.ltn.com.tw/article/breakingnews/4808656",
-      "source": "ltn",
-      "date": "2024-09-23",
-      "snippet": ""
-    },
-    {
-      "title": "竹科整棟廠房標售  矽格旗下聯測砸16.8億得標",
-      "url": "https://ec.ltn.com.tw/article/breakingnews/4667950",
-      "source": "ltn",
-      "date": "2024-05-09",
-      "snippet": ""
-    },
-    {
-      "title": "台商回台真的不是0元！ 新建廠名單經部全都露",
-      "url": "https://ec.ltn.com.tw/article/breakingnews/2983204",
-      "source": "ltn",
-      "date": "2019-11-19",
-      "snippet": ""
-    },
-    {
-      "title": "中國駭客晶片事件掀股災 聯想股價重摔23％",
-      "url": "https://ec.ltn.com.tw/article/breakingnews/2571692",
-      "source": "ltn",
-      "date": "2018-10-05",
+      "title": "緯穎 GB200 NVL72 機櫃量產 毛利率提升",
+      "url": "https://tw.stock.yahoo.com/news/6669-緯穎 GB2-2026-01-05.html",
+      "source": "yahoo",
+      "date": "2026-01-05",
       "snippet": ""
     }
   ]

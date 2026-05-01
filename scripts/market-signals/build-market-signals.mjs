@@ -131,6 +131,44 @@ function computeWindow(snapshotDate, prevSnapshotDate, isLatest) {
   };
 }
 
+/**
+ * 抽取的 aggregation helper:對給定 companies + window,
+ * 回傳 { themeAggregate: Map<theme, {volume, companyHits}>, totalAnalyzed }
+ *
+ * 同時被 buildOne(主分析)跟 pass 3(180d backfill)共用。
+ */
+function aggregateThemesInWindow(companies, winStart, winEnd) {
+  const themeAggregate = new Map();
+  let totalAnalyzed = 0;
+  for (const co of companies) {
+    const news = newsByCode.get(co.stockCode) || [];
+    const inwin = news.filter((n) => inWindow(n.date, winStart, winEnd));
+    if (inwin.length === 0) continue;
+    for (const n of inwin) {
+      totalAnalyzed++;
+      const text = (n.title || "") + " " + (n.snippet || "");
+      const hits = classifyText(text, compiled);
+      if (hits.length === 0) continue;
+      for (const theme of hits) {
+        if (!themeAggregate.has(theme)) {
+          themeAggregate.set(theme, { volume: 0, companyHits: new Map() });
+        }
+        const tagg = themeAggregate.get(theme);
+        tagg.volume++;
+        if (!tagg.companyHits.has(co.stockCode)) {
+          tagg.companyHits.set(co.stockCode, {
+            name: co.name,
+            stockCode: co.stockCode,
+            count: 0,
+          });
+        }
+        tagg.companyHits.get(co.stockCode).count++;
+      }
+    }
+  }
+  return { themeAggregate, totalAnalyzed };
+}
+
 function buildOne(snapshotDate, prevSnapshotDate, isLatest) {
   const companies = companiesData.bySnapshot[snapshotDate];
   if (!companies) {
@@ -256,15 +294,122 @@ for (let i = 0; i < allActualDates.length; i++) {
 const targetDates = ARG_DATE ? [ARG_DATE] : allActualDates;
 const latestDate = allActualDates[allActualDates.length - 1];
 
-for (const d of targetDates) {
+// === Pass 1:每期各自從自己窗口算 themes ===
+const allBuilt = [];
+for (const d of allActualDates) {
   const isLatest = d === latestDate;
   const out = buildOne(d, prevDateMap.get(d) || null, isLatest);
+  allBuilt.push({ date: d, out });
+}
+
+// === Pass 2:延續性 — 當期 themes < MIN 時,從上一期 top themes 補入 ===
+//
+// 邏輯:股市題材本來就有延續性,熱題材不會一個窗口就突然消失。
+// 如果當期 themes < 10(可能因為窗口短、新聞少、爬蟲漏抓),
+// 從上一期 themes 由高到低順序,把當期沒有的 theme 補進來,
+// 標 carriedFromPrev: true + carriedFromDate,直到湊滿 10 個。
+//
+// Carried theme 用上期的 volume,跟當期 volume 一起排序。
+// 不做 chain inheritance(每期最多只繼承「直接上一期」的)。
+const MIN_THEMES = 10;
+for (let i = 1; i < allBuilt.length; i++) {
+  const cur = allBuilt[i].out;
+  const prev = allBuilt[i - 1].out;
+  if (!cur || !prev) continue;
+  if (cur.themes.length >= MIN_THEMES) continue;
+
+  const existingNames = new Set(cur.themes.map((t) => t.name));
+  for (const pt of prev.themes) {
+    if (existingNames.has(pt.name)) continue;
+    cur.themes.push({
+      ...pt,
+      carriedFromPrev: true,
+      carriedFromDate: prev.date,
+    });
+    existingNames.add(pt.name);
+    if (cur.themes.length >= MIN_THEMES) break;
+  }
+  // Re-sort + re-rank + cap at top 20
+  cur.themes.sort((a, b) => b.volume - a.volume);
+  cur.themes = cur.themes.slice(0, TOP_N_THEMES);
+  cur.themes.forEach((t, idx) => (t.rank = idx + 1));
+}
+
+// === Pass 3:180 天 backfill — pass 2 後仍 < MIN 的期別,擴大窗口重新分析 ===
+//
+// 順序設計理由:
+//   1. 先嘗試延續性(pass 2)— 上期的熱題材通常還是當期關注焦點,語意最對齊
+//   2. 仍不夠才擴窗口(pass 3)— 用「snapshot 前 180 天」廣度撈,可能撈到
+//      季度級的長期結構性題材,標 extendedWindow=true 讓前端標示
+//
+// 不重做 carriedFromPrev,只追加新的 native-like themes(來自延伸窗口的本地分析)
+const EXTENDED_WINDOW_DAYS = 180;
+for (let i = 0; i < allBuilt.length; i++) {
+  const cur = allBuilt[i].out;
+  if (!cur) continue;
+  if (cur.themes.length >= MIN_THEMES) continue;
+
+  const companies = companiesData.bySnapshot[cur.date];
+  if (!companies) continue;
+
+  // 計算延伸窗口
+  const snapEnd = new Date(cur.date + "T23:59:59");
+  const back = new Date(snapEnd.getTime() - EXTENDED_WINDOW_DAYS * 86400 * 1000);
+  const extStart = back.toISOString().slice(0, 10);
+  const extEnd = cur.date;
+
+  // 若原窗口已比 180 天還寬(latest_fresh_90d 是 90 天 < 180,也適用),
+  // 仍跑一次 — 但若延伸窗口跟原窗口完全相同,會重複命中已有 theme,自動 dedup
+  const { themeAggregate: extAgg } = aggregateThemesInWindow(
+    companies,
+    extStart,
+    extEnd
+  );
+
+  const existingNames = new Set(cur.themes.map((t) => t.name));
+  const candidates = [...extAgg.entries()]
+    .filter(([name]) => !existingNames.has(name))
+    .sort((a, b) => b[1].volume - a[1].volume);
+
+  for (const [name, agg] of candidates) {
+    if (cur.themes.length >= MIN_THEMES) break;
+    const cos = [...agg.companyHits.values()]
+      .sort((a, b) => b.count - a.count)
+      .map((ch) => ({
+        name: ch.name,
+        stockCode: ch.stockCode,
+        hits: ch.count,
+        isPrimary: false,
+      }));
+    cur.themes.push({
+      name,
+      volume: agg.volume,
+      totalCompanyCount: cos.length,
+      companies: cos,
+      extendedWindow: true,
+      extendedWindowDays: EXTENDED_WINDOW_DAYS,
+    });
+    existingNames.add(name);
+  }
+  // Re-sort + re-rank + cap at top 20
+  cur.themes.sort((a, b) => b.volume - a.volume);
+  cur.themes = cur.themes.slice(0, TOP_N_THEMES);
+  cur.themes.forEach((t, idx) => (t.rank = idx + 1));
+}
+
+// === Pass 4:寫檔 + log ===
+const targetSet = new Set(targetDates);
+for (const { date: d, out } of allBuilt) {
+  if (!targetSet.has(d)) continue;
   if (!out) continue;
   const outPath = join(PUBLIC_DATA, `market-signals-${d}.json`);
   writeFileSync(outPath, JSON.stringify(out, null, 2));
+  const carriedCount = out.themes.filter((t) => t.carriedFromPrev).length;
+  const extendedCount = out.themes.filter((t) => t.extendedWindow).length;
+  const nativeCount = out.themes.length - carriedCount - extendedCount;
   console.log(
     `  ✓ ${d} [window ${out.newsWindow.start}~${out.newsWindow.end}]: ` +
-      `${out.themes.length} themes, ` +
+      `${out.themes.length} themes (native=${nativeCount}, carried=${carriedCount}, extended=${extendedCount}), ` +
       `${out.totalCompaniesAnalyzed}/${out.totalCompanies} companies classified`
   );
 }

@@ -1,118 +1,16 @@
 {
   "date": "2026-02-01",
-  "generatedAt": "2026-05-01T12:40:06.500Z",
+  "generatedAt": "2026-05-01T20:38:59.575Z",
   "newsWindow": {
     "start": "2026-01-31",
     "end": "2026-05-01",
     "mode": "latest_fresh_90d"
   },
   "totalCompanies": 73,
-  "totalCompaniesAnalyzed": 24,
+  "totalCompaniesAnalyzed": 15,
   "themes": [
     {
       "rank": 1,
-      "name": "衛星通訊",
-      "volume": 9,
-      "totalCompanyCount": 4,
-      "companies": [
-        {
-          "name": "中華電信",
-          "stockCode": "2412",
-          "hits": 6,
-          "isPrimary": true
-        },
-        {
-          "name": "聯發科技",
-          "stockCode": "2454",
-          "hits": 1,
-          "isPrimary": false
-        },
-        {
-          "name": "台灣大哥大",
-          "stockCode": "3045",
-          "hits": 1,
-          "isPrimary": false
-        },
-        {
-          "name": "神盾",
-          "stockCode": "6462",
-          "hits": 1,
-          "isPrimary": true
-        }
-      ]
-    },
-    {
-      "rank": 2,
-      "name": "資安",
-      "volume": 7,
-      "totalCompanyCount": 6,
-      "companies": [
-        {
-          "name": "中國鋼鐵",
-          "stockCode": "2002",
-          "hits": 2,
-          "isPrimary": true
-        },
-        {
-          "name": "聯發科技",
-          "stockCode": "2454",
-          "hits": 1,
-          "isPrimary": true
-        },
-        {
-          "name": "中華電信",
-          "stockCode": "2412",
-          "hits": 1,
-          "isPrimary": false
-        },
-        {
-          "name": "台灣大哥大",
-          "stockCode": "3045",
-          "hits": 1,
-          "isPrimary": true
-        },
-        {
-          "name": "信驊科技",
-          "stockCode": "5274",
-          "hits": 1,
-          "isPrimary": true
-        },
-        {
-          "name": "全景軟體",
-          "stockCode": "8272",
-          "hits": 1,
-          "isPrimary": true
-        }
-      ]
-    },
-    {
-      "rank": 3,
-      "name": "AI 伺服器",
-      "volume": 6,
-      "totalCompanyCount": 3,
-      "companies": [
-        {
-          "name": "英業達",
-          "stockCode": "2356",
-          "hits": 3,
-          "isPrimary": true
-        },
-        {
-          "name": "廣達電腦",
-          "stockCode": "2382",
-          "hits": 2,
-          "isPrimary": true
-        },
-        {
-          "name": "華邦電子",
-          "stockCode": "2344",
-          "hits": 1,
-          "isPrimary": true
-        }
-      ]
-    },
-    {
-      "rank": 4,
       "name": "PC / NB",
       "volume": 6,
       "totalCompanyCount": 2,
@@ -132,43 +30,57 @@
       ]
     },
     {
-      "rank": 5,
-      "name": "智慧手機",
-      "volume": 5,
-      "totalCompanyCount": 3,
+      "rank": 2,
+      "name": "AI 伺服器",
+      "volume": 4,
+      "totalCompanyCount": 2,
       "companies": [
         {
-          "name": "旺宏電子",
-          "stockCode": "2337",
+          "name": "英業達",
+          "stockCode": "2356",
           "hits": 3,
           "isPrimary": true
         },
         {
-          "name": "華邦電子",
-          "stockCode": "2344",
+          "name": "廣達電腦",
+          "stockCode": "2382",
           "hits": 1,
-          "isPrimary": false
-        },
-        {
-          "name": "台灣積體電路製造",
-          "stockCode": "2330",
-          "hits": 1,
-          "isPrimary": false
+          "isPrimary": true
         }
       ]
     },
     {
-      "rank": 6,
-      "name": "先進製程 (3nm/2nm)",
-      "volume": 5,
+      "rank": 3,
+      "name": "資安",
+      "volume": 4,
       "totalCompanyCount": 3,
       "companies": [
         {
-          "name": "台灣積體電路製造",
-          "stockCode": "2330",
+          "name": "中國鋼鐵",
+          "stockCode": "2002",
           "hits": 2,
           "isPrimary": true
         },
+        {
+          "name": "台灣大哥大",
+          "stockCode": "3045",
+          "hits": 1,
+          "isPrimary": true
+        },
+        {
+          "name": "全景軟體",
+          "stockCode": "8272",
+          "hits": 1,
+          "isPrimary": true
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "name": "先進製程 (3nm/2nm)",
+      "volume": 3,
+      "totalCompanyCount": 2,
+      "companies": [
         {
           "name": "崇越科技",
           "stockCode": "5434",
@@ -184,33 +96,7 @@
       ]
     },
     {
-      "rank": 7,
-      "name": "矽光子 / 光通訊",
-      "volume": 4,
-      "totalCompanyCount": 3,
-      "companies": [
-        {
-          "name": "鴻海精密工業",
-          "stockCode": "2317",
-          "hits": 2,
-          "isPrimary": true
-        },
-        {
-          "name": "台達電子工業",
-          "stockCode": "2308",
-          "hits": 1,
-          "isPrimary": false
-        },
-        {
-          "name": "聯發科技",
-          "stockCode": "2454",
-          "hits": 1,
-          "isPrimary": false
-        }
-      ]
-    },
-    {
-      "rank": 8,
+      "rank": 5,
       "name": "面板 / TFT-LCD",
       "volume": 3,
       "totalCompanyCount": 3,
@@ -236,109 +122,27 @@
       ]
     },
     {
-      "rank": 9,
-      "name": "ABF 載板",
+      "rank": 6,
+      "name": "衛星通訊",
       "volume": 2,
       "totalCompanyCount": 2,
       "companies": [
         {
-          "name": "台達電子工業",
-          "stockCode": "2308",
+          "name": "台灣大哥大",
+          "stockCode": "3045",
           "hits": 1,
           "isPrimary": false
         },
         {
-          "name": "光寶科技",
-          "stockCode": "2301",
-          "hits": 1,
-          "isPrimary": false
-        }
-      ]
-    },
-    {
-      "rank": 10,
-      "name": "DRAM / 記憶體",
-      "volume": 2,
-      "totalCompanyCount": 2,
-      "companies": [
-        {
-          "name": "華邦電子",
-          "stockCode": "2344",
-          "hits": 1,
-          "isPrimary": false
-        },
-        {
-          "name": "宏碁",
-          "stockCode": "2353",
-          "hits": 1,
-          "isPrimary": false
-        }
-      ]
-    },
-    {
-      "rank": 11,
-      "name": "5G 通訊",
-      "volume": 2,
-      "totalCompanyCount": 2,
-      "companies": [
-        {
-          "name": "光寶科技",
-          "stockCode": "2301",
-          "hits": 1,
-          "isPrimary": false
-        },
-        {
-          "name": "和碩聯合科技",
-          "stockCode": "4938",
+          "name": "神盾",
+          "stockCode": "6462",
           "hits": 1,
           "isPrimary": true
         }
       ]
     },
     {
-      "rank": 12,
-      "name": "儲能 / 電池",
-      "volume": 1,
-      "totalCompanyCount": 1,
-      "companies": [
-        {
-          "name": "台達電子工業",
-          "stockCode": "2308",
-          "hits": 1,
-          "isPrimary": true
-        }
-      ]
-    },
-    {
-      "rank": 13,
-      "name": "氫能 / 燃料電池",
-      "volume": 1,
-      "totalCompanyCount": 1,
-      "companies": [
-        {
-          "name": "台達電子工業",
-          "stockCode": "2308",
-          "hits": 1,
-          "isPrimary": false
-        }
-      ]
-    },
-    {
-      "rank": 14,
-      "name": "散熱",
-      "volume": 1,
-      "totalCompanyCount": 1,
-      "companies": [
-        {
-          "name": "光寶科技",
-          "stockCode": "2301",
-          "hits": 1,
-          "isPrimary": true
-        }
-      ]
-    },
-    {
-      "rank": 15,
+      "rank": 7,
       "name": "電動車 / EV",
       "volume": 1,
       "totalCompanyCount": 1,
@@ -352,7 +156,35 @@
       ]
     },
     {
-      "rank": 16,
+      "rank": 8,
+      "name": "5G 通訊",
+      "volume": 1,
+      "totalCompanyCount": 1,
+      "companies": [
+        {
+          "name": "和碩聯合科技",
+          "stockCode": "4938",
+          "hits": 1,
+          "isPrimary": true
+        }
+      ]
+    },
+    {
+      "rank": 9,
+      "name": "DRAM / 記憶體",
+      "volume": 1,
+      "totalCompanyCount": 1,
+      "companies": [
+        {
+          "name": "宏碁",
+          "stockCode": "2353",
+          "hits": 1,
+          "isPrimary": false
+        }
+      ]
+    },
+    {
+      "rank": 10,
       "name": "AI 晶片 / ASIC",
       "volume": 1,
       "totalCompanyCount": 1,
@@ -366,7 +198,7 @@
       ]
     },
     {
-      "rank": 17,
+      "rank": 11,
       "name": "人形機器人",
       "volume": 1,
       "totalCompanyCount": 1,
@@ -380,7 +212,7 @@
       ]
     },
     {
-      "rank": 18,
+      "rank": 12,
       "name": "雲端運算",
       "volume": 1,
       "totalCompanyCount": 1,

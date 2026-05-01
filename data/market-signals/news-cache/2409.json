@@ -1,154 +1,25 @@
 {
   "stockCode": "2409",
-  "name": "友達光電",
-  "scrapedAt": "2026-05-01T12:31:34.048Z",
+  "name": "友達",
+  "scrapedAt": "2026-05-01T20:38:59.418Z",
+  "devSeed": true,
   "sourceCounts": {
-    "yahoo": 0,
-    "ltn": 20
-  },
-  "enrichStats": {
-    "fetched": 0,
-    "filled": 0
+    "yahoo": 1,
+    "ltn": 1
   },
   "news": [
     {
-      "title": "全球創新百大機構 台連5年列第3",
-      "url": "https://ec.ltn.com.tw/article/paper/1750244",
-      "source": "ltn",
-      "date": "2026-04-10",
+      "title": "友達 Mini LED 車用面板出貨爆發",
+      "url": "https://tw.stock.yahoo.com/news/2409-友達 Min-2026-01-19.html",
+      "source": "yahoo",
+      "date": "2026-01-19",
       "snippet": ""
     },
     {
-      "title": "友達技術長廖唯倫 榮獲「傑出人士貢獻獎」",
-      "url": "https://ec.ltn.com.tw/article/breakingnews/5390090",
+      "title": "友達 OLED 面板 出貨平板與筆電市場",
+      "url": "https://search.ltn.com.tw/list?keyword=%E5%8F%8B%E9%81%94#2025-12-30",
       "source": "ltn",
-      "date": "2026-04-01",
-      "snippet": ""
-    },
-    {
-      "title": "友達今年股東紀念品是這個 零股也可擁有",
-      "url": "https://ec.ltn.com.tw/article/breakingnews/5363020",
-      "source": "ltn",
-      "date": "2026-03-08",
-      "snippet": ""
-    },
-    {
-      "title": "友達德州專利戰告捷！陪審團判未侵權、還宣告對手專利無效 ",
-      "url": "https://ec.ltn.com.tw/article/breakingnews/5323716",
-      "source": "ltn",
-      "date": "2026-01-27",
-      "snippet": ""
-    },
-    {
-      "title": "友達蘇州廠獲WEF「人才燈塔工廠」肯定 AI人資轉型成顯示器產業新標竿",
-      "url": "https://ec.ltn.com.tw/article/breakingnews/5312630",
-      "source": "ltn",
-      "date": "2026-01-16",
-      "snippet": ""
-    },
-    {
-      "title": "群創認列Pioneer營收、12月破200億元   友達創9個月新高",
-      "url": "https://ec.ltn.com.tw/article/breakingnews/5304825",
-      "source": "ltn",
-      "date": "2026-01-09",
-      "snippet": ""
-    },
-    {
-      "title": "完備南部半導體S廊帶！亞灣2.0吸引23家ICT公司落地、建置3座算力中心",
-      "url": "https://ec.ltn.com.tw/article/breakingnews/5250454",
-      "source": "ltn",
-      "date": "2025-11-18",
-      "snippet": ""
-    },
-    {
-      "title": "半導體專利申請》台積電連10年穩坐專利王",
-      "url": "https://ec.ltn.com.tw/article/paper/1731348",
-      "source": "ltn",
-      "date": "2025-11-09",
-      "snippet": ""
-    },
-    {
-      "title": "半導體專利競逐！台積電連10年封王 應材、信越各創單季新高",
-      "url": "https://ec.ltn.com.tw/article/breakingnews/5239045",
-      "source": "ltn",
-      "date": "2025-11-08",
-      "snippet": ""
-    },
-    {
-      "title": "元太、StellarLink攜手 推日本永續電子紙看板解決方案",
-      "url": "https://ec.ltn.com.tw/article/breakingnews/5227662",
-      "source": "ltn",
-      "date": "2025-10-29",
-      "snippet": ""
-    },
-    {
-      "title": "友達打造智慧能源生態圈 迎戰「表後儲能元年」",
-      "url": "https://ec.ltn.com.tw/article/breakingnews/5225368",
-      "source": "ltn",
-      "date": "2025-10-27",
-      "snippet": ""
-    },
-    {
-      "title": "2025全球最佳企業名單「沒有台積電」10家台灣公司進榜 輝達奪冠",
-      "url": "https://ec.ltn.com.tw/article/breakingnews/5177698",
-      "source": "ltn",
-      "date": "2025-09-14",
-      "snippet": ""
-    },
-    {
-      "title": "模範環境專責人員名單公布 成企業推動綠色轉型重要力量",
-      "url": "https://ec.ltn.com.tw/article/breakingnews/5169693",
-      "source": "ltn",
-      "date": "2025-09-07",
-      "snippet": ""
-    },
-    {
-      "title": "友達攜手Garmin  推出全球首款Micro LED智慧手錶",
-      "url": "https://ec.ltn.com.tw/article/breakingnews/5166756",
-      "source": "ltn",
-      "date": "2025-09-04",
-      "snippet": ""
-    },
-    {
-      "title": "今年西進投資比重僅3％ 學者：衰退趨勢續發酵",
-      "url": "https://ec.ltn.com.tw/article/breakingnews/5109499",
-      "source": "ltn",
-      "date": "2025-07-16",
-      "snippet": ""
-    },
-    {
-      "title": "友達結合循環經濟展位設計 蟬聯Touch Taiwan綠色裝潢設計獎",
-      "url": "https://ec.ltn.com.tw/article/breakingnews/5015718",
-      "source": "ltn",
-      "date": "2025-04-18",
-      "snippet": ""
-    },
-    {
-      "title": "科睿唯安「全球百大創新機構」台灣13家入選創新高",
-      "url": "https://ec.ltn.com.tw/article/breakingnews/5014244",
-      "source": "ltn",
-      "date": "2025-04-16",
-      "snippet": ""
-    },
-    {
-      "title": "桃園燈塔工廠城市論壇   聯電副總吳宗賢：AI是工具  人類才能引領改變",
-      "url": "https://ec.ltn.com.tw/article/breakingnews/4994472",
-      "source": "ltn",
-      "date": "2025-03-28",
-      "snippet": ""
-    },
-    {
-      "title": "台商回流 藉「轉投資」撤資中國",
-      "url": "https://ec.ltn.com.tw/article/paper/1698098",
-      "source": "ltn",
-      "date": "2025-03-24",
-      "snippet": ""
-    },
-    {
-      "title": "中資來台投資增加 主因台商轉投資、反映台商撤資中國",
-      "url": "https://ec.ltn.com.tw/article/breakingnews/4989182",
-      "source": "ltn",
-      "date": "2025-03-23",
+      "date": "2025-12-30",
       "snippet": ""
     }
   ]

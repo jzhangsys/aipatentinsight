@@ -1,12 +1,61 @@
 {
   "date": "2024-07-29",
-  "generatedAt": "2026-05-01T12:40:06.483Z",
+  "generatedAt": "2026-05-01T20:38:59.556Z",
   "newsWindow": {
-    "start": "2024-05-29",
+    "start": "2024-05-30",
     "end": "2024-07-29",
     "mode": "first_fallback_60d"
   },
   "totalCompanies": 43,
   "totalCompaniesAnalyzed": 0,
-  "themes": []
+  "themes": [
+    {
+      "name": "5G 通訊",
+      "volume": 1,
+      "totalCompanyCount": 1,
+      "companies": [
+        {
+          "name": "華碩電腦",
+          "stockCode": "2357",
+          "hits": 1,
+          "isPrimary": false
+        }
+      ],
+      "extendedWindow": true,
+      "extendedWindowDays": 180,
+      "rank": 1
+    },
+    {
+      "name": "Wi-Fi / 網通",
+      "volume": 1,
+      "totalCompanyCount": 1,
+      "companies": [
+        {
+          "name": "華碩電腦",
+          "stockCode": "2357",
+          "hits": 1,
+          "isPrimary": false
+        }
+      ],
+      "extendedWindow": true,
+      "extendedWindowDays": 180,
+      "rank": 2
+    },
+    {
+      "name": "衛星通訊",
+      "volume": 1,
+      "totalCompanyCount": 1,
+      "companies": [
+        {
+          "name": "達發科技",
+          "stockCode": "6526",
+          "hits": 1,
+          "isPrimary": false
+        }
+      ],
+      "extendedWindow": true,
+      "extendedWindowDays": 180,
+      "rank": 3
+    }
+  ]
 }
