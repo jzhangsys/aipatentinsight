@@ -238,6 +238,28 @@ async function fetchInsights(url: string): Promise<InsightsDataset> {
   return data;
 }
 
+// ============== Helper: filter to public companies ==============
+
+/**
+ * 只保留有 stockCode 的公司(上市櫃),patents 同步過濾。
+ * 用於 Patent Map / Industry Trends / Market Signals 全站列表。
+ * 不影響 CompanyTimelineClient(走 URL 直連可訪問任何公司)。
+ */
+export function filterInsightsToPublic(ds: InsightsDataset): InsightsDataset {
+  const publicNames = new Set(
+    ds.companies.filter((c) => c.stockCode != null && c.stockCode !== "").map((c) => c.name)
+  );
+  const companies = ds.companies.filter((c) => publicNames.has(c.name));
+  const patents = ds.patents.filter((p) => publicNames.has(p.company));
+  return {
+    ...ds,
+    companies,
+    patents,
+    totalCompanies: companies.length,
+    totalPatents: patents.length,
+  };
+}
+
 // ============== Helper: patent lookup ==============
 
 /**

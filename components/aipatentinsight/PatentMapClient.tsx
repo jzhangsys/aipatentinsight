@@ -1,29 +1,27 @@
 "use client";
 
 /**
- * PatentMapClient — Patent Map 頁面 orchestrator (R3a + R3b + R6 URL sync)
+ * PatentMapClient — Patent Map 頁面 orchestrator (v2.2)
  *
- * 控制:Time Range / Mode / Branch / Layout / Legend / 公司清單 / detail panel / patent modal
- * 把 dataset 跟篩選傳給 <PatentMapCanvas>;狀態同步散播到各 UI 面板。
- *
- * URL 雙向綁:
- *   - mount 時讀 ?month=&mode=&branch=&layout=&category=&company= 初始化 state
- *   - state 變化時用 history.replaceState 更新 URL(不觸發 Next.js 導航,不滾動)
- *   - 預設值不寫進 URL,保持 URL 簡潔
+ * v2.2 變更:
+ *  - 中央時間軸的 ticks 從「月份」改為「實際 snapshot 日期」(16 個)
+ *  - 點某 snapshot 日期 → loadSnapshotByDate 載該份完整資料,整頁更新
+ *  - 移除月份篩選邏輯(canvas 永遠拿整份 snapshot 的全 patent)
+ *  - URL 從 ?month= 改成 ?date=YYYY-MM-DD
+ *  - ETL 已過濾為 stockCode-only,client 端 filterInsightsToPublic 變 no-op,移除
  */
 
 import { useEffect, useMemo, useRef, useState } from "react";
-import { useSearchParams } from "next/navigation";
+import { useSearchParams, useRouter } from "next/navigation";
 import PatentMapCanvas, { type PatentMapLayout } from "./PatentMapCanvas";
 import PatentMapLegend, { type LegendCategoryRow } from "./PatentMapLegend";
 import PatentMapCompanyPanel from "./PatentMapCompanyPanel";
-import PatentMapDetailPanel from "./PatentMapDetailPanel";
-import PatentMapPatentModal from "./PatentMapPatentModal";
+import PatentMapTimeline from "./PatentMapTimeline";
 import {
-  loadInsights,
+  loadSnapshotIndex,
+  loadSnapshotByDate,
   type InsightsDataset,
-  type InsightsCompany,
-  type InsightsPatent,
+  type SnapshotEntry,
   getCompanyByName,
 } from "@/lib/aipatentinsight/insightsData";
 import {
@@ -31,55 +29,64 @@ import {
   type LayoutCompany,
 } from "@/lib/aipatentinsight/patentMapLayout";
 
-type Mode = "cumulative" | "monthly";
-type Branch = "all" | "main" | "branch" | "decline";
-
-// === URL 解析 helpers ===
-function parseMode(v: string | null): Mode {
-  return v === "monthly" ? "monthly" : "cumulative";
-}
-function parseBranch(v: string | null): Branch {
-  return v === "main" || v === "branch" || v === "decline" ? v : "all";
-}
 function parseLayout(v: string | null): PatentMapLayout {
-  return v === "force" ? "force" : "random";
+  return v === "random" ? "random" : "force";
 }
 
 export default function PatentMapClient() {
   const searchParams = useSearchParams();
+  const router = useRouter();
 
-  // ===== 資料載入 =====
+  // ===== Snapshot index 載入(在 mount 時一次取所有可用日期) =====
+  const [snapshots, setSnapshots] = useState<SnapshotEntry[]>([]);
+  const [selectedDate, setSelectedDate] = useState<string | null>(
+    () => searchParams.get("date") || null
+  );
+
+  useEffect(() => {
+    let cancelled = false;
+    loadSnapshotIndex()
+      .then((idx) => {
+        if (cancelled) return;
+        const actuals = idx.timeline.filter((s) => !s.placeholder);
+        setSnapshots(actuals);
+        // 若 URL 沒指定 date,預設選最新一個 actual snapshot
+        if (!selectedDate && actuals.length > 0) {
+          setSelectedDate(actuals[actuals.length - 1].date);
+        }
+      })
+      .catch((err) => setLoadError(err.message));
+    return () => { cancelled = true; };
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  // ===== 當前 snapshot 的資料(隨 selectedDate 切換 fetch) =====
   const [dataset, setDataset] = useState<InsightsDataset | null>(null);
   const [loadError, setLoadError] = useState<string | null>(null);
 
   useEffect(() => {
+    if (!selectedDate) return;
     let cancelled = false;
-    loadInsights()
-      .then((d) => { if (!cancelled) setDataset(d); })
+    setDataset(null); // 觸發 loading skeleton
+    loadSnapshotByDate(selectedDate)
+      .then((d) => {
+        if (cancelled) return;
+        if (d) setDataset(d);
+        else setLoadError(`Snapshot ${selectedDate} 載入失敗`);
+      })
       .catch((err) => { if (!cancelled) setLoadError(err.message); });
     return () => { cancelled = true; };
-  }, []);
+  }, [selectedDate]);
 
-  // ===== UI 狀態(從 URL 初始化) =====
-  // 注意:這裡用 lazy initializer + useState 讀一次 URL,之後 URL 變化由 state 控制,
-  // 不會 re-init(避免 ?company= 切換時 state 被重置)
-  const [selectedMonth, setSelectedMonth] = useState<string | "all">(() => {
-    return searchParams.get("month") || "all";
-  });
-  const [mode, setMode] = useState<Mode>(() => parseMode(searchParams.get("mode")));
-  const [branch, setBranch] = useState<Branch>(() => parseBranch(searchParams.get("branch")));
-  const [layout, setLayout] = useState<PatentMapLayout>(() => parseLayout(searchParams.get("layout")));
-  const [activeCategory, setActiveCategory] = useState<string | null>(() => searchParams.get("category"));
+  // ===== UI 狀態(URL 同步) =====
+  const [layout, setLayout] = useState<PatentMapLayout>(
+    () => parseLayout(searchParams.get("layout"))
+  );
+  const [activeCategory, setActiveCategory] = useState<string | null>(
+    () => searchParams.get("category")
+  );
   const [visibleCompanies, setVisibleCompanies] = useState<LayoutCompany[]>([]);
 
-  // ===== 詳情面板 / patent modal 狀態(從 URL 初始化) =====
-  const [selectedCompanyName, setSelectedCompanyName] = useState<string | null>(
-    () => searchParams.get("company")
-  );
-  const [selectedPatent, setSelectedPatent] = useState<InsightsPatent | null>(null);
-
-  // ===== URL 同步:state 變化時更新 ?query 字串(history.replaceState 不滾動) =====
-  // 用 ref 標記 first render 跳過,避免初始載入立刻 push 一次無意義的 URL 更新
   const urlInitialized = useRef(false);
   useEffect(() => {
     if (!urlInitialized.current) {
@@ -87,44 +94,15 @@ export default function PatentMapClient() {
       return;
     }
     const params = new URLSearchParams();
-    if (selectedMonth !== "all") params.set("month", selectedMonth);
-    if (mode !== "cumulative") params.set("mode", mode);
-    if (branch !== "all") params.set("branch", branch);
-    if (layout !== "random") params.set("layout", layout);
+    if (selectedDate) params.set("date", selectedDate);
+    if (layout !== "force") params.set("layout", layout);
     if (activeCategory) params.set("category", activeCategory);
-    if (selectedCompanyName) params.set("company", selectedCompanyName);
     const qs = params.toString();
     const newUrl = window.location.pathname + (qs ? "?" + qs : "");
     if (window.location.search.replace(/^\?/, "") !== qs) {
       window.history.replaceState(null, "", newUrl);
     }
-  }, [selectedMonth, mode, branch, layout, activeCategory, selectedCompanyName]);
-
-  // 取對應的 InsightsCompany 物件(完整資料,給 detail panel 用)
-  const selectedCompany: InsightsCompany | null = useMemo(() => {
-    if (!dataset || !selectedCompanyName) return null;
-    return getCompanyByName(dataset, selectedCompanyName) || null;
-  }, [dataset, selectedCompanyName]);
-
-  // ===== ESC 鍵:patent modal 優先,然後 detail panel =====
-  useEffect(() => {
-    function onKey(e: KeyboardEvent) {
-      if (e.key === "Escape") {
-        if (selectedPatent) setSelectedPatent(null);
-        else if (selectedCompanyName) setSelectedCompanyName(null);
-      }
-    }
-    window.addEventListener("keydown", onKey);
-    return () => window.removeEventListener("keydown", onKey);
-  }, [selectedPatent, selectedCompanyName]);
-
-  // ===== detail-open class:讓 CSS 控制其他 UI 元素 =====
-  useEffect(() => {
-    const root = document.querySelector(".ai-patent-map");
-    if (!root) return;
-    if (selectedCompanyName) root.classList.add("detail-open");
-    else root.classList.remove("detail-open");
-  }, [selectedCompanyName]);
+  }, [selectedDate, layout, activeCategory]);
 
   // ===== 衍生資料 =====
   const palette = useMemo(
@@ -145,34 +123,19 @@ export default function PatentMapClient() {
     }));
   }, [dataset, visibleCompanies, palette]);
 
-  // 給 detail panel 用的:當前篩選範圍內的 patent IDs
-  const filteredPatentIds = useMemo(() => {
-    if (!dataset) return new Set<string>();
-    let list = dataset.patents;
-    if (selectedMonth !== "all") {
-      if (mode === "monthly") list = list.filter((p) => p.month === selectedMonth);
-      else list = list.filter((p) => p.month <= selectedMonth);
-    }
-    if (branch !== "all") list = list.filter((p) => p.branch === branch);
-    return new Set(list.map((p) => p.id));
-  }, [dataset, selectedMonth, mode, branch]);
-
   const totalPatentsInView = useMemo(
     () => visibleCompanies.reduce((sum, c) => sum + c.displayPatents, 0),
     [visibleCompanies]
   );
 
   const periodText = useMemo(() => {
-    if (selectedMonth === "all") return "All";
-    const prefix = mode === "monthly" ? "" : "≤ ";
-    return prefix + selectedMonth.replace("-", ".");
-  }, [selectedMonth, mode]);
+    return selectedDate ? selectedDate.replace(/-/g, ".") : "—";
+  }, [selectedDate]);
 
   const filteredCompanies = activeCategory
     ? visibleCompanies.filter((c) => c.mainCategory === activeCategory)
     : visibleCompanies;
 
-  // 公司清單面板用的 meta lookup
   const getCompanyMeta = useMemo(() => {
     return (name: string) => {
       if (!dataset) return null;
@@ -182,54 +145,48 @@ export default function PatentMapClient() {
     };
   }, [dataset]);
 
+  // 點公司 → 直接進公司頁
+  const goToCompany = (name: string) => {
+    router.push("/company/" + encodeURIComponent(name));
+  };
+
+  // 從 snapshots 抽出純日期陣列給 timeline 用
+  const snapshotDates = useMemo(() => snapshots.map((s) => s.date), [snapshots]);
+
   // ===== Render =====
   if (loadError) {
     return (
       <main className="ai-page ai-patent-map">
         <div className="ai-map-error">
           <strong>ERROR</strong>
-          <p>資料載入失敗:{loadError}</p>
+          <p>{loadError}</p>
         </div>
       </main>
     );
   }
-  if (!dataset) {
+
+  // 還沒拿到 snapshot index 或第一份資料 → 顯示 skeleton
+  if (snapshots.length === 0 || !dataset) {
     return (
       <main className="ai-page ai-patent-map">
-        {/* 結構骨架:暗示 header + canvas + legend + stats 位置,讓使用者第一秒就看到「框」 */}
         <header className="ai-page-header">
           <div>
             <h1 className="ai-page-title">Patent Intelligence Map</h1>
-            <p className="ai-page-description">載入專利資料中…</p>
+            <p className="ai-page-description">載入中…</p>
           </div>
-          <div className="ai-controls ai-skeleton-controls" aria-hidden="true">
-            <span className="ai-skeleton-block" style={{ width: 110, height: 28 }} />
-            <span className="ai-skeleton-block" style={{ width: 140, height: 28 }} />
-            <span className="ai-skeleton-block" style={{ width: 180, height: 28 }} />
-            <span className="ai-skeleton-block" style={{ width: 100, height: 28 }} />
-          </div>
+          {/* timeline 即使在 loading 階段也先顯示(如果已拿到 snapshot index) */}
+          {snapshots.length > 0 && (
+            <PatentMapTimeline
+              dates={snapshotDates}
+              selected={selectedDate}
+              onChange={setSelectedDate}
+            />
+          )}
         </header>
         <div className="ai-map-skeleton-canvas" aria-hidden="true" />
-        <aside className="ai-map-legend ai-skeleton-legend" aria-hidden="true">
-          <div className="ai-skeleton-block" style={{ width: 120, height: 10, marginBottom: 12 }} />
-          {Array.from({ length: 8 }).map((_, i) => (
-            <div key={i} className="ai-skeleton-row">
-              <span className="ai-skeleton-dot" />
-              <span className="ai-skeleton-block" style={{ flex: 1, height: 10 }} />
-            </div>
-          ))}
-        </aside>
-        <div className="ai-map-stats ai-skeleton-stats" aria-hidden="true">
-          {Array.from({ length: 3 }).map((_, i) => (
-            <div key={i} className="ai-map-stat">
-              <span className="ai-skeleton-block" style={{ width: 60, height: 8, marginBottom: 4 }} />
-              <span className="ai-skeleton-block" style={{ width: 50, height: 18 }} />
-            </div>
-          ))}
-        </div>
         <div className="ai-map-loading-pill" aria-live="polite">
           <span className="ai-map-loading-spinner" />
-          Loading Patent Graph
+          {snapshots.length === 0 ? "Loading Index" : "Loading Snapshot"}
         </div>
       </main>
     );
@@ -241,82 +198,41 @@ export default function PatentMapClient() {
         <div>
           <h1 className="ai-page-title">Patent Intelligence Map</h1>
           <p className="ai-page-description">
-            依據指定時間點，將公司專利資料映射為技術圖譜。每一個節點代表一間公司，節點大小反應趨勢上的專利數量。
+            上市櫃公司專利視覺化圖譜。點任一節點直接進入該公司頁面;移動下方時間軸切換不同 snapshot 的資料。
           </p>
         </div>
 
-        <div className="ai-controls">
-          <label className="ai-control-group">
-            <span className="ai-control-label">Time Range</span>
-            <select
-              className="ai-control-select"
-              value={selectedMonth}
-              onChange={(e) => setSelectedMonth(e.target.value)}
+        <PatentMapTimeline
+          dates={snapshotDates}
+          selected={selectedDate}
+          onChange={setSelectedDate}
+        />
+
+        <div className="ai-map-layout-pills">
+          <span className="ai-map-layout-label">Layout</span>
+          {(["force", "random"] as const).map((l) => (
+            <button
+              key={l}
+              type="button"
+              className={"ai-pill" + (layout === l ? " active" : "")}
+              onClick={() => setLayout(l)}
             >
-              <option value="all">All (累積)</option>
-              {dataset.months.map((m) => (
-                <option key={m} value={m}>{m.replace("-", ".")}</option>
-              ))}
-            </select>
-          </label>
-
-          <div className="ai-control-group">
-            <span className="ai-control-label">Mode</span>
-            <div className="ai-pill-group">
-              {(["cumulative", "monthly"] as const).map((m) => (
-                <button
-                  key={m}
-                  className={"ai-pill" + (mode === m ? " active" : "")}
-                  onClick={() => setMode(m)}
-                >
-                  {m === "cumulative" ? "Cumulative" : "Monthly"}
-                </button>
-              ))}
-            </div>
-          </div>
-
-          <div className="ai-control-group">
-            <span className="ai-control-label">Branch</span>
-            <div className="ai-pill-group">
-              {(["all", "main", "branch", "decline"] as const).map((b) => (
-                <button
-                  key={b}
-                  className={"ai-pill" + (branch === b ? " active" : "")}
-                  onClick={() => setBranch(b)}
-                >
-                  {b === "all" ? "All" : b[0].toUpperCase() + b.slice(1)}
-                </button>
-              ))}
-            </div>
-          </div>
-
-          <div className="ai-control-group">
-            <span className="ai-control-label">Layout</span>
-            <div className="ai-pill-group">
-              {(["random", "force"] as const).map((l) => (
-                <button
-                  key={l}
-                  className={"ai-pill" + (layout === l ? " active" : "")}
-                  onClick={() => setLayout(l)}
-                >
-                  {l === "random" ? "Random" : "Force"}
-                </button>
-              ))}
-            </div>
-          </div>
+              {l === "force" ? "Force" : "Random"}
+            </button>
+          ))}
         </div>
       </header>
 
       <PatentMapCanvas
         dataset={dataset}
-        selectedMonth={selectedMonth}
-        mode={mode}
-        branch={branch}
+        selectedMonth="all"
+        mode="cumulative"
+        branch="all"
         layout={layout}
         activeCategory={activeCategory}
         palette={palette}
-        highlightedCompanyName={selectedCompanyName}
-        onCompanyClick={(p) => setSelectedCompanyName(p.name)}
+        highlightedCompanyName={null}
+        onCompanyClick={(p) => goToCompany(p.name)}
         onVisibleCompaniesChange={setVisibleCompanies}
       />
 
@@ -330,8 +246,8 @@ export default function PatentMapClient() {
         companies={filteredCompanies}
         palette={palette}
         getMeta={getCompanyMeta}
-        highlightedName={selectedCompanyName}
-        onSelectCompany={setSelectedCompanyName}
+        highlightedName={null}
+        onSelectCompany={goToCompany}
       />
 
       <div className="ai-map-stats">
@@ -344,23 +260,10 @@ export default function PatentMapClient() {
           <span className="ai-map-stat-value">{totalPatentsInView}</span>
         </div>
         <div className="ai-map-stat">
-          <span className="ai-map-stat-label">Period</span>
+          <span className="ai-map-stat-label">Snapshot</span>
           <span className="ai-map-stat-value ai-map-stat-period">{periodText}</span>
         </div>
       </div>
-
-      <PatentMapDetailPanel
-        company={selectedCompany}
-        dataset={dataset}
-        filteredPatentIds={filteredPatentIds}
-        onSelectPatent={setSelectedPatent}
-        onClose={() => setSelectedCompanyName(null)}
-      />
-
-      <PatentMapPatentModal
-        patent={selectedPatent}
-        onClose={() => setSelectedPatent(null)}
-      />
     </main>
   );
 }

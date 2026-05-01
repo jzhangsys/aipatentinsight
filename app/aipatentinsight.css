@@ -3512,3 +3512,406 @@
   border-radius: 50%;
   animation: aiMapSpin 0.7s linear infinite;
 }
+
+/* ============================================================
+   Patent Map v2 — 中央時間軸 + Layout 小 toggle
+   ============================================================ */
+
+/* Header 改用 grid:標題在左上,時間軸佔大欄,Layout toggle 在右上 */
+.ai-patent-map .ai-page-header {
+  display: grid;
+  grid-template-columns: minmax(0, 320px) 1fr auto;
+  grid-template-areas: "title timeline layout";
+  gap: 16px 24px;
+  align-items: end;
+}
+.ai-patent-map .ai-page-header > div:first-child { grid-area: title; }
+.ai-patent-map .ai-map-timeline { grid-area: timeline; }
+.ai-patent-map .ai-map-layout-pills { grid-area: layout; }
+
+/* Time axis */
+.ai-patent-map .ai-map-timeline {
+  display: flex;
+  align-items: stretch;
+  gap: 14px;
+  padding: 10px 16px 6px;
+  background: rgba(3, 5, 15, 0.78);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(125, 249, 255, 0.18);
+  border-radius: 8px;
+  min-height: 56px;
+}
+
+.ai-patent-map .ai-map-timeline-all {
+  flex-shrink: 0;
+  align-self: center;
+  font-family: 'JetBrains Mono', 'Courier New', monospace;
+  font-size: 9px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  padding: 5px 12px;
+  border: 1px solid rgba(125, 249, 255, 0.25);
+  background: transparent;
+  color: rgba(255, 255, 255, 0.55);
+  cursor: pointer;
+  border-radius: 2px;
+  transition: all 0.15s;
+}
+.ai-patent-map .ai-map-timeline-all:hover {
+  color: rgba(255, 255, 255, 0.9);
+  border-color: rgba(125, 249, 255, 0.5);
+}
+.ai-patent-map .ai-map-timeline-all.active {
+  border-color: rgba(125, 249, 255, 0.7);
+  color: rgba(125, 249, 255, 1);
+  background: rgba(125, 249, 255, 0.1);
+}
+
+.ai-patent-map .ai-map-timeline-track-wrap {
+  flex: 1;
+  position: relative;
+  min-width: 0;
+}
+
+.ai-patent-map .ai-map-timeline-track {
+  position: relative;
+  width: 100%;
+  height: 30px;
+}
+
+.ai-patent-map .ai-map-timeline-baseline {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: rgba(125, 249, 255, 0.18);
+  transform: translateY(-50%);
+}
+
+.ai-patent-map .ai-map-timeline-fill {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  height: 1px;
+  background: linear-gradient(90deg, rgba(125, 249, 255, 0.3), rgba(125, 249, 255, 0.7));
+  transform: translateY(-50%);
+  transition: width 0.2s ease;
+}
+
+.ai-patent-map .ai-map-timeline-tick {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ai-patent-map .ai-map-timeline-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: rgba(125, 249, 255, 0.35);
+  transition: all 0.15s ease;
+  flex-shrink: 0;
+}
+.ai-patent-map .ai-map-timeline-tick:hover .ai-map-timeline-dot {
+  background: rgba(125, 249, 255, 0.7);
+  transform: scale(1.3);
+}
+.ai-patent-map .ai-map-timeline-tick.active .ai-map-timeline-dot {
+  width: 11px;
+  height: 11px;
+  background: #7DF9FF;
+  box-shadow: 0 0 12px rgba(125, 249, 255, 0.7);
+}
+
+/* Tick label:預設隱藏避免相鄰 tick 擠到看似重複,
+   只在 hover / active 浮出。下方年份分隔仍提供 timeline 定位感 */
+.ai-patent-map .ai-map-timeline-month-label {
+  position: absolute;
+  bottom: -14px;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  font-family: 'JetBrains Mono', 'Courier New', monospace;
+  font-size: 8px;
+  color: rgba(255, 255, 255, 0.4);
+  letter-spacing: 0.05em;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.15s ease;
+}
+.ai-patent-map .ai-map-timeline-tick:hover .ai-map-timeline-month-label {
+  opacity: 1;
+  color: rgba(255, 255, 255, 0.85);
+}
+.ai-patent-map .ai-map-timeline-tick.active .ai-map-timeline-month-label {
+  opacity: 1;
+  color: rgba(125, 249, 255, 1);
+  font-size: 9px;
+  font-weight: 500;
+}
+
+.ai-patent-map .ai-map-timeline-years {
+  position: relative;
+  height: 12px;
+  margin-top: 4px;
+}
+.ai-patent-map .ai-map-timeline-year {
+  position: absolute;
+  transform: translateX(-50%);
+  font-family: 'JetBrains Mono', 'Courier New', monospace;
+  font-size: 9px;
+  color: rgba(255, 255, 255, 0.55);
+  letter-spacing: 0.18em;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Layout 小 pill toggle(右上) */
+.ai-patent-map .ai-map-layout-pills {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 10px;
+  background: rgba(3, 5, 15, 0.7);
+  border: 1px solid rgba(125, 249, 255, 0.14);
+  border-radius: 6px;
+  align-self: end;
+}
+.ai-patent-map .ai-map-layout-label {
+  font-family: 'JetBrains Mono', 'Courier New', monospace;
+  font-size: 8px;
+  letter-spacing: 0.22em;
+  color: rgba(125, 249, 255, 0.6);
+  text-transform: uppercase;
+  margin-right: 4px;
+}
+
+/* MarketSignals 卡 4 移除 PR 後,patent-row 用 2 欄(原本 3 欄) */
+.ai-signals-page .ai-signal-row.patent.no-pr {
+  grid-template-columns: 100px 1fr;
+}
+
+/* RWD:時間軸換行 */
+@media (max-width: 1100px) {
+  .ai-patent-map .ai-page-header {
+    grid-template-columns: 1fr auto;
+    grid-template-areas:
+      "title    layout"
+      "timeline timeline";
+  }
+  .ai-patent-map .ai-map-timeline { width: 100%; }
+}
+@media (max-width: 768px) {
+  .ai-patent-map .ai-page-header {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "title"
+      "timeline"
+      "layout";
+    gap: 10px;
+  }
+  .ai-patent-map .ai-map-timeline {
+    padding: 8px 12px 4px;
+    gap: 10px;
+  }
+  .ai-patent-map .ai-map-timeline-month-label { display: none; }
+  .ai-patent-map .ai-map-layout-pills {
+    align-self: flex-start;
+  }
+}
+
+/* ============================================================
+   Company Page v2.1 — 專利分頁 + Inline 展開
+   ============================================================ */
+
+/* 容器:每個 patent 是一個 block(button row + 可選展開內容) */
+.ai-company-page .ai-company-patent-block {
+  display: flex;
+  flex-direction: column;
+}
+
+/* 展開狀態時 row 視覺微調 */
+.ai-company-page .ai-company-patent-row.expanded {
+  background: rgba(125, 249, 255, 0.08);
+  border-color: rgba(125, 249, 255, 0.4);
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.ai-company-page .ai-company-patent-row.expanded:hover {
+  transform: none;
+}
+
+/* Inline detail panel(行下方) */
+.ai-company-page .ai-company-patent-detail {
+  background: rgba(3, 5, 15, 0.7);
+  border: 1px solid rgba(125, 249, 255, 0.4);
+  border-top: none;
+  border-radius: 0 0 4px 4px;
+  padding: 14px 18px 18px;
+  margin-bottom: 4px;
+  animation: aiCompanyPatentExpand 0.2s ease;
+}
+@keyframes aiCompanyPatentExpand {
+  from { opacity: 0; transform: translateY(-4px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.ai-company-page .ai-company-patent-detail-meta {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+}
+
+.ai-company-page .ai-company-patent-detail-title {
+  font-family: 'Manrope', system-ui, sans-serif;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.95);
+  line-height: 1.5;
+  margin-bottom: 12px;
+  font-weight: 500;
+}
+
+.ai-company-page .ai-company-patent-detail-label {
+  font-family: 'JetBrains Mono', 'Courier New', monospace;
+  font-size: 9px;
+  letter-spacing: 0.3em;
+  color: rgba(125, 249, 255, 0.6);
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.ai-company-page .ai-company-patent-abstract {
+  font-family: 'Manrope', system-ui, sans-serif;
+  font-size: 13px;
+  line-height: 1.85;
+  color: rgba(255, 255, 255, 0.85);
+  padding: 14px 16px;
+  background: rgba(125, 249, 255, 0.04);
+  border-left: 2px solid rgba(125, 249, 255, 0.4);
+  border-radius: 0 4px 4px 0;
+}
+
+/* 行尾小箭頭(展開時 ▾,收合時 ▸) */
+.ai-company-page .ai-company-patent-arrow {
+  color: rgba(125, 249, 255, 0.6);
+  font-size: 12px;
+  text-align: right;
+  transition: transform 0.15s ease;
+}
+
+/* 分頁控制 */
+.ai-company-page .ai-company-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 24px;
+  padding: 12px 16px;
+  border-top: 1px solid rgba(125, 249, 255, 0.08);
+}
+
+.ai-company-page .ai-company-page-btn {
+  font-family: 'JetBrains Mono', 'Courier New', monospace;
+  font-size: 10px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  padding: 6px 14px;
+  border: 1px solid rgba(125, 249, 255, 0.25);
+  background: transparent;
+  color: rgba(255, 255, 255, 0.7);
+  cursor: pointer;
+  transition: all 0.15s;
+  border-radius: 3px;
+}
+.ai-company-page .ai-company-page-btn:hover:not(:disabled) {
+  border-color: rgba(125, 249, 255, 0.6);
+  color: rgba(125, 249, 255, 1);
+}
+.ai-company-page .ai-company-page-btn:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.ai-company-page .ai-company-page-numbers {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.ai-company-page .ai-company-page-num {
+  font-family: 'JetBrains Mono', 'Courier New', monospace;
+  font-size: 10px;
+  min-width: 28px;
+  height: 28px;
+  padding: 0 8px;
+  border: 1px solid rgba(125, 249, 255, 0.15);
+  background: transparent;
+  color: rgba(255, 255, 255, 0.55);
+  cursor: pointer;
+  border-radius: 3px;
+  transition: all 0.15s;
+}
+.ai-company-page .ai-company-page-num:hover {
+  border-color: rgba(125, 249, 255, 0.4);
+  color: rgba(255, 255, 255, 0.9);
+}
+.ai-company-page .ai-company-page-num.active {
+  border-color: rgba(125, 249, 255, 0.7);
+  background: rgba(125, 249, 255, 0.1);
+  color: rgba(125, 249, 255, 1);
+}
+
+@media (max-width: 768px) {
+  .ai-company-page .ai-company-pagination {
+    flex-direction: column;
+    gap: 8px;
+  }
+  .ai-company-page .ai-company-patent-detail {
+    padding: 12px 14px 14px;
+  }
+  .ai-company-page .ai-company-patent-abstract {
+    font-size: 12px;
+    line-height: 1.7;
+    padding: 12px 14px;
+  }
+}
+
+/* === No-abstract fallback (Schema D 等沒摘要欄的 snapshot) === */
+.ai-company-page .ai-company-patent-no-abstract {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.55);
+}
+.ai-company-page .ai-company-patent-search-link {
+  font-style: normal;
+  font-family: 'JetBrains Mono', 'Courier New', monospace;
+  font-size: 11px;
+  letter-spacing: 0.15em;
+  color: rgba(125, 249, 255, 0.85);
+  text-decoration: none;
+  align-self: flex-start;
+  padding: 4px 10px;
+  border: 1px solid rgba(125, 249, 255, 0.3);
+  border-radius: 3px;
+  transition: all 0.15s;
+}
+.ai-company-page .ai-company-patent-search-link:hover {
+  border-color: rgba(125, 249, 255, 0.7);
+  color: rgba(125, 249, 255, 1);
+  background: rgba(125, 249, 255, 0.08);
+}

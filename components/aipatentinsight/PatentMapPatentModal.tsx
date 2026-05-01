@@ -1,15 +1,10 @@
 "use client";
 
 /**
- * PatentMapPatentModal — 第二層專利摘要 modal
+ * PatentMapPatentModal — Patent 摘要 modal(目前只給 MarketSignalsClient 用)
  *
- * 顯示資料:
- * - Header:專利 ID、標題、標籤(分類 / 日期 / PR / branch)
- * - Body:abstract(中文摘要)
- *
- * abstract 是 lazy loaded(從 -abstracts.json):
- * - 開啟時若 patent.abstract 已有(舊資料)直接顯示
- * - 若空,呼叫 getPatentAbstract(id) → loading state → 拿到後填入
+ * Lazy load abstract:patent 物件若已帶 abstract 直接顯示;
+ * 否則用 getPatentAbstract(id) 從 -abstracts.json 抓。
  *
  * 關閉:點 X、點 backdrop、按 ESC(由 parent 處理)。
  */
@@ -26,36 +21,33 @@ type Props = {
 };
 
 export default function PatentMapPatentModal({ patent, onClose }: Props) {
-  // patent 變化時重設 lazy loaded abstract state
-  const [lazyAbstract, setLazyAbstract] = useState<string | null>(null);
-  const [loadingAbstract, setLoadingAbstract] = useState(false);
+  const [abstract, setAbstract] = useState<string>("");
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     if (!patent) {
-      setLazyAbstract(null);
-      setLoadingAbstract(false);
+      setAbstract("");
+      setLoading(false);
       return;
     }
-    // 若 patent 物件已帶 abstract(舊資料相容)就直接用
     if (patent.abstract && patent.abstract.length > 0) {
-      setLazyAbstract(patent.abstract);
-      setLoadingAbstract(false);
+      setAbstract(patent.abstract);
+      setLoading(false);
       return;
     }
-    // 否則 lazy load
     let cancelled = false;
-    setLoadingAbstract(true);
-    setLazyAbstract(null);
+    setLoading(true);
+    setAbstract("");
     getPatentAbstract(patent.id)
       .then((text) => {
         if (cancelled) return;
-        setLazyAbstract(text);
-        setLoadingAbstract(false);
+        setAbstract(text);
+        setLoading(false);
       })
       .catch(() => {
         if (cancelled) return;
-        setLazyAbstract("");
-        setLoadingAbstract(false);
+        setAbstract("");
+        setLoading(false);
       });
     return () => { cancelled = true; };
   }, [patent]);
@@ -79,9 +71,6 @@ export default function PatentMapPatentModal({ patent, onClose }: Props) {
             <div className="ai-map-modal-tags">
               <span className="ai-map-tag">{patent.category}</span>
               <span className="ai-map-tag">{patent.date}</span>
-              {patent.pr !== null && (
-                <span className="ai-map-tag">PR {patent.pr}</span>
-              )}
               {patent.branch !== "main" && (
                 <span className={"ai-map-tag branch-" + patent.branch}>
                   {patent.branch.toUpperCase()}
@@ -102,11 +91,29 @@ export default function PatentMapPatentModal({ patent, onClose }: Props) {
         <div className="ai-map-modal-body">
           <div className="ai-map-detail-section-label">// Abstract</div>
           <div className="ai-map-abstract-box">
-            {loadingAbstract
-              ? "載入摘要中…"
-              : lazyAbstract && lazyAbstract.length > 0
-              ? lazyAbstract
-              : "此專利尚無摘要資料。"}
+            {loading ? (
+              "載入摘要中…"
+            ) : abstract.length > 0 ? (
+              abstract
+            ) : (
+              <span style={{ fontStyle: "italic", opacity: 0.7 }}>
+                此 snapshot 來源資料未含專利摘要。{" "}
+                <a
+                  href={
+                    "https://www.google.com/search?q=" +
+                    encodeURIComponent(`專利 ${patent.id} ${patent.title || ""}`)
+                  }
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{
+                    color: "rgba(125, 249, 255, 0.85)",
+                    textDecoration: "underline",
+                  }}
+                >
+                  於 Google 查詢 →
+                </a>
+              </span>
+            )}
           </div>
         </div>
       </div>

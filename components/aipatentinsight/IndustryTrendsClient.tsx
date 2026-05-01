@@ -19,6 +19,7 @@ import { useRouter } from "next/navigation";
 import StreamChart from "./StreamChart";
 import {
   loadInsights,
+  filterInsightsToPublic,
   type InsightsDataset,
 } from "@/lib/aipatentinsight/insightsData";
 import { buildCategoryPalette } from "@/lib/aipatentinsight/patentMapLayout";
@@ -34,7 +35,7 @@ export default function IndustryTrendsClient() {
   useEffect(() => {
     let cancelled = false;
     loadInsights()
-      .then((d) => { if (!cancelled) setDataset(d); })
+      .then((d) => { if (!cancelled) setDataset(filterInsightsToPublic(d)); })
       .catch((e) => { if (!cancelled) setError(e.message); });
     return () => { cancelled = true; };
   }, []);

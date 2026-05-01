@@ -18,6 +18,7 @@ import { useRouter } from "next/navigation";
 import PatentMapPatentModal from "./PatentMapPatentModal";
 import {
   loadInsights,
+  filterInsightsToPublic,
   type InsightsDataset,
   type InsightsPatent,
 } from "@/lib/aipatentinsight/insightsData";
@@ -37,10 +38,11 @@ export default function MarketSignalsClient() {
     loadInsights()
       .then((d) => {
         if (cancelled) return;
-        setDataset(d);
+        const publicOnly = filterInsightsToPublic(d);
+        setDataset(publicOnly);
         // 預設 ref month = 最新月份
-        if (d.months.length > 0) {
-          setRefMonth(d.months[d.months.length - 1]);
+        if (publicOnly.months.length > 0) {
+          setRefMonth(publicOnly.months[publicOnly.months.length - 1]);
         }
       })
       .catch((e) => { if (!cancelled) setError(e.message); });
@@ -282,28 +284,27 @@ export default function MarketSignalsClient() {
           </ul>
         </article>
 
-        {/* Card 4:High-PR Recent */}
+        {/* Card 4:Recent Highlights(內部仍用 PR ≥ 80 篩選但 UI 不顯示 PR) */}
         <article className="ai-signal-card">
           <header className="ai-signal-card-header">
-            <span className="ai-signal-card-tag">// High-PR Recent</span>
-            <h2 className="ai-signal-card-title">最近 {RECENT_WINDOW} 個月高評價專利</h2>
-            <p className="ai-signal-card-meta">PR ≥ 80,top 10</p>
+            <span className="ai-signal-card-tag">// Recent Highlights</span>
+            <h2 className="ai-signal-card-title">近 {RECENT_WINDOW} 個月重點專利</h2>
+            <p className="ai-signal-card-meta">最具代表性的 10 筆</p>
           </header>
           <ul className="ai-signal-list">
             {highPrRecent.length === 0 ? (
-              <li className="ai-signal-empty">No high-PR patents in this window</li>
+              <li className="ai-signal-empty">No notable patents in this window</li>
             ) : (
               highPrRecent.map((p) => (
                 <li
                   key={p.id}
-                  className="ai-signal-row patent"
+                  className="ai-signal-row patent no-pr"
                   onClick={() => setSelectedPatent(p)}
                   role="button"
                   tabIndex={0}
                 >
                   <span className="ai-signal-row-id">{p.id}</span>
                   <span className="ai-signal-row-label">{p.title || "(無標題)"}</span>
-                  <span className="ai-signal-row-pr">PR {p.pr}</span>
                 </li>
               ))
             )}

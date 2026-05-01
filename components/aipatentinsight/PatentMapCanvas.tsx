@@ -18,6 +18,7 @@ import * as THREE from "three";
 import {
   computeRandomLayout,
   computeForceLayout,
+  computeRingSlices,
   type LayoutCompany,
 } from "@/lib/aipatentinsight/patentMapLayout";
 import type { InsightsDataset } from "@/lib/aipatentinsight/insightsData";
@@ -224,7 +225,7 @@ export default function PatentMapCanvas({
       }
       if (br !== "all") filtered = filtered.filter((p) => p.branch === br);
 
-      // 2. 聚合成公司
+      // 2. 聚合成公司(帶 categoryDist 給 ring shader 用)
       const companyMap = new Map<string, LayoutCompany & { _patents: number }>();
       for (const p of filtered) {
         let entry = companyMap.get(p.company);
@@ -235,6 +236,7 @@ export default function PatentMapCanvas({
             name: orig.name,
             mainCategory: orig.mainCategory,
             totalPatents: orig.totalPatents,
+            categoryDist: orig.categoryDist,
             displayPatents: 0,
             _patents: 0,
           };
@@ -314,6 +316,21 @@ export default function PatentMapCanvas({
       companySizes = new Float32Array(N);
       companyOriginalSizes = new Float32Array(N);
 
+      // 跨域 ring slices:6 slot,每 slot 一個 vec4(cumFraction, r, g, b)
+      const RING_SLOTS = 6;
+      const sliceBuffers: Float32Array[] = [];
+      for (let s = 0; s < RING_SLOTS; s++) {
+        sliceBuffers.push(new Float32Array(N * 4));
+      }
+
+      // 呼吸動畫的 phase:同 cat 公司同步呼吸,不同 cat 錯開
+      const phases = new Float32Array(N);
+      // 計算 cat 的 phase offset(每個 cat 給一個獨立節拍)
+      const catPhaseMap = new Map<string, number>();
+      sortedCats.forEach((cat, ci) => {
+        catPhaseMap.set(cat, (ci / sortedCats.length) * Math.PI * 2);
+      });
+
       let needsTween = false;
       visibleCompanies.forEach((company, i) => {
         const p = layoutResult.positions[i];
@@ -347,6 +364,26 @@ export default function PatentMapCanvas({
         const s = Math.min(20, 4 + Math.sqrt(company.displayPatents) * 1.4);
         companyOriginalSizes![i] = s;
         companySizes![i] = s;
+
+        // 計算該公司的 ring slices(top 5 + 其他)
+        const slices = computeRingSlices(
+          company.categoryDist || {},
+          pal,
+          RING_SLOTS
+        );
+        for (let k = 0; k < RING_SLOTS; k++) {
+          const slc = slices[k];
+          sliceBuffers[k][i * 4]     = slc.cumFraction;
+          sliceBuffers[k][i * 4 + 1] = slc.r;
+          sliceBuffers[k][i * 4 + 2] = slc.g;
+          sliceBuffers[k][i * 4 + 3] = slc.b;
+        }
+
+        // 呼吸 phase:基底 = 該 cat 的節拍,加微小 per-company jitter
+        // 同 cat 公司大致同步呼吸,但內部有微差讓視覺不死板
+        const catBase = catPhaseMap.get(company.mainCategory) || 0;
+        const jitter = ((i * 0.13) % 1) * 0.6;  // 0~0.6 rad jitter
+        phases[i] = catBase + jitter;
       });
 
       if (needsTween) {
@@ -362,21 +399,49 @@ export default function PatentMapCanvas({
       geom.setAttribute("position", new THREE.BufferAttribute(positions, 3));
       geom.setAttribute("color", new THREE.BufferAttribute(colors, 3));
       geom.setAttribute("size", new THREE.BufferAttribute(companySizes, 1));
+      geom.setAttribute("phase", new THREE.BufferAttribute(phases, 1));
+      for (let k = 0; k < RING_SLOTS; k++) {
+        geom.setAttribute(
+          `slice${k}`,
+          new THREE.BufferAttribute(sliceBuffers[k], 4)
+        );
+      }
 
       const mat = new THREE.ShaderMaterial({
         uniforms: {
           pixelRatio: { value: renderer.getPixelRatio() },
           focusIdx: { value: -1.0 },
+          time: { value: 0 },
         },
         vertexShader: `
           attribute float size;
+          attribute float phase;
+          attribute vec4 slice0;
+          attribute vec4 slice1;
+          attribute vec4 slice2;
+          attribute vec4 slice3;
+          attribute vec4 slice4;
+          attribute vec4 slice5;
           varying vec3 vColor;
           varying float vDepth;
           varying float vDim;
+          varying vec4 vSlice0;
+          varying vec4 vSlice1;
+          varying vec4 vSlice2;
+          varying vec4 vSlice3;
+          varying vec4 vSlice4;
+          varying vec4 vSlice5;
           uniform float pixelRatio;
           uniform float focusIdx;
+          uniform float time;
           void main() {
             vColor = color;
+            vSlice0 = slice0;
+            vSlice1 = slice1;
+            vSlice2 = slice2;
+            vSlice3 = slice3;
+            vSlice4 = slice4;
+            vSlice5 = slice5;
             float vid = float(gl_VertexID);
             if (focusIdx >= 0.0 && abs(vid - focusIdx) > 0.5) {
               vDim = 0.22;
@@ -385,8 +450,9 @@ export default function PatentMapCanvas({
             }
             vec4 mv = modelViewMatrix * vec4(position, 1.0);
             vDepth = -mv.z;
-            // 大幅縮小 point size 倍數(原 350 → 150),點不再過大過糊
-            gl_PointSize = size * pixelRatio * (150.0 / -mv.z);
+            // 呼吸動畫:同 cat 同步 + 微差;size ±7%
+            float breath = 1.0 + sin(time * 1.3 + phase) * 0.07;
+            gl_PointSize = size * breath * pixelRatio * (150.0 / -mv.z);
             gl_Position = projectionMatrix * mv;
           }
         `,
@@ -394,17 +460,82 @@ export default function PatentMapCanvas({
           varying vec3 vColor;
           varying float vDepth;
           varying float vDim;
+          varying vec4 vSlice0;
+          varying vec4 vSlice1;
+          varying vec4 vSlice2;
+          varying vec4 vSlice3;
+          varying vec4 vSlice4;
+          varying vec4 vSlice5;
           void main() {
-            vec2 c = gl_PointCoord - vec2(0.5);
-            float d = length(c);
+            vec2 uv = gl_PointCoord - vec2(0.5);
+            float d = length(uv);
             if (d > 0.5) discard;
-            // 單層 smoothstep:中心實心、邊緣柔和過渡(無外圈光暈疊加)
-            float alpha = smoothstep(0.5, 0.06, d);
-            // 中心微白核(只 mix 0.4,保留色彩識別,不過曝)
-            float core = smoothstep(0.14, 0.0, d);
+
             float fade = smoothstep(220.0, 15.0, vDepth);
+
+            // === ring 切片色 ===
+            float angle = atan(uv.y, uv.x) / 6.2831853;
+            if (angle < 0.0) angle += 1.0;
+            vec3 ringCol;
+            if (angle < vSlice0.x) ringCol = vSlice0.yzw;
+            else if (angle < vSlice1.x) ringCol = vSlice1.yzw;
+            else if (angle < vSlice2.x) ringCol = vSlice2.yzw;
+            else if (angle < vSlice3.x) ringCol = vSlice3.yzw;
+            else if (angle < vSlice4.x) ringCol = vSlice4.yzw;
+            else ringCol = vSlice5.yzw;
+
+            // === 模擬光源:從左上前方來的方向光 ===
+            vec3 lightDir = normalize(vec3(-0.45, 0.55, 0.75));
+
+            // ============================================================
+            // Disc 球面光照(0.0 ~ 0.30):像 3D 球體,有 diffuse + specular
+            // ============================================================
+            // 把 disc 看成半球:中心 normal=(0,0,1),邊緣 normal 往外彎
+            float discR = clamp(d / 0.30, 0.0, 1.0);
+            float discZ = sqrt(max(0.0, 1.0 - discR * discR));
+            vec3 discN = normalize(vec3(uv * (1.0 / 0.30), discZ));
+            float discNDotL = max(0.0, dot(discN, lightDir));
+            // 漫反射 diffuse + 環境光 ambient
+            float discDiff = discNDotL * 0.55 + 0.45;
+            // 鏡面高光:Phong-like,sharp 反光點
+            float discSpec = pow(discNDotL, 12.0);
+            // 中心微白核(讓正中央更亮一點)
+            float coreWhite = smoothstep(0.10, 0.0, d);
+            vec3 discBase = mix(vColor, vec3(1.0), coreWhite * 0.35);
+            vec3 discCol = discBase * discDiff + vec3(discSpec * 0.55);
+
+            // ============================================================
+            // Ring 立體環(0.34 ~ 0.46):像 torus 的剖面,內外緣有 highlight
+            // ============================================================
+            // ring 中心線 d=0.40,半厚度 0.06
+            float ringR = clamp((d - 0.40) / 0.06, -1.0, 1.0);
+            float ringNZ = sqrt(max(0.0, 1.0 - ringR * ringR));
+            // 環的 normal:徑向偏移 + 朝視角的 z(剖面是個 torus)
+            vec2 radialDir = uv / max(d, 0.0001);
+            vec3 ringN = normalize(vec3(radialDir * ringR * 0.85, ringNZ));
+            float ringNDotL = max(0.0, dot(ringN, lightDir));
+            float ringDiff = ringNDotL * 0.5 + 0.5;
+            float ringSpec = pow(ringNDotL, 16.0);
+            vec3 ringColLit = ringCol * ringDiff + vec3(ringSpec * 0.5);
+
+            // ============================================================
+            // Alpha 三層:disc / ring / halo(柔光暈)
+            // ============================================================
+            float discMask = 1.0 - smoothstep(0.27, 0.32, d);
+            float ringMask = smoothstep(0.34, 0.36, d) * (1.0 - smoothstep(0.45, 0.48, d));
+            // halo:整片柔光,在 disc/ring 邊緣外圍給「發光」感
+            float haloOuter = (1.0 - smoothstep(0.46, 0.50, d)) * smoothstep(0.45, 0.47, d) * 0.55;
+            float haloAmbient = (1.0 - smoothstep(0.0, 0.50, d)) * 0.16;
+            float halo = max(haloOuter, haloAmbient);
+
+            // 顏色 blend:disc 主導內部,ring 主導外部,過渡區漸進
+            float t = smoothstep(0.28, 0.36, d);
+            vec3 col = mix(discCol, ringColLit, t);
+
+            // halo 區域用 ring 色(外緣 ring 光暈)或 disc 色(中心擴散)
+            float alpha = max(max(discMask * 0.96, ringMask * 0.96), halo);
+
             alpha *= fade * vDim;
-            vec3 col = mix(vColor, vec3(1.0), core * 0.4);
             gl_FragColor = vec4(col, alpha);
           }
         `,
@@ -516,8 +647,9 @@ export default function PatentMapCanvas({
     let isDragging = false;
     let didDrag = false;
     const dragStart = { x: 0, y: 0 };
-    const cameraState = { x: 0, y: 0, distance: 80 };
-    const cameraTarget = { x: 0, y: 0, distance: 80 };
+    // v2.3:cat 分群佈局後 masterRadius 動態(~30~85),拉遠初始距離 + 放寬縮放範圍
+    const cameraState = { x: 0, y: 0, distance: 110 };
+    const cameraTarget = { x: 0, y: 0, distance: 110 };
 
     // 多 pointer 追蹤:單指 = 拖曳,雙指 = pinch zoom + 中心點 pan
     const activePointers = new Map<number, { x: number; y: number }>();
@@ -540,6 +672,20 @@ export default function PatentMapCanvas({
     raycaster.params.Points!.threshold = 1.2;
     const mouseNDC = new THREE.Vector2();
     let hoveredIdx = -1;
+    let hoverFocusTimer: ReturnType<typeof setTimeout> | null = null;
+
+    function clearHoverFocusLines() {
+      if (hoverFocusTimer) {
+        clearTimeout(hoverFocusTimer);
+        hoverFocusTimer = null;
+      }
+      if (focusLines) {
+        scene.remove(focusLines);
+        focusLines.geometry.dispose();
+        (focusLines.material as THREE.Material).dispose();
+        focusLines = null;
+      }
+    }
 
     const onPointerDown = (e: PointerEvent) => {
       // 阻止瀏覽器預設(避免雙指縮放整個頁面)
@@ -577,8 +723,8 @@ export default function PatentMapCanvas({
           // distance 變大 = 放大 = distance 變小
           const ratio = lastPinchDistance / info.dist;
           cameraTarget.distance = Math.max(
-            20,
-            Math.min(160, cameraTarget.distance * ratio)
+            25,
+            Math.min(220, cameraTarget.distance * ratio)
           );
         }
         if (info && lastPinchCentroid) {
@@ -624,6 +770,22 @@ export default function PatentMapCanvas({
           hoveredIdx = idx;
           companySizes[idx] = companyOriginalSizes[idx] * 1.7;
           (companyPoints.geometry.attributes.size as THREE.BufferAttribute).needsUpdate = true;
+
+          // 切到新的 hover 點 → 重設 focus lines timer
+          if (hoverFocusTimer) clearTimeout(hoverFocusTimer);
+          if (focusLines) {
+            scene.remove(focusLines);
+            focusLines.geometry.dispose();
+            (focusLines.material as THREE.Material).dispose();
+            focusLines = null;
+          }
+          // 280ms 後若還停在同一點,拉跨域連線
+          const hoverTarget = idx;
+          hoverFocusTimer = setTimeout(() => {
+            if (hoveredIdx === hoverTarget) {
+              showFocusLines(hoverTarget);
+            }
+          }, 280);
         }
         const c = visibleCompanies[idx];
         if (tooltipEl) {
@@ -640,6 +802,8 @@ export default function PatentMapCanvas({
           companySizes[hoveredIdx] = companyOriginalSizes[hoveredIdx];
           (companyPoints.geometry.attributes.size as THREE.BufferAttribute).needsUpdate = true;
           hoveredIdx = -1;
+          // 離開所有點 → 清掉 hover 帶起的 focus lines(不影響 click 焦點)
+          clearHoverFocusLines();
         }
         if (tooltipEl) tooltipEl.classList.remove("show");
         canvasRef.current.style.cursor = isDragging ? "grabbing" : "grab";
@@ -682,7 +846,7 @@ export default function PatentMapCanvas({
 
     const onWheel = (e: WheelEvent) => {
       e.preventDefault();
-      cameraTarget.distance = Math.max(20, Math.min(160, cameraTarget.distance + e.deltaY * 0.06));
+      cameraTarget.distance = Math.max(25, Math.min(220, cameraTarget.distance + e.deltaY * 0.08));
     };
     const onResize = () => {
       camera.aspect = window.innerWidth / window.innerHeight;
@@ -809,6 +973,11 @@ export default function PatentMapCanvas({
         npa[i * 3 + 1] += Math.cos(time * 0.25 + i * 1.3) * 0.005;
       }
       noiseGeom.attributes.position.needsUpdate = true;
+
+      // 公司點:更新 time uniform 讓呼吸動畫跑
+      if (companyPoints) {
+        (companyPoints.material as THREE.ShaderMaterial).uniforms.time.value = time;
+      }
 
       // 點位 tween
       if (positionTween && companyPoints) {

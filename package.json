@@ -8,7 +8,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "snapshots:index": "node scripts/build-snapshot-index.mjs"
+    "snapshots:index": "node scripts/build-snapshot-index.mjs",
+    "snapshots:import": "node scripts/import-csv-snapshots.mjs"
   },
   "dependencies": {
     "@types/three": "^0.184.0",
