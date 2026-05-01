@@ -723,6 +723,10 @@ export default function PatentMapCanvas({
           el,
         });
       }
+
+      // 線剛畫好 → 立刻挑最少線通過的象限放 tooltip(處理「hover 後停住」的 case)
+      lockedQuadrant = null; // 強制重算
+      repositionTooltip();
     }
 
     function clearHoverFocusLinesAndLabels() {
@@ -740,6 +744,8 @@ export default function PatentMapCanvas({
         lab.el.remove();
       }
       focusLabels = [];
+      // 沒線了 → 解鎖,讓下一次 hover 從預設 SE 開始
+      lockedQuadrant = null;
     }
 
     // ===== 鏡頭控制(統一 Pointer Events:支援 mouse / touch / pen) =====
@@ -771,6 +777,87 @@ export default function PatentMapCanvas({
     raycaster.params.Points!.threshold = 1.2;
     const mouseNDC = new THREE.Vector2();
     let hoveredIdx = -1;
+    let lastCursorX = 0;
+    let lastCursorY = 0;
+    // 鎖定的 tooltip 象限 — 在 lines 顯示後就不要每次 pointermove 都跳,避免 jitter
+    let lockedQuadrant: "SE" | "NE" | "SW" | "NW" | null = null;
+
+    /**
+     * 把 tooltip 擺在「沒被 focus 線穿過」的象限。
+     * 邏輯:從 cursor 為圓心,把每條線(到 secondary cat centroid 的螢幕投影)
+     *      所在的象限計數,挑線數最少的象限放 tooltip。
+     * 若 lockedQuadrant 已設(focus lines 顯示中) → 直接用,避免 cursor 微動就跳。
+     */
+    function repositionTooltip() {
+      if (!tooltipEl) return;
+      const tw = tooltipEl.offsetWidth || 268;
+      const th = tooltipEl.offsetHeight || 160;
+      const pad = 14;
+      const vw = window.innerWidth;
+      const vh = window.innerHeight;
+
+      // 決定象限
+      let quadrant: "SE" | "NE" | "SW" | "NW";
+      if (lockedQuadrant) {
+        quadrant = lockedQuadrant;
+      } else if (focusLabels.length > 0 && canvas) {
+        // 還沒鎖,但已經有 lines → 算一次
+        quadrant = pickBestQuadrant();
+        lockedQuadrant = quadrant;
+      } else {
+        // 沒 lines → 預設 SE
+        quadrant = "SE";
+      }
+
+      let left: number, top: number;
+      switch (quadrant) {
+        case "SE":
+          left = lastCursorX + pad;
+          top = lastCursorY + pad;
+          break;
+        case "NE":
+          left = lastCursorX + pad;
+          top = lastCursorY - pad - th;
+          break;
+        case "SW":
+          left = lastCursorX - pad - tw;
+          top = lastCursorY + pad;
+          break;
+        case "NW":
+          left = lastCursorX - pad - tw;
+          top = lastCursorY - pad - th;
+          break;
+      }
+      // 邊界 clamp(永遠不出視窗)
+      left = Math.max(8, Math.min(vw - tw - 8, left));
+      top = Math.max(8, Math.min(vh - th - 8, top));
+      tooltipEl.style.left = left + "px";
+      tooltipEl.style.top = top + "px";
+    }
+
+    /** 算每個象限有幾條線,回傳線最少的那個。tie-break 偏好 SE。 */
+    function pickBestQuadrant(): "SE" | "NE" | "SW" | "NW" {
+      if (!canvas || focusLabels.length === 0) return "SE";
+      const rect = canvas.getBoundingClientRect();
+      const counts = { SE: 0, NE: 0, SW: 0, NW: 0 };
+      for (const lab of focusLabels) {
+        const v = lab.centroid.clone().project(camera);
+        if (v.z > 1) continue; // 在相機後方,不算
+        const sx = rect.left + (v.x * 0.5 + 0.5) * rect.width;
+        const sy = rect.top + (1 - (v.y * 0.5 + 0.5)) * rect.height;
+        const dx = sx - lastCursorX;
+        const dy = sy - lastCursorY;
+        if (dx >= 0 && dy >= 0) counts.SE++;
+        else if (dx >= 0 && dy < 0) counts.NE++;
+        else if (dx < 0 && dy >= 0) counts.SW++;
+        else counts.NW++;
+      }
+      // 順序偏好:SE → SW → NE → NW(預設右下,然後逆時針嘗試)
+      const order: ("SE" | "SW" | "NE" | "NW")[] = ["SE", "SW", "NE", "NW"];
+      let best: "SE" | "NE" | "SW" | "NW" = "SE";
+      for (const q of order) if (counts[q] < counts[best]) best = q;
+      return best;
+    }
 
     const onPointerDown = (e: PointerEvent) => {
       // 阻止瀏覽器預設(避免雙指縮放整個頁面)
@@ -879,13 +966,9 @@ export default function PatentMapCanvas({
           (tooltipEl.querySelector(".ai-map-tooltip-cat") as HTMLElement).textContent = c.mainCategory;
           (tooltipEl.querySelector(".ai-map-tooltip-name") as HTMLElement).textContent = c.name;
           (tooltipEl.querySelector(".ai-map-tooltip-meta") as HTMLElement).textContent = `${c.displayPatents} 筆專利`;
-          // tooltip 偏右下,但靠近右/下邊界時自動翻到滑鼠的左/上(避免被視窗截掉)
-          const tw = tooltipEl.offsetWidth || 280;
-          const th = tooltipEl.offsetHeight || 160;
-          const placeX = e.clientX + 14 + tw > window.innerWidth ? e.clientX - tw - 14 : e.clientX + 14;
-          const placeY = e.clientY + 14 + th > window.innerHeight ? e.clientY - th - 14 : e.clientY + 14;
-          tooltipEl.style.left = Math.max(8, placeX) + "px";
-          tooltipEl.style.top = Math.max(8, placeY) + "px";
+          lastCursorX = e.clientX;
+          lastCursorY = e.clientY;
+          repositionTooltip();
           tooltipEl.classList.add("show");
         }
         canvasRef.current.style.cursor = "pointer";
