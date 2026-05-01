@@ -1135,10 +1135,16 @@ export default function PatentMapCanvas({
       cameraState.y += (cameraTarget.y - cameraState.y) * 0.08;
       cameraState.distance += (cameraTarget.distance - cameraState.distance) * 0.08;
       camera.position.set(cameraState.x, cameraState.y, cameraState.distance);
-      // 視覺補償:看向略上方,把點雲在畫面上往下推 ~7.5% NDC,
-      // 補上 header 在頂部佔的視覺重量,讓點雲落在 header 跟 stats 之間的視覺中央。
-      const VIEW_LOOK_OFFSET_Y = 6;
-      camera.lookAt(cameraState.x, cameraState.y + VIEW_LOOK_OFFSET_Y, 0);
+      // 視覺補償:看向上方,把點雲中心放在畫面 ~22% 偏下,
+      // 讓出上方空間給 header / 時間軸。
+      // 用 NDC 比例算 — 不論 zoom 進出,點雲中心永遠落在畫面同樣的相對位置,
+      // 不會「拉近後突然頂到 timeline」。
+      // 公式:tan(fov/2) * distance = 視野在該深度的半高(world units)
+      //      world_offset = NDC_target * 半高 → 對應到固定的螢幕 NDC 偏移
+      const VIEW_LOOK_NDC_Y = 0.22;
+      const fovTanHalf = Math.tan((camera.fov * Math.PI) / 360);
+      const lookOffsetY = VIEW_LOOK_NDC_Y * cameraState.distance * fovTanHalf;
+      camera.lookAt(cameraState.x, cameraState.y + lookOffsetY, 0);
 
       // 背景雜訊微擾動
       const npa = (noiseGeom.attributes.position as THREE.BufferAttribute).array as Float32Array;
