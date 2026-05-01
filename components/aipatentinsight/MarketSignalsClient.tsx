@@ -221,22 +221,7 @@ export default function MarketSignalsClient() {
                   aria-expanded={isOpen}
                 >
                   <span className="ai-signals-theme-rank">#{theme.rank}</span>
-                  <span className="ai-signals-theme-name">
-                    {theme.name}
-                    {theme.carriedFromPrev && theme.carriedFromDate && (
-                      <span className="ai-signals-theme-carried" title="從上一期延續">
-                        ↩ {theme.carriedFromDate.replace(/-/g, ".")}
-                      </span>
-                    )}
-                    {theme.extendedWindow && (
-                      <span
-                        className="ai-signals-theme-extended"
-                        title={`延伸窗口分析(${theme.extendedWindowDays || 180} 天)`}
-                      >
-                        {theme.extendedWindowDays || 180}d
-                      </span>
-                    )}
-                  </span>
+                  <span className="ai-signals-theme-name">{theme.name}</span>
                   <span className="ai-signals-theme-bar">
                     <span
                       className="ai-signals-theme-bar-fill"
