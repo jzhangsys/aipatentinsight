@@ -1,29 +1,290 @@
 {
   "stockCode": "2344",
-  "name": "華邦電",
-  "scrapedAt": "2026-05-01T10:42:11.365Z",
-  "devSeed": true,
+  "name": "華邦電子",
+  "scrapedAt": "2026-05-01T11:09:24.358Z",
   "sourceCounts": {
-    "yahoo": 1,
-    "ltn": 1,
-    "mops": 0,
-    "technews": 0,
-    "digitimes": 0,
-    "anue": 0
+    "yahoo": 20,
+    "ltn": 20
   },
   "news": [
     {
-      "title": "華邦電 DRAM 報價落底回升 Q1 營收看增",
-      "url": "https://tw.stock.yahoo.com/news/2344-華邦電 DR-2026-01-23.html",
-      "source": "yahoo",
-      "date": "2026-01-23",
+      "title": "台灣除了台積電 還有許多AI領域佼佼者 高燦鳴大點名！",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5408836",
+      "source": "ltn",
+      "date": "2026-04-19",
       "snippet": ""
     },
     {
-      "title": "記憶體市場 LPDDR5X 華邦電打入 AI Edge",
-      "url": "https://search.ltn.com.tw/list?keyword=%E8%8F%AF%E9%82%A6%E9%9B%BB#2026-01-08",
+      "title": "中國遭狠甩！高燦鳴1數據揭台灣AI供應鏈超級狂",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5369165",
       "source": "ltn",
-      "date": "2026-01-08",
+      "date": "2026-03-13",
+      "snippet": ""
+    },
+    {
+      "title": "南科30年盛典  邀台積電共同營運長秦永沛今晚開講",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5327517",
+      "source": "ltn",
+      "date": "2026-01-30",
+      "snippet": ""
+    },
+    {
+      "title": "美100％關稅掃向記憶體 外媒點名華邦電、南亞科恐有致命麻煩",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5314790",
+      "source": "ltn",
+      "date": "2026-01-19",
+      "snippet": ""
+    },
+    {
+      "title": "旺宏董事長吳敏求獲頒「潘文淵獎」 他遺憾到第19屆才得獎",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5264270",
+      "source": "ltn",
+      "date": "2025-12-01",
+      "snippet": ""
+    },
+    {
+      "title": "楊丁元爆料聯電真正創辦人是方賢齊",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5218888",
+      "source": "ltn",
+      "date": "2025-10-21",
+      "snippet": ""
+    },
+    {
+      "title": "科睿唯安「全球百大創新機構」台灣13家入選創新高",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5014244",
+      "source": "ltn",
+      "date": "2025-04-16",
+      "snippet": ""
+    },
+    {
+      "title": "中國傾銷逼得無利可圖 全球前3大DRAM廠將停產兩大產品",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4956064",
+      "source": "ltn",
+      "date": "2025-02-19",
+      "snippet": ""
+    },
+    {
+      "title": "華邦電連續3年辦零碳企業家庭日",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4835967",
+      "source": "ltn",
+      "date": "2024-10-19",
+      "snippet": ""
+    },
+    {
+      "title": "三三會理事長林伯豐連任 3大金控新生代進入理事會",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4776132",
+      "source": "ltn",
+      "date": "2024-08-21",
+      "snippet": ""
+    },
+    {
+      "title": "台灣11家獲全球百大創新機構獎 工研院8度獲獎",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4642117",
+      "source": "ltn",
+      "date": "2024-04-15",
+      "snippet": ""
+    },
+    {
+      "title": "鎖定邊緣AI成長動能 聯電與供應鏈夥伴啟動W2W 3D IC專案",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4475456",
+      "source": "ltn",
+      "date": "2023-10-31",
+      "snippet": ""
+    },
+    {
+      "title": "焦點股》華邦電：切入邊緣AI市場 2024貢獻營收",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4449226",
+      "source": "ltn",
+      "date": "2023-10-05",
+      "snippet": ""
+    },
+    {
+      "title": "華邦電推出邊緣AI客製化超高頻寬記憶體",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4441682",
+      "source": "ltn",
+      "date": "2023-09-27",
+      "snippet": ""
+    },
+    {
+      "title": "今日觀盤重點",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4440788",
+      "source": "ltn",
+      "date": "2023-09-27",
+      "snippet": ""
+    },
+    {
+      "title": "華邦電完成首次再生能源採購 年供近千萬度電量",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4400694",
+      "source": "ltn",
+      "date": "2023-08-18",
+      "snippet": ""
+    },
+    {
+      "title": "台積電今年研發支出上看2000億  帶動全球產業鏈創新",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4245511",
+      "source": "ltn",
+      "date": "2023-03-20",
+      "snippet": ""
+    },
+    {
+      "title": "全球百大創新機構獎 台灣11家機構得獎歷年最多",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4245363",
+      "source": "ltn",
+      "date": "2023-03-20",
+      "snippet": ""
+    },
+    {
+      "title": "華邦電增設12吋晶圓智慧化產線 增聘183本國員工",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4235949",
+      "source": "ltn",
+      "date": "2023-03-10",
+      "snippet": ""
+    },
+    {
+      "title": "華邦電估第1季將是谷底 供過於求可望下半年改善",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4214811",
+      "source": "ltn",
+      "date": "2023-02-17",
+      "snippet": ""
+    },
+    {
+      "title": "4/29上市外資賣超排行前20名",
+      "url": "https://tw.stock.yahoo.com/news/4-29%E4%B8%8A%E5%B8%82%E5%A4%96%E8%B3%87%E8%B3%A3%E8%B6%85%E6%8E%92%E8%A1%8C%E5%89%8D20%E5%90%8D-233100609.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "〈ETF成分股調整〉00891換血納記憶體雙雄、聯亞 聚焦三大上行週期子產業",
+      "url": "https://tw.stock.yahoo.com/news/etf%E6%88%90%E5%88%86%E8%82%A1%E8%AA%BF%E6%95%B4-00891%E6%8F%9B%E8%A1%80%E7%B4%8D%E8%A8%98%E6%86%B6%E9%AB%94%E9%9B%99%E9%9B%84-%E8%81%AF%E4%BA%9E-%E8%81%9A%E7%84%A6%E4%B8%89%E5%A4%A7%E4%B8%8A%E8%A1%8C%E9%80%B1%E6%9C%9F%E5%AD%90%E7%94%A2%E6%A5%AD-085005846.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "4/28上市融資減少排行前20名",
+      "url": "https://tw.stock.yahoo.com/news/4-28%E4%B8%8A%E5%B8%82%E8%9E%8D%E8%B3%87%E6%B8%9B%E5%B0%91%E6%8E%92%E8%A1%8C%E5%89%8D20%E5%90%8D-233100327.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "華邦電、十銓 AI催動記憶體行情",
+      "url": "https://tw.stock.yahoo.com/news/%E8%8F%AF%E9%82%A6%E9%9B%BB-%E5%8D%81%E9%8A%93-ai%E5%82%AC%E5%8B%95%E8%A8%98%E6%86%B6%E9%AB%94%E8%A1%8C%E6%83%85-201000290.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "台股闖關4萬點失利 外資續賣393億元 再提款台積電2.2萬張",
+      "url": "https://tw.stock.yahoo.com/news/%E5%8F%B0%E8%82%A1%E9%97%96%E9%97%9C4%E8%90%AC%E9%BB%9E%E5%A4%B1%E5%88%A9-%E5%A4%96%E8%B3%87%E7%BA%8C%E8%B3%A3393%E5%84%84%E5%85%83-%E5%86%8D%E6%8F%90%E6%AC%BE%E5%8F%B0%E7%A9%8D%E9%9B%BB2-2%E8%90%AC%E5%BC%B5-105115839.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【台北股市】跌94.9點",
+      "url": "https://tw.stock.yahoo.com/news/%E5%8F%B0%E5%8C%97%E8%82%A1%E5%B8%82-%E8%B7%8C94-9%E9%BB%9E-060218118.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "台積電跌30元 台股平盤震盪 「這前妖股」恢復記憶衝8％",
+      "url": "https://tw.stock.yahoo.com/news/%E5%8F%B0%E7%A9%8D%E9%9B%BB%E8%B7%8C30%E5%85%83-%E5%8F%B0%E8%82%A1%E5%B9%B3%E7%9B%A4%E9%9C%87%E7%9B%AA-%E9%80%99%E5%89%8D%E5%A6%96%E8%82%A1-%E6%81%A2%E5%BE%A9%E8%A8%98%E6%86%B6%E8%A1%9D8-010900815.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "台股重回4萬點！湧買盤暴漲400點 聯發科漲停飆2675元",
+      "url": "https://tw.stock.yahoo.com/news/%E5%8F%B0%E8%82%A1%E9%87%8D%E5%9B%9E4%E8%90%AC%E9%BB%9E-%E6%B9%A7%E8%B2%B7%E7%9B%A4%E6%9A%B4%E6%BC%B2400%E9%BB%9E-%E8%81%AF%E7%99%BC%E7%A7%91%E6%BC%B2%E5%81%9C%E9%A3%862675%E5%85%83-010714701.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "4/27上市外資買超排行前20名",
+      "url": "https://tw.stock.yahoo.com/news/4-27%E4%B8%8A%E5%B8%82%E5%A4%96%E8%B3%87%E8%B2%B7%E8%B6%85%E6%8E%92%E8%A1%8C%E5%89%8D20%E5%90%8D-233100895.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "華邦電 公告本公司115年第一季合併財務報告董事會預計召開日期為115年5月5日",
+      "url": "https://tw.stock.yahoo.com/news/%E8%8F%AF%E9%82%A6%E9%9B%BB-%E5%85%AC%E5%91%8A%E6%9C%AC%E5%85%AC%E5%8F%B8115%E5%B9%B4%E7%AC%AC-%E5%AD%A3%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A%E8%91%A3%E4%BA%8B%E6%9C%83%E9%A0%90%E8%A8%88%E5%8F%AC%E9%96%8B%E6%97%A5%E6%9C%9F%E7%82%BA115%E5%B9%B45%E6%9C%885%E6%97%A5-092700205.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【台北股市】漲684.23點",
+      "url": "https://tw.stock.yahoo.com/news/%E5%8F%B0%E5%8C%97%E8%82%A1%E5%B8%82-%E6%BC%B2684-23%E9%BB%9E-055927938.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "華邦電CSP客戶比重升，AI伺服器周邊需求同步轉強",
+      "url": "https://tw.stock.yahoo.com/news/%E8%8F%AF%E9%82%A6%E9%9B%BBcsp%E5%AE%A2%E6%88%B6%E6%AF%94%E9%87%8D%E5%8D%87-ai%E4%BC%BA%E6%9C%8D%E5%99%A8%E5%91%A8%E9%82%8A%E9%9C%80%E6%B1%82%E5%90%8C%E6%AD%A5%E8%BD%89%E5%BC%B7-050300774.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "台股焦點：華邦電(2344.TW)",
+      "url": "https://tw.stock.yahoo.com/news/%E5%8F%B0%E8%82%A1%E7%84%A6%E9%BB%9E-%E8%8F%AF%E9%82%A6%E9%9B%BB-2344-tw-011500331.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "狂噴5%！台積電離股號近了 台股大漲千點奔4萬",
+      "url": "https://tw.stock.yahoo.com/news/%E7%8B%82%E5%99%B45-%E5%8F%B0%E7%A9%8D%E9%9B%BB%E9%9B%A2%E8%82%A1%E8%99%9F%E8%BF%91%E4%BA%86-%E5%8F%B0%E8%82%A1%E5%A4%A7%E6%BC%B2%E5%8D%83%E9%BB%9E%E5%A5%944%E8%90%AC-010700065.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "緊箍咒解開了！台積電爆衝2180元新高 台股又噴漲千點",
+      "url": "https://tw.stock.yahoo.com/news/%E7%B7%8A%E7%AE%8D%E5%92%92%E8%A7%A3%E9%96%8B%E4%BA%86-%E5%8F%B0%E7%A9%8D%E9%9B%BB%E7%88%86%E8%A1%9D2180%E5%85%83%E6%96%B0%E9%AB%98-%E5%8F%B0%E8%82%A1%E5%8F%88%E5%99%B4%E6%BC%B2%E5%8D%83%E9%BB%9E-022700337.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "宇瞻、十銓連噴！南亞科、華邦電「弱到沒朋友」曝多頭重啟最後關鍵",
+      "url": "https://tw.stock.yahoo.com/news/%E5%AE%87%E7%9E%BB-%E5%8D%81%E9%8A%93%E9%80%A3%E5%99%B4-%E5%8D%97%E4%BA%9E%E7%A7%91-%E8%8F%AF%E9%82%A6%E9%9B%BB-%E5%BC%B1%E5%88%B0%E6%B2%92%E6%9C%8B%E5%8F%8B-080402902.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【Hot台股】記憶體復活？威剛開V飆漲半根 網嗨喊「相信白董」分析師：難獨自升級",
+      "url": "https://tw.stock.yahoo.com/news/%E3%80%90hot%E5%8F%B0%E8%82%A1%E3%80%91%E8%A8%98%E6%86%B6%E9%AB%94%E5%BE%A9%E6%B4%BB%EF%BC%9F%E5%A8%81%E5%89%9B%E9%96%8Bv%E9%A3%86%E6%BC%B2%E5%8D%8A%E6%A0%B9-%E7%B6%B2%E5%97%A8%E5%96%8A%E3%80%8C%E7%9B%B8%E4%BF%A1%E7%99%BD%E8%91%A3%E3%80%8D%E5%88%86%E6%9E%90%E5%B8%AB%EF%BC%9A%E9%9B%A3%E7%8D%A8%E8%87%AA%E5%8D%87%E7%B4%9A-033454826.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "1分鐘讀財經》大摩曝5記憶體兩極化名單！這檔「神祕黑馬」憑什麼被喊上777元？",
+      "url": "https://tw.stock.yahoo.com/news/1%E5%88%86%E9%90%98%E8%AE%80%E8%B2%A1%E7%B6%93-%E5%A4%A7%E6%91%A9%E6%9B%9D5%E8%A8%98%E6%86%B6%E9%AB%94%E5%85%A9%E6%A5%B5%E5%8C%96%E5%90%8D%E5%96%AE-%E9%80%99%E6%AA%94-%E7%A5%9E%E7%A5%95%E9%BB%91%E9%A6%AC-%E6%86%91%E4%BB%80%E9%BA%BC%E8%A2%AB%E5%96%8A%E4%B8%8A777%E5%85%83-004043898.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "大摩看5記憶體股 兩樣情",
+      "url": "https://tw.stock.yahoo.com/news/%E5%A4%A7%E6%91%A9%E7%9C%8B5%E8%A8%98%E6%86%B6%E9%AB%94%E8%82%A1-%E5%85%A9%E6%A8%A3%E6%83%85-201000754.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "三星罷工倒數計時 DRAM雙雄重返多頭",
+      "url": "https://tw.stock.yahoo.com/news/%E4%B8%89%E6%98%9F%E7%BD%B7%E5%B7%A5%E5%80%92%E6%95%B8%E8%A8%88%E6%99%82-dram%E9%9B%99%E9%9B%84%E9%87%8D%E8%BF%94%E5%A4%9A%E9%A0%AD-201000003.html",
+      "source": "yahoo",
+      "date": null,
       "snippet": ""
     }
   ]

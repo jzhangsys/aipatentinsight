@@ -1,22 +1,290 @@
 {
   "stockCode": "2376",
-  "name": "技嘉",
-  "scrapedAt": "2026-05-01T10:42:11.376Z",
-  "devSeed": true,
+  "name": "技嘉科技",
+  "scrapedAt": "2026-05-01T11:09:32.732Z",
   "sourceCounts": {
-    "yahoo": 1,
-    "ltn": 0,
-    "mops": 0,
-    "technews": 0,
-    "digitimes": 0,
-    "anue": 0
+    "yahoo": 20,
+    "ltn": 20
   },
   "news": [
     {
-      "title": "技嘉 AI 伺服器 NVIDIA HGX H200 出貨增",
-      "url": "https://tw.stock.yahoo.com/news/2376-技嘉 AI -2026-01-26.html",
+      "title": "士電、群聯、技嘉都是法人大股東！阿波羅電力4月底登錄興櫃",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5411049",
+      "source": "ltn",
+      "date": "2026-04-21",
+      "snippet": ""
+    },
+    {
+      "title": "科技協助農業  工研院15年回饋逾240家社福團體",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5324707",
+      "source": "ltn",
+      "date": "2026-01-28",
+      "snippet": ""
+    },
+    {
+      "title": "技嘉葉培城：GB300出貨展望正向 H2顯卡動能優於預期",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5182650",
+      "source": "ltn",
+      "date": "2025-09-18",
+      "snippet": ""
+    },
+    {
+      "title": "輝達供應鏈看板 新增威剛、瑞昱、盟立",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5048135",
+      "source": "ltn",
+      "date": "2025-05-19",
+      "snippet": ""
+    },
+    {
+      "title": "技嘉董事長葉培城獲母校頒授名譽博士  勉學弟妹要有「冒險精神」",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4842669",
+      "source": "ltn",
+      "date": "2024-10-26",
+      "snippet": ""
+    },
+    {
+      "title": "熙特爾攜手技鋼 瞄準智慧電力未來發展",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4821660",
+      "source": "ltn",
+      "date": "2024-10-06",
+      "snippet": ""
+    },
+    {
+      "title": "技嘉證實創辦人劉明雄逝世 享壽64歲",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4775929",
+      "source": "ltn",
+      "date": "2024-08-21",
+      "snippet": ""
+    },
+    {
+      "title": "英特爾打造企業交流平台 促進台印生態系合作",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4641517",
+      "source": "ltn",
+      "date": "2024-04-15",
+      "snippet": ""
+    },
+    {
+      "title": "林百里：AI具備醫療應用潛力 將帶來革命性改變",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4596446",
+      "source": "ltn",
+      "date": "2024-03-04",
+      "snippet": ""
+    },
+    {
+      "title": "焦點股》蔚華科：營收有驚喜 放量鎖漲停",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4546184",
+      "source": "ltn",
+      "date": "2024-01-09",
+      "snippet": ""
+    },
+    {
+      "title": "《與未來共榮》新書發表 集結桃園15家ESG企業故事",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4447285",
+      "source": "ltn",
+      "date": "2023-10-03",
+      "snippet": ""
+    },
+    {
+      "title": "AI狂潮延續 英業達、技嘉漲停鎖死",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4353130",
+      "source": "ltn",
+      "date": "2023-07-04",
+      "snippet": ""
+    },
+    {
+      "title": "黃仁勳秀應用︰AI的iPhone時刻到來",
+      "url": "https://ec.ltn.com.tw/article/paper/1585650",
+      "source": "ltn",
+      "date": "2023-05-30",
+      "snippet": ""
+    },
+    {
+      "title": "技嘉正式分拆網通事業群 技鋼以自有品牌擴展業務",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4173226",
+      "source": "ltn",
+      "date": "2023-01-03",
+      "snippet": ""
+    },
+    {
+      "title": "搶攻全球5G商機  新北國際商洽會產值上看15億元",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4034401",
+      "source": "ltn",
+      "date": "2022-08-23",
+      "snippet": ""
+    },
+    {
+      "title": "COMPUTEX元宇宙、ESG主題熱 首創網紅導覽人氣夯",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/3939582",
+      "source": "ltn",
+      "date": "2022-05-26",
+      "snippet": ""
+    },
+    {
+      "title": "友達攜手台灣品牌前進CES&nbsp; AmLED技術應用大放異彩",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/3792339",
+      "source": "ltn",
+      "date": "2022-01-06",
+      "snippet": ""
+    },
+    {
+      "title": "台灣電動智能自行車協會成立  威剛董座陳立白任首屆理事長",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/3718785",
+      "source": "ltn",
+      "date": "2021-10-28",
+      "snippet": ""
+    },
+    {
+      "title": "技嘉證實遭駭客攻擊  已通報執法單位",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/3630107",
+      "source": "ltn",
+      "date": "2021-08-06",
+      "snippet": ""
+    },
+    {
+      "title": "技嘉證實遭駭客攻擊 生產銷售營運未受影響",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/3630010",
+      "source": "ltn",
+      "date": "2021-08-06",
+      "snippet": ""
+    },
+    {
+      "title": "〈OCP峰會〉技嘉旗下技鋼進軍OCP 展示輝達HGX B300 / B200平台",
+      "url": "https://tw.stock.yahoo.com/news/ocp%E5%B3%B0%E6%9C%83-%E6%8A%80%E5%98%89%E6%97%97%E4%B8%8B%E6%8A%80%E9%8B%BC%E9%80%B2%E8%BB%8Docp-%E5%B1%95%E7%A4%BA%E8%BC%9D%E9%81%94hgx-b300-b200%E5%B9%B3%E5%8F%B0-033805861.html",
       "source": "yahoo",
-      "date": "2026-01-26",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "技鋼OCP EMEA峰會推多平台，AI伺服器動能看旺",
+      "url": "https://tw.stock.yahoo.com/news/%E6%8A%80%E9%8B%BCocp-emea%E5%B3%B0%E6%9C%83%E6%8E%A8%E5%A4%9A%E5%B9%B3%E5%8F%B0-ai%E4%BC%BA%E6%9C%8D%E5%99%A8%E5%8B%95%E8%83%BD%E7%9C%8B%E6%97%BA-033800014.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "AI需求從訓練轉向推論市場 華碩、技嘉、微星伺服器業務進入收割期",
+      "url": "https://tw.stock.yahoo.com/news/ai%E9%9C%80%E6%B1%82%E5%BE%9E%E8%A8%93%E7%B7%B4%E8%BD%89%E5%90%91%E6%8E%A8%E8%AB%96%E5%B8%82%E5%A0%B4-%E8%8F%AF%E7%A2%A9-%E6%8A%80%E5%98%89-%E5%BE%AE%E6%98%9F%E4%BC%BA%E6%9C%8D%E5%99%A8%E6%A5%AD%E5%8B%99%E9%80%B2%E5%85%A5%E6%94%B6%E5%89%B2%E6%9C%9F-004107020.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "研調：估Neocloud進入整頓期",
+      "url": "https://tw.stock.yahoo.com/news/%E7%A0%94%E8%AA%BF-%E4%BC%B0neocloud%E9%80%B2%E5%85%A5%E6%95%B4%E9%A0%93%E6%9C%9F-201000939.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "新聿科登錄興櫃首日大漲1547% 衝上1845元躍升被動元件股王",
+      "url": "https://tw.stock.yahoo.com/news/%E6%96%B0%E8%81%BF%E7%A7%91%E7%99%BB%E9%8C%84%E8%88%88%E6%AB%83%E9%A6%96%E6%97%A5%E5%A4%A7%E6%BC%B21547-%E8%A1%9D%E4%B8%8A1845%E5%85%83%E8%BA%8D%E5%8D%87%E8%A2%AB%E5%8B%95%E5%85%83%E4%BB%B6%E8%82%A1%E7%8E%8B-025936933.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "全年拚轉盈！ 阿波羅電力 28日登興櫃",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%A8%E5%B9%B4%E6%8B%9A%E8%BD%89%E7%9B%88-%E9%98%BF%E6%B3%A2%E7%BE%85%E9%9B%BB%E5%8A%9B-28%E6%97%A5%E7%99%BB%E8%88%88%E6%AB%83-201000974.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "阿波羅電力擬4/28登錄興櫃 在手長約訂單154億元",
+      "url": "https://tw.stock.yahoo.com/news/%E9%98%BF%E6%B3%A2%E7%BE%85%E9%9B%BB%E5%8A%9B%E6%93%AC4-28%E7%99%BB%E9%8C%84%E8%88%88%E6%AB%83-%E5%9C%A8%E6%89%8B%E9%95%B7%E7%B4%84%E8%A8%82%E5%96%AE154%E5%84%84%E5%85%83-091702435.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "阿波羅電力將登興櫃 擁士電/群聯/技嘉三大股東力挺",
+      "url": "https://tw.stock.yahoo.com/news/%E9%98%BF%E6%B3%A2%E7%BE%85%E9%9B%BB%E5%8A%9B%E5%B0%87%E7%99%BB%E8%88%88%E6%AB%83-%E6%93%81%E5%A3%AB%E9%9B%BB-%E7%BE%A4%E8%81%AF-%E6%8A%80%E5%98%89%E4%B8%89%E5%A4%A7%E8%82%A1%E6%9D%B1%E5%8A%9B%E6%8C%BA-075000442.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "阿波羅電力4/28登錄興櫃，在手訂單逾154億，全年可望轉盈",
+      "url": "https://tw.stock.yahoo.com/news/%E9%98%BF%E6%B3%A2%E7%BE%85%E9%9B%BB%E5%8A%9B4-28%E7%99%BB%E9%8C%84%E8%88%88%E6%AB%83-%E5%9C%A8%E6%89%8B%E8%A8%82%E5%96%AE%E9%80%BE154%E5%84%84-%E5%85%A8%E5%B9%B4%E5%8F%AF%E6%9C%9B%E8%BD%89%E7%9B%88-072349925.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "技嘉AI伺服器能見度高，今年動能向上",
+      "url": "https://tw.stock.yahoo.com/news/%E6%8A%80%E5%98%89ai%E4%BC%BA%E6%9C%8D%E5%99%A8%E8%83%BD%E8%A6%8B%E5%BA%A6%E9%AB%98-%E4%BB%8A%E5%B9%B4%E5%8B%95%E8%83%BD%E5%90%91%E4%B8%8A-040900748.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "技嘉 土洋法人加碼",
+      "url": "https://tw.stock.yahoo.com/news/%E6%8A%80%E5%98%89-%E5%9C%9F%E6%B4%8B%E6%B3%95%E4%BA%BA%E5%8A%A0%E7%A2%BC-201000073.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "大陸、泰國同步擴產 新聿科未來二年AI動能無虞",
+      "url": "https://tw.stock.yahoo.com/news/%E5%A4%A7%E9%99%B8-%E6%B3%B0%E5%9C%8B%E5%90%8C%E6%AD%A5%E6%93%B4%E7%94%A2-%E6%96%B0%E8%81%BF%E7%A7%91%E6%9C%AA%E4%BE%86%E4%BA%8C%E5%B9%B4ai%E5%8B%95%E8%83%BD%E7%84%A1%E8%99%9E-201000670.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "技嘉股利：現金12元",
+      "url": "https://tw.stock.yahoo.com/news/%E6%8A%80%E5%98%89%E8%82%A1%E5%88%A9-%E7%8F%BE%E9%87%9112%E5%85%83-094600721.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】技嘉代重要子公司技鋼科技公告董事會決議召開民國115年股東常會(新增股東會議案)",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%8A%80%E5%98%89%E4%BB%A3%E9%87%8D%E8%A6%81%E5%AD%90%E5%85%AC%E5%8F%B8%E6%8A%80%E9%8B%BC%E7%A7%91%E6%8A%80%E5%85%AC%E5%91%8A%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E5%8F%AC%E9%96%8B%E6%B0%91%E5%9C%8B115%E5%B9%B4%E8%82%A1%E6%9D%B1%E5%B8%B8%E6%9C%83-%E6%96%B0%E5%A2%9E%E8%82%A1%E6%9D%B1%E6%9C%83%E8%AD%B0%E6%A1%88-094310014.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】技嘉董事會決議股利分派",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%8A%80%E5%98%89%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E8%82%A1%E5%88%A9%E5%88%86%E6%B4%BE-094308507.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "11萬股東關注！技嘉睽違4年再發12元現金股利 追平歷史高",
+      "url": "https://tw.stock.yahoo.com/news/11%E8%90%AC%E8%82%A1%E6%9D%B1%E9%97%9C%E6%B3%A8%EF%BC%81%E6%8A%80%E5%98%89%E7%9D%BD%E9%81%954%E5%B9%B4%E5%86%8D%E7%99%BC12%E5%85%83%E7%8F%BE%E9%87%91%E8%82%A1%E5%88%A9-%E8%BF%BD%E5%B9%B3%E6%AD%B7%E5%8F%B2%E9%AB%98-093808068.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "技嘉 代重要子公司技鋼科技公告董事會決議召開民國115年股東常會(新增股東會議案)",
+      "url": "https://tw.stock.yahoo.com/news/%E6%8A%80%E5%98%89-%E4%BB%A3%E9%87%8D%E8%A6%81%E5%AD%90%E5%85%AC%E5%8F%B8%E6%8A%80%E9%8B%BC%E7%A7%91%E6%8A%80%E5%85%AC%E5%91%8A%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E5%8F%AC%E9%96%8B%E6%B0%91%E5%9C%8B115%E5%B9%B4%E8%82%A1%E6%9D%B1%E5%B8%B8%E6%9C%83-%E6%96%B0%E5%A2%9E%E8%82%A1%E6%9D%B1%E6%9C%83%E8%AD%B0%E6%A1%88-091700194.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "技嘉 董事會決議股利分派",
+      "url": "https://tw.stock.yahoo.com/news/%E6%8A%80%E5%98%89-%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E8%82%A1%E5%88%A9%E5%88%86%E6%B4%BE-091700047.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "熱門股－技嘉 外資加碼萬張拉抬",
+      "url": "https://tw.stock.yahoo.com/news/%E7%86%B1%E9%96%80%E8%82%A1-%E6%8A%80%E5%98%89-%E5%A4%96%E8%B3%87%E5%8A%A0%E7%A2%BC%E8%90%AC%E5%BC%B5%E6%8B%89%E6%8A%AC-201000859.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "被動元件新兵新聿科預計4/22登興櫃 AI需求旺下半年樂觀全年雙位數成長",
+      "url": "https://tw.stock.yahoo.com/news/%E8%A2%AB%E5%8B%95%E5%85%83%E4%BB%B6%E6%96%B0%E5%85%B5%E6%96%B0%E8%81%BF%E7%A7%91%E9%A0%90%E8%A8%884-22%E7%99%BB%E8%88%88%E6%AB%83-ai%E9%9C%80%E6%B1%82%E6%97%BA%E4%B8%8B%E5%8D%8A%E5%B9%B4%E6%A8%82%E8%A7%80%E5%85%A8%E5%B9%B4%E9%9B%99%E4%BD%8D%E6%95%B8%E6%88%90%E9%95%B7-103253840.html",
+      "source": "yahoo",
+      "date": null,
       "snippet": ""
     }
   ]

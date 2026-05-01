@@ -1,0 +1,284 @@
+{
+  "stockCode": "3045",
+  "name": "台灣大哥大",
+  "scrapedAt": "2026-05-01T11:10:10.633Z",
+  "sourceCounts": {
+    "yahoo": 19,
+    "ltn": 20
+  },
+  "news": [
+    {
+      "title": "AI驅動3大引擎 台灣大拚5年內營收翻倍",
+      "url": "https://ec.ltn.com.tw/article/paper/1752941",
+      "source": "ltn",
+      "date": "2026-04-30",
+      "snippet": ""
+    },
+    {
+      "title": "Liminal Custody攜手台灣大、精誠  攻虛擬資產託管商機",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5419773",
+      "source": "ltn",
+      "date": "2026-04-29",
+      "snippet": ""
+    },
+    {
+      "title": "台灣大林之晨︰AI開啟黃金10年  未來5年營收翻倍",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5419717",
+      "source": "ltn",
+      "date": "2026-04-29",
+      "snippet": ""
+    },
+    {
+      "title": "LINE盜帳風波台灣大哥大接16件申訴 林宜敬：雙方漏洞疊加釀資安破口",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5396616",
+      "source": "ltn",
+      "date": "2026-04-08",
+      "snippet": ""
+    },
+    {
+      "title": "LINE爆盜帳風暴！數發部出手補漏洞：原台星語音信箱預設密碼成破口",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5390345",
+      "source": "ltn",
+      "date": "2026-04-01",
+      "snippet": ""
+    },
+    {
+      "title": "LINE疑爆盜帳風暴！網笑「門檻有夠低」專家揭這點才是關鍵",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5390272",
+      "source": "ltn",
+      "date": "2026-04-01",
+      "snippet": ""
+    },
+    {
+      "title": "LINE爆大規模盜帳為何特定電信戶成重災區？專家揭關鍵",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5390249",
+      "source": "ltn",
+      "date": "2026-04-01",
+      "snippet": ""
+    },
+    {
+      "title": "LINE疑爆盜帳關鍵曝光！專家警示：「過度信任電信驗證」恐成破口",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5390155",
+      "source": "ltn",
+      "date": "2026-04-01",
+      "snippet": ""
+    },
+    {
+      "title": "台灣高鐵攜手三大電信斥資20億元要一路不斷線",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5381783",
+      "source": "ltn",
+      "date": "2026-03-25",
+      "snippet": ""
+    },
+    {
+      "title": "虛擬貨幣也能刷！萬事達卡結盟台哥大TWEX 推動加密貨幣日常支付與安全轉帳",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5371787",
+      "source": "ltn",
+      "date": "2026-03-16",
+      "snippet": ""
+    },
+    {
+      "title": "終止連6虧 宏達電2025年EPS 7.21元",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5365773",
+      "source": "ltn",
+      "date": "2026-03-10",
+      "snippet": ""
+    },
+    {
+      "title": "台大徵才博覽會 347家企業、4萬職缺搶人",
+      "url": "https://ec.ltn.com.tw/article/paper/1746020",
+      "source": "ltn",
+      "date": "2026-03-08",
+      "snippet": ""
+    },
+    {
+      "title": "數位憑證皮夾上線兩個多月下載破9萬次！22家單位加入擴大應用",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5358456",
+      "source": "ltn",
+      "date": "2026-03-04",
+      "snippet": ""
+    },
+    {
+      "title": "台灣大攜手AST SpaceMobile推進標準手機直連衛星",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5356283",
+      "source": "ltn",
+      "date": "2026-03-02",
+      "snippet": ""
+    },
+    {
+      "title": "7度全球5%肯定 台灣大再入選S&amp;P Global永續年鑑",
+      "url": "https://ec.ltn.com.tw/article/paper/1744475",
+      "source": "ltn",
+      "date": "2026-02-24",
+      "snippet": ""
+    },
+    {
+      "title": "台灣大1月獲利年增21％  EPS 0.46元",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5339321",
+      "source": "ltn",
+      "date": "2026-02-10",
+      "snippet": ""
+    },
+    {
+      "title": "搶馬年春節人潮  好市多宣布電動車充電大降價",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5333676",
+      "source": "ltn",
+      "date": "2026-02-05",
+      "snippet": ""
+    },
+    {
+      "title": "凱擘結盟韓國電信KT  頂級AI機上盒最快Q2強勢登台",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5311305",
+      "source": "ltn",
+      "date": "2026-01-15",
+      "snippet": ""
+    },
+    {
+      "title": "台灣大2025年EPS 4.77元 創近7年新高",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5307574",
+      "source": "ltn",
+      "date": "2026-01-12",
+      "snippet": ""
+    },
+    {
+      "title": "宏達電2025年營收29億元 上市以來新低",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5301064",
+      "source": "ltn",
+      "date": "2026-01-06",
+      "snippet": ""
+    },
+    {
+      "title": "新科技事業將成新引擎 台灣大董座：將推動獲利飛輪",
+      "url": "https://tw.stock.yahoo.com/news/%E6%96%B0%E7%A7%91%E6%8A%80%E4%BA%8B%E6%A5%AD%E5%B0%87%E6%88%90%E6%96%B0%E5%BC%95%E6%93%8E-%E5%8F%B0%E7%81%A3%E5%A4%A7%E8%91%A3%E5%BA%A7-%E5%B0%87%E6%8E%A8%E5%8B%95%E7%8D%B2%E5%88%A9%E9%A3%9B%E8%BC%AA-201000609.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "2030年營收挑戰3,500~4,000億元？台灣大：公司內部對未來之期許",
+      "url": "https://tw.stock.yahoo.com/news/2030%E5%B9%B4%E7%87%9F%E6%94%B6%E6%8C%91%E6%88%B03-500-4-000%E5%84%84%E5%85%83-%E5%8F%B0%E7%81%A3%E5%A4%A7-043000755.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "台灣大 說明工商時報相關報導",
+      "url": "https://tw.stock.yahoo.com/news/%E5%8F%B0%E7%81%A3%E5%A4%A7-%E8%AA%AA%E6%98%8E%E5%B7%A5%E5%95%86%E6%99%82%E5%A0%B1%E7%9B%B8%E9%97%9C%E5%A0%B1%E5%B0%8E-042700506.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "台灣大 啟動黃金十年布局",
+      "url": "https://tw.stock.yahoo.com/news/%E5%8F%B0%E7%81%A3%E5%A4%A7-%E5%95%9F%E5%8B%95%E9%BB%83%E9%87%91%E5%8D%81%E5%B9%B4%E5%B8%83%E5%B1%80-201000053.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "台灣大林之晨：三大引擎加速成長目標5年營收翻倍 曝海纜、衛星投資進展",
+      "url": "https://tw.stock.yahoo.com/news/%E5%8F%B0%E7%81%A3%E5%A4%A7%E6%9E%97%E4%B9%8B%E6%99%A8-%E4%B8%89%E5%A4%A7%E5%BC%95%E6%93%8E%E5%8A%A0%E9%80%9F%E6%88%90%E9%95%B7%E7%9B%AE%E6%A8%995%E5%B9%B4%E7%87%9F%E6%94%B6%E7%BF%BB%E5%80%8D-%E6%9B%9D%E6%B5%B7%E7%BA%9C-%E8%A1%9B%E6%98%9F%E6%8A%95%E8%B3%87%E9%80%B2%E5%B1%95-094126356.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "台灣大：企業事業營收年增26% 2030年目標千億",
+      "url": "https://tw.stock.yahoo.com/news/%E5%8F%B0%E7%81%A3%E5%A4%A7-%E4%BC%81%E6%A5%AD%E4%BA%8B%E6%A5%AD%E7%87%9F%E6%94%B6%E5%B9%B4%E5%A2%9E26-2030%E5%B9%B4%E7%9B%AE%E6%A8%99%E5%8D%83%E5%84%84-082449577.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "三大引擎驅動 台灣大：進入黃金十年",
+      "url": "https://tw.stock.yahoo.com/news/%E4%B8%89%E5%A4%A7%E5%BC%95%E6%93%8E%E9%A9%85%E5%8B%95-%E5%8F%B0%E7%81%A3%E5%A4%A7-%E9%80%B2%E5%85%A5%E9%BB%83%E9%87%91%E5%8D%81%E5%B9%B4-082300659.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "星國加密錢包平台攜手台哥大 布局機構級基礎建設",
+      "url": "https://tw.stock.yahoo.com/news/%E6%98%9F%E5%9C%8B%E5%8A%A0%E5%AF%86%E9%8C%A2%E5%8C%85%E5%B9%B3%E5%8F%B0%E6%94%9C%E6%89%8B%E5%8F%B0%E5%93%A5%E5%A4%A7-%E5%B8%83%E5%B1%80%E6%A9%9F%E6%A7%8B%E7%B4%9A%E5%9F%BA%E7%A4%8E%E5%BB%BA%E8%A8%AD-073102675.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "台灣大3引擎點火 2030年營收上看4000億元",
+      "url": "https://tw.stock.yahoo.com/news/%E5%8F%B0%E7%81%A3%E5%A4%A73%E5%BC%95%E6%93%8E%E9%BB%9E%E7%81%AB-2030%E5%B9%B4%E7%87%9F%E6%94%B6%E4%B8%8A%E7%9C%8B4000%E5%84%84%E5%85%83-065022883.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "台灣大攜手精誠取得Liminal台灣總代理 提供虛擬資產管理一站式服務",
+      "url": "https://tw.stock.yahoo.com/news/%E5%8F%B0%E7%81%A3%E5%A4%A7%E6%94%9C%E6%89%8B%E7%B2%BE%E8%AA%A0%E5%8F%96%E5%BE%97liminal%E5%8F%B0%E7%81%A3%E7%B8%BD%E4%BB%A3%E7%90%86-%E6%8F%90%E4%BE%9B%E8%99%9B%E6%93%AC%E8%B3%87%E7%94%A2%E7%AE%A1%E7%90%86-%E7%AB%99%E5%BC%8F%E6%9C%8D%E5%8B%99-064347721.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "三大引擎齊聚 台灣大喊黃金10年",
+      "url": "https://tw.stock.yahoo.com/news/%E4%B8%89%E5%A4%A7%E5%BC%95%E6%93%8E%E9%BD%8A%E8%81%9A-%E5%8F%B0%E7%81%A3%E5%A4%A7%E5%96%8A%E9%BB%83%E9%87%9110%E5%B9%B4-061205072.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "台灣大林之晨喊話「開啟黃金十年」 5G行動用戶營收占比衝近7成",
+      "url": "https://tw.stock.yahoo.com/news/%E5%8F%B0%E7%81%A3%E5%A4%A7%E6%9E%97%E4%B9%8B%E6%99%A8%E5%96%8A%E8%A9%B1%E3%80%8C%E9%96%8B%E5%95%9F%E9%BB%83%E9%87%91%E5%8D%81%E5%B9%B4%E3%80%8D-5g%E8%A1%8C%E5%8B%95%E7%94%A8%E6%88%B6%E7%87%9F%E6%94%B6%E5%8D%A0%E6%AF%94%E8%A1%9D%E8%BF%917%E6%88%90-054405669.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "台灣大結合Agentic AI，Q1新科技電信事業營收年增32%",
+      "url": "https://tw.stock.yahoo.com/news/%E5%8F%B0%E7%81%A3%E5%A4%A7%E7%B5%90%E5%90%88agentic-ai-q1%E6%96%B0%E7%A7%91%E6%8A%80%E9%9B%BB%E4%BF%A1%E4%BA%8B%E6%A5%AD%E7%87%9F%E6%94%B6%E5%B9%B4%E5%A2%9E32-053201299.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "台灣大拒絕虛胖，去年5G用戶貢獻營收比重68%、企業客戶營收年增26%",
+      "url": "https://tw.stock.yahoo.com/news/%E5%8F%B0%E7%81%A3%E5%A4%A7%E6%8B%92%E7%B5%95%E8%99%9B%E8%83%96-%E5%8E%BB%E5%B9%B45g%E7%94%A8%E6%88%B6%E8%B2%A2%E7%8D%BB%E7%87%9F%E6%94%B6%E6%AF%94%E9%87%8D68-%E4%BC%81%E6%A5%AD%E5%AE%A2%E6%88%B6%E7%87%9F%E6%94%B6%E5%B9%B4%E5%A2%9E26-052606945.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "台灣大哥大攜手精誠 取得新加坡虛擬資產平台Liminal台灣總代理",
+      "url": "https://tw.stock.yahoo.com/news/%E5%8F%B0%E7%81%A3%E5%A4%A7%E5%93%A5%E5%A4%A7%E6%94%9C%E6%89%8B%E7%B2%BE%E8%AA%A0-%E5%8F%96%E5%BE%97%E6%96%B0%E5%8A%A0%E5%9D%A1%E8%99%9B%E6%93%AC%E8%B3%87%E7%94%A2%E5%B9%B3%E5%8F%B0liminal%E5%8F%B0%E7%81%A3%E7%B8%BD%E4%BB%A3%E7%90%86-052259030.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "台灣大AI驅動Telco+Tech科技電信，三大引擎加速成長，Q1 EPS 1.37元",
+      "url": "https://tw.stock.yahoo.com/news/%E5%8F%B0%E7%81%A3%E5%A4%A7ai%E9%A9%85%E5%8B%95telco-tech%E7%A7%91%E6%8A%80%E9%9B%BB%E4%BF%A1-%E4%B8%89%E5%A4%A7%E5%BC%95%E6%93%8E%E5%8A%A0%E9%80%9F%E6%88%90%E9%95%B7-q1-eps-050659798.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "精誠金融攻OMO",
+      "url": "https://tw.stock.yahoo.com/news/%E7%B2%BE%E8%AA%A0%E9%87%91%E8%9E%8D%E6%94%BBomo-201000331.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "智寶揪富爸爸 打造泛娛樂商模",
+      "url": "https://tw.stock.yahoo.com/news/%E6%99%BA%E5%AF%B6%E6%8F%AA%E5%AF%8C%E7%88%B8%E7%88%B8-%E6%89%93%E9%80%A0%E6%B3%9B%E5%A8%9B%E6%A8%82%E5%95%86%E6%A8%A1-201000376.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "台灣大AI算力服務上線 今年AIDC營收拚倍數成長",
+      "url": "https://tw.stock.yahoo.com/news/%E5%8F%B0%E7%81%A3%E5%A4%A7ai%E7%AE%97%E5%8A%9B%E6%9C%8D%E5%8B%99%E4%B8%8A%E7%B7%9A-%E4%BB%8A%E5%B9%B4aidc%E7%87%9F%E6%94%B6%E6%8B%9A%E5%80%8D%E6%95%B8%E6%88%90%E9%95%B7-092756588.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    }
+  ]
+}

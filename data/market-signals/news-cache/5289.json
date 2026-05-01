@@ -1,0 +1,256 @@
+{
+  "stockCode": "5289",
+  "name": "宜鼎國際",
+  "scrapedAt": "2026-05-01T11:11:09.431Z",
+  "sourceCounts": {
+    "yahoo": 20,
+    "ltn": 15
+  },
+  "news": [
+    {
+      "title": "宜鼎取得IEC 62443-4-1國際認證  加速邊緣AI安全落地",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5293824",
+      "source": "ltn",
+      "date": "2025-12-30",
+      "snippet": ""
+    },
+    {
+      "title": "近5年新北市廠辦交易額逾1500億 汐止最熱",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4381205",
+      "source": "ltn",
+      "date": "2023-07-31",
+      "snippet": ""
+    },
+    {
+      "title": "瞄準空汙與ESG趨勢 宜鼎推工業級AI空氣感測模組",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4374779",
+      "source": "ltn",
+      "date": "2023-07-25",
+      "snippet": ""
+    },
+    {
+      "title": "宜鼎首創虛擬I/O擴充模組 高效部署各式AI應用",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4198501",
+      "source": "ltn",
+      "date": "2023-02-01",
+      "snippet": ""
+    },
+    {
+      "title": "愛地球行動吸引逾7萬人參與 宜鼎續推3年永續計畫",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4175634",
+      "source": "ltn",
+      "date": "2023-01-05",
+      "snippet": ""
+    },
+    {
+      "title": "宜鼎攜手AI策略夥伴 點燃集團成長引擎",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4027446",
+      "source": "ltn",
+      "date": "2022-08-16",
+      "snippet": ""
+    },
+    {
+      "title": "封測大廠南茂再砸125億2度投資台灣",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/3992267",
+      "source": "ltn",
+      "date": "2022-07-14",
+      "snippet": ""
+    },
+    {
+      "title": "32家廠商核准進駐宜科 第3家自建廠商開幕營運",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/3322484",
+      "source": "ltn",
+      "date": "2020-10-15",
+      "snippet": ""
+    },
+    {
+      "title": "宜鼎攜手友通 共推智慧物聯網遠端管理系統",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/3253100",
+      "source": "ltn",
+      "date": "2020-08-07",
+      "snippet": ""
+    },
+    {
+      "title": "宜鼎與微軟策略聯盟  聯手推智慧邊緣落地",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/2984467",
+      "source": "ltn",
+      "date": "2019-11-20",
+      "snippet": ""
+    },
+    {
+      "title": "宜鼎攜手微軟 研發獨家AIoT專利SSD",
+      "url": "https://ec.ltn.com.tw/article/paper/1312212",
+      "source": "ltn",
+      "date": "2019-08-21",
+      "snippet": ""
+    },
+    {
+      "title": "宜鼎與微軟攜手研發出全球首個AIoT專利SSD",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/2889986",
+      "source": "ltn",
+      "date": "2019-08-20",
+      "snippet": ""
+    },
+    {
+      "title": "宜縣府協助招商   日計將進駐宜科",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/2440810",
+      "source": "ltn",
+      "date": "2018-05-29",
+      "snippet": ""
+    },
+    {
+      "title": "台股盤前》國際股市震盪 觀察外資是否持續偏空",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/2389595",
+      "source": "ltn",
+      "date": "2018-04-09",
+      "snippet": ""
+    },
+    {
+      "title": "上半年廠房廠辦交易 新北占41%",
+      "url": "https://ec.ltn.com.tw/article/paper/715684",
+      "source": "ltn",
+      "date": "2013-09-21",
+      "snippet": ""
+    },
+    {
+      "title": "【公告】宜鼎115年第一季財務報告董事會預計召開日期為115年05月08日",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%AE%9C%E9%BC%8E115%E5%B9%B4%E7%AC%AC-%E5%AD%A3%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A%E8%91%A3%E4%BA%8B%E6%9C%83%E9%A0%90%E8%A8%88%E5%8F%AC%E9%96%8B%E6%97%A5%E6%9C%9F%E7%82%BA115%E5%B9%B405%E6%9C%8808%E6%97%A5-100841078.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "宜鼎出貨價漲量增 3月和第1季營收創新高",
+      "url": "https://tw.stock.yahoo.com/news/%E5%AE%9C%E9%BC%8E%E5%87%BA%E8%B2%A8%E5%83%B9%E6%BC%B2%E9%87%8F%E5%A2%9E-3%E6%9C%88%E5%92%8C%E7%AC%AC1%E5%AD%A3%E7%87%9F%E6%94%B6%E5%89%B5%E6%96%B0%E9%AB%98-102130245.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】宜鼎 2026年3月合併營收56.72億元 年增484.78%",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%AE%9C%E9%BC%8E-2026%E5%B9%B43%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B656-72%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E484-092225962.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "宜鼎：今年AI系統業績可望倍增 啟動設計宜蘭三廠",
+      "url": "https://tw.stock.yahoo.com/news/%E5%AE%9C%E9%BC%8E-%E4%BB%8A%E5%B9%B4ai%E7%B3%BB%E7%B5%B1%E6%A5%AD%E7%B8%BE%E5%8F%AF%E6%9C%9B%E5%80%8D%E5%A2%9E-%E5%95%9F%E5%8B%95%E8%A8%AD%E8%A8%88%E5%AE%9C%E8%98%AD%E4%B8%89%E5%BB%A0-080831699.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】宜鼎受邀參加櫃檯買賣中心舉辦之櫃買市場業績發表會",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%AE%9C%E9%BC%8E%E5%8F%97%E9%82%80%E5%8F%83%E5%8A%A0%E6%AB%83%E6%AA%AF%E8%B2%B7%E8%B3%A3%E4%B8%AD%E5%BF%83%E8%88%89%E8%BE%A6%E4%B9%8B%E6%AB%83%E8%B2%B7%E5%B8%82%E5%A0%B4%E6%A5%AD%E7%B8%BE%E7%99%BC%E8%A1%A8%E6%9C%83-101024170.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "宜鼎2月獲利年增1332% 每股純益16.22元",
+      "url": "https://tw.stock.yahoo.com/news/%E5%AE%9C%E9%BC%8E2%E6%9C%88%E7%8D%B2%E5%88%A9%E5%B9%B4%E5%A2%9E1332-%E6%AF%8F%E8%82%A1%E7%B4%94%E7%9B%8A16-22%E5%85%83-073315981.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】宜鼎有價證券近期達公佈注意交易資訊標準，故公告相關訊息，以利投資人區別暸解",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%AE%9C%E9%BC%8E%E6%9C%89%E5%83%B9%E8%AD%89%E5%88%B8%E8%BF%91%E6%9C%9F%E9%81%94%E5%85%AC%E4%BD%88%E6%B3%A8%E6%84%8F%E4%BA%A4%E6%98%93%E8%B3%87%E8%A8%8A%E6%A8%99%E6%BA%96-%E6%95%85%E5%85%AC%E5%91%8A%E7%9B%B8%E9%97%9C%E8%A8%8A%E6%81%AF-%E4%BB%A5%E5%88%A9%E6%8A%95%E8%B3%87%E4%BA%BA%E5%8D%80%E5%88%A5%E6%9A%B8%E8%A7%A3-070259890.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】宜鼎 2026年2月合併營收41.79億元 年增403.21%",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%AE%9C%E9%BC%8E-2026%E5%B9%B42%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B641-79%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E403-100309804.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】宜鼎董事會通過114年第4季合併財務報告",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%AE%9C%E9%BC%8E%E8%91%A3%E4%BA%8B%E6%9C%83%E9%80%9A%E9%81%8E114%E5%B9%B4%E7%AC%AC4%E5%AD%A3%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A-115412105.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】宜鼎董事會決議召開一一五年股東常會相關事宜",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%AE%9C%E9%BC%8E%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E5%8F%AC%E9%96%8B-%E4%BA%94%E5%B9%B4%E8%82%A1%E6%9D%B1%E5%B8%B8%E6%9C%83%E7%9B%B8%E9%97%9C%E4%BA%8B%E5%AE%9C-115410635.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】宜鼎董事會決議盈餘轉增資發行新股",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%AE%9C%E9%BC%8E%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E7%9B%88%E9%A4%98%E8%BD%89%E5%A2%9E%E8%B3%87%E7%99%BC%E8%A1%8C%E6%96%B0%E8%82%A1-115408160.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】宜鼎經董事會決議通過114年度股利分派情形",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%AE%9C%E9%BC%8E%E7%B6%93%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E9%80%9A%E9%81%8E114%E5%B9%B4%E5%BA%A6%E8%82%A1%E5%88%A9%E5%88%86%E6%B4%BE%E6%83%85%E5%BD%A2-115406000.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】宜鼎董事會決議通過發行國內第二次無擔保轉換公司債",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%AE%9C%E9%BC%8E%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E9%80%9A%E9%81%8E%E7%99%BC%E8%A1%8C%E5%9C%8B%E5%85%A7%E7%AC%AC%E4%BA%8C%E6%AC%A1%E7%84%A1%E6%93%94%E4%BF%9D%E8%BD%89%E6%8F%9B%E5%85%AC%E5%8F%B8%E5%82%B5-115404786.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "《台北股市》三星鎧俠撐腰！老手揭1家模組廠戰千金",
+      "url": "https://tw.stock.yahoo.com/news/%E5%8F%B0%E5%8C%97%E8%82%A1%E5%B8%82-%E4%B8%89%E6%98%9F%E9%8E%A7%E4%BF%A0%E6%92%90%E8%85%B0-%E8%80%81%E6%89%8B%E6%8F%AD1%E5%AE%B6%E6%A8%A1%E7%B5%84%E5%BB%A0%E6%88%B0%E5%8D%83%E9%87%91-024200303.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】宜鼎114年度財務報告董事會預計召開日期為115年02月26日",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%AE%9C%E9%BC%8E114%E5%B9%B4%E5%BA%A6%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A%E8%91%A3%E4%BA%8B%E6%9C%83%E9%A0%90%E8%A8%88%E5%8F%AC%E9%96%8B%E6%97%A5%E6%9C%9F%E7%82%BA115%E5%B9%B402%E6%9C%8826%E6%97%A5-092627401.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】宜鼎董事會通過對財團法人宜鼎國際教育基金會之捐贈",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%AE%9C%E9%BC%8E%E8%91%A3%E4%BA%8B%E6%9C%83%E9%80%9A%E9%81%8E%E5%B0%8D%E8%B2%A1%E5%9C%98%E6%B3%95%E4%BA%BA%E5%AE%9C%E9%BC%8E%E5%9C%8B%E9%9A%9B%E6%95%99%E8%82%B2%E5%9F%BA%E9%87%91%E6%9C%83%E4%B9%8B%E6%8D%90%E8%B4%88-094336740.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】宜鼎 2026年1月合併營收33.31億元 年增307.11%",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%AE%9C%E9%BC%8E-2026%E5%B9%B41%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B633-31%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E307-092258310.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "宜鼎、京元電 後市表現可期",
+      "url": "https://tw.stock.yahoo.com/news/%E5%AE%9C%E9%BC%8E-%E4%BA%AC%E5%85%83%E9%9B%BB-%E5%BE%8C%E5%B8%82%E8%A1%A8%E7%8F%BE%E5%8F%AF%E6%9C%9F-201000152.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】宜鼎 2025年12月合併營收18.13億元 年增151.56%",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%AE%9C%E9%BC%8E-2025%E5%B9%B412%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B618-13%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E151-095149816.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】宜鼎 2025年11月合併營收15.96億元 年增110.22%",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%AE%9C%E9%BC%8E-2025%E5%B9%B411%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B615-96%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E110-103125171.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    }
+  ]
+}

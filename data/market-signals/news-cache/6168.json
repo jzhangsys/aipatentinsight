@@ -1,0 +1,179 @@
+{
+  "stockCode": "6168",
+  "name": "宏齊科技",
+  "scrapedAt": "2026-05-01T11:11:29.141Z",
+  "sourceCounts": {
+    "yahoo": 19,
+    "ltn": 5
+  },
+  "news": [
+    {
+      "title": "2022 ERSO Award 彭双浪、鄭平等4位獲獎",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/3897761",
+      "source": "ltn",
+      "date": "2022-04-19",
+      "snippet": ""
+    },
+    {
+      "title": "瑞昱與牧德 獲竹科研發與產品創新雙料獎",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/3006264",
+      "source": "ltn",
+      "date": "2019-12-11",
+      "snippet": ""
+    },
+    {
+      "title": "竹科新設智慧園區創新規劃獎 由一碩科技獲獎",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/2640728",
+      "source": "ltn",
+      "date": "2018-12-12",
+      "snippet": ""
+    },
+    {
+      "title": "LED封裝廠宏齊  中國專利訴訟奪下一城",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/1416269",
+      "source": "ltn",
+      "date": "2015-08-18",
+      "snippet": ""
+    },
+    {
+      "title": "MSCI權重調整 台股增5股踢5股",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/723713",
+      "source": "ltn",
+      "date": "2012-11-15",
+      "snippet": ""
+    },
+    {
+      "title": "【公告】宏齊115年第一季財務報告董事會預計召開日期為115年05月08日",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%AE%8F%E9%BD%8A115%E5%B9%B4%E7%AC%AC-%E5%AD%A3%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A%E8%91%A3%E4%BA%8B%E6%9C%83%E9%A0%90%E8%A8%88%E5%8F%AC%E9%96%8B%E6%97%A5%E6%9C%9F%E7%82%BA115%E5%B9%B405%E6%9C%8808%E6%97%A5-060528108.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】宏齊註銷庫藏股辦理減資變更登記完成相關資料",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%AE%8F%E9%BD%8A%E8%A8%BB%E9%8A%B7%E5%BA%AB%E8%97%8F%E8%82%A1%E8%BE%A6%E7%90%86%E6%B8%9B%E8%B3%87%E8%AE%8A%E6%9B%B4%E7%99%BB%E8%A8%98%E5%AE%8C%E6%88%90%E7%9B%B8%E9%97%9C%E8%B3%87%E6%96%99-084223943.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】宏齊 2026年3月合併營收1.75億元 年增-0.94%",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%AE%8F%E9%BD%8A-2026%E5%B9%B43%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B61-75%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E-094250059.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】宏齊董事會決議不分派股利",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%AE%8F%E9%BD%8A%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E4%B8%8D%E5%88%86%E6%B4%BE%E8%82%A1%E5%88%A9-094736920.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】宏齊 2026年2月合併營收1.62億元 年增16.04%",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%AE%8F%E9%BD%8A-2026%E5%B9%B42%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B61-62%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E16-091353612.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】宏齊114年第四季財務報告董事會預計召開日期為115年03月11日",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%AE%8F%E9%BD%8A114%E5%B9%B4%E7%AC%AC%E5%9B%9B%E5%AD%A3%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A%E8%91%A3%E4%BA%8B%E6%9C%83%E9%A0%90%E8%A8%88%E5%8F%AC%E9%96%8B%E6%97%A5%E6%9C%9F%E7%82%BA115%E5%B9%B403%E6%9C%8811%E6%97%A5-072407985.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】宏齊 2026年1月合併營收1.64億元 年增8.83%",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%AE%8F%E9%BD%8A-2026%E5%B9%B41%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B61-64%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E8-083249928.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】宏齊 2025年12月合併營收1.65億元 年增9.65%",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%AE%8F%E9%BD%8A-2025%E5%B9%B412%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B61-65%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E9-072328342.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】宏齊受邀參加兆豐證券股份有限公司主辦之線上法說會",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%AE%8F%E9%BD%8A%E5%8F%97%E9%82%80%E5%8F%83%E5%8A%A0%E5%85%86%E8%B1%90%E8%AD%89%E5%88%B8%E8%82%A1%E4%BB%BD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%E4%B8%BB%E8%BE%A6%E4%B9%8B%E7%B7%9A%E4%B8%8A%E6%B3%95%E8%AA%AA%E6%9C%83-074254075.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】宏齊 2025年11月合併營收1.72億元 年增6.62%",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%AE%8F%E9%BD%8A-2025%E5%B9%B411%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B61-72%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E6-064422678.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】宏齊 2025年10月合併營收1.71億元 年增3.57%",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%AE%8F%E9%BD%8A-2025%E5%B9%B410%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B61-71%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E3-071250854.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】宏齊董事會通過民國114年第三季合併財務報告",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%AE%8F%E9%BD%8A%E8%91%A3%E4%BA%8B%E6%9C%83%E9%80%9A%E9%81%8E%E6%B0%91%E5%9C%8B114%E5%B9%B4%E7%AC%AC%E4%B8%89%E5%AD%A3%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A-094947634.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】宏齊114年第三季財務報告董事會預計召開日期為114年11月07日",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%AE%8F%E9%BD%8A114%E5%B9%B4%E7%AC%AC%E4%B8%89%E5%AD%A3%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A%E8%91%A3%E4%BA%8B%E6%9C%83%E9%A0%90%E8%A8%88%E5%8F%AC%E9%96%8B%E6%97%A5%E6%9C%9F%E7%82%BA114%E5%B9%B411%E6%9C%8807%E6%97%A5-064503715.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】宏齊 2025年9月合併營收1.84億元 年增8.59%",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%AE%8F%E9%BD%8A-2025%E5%B9%B49%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B61-84%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E8-092235757.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】宏齊 2025年8月合併營收1.87億元 年增9.83%",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%AE%8F%E9%BD%8A-2025%E5%B9%B48%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B61-87%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E9-094146845.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】係因宏齊有價證券於集中交易市場達公布注意交易資訊標準，故公布相關財務業務等重大訊息，以利投資人區別瞭解",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E4%BF%82%E5%9B%A0%E5%AE%8F%E9%BD%8A%E6%9C%89%E5%83%B9%E8%AD%89%E5%88%B8%E6%96%BC%E9%9B%86%E4%B8%AD%E4%BA%A4%E6%98%93%E5%B8%82%E5%A0%B4%E9%81%94%E5%85%AC%E5%B8%83%E6%B3%A8%E6%84%8F%E4%BA%A4%E6%98%93%E8%B3%87%E8%A8%8A%E6%A8%99%E6%BA%96-%E6%95%85%E5%85%AC%E5%B8%83%E7%9B%B8%E9%97%9C%E8%B2%A1%E5%8B%99%E6%A5%AD%E5%8B%99%E7%AD%89%E9%87%8D%E5%A4%A7%E8%A8%8A%E6%81%AF-%E4%BB%A5%E5%88%A9%E6%8A%95%E8%B3%87%E4%BA%BA%E5%8D%80%E5%88%A5%E7%9E%AD%E8%A7%A3-085824712.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】宏齊受邀參加兆豐證券股份有限公司主辦之線上法說會",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%AE%8F%E9%BD%8A%E5%8F%97%E9%82%80%E5%8F%83%E5%8A%A0%E5%85%86%E8%B1%90%E8%AD%89%E5%88%B8%E8%82%A1%E4%BB%BD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%E4%B8%BB%E8%BE%A6%E4%B9%8B%E7%B7%9A%E4%B8%8A%E6%B3%95%E8%AA%AA%E6%9C%83-100756873.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】宏齊 2025年7月合併營收1.82億元 年增-1.04%",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%AE%8F%E9%BD%8A-2025%E5%B9%B47%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B61-82%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E-011155126.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】宏齊114年第2季財務報告董事會預計召開日期為114年08月07日",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%AE%8F%E9%BD%8A114%E5%B9%B4%E7%AC%AC2%E5%AD%A3%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A%E8%91%A3%E4%BA%8B%E6%9C%83%E9%A0%90%E8%A8%88%E5%8F%AC%E9%96%8B%E6%97%A5%E6%9C%9F%E7%82%BA114%E5%B9%B408%E6%9C%8807%E6%97%A5-095706459.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    }
+  ]
+}

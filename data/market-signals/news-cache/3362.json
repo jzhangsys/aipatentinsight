@@ -1,0 +1,172 @@
+{
+  "stockCode": "3362",
+  "name": "先進光電科技",
+  "scrapedAt": "2026-05-01T11:10:25.084Z",
+  "sourceCounts": {
+    "yahoo": 20,
+    "ltn": 3
+  },
+  "news": [
+    {
+      "title": "台商回台真的不是0元！ 新建廠名單經部全都露",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/2983204",
+      "source": "ltn",
+      "date": "2019-11-19",
+      "snippet": ""
+    },
+    {
+      "title": "台商回台不憂五缺 經濟部：僅1案在找地",
+      "url": "https://ec.ltn.com.tw/article/paper/1289246",
+      "source": "ltn",
+      "date": "2019-05-17",
+      "snippet": ""
+    },
+    {
+      "title": "台商回台投資再增3家  累積金額達2884億元",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/2792688",
+      "source": "ltn",
+      "date": "2019-05-16",
+      "snippet": ""
+    },
+    {
+      "title": "【公告】先進光115年第一季財務報告董事會召開日期",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%85%88%E9%80%B2%E5%85%89115%E5%B9%B4%E7%AC%AC-%E5%AD%A3%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A%E8%91%A3%E4%BA%8B%E6%9C%83%E5%8F%AC%E9%96%8B%E6%97%A5%E6%9C%9F-082343072.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】先進光訂定115年現金增資認股基準日等相關事宜(調整繳款期間及補充公告每股發行價格暨代收及存儲價款行庫）",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%85%88%E9%80%B2%E5%85%89%E8%A8%82%E5%AE%9A115%E5%B9%B4%E7%8F%BE%E9%87%91%E5%A2%9E%E8%B3%87%E8%AA%8D%E8%82%A1%E5%9F%BA%E6%BA%96%E6%97%A5%E7%AD%89%E7%9B%B8%E9%97%9C%E4%BA%8B%E5%AE%9C-%E8%AA%BF%E6%95%B4%E7%B9%B3%E6%AC%BE%E6%9C%9F%E9%96%93%E5%8F%8A%E8%A3%9C%E5%85%85%E5%85%AC%E5%91%8A%E6%AF%8F%E8%82%A1%E7%99%BC%E8%A1%8C%E5%83%B9%E6%A0%BC%E6%9A%A8%E4%BB%A3%E6%94%B6%E5%8F%8A%E5%AD%98%E5%84%B2%E5%83%B9%E6%AC%BE%E8%A1%8C%E5%BA%AB-092356782.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】先進光與聯貸銀行團簽訂聯合授信合約",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%85%88%E9%80%B2%E5%85%89%E8%88%87%E8%81%AF%E8%B2%B8%E9%8A%80%E8%A1%8C%E5%9C%98%E7%B0%BD%E8%A8%82%E8%81%AF%E5%90%88%E6%8E%88%E4%BF%A1%E5%90%88%E7%B4%84-065252020.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】先進光 2026年3月合併營收4.16億元 年增16.58%",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%85%88%E9%80%B2%E5%85%89-2026%E5%B9%B43%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B64-16%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E16-063304459.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】先進光訂定115年現金增資認股基準日等相關事宜",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%85%88%E9%80%B2%E5%85%89%E8%A8%82%E5%AE%9A115%E5%B9%B4%E7%8F%BE%E9%87%91%E5%A2%9E%E8%B3%87%E8%AA%8D%E8%82%A1%E5%9F%BA%E6%BA%96%E6%97%A5%E7%AD%89%E7%9B%B8%E9%97%9C%E4%BA%8B%E5%AE%9C-085835672.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】先進光修訂「國內第一次有擔保轉換公司債發行及轉換辦法」之債權人異議期間屆滿公告",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%85%88%E9%80%B2%E5%85%89%E4%BF%AE%E8%A8%82-%E5%9C%8B%E5%85%A7%E7%AC%AC-%E6%AC%A1%E6%9C%89%E6%93%94%E4%BF%9D%E8%BD%89%E6%8F%9B%E5%85%AC%E5%8F%B8%E5%82%B5%E7%99%BC%E8%A1%8C%E5%8F%8A%E8%BD%89%E6%8F%9B%E8%BE%A6%E6%B3%95-%E4%B9%8B%E5%82%B5%E6%AC%8A%E4%BA%BA%E7%95%B0%E8%AD%B0%E6%9C%9F%E9%96%93%E5%B1%86%E6%BB%BF%E5%85%AC%E5%91%8A-091526968.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】先進光 2026年2月合併營收2.62億元 年增-8.72%",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%85%88%E9%80%B2%E5%85%89-2026%E5%B9%B42%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B62-62%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E-082322247.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】先進光變更股務代理機構事宜",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%85%88%E9%80%B2%E5%85%89%E8%AE%8A%E6%9B%B4%E8%82%A1%E5%8B%99%E4%BB%A3%E7%90%86%E6%A9%9F%E6%A7%8B%E4%BA%8B%E5%AE%9C-081510990.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】先進光董事會通過114年度合併財務報告",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%85%88%E9%80%B2%E5%85%89%E8%91%A3%E4%BA%8B%E6%9C%83%E9%80%9A%E9%81%8E114%E5%B9%B4%E5%BA%A6%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A-100513983.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】先進光董事會決議召開115年股東常會相關事宜",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%85%88%E9%80%B2%E5%85%89%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E5%8F%AC%E9%96%8B115%E5%B9%B4%E8%82%A1%E6%9D%B1%E5%B8%B8%E6%9C%83%E7%9B%B8%E9%97%9C%E4%BA%8B%E5%AE%9C-100511167.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】先進光董事會通過修訂「國內第一次有擔保轉換公司債發行及轉換辦法」",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%85%88%E9%80%B2%E5%85%89%E8%91%A3%E4%BA%8B%E6%9C%83%E9%80%9A%E9%81%8E%E4%BF%AE%E8%A8%82-%E5%9C%8B%E5%85%A7%E7%AC%AC-%E6%AC%A1%E6%9C%89%E6%93%94%E4%BF%9D%E8%BD%89%E6%8F%9B%E5%85%AC%E5%8F%B8%E5%82%B5%E7%99%BC%E8%A1%8C%E5%8F%8A%E8%BD%89%E6%8F%9B%E8%BE%A6%E6%B3%95-100509449.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】先進光修訂「國內第一次有擔保轉換公司債發行及轉換辦法」之債權人公告",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%85%88%E9%80%B2%E5%85%89%E4%BF%AE%E8%A8%82-%E5%9C%8B%E5%85%A7%E7%AC%AC-%E6%AC%A1%E6%9C%89%E6%93%94%E4%BF%9D%E8%BD%89%E6%8F%9B%E5%85%AC%E5%8F%B8%E5%82%B5%E7%99%BC%E8%A1%8C%E5%8F%8A%E8%BD%89%E6%8F%9B%E8%BE%A6%E6%B3%95-%E4%B9%8B%E5%82%B5%E6%AC%8A%E4%BA%BA%E5%85%AC%E5%91%8A-100507041.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】先進光114年度財務報告董事會召開日期",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%85%88%E9%80%B2%E5%85%89114%E5%B9%B4%E5%BA%A6%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A%E8%91%A3%E4%BA%8B%E6%9C%83%E5%8F%AC%E9%96%8B%E6%97%A5%E6%9C%9F-061617127.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】先進光 2026年1月合併營收4.29億元 年增17.46%",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%85%88%E9%80%B2%E5%85%89-2026%E5%B9%B41%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B64-29%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E17-071300506.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】先進光董事會決議購置機器設備等",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%85%88%E9%80%B2%E5%85%89%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E8%B3%BC%E7%BD%AE%E6%A9%9F%E5%99%A8%E8%A8%AD%E5%82%99%E7%AD%89-093939926.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】先進光董事會決議通過辦理現金增資發行新股",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%85%88%E9%80%B2%E5%85%89%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E9%80%9A%E9%81%8E%E8%BE%A6%E7%90%86%E7%8F%BE%E9%87%91%E5%A2%9E%E8%B3%87%E7%99%BC%E8%A1%8C%E6%96%B0%E8%82%A1-093630733.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】先進光 2025年12月合併營收3.71億元 年增4%",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%85%88%E9%80%B2%E5%85%89-2025%E5%B9%B412%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B63-71%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E4-071258466.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】先進光受邀參加中信證券舉辦之法人說明會",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%85%88%E9%80%B2%E5%85%89%E5%8F%97%E9%82%80%E5%8F%83%E5%8A%A0%E4%B8%AD%E4%BF%A1%E8%AD%89%E5%88%B8%E8%88%89%E8%BE%A6%E4%B9%8B%E6%B3%95%E4%BA%BA%E8%AA%AA%E6%98%8E%E6%9C%83-110954687.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】先進光 2025年11月合併營收3.37億元 年增-1.11%",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%85%88%E9%80%B2%E5%85%89-2025%E5%B9%B411%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B63-37%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E-075156363.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】先進光 2025年10月合併營收3.83億元 年增3.44%",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%85%88%E9%80%B2%E5%85%89-2025%E5%B9%B410%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B63-83%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E3-015138706.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    }
+  ]
+}

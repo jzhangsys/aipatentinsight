@@ -1,0 +1,291 @@
+{
+  "stockCode": "2303",
+  "name": "聯華電子",
+  "scrapedAt": "2026-05-01T11:09:15.671Z",
+  "sourceCounts": {
+    "yahoo": 20,
+    "ltn": 20
+  },
+  "news": [
+    {
+      "title": "上億遺產稅未繳  2筆竹科數土地遭法拍",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5399599",
+      "source": "ltn",
+      "date": "2026-04-10",
+      "snippet": ""
+    },
+    {
+      "title": "AI熱潮帶動人才需求 南科4/10聯合徵才釋出1300職缺",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5396795",
+      "source": "ltn",
+      "date": "2026-04-08",
+      "snippet": ""
+    },
+    {
+      "title": "AI、半導體領軍 南科營業額再創新高",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5366898",
+      "source": "ltn",
+      "date": "2026-03-11",
+      "snippet": ""
+    },
+    {
+      "title": "聯電去年員工分紅34.38億元  平均每人約26.45萬元",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5351431",
+      "source": "ltn",
+      "date": "2026-02-25",
+      "snippet": ""
+    },
+    {
+      "title": "欣興董事長換人！由簡山傑代理",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5342901",
+      "source": "ltn",
+      "date": "2026-02-13",
+      "snippet": ""
+    },
+    {
+      "title": "南科30周年   首頒「功在南科」給台積電等16家廠商",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5327668",
+      "source": "ltn",
+      "date": "2026-01-30",
+      "snippet": ""
+    },
+    {
+      "title": "台灣生育率全球最慘 但外媒點名「這裡」卻生產力驚人",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5166491",
+      "source": "ltn",
+      "date": "2025-09-04",
+      "snippet": ""
+    },
+    {
+      "title": "CIP渢妙一期拚2027併網 與聯電、Google等6企業簽CPPA",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5028694",
+      "source": "ltn",
+      "date": "2025-04-30",
+      "snippet": ""
+    },
+    {
+      "title": "LTN經濟通》中國成熟製程狂奔 力積電、世界先進當心了？",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4998590",
+      "source": "ltn",
+      "date": "2025-04-01",
+      "snippet": ""
+    },
+    {
+      "title": "外媒曝聯電與格羅方德洽談合併 聯電ADR飆漲",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4997763",
+      "source": "ltn",
+      "date": "2025-04-01",
+      "snippet": ""
+    },
+    {
+      "title": "桃園燈塔工廠城市論壇   聯電副總吳宗賢：AI是工具  人類才能引領改變",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4994472",
+      "source": "ltn",
+      "date": "2025-03-28",
+      "snippet": ""
+    },
+    {
+      "title": "三星代工雪上霜！最大威脅可能來自南韓政府",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4906119",
+      "source": "ltn",
+      "date": "2024-12-27",
+      "snippet": ""
+    },
+    {
+      "title": "聯電2023年再生能源占比翻倍成長  穩健推動能源轉型",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4761362",
+      "source": "ltn",
+      "date": "2024-08-07",
+      "snippet": ""
+    },
+    {
+      "title": "6月底新制勞退前10大持股 「這1檔」持股比例竟翻倍",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4755469",
+      "source": "ltn",
+      "date": "2024-08-01",
+      "snippet": ""
+    },
+    {
+      "title": "最新前5000大企業 台積電蟬聯獲利王",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4724940",
+      "source": "ltn",
+      "date": "2024-07-03",
+      "snippet": ""
+    },
+    {
+      "title": "20座半導體等重點產業人才培育基地 拚今年達標",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4592959",
+      "source": "ltn",
+      "date": "2024-02-29",
+      "snippet": ""
+    },
+    {
+      "title": "印度慢半拍 評估210億美元晶片提案",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4590354",
+      "source": "ltn",
+      "date": "2024-02-26",
+      "snippet": ""
+    },
+    {
+      "title": "聯發科董事長蔡明介榮獲最高榮譽IEEE Robert N. Noyce Medal",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4504686",
+      "source": "ltn",
+      "date": "2023-11-29",
+      "snippet": ""
+    },
+    {
+      "title": "創辦人杜俊元辭世 華泰電子今起降半旗3天",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4470687",
+      "source": "ltn",
+      "date": "2023-10-26",
+      "snippet": ""
+    },
+    {
+      "title": "印度IT人才強強滾 經部攬才團助台廠招募148人",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4460485",
+      "source": "ltn",
+      "date": "2023-10-16",
+      "snippet": ""
+    },
+    {
+      "title": "聯電ADR30日上漲0.31美元漲幅2.43%折台股82.66元",
+      "url": "https://tw.stock.yahoo.com/news/%E8%81%AF%E9%9B%BBadr30%E6%97%A5%E4%B8%8A%E6%BC%B20-31%E7%BE%8E%E5%85%83%E6%BC%B2%E5%B9%852-43-%E6%8A%98%E5%8F%B0%E8%82%A182-66%E5%85%83-222128990.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "4/29證交所鉅額交易日成交金額前20名排行",
+      "url": "https://tw.stock.yahoo.com/news/4-29%E8%AD%89%E4%BA%A4%E6%89%80%E9%89%85%E9%A1%8D%E4%BA%A4%E6%98%93%E6%97%A5%E6%88%90%E4%BA%A4%E9%87%91%E9%A1%8D%E5%89%8D20%E5%90%8D%E6%8E%92%E8%A1%8C-004200963.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "聯電ADR29日上漲1.09美元漲幅9.35%折台股80.47元",
+      "url": "https://tw.stock.yahoo.com/news/%E8%81%AF%E9%9B%BBadr29%E6%97%A5%E4%B8%8A%E6%BC%B21-09%E7%BE%8E%E5%85%83%E6%BC%B2%E5%B9%859-35-%E6%8A%98%E5%8F%B0%E8%82%A180-47%E5%85%83-214606597.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "聯電估第2季出貨增加9% 產品平均售價升3%",
+      "url": "https://tw.stock.yahoo.com/news/%E8%81%AF%E9%9B%BB%E4%BC%B0%E7%AC%AC2%E5%AD%A3%E5%87%BA%E8%B2%A8%E5%A2%9E%E5%8A%A09-%E7%94%A2%E5%93%81%E5%B9%B3%E5%9D%87%E5%94%AE%E5%83%B9%E5%8D%873-104451605.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "聯電估Q2晶圓出貨量季增高個位數百分比、美元ASP揚",
+      "url": "https://tw.stock.yahoo.com/news/%E8%81%AF%E9%9B%BB%E4%BC%B0q2%E6%99%B6%E5%9C%93%E5%87%BA%E8%B2%A8%E9%87%8F%E5%AD%A3%E5%A2%9E%E9%AB%98%E5%80%8B%E4%BD%8D%E6%95%B8%E7%99%BE%E5%88%86%E6%AF%94-%E7%BE%8E%E5%85%83asp%E6%8F%9A-101400053.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】聯電董事會決議辦理限制員工權利新股收回註銷減資事宜",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E8%81%AF%E9%9B%BB%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E8%BE%A6%E7%90%86%E9%99%90%E5%88%B6%E5%93%A1%E5%B7%A5%E6%AC%8A%E5%88%A9%E6%96%B0%E8%82%A1%E6%94%B6%E5%9B%9E%E8%A8%BB%E9%8A%B7%E6%B8%9B%E8%B3%87%E4%BA%8B%E5%AE%9C-093737356.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】聯電董事會決議通過民國115年第一季合併財務報告",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E8%81%AF%E9%9B%BB%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E9%80%9A%E9%81%8E%E6%B0%91%E5%9C%8B115%E5%B9%B4%E7%AC%AC-%E5%AD%A3%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A-093247974.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】聯電董事會通過資本預算執行案",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E8%81%AF%E9%9B%BB%E8%91%A3%E4%BA%8B%E6%9C%83%E9%80%9A%E9%81%8E%E8%B3%87%E6%9C%AC%E9%A0%90%E7%AE%97%E5%9F%B7%E8%A1%8C%E6%A1%88-093235678.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】聯電2026年第一季財務報告",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E8%81%AF%E9%9B%BB2026%E5%B9%B4%E7%AC%AC-%E5%AD%A3%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A-093130155.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】聯電董事會通過買回公司股份",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E8%81%AF%E9%9B%BB%E8%91%A3%E4%BA%8B%E6%9C%83%E9%80%9A%E9%81%8E%E8%B2%B7%E5%9B%9E%E5%85%AC%E5%8F%B8%E8%82%A1%E4%BB%BD-093128548.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "聯電 本公司2026年第一季財務報告",
+      "url": "https://tw.stock.yahoo.com/news/%E8%81%AF%E9%9B%BB-%E6%9C%AC%E5%85%AC%E5%8F%B82026%E5%B9%B4%E7%AC%AC-%E5%AD%A3%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A-091700967.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "外資上週買超1172億 加碼聯電居冠、調節友達最多",
+      "url": "https://tw.stock.yahoo.com/news/%E5%A4%96%E8%B3%87%E4%B8%8A%E9%80%B1%E8%B2%B7%E8%B6%851172%E5%84%84-%E5%8A%A0%E7%A2%BC%E8%81%AF%E9%9B%BB%E5%B1%85%E5%86%A0-%E8%AA%BF%E7%AF%80%E5%8F%8B%E9%81%94%E6%9C%80%E5%A4%9A-105326848.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "證交所4/24完成129檔新權證發行申請案審核",
+      "url": "https://tw.stock.yahoo.com/news/%E8%AD%89%E4%BA%A4%E6%89%804-24%E5%AE%8C%E6%88%90129%E6%AA%94%E6%96%B0%E6%AC%8A%E8%AD%89%E7%99%BC%E8%A1%8C%E7%94%B3%E8%AB%8B%E6%A1%88%E5%AF%A9%E6%A0%B8-013100655.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "聯電ADR24日上漲0.28美元漲幅2.33%折台股77.40元",
+      "url": "https://tw.stock.yahoo.com/news/%E8%81%AF%E9%9B%BBadr24%E6%97%A5%E4%B8%8A%E6%BC%B20-28%E7%BE%8E%E5%85%83%E6%BC%B2%E5%B9%852-33-%E6%8A%98%E5%8F%B0%E8%82%A177-40%E5%85%83-215620214.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "4/22上市融券增加排行前20名",
+      "url": "https://tw.stock.yahoo.com/news/4-22%E4%B8%8A%E5%B8%82%E8%9E%8D%E5%88%B8%E5%A2%9E%E5%8A%A0%E6%8E%92%E8%A1%8C%E5%89%8D20%E5%90%8D-233900822.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "聯電ADR22日上漲0.38美元漲幅3.08%折台股80.17元",
+      "url": "https://tw.stock.yahoo.com/news/%E8%81%AF%E9%9B%BBadr22%E6%97%A5%E4%B8%8A%E6%BC%B20-38%E7%BE%8E%E5%85%83%E6%BC%B2%E5%B9%853-08-%E6%8A%98%E5%8F%B0%E8%82%A180-17%E5%85%83-214126094.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "聯電ADR21日下跌0.31美元跌幅2.45%折台股77.65元",
+      "url": "https://tw.stock.yahoo.com/news/%E8%81%AF%E9%9B%BBadr21%E6%97%A5%E4%B8%8B%E8%B7%8C0-31%E7%BE%8E%E5%85%83%E8%B7%8C%E5%B9%852-45-%E6%8A%98%E5%8F%B0%E8%82%A177-65%E5%85%83-215136325.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】聯電115年第一季合併財務報告董事會召開日期",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E8%81%AF%E9%9B%BB115%E5%B9%B4%E7%AC%AC-%E5%AD%A3%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A%E8%91%A3%E4%BA%8B%E6%9C%83%E5%8F%AC%E9%96%8B%E6%97%A5%E6%9C%9F-084249915.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "專家點名這檔ETF太猛！同抱晶圓雙雄「台積電、聯電」",
+      "url": "https://tw.stock.yahoo.com/news/%E5%B0%88%E5%AE%B6%E9%BB%9E%E5%90%8D%E9%80%99%E6%AA%94etf%E5%A4%AA%E7%8C%9B-%E5%90%8C%E6%8A%B1%E6%99%B6%E5%9C%93%E9%9B%99%E9%9B%84-%E5%8F%B0%E7%A9%8D%E9%9B%BB-%E8%81%AF%E9%9B%BB-021438757.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "聯電ADR20日上漲0.98美元漲幅8.40%折台股79.71元",
+      "url": "https://tw.stock.yahoo.com/news/%E8%81%AF%E9%9B%BBadr20%E6%97%A5%E4%B8%8A%E6%BC%B20-98%E7%BE%8E%E5%85%83%E6%BC%B2%E5%B9%858-40-%E6%8A%98%E5%8F%B0%E8%82%A179-71%E5%85%83-235114495.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    }
+  ]
+}

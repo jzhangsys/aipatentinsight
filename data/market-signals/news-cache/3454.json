@@ -1,0 +1,151 @@
+{
+  "stockCode": "3454",
+  "name": "晶睿通訊",
+  "scrapedAt": "2026-05-01T11:10:29.699Z",
+  "sourceCounts": {
+    "yahoo": 0,
+    "ltn": 20
+  },
+  "news": [
+    {
+      "title": "台達電首季EPS創單季新高 法說前宣布砸121億元擴產",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5420134",
+      "source": "ltn",
+      "date": "2026-04-29",
+      "snippet": ""
+    },
+    {
+      "title": "資安疑慮 封殺中國產品 印度改買台美德監視器",
+      "url": "https://ec.ltn.com.tw/article/paper/1750187",
+      "source": "ltn",
+      "date": "2026-04-09",
+      "snippet": ""
+    },
+    {
+      "title": "台廠搶單奏捷！印度資安疑慮禁用中國產品  公路收費站改用台美德設備",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5397219",
+      "source": "ltn",
+      "date": "2026-04-08",
+      "snippet": ""
+    },
+    {
+      "title": "晶睿攜手Network Optix 強化AI深度搜尋功能",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5368093",
+      "source": "ltn",
+      "date": "2026-03-12",
+      "snippet": ""
+    },
+    {
+      "title": "台達電AI電源出貨續強 11月營收創同期新高",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5273921",
+      "source": "ltn",
+      "date": "2025-12-10",
+      "snippet": ""
+    },
+    {
+      "title": "焦點股》台達電：完全收購晶睿 再戰千金股",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5264809",
+      "source": "ltn",
+      "date": "2025-12-02",
+      "snippet": ""
+    },
+    {
+      "title": "台達電強化AI安防能量 每股100元完全收購晶睿",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5264377",
+      "source": "ltn",
+      "date": "2025-12-01",
+      "snippet": ""
+    },
+    {
+      "title": "晶睿4月營收8.7億元 再創同期新高",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4294866",
+      "source": "ltn",
+      "date": "2023-05-08",
+      "snippet": ""
+    },
+    {
+      "title": "晶睿5月營收月減11％ 安防打入日本百年釀酒品牌",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/3953742",
+      "source": "ltn",
+      "date": "2022-06-08",
+      "snippet": ""
+    },
+    {
+      "title": "下半年推新品鎖定北美 晶睿訂單看到明年",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/3945164",
+      "source": "ltn",
+      "date": "2022-05-31",
+      "snippet": ""
+    },
+    {
+      "title": "晶睿雙引擎帶動成長 4月營收年增52％",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/3919961",
+      "source": "ltn",
+      "date": "2022-05-09",
+      "snippet": ""
+    },
+    {
+      "title": "晶睿攜手嘉因 布局安防市場垂直發展",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/3837231",
+      "source": "ltn",
+      "date": "2022-02-22",
+      "snippet": ""
+    },
+    {
+      "title": "晶睿1月營收年增29.5％   代工及品牌事業穩健成長",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/3825952",
+      "source": "ltn",
+      "date": "2022-02-10",
+      "snippet": ""
+    },
+    {
+      "title": "晶睿上半年2階段徵才 鎖定年後轉職潮、畢業季",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/3811304",
+      "source": "ltn",
+      "date": "2022-01-24",
+      "snippet": ""
+    },
+    {
+      "title": "晶睿品牌、代工業務雙成長 去年12月營收年增25.4％",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/3794696",
+      "source": "ltn",
+      "date": "2022-01-08",
+      "snippet": ""
+    },
+    {
+      "title": "晶睿Q3受缺料衝擊  面對未來審慎樂觀",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/3771027",
+      "source": "ltn",
+      "date": "2021-12-16",
+      "snippet": ""
+    },
+    {
+      "title": "晶睿股東會：樂觀看待下半年",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/3647560",
+      "source": "ltn",
+      "date": "2021-08-23",
+      "snippet": ""
+    },
+    {
+      "title": "晶睿：NDAA轉單商機   逐步回到正常成長軌道",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/3564154",
+      "source": "ltn",
+      "date": "2021-06-09",
+      "snippet": ""
+    },
+    {
+      "title": "物料缺口第三季緩解   晶睿：營運可望逐季改善",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/3542882",
+      "source": "ltn",
+      "date": "2021-05-22",
+      "snippet": ""
+    },
+    {
+      "title": "智慧城市展  晶睿攜手台達電展出多功能5G智慧燈桿",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/3476661",
+      "source": "ltn",
+      "date": "2021-03-23",
+      "snippet": ""
+    }
+  ]
+}

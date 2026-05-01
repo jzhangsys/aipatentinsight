@@ -11,17 +11,17 @@
  *     ]
  *   }
  *
- * 來源(共 6 個):
+ * 來源(共 2 個 — debug 後留下真正能爬到 keyword-relevant 結果的):
  *  1. Yahoo 股市新聞       https://tw.stock.yahoo.com/quote/{code}.TW/news
- *  2. 自由時報財經 search   https://search.ltn.com.tw/list?keyword={name}&type=ec
- *  3. 公開資訊觀測站重大訊息 https://mops.twse.com.tw/mops/web/t05st02
- *     (POST form 取得 last 2 years)
- *  4. TechNews 科技新報    https://technews.tw/?s={name}
- *  5. DIGITIMES           https://www.digitimes.com.tw/search/result.asp?keyword={name}
- *  6. 鉅亨網 Anue          https://news.cnyes.com/search/?keyword={name}
+ *  2. 自由時報財經 search   https://search.ltn.com.tw/list?keyword={name}&type=business
  *
- * (iThome search 是 JS render,curl 拿不到結果,先不接;
- *  6 個源已經涵蓋夠多角度。)
+ * 砍掉的源(各自原因):
+ *  - iThome:search 是 JS render,拿到的是 SPA shell 沒有實際結果
+ *  - DIGITIMES:search 端點 HTTP 404(已下架)
+ *  - Anue 鉅亨:search JS render,curl 只拿到側邊欄「熱門新聞」(跟搜尋無關)
+ *  - MOPS 公開資訊觀測站:bot 防護擋 direct POST(連 cookie session 也擋)
+ *  - TechNews 科技新報:bot 偵測命中後直接回 404 "no-results" 模板
+ * 上面 5 個若要爬,需要 Playwright/Puppeteer 等 browser-based 方案,先不上。
  *
  * 設計:
  *  - 已 cache 且 24h 內的不重抓(--force 強制全抓)
@@ -67,6 +67,8 @@ async function fetchWithRetry(url, opts = {}, retries = 2) {
         ...opts,
         headers: { "User-Agent": UA, ...(opts.headers || {}) },
       });
+      // 404 通常代表「搜尋無結果」(尤其 DIGITIMES),不該當錯誤,回空字串讓 regex 跑空
+      if (res.status === 404) return "";
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
       return await res.text();
     } catch (err) {
@@ -132,10 +134,12 @@ async function scrapeYahoo(stockCode) {
     console.log(`    [yahoo] ${stockCode} fetch failed: ${e.message}`);
     return [];
   }
-  // Yahoo 新聞 list 在 <li class="js-stream-content"> 或 <a href="/news/...">
-  // 結構偶爾會變,用兩種解析法 fallback
+  // Yahoo Finance Taiwan 新聞文章 URL pattern:
+  //   https://tw.stock.yahoo.com/news/{slug}-{timestamp}.html
+  // 或相對路徑 /news/{slug}-{timestamp}.html
+  // 不要抓 /news/ 結尾的(那是分類列表頁,不是文章)
   const news = [];
-  const linkRegex = /<a[^>]+href="(\/news\/[^"]+)"[^>]*>([\s\S]*?)<\/a>/g;
+  const linkRegex = /<a[^>]+href="(?:https:\/\/tw\.stock\.yahoo\.com)?(\/news\/[^"]+\.html)"[^>]*>([\s\S]*?)<\/a>/g;
   const seen = new Set();
   let m;
   while ((m = linkRegex.exec(html)) !== null) {
@@ -148,11 +152,11 @@ async function scrapeYahoo(stockCode) {
       title: inner.split("·")[0].trim(),
       url: "https://tw.stock.yahoo.com" + path,
       source: "yahoo",
-      date: null,  // Yahoo 列表頁不一定有日期,設為 null,後續 build 時用 fallback
+      date: null,  // Yahoo 列表頁不一定有日期,設為 null
       snippet: "",
     });
   }
-  return news.slice(0, 50); // 取前 50 則
+  return news.slice(0, 50);
 }
 
 // =====================================================
@@ -167,95 +171,30 @@ async function scrapeLtn(name) {
     console.log(`    [ltn] ${name} fetch failed: ${e.message}`);
     return [];
   }
-  // 自由時報 search 結果結構:<a class="tit"...>標題</a> + <span>YYYY/MM/DD</span>
+  // 自由時報 search 結果實際結構(從 debug-sources 看到):
+  //   <a href="https://ec.ltn.com.tw/article/breakingnews/5422287"
+  //      class="tit" data-desc="..." title="台積電要小心?...">台積電要小心?...</a>
+  // href 在前 class 在後;標題在 title 屬性 + 內文。
   const news = [];
-  // 用正規表達式抓每一則 article block
-  const blockRegex = /<a[^>]+class="tit"[^>]+href="([^"]+)"[^>]*>([\s\S]*?)<\/a>[\s\S]*?<span[^>]*>([\d/]+)<\/span>/g;
+  const seen = new Set();
+  // 抓 href + title 屬性(title 屬性裡是完整標題)
+  const re = /<a[^>]+href="(https?:\/\/[^"]+ltn\.com\.tw\/[^"]+)"[^>]+class="tit"[^>]+title="([^"]+)"/g;
   let m;
-  while ((m = blockRegex.exec(html)) !== null) {
-    const link = m[1].startsWith("http") ? m[1] : "https:" + m[1];
-    const title = stripHtml(m[2]);
-    const dateRaw = m[3];
-    const date = normalizeDate(dateRaw);
-    if (!title) continue;
+  while ((m = re.exec(html)) !== null) {
+    const link = m[1];
+    const title = m[2];
+    if (!title || title.length < 5) continue;
+    if (seen.has(link)) continue;
+    seen.add(link);
     news.push({
       title,
       url: link,
       source: "ltn",
-      date,
+      date: nearbyDate(html, m.index, m[0].length),
       snippet: "",
     });
   }
   return news.slice(0, 30);
-}
-
-// =====================================================
-// 3. 公開資訊觀測站 重大訊息(POST form)
-// =====================================================
-async function scrapeMops(stockCode) {
-  const today = new Date();
-  const startDate = new Date(today.getTime() - 730 * 86400 * 1000);
-  const startROC = `${startDate.getFullYear() - 1911}/${String(startDate.getMonth() + 1).padStart(2, "0")}/${String(startDate.getDate()).padStart(2, "0")}`;
-  const endROC = `${today.getFullYear() - 1911}/${String(today.getMonth() + 1).padStart(2, "0")}/${String(today.getDate()).padStart(2, "0")}`;
-
-  const url = "https://mops.twse.com.tw/mops/web/ajax_t05st02";
-  const formData = new URLSearchParams({
-    encodeURIComponent: "1",
-    step: "1",
-    firstin: "1",
-    off: "1",
-    keyword4: "",
-    code1: "",
-    TYPEK2: "",
-    checkbtn: "",
-    queryName: "co_id",
-    inpuType: "co_id",
-    TYPEK: "all",
-    co_id: stockCode,
-    year: "",
-    month: "",
-    b_date: startROC,
-    e_date: endROC,
-  }).toString();
-
-  let html;
-  try {
-    html = await fetchWithRetry(url, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/x-www-form-urlencoded",
-        "Referer": "https://mops.twse.com.tw/mops/web/t05st02",
-      },
-      body: formData,
-    });
-  } catch (e) {
-    console.log(`    [mops] ${stockCode} fetch failed: ${e.message}`);
-    return [];
-  }
-  // MOPS 重大訊息 table:每 <tr> 包含日期 + 主旨
-  const news = [];
-  const rowRegex = /<tr[^>]*>([\s\S]*?)<\/tr>/g;
-  let m;
-  while ((m = rowRegex.exec(html)) !== null) {
-    const cells = [...m[1].matchAll(/<td[^>]*>([\s\S]*?)<\/td>/g)].map((x) => stripHtml(x[1]));
-    if (cells.length < 4) continue;
-    // 結構大致是:[發言日期, 發言時間, 主旨, ...]
-    const dateRaw = cells[0]; // 民國年/月/日 e.g. "115/01/24"
-    const subject = cells[2] || cells[3] || "";
-    if (!dateRaw || !subject || subject.length < 5) continue;
-    const ymd = dateRaw.match(/(\d{2,3})\/(\d{1,2})\/(\d{1,2})/);
-    if (!ymd) continue;
-    const ad = parseInt(ymd[1], 10) + 1911;
-    const date = `${ad}-${ymd[2].padStart(2, "0")}-${ymd[3].padStart(2, "0")}`;
-    news.push({
-      title: subject,
-      url: "https://mops.twse.com.tw/mops/web/t05st02",
-      source: "mops",
-      date,
-      snippet: "",
-    });
-  }
-  return news;
 }
 
 // =====================================================
@@ -277,131 +216,6 @@ function nearbyDate(html, idx, matchLen, windowBefore = 200, windowAfter = 800) 
 }
 
 // =====================================================
-// 4. TechNews 科技新報(WordPress)
-// =====================================================
-async function scrapeTechnews(name) {
-  const url = `https://technews.tw/?s=${encodeURIComponent(name)}`;
-  let html;
-  try {
-    html = await fetchWithRetry(url);
-  } catch (e) {
-    console.log(`    [technews] ${name} fetch failed: ${e.message}`);
-    return [];
-  }
-  const news = [];
-  const seen = new Set();
-  // WordPress 標題:<h2/h3 class="...title..."><a href="...">title</a></h2>
-  const re = /<h[23][^>]*class="[^"]*(?:entry-title|post-title|h-title)[^"]*"[^>]*>\s*<a[^>]+href="([^"]+)"[^>]*>([\s\S]*?)<\/a>/g;
-  let m;
-  while ((m = re.exec(html)) !== null) {
-    const link = m[1];
-    const title = stripHtml(m[2]);
-    if (!title || title.length < 5) continue;
-    const fullUrl = link.startsWith("http") ? link : "https://technews.tw" + link;
-    if (seen.has(fullUrl)) continue;
-    seen.add(fullUrl);
-    news.push({
-      title,
-      url: fullUrl,
-      source: "technews",
-      date: nearbyDate(html, m.index, m[0].length),
-      snippet: "",
-    });
-  }
-  return news.slice(0, 25);
-}
-
-// =====================================================
-// 5. DIGITIMES 搜尋
-// =====================================================
-async function scrapeDigitimes(name) {
-  const url = `https://www.digitimes.com.tw/search/result.asp?keyword=${encodeURIComponent(name)}`;
-  let html;
-  try {
-    html = await fetchWithRetry(url);
-  } catch (e) {
-    console.log(`    [digitimes] ${name} fetch failed: ${e.message}`);
-    return [];
-  }
-  // DIGITIMES 文章 URL pattern:
-  //   /tech/dt/n/shwnws.asp?CnlID=...&id=...
-  //   /iot/dt/n/shwnws.asp?... (其他 channel 同模式)
-  //   舊格式:/article.asp?cat=...&id=...
-  const news = [];
-  const seen = new Set();
-  const re = /<a[^>]+href="(\/[a-z]+\/(?:dt\/n\/)?shwnws\.asp\?[^"]+)"[^>]*>([^<]{8,})<\/a>/g;
-  let m;
-  while ((m = re.exec(html)) !== null) {
-    const link = m[1];
-    const title = stripHtml(m[2]);
-    if (!title || title.length < 5) continue;
-    const fullUrl = "https://www.digitimes.com.tw" + link;
-    if (seen.has(fullUrl)) continue;
-    seen.add(fullUrl);
-    news.push({
-      title,
-      url: fullUrl,
-      source: "digitimes",
-      date: nearbyDate(html, m.index, m[0].length),
-      snippet: "",
-    });
-  }
-  return news.slice(0, 25);
-}
-
-// =====================================================
-// 6. 鉅亨網 Anue 搜尋
-// =====================================================
-async function scrapeAnue(name) {
-  const url = `https://news.cnyes.com/search/?keyword=${encodeURIComponent(name)}`;
-  let html;
-  try {
-    html = await fetchWithRetry(url);
-  } catch (e) {
-    console.log(`    [anue] ${name} fetch failed: ${e.message}`);
-    return [];
-  }
-  const news = [];
-  const seen = new Set();
-  // Anue:標題在 a tag 的 title="..." 屬性,href="/news/id/數字"。
-  // 屬性順序不固定,所以兩種方向都掃。
-  const reTitleFirst = /<a[^>]+title="([^"]+)"[^>]*href="(\/news\/id\/\d+[^"]*)"/g;
-  const reHrefFirst = /<a[^>]+href="(\/news\/id\/\d+[^"]*)"[^>]*title="([^"]+)"/g;
-  let m;
-  while ((m = reTitleFirst.exec(html)) !== null) {
-    const title = m[1];
-    const link = m[2];
-    if (!title || title.length < 5) continue;
-    const fullUrl = "https://news.cnyes.com" + link;
-    if (seen.has(fullUrl)) continue;
-    seen.add(fullUrl);
-    news.push({
-      title,
-      url: fullUrl,
-      source: "anue",
-      date: nearbyDate(html, m.index, m[0].length),
-      snippet: "",
-    });
-  }
-  while ((m = reHrefFirst.exec(html)) !== null) {
-    const link = m[1];
-    const title = m[2];
-    if (!title || title.length < 5) continue;
-    const fullUrl = "https://news.cnyes.com" + link;
-    if (seen.has(fullUrl)) continue;
-    seen.add(fullUrl);
-    news.push({
-      title,
-      url: fullUrl,
-      source: "anue",
-      date: nearbyDate(html, m.index, m[0].length),
-      snippet: "",
-    });
-  }
-  return news.slice(0, 25);
-}
-
-// =====================================================
 // 主流程
 // =====================================================
 async function scrapeOne({ name, stockCode }) {
@@ -415,16 +229,12 @@ async function scrapeOne({ name, stockCode }) {
     }
   }
   console.log(`  [scrape] ${stockCode} ${name} ...`);
-  const [yahoo, ltn, mops, technews, digitimes, anue] = await Promise.all([
+  const [yahoo, ltn] = await Promise.all([
     scrapeYahoo(stockCode),
     scrapeLtn(name),
-    scrapeMops(stockCode),
-    scrapeTechnews(name),
-    scrapeDigitimes(name),
-    scrapeAnue(name),
   ]);
   // 合併 + 依 url dedupe
-  const merged = [...yahoo, ...ltn, ...mops, ...technews, ...digitimes, ...anue];
+  const merged = [...yahoo, ...ltn];
   const seen = new Set();
   const news = [];
   for (const n of merged) {
@@ -432,7 +242,6 @@ async function scrapeOne({ name, stockCode }) {
     seen.add(n.url);
     news.push(n);
   }
-  // 排序:有日期的在前 + 新→舊
   news.sort((a, b) => {
     if (!a.date && !b.date) return 0;
     if (!a.date) return 1;
@@ -446,18 +255,12 @@ async function scrapeOne({ name, stockCode }) {
     sourceCounts: {
       yahoo: yahoo.length,
       ltn: ltn.length,
-      mops: mops.length,
-      technews: technews.length,
-      digitimes: digitimes.length,
-      anue: anue.length,
     },
     news,
   };
   writeFileSync(cachePath, JSON.stringify(result, null, 2));
   console.log(
-    `    → 共 ${news.length} 則 ` +
-      `(yahoo=${yahoo.length}, ltn=${ltn.length}, mops=${mops.length}, ` +
-      `tech=${technews.length}, digi=${digitimes.length}, anue=${anue.length})`
+    `    → 共 ${news.length} 則 (yahoo=${yahoo.length}, ltn=${ltn.length})`
   );
   return result;
 }

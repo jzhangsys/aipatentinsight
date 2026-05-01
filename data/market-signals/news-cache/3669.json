@@ -1,0 +1,284 @@
+{
+  "stockCode": "3669",
+  "name": "圓展科技",
+  "scrapedAt": "2026-05-01T11:10:45.728Z",
+  "sourceCounts": {
+    "yahoo": 20,
+    "ltn": 19
+  },
+  "news": [
+    {
+      "title": "AI研發實力堅強 賴清德參訪視訊產品大廠圓展",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4493430",
+      "source": "ltn",
+      "date": "2023-11-17",
+      "snippet": ""
+    },
+    {
+      "title": "圓展醫療攝影機前進烏克蘭 協助台烏醫院遠距醫療",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4429901",
+      "source": "ltn",
+      "date": "2023-09-15",
+      "snippet": ""
+    },
+    {
+      "title": "新保推智慧照顧裝置 科技輔助長照減少人力需求",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4425101",
+      "source": "ltn",
+      "date": "2023-09-11",
+      "snippet": ""
+    },
+    {
+      "title": "協助海葵颱風受災學校 圓展提供免費維修服務",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4420941",
+      "source": "ltn",
+      "date": "2023-09-07",
+      "snippet": ""
+    },
+    {
+      "title": "圓展攜手鐵三角 強化影音整合佈局",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4310839",
+      "source": "ltn",
+      "date": "2023-05-23",
+      "snippet": ""
+    },
+    {
+      "title": "遠距商機不因解封倒退 圓展明年樂觀",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4160482",
+      "source": "ltn",
+      "date": "2022-12-20",
+      "snippet": ""
+    },
+    {
+      "title": "圓展聯手Audinate 搶攻串流影音市場",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4058168",
+      "source": "ltn",
+      "date": "2022-09-14",
+      "snippet": ""
+    },
+    {
+      "title": "圓展6月營收3.54億元 創近1年高點",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/3983308",
+      "source": "ltn",
+      "date": "2022-07-06",
+      "snippet": ""
+    },
+    {
+      "title": "圓展推首款醫療級攝影機 搶攻後疫情市場",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/3909887",
+      "source": "ltn",
+      "date": "2022-04-29",
+      "snippet": ""
+    },
+    {
+      "title": "營收中止連7月下滑 圓展盼新品添營運動能",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/3863014",
+      "source": "ltn",
+      "date": "2022-03-17",
+      "snippet": ""
+    },
+    {
+      "title": "殖利率7.4％！圓展擬配現金股利3.8元",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/3856835",
+      "source": "ltn",
+      "date": "2022-03-11",
+      "snippet": ""
+    },
+    {
+      "title": "圓展1月營收2.14億  年減40.69％",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/3825977",
+      "source": "ltn",
+      "date": "2022-02-10",
+      "snippet": ""
+    },
+    {
+      "title": "圓展2021全年營收年減9.23％ 看好視訊產品需求正向",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/3790907",
+      "source": "ltn",
+      "date": "2022-01-05",
+      "snippet": ""
+    },
+    {
+      "title": "法說前股價攻漲停！圓展明年鎖定遠距醫療應用 ODM第2季出貨",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/3778171",
+      "source": "ltn",
+      "date": "2021-12-23",
+      "snippet": ""
+    },
+    {
+      "title": "發展中小學智慧教室 圓展科技捐新北161台觸控螢幕",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/3504347",
+      "source": "ltn",
+      "date": "2021-04-19",
+      "snippet": ""
+    },
+    {
+      "title": "自動追蹤攝影機、人臉分析 Computex大秀監控技術",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/2084710",
+      "source": "ltn",
+      "date": "2017-05-31",
+      "snippet": ""
+    },
+    {
+      "title": "獲利穩定、籌碼穩 安控股強彈",
+      "url": "https://ec.ltn.com.tw/article/paper/526069",
+      "source": "ltn",
+      "date": "2011-09-22",
+      "snippet": ""
+    },
+    {
+      "title": "圓展掛牌大跌 安控股也受拖累",
+      "url": "https://ec.ltn.com.tw/article/paper/519426",
+      "source": "ltn",
+      "date": "2011-08-26",
+      "snippet": ""
+    },
+    {
+      "title": "切入網路監控 國內網通廠有優勢",
+      "url": "https://ec.ltn.com.tw/article/paper/215941",
+      "source": "ltn",
+      "date": "2008-06-01",
+      "snippet": ""
+    },
+    {
+      "title": "【公告】圓展受邀參加台新證券舉辦之法人說明會",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%9C%93%E5%B1%95%E5%8F%97%E9%82%80%E5%8F%83%E5%8A%A0%E5%8F%B0%E6%96%B0%E8%AD%89%E5%88%B8%E8%88%89%E8%BE%A6%E4%B9%8B%E6%B3%95%E4%BA%BA%E8%AA%AA%E6%98%8E%E6%9C%83-063704902.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】圓展 2026年3月合併營收2.97億元 年增29.05%",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%9C%93%E5%B1%95-2026%E5%B9%B43%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B62-97%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E29-011152539.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】圓展 2026年2月合併營收2.07億元 年增28.9%",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%9C%93%E5%B1%95-2026%E5%B9%B42%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B62-07%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E28-062315332.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】董事會決議股利分派",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E8%82%A1%E5%88%A9%E5%88%86%E6%B4%BE-103530391.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】圓展114年度合併財務報告業經董事會決議通過",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%9C%93%E5%B1%95114%E5%B9%B4%E5%BA%A6%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A%E6%A5%AD%E7%B6%93%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E9%80%9A%E9%81%8E-094524467.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】圓展114年第四季合併財務報告董事會召開日期",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%9C%93%E5%B1%95114%E5%B9%B4%E7%AC%AC%E5%9B%9B%E5%AD%A3%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A%E8%91%A3%E4%BA%8B%E6%9C%83%E5%8F%AC%E9%96%8B%E6%97%A5%E6%9C%9F-121520419.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】圓展 2026年1月合併營收1.86億元 年增10.72%",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%9C%93%E5%B1%95-2026%E5%B9%B41%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B61-86%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E10-062316037.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】係因圓展有價證券於集中交易市場達公布注意交易資訊標準，故公布相關財務業務等重大訊息，以利投資人區別瞭解。",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E4%BF%82%E5%9B%A0%E5%9C%93%E5%B1%95%E6%9C%89%E5%83%B9%E8%AD%89%E5%88%B8%E6%96%BC%E9%9B%86%E4%B8%AD%E4%BA%A4%E6%98%93%E5%B8%82%E5%A0%B4%E9%81%94%E5%85%AC%E5%B8%83%E6%B3%A8%E6%84%8F%E4%BA%A4%E6%98%93%E8%B3%87%E8%A8%8A%E6%A8%99%E6%BA%96-%E6%95%85%E5%85%AC%E5%B8%83%E7%9B%B8%E9%97%9C%E8%B2%A1%E5%8B%99%E6%A5%AD%E5%8B%99%E7%AD%89%E9%87%8D%E5%A4%A7%E8%A8%8A%E6%81%AF-%E4%BB%A5%E5%88%A9%E6%8A%95%E8%B3%87%E4%BA%BA%E5%8D%80%E5%88%A5%E7%9E%AD%E8%A7%A3-090601406.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】圓展 2025年12月合併營收2.98億元 年增53.51%",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%9C%93%E5%B1%95-2025%E5%B9%B412%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B62-98%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E53-062232731.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】圓展受邀參加元富證券舉辦之法人說明會",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%9C%93%E5%B1%95%E5%8F%97%E9%82%80%E5%8F%83%E5%8A%A0%E5%85%83%E5%AF%8C%E8%AD%89%E5%88%B8%E8%88%89%E8%BE%A6%E4%B9%8B%E6%B3%95%E4%BA%BA%E8%AA%AA%E6%98%8E%E6%9C%83-091512368.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】圓展 2025年11月合併營收1.89億元 年增0.08%",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%9C%93%E5%B1%95-2025%E5%B9%B411%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B61-89%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E0-062211769.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】圓展 2025年10月合併營收1.66億元 年增-7.15%",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%9C%93%E5%B1%95-2025%E5%B9%B410%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B61-66%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E-062142355.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】圓展114年第三季合併財務報告董事會召開日期",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%9C%93%E5%B1%95114%E5%B9%B4%E7%AC%AC%E4%B8%89%E5%AD%A3%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A%E8%91%A3%E4%BA%8B%E6%9C%83%E5%8F%AC%E9%96%8B%E6%97%A5%E6%9C%9F-142053743.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】圓展網路資安事件說明",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%9C%93%E5%B1%95%E7%B6%B2%E8%B7%AF%E8%B3%87%E5%AE%89%E4%BA%8B%E4%BB%B6%E8%AA%AA%E6%98%8E-144841507.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】圓展 2025年9月合併營收2.02億元 年增-6.26%",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%9C%93%E5%B1%95-2025%E5%B9%B49%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B62-02%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E-011117594.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】圓展 2025年8月合併營收2.33億元 年增-4.21%",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%9C%93%E5%B1%95-2025%E5%B9%B48%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B62-33%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E-062127445.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】圓展 2025年7月合併營收2億元 年增-24.85%",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%9C%93%E5%B1%95-2025%E5%B9%B47%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B62%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E-24-062202960.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】圓展受邀參加國泰證券舉辦之法人說明會",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%9C%93%E5%B1%95%E5%8F%97%E9%82%80%E5%8F%83%E5%8A%A0%E5%9C%8B%E6%B3%B0%E8%AD%89%E5%88%B8%E8%88%89%E8%BE%A6%E4%B9%8B%E6%B3%95%E4%BA%BA%E8%AA%AA%E6%98%8E%E6%9C%83-102111516.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】圓展取得同一有價證券累積達實收資本額百分之二十",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%9C%93%E5%B1%95%E5%8F%96%E5%BE%97%E5%90%8C-%E6%9C%89%E5%83%B9%E8%AD%89%E5%88%B8%E7%B4%AF%E7%A9%8D%E9%81%94%E5%AF%A6%E6%94%B6%E8%B3%87%E6%9C%AC%E9%A1%8D%E7%99%BE%E5%88%86%E4%B9%8B%E4%BA%8C%E5%8D%81-101441398.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "《業績-通網》圓展5月營收為2.31億元，年減7.20%",
+      "url": "https://tw.stock.yahoo.com/news/%E6%A5%AD%E7%B8%BE-%E9%80%9A%E7%B6%B2-%E5%9C%93%E5%B1%955%E6%9C%88%E7%87%9F%E6%94%B6%E7%82%BA2-31%E5%84%84%E5%85%83-%E5%B9%B4%E6%B8%9B7-061032946.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    }
+  ]
+}

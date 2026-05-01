@@ -1,29 +1,290 @@
 {
   "stockCode": "2412",
-  "name": "中華電",
-  "scrapedAt": "2026-05-01T10:42:11.373Z",
-  "devSeed": true,
+  "name": "中華電信",
+  "scrapedAt": "2026-05-01T11:09:41.439Z",
   "sourceCounts": {
-    "yahoo": 1,
-    "ltn": 1,
-    "mops": 0,
-    "technews": 0,
-    "digitimes": 0,
-    "anue": 0
+    "yahoo": 20,
+    "ltn": 20
   },
   "news": [
     {
-      "title": "5G 用戶滲透率提升 中華電投資加碼",
-      "url": "https://tw.stock.yahoo.com/news/2412-5G 用戶滲-2026-01-20.html",
-      "source": "yahoo",
-      "date": "2026-01-20",
+      "title": "剩6天！去年11-12月統一發票19張大獎未領  消費地點在這裡",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5420291",
+      "source": "ltn",
+      "date": "2026-04-29",
       "snippet": ""
     },
     {
-      "title": "低軌衛星合作 中華電與 SpaceX 接洽",
-      "url": "https://search.ltn.com.tw/list?keyword=%E4%B8%AD%E8%8F%AF%E9%9B%BB#2026-01-10",
+      "title": "臺馬三號北竿東引段海纜全斷  數發部啟動微波備援",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5420382",
       "source": "ltn",
-      "date": "2026-01-10",
+      "date": "2026-04-29",
+      "snippet": ""
+    },
+    {
+      "title": "ViVi PARK攜手3大停車同業啟動「月租大聯盟」",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5419540",
+      "source": "ltn",
+      "date": "2026-04-29",
+      "snippet": ""
+    },
+    {
+      "title": "中華電信、智邦、NTT展示跨國IOWN全光算力網路 應用在AI智慧城市",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5418916",
+      "source": "ltn",
+      "date": "2026-04-28",
+      "snippet": ""
+    },
+    {
+      "title": "尋找中獎人！去年11-12月千萬發票6張未領  消費地點一次看",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5416740",
+      "source": "ltn",
+      "date": "2026-04-26",
+      "snippet": ""
+    },
+    {
+      "title": "中華電信簡志誠：挖掘內部更多小金雞  將市值向上推進",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5415036",
+      "source": "ltn",
+      "date": "2026-04-24",
+      "snippet": ""
+    },
+    {
+      "title": "台股創新高486先生揭驚人數據 這類人看得到吃不到",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5412952",
+      "source": "ltn",
+      "date": "2026-04-23",
+      "snippet": ""
+    },
+    {
+      "title": "＜財經週報-低軌衛星＞決戰外太空 電信三雄衛布建全方位網",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5409241",
+      "source": "ltn",
+      "date": "2026-04-20",
+      "snippet": ""
+    },
+    {
+      "title": "〈財經週報-低軌衛星〉決戰外太空 電信三雄各擁強援",
+      "url": "https://ec.ltn.com.tw/article/paper/1751568",
+      "source": "ltn",
+      "date": "2026-04-20",
+      "snippet": ""
+    },
+    {
+      "title": "〈財經週報-低軌衛星〉低軌衛星點火 台廠太空供應鏈升空",
+      "url": "https://ec.ltn.com.tw/article/paper/1751564",
+      "source": "ltn",
+      "date": "2026-04-20",
+      "snippet": ""
+    },
+    {
+      "title": "＜財經週報-低軌衛星＞SpaceX IPO炒熱低軌衛星 台廠供應鏈不看淡",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5409231",
+      "source": "ltn",
+      "date": "2026-04-19",
+      "snippet": ""
+    },
+    {
+      "title": "3大產品線同步成長 中華資安Q1獲利創新高",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5404927",
+      "source": "ltn",
+      "date": "2026-04-15",
+      "snippet": ""
+    },
+    {
+      "title": "天能綠電營運創新高 5月掛牌上櫃",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5404705",
+      "source": "ltn",
+      "date": "2026-04-15",
+      "snippet": ""
+    },
+    {
+      "title": "產學聯手解鎖衛星應用場景 從災防通訊到智慧海事全面落地",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5404203",
+      "source": "ltn",
+      "date": "2026-04-15",
+      "snippet": ""
+    },
+    {
+      "title": "低軌衛星應援粉紅超跑  中華電信護白沙屯媽祖進香",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5398655",
+      "source": "ltn",
+      "date": "2026-04-09",
+      "snippet": ""
+    },
+    {
+      "title": "填補海纜法制真空！數發部建立破壞鑑定標準、反制灰區攻擊",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5392164",
+      "source": "ltn",
+      "date": "2026-04-03",
+      "snippet": ""
+    },
+    {
+      "title": "統一發票千萬大獎累積304張未領  這6張還在領獎期限",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5391544",
+      "source": "ltn",
+      "date": "2026-04-02",
+      "snippet": ""
+    },
+    {
+      "title": "LINE爆盜帳風暴！數發部出手補漏洞：原台星語音信箱預設密碼成破口",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5390345",
+      "source": "ltn",
+      "date": "2026-04-01",
+      "snippet": ""
+    },
+    {
+      "title": "臺馬三號海纜東引段受損 數發部：已完成訊務調度、最快7月完成修復",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5389542",
+      "source": "ltn",
+      "date": "2026-04-01",
+      "snippet": ""
+    },
+    {
+      "title": "羽球天后戴資穎跨界代言！將來銀行4週年力拚2027年轉盈",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5384324",
+      "source": "ltn",
+      "date": "2026-03-27",
+      "snippet": ""
+    },
+    {
+      "title": "中華電信ADR30日上漲0.37美元漲幅0.86%折台股137.16元",
+      "url": "https://tw.stock.yahoo.com/news/%E4%B8%AD%E8%8F%AF%E9%9B%BB%E4%BF%A1adr30%E6%97%A5%E4%B8%8A%E6%BC%B20-37%E7%BE%8E%E5%85%83%E6%BC%B2%E5%B9%850-86-%E6%8A%98%E5%8F%B0%E8%82%A1137-16%E5%85%83-222131890.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "中華電信領航資通訊業 續登公司治理評鑑Top 5％",
+      "url": "https://tw.stock.yahoo.com/news/%E4%B8%AD%E8%8F%AF%E9%9B%BB%E4%BF%A1%E9%A0%98%E8%88%AA%E8%B3%87%E9%80%9A%E8%A8%8A%E6%A5%AD-%E7%BA%8C%E7%99%BB%E5%85%AC%E5%8F%B8%E6%B2%BB%E7%90%86%E8%A9%95%E9%91%91top-5-201000040.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】代子公司中華數位文創管理顧問(股)公司公告向中華電信(股)公司取得使用權資產",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E4%BB%A3%E5%AD%90%E5%85%AC%E5%8F%B8%E4%B8%AD%E8%8F%AF%E6%95%B8%E4%BD%8D%E6%96%87%E5%89%B5%E7%AE%A1%E7%90%86%E9%A1%A7%E5%95%8F-%E8%82%A1-%E5%85%AC%E5%8F%B8%E5%85%AC%E5%91%8A%E5%90%91%E4%B8%AD%E8%8F%AF%E9%9B%BB%E4%BF%A1-%E8%82%A1-101643689.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "璞玉指數成分股「順從民意」公開了！新納營建股成大贏家",
+      "url": "https://tw.stock.yahoo.com/news/%E7%92%9E%E7%8E%89%E6%8C%87%E6%95%B8%E6%88%90%E5%88%86%E8%82%A1%E3%80%8C%E9%A0%86%E5%BE%9E%E6%B0%91%E6%84%8F%E3%80%8D%E5%85%AC%E9%96%8B%E4%BA%86%EF%BC%81%E6%96%B0%E7%B4%8D%E7%87%9F%E5%BB%BA%E8%82%A1%E6%88%90%E5%A4%A7%E8%B4%8F%E5%AE%B6-100844753.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "中電 公告115年第1季財務報告董事會召開日期為115年5月11日",
+      "url": "https://tw.stock.yahoo.com/news/%E4%B8%AD%E9%9B%BB-%E5%85%AC%E5%91%8A115%E5%B9%B4%E7%AC%AC1%E5%AD%A3%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A%E8%91%A3%E4%BA%8B%E6%9C%83%E5%8F%AC%E9%96%8B%E6%97%A5%E6%9C%9F%E7%82%BA115%E5%B9%B45%E6%9C%8811%E6%97%A5-014300358.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "中華電信ADR29日下跌0.60美元跌幅1.38%折台股135.6元",
+      "url": "https://tw.stock.yahoo.com/news/%E4%B8%AD%E8%8F%AF%E9%9B%BB%E4%BF%A1adr29%E6%97%A5%E4%B8%8B%E8%B7%8C0-60%E7%BE%8E%E5%85%83%E8%B7%8C%E5%B9%851-38-%E6%8A%98%E5%8F%B0%E8%82%A1135-6%E5%85%83-214608633.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】神腦取得中華電信股份有限公司使用權資產",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E7%A5%9E%E8%85%A6%E5%8F%96%E5%BE%97%E4%B8%AD%E8%8F%AF%E9%9B%BB%E4%BF%A1%E8%82%A1%E4%BB%BD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%E4%BD%BF%E7%94%A8%E6%AC%8A%E8%B3%87%E7%94%A2-065731815.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】崇越115年第一季財務報告董事會預計召開日期為115年05月07日",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%B4%87%E8%B6%8A115%E5%B9%B4%E7%AC%AC-%E5%AD%A3%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A%E8%91%A3%E4%BA%8B%E6%9C%83%E9%A0%90%E8%A8%88%E5%8F%AC%E9%96%8B%E6%97%A5%E6%9C%9F%E7%82%BA115%E5%B9%B405%E6%9C%8807%E6%97%A5-065626647.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "崇越 115年第一季財務報告董事會預計召開日期為115年05月07日",
+      "url": "https://tw.stock.yahoo.com/news/%E5%B4%87%E8%B6%8A-115%E5%B9%B4%E7%AC%AC-%E5%AD%A3%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A%E8%91%A3%E4%BA%8B%E6%9C%83%E9%A0%90%E8%A8%88%E5%8F%AC%E9%96%8B%E6%97%A5%E6%9C%9F%E7%82%BA115%E5%B9%B405%E6%9C%8807%E6%97%A5-064300190.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "中光電盼節能/影像產品回溫，H2動能可望轉強",
+      "url": "https://tw.stock.yahoo.com/news/%E4%B8%AD%E5%85%89%E9%9B%BB%E7%9B%BC%E7%AF%80%E8%83%BD-%E5%BD%B1%E5%83%8F%E7%94%A2%E5%93%81%E5%9B%9E%E6%BA%AB-h2%E5%8B%95%E8%83%BD%E5%8F%AF%E6%9C%9B%E8%BD%89%E5%BC%B7-023600708.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "中華電聚焦六大成長主軸；冀深化新興市場/新技術",
+      "url": "https://tw.stock.yahoo.com/news/%E4%B8%AD%E8%8F%AF%E9%9B%BB%E8%81%9A%E7%84%A6%E5%85%AD%E5%A4%A7%E6%88%90%E9%95%B7%E4%B8%BB%E8%BB%B8-%E5%86%80%E6%B7%B1%E5%8C%96%E6%96%B0%E8%88%88%E5%B8%82%E5%A0%B4-%E6%96%B0%E6%8A%80%E8%A1%93-013300684.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "中華電信ADR28日下跌0.03美元跌幅0.07%折台股137.32元",
+      "url": "https://tw.stock.yahoo.com/news/%E4%B8%AD%E8%8F%AF%E9%9B%BB%E4%BF%A1adr28%E6%97%A5%E4%B8%8B%E8%B7%8C0-03%E7%BE%8E%E5%85%83%E8%B7%8C%E5%B9%850-07-%E6%8A%98%E5%8F%B0%E8%82%A1137-32%E5%85%83-215142841.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "中光電營運承壓 H2拚復甦",
+      "url": "https://tw.stock.yahoo.com/news/%E4%B8%AD%E5%85%89%E9%9B%BB%E7%87%9F%E9%81%8B%E6%89%BF%E5%A3%93-h2%E6%8B%9A%E5%BE%A9%E7%94%A6-201000945.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "中華電信 寫全光算力網路新章",
+      "url": "https://tw.stock.yahoo.com/news/%E4%B8%AD%E8%8F%AF%E9%9B%BB%E4%BF%A1-%E5%AF%AB%E5%85%A8%E5%85%89%E7%AE%97%E5%8A%9B%E7%B6%B2%E8%B7%AF%E6%96%B0%E7%AB%A0-201000772.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "中華電信董座簡志誠釋前景 聚焦六主軸",
+      "url": "https://tw.stock.yahoo.com/news/%E4%B8%AD%E8%8F%AF%E9%9B%BB%E4%BF%A1%E8%91%A3%E5%BA%A7%E7%B0%A1%E5%BF%97%E8%AA%A0%E9%87%8B%E5%89%8D%E6%99%AF-%E8%81%9A%E7%84%A6%E5%85%AD%E4%B8%BB%E8%BB%B8-201000476.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "中華電信提供Anthropic Claude應用方案 助力企業導入生成式AI",
+      "url": "https://tw.stock.yahoo.com/news/%E4%B8%AD%E8%8F%AF%E9%9B%BB%E4%BF%A1%E6%8F%90%E4%BE%9Banthropic-claude%E6%87%89%E7%94%A8%E6%96%B9%E6%A1%88-%E5%8A%A9%E5%8A%9B%E4%BC%81%E6%A5%AD%E5%B0%8E%E5%85%A5%E7%94%9F%E6%88%90%E5%BC%8Fai-111557589.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "中華電信攜手台日夥伴 展示跨國全光算力網路",
+      "url": "https://tw.stock.yahoo.com/news/%E4%B8%AD%E8%8F%AF%E9%9B%BB%E4%BF%A1%E6%94%9C%E6%89%8B%E5%8F%B0%E6%97%A5%E5%A4%A5%E4%BC%B4-%E5%B1%95%E7%A4%BA%E8%B7%A8%E5%9C%8B%E5%85%A8%E5%85%89%E7%AE%97%E5%8A%9B%E7%B6%B2%E8%B7%AF-103921262.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】中光電第一季線上法人說明會之財務與業務資訊",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E4%B8%AD%E5%85%89%E9%9B%BB%E7%AC%AC-%E5%AD%A3%E7%B7%9A%E4%B8%8A%E6%B3%95%E4%BA%BA%E8%AA%AA%E6%98%8E%E6%9C%83%E4%B9%8B%E8%B2%A1%E5%8B%99%E8%88%87%E6%A5%AD%E5%8B%99%E8%B3%87%E8%A8%8A-083159313.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "中光電估今年營運逐季增，惟影像產品全年出貨量看審慎",
+      "url": "https://tw.stock.yahoo.com/news/%E4%B8%AD%E5%85%89%E9%9B%BB%E4%BC%B0%E4%BB%8A%E5%B9%B4%E7%87%9F%E9%81%8B%E9%80%90%E5%AD%A3%E5%A2%9E-%E6%83%9F%E5%BD%B1%E5%83%8F%E7%94%A2%E5%93%81%E5%85%A8%E5%B9%B4%E5%87%BA%E8%B2%A8%E9%87%8F%E7%9C%8B%E5%AF%A9%E6%85%8E-082600229.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "中光電 115年第1季綜合損益表，每股虧損0.30元",
+      "url": "https://tw.stock.yahoo.com/news/%E4%B8%AD%E5%85%89%E9%9B%BB-115%E5%B9%B4%E7%AC%AC1%E5%AD%A3%E7%B6%9C%E5%90%88%E6%90%8D%E7%9B%8A%E8%A1%A8-%E6%AF%8F%E8%82%A1%E8%99%A7%E6%90%8D0-30%E5%85%83-081300163.html",
+      "source": "yahoo",
+      "date": null,
       "snippet": ""
     }
   ]

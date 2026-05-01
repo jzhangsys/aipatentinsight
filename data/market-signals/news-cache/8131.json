@@ -1,0 +1,214 @@
+{
+  "stockCode": "8131",
+  "name": "福懋科技",
+  "scrapedAt": "2026-05-01T11:12:31.095Z",
+  "sourceCounts": {
+    "yahoo": 20,
+    "ltn": 9
+  },
+  "news": [
+    {
+      "title": "中國紅色供應鏈壓境  台南新世紀光電破產收場",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5231332",
+      "source": "ltn",
+      "date": "2025-11-01",
+      "snippet": ""
+    },
+    {
+      "title": "南亞科總經理：DRAM下半年有機會好一點",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4963725",
+      "source": "ltn",
+      "date": "2025-02-26",
+      "snippet": ""
+    },
+    {
+      "title": "鷹架倒塌2死3傷 福懋科技：對傷亡員工甚表哀慟",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4728518",
+      "source": "ltn",
+      "date": "2024-07-06",
+      "snippet": ""
+    },
+    {
+      "title": "中美晶子公司續興與南亞科、福懋科簽10年4億度綠電合約",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4722539",
+      "source": "ltn",
+      "date": "2024-07-01",
+      "snippet": ""
+    },
+    {
+      "title": "雲林8/27釋出800個職缺 輪班技術員月薪60K",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4036166",
+      "source": "ltn",
+      "date": "2022-08-24",
+      "snippet": ""
+    },
+    {
+      "title": "鏡電視今改選新董事 鄭優可望出任董事長",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/3871384",
+      "source": "ltn",
+      "date": "2022-03-25",
+      "snippet": ""
+    },
+    {
+      "title": "半導體封測業 掀退休潮",
+      "url": "https://ec.ltn.com.tw/article/paper/791959",
+      "source": "ltn",
+      "date": "2014-06-30",
+      "snippet": ""
+    },
+    {
+      "title": "經營之神王永慶病逝 享壽92歲",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/139418",
+      "source": "ltn",
+      "date": "2008-10-16",
+      "snippet": ""
+    },
+    {
+      "title": "旺季滿載 紡纖股織出滿堂采",
+      "url": "https://ec.ltn.com.tw/article/paper/155814",
+      "source": "ltn",
+      "date": "2007-09-20",
+      "snippet": ""
+    },
+    {
+      "title": "【公告】福懋科115年第1季財務報告董事會預計召開日期為115年5月6日",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E7%A6%8F%E6%87%8B%E7%A7%91115%E5%B9%B4%E7%AC%AC1%E5%AD%A3%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A%E8%91%A3%E4%BA%8B%E6%9C%83%E9%A0%90%E8%A8%88%E5%8F%AC%E9%96%8B%E6%97%A5%E6%9C%9F%E7%82%BA115%E5%B9%B45%E6%9C%886%E6%97%A5-061502097.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】福懋科 2026年3月合併營收10.32億元 年增33.75%",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E7%A6%8F%E6%87%8B%E7%A7%91-2026%E5%B9%B43%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B610-32%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E33-061312108.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】福懋科受邀參加國票綜合證券舉辦之法人說明會",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E7%A6%8F%E6%87%8B%E7%A7%91%E5%8F%97%E9%82%80%E5%8F%83%E5%8A%A0%E5%9C%8B%E7%A5%A8%E7%B6%9C%E5%90%88%E8%AD%89%E5%88%B8%E8%88%89%E8%BE%A6%E4%B9%8B%E6%B3%95%E4%BA%BA%E8%AA%AA%E6%98%8E%E6%9C%83-101954311.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】福懋科 2026年2月合併營收8.81億元 年增23.83%",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E7%A6%8F%E6%87%8B%E7%A7%91-2026%E5%B9%B42%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B68-81%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E23-061307810.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】福懋科董事會決議股利分派",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E7%A6%8F%E6%87%8B%E7%A7%91%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E8%82%A1%E5%88%A9%E5%88%86%E6%B4%BE-075750393.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】福懋科114年度財務報告。",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E7%A6%8F%E6%87%8B%E7%A7%91114%E5%B9%B4%E5%BA%A6%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A-075600528.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】福懋科董事會決議召開股東會相關事宜",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E7%A6%8F%E6%87%8B%E7%A7%91%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E5%8F%AC%E9%96%8B%E8%82%A1%E6%9D%B1%E6%9C%83%E7%9B%B8%E9%97%9C%E4%BA%8B%E5%AE%9C-075558094.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】福懋科114年度財務報告董事會預計召開日期為115年3月4日",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E7%A6%8F%E6%87%8B%E7%A7%91114%E5%B9%B4%E5%BA%A6%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A%E8%91%A3%E4%BA%8B%E6%9C%83%E9%A0%90%E8%A8%88%E5%8F%AC%E9%96%8B%E6%97%A5%E6%9C%9F%E7%82%BA115%E5%B9%B43%E6%9C%884%E6%97%A5-062306749.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】福懋科 2026年1月合併營收10.31億元 年增38.07%",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E7%A6%8F%E6%87%8B%E7%A7%91-2026%E5%B9%B41%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B610-31%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E38-071323795.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】係因福懋科有價證券於集中交易市場達公布注意交易資訊標準，故公布相關財務業務等重大訊息，以利投資人區別瞭解",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E4%BF%82%E5%9B%A0%E7%A6%8F%E6%87%8B%E7%A7%91%E6%9C%89%E5%83%B9%E8%AD%89%E5%88%B8%E6%96%BC%E9%9B%86%E4%B8%AD%E4%BA%A4%E6%98%93%E5%B8%82%E5%A0%B4%E9%81%94%E5%85%AC%E5%B8%83%E6%B3%A8%E6%84%8F%E4%BA%A4%E6%98%93%E8%B3%87%E8%A8%8A%E6%A8%99%E6%BA%96-%E6%95%85%E5%85%AC%E5%B8%83%E7%9B%B8%E9%97%9C%E8%B2%A1%E5%8B%99%E6%A5%AD%E5%8B%99%E7%AD%89%E9%87%8D%E5%A4%A7%E8%A8%8A%E6%81%AF-%E4%BB%A5%E5%88%A9%E6%8A%95%E8%B3%87%E4%BA%BA%E5%8D%80%E5%88%A5%E7%9E%AD%E8%A7%A3-080159289.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】福懋科 2025年12月合併營收10.55億元 年增39.38%",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E7%A6%8F%E6%87%8B%E7%A7%91-2025%E5%B9%B412%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B610-55%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E39-064236768.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "福懋科：新建5廠先進封裝 攻AI伺服器記憶體模組",
+      "url": "https://tw.stock.yahoo.com/news/%E7%A6%8F%E6%87%8B%E7%A7%91-%E6%96%B0%E5%BB%BA5%E5%BB%A0%E5%85%88%E9%80%B2%E5%B0%81%E8%A3%9D-%E6%94%BBai%E4%BC%BA%E6%9C%8D%E5%99%A8%E8%A8%98%E6%86%B6%E9%AB%94%E6%A8%A1%E7%B5%84-081132660.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】福懋科取得廠務設備",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E7%A6%8F%E6%87%8B%E7%A7%91%E5%8F%96%E5%BE%97%E5%BB%A0%E5%8B%99%E8%A8%AD%E5%82%99-065311794.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】福懋科受邀參加國票綜合證券舉辦之法人說明會",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E7%A6%8F%E6%87%8B%E7%A7%91%E5%8F%97%E9%82%80%E5%8F%83%E5%8A%A0%E5%9C%8B%E7%A5%A8%E7%B6%9C%E5%90%88%E8%AD%89%E5%88%B8%E8%88%89%E8%BE%A6%E4%B9%8B%E6%B3%95%E4%BA%BA%E8%AA%AA%E6%98%8E%E6%9C%83-093544659.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】福懋科 2025年11月合併營收10.03億元 年增46.62%",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E7%A6%8F%E6%87%8B%E7%A7%91-2025%E5%B9%B411%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B610-03%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E46-061140846.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】係因福懋科有價證券於集中交易市場達公布注意交易資訊標準，故公布相關財務業務等重大訊息，以利投資人區別瞭解",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E4%BF%82%E5%9B%A0%E7%A6%8F%E6%87%8B%E7%A7%91%E6%9C%89%E5%83%B9%E8%AD%89%E5%88%B8%E6%96%BC%E9%9B%86%E4%B8%AD%E4%BA%A4%E6%98%93%E5%B8%82%E5%A0%B4%E9%81%94%E5%85%AC%E5%B8%83%E6%B3%A8%E6%84%8F%E4%BA%A4%E6%98%93%E8%B3%87%E8%A8%8A%E6%A8%99%E6%BA%96-%E6%95%85%E5%85%AC%E5%B8%83%E7%9B%B8%E9%97%9C%E8%B2%A1%E5%8B%99%E6%A5%AD%E5%8B%99%E7%AD%89%E9%87%8D%E5%A4%A7%E8%A8%8A%E6%81%AF-%E4%BB%A5%E5%88%A9%E6%8A%95%E8%B3%87%E4%BA%BA%E5%8D%80%E5%88%A5%E7%9E%AD%E8%A7%A3-070456268.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】福懋科取得廠務設備",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E7%A6%8F%E6%87%8B%E7%A7%91%E5%8F%96%E5%BE%97%E5%BB%A0%E5%8B%99%E8%A8%AD%E5%82%99-062205352.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】福懋科 2025年10月合併營收8.96億元 年增25.51%",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E7%A6%8F%E6%87%8B%E7%A7%91-2025%E5%B9%B410%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B68-96%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E25-060149117.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】福懋科114年第3季財務報告業經董事會決議通過",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E7%A6%8F%E6%87%8B%E7%A7%91114%E5%B9%B4%E7%AC%AC3%E5%AD%A3%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A%E6%A5%AD%E7%B6%93%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E9%80%9A%E9%81%8E-063249217.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】福懋科114年第3季財務報告董事會預計召開日期為114年11月4日",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E7%A6%8F%E6%87%8B%E7%A7%91114%E5%B9%B4%E7%AC%AC3%E5%AD%A3%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A%E8%91%A3%E4%BA%8B%E6%9C%83%E9%A0%90%E8%A8%88%E5%8F%AC%E9%96%8B%E6%97%A5%E6%9C%9F%E7%82%BA114%E5%B9%B411%E6%9C%884%E6%97%A5-054917358.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    }
+  ]
+}

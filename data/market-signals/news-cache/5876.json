@@ -1,0 +1,291 @@
+{
+  "stockCode": "5876",
+  "name": "上海商業儲蓄銀行",
+  "scrapedAt": "2026-05-01T11:11:17.445Z",
+  "sourceCounts": {
+    "yahoo": 20,
+    "ltn": 20
+  },
+  "news": [
+    {
+      "title": "名單出爐！金管會核准高雄銀行進駐「高雄專區」",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5373588",
+      "source": "ltn",
+      "date": "2026-03-17",
+      "snippet": ""
+    },
+    {
+      "title": "上海商銀簽訂團體協約 新增生日假、有薪家庭照顧假",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5056965",
+      "source": "ltn",
+      "date": "2025-05-28",
+      "snippet": ""
+    },
+    {
+      "title": "大亞台中光儲100MW獲得8銀行力挺 市場估年收益10億元",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4738622",
+      "source": "ltn",
+      "date": "2024-07-16",
+      "snippet": ""
+    },
+    {
+      "title": "續受港房地產拖累 上海商銀6月罕見大虧近7億元",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4732294",
+      "source": "ltn",
+      "date": "2024-07-10",
+      "snippet": ""
+    },
+    {
+      "title": "上海商銀又被告 遭債務人在美求償3.56億美元",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4638804",
+      "source": "ltn",
+      "date": "2024-04-12",
+      "snippet": ""
+    },
+    {
+      "title": "香港不動產市場惡化增提57億元呆帳 上海商銀2023年EPS3.05元",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4547174",
+      "source": "ltn",
+      "date": "2024-01-09",
+      "snippet": ""
+    },
+    {
+      "title": "上海銀股東會通過現金股利1.8元 行員7月再加薪最高4％",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4332104",
+      "source": "ltn",
+      "date": "2023-06-13",
+      "snippet": ""
+    },
+    {
+      "title": "楊金龍：央行專案融通助30.7萬中小企取得逾5千萬資金",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4041803",
+      "source": "ltn",
+      "date": "2022-08-30",
+      "snippet": ""
+    },
+    {
+      "title": "綠色金融標竿風場 中能奪最佳專案融資",
+      "url": "https://ec.ltn.com.tw/article/paper/1523202",
+      "source": "ltn",
+      "date": "2022-06-16",
+      "snippet": ""
+    },
+    {
+      "title": "北市參與危老土地累積逾10萬坪 相當近1.27個大安森林公園",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/3696641",
+      "source": "ltn",
+      "date": "2021-10-07",
+      "snippet": ""
+    },
+    {
+      "title": "疫情衝擊社福營運  上海商銀送愛助八里天主教安老院",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/3641489",
+      "source": "ltn",
+      "date": "2021-08-17",
+      "snippet": ""
+    },
+    {
+      "title": "上海銀 人瑞董事長榮鴻慶 交棒",
+      "url": "https://ec.ltn.com.tw/article/paper/1458989",
+      "source": "ltn",
+      "date": "2021-07-06",
+      "snippet": ""
+    },
+    {
+      "title": "上海商銀董事長榮鴻慶交棒 常董李慶言接任董座",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/3592831",
+      "source": "ltn",
+      "date": "2021-07-05",
+      "snippet": ""
+    },
+    {
+      "title": "清朝存在的龍雲寺核准危老   締造全國人瑞級個案紀錄",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/3574389",
+      "source": "ltn",
+      "date": "2021-06-18",
+      "snippet": ""
+    },
+    {
+      "title": "挺醫護攜手抗疫 上海商銀捐贈馬偕紀念醫院防護衣",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/3562085",
+      "source": "ltn",
+      "date": "2021-06-08",
+      "snippet": ""
+    },
+    {
+      "title": "台鐵出軌》 上海商銀與上海商銀文教基金會共同捐款600萬元",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/3491087",
+      "source": "ltn",
+      "date": "2021-04-06",
+      "snippet": ""
+    },
+    {
+      "title": "上海商銀總經理交棒 新任總經理林志宏上任",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/3400839",
+      "source": "ltn",
+      "date": "2021-01-04",
+      "snippet": ""
+    },
+    {
+      "title": "無懼疫情 上海商銀中國無錫分行今開業",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/3377463",
+      "source": "ltn",
+      "date": "2020-12-10",
+      "snippet": ""
+    },
+    {
+      "title": "新光銀主辦中石化聯貸案 8家銀行參貸",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/3091197",
+      "source": "ltn",
+      "date": "2020-03-06",
+      "snippet": ""
+    },
+    {
+      "title": "國銀首例 上海商銀完成全國首筆金融區塊鏈函證回覆",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/2556032",
+      "source": "ltn",
+      "date": "2018-09-19",
+      "snippet": ""
+    },
+    {
+      "title": "【公告】代子公司上海商業銀行有限公司公告簽訂物業翻新工程承攬契約",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E4%BB%A3%E5%AD%90%E5%85%AC%E5%8F%B8%E4%B8%8A%E6%B5%B7%E5%95%86%E6%A5%AD%E9%8A%80%E8%A1%8C%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%E5%85%AC%E5%91%8A%E7%B0%BD%E8%A8%82%E7%89%A9%E6%A5%AD%E7%BF%BB%E6%96%B0%E5%B7%A5%E7%A8%8B%E6%89%BF%E6%94%AC%E5%A5%91%E7%B4%84-085949058.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】授信資產之債權處分",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%8E%88%E4%BF%A1%E8%B3%87%E7%94%A2%E4%B9%8B%E5%82%B5%E6%AC%8A%E8%99%95%E5%88%86-093740477.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】代子公司上海商業銀行有限公司公告授信資產之債權處分",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E4%BB%A3%E5%AD%90%E5%85%AC%E5%8F%B8%E4%B8%8A%E6%B5%B7%E5%95%86%E6%A5%AD%E9%8A%80%E8%A1%8C%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%E5%85%AC%E5%91%8A%E6%8E%88%E4%BF%A1%E8%B3%87%E7%94%A2%E4%B9%8B%E5%82%B5%E6%AC%8A%E8%99%95%E5%88%86-093738096.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】上海商銀 2026年3月合併營收46.12億元 年增-3.23%",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E4%B8%8A%E6%B5%B7%E5%95%86%E9%8A%80-2026%E5%B9%B43%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B646-12%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E-100357408.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】上海商銀115年3月份合併自結損益",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E4%B8%8A%E6%B5%B7%E5%95%86%E9%8A%80115%E5%B9%B43%E6%9C%88%E4%BB%BD%E5%90%88%E4%BD%B5%E8%87%AA%E7%B5%90%E6%90%8D%E7%9B%8A-094617144.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】上海商銀代子公司上海商業銀行有限公司公告委任行政總裁",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E4%B8%8A%E6%B5%B7%E5%95%86%E9%8A%80%E4%BB%A3%E5%AD%90%E5%85%AC%E5%8F%B8%E4%B8%8A%E6%B5%B7%E5%95%86%E6%A5%AD%E9%8A%80%E8%A1%8C%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%E5%85%AC%E5%91%8A%E5%A7%94%E4%BB%BB%E8%A1%8C%E6%94%BF%E7%B8%BD%E8%A3%81-104215351.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】上海商銀代子公司上海商業銀行有限公司公告委任執行董事",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E4%B8%8A%E6%B5%B7%E5%95%86%E9%8A%80%E4%BB%A3%E5%AD%90%E5%85%AC%E5%8F%B8%E4%B8%8A%E6%B5%B7%E5%95%86%E6%A5%AD%E9%8A%80%E8%A1%8C%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%E5%85%AC%E5%91%8A%E5%A7%94%E4%BB%BB%E5%9F%B7%E8%A1%8C%E8%91%A3%E4%BA%8B-104213114.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】上海商銀代子公司上海商業銀行有限公司公告獨立非執行董事辭任事宜",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E4%B8%8A%E6%B5%B7%E5%95%86%E9%8A%80%E4%BB%A3%E5%AD%90%E5%85%AC%E5%8F%B8%E4%B8%8A%E6%B5%B7%E5%95%86%E6%A5%AD%E9%8A%80%E8%A1%8C%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%E5%85%AC%E5%91%8A%E7%8D%A8%E7%AB%8B%E9%9D%9E%E5%9F%B7%E8%A1%8C%E8%91%A3%E4%BA%8B%E8%BE%AD%E4%BB%BB%E4%BA%8B%E5%AE%9C-104211291.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】董事會決議股利分派",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E8%82%A1%E5%88%A9%E5%88%86%E6%B4%BE-101723824.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】處分使用權資產1筆予關係人",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E8%99%95%E5%88%86%E4%BD%BF%E7%94%A8%E6%AC%8A%E8%B3%87%E7%94%A21%E7%AD%86%E4%BA%88%E9%97%9C%E4%BF%82%E4%BA%BA-101721080.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】柬埔寨主管機關核准本行子公司AMK Microfinance Institution Plc改制為商業銀行AMK BANK PLC",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%9F%AC%E5%9F%94%E5%AF%A8%E4%B8%BB%E7%AE%A1%E6%A9%9F%E9%97%9C%E6%A0%B8%E5%87%86%E6%9C%AC%E8%A1%8C%E5%AD%90%E5%85%AC%E5%8F%B8amk-microfinance-institution-plc%E6%94%B9%E5%88%B6%E7%82%BA%E5%95%86%E6%A5%AD%E9%8A%80%E8%A1%8Camk-094218445.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】上海商銀115年2月份合併自結損益",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E4%B8%8A%E6%B5%B7%E5%95%86%E9%8A%80115%E5%B9%B42%E6%9C%88%E4%BB%BD%E5%90%88%E4%BD%B5%E8%87%AA%E7%B5%90%E6%90%8D%E7%9B%8A-095349431.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】上海商銀 2026年2月合併營收42.3億元 年增0.6%",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E4%B8%8A%E6%B5%B7%E5%95%86%E9%8A%80-2026%E5%B9%B42%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B642-3%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E0-094351093.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "中信金 代子公司中國信託商業銀行公告授信資產之轉讓",
+      "url": "https://tw.stock.yahoo.com/news/%E4%B8%AD%E4%BF%A1%E9%87%91-%E4%BB%A3%E5%AD%90%E5%85%AC%E5%8F%B8%E4%B8%AD%E5%9C%8B%E4%BF%A1%E8%A8%97%E5%95%86%E6%A5%AD%E9%8A%80%E8%A1%8C%E5%85%AC%E5%91%8A%E6%8E%88%E4%BF%A1%E8%B3%87%E7%94%A2%E4%B9%8B%E8%BD%89%E8%AE%93-094300795.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】上海商銀代子公司上海商業銀行有限公司公告簽訂物業翻新工程承攬契約",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E4%B8%8A%E6%B5%B7%E5%95%86%E9%8A%80%E4%BB%A3%E5%AD%90%E5%85%AC%E5%8F%B8%E4%B8%8A%E6%B5%B7%E5%95%86%E6%A5%AD%E9%8A%80%E8%A1%8C%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%E5%85%AC%E5%91%8A%E7%B0%BD%E8%A8%82%E7%89%A9%E6%A5%AD%E7%BF%BB%E6%96%B0%E5%B7%A5%E7%A8%8B%E6%89%BF%E6%94%AC%E5%A5%91%E7%B4%84-092520046.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】上海商銀機房電力供應中斷事件說明",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E4%B8%8A%E6%B5%B7%E5%95%86%E9%8A%80%E6%A9%9F%E6%88%BF%E9%9B%BB%E5%8A%9B%E4%BE%9B%E6%87%89%E4%B8%AD%E6%96%B7%E4%BA%8B%E4%BB%B6%E8%AA%AA%E6%98%8E-045134216.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】上海商銀115年1月份合併自結損益",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E4%B8%8A%E6%B5%B7%E5%95%86%E9%8A%80115%E5%B9%B41%E6%9C%88%E4%BB%BD%E5%90%88%E4%BD%B5%E8%87%AA%E7%B5%90%E6%90%8D%E7%9B%8A-092904096.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】上海商銀 2026年1月合併營收49.18億元 年增0.94%",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E4%B8%8A%E6%B5%B7%E5%95%86%E9%8A%80-2026%E5%B9%B41%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B649-18%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E0-082316434.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】上海商銀代子公司上海商業銀行有限公司公告修正行政總裁辭任事宜(修正115年2月3日重訊)",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E4%B8%8A%E6%B5%B7%E5%95%86%E9%8A%80%E4%BB%A3%E5%AD%90%E5%85%AC%E5%8F%B8%E4%B8%8A%E6%B5%B7%E5%95%86%E6%A5%AD%E9%8A%80%E8%A1%8C%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%E5%85%AC%E5%91%8A%E4%BF%AE%E6%AD%A3%E8%A1%8C%E6%94%BF%E7%B8%BD%E8%A3%81%E8%BE%AD%E4%BB%BB%E4%BA%8B%E5%AE%9C-%E4%BF%AE%E6%AD%A3115%E5%B9%B42%E6%9C%883%E6%97%A5%E9%87%8D%E8%A8%8A-093210156.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】上海商銀代子公司上海商業銀行有限公司公告行政總裁辭任事宜",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E4%B8%8A%E6%B5%B7%E5%95%86%E9%8A%80%E4%BB%A3%E5%AD%90%E5%85%AC%E5%8F%B8%E4%B8%8A%E6%B5%B7%E5%95%86%E6%A5%AD%E9%8A%80%E8%A1%8C%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%E5%85%AC%E5%91%8A%E8%A1%8C%E6%94%BF%E7%B8%BD%E8%A3%81%E8%BE%AD%E4%BB%BB%E4%BA%8B%E5%AE%9C-104939109.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    }
+  ]
+}

@@ -1,0 +1,270 @@
+{
+  "stockCode": "3224",
+  "name": "三顧",
+  "scrapedAt": "2026-05-01T11:10:16.366Z",
+  "sourceCounts": {
+    "yahoo": 17,
+    "ltn": 20
+  },
+  "news": [
+    {
+      "title": "AI開店時代來了！無人商店、自動炒菜機現身台中加盟展",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5422225",
+      "source": "ltn",
+      "date": "2026-05-01",
+      "snippet": ""
+    },
+    {
+      "title": "「西門町地王」涉樂迦內線交易 吳振隆100萬交保",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5317922",
+      "source": "ltn",
+      "date": "2026-01-22",
+      "snippet": ""
+    },
+    {
+      "title": "財經青紅燈》國發基金毫不掩飾",
+      "url": "https://ec.ltn.com.tw/article/paper/1725292",
+      "source": "ltn",
+      "date": "2025-09-23",
+      "snippet": ""
+    },
+    {
+      "title": "張忠謀自曝與川普曾是鄰居 絕非住「茅廬」",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4907970",
+      "source": "ltn",
+      "date": "2024-12-30",
+      "snippet": ""
+    },
+    {
+      "title": "生技界美魔女楊智惠辭董事  新任超基因董監事大有來頭",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4399792",
+      "source": "ltn",
+      "date": "2023-08-17",
+      "snippet": ""
+    },
+    {
+      "title": "樂迦與日廠Minaris結盟 CDMO業務跨出台灣",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4397960",
+      "source": "ltn",
+      "date": "2023-08-16",
+      "snippet": ""
+    },
+    {
+      "title": "三顧細胞治療廠房取得GMP認證 國內第1家",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4396268",
+      "source": "ltn",
+      "date": "2023-08-14",
+      "snippet": ""
+    },
+    {
+      "title": "台日合作技術險洩中國？三顧未回應",
+      "url": "https://ec.ltn.com.tw/article/paper/1594502",
+      "source": "ltn",
+      "date": "2023-07-18",
+      "snippet": ""
+    },
+    {
+      "title": "高雄大型連鎖加盟展登場 預估創造4000個就業機會",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4277333",
+      "source": "ltn",
+      "date": "2023-04-21",
+      "snippet": ""
+    },
+    {
+      "title": "《科技與創新》擘畫資電藍圖 臺灣科技業關鍵推手王伯元",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4129632",
+      "source": "ltn",
+      "date": "2022-11-20",
+      "snippet": ""
+    },
+    {
+      "title": "三顧攜手國衛院 加速細胞治療查驗登記",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/3741401",
+      "source": "ltn",
+      "date": "2021-11-18",
+      "snippet": ""
+    },
+    {
+      "title": "〈財經週報-熱門族群〉生技展題材支撐 生技股行情旺",
+      "url": "https://ec.ltn.com.tw/article/paper/1482057",
+      "source": "ltn",
+      "date": "2021-11-01",
+      "snippet": ""
+    },
+    {
+      "title": "國發基金繼續加碼三顧 三顧生醫部門9月營收創新高",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/3696540",
+      "source": "ltn",
+      "date": "2021-10-07",
+      "snippet": ""
+    },
+    {
+      "title": "永豐餘工紙籌組國內首檔綠色金融聯貸案",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/3612738",
+      "source": "ltn",
+      "date": "2021-07-22",
+      "snippet": ""
+    },
+    {
+      "title": "多家企業捐贈上百座負壓隔離艙 未來3週陸續抵台",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/3565849",
+      "source": "ltn",
+      "date": "2021-06-10",
+      "snippet": ""
+    },
+    {
+      "title": "亞洲最大細胞製造工廠樂迦今成軍 投資20億元竹北蓋新廠",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/3552679",
+      "source": "ltn",
+      "date": "2021-05-31",
+      "snippet": ""
+    },
+    {
+      "title": "〈財經週報-打造護國群山〉四大產業國家隊成形 產學提醒分散資源",
+      "url": "https://ec.ltn.com.tw/article/paper/1435636",
+      "source": "ltn",
+      "date": "2021-03-08",
+      "snippet": ""
+    },
+    {
+      "title": "日盛金提三顧慮 富邦金稱創三贏",
+      "url": "https://ec.ltn.com.tw/article/paper/1423936",
+      "source": "ltn",
+      "date": "2021-01-07",
+      "snippet": ""
+    },
+    {
+      "title": "義大、三顧膝軟骨細胞層片治療 半年完成17位病患",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/3373761",
+      "source": "ltn",
+      "date": "2020-12-07",
+      "snippet": ""
+    },
+    {
+      "title": "衛福部核准三顧 以自體細胞治療皮膚缺陷",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/3245124",
+      "source": "ltn",
+      "date": "2020-07-30",
+      "snippet": ""
+    },
+    {
+      "title": "【公告】更正三顧iXBRL資訊平台114年第4季合併財務報告附表揭露資訊",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%9B%B4%E6%AD%A3%E4%B8%89%E9%A1%A7ixbrl%E8%B3%87%E8%A8%8A%E5%B9%B3%E5%8F%B0114%E5%B9%B4%E7%AC%AC4%E5%AD%A3%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A%E9%99%84%E8%A1%A8%E6%8F%AD%E9%9C%B2%E8%B3%87%E8%A8%8A-094839187.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】三顧 2026年3月合併營收1.6億元 年增17.77%",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E4%B8%89%E9%A1%A7-2026%E5%B9%B43%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B61-6%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E17-095215847.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】三顧取消透過轉投資第三地區現有公司投資大陸公司之相關事宜(原始公告115/03/12)",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E4%B8%89%E9%A1%A7%E5%8F%96%E6%B6%88%E9%80%8F%E9%81%8E%E8%BD%89%E6%8A%95%E8%B3%87%E7%AC%AC%E4%B8%89%E5%9C%B0%E5%8D%80%E7%8F%BE%E6%9C%89%E5%85%AC%E5%8F%B8%E6%8A%95%E8%B3%87%E5%A4%A7%E9%99%B8%E5%85%AC%E5%8F%B8%E4%B9%8B%E7%9B%B8%E9%97%9C%E4%BA%8B%E5%AE%9C-%E5%8E%9F%E5%A7%8B%E5%85%AC%E5%91%8A115-03-12-101233318.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】董事會決議修訂114年發行員工認股權憑證發行及認股辦法部分條文",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E4%BF%AE%E8%A8%82114%E5%B9%B4%E7%99%BC%E8%A1%8C%E5%93%A1%E5%B7%A5%E8%AA%8D%E8%82%A1%E6%AC%8A%E6%86%91%E8%AD%89%E7%99%BC%E8%A1%8C%E5%8F%8A%E8%AA%8D%E8%82%A1%E8%BE%A6%E6%B3%95%E9%83%A8%E5%88%86%E6%A2%9D%E6%96%87-113555905.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】三顧董事會決議透過轉投資第三地區現有投資公司投資大陸公司之相關事宜",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E4%B8%89%E9%A1%A7%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E9%80%8F%E9%81%8E%E8%BD%89%E6%8A%95%E8%B3%87%E7%AC%AC%E4%B8%89%E5%9C%B0%E5%8D%80%E7%8F%BE%E6%9C%89%E6%8A%95%E8%B3%87%E5%85%AC%E5%8F%B8%E6%8A%95%E8%B3%87%E5%A4%A7%E9%99%B8%E5%85%AC%E5%8F%B8%E4%B9%8B%E7%9B%B8%E9%97%9C%E4%BA%8B%E5%AE%9C-113553540.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】三顧董事會決議股利分派",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E4%B8%89%E9%A1%A7%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E8%82%A1%E5%88%A9%E5%88%86%E6%B4%BE-101000189.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】三顧 2026年2月合併營收8867.5萬元 年增-35.52%",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E4%B8%89%E9%A1%A7-2026%E5%B9%B42%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B68867-5%E8%90%AC%E5%85%83-%E5%B9%B4%E5%A2%9E-082312867.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】三顧 2026年1月合併營收1.61億元 年增42.48%",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E4%B8%89%E9%A1%A7-2026%E5%B9%B41%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B61-61%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E42-093135581.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】三顧 2025年12月合併營收1.18億元 年增13.42%",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E4%B8%89%E9%A1%A7-2025%E5%B9%B412%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B61-18%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E13-092232502.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】三顧受邀參加康和證券舉辦之法人說明會",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E4%B8%89%E9%A1%A7%E5%8F%97%E9%82%80%E5%8F%83%E5%8A%A0%E5%BA%B7%E5%92%8C%E8%AD%89%E5%88%B8%E8%88%89%E8%BE%A6%E4%B9%8B%E6%B3%95%E4%BA%BA%E8%AA%AA%E6%98%8E%E6%9C%83-093817767.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】三顧 2025年11月合併營收1.01億元 年增-16.36%",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E4%B8%89%E9%A1%A7-2025%E5%B9%B411%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B61-01%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E-071156909.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】三顧 2025年10月合併營收1.45億元 年增32.41%",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E4%B8%89%E9%A1%A7-2025%E5%B9%B410%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B61-45%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E32-093153564.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】三顧配合檢調單位進行調查",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E4%B8%89%E9%A1%A7%E9%85%8D%E5%90%88%E6%AA%A2%E8%AA%BF%E5%96%AE%E4%BD%8D%E9%80%B2%E8%A1%8C%E8%AA%BF%E6%9F%A5-093423635.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】三顧 2025年9月合併營收1.36億元 年增6.3%",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E4%B8%89%E9%A1%A7-2025%E5%B9%B49%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B61-36%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E6-082149060.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】三顧 2025年7月合併營收1.34億元 年增-8.65%",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E4%B8%89%E9%A1%A7-2025%E5%B9%B47%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B61-34%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E-083219456.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "《業績-電通》三顧5月營收為1.22億元，年增8.60%",
+      "url": "https://tw.stock.yahoo.com/news/%E6%A5%AD%E7%B8%BE-%E9%9B%BB%E9%80%9A-%E4%B8%89%E9%A1%A75%E6%9C%88%E7%87%9F%E6%94%B6%E7%82%BA1-22%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E8-091849872.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "《業績-電通》三顧4月營收為1.40億元，年增31.76%",
+      "url": "https://tw.stock.yahoo.com/news/%E6%A5%AD%E7%B8%BE-%E9%9B%BB%E9%80%9A-%E4%B8%89%E9%A1%A74%E6%9C%88%E7%87%9F%E6%94%B6%E7%82%BA1-40%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E31-085107278.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    }
+  ]
+}

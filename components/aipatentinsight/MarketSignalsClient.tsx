@@ -30,14 +30,7 @@ import { loadSnapshotIndex } from "@/lib/aipatentinsight/insightsData";
 type SampleNews = {
   title: string;
   url: string;
-  source:
-    | "yahoo"
-    | "ltn"
-    | "mops"
-    | "technews"
-    | "digitimes"
-    | "anue"
-    | string;
+  source: "yahoo" | "ltn" | string;
   date: string | null;
 };
 
@@ -83,10 +76,6 @@ function formatGeneratedAt(iso?: string): string {
 const SOURCE_LABEL: Record<string, string> = {
   yahoo: "Yahoo 股市",
   ltn: "自由財經",
-  mops: "公開資訊觀測站",
-  technews: "TechNews",
-  digitimes: "DIGITIMES",
-  anue: "鉅亨網",
 };
 
 export default function MarketSignalsClient() {

@@ -1,22 +1,171 @@
 {
   "stockCode": "3163",
-  "name": "波若威",
-  "scrapedAt": "2026-05-01T10:42:11.371Z",
-  "devSeed": true,
+  "name": "波若威科技",
+  "scrapedAt": "2026-05-01T11:10:14.210Z",
   "sourceCounts": {
-    "yahoo": 1,
-    "ltn": 0,
-    "mops": 0,
-    "technews": 0,
-    "digitimes": 0,
-    "anue": 0
+    "yahoo": 20,
+    "ltn": 3
   },
   "news": [
     {
-      "title": "波若威 矽光子被動元件出貨增 客戶遍及北美",
-      "url": "https://tw.stock.yahoo.com/news/3163-波若威 矽光-2026-01-17.html",
+      "title": "光罩執行長吳國精涉炒股 更一審判刑3年2月、限境8月",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4507370",
+      "source": "ltn",
+      "date": "2023-12-01",
+      "snippet": ""
+    },
+    {
+      "title": "陳有諒回鍋蔚華科董事長  總經理高瀚宇接任",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/2564998",
+      "source": "ltn",
+      "date": "2018-09-28",
+      "snippet": ""
+    },
+    {
+      "title": "獲利亮眼 波若威漲停鎖死",
+      "url": "https://ec.ltn.com.tw/article/paper/641231",
+      "source": "ltn",
+      "date": "2012-12-26",
+      "snippet": ""
+    },
+    {
+      "title": "【公告】波若威有價證券近期達公佈注意交易資訊標準，故公告相關訊息，以利投資人區別暸解",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%B3%A2%E8%8B%A5%E5%A8%81%E6%9C%89%E5%83%B9%E8%AD%89%E5%88%B8%E8%BF%91%E6%9C%9F%E9%81%94%E5%85%AC%E4%BD%88%E6%B3%A8%E6%84%8F%E4%BA%A4%E6%98%93%E8%B3%87%E8%A8%8A%E6%A8%99%E6%BA%96-%E6%95%85%E5%85%AC%E5%91%8A%E7%9B%B8%E9%97%9C%E8%A8%8A%E6%81%AF-%E4%BB%A5%E5%88%A9%E6%8A%95%E8%B3%87%E4%BA%BA%E5%8D%80%E5%88%A5%E6%9A%B8%E8%A7%A3-075155529.html",
       "source": "yahoo",
-      "date": "2026-01-17",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】波若威115年第一季合併財務報告董事會召開日期",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%B3%A2%E8%8B%A5%E5%A8%81115%E5%B9%B4%E7%AC%AC-%E5%AD%A3%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A%E8%91%A3%E4%BA%8B%E6%9C%83%E5%8F%AC%E9%96%8B%E6%97%A5%E6%9C%9F-084457442.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】一年內累積處分同一有價證券達波若威實收資本額20%以上",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%B9%B4%E5%85%A7%E7%B4%AF%E7%A9%8D%E8%99%95%E5%88%86%E5%90%8C-%E6%9C%89%E5%83%B9%E8%AD%89%E5%88%B8%E9%81%94%E6%B3%A2%E8%8B%A5%E5%A8%81%E5%AF%A6%E6%94%B6%E8%B3%87%E6%9C%AC%E9%A1%8D20-%E4%BB%A5%E4%B8%8A-105101721.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】波若威有價證券近期達公佈注意交易資訊標準，故公告相關訊息，以利投資人區別暸解",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%B3%A2%E8%8B%A5%E5%A8%81%E6%9C%89%E5%83%B9%E8%AD%89%E5%88%B8%E8%BF%91%E6%9C%9F%E9%81%94%E5%85%AC%E4%BD%88%E6%B3%A8%E6%84%8F%E4%BA%A4%E6%98%93%E8%B3%87%E8%A8%8A%E6%A8%99%E6%BA%96-%E6%95%85%E5%85%AC%E5%91%8A%E7%9B%B8%E9%97%9C%E8%A8%8A%E6%81%AF-%E4%BB%A5%E5%88%A9%E6%8A%95%E8%B3%87%E4%BA%BA%E5%8D%80%E5%88%A5%E6%9A%B8%E8%A7%A3-104615500.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】波若威 2026年3月合併營收2.47億元 年增23.67%",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%B3%A2%E8%8B%A5%E5%A8%81-2026%E5%B9%B43%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B62-47%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E23-091237390.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "波若威：CPO產品估下半年開始量產",
+      "url": "https://tw.stock.yahoo.com/news/%E6%B3%A2%E8%8B%A5%E5%A8%81-cpo%E7%94%A2%E5%93%81%E4%BC%B0%E4%B8%8B%E5%8D%8A%E5%B9%B4%E9%96%8B%E5%A7%8B%E9%87%8F%E7%94%A2-150006714.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】波若威 2026年2月合併營收1.74億元 年增5.34%",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%B3%A2%E8%8B%A5%E5%A8%81-2026%E5%B9%B42%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B61-74%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E5-092337684.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】波若威有價證券近期達公佈注意交易資訊標準，故公告相關訊息，以利投資人區別暸解",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%B3%A2%E8%8B%A5%E5%A8%81%E6%9C%89%E5%83%B9%E8%AD%89%E5%88%B8%E8%BF%91%E6%9C%9F%E9%81%94%E5%85%AC%E4%BD%88%E6%B3%A8%E6%84%8F%E4%BA%A4%E6%98%93%E8%B3%87%E8%A8%8A%E6%A8%99%E6%BA%96-%E6%95%85%E5%85%AC%E5%91%8A%E7%9B%B8%E9%97%9C%E8%A8%8A%E6%81%AF-%E4%BB%A5%E5%88%A9%E6%8A%95%E8%B3%87%E4%BA%BA%E5%8D%80%E5%88%A5%E6%9A%B8%E8%A7%A3-074948864.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】波若威受邀參加凱基證券舉辦之法人說明會",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%B3%A2%E8%8B%A5%E5%A8%81%E5%8F%97%E9%82%80%E5%8F%83%E5%8A%A0%E5%87%B1%E5%9F%BA%E8%AD%89%E5%88%B8%E8%88%89%E8%BE%A6%E4%B9%8B%E6%B3%95%E4%BA%BA%E8%AA%AA%E6%98%8E%E6%9C%83-075415979.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "台股一度飆逾千點 台積電叩關2000元/記憶體夯過年！力積電爆量飆漲停/矽光子「瘋馬行情」多檔亮燈漲停｜Yahoo財經掃描",
+      "url": "https://tw.stock.yahoo.com/news/%E5%8F%B0%E8%82%A1%E4%B8%80%E5%BA%A6%E9%A3%86%E9%80%BE%E5%8D%83%E9%BB%9E-%E5%8F%B0%E7%A9%8D%E9%9B%BB%E5%8F%A9%E9%97%9C2000%E5%85%83%E8%A8%98%E6%86%B6%E9%AB%94%E5%A4%AF%E9%81%8E%E5%B9%B4%EF%BC%81%E5%8A%9B%E7%A9%8D%E9%9B%BB%E7%88%86%E9%87%8F%E9%A3%86%E6%BC%B2%E5%81%9C%E7%9F%BD%E5%85%89%E5%AD%90%E3%80%8C%E7%98%8B%E9%A6%AC%E8%A1%8C%E6%83%85%E3%80%8D%E5%A4%9A%E6%AA%94%E4%BA%AE%E7%87%88%E6%BC%B2%E5%81%9C%EF%BD%9Cyahoo%E8%B2%A1%E7%B6%93%E6%8E%83%E6%8F%8F-092210061.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】波若威董事會決議召開115年股東常會相關事宜",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%B3%A2%E8%8B%A5%E5%A8%81%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E5%8F%AC%E9%96%8B115%E5%B9%B4%E8%82%A1%E6%9D%B1%E5%B8%B8%E6%9C%83%E7%9B%B8%E9%97%9C%E4%BA%8B%E5%AE%9C-104700172.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】波若威董事會決議股利分派",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%B3%A2%E8%8B%A5%E5%A8%81%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E8%82%A1%E5%88%A9%E5%88%86%E6%B4%BE-104651578.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】波若威董事會決議盈餘轉增資發行新股",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%B3%A2%E8%8B%A5%E5%A8%81%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E7%9B%88%E9%A4%98%E8%BD%89%E5%A2%9E%E8%B3%87%E7%99%BC%E8%A1%8C%E6%96%B0%E8%82%A1-104649608.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】波若威114年度合併財務報告業經董事會審議通過。",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%B3%A2%E8%8B%A5%E5%A8%81114%E5%B9%B4%E5%BA%A6%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A%E6%A5%AD%E7%B6%93%E8%91%A3%E4%BA%8B%E6%9C%83%E5%AF%A9%E8%AD%B0%E9%80%9A%E9%81%8E-102707051.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】波若威董事會重要決議事項",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%B3%A2%E8%8B%A5%E5%A8%81%E8%91%A3%E4%BA%8B%E6%9C%83%E9%87%8D%E8%A6%81%E6%B1%BA%E8%AD%B0%E4%BA%8B%E9%A0%85-101319595.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "法人買盤回歸 台積電狂飆台股強彈621點/記憶體面板CPO紅燈排排站 資金狂湧/金馬年布局攻略 AI依舊最香？｜Yahoo財經掃描",
+      "url": "https://tw.stock.yahoo.com/news/%E6%B3%95%E4%BA%BA%E8%B2%B7%E7%9B%A4%E5%9B%9E%E6%AD%B8-%E5%8F%B0%E7%A9%8D%E9%9B%BB%E7%8B%82%E9%A3%86%E5%8F%B0%E8%82%A1%E5%BC%B7%E5%BD%88621%E9%BB%9E%E8%A8%98%E6%86%B6%E9%AB%94%E9%9D%A2%E6%9D%BFcpo%E7%B4%85%E7%87%88%E6%8E%92%E6%8E%92%E7%AB%99-%E8%B3%87%E9%87%91%E7%8B%82%E6%B9%A7%E9%87%91%E9%A6%AC%E5%B9%B4%E5%B8%83%E5%B1%80%E6%94%BB%E7%95%A5-ai%E4%BE%9D%E8%88%8A%E6%9C%80%E9%A6%99%EF%BC%9F%EF%BD%9Cyahoo%E8%B2%A1%E7%B6%93%E6%8E%83%E6%8F%8F-093114319.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】波若威 2026年1月合併營收2.35億元 年增47.89%",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%B3%A2%E8%8B%A5%E5%A8%81-2026%E5%B9%B41%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B62-35%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E47-080252231.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】波若威114年度個體暨合併財務報告董事會召開日期",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%B3%A2%E8%8B%A5%E5%A8%81114%E5%B9%B4%E5%BA%A6%E5%80%8B%E9%AB%94%E6%9A%A8%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A%E8%91%A3%E4%BA%8B%E6%9C%83%E5%8F%AC%E9%96%8B%E6%97%A5%E6%9C%9F-080546583.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】波若威有價證券近期達公佈注意交易資訊標準，故公告相關訊息，以利投資人區別暸解",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%B3%A2%E8%8B%A5%E5%A8%81%E6%9C%89%E5%83%B9%E8%AD%89%E5%88%B8%E8%BF%91%E6%9C%9F%E9%81%94%E5%85%AC%E4%BD%88%E6%B3%A8%E6%84%8F%E4%BA%A4%E6%98%93%E8%B3%87%E8%A8%8A%E6%A8%99%E6%BA%96-%E6%95%85%E5%85%AC%E5%91%8A%E7%9B%B8%E9%97%9C%E8%A8%8A%E6%81%AF-%E4%BB%A5%E5%88%A9%E6%8A%95%E8%B3%87%E4%BA%BA%E5%8D%80%E5%88%A5%E6%9A%B8%E8%A7%A3-075131620.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】波若威 2025年12月合併營收2.23億元 年增34.46%",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%B3%A2%E8%8B%A5%E5%A8%81-2025%E5%B9%B412%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B62-23%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E34-093149176.html",
+      "source": "yahoo",
+      "date": null,
       "snippet": ""
     }
   ]

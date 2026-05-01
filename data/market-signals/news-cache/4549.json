@@ -1,0 +1,179 @@
+{
+  "stockCode": "4549",
+  "name": "桓達科技",
+  "scrapedAt": "2026-05-01T11:10:50.208Z",
+  "sourceCounts": {
+    "yahoo": 20,
+    "ltn": 4
+  },
+  "news": [
+    {
+      "title": "新北開春就博會2800職缺 科技製造業近半",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/3823407",
+      "source": "ltn",
+      "date": "2022-02-08",
+      "snippet": ""
+    },
+    {
+      "title": "品質經理人協會與台灣檢驗科技攜手合辦「品質卓越案例獎」",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/3523767",
+      "source": "ltn",
+      "date": "2021-05-06",
+      "snippet": ""
+    },
+    {
+      "title": "精測與桓達攜手合作要讓黑水變藍金",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/3328073",
+      "source": "ltn",
+      "date": "2020-10-21",
+      "snippet": ""
+    },
+    {
+      "title": "這5人獲得品質經理人協會卓越品質獎",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/2619344",
+      "source": "ltn",
+      "date": "2018-11-21",
+      "snippet": ""
+    },
+    {
+      "title": "【公告】桓達 2026年3月合併營收1.13億元 年增9.27%",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%A1%93%E9%81%94-2026%E5%B9%B43%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B61-13%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E9-055309374.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】桓達董事會決議股利分派",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%A1%93%E9%81%94%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E8%82%A1%E5%88%A9%E5%88%86%E6%B4%BE-081550691.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】桓達董事會決議盈餘轉增資發行新股案",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%A1%93%E9%81%94%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E7%9B%88%E9%A4%98%E8%BD%89%E5%A2%9E%E8%B3%87%E7%99%BC%E8%A1%8C%E6%96%B0%E8%82%A1%E6%A1%88-081414925.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】桓達董事會通過114年度合併財務報告",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%A1%93%E9%81%94%E8%91%A3%E4%BA%8B%E6%9C%83%E9%80%9A%E9%81%8E114%E5%B9%B4%E5%BA%A6%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A-081412330.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】桓達 2026年2月合併營收5926.8萬元 年增-42%",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%A1%93%E9%81%94-2026%E5%B9%B42%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B65926-8%E8%90%AC%E5%85%83-%E5%B9%B4%E5%A2%9E-061250714.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】桓達114年度財務報告董事會預計召開日期為115年03月11日",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%A1%93%E9%81%94114%E5%B9%B4%E5%BA%A6%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A%E8%91%A3%E4%BA%8B%E6%9C%83%E9%A0%90%E8%A8%88%E5%8F%AC%E9%96%8B%E6%97%A5%E6%9C%9F%E7%82%BA115%E5%B9%B403%E6%9C%8811%E6%97%A5-070518899.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】桓達 2026年1月合併營收9442.8萬元 年增11.88%",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%A1%93%E9%81%94-2026%E5%B9%B41%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B69442-8%E8%90%AC%E5%85%83-%E5%B9%B4%E5%A2%9E11-060320086.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】桓達 2025年12月合併營收9083.3萬元 年增-27.64%",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%A1%93%E9%81%94-2025%E5%B9%B412%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B69083-3%E8%90%AC%E5%85%83-%E5%B9%B4%E5%A2%9E-061208333.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】桓達 2025年11月合併營收8496萬元 年增-22.17%",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%A1%93%E9%81%94-2025%E5%B9%B411%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B68496%E8%90%AC%E5%85%83-%E5%B9%B4%E5%A2%9E-22-063148797.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】桓達代重要子公司Faco International Co.,Ltd.公告董事會決議盈餘匯回案。",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%A1%93%E9%81%94%E4%BB%A3%E9%87%8D%E8%A6%81%E5%AD%90%E5%85%AC%E5%8F%B8faco-international-co-ltd-061829685.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】桓達代重要子公司Powerline Corp.公告董事會決議盈餘匯回案。",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%A1%93%E9%81%94%E4%BB%A3%E9%87%8D%E8%A6%81%E5%AD%90%E5%85%AC%E5%8F%B8powerline-corp-%E5%85%AC%E5%91%8A%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E7%9B%88%E9%A4%98%E5%8C%AF%E5%9B%9E%E6%A1%88-061727114.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】桓達董事會決議對關係人捐贈事宜",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%A1%93%E9%81%94%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E5%B0%8D%E9%97%9C%E4%BF%82%E4%BA%BA%E6%8D%90%E8%B4%88%E4%BA%8B%E5%AE%9C-094018758.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】桓達董事會通過114年第三季合併財務報告",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%A1%93%E9%81%94%E8%91%A3%E4%BA%8B%E6%9C%83%E9%80%9A%E9%81%8E114%E5%B9%B4%E7%AC%AC%E4%B8%89%E5%AD%A3%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A-094016549.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】桓達 2025年10月合併營收1.05億元 年增12.4%",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%A1%93%E9%81%94-2025%E5%B9%B410%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B61-05%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E12-092136895.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】桓達114年第3季財務報告董事會預計召開日期為114年11月07日",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%A1%93%E9%81%94114%E5%B9%B4%E7%AC%AC3%E5%AD%A3%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A%E8%91%A3%E4%BA%8B%E6%9C%83%E9%A0%90%E8%A8%88%E5%8F%AC%E9%96%8B%E6%97%A5%E6%9C%9F%E7%82%BA114%E5%B9%B411%E6%9C%8807%E6%97%A5-054313933.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】桓達代重要子公司上海凡宜科技電子有限公司公告董事會決議盈餘匯回案",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%A1%93%E9%81%94%E4%BB%A3%E9%87%8D%E8%A6%81%E5%AD%90%E5%85%AC%E5%8F%B8%E4%B8%8A%E6%B5%B7%E5%87%A1%E5%AE%9C%E7%A7%91%E6%8A%80%E9%9B%BB%E5%AD%90%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%E5%85%AC%E5%91%8A%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E7%9B%88%E9%A4%98%E5%8C%AF%E5%9B%9E%E6%A1%88-101456846.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】桓達 2025年9月合併營收1.04億元 年增13.25%",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%A1%93%E9%81%94-2025%E5%B9%B49%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B61-04%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E13-055221063.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】桓達擬變更國內第一次無擔保轉換公司債發行及轉換辦法部分條文致債券持有人(補充114/08/06)",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%A1%93%E9%81%94%E6%93%AC%E8%AE%8A%E6%9B%B4%E5%9C%8B%E5%85%A7%E7%AC%AC-%E6%AC%A1%E7%84%A1%E6%93%94%E4%BF%9D%E8%BD%89%E6%8F%9B%E5%85%AC%E5%8F%B8%E5%82%B5%E7%99%BC%E8%A1%8C%E5%8F%8A%E8%BD%89%E6%8F%9B%E8%BE%A6%E6%B3%95%E9%83%A8%E5%88%86%E6%A2%9D%E6%96%87%E8%87%B4%E5%82%B5%E5%88%B8%E6%8C%81%E6%9C%89%E4%BA%BA-%E8%A3%9C%E5%85%85114-08-060746112.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】桓達 2025年8月合併營收9722.4萬元 年增-10.85%",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%A1%93%E9%81%94-2025%E5%B9%B48%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B69722-4%E8%90%AC%E5%85%83-%E5%B9%B4%E5%A2%9E-054202081.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】桓達國內第一次無擔保轉換公司債轉換價格調整",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%A1%93%E9%81%94%E5%9C%8B%E5%85%A7%E7%AC%AC-%E6%AC%A1%E7%84%A1%E6%93%94%E4%BF%9D%E8%BD%89%E6%8F%9B%E5%85%AC%E5%8F%B8%E5%82%B5%E8%BD%89%E6%8F%9B%E5%83%B9%E6%A0%BC%E8%AA%BF%E6%95%B4-054207379.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    }
+  ]
+}

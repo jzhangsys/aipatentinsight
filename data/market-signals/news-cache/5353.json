@@ -1,0 +1,172 @@
+{
+  "stockCode": "5353",
+  "name": "台林電通",
+  "scrapedAt": "2026-05-01T11:11:10.952Z",
+  "sourceCounts": {
+    "yahoo": 16,
+    "ltn": 7
+  },
+  "news": [
+    {
+      "title": "世界行動通訊大會 台灣館秀AI創新科技",
+      "url": "https://ec.ltn.com.tw/article/paper/1694779",
+      "source": "ltn",
+      "date": "2025-03-05",
+      "snippet": ""
+    },
+    {
+      "title": "台灣館赴MWC世界通訊展 秀5G與AI創新科技",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4969694",
+      "source": "ltn",
+      "date": "2025-03-04",
+      "snippet": ""
+    },
+    {
+      "title": "Gogoro台灣總經理︰電動運具上演淘汰賽",
+      "url": "https://ec.ltn.com.tw/article/paper/1643416",
+      "source": "ltn",
+      "date": "2024-04-30",
+      "snippet": ""
+    },
+    {
+      "title": "Gogoro台灣總經理姜家煒：電動運具產業正在打淘汰賽",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4656807",
+      "source": "ltn",
+      "date": "2024-04-29",
+      "snippet": ""
+    },
+    {
+      "title": "經濟部組台灣隊進軍MWC 搶進國際5G生態圈",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4590819",
+      "source": "ltn",
+      "date": "2024-02-27",
+      "snippet": ""
+    },
+    {
+      "title": "台灣大2023「種福電」起跑  預計募資500萬元",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4382891",
+      "source": "ltn",
+      "date": "2023-08-01",
+      "snippet": ""
+    },
+    {
+      "title": "經部組台灣隊進軍MWC 大展我國5G戰力",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4224129",
+      "source": "ltn",
+      "date": "2023-02-27",
+      "snippet": ""
+    },
+    {
+      "title": "【公告】台林 2026年3月合併營收1.68億元 年增4.54%",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%8F%B0%E6%9E%97-2026%E5%B9%B43%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B61-68%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E4-090225845.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】台林董事長決定限制員工權利新股增資基準日",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%8F%B0%E6%9E%97%E8%91%A3%E4%BA%8B%E9%95%B7%E6%B1%BA%E5%AE%9A%E9%99%90%E5%88%B6%E5%93%A1%E5%B7%A5%E6%AC%8A%E5%88%A9%E6%96%B0%E8%82%A1%E5%A2%9E%E8%B3%87%E5%9F%BA%E6%BA%96%E6%97%A5-063835648.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】台林受邀參加統一證券主辦之法說會",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%8F%B0%E6%9E%97%E5%8F%97%E9%82%80%E5%8F%83%E5%8A%A0%E7%B5%B1-%E8%AD%89%E5%88%B8%E4%B8%BB%E8%BE%A6%E4%B9%8B%E6%B3%95%E8%AA%AA%E6%9C%83-091501406.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】台林 2026年2月合併營收1.25億元 年增-7.59%",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%8F%B0%E6%9E%97-2026%E5%B9%B42%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B61-25%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E-090320570.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】台林董事會決議股利分派",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%8F%B0%E6%9E%97%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E8%82%A1%E5%88%A9%E5%88%86%E6%B4%BE-092635378.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】台林 2026年1月合併營收1.32億元 年增-11.31%",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%8F%B0%E6%9E%97-2026%E5%B9%B41%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B61-32%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E-084329924.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】台林 2025年12月合併營收1.78億元 年增7.29%",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%8F%B0%E6%9E%97-2025%E5%B9%B412%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B61-78%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E7-060237076.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】台林 2025年11月合併營收1.62億元 年增21.4%",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%8F%B0%E6%9E%97-2025%E5%B9%B411%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B61-62%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E21-071230859.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】台林董事會決議通過設立越南子公司",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%8F%B0%E6%9E%97%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E9%80%9A%E9%81%8E%E8%A8%AD%E7%AB%8B%E8%B6%8A%E5%8D%97%E5%AD%90%E5%85%AC%E5%8F%B8-095834702.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】台林 2025年10月合併營收1.43億元 年增6.2%",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%8F%B0%E6%9E%97-2025%E5%B9%B410%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B61-43%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E6-065205858.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】台林 2025年9月合併營收1.55億元 年增-4.01%",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%8F%B0%E6%9E%97-2025%E5%B9%B49%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B61-55%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E-060127202.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】台林 2025年8月合併營收1.57億元 年增-3.05%",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%8F%B0%E6%9E%97-2025%E5%B9%B48%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B61-57%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E-062202085.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】台林受邀參加元富證券主辦之線上法說會",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%8F%B0%E6%9E%97%E5%8F%97%E9%82%80%E5%8F%83%E5%8A%A0%E5%85%83%E5%AF%8C%E8%AD%89%E5%88%B8%E4%B8%BB%E8%BE%A6%E4%B9%8B%E7%B7%9A%E4%B8%8A%E6%B3%95%E8%AA%AA%E6%9C%83-091718432.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】台林 2025年7月合併營收1.57億元 年增-13.22%",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%8F%B0%E6%9E%97-2025%E5%B9%B47%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B61-57%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E-064204302.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "《業績-通網》台林5月營收為1.48億元，年增1.13%",
+      "url": "https://tw.stock.yahoo.com/news/%E6%A5%AD%E7%B8%BE-%E9%80%9A%E7%B6%B2-%E5%8F%B0%E6%9E%975%E6%9C%88%E7%87%9F%E6%94%B6%E7%82%BA1-48%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E1-061040615.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "《業績-通網》台林4月營收為1.21億元，年減19.98%",
+      "url": "https://tw.stock.yahoo.com/news/%E6%A5%AD%E7%B8%BE-%E9%80%9A%E7%B6%B2-%E5%8F%B0%E6%9E%974%E6%9C%88%E7%87%9F%E6%94%B6%E7%82%BA1-21%E5%84%84%E5%85%83-%E5%B9%B4%E6%B8%9B19-055119580.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    }
+  ]
+}

@@ -1,0 +1,291 @@
+{
+  "stockCode": "8249",
+  "name": "菱光科技",
+  "scrapedAt": "2026-05-01T11:12:37.088Z",
+  "sourceCounts": {
+    "yahoo": 20,
+    "ltn": 20
+  },
+  "news": [
+    {
+      "title": "交通部改派中華電信法人代表  女性入列",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5065959",
+      "source": "ltn",
+      "date": "2025-06-05",
+      "snippet": ""
+    },
+    {
+      "title": "中華電信股東會歷時近13小時結束 菱光黃育仁加入董事會",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5059112",
+      "source": "ltn",
+      "date": "2025-05-29",
+      "snippet": ""
+    },
+    {
+      "title": "〈財經週報-企業接班〉交棒不易 後代爭權風波輪番上演",
+      "url": "https://ec.ltn.com.tw/article/paper/1655337",
+      "source": "ltn",
+      "date": "2024-07-08",
+      "snippet": ""
+    },
+    {
+      "title": "東元會長黃茂雄：全力支持現任董座邱純枝續任",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4624144",
+      "source": "ltn",
+      "date": "2024-03-29",
+      "snippet": ""
+    },
+    {
+      "title": "東元5月改選董事 董座邱純枝：是否續任「順其自然」",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4611681",
+      "source": "ltn",
+      "date": "2024-03-18",
+      "snippet": ""
+    },
+    {
+      "title": "東元父子和解中 菱光申讓8000張東元",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/3946710",
+      "source": "ltn",
+      "date": "2022-06-01",
+      "snippet": ""
+    },
+    {
+      "title": "東元父子之爭案外案》菱光監察人告董座  反被控背信獲不起訴",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/3907275",
+      "source": "ltn",
+      "date": "2022-04-27",
+      "snippet": ""
+    },
+    {
+      "title": "父子隱居二線？ 黃育仁也退出東元董事會",
+      "url": "https://ec.ltn.com.tw/article/paper/1493153",
+      "source": "ltn",
+      "date": "2021-12-31",
+      "snippet": ""
+    },
+    {
+      "title": "父子都走人！黃茂雄請辭後  黃育仁也退出東元董事會",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/3785654",
+      "source": "ltn",
+      "date": "2021-12-30",
+      "snippet": ""
+    },
+    {
+      "title": "東元阿嬤林明穱辭世 享嵩壽103歲",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/3695929",
+      "source": "ltn",
+      "date": "2021-10-07",
+      "snippet": ""
+    },
+    {
+      "title": "東友改選董事 黃育仁陣營拿8席保優勢",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/3682856",
+      "source": "ltn",
+      "date": "2021-09-24",
+      "snippet": ""
+    },
+    {
+      "title": "東元父子攻防戰 鈺叡收購菱光7.09％但未達預期",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/3668392",
+      "source": "ltn",
+      "date": "2021-09-11",
+      "snippet": ""
+    },
+    {
+      "title": "鈺叡：公開收購菱光股份已達公司最低收購目標",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/3644593",
+      "source": "ltn",
+      "date": "2021-08-20",
+      "snippet": ""
+    },
+    {
+      "title": "鈺叡宣布公開收購菱光延長至9月10日止",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/3634035",
+      "source": "ltn",
+      "date": "2021-08-10",
+      "snippet": ""
+    },
+    {
+      "title": "東元父子鬥 下半場對決收購大戰",
+      "url": "https://ec.ltn.com.tw/article/paper/1462573",
+      "source": "ltn",
+      "date": "2021-07-24",
+      "snippet": ""
+    },
+    {
+      "title": "堅守公司治理 東元董事改選公司派續掌經營權",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/3613484",
+      "source": "ltn",
+      "date": "2021-07-23",
+      "snippet": ""
+    },
+    {
+      "title": "東元董事改選出爐 公司派拿８席穩經營權 黃育仁派僅拿3席",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/3613410",
+      "source": "ltn",
+      "date": "2021-07-23",
+      "snippet": ""
+    },
+    {
+      "title": "東元股東會登場 小股東爭發言先吵鬧",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/3613272",
+      "source": "ltn",
+      "date": "2021-07-23",
+      "snippet": ""
+    },
+    {
+      "title": "菱光定暫處分遭商業法院駁回 東元股東會明日正常舉行",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/3612882",
+      "source": "ltn",
+      "date": "2021-07-22",
+      "snippet": ""
+    },
+    {
+      "title": "光菱、東友 菱光關係企業明日同步停牌",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/3610286",
+      "source": "ltn",
+      "date": "2021-07-20",
+      "snippet": ""
+    },
+    {
+      "title": "【公告】菱光115年第1季合併財務報告董事會預計召開日期為115年05月11日",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E8%8F%B1%E5%85%89115%E5%B9%B4%E7%AC%AC1%E5%AD%A3%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A%E8%91%A3%E4%BA%8B%E6%9C%83%E9%A0%90%E8%A8%88%E5%8F%AC%E9%96%8B%E6%97%A5%E6%9C%9F%E7%82%BA115%E5%B9%B405%E6%9C%8811%E6%97%A5-123320372.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】菱光 2026年3月合併營收3.53億元 年增8.33%",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E8%8F%B1%E5%85%89-2026%E5%B9%B43%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B63-53%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E8-074329024.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】菱光受邀參加中國信託綜合證券舉辦之線上法人說明會",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E8%8F%B1%E5%85%89%E5%8F%97%E9%82%80%E5%8F%83%E5%8A%A0%E4%B8%AD%E5%9C%8B%E4%BF%A1%E8%A8%97%E7%B6%9C%E5%90%88%E8%AD%89%E5%88%B8%E8%88%89%E8%BE%A6%E4%B9%8B%E7%B7%9A%E4%B8%8A%E6%B3%95%E4%BA%BA%E8%AA%AA%E6%98%8E%E6%9C%83-091532890.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】菱光董事會決議召開115年股東常會事宜",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E8%8F%B1%E5%85%89%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E5%8F%AC%E9%96%8B115%E5%B9%B4%E8%82%A1%E6%9D%B1%E5%B8%B8%E6%9C%83%E4%BA%8B%E5%AE%9C-122319176.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】菱光董事會決議股利分派",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E8%8F%B1%E5%85%89%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E8%82%A1%E5%88%A9%E5%88%86%E6%B4%BE-115727119.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】菱光董事會通過114年度員工酬勞及董事酬勞分派",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E8%8F%B1%E5%85%89%E8%91%A3%E4%BA%8B%E6%9C%83%E9%80%9A%E9%81%8E114%E5%B9%B4%E5%BA%A6%E5%93%A1%E5%B7%A5%E9%85%AC%E5%8B%9E%E5%8F%8A%E8%91%A3%E4%BA%8B%E9%85%AC%E5%8B%9E%E5%88%86%E6%B4%BE-115625100.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】菱光庫藏股轉讓員工認股基準日",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E8%8F%B1%E5%85%89%E5%BA%AB%E8%97%8F%E8%82%A1%E8%BD%89%E8%AE%93%E5%93%A1%E5%B7%A5%E8%AA%8D%E8%82%A1%E5%9F%BA%E6%BA%96%E6%97%A5-115614904.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】菱光董事會決議辦理現金增資私募普通股",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E8%8F%B1%E5%85%89%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E8%BE%A6%E7%90%86%E7%8F%BE%E9%87%91%E5%A2%9E%E8%B3%87%E7%A7%81%E5%8B%9F%E6%99%AE%E9%80%9A%E8%82%A1-115602208.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】菱光董事會通過114年度合併財務報告",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E8%8F%B1%E5%85%89%E8%91%A3%E4%BA%8B%E6%9C%83%E9%80%9A%E9%81%8E114%E5%B9%B4%E5%BA%A6%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A-113726818.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】菱光 2026年2月合併營收2.25億元 年增-39.24%",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E8%8F%B1%E5%85%89-2026%E5%B9%B42%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B62-25%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E-101246360.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】菱光 2026年1月合併營收4.11億元 年增8.41%",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E8%8F%B1%E5%85%89-2026%E5%B9%B41%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B64-11%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E8-113303049.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】菱光 2025年12月合併營收3.96億元 年增24.99%",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E8%8F%B1%E5%85%89-2025%E5%B9%B412%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B63-96%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E24-085154865.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】菱光受邀參加康和證券舉辦之線上法人說明會",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E8%8F%B1%E5%85%89%E5%8F%97%E9%82%80%E5%8F%83%E5%8A%A0%E5%BA%B7%E5%92%8C%E8%AD%89%E5%88%B8%E8%88%89%E8%BE%A6%E4%B9%8B%E7%B7%9A%E4%B8%8A%E6%B3%95%E4%BA%BA%E8%AA%AA%E6%98%8E%E6%9C%83-095515510.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】菱光董事會決議增資子公司L&K Industries Philippines, Inc.",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E8%8F%B1%E5%85%89%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E5%A2%9E%E8%B3%87%E5%AD%90%E5%85%AC%E5%8F%B8l-k-industries-philippines-114637192.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】菱光 2025年11月合併營收2.7億元 年增-41.71%",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E8%8F%B1%E5%85%89-2025%E5%B9%B411%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B62-7%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E-062525781.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】菱光 2025年10月合併營收2.95億元 年增-29.28%",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E8%8F%B1%E5%85%89-2025%E5%B9%B410%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B62-95%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E-034129966.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】菱光董事會決議114年上半年度不分派股利",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E8%8F%B1%E5%85%89%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0114%E5%B9%B4%E4%B8%8A%E5%8D%8A%E5%B9%B4%E5%BA%A6%E4%B8%8D%E5%88%86%E6%B4%BE%E8%82%A1%E5%88%A9-111430185.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】菱光董事會通過114年度第三季合併財務報告",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E8%8F%B1%E5%85%89%E8%91%A3%E4%BA%8B%E6%9C%83%E9%80%9A%E9%81%8E114%E5%B9%B4%E5%BA%A6%E7%AC%AC%E4%B8%89%E5%AD%A3%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A-100125873.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】菱光114年第三季合併財務報告董事會預計召開日期為114年11月6日",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E8%8F%B1%E5%85%89114%E5%B9%B4%E7%AC%AC%E4%B8%89%E5%AD%A3%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A%E8%91%A3%E4%BA%8B%E6%9C%83%E9%A0%90%E8%A8%88%E5%8F%AC%E9%96%8B%E6%97%A5%E6%9C%9F%E7%82%BA114%E5%B9%B411%E6%9C%886%E6%97%A5-113323184.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】菱光 2025年9月合併營收2.83億元 年增-24.79%",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E8%8F%B1%E5%85%89-2025%E5%B9%B49%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B62-83%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E-074231437.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    }
+  ]
+}

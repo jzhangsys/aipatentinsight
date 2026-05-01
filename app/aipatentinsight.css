@@ -4286,22 +4286,6 @@
   color: #4ade80;
   background: rgba(74, 222, 128, 0.1);
 }
-.ai-signals-page .ai-signals-news-source.src-mops {
-  color: #93c5fd;
-  background: rgba(147, 197, 253, 0.1);
-}
-.ai-signals-page .ai-signals-news-source.src-technews {
-  color: #fca5a5;
-  background: rgba(252, 165, 165, 0.1);
-}
-.ai-signals-page .ai-signals-news-source.src-digitimes {
-  color: #fdba74;
-  background: rgba(253, 186, 116, 0.1);
-}
-.ai-signals-page .ai-signals-news-source.src-anue {
-  color: #c4b5fd;
-  background: rgba(196, 181, 253, 0.1);
-}
 .ai-signals-page .ai-signals-news-date {
   font-variant-numeric: tabular-nums;
 }

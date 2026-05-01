@@ -1,0 +1,291 @@
+{
+  "stockCode": "2002",
+  "name": "中國鋼鐵",
+  "scrapedAt": "2026-05-01T11:09:11.064Z",
+  "sourceCounts": {
+    "yahoo": 20,
+    "ltn": 20
+  },
+  "news": [
+    {
+      "title": "世界鋼鐵協會：中東拖累短期需求 看好明年鋼市反彈",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5404496",
+      "source": "ltn",
+      "date": "2026-04-15",
+      "snippet": ""
+    },
+    {
+      "title": "堵中國鋼鐵傾銷 歐盟擬祭50％關稅",
+      "url": "https://ec.ltn.com.tw/article/paper/1750958",
+      "source": "ltn",
+      "date": "2026-04-15",
+      "snippet": ""
+    },
+    {
+      "title": "新光鋼：中國減產、AI挹注 鋼價向上延續至明年",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5377310",
+      "source": "ltn",
+      "date": "2026-03-20",
+      "snippet": ""
+    },
+    {
+      "title": "房市降溫拖累鋼筋需求 半導體擴廠對豐興營運有撐",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5360138",
+      "source": "ltn",
+      "date": "2026-03-05",
+      "snippet": ""
+    },
+    {
+      "title": "全球鋼市易漲偏多 燁輝3月盤價續開漲盤",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5352390",
+      "source": "ltn",
+      "date": "2026-02-26",
+      "snippet": ""
+    },
+    {
+      "title": "中國鋼材傾銷創高 台灣鋼市最冷寒冬",
+      "url": "https://ec.ltn.com.tw/article/paper/1743963",
+      "source": "ltn",
+      "date": "2026-02-16",
+      "snippet": ""
+    },
+    {
+      "title": "紅潮跨海來襲3》鋼市歹年冬！中鋼創廠首虧、燁輝年營收大減",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5341229",
+      "source": "ltn",
+      "date": "2026-02-12",
+      "snippet": ""
+    },
+    {
+      "title": "關稅利多促鋼市回穩 中鋼1月營收260億元創近8個月新高",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5339051",
+      "source": "ltn",
+      "date": "2026-02-10",
+      "snippet": ""
+    },
+    {
+      "title": "〈財經週報-台股熱點〉鋼市氛圍偏多 資金轉進鋼鐵銅板股",
+      "url": "https://ec.ltn.com.tw/article/paper/1742252",
+      "source": "ltn",
+      "date": "2026-02-02",
+      "snippet": ""
+    },
+    {
+      "title": "市場氛圍偏多   燁輝2月盤價開漲盤",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5327370",
+      "source": "ltn",
+      "date": "2026-01-30",
+      "snippet": ""
+    },
+    {
+      "title": "加拿大向北京靠攏 貝森特暗酸卡尼：態度「180度大轉彎」",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5322028",
+      "source": "ltn",
+      "date": "2026-01-26",
+      "snippet": ""
+    },
+    {
+      "title": "LTN經濟通》日中有事？日商大方分手中國",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5283644",
+      "source": "ltn",
+      "date": "2025-12-19",
+      "snippet": ""
+    },
+    {
+      "title": "比葉問強！中鋼對抗中國產能過剩是「1打50」盼政府多關愛",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5282596",
+      "source": "ltn",
+      "date": "2025-12-18",
+      "snippet": ""
+    },
+    {
+      "title": "終止連二平！中國出手整頓鋼鐵出口 中鴻明年1月開漲盤",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5282296",
+      "source": "ltn",
+      "date": "2025-12-18",
+      "snippet": ""
+    },
+    {
+      "title": "LTN經濟通》中國挾非制澳 鐵礦砂風起雲湧",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5274014",
+      "source": "ltn",
+      "date": "2025-12-10",
+      "snippet": ""
+    },
+    {
+      "title": "中國對日本下一步報復手段曝光！專家全說了",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5264577",
+      "source": "ltn",
+      "date": "2025-12-02",
+      "snippet": ""
+    },
+    {
+      "title": "LTN經濟通》稀土爭奪大戰 在澳洲開打",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5263443",
+      "source": "ltn",
+      "date": "2025-12-01",
+      "snippet": ""
+    },
+    {
+      "title": "台積電表揚30家優良供應商  共推2奈米等先進製程",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5258720",
+      "source": "ltn",
+      "date": "2025-11-26",
+      "snippet": ""
+    },
+    {
+      "title": "美媒：澳洲和中國恐因鐵礦石出口和稀土投資  重演2020年貿易戰",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5255690",
+      "source": "ltn",
+      "date": "2025-11-23",
+      "snippet": ""
+    },
+    {
+      "title": "對抗中國衝擊 德總理支持歐盟加徵進口鋼鐵關稅",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5237440",
+      "source": "ltn",
+      "date": "2025-11-07",
+      "snippet": ""
+    },
+    {
+      "title": "中鋼3月虧損收斂 Q2拚轉盈",
+      "url": "https://tw.stock.yahoo.com/news/%E4%B8%AD%E9%8B%BC3%E6%9C%88%E8%99%A7%E6%90%8D%E6%94%B6%E6%96%82-q2%E6%8B%9A%E8%BD%89%E7%9B%88-201000523.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "外資賣超535億元 調節台積電2.1萬張",
+      "url": "https://tw.stock.yahoo.com/news/%E5%A4%96%E8%B3%87%E8%B3%A3%E8%B6%85535%E5%84%84%E5%85%83-%E8%AA%BF%E7%AF%80%E5%8F%B0%E7%A9%8D%E9%9B%BB2-1%E8%90%AC%E5%BC%B5-113538761.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "中鋼3月虧損收斂 Q2迎旺季市場基本面穩健回升",
+      "url": "https://tw.stock.yahoo.com/news/%E4%B8%AD%E9%8B%BC3%E6%9C%88%E8%99%A7%E6%90%8D%E6%94%B6%E6%96%82-q2%E8%BF%8E%E6%97%BA%E5%AD%A3%E5%B8%82%E5%A0%B4%E5%9F%BA%E6%9C%AC%E9%9D%A2%E7%A9%A9%E5%81%A5%E5%9B%9E%E5%8D%87-102948401.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "中鋼第1季獲利轉虧！稅前虧損近10億元 看好「第二季回溫」",
+      "url": "https://tw.stock.yahoo.com/news/%E4%B8%AD%E9%8B%BC%E7%AC%AC1%E5%AD%A3%E7%8D%B2%E5%88%A9%E8%BD%89%E8%99%A7%EF%BC%81%E7%A8%85%E5%89%8D%E8%99%A7%E6%90%8D%E8%BF%9110%E5%84%84%E5%85%83-%E7%9C%8B%E5%A5%BD%E3%80%8C%E7%AC%AC%E4%BA%8C%E5%AD%A3%E5%9B%9E%E6%BA%AB%E3%80%8D-085809176.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "中鋼3月虧損收斂；Q2旺季助鋼市動能向上",
+      "url": "https://tw.stock.yahoo.com/news/%E4%B8%AD%E9%8B%BC3%E6%9C%88%E8%99%A7%E6%90%8D%E6%94%B6%E6%96%82-q2%E6%97%BA%E5%AD%A3%E5%8A%A9%E9%8B%BC%E5%B8%82%E5%8B%95%E8%83%BD%E5%90%91%E4%B8%8A-084200985.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】中鋼115年03月份自結合併營收及稅前損益",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E4%B8%AD%E9%8B%BC115%E5%B9%B403%E6%9C%88%E4%BB%BD%E8%87%AA%E7%B5%90%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B6%E5%8F%8A%E7%A8%85%E5%89%8D%E6%90%8D%E7%9B%8A-081602434.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "中鋼自結3月合併稅前虧損3.94億元",
+      "url": "https://tw.stock.yahoo.com/news/%E4%B8%AD%E9%8B%BC%E8%87%AA%E7%B5%903%E6%9C%88%E5%90%88%E4%BD%B5%E7%A8%85%E5%89%8D%E8%99%A7%E6%90%8D3-94%E5%84%84%E5%85%83-081400863.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】中鋼代子公司中鋼鋁業公司公告取得不動產",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E4%B8%AD%E9%8B%BC%E4%BB%A3%E5%AD%90%E5%85%AC%E5%8F%B8%E4%B8%AD%E9%8B%BC%E9%8B%81%E6%A5%AD%E5%85%AC%E5%8F%B8%E5%85%AC%E5%91%8A%E5%8F%96%E5%BE%97%E4%B8%8D%E5%8B%95%E7%94%A2-072954255.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "中鋼 代子公司中鋼鋁業公司公告取得不動產",
+      "url": "https://tw.stock.yahoo.com/news/%E4%B8%AD%E9%8B%BC-%E4%BB%A3%E5%AD%90%E5%85%AC%E5%8F%B8%E4%B8%AD%E9%8B%BC%E9%8B%81%E6%A5%AD%E5%85%AC%E5%8F%B8%E5%85%AC%E5%91%8A%E5%8F%96%E5%BE%97%E4%B8%8D%E5%8B%95%E7%94%A2-071700390.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "4/29上市外資賣超排行前20名",
+      "url": "https://tw.stock.yahoo.com/news/4-29%E4%B8%8A%E5%B8%82%E5%A4%96%E8%B3%87%E8%B3%A3%E8%B6%85%E6%8E%92%E8%A1%8C%E5%89%8D20%E5%90%8D-233100609.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "聯電IP聯名保溫瓶開領 警報器.拌麵也成話題",
+      "url": "https://tw.stock.yahoo.com/news/%E8%81%AF%E9%9B%BBip%E8%81%AF%E5%90%8D%E4%BF%9D%E6%BA%AB%E7%93%B6%E9%96%8B%E9%A0%98-%E8%AD%A6%E5%A0%B1%E5%99%A8-%E6%8B%8C%E9%BA%B5%E4%B9%9F%E6%88%90%E8%A9%B1%E9%A1%8C-093003572.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "中鋼2026年新進人員公開招募甄試起跑 釋出224名職缺",
+      "url": "https://tw.stock.yahoo.com/news/%E4%B8%AD%E9%8B%BC2026%E5%B9%B4%E6%96%B0%E9%80%B2%E4%BA%BA%E5%93%A1%E5%85%AC%E9%96%8B%E6%8B%9B%E5%8B%9F%E7%94%84%E8%A9%A6%E8%B5%B7%E8%B7%91-%E9%87%8B%E5%87%BA224%E5%90%8D%E8%81%B7%E7%BC%BA-084201395.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】中鋼法人代表人董事異動",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E4%B8%AD%E9%8B%BC%E6%B3%95%E4%BA%BA%E4%BB%A3%E8%A1%A8%E4%BA%BA%E8%91%A3%E4%BA%8B%E7%95%B0%E5%8B%95-083833698.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】中鋼執行副總經理、發言人暨資訊安全長變動",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E4%B8%AD%E9%8B%BC%E5%9F%B7%E8%A1%8C%E5%89%AF%E7%B8%BD%E7%B6%93%E7%90%86-%E7%99%BC%E8%A8%80%E4%BA%BA%E6%9A%A8%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8%E9%95%B7%E8%AE%8A%E5%8B%95-083831347.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "中龍鋼鐵 公告本公司法人代表人董事異動暨三分之一以上董事發生變動",
+      "url": "https://tw.stock.yahoo.com/news/%E4%B8%AD%E9%BE%8D%E9%8B%BC%E9%90%B5-%E5%85%AC%E5%91%8A%E6%9C%AC%E5%85%AC%E5%8F%B8%E6%B3%95%E4%BA%BA%E4%BB%A3%E8%A1%A8%E4%BA%BA%E8%91%A3%E4%BA%8B%E7%95%B0%E5%8B%95%E6%9A%A8%E4%B8%89%E5%88%86%E4%B9%8B-%E4%BB%A5%E4%B8%8A%E8%91%A3%E4%BA%8B%E7%99%BC%E7%94%9F%E8%AE%8A%E5%8B%95-082400000.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "中鋼 代子公司中龍鋼鐵公司公告法人代表人董事異動暨三分之一以上董事發生變動",
+      "url": "https://tw.stock.yahoo.com/news/%E4%B8%AD%E9%8B%BC-%E4%BB%A3%E5%AD%90%E5%85%AC%E5%8F%B8%E4%B8%AD%E9%BE%8D%E9%8B%BC%E9%90%B5%E5%85%AC%E5%8F%B8%E5%85%AC%E5%91%8A%E6%B3%95%E4%BA%BA%E4%BB%A3%E8%A1%A8%E4%BA%BA%E8%91%A3%E4%BA%8B%E7%95%B0%E5%8B%95%E6%9A%A8%E4%B8%89%E5%88%86%E4%B9%8B-%E4%BB%A5%E4%B8%8A%E8%91%A3%E4%BA%8B%E7%99%BC%E7%94%9F%E8%AE%8A%E5%8B%95-082300671.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "中鋼 公告本公司執行副總經理、發言人暨資訊安全長變動",
+      "url": "https://tw.stock.yahoo.com/news/%E4%B8%AD%E9%8B%BC-%E5%85%AC%E5%91%8A%E6%9C%AC%E5%85%AC%E5%8F%B8%E5%9F%B7%E8%A1%8C%E5%89%AF%E7%B8%BD%E7%B6%93%E7%90%86-%E7%99%BC%E8%A8%80%E4%BA%BA%E6%9A%A8%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8%E9%95%B7%E8%AE%8A%E5%8B%95-082300744.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "中鋼 公告本公司法人代表人董事異動",
+      "url": "https://tw.stock.yahoo.com/news/%E4%B8%AD%E9%8B%BC-%E5%85%AC%E5%91%8A%E6%9C%AC%E5%85%AC%E5%8F%B8%E6%B3%95%E4%BA%BA%E4%BB%A3%E8%A1%A8%E4%BA%BA%E8%91%A3%E4%BA%8B%E7%95%B0%E5%8B%95-082300929.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "因應轉型與退休潮，中鋼啟動新血招募、卡位AI新時代",
+      "url": "https://tw.stock.yahoo.com/news/%E5%9B%A0%E6%87%89%E8%BD%89%E5%9E%8B%E8%88%87%E9%80%80%E4%BC%91%E6%BD%AE-%E4%B8%AD%E9%8B%BC%E5%95%9F%E5%8B%95%E6%96%B0%E8%A1%80%E6%8B%9B%E5%8B%9F-%E5%8D%A1%E4%BD%8Dai%E6%96%B0%E6%99%82%E4%BB%A3-075854266.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】中鋼構法人董事之代表人異動暨三分之一以上董事發生變動",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E4%B8%AD%E9%8B%BC%E6%A7%8B%E6%B3%95%E4%BA%BA%E8%91%A3%E4%BA%8B%E4%B9%8B%E4%BB%A3%E8%A1%A8%E4%BA%BA%E7%95%B0%E5%8B%95%E6%9A%A8%E4%B8%89%E5%88%86%E4%B9%8B-%E4%BB%A5%E4%B8%8A%E8%91%A3%E4%BA%8B%E7%99%BC%E7%94%9F%E8%AE%8A%E5%8B%95-073623657.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    }
+  ]
+}

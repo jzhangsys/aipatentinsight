@@ -1,0 +1,144 @@
+{
+  "stockCode": "3455",
+  "name": "由田新技",
+  "scrapedAt": "2026-05-01T11:10:30.663Z",
+  "sourceCounts": {
+    "yahoo": 14,
+    "ltn": 5
+  },
+  "news": [
+    {
+      "title": "TDUA第六屆理監事改選 群創董座洪進揚高票出任理事長",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5268821",
+      "source": "ltn",
+      "date": "2025-12-05",
+      "snippet": ""
+    },
+    {
+      "title": "三大指標肯定 由田獲2025外資精選中堅潛力獎",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5165874",
+      "source": "ltn",
+      "date": "2025-09-03",
+      "snippet": ""
+    },
+    {
+      "title": "Touch Taiwan 2024 聚焦智慧座艙、Micro LED、AI三大商機",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4644157",
+      "source": "ltn",
+      "date": "2024-04-17",
+      "snippet": ""
+    },
+    {
+      "title": "景氣落差大 由田看好 萬潤保守",
+      "url": "https://ec.ltn.com.tw/article/paper/489598",
+      "source": "ltn",
+      "date": "2011-05-04",
+      "snippet": ""
+    },
+    {
+      "title": "興櫃熱門族群 集團股最紅",
+      "url": "https://ec.ltn.com.tw/article/paper/151861",
+      "source": "ltn",
+      "date": "2007-09-03",
+      "snippet": ""
+    },
+    {
+      "title": "【公告】由田有價證券近期多次達公布注意交易資訊標準，故公告相關訊息，以利投資人區別暸解",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E7%94%B1%E7%94%B0%E6%9C%89%E5%83%B9%E8%AD%89%E5%88%B8%E8%BF%91%E6%9C%9F%E5%A4%9A%E6%AC%A1%E9%81%94%E5%85%AC%E5%B8%83%E6%B3%A8%E6%84%8F%E4%BA%A4%E6%98%93%E8%B3%87%E8%A8%8A%E6%A8%99%E6%BA%96-%E6%95%85%E5%85%AC%E5%91%8A%E7%9B%B8%E9%97%9C%E8%A8%8A%E6%81%AF-%E4%BB%A5%E5%88%A9%E6%8A%95%E8%B3%87%E4%BA%BA%E5%8D%80%E5%88%A5%E6%9A%B8%E8%A7%A3-075909409.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】由田 2026年3月合併營收3465萬元 年增-83.58%",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E7%94%B1%E7%94%B0-2026%E5%B9%B43%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B63465%E8%90%AC%E5%85%83-%E5%B9%B4%E5%A2%9E-83-094309642.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】由田董事會決議股利分配",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E7%94%B1%E7%94%B0%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E8%82%A1%E5%88%A9%E5%88%86%E9%85%8D-103317222.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】由田 2026年2月合併營收5037.1萬元 年增-40.44%",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E7%94%B1%E7%94%B0-2026%E5%B9%B42%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B65037-1%E8%90%AC%E5%85%83-%E5%B9%B4%E5%A2%9E-090303688.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】由田 2026年1月合併營收6215.3萬元 年增-7.88%",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E7%94%B1%E7%94%B0-2026%E5%B9%B41%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B66215-3%E8%90%AC%E5%85%83-%E5%B9%B4%E5%A2%9E-100219526.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】由田 2025年12月合併營收1.13億元 年增-55.82%",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E7%94%B1%E7%94%B0-2025%E5%B9%B412%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B61-13%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E-094306715.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】由田受邀參加元富證券舉辦之線上法說會",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E7%94%B1%E7%94%B0%E5%8F%97%E9%82%80%E5%8F%83%E5%8A%A0%E5%85%83%E5%AF%8C%E8%AD%89%E5%88%B8%E8%88%89%E8%BE%A6%E4%B9%8B%E7%B7%9A%E4%B8%8A%E6%B3%95%E8%AA%AA%E6%9C%83-103435024.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】由田 2025年11月合併營收1.32億元 年增-35.68%",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E7%94%B1%E7%94%B0-2025%E5%B9%B411%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B61-32%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E-082250358.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】由田處分有價證券",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E7%94%B1%E7%94%B0%E8%99%95%E5%88%86%E6%9C%89%E5%83%B9%E8%AD%89%E5%88%B8-112149253.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】由田 2025年10月合併營收1.85億元 年增-9.72%",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E7%94%B1%E7%94%B0-2025%E5%B9%B410%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B61-85%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E-082344046.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】由田 2025年9月合併營收1.72億元 年增2.43%",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E7%94%B1%E7%94%B0-2025%E5%B9%B49%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B61-72%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E2-095137865.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】由田 2025年7月合併營收1.65億元 年增17.17%",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E7%94%B1%E7%94%B0-2025%E5%B9%B47%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B61-65%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E17-065156884.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "《光電股》半導體擴產熱 由田營運進補",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%89%E9%9B%BB%E8%82%A1-%E5%8D%8A%E5%B0%8E%E9%AB%94%E6%93%B4%E7%94%A2%E7%86%B1-%E7%94%B1%E7%94%B0%E7%87%9F%E9%81%8B%E9%80%B2%E8%A3%9C-234657669.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "半導體檢測夯！日月光集團股牧德今改寫615元新天價 專家看還有戲",
+      "url": "https://tw.stock.yahoo.com/news/%E5%8D%8A%E5%B0%8E%E9%AB%94%E6%AA%A2%E6%B8%AC%E5%A4%AF%EF%BC%81%E6%97%A5%E6%9C%88%E5%85%89%E9%9B%86%E5%9C%98%E8%82%A1%E7%89%A7%E5%BE%B7%E4%BB%8A%E6%94%B9%E5%AF%AB615%E5%85%83%E6%96%B0%E5%A4%A9%E5%83%B9-%E5%B0%88%E5%AE%B6%E7%9C%8B%E9%82%84%E6%9C%89%E6%88%B2-032519386.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    }
+  ]
+}

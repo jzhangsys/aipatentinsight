@@ -1,0 +1,249 @@
+{
+  "stockCode": "3596",
+  "name": "智易科技",
+  "scrapedAt": "2026-05-01T11:10:42.683Z",
+  "sourceCounts": {
+    "yahoo": 20,
+    "ltn": 14
+  },
+  "news": [
+    {
+      "title": "台幣爆升 中華電信簡志誠：有避險措施 無影響",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5034002",
+      "source": "ltn",
+      "date": "2025-05-06",
+      "snippet": ""
+    },
+    {
+      "title": "45億美元 台積電二度增資美國廠",
+      "url": "https://ec.ltn.com.tw/article/paper/1605513",
+      "source": "ltn",
+      "date": "2023-09-19",
+      "snippet": ""
+    },
+    {
+      "title": "台積電加碼投資美國廠45億美元  投審會核准2度增資",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4432341",
+      "source": "ltn",
+      "date": "2023-09-18",
+      "snippet": ""
+    },
+    {
+      "title": "金仁寶新南向、新東向佈局 許勝雄大公開",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4390756",
+      "source": "ltn",
+      "date": "2023-08-09",
+      "snippet": ""
+    },
+    {
+      "title": "中華電信CSR供應商大會 台達電等獲獎",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/3371736",
+      "source": "ltn",
+      "date": "2020-12-04",
+      "snippet": ""
+    },
+    {
+      "title": "友達、仁寶、緯創號召 學用接軌聯盟已有20家企業加入",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/2733304",
+      "source": "ltn",
+      "date": "2019-03-20",
+      "snippet": ""
+    },
+    {
+      "title": "鈺邦今年營收可望創新高",
+      "url": "https://ec.ltn.com.tw/article/paper/1054266",
+      "source": "ltn",
+      "date": "2016-11-22",
+      "snippet": ""
+    },
+    {
+      "title": "佳邦科技董事長兼執行長鄭敦仁 獲新竹傑出總經理獎",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/1893139",
+      "source": "ltn",
+      "date": "2016-11-21",
+      "snippet": ""
+    },
+    {
+      "title": "首家社會企業 竹科董總「金」相挺",
+      "url": "https://ec.ltn.com.tw/article/paper/815370",
+      "source": "ltn",
+      "date": "2014-09-22",
+      "snippet": ""
+    },
+    {
+      "title": "4G元年 智易下半年出貨放量",
+      "url": "https://ec.ltn.com.tw/article/paper/754236",
+      "source": "ltn",
+      "date": "2014-02-14",
+      "snippet": ""
+    },
+    {
+      "title": "公益採橘 供不應求",
+      "url": "https://ec.ltn.com.tw/article/paper/750314",
+      "source": "ltn",
+      "date": "2014-01-27",
+      "snippet": ""
+    },
+    {
+      "title": "〈熱門族群〉5G還沒影 網通股先漲",
+      "url": "https://ec.ltn.com.tw/article/paper/750301",
+      "source": "ltn",
+      "date": "2014-01-27",
+      "snippet": ""
+    },
+    {
+      "title": "仁寶入主智易 搶進網通",
+      "url": "https://ec.ltn.com.tw/article/paper/88702",
+      "source": "ltn",
+      "date": "2006-08-26",
+      "snippet": ""
+    },
+    {
+      "title": "電信網路展 吸引巴西大買家",
+      "url": "https://ec.ltn.com.tw/article/paper/81181",
+      "source": "ltn",
+      "date": "2006-07-12",
+      "snippet": ""
+    },
+    {
+      "title": "【公告】智易收到智慧財產及商業法院民事聲明上訴狀",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%99%BA%E6%98%93%E6%94%B6%E5%88%B0%E6%99%BA%E6%85%A7%E8%B2%A1%E7%94%A2%E5%8F%8A%E5%95%86%E6%A5%AD%E6%B3%95%E9%99%A2%E6%B0%91%E4%BA%8B%E8%81%B2%E6%98%8E%E4%B8%8A%E8%A8%B4%E7%8B%80-081842398.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】智易 2026年3月合併營收45.25億元 年增1.64%",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%99%BA%E6%98%93-2026%E5%B9%B43%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B645-25%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E1-065208651.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】因智易有價證券於集中交易市場達公布注意交易資訊標準，故公布相關財務業務等重大訊息，以利投資人區別瞭解。",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%9B%A0%E6%99%BA%E6%98%93%E6%9C%89%E5%83%B9%E8%AD%89%E5%88%B8%E6%96%BC%E9%9B%86%E4%B8%AD%E4%BA%A4%E6%98%93%E5%B8%82%E5%A0%B4%E9%81%94%E5%85%AC%E5%B8%83%E6%B3%A8%E6%84%8F%E4%BA%A4%E6%98%93%E8%B3%87%E8%A8%8A%E6%A8%99%E6%BA%96-%E6%95%85%E5%85%AC%E5%B8%83%E7%9B%B8%E9%97%9C%E8%B2%A1%E5%8B%99%E6%A5%AD%E5%8B%99%E7%AD%89%E9%87%8D%E5%A4%A7%E8%A8%8A%E6%81%AF-%E4%BB%A5%E5%88%A9%E6%8A%95%E8%B3%87%E4%BA%BA%E5%8D%80%E5%88%A5%E7%9E%AD%E8%A7%A3-083257282.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】智易受邀參加機構投資人說明會",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%99%BA%E6%98%93%E5%8F%97%E9%82%80%E5%8F%83%E5%8A%A0%E6%A9%9F%E6%A7%8B%E6%8A%95%E8%B3%87%E4%BA%BA%E8%AA%AA%E6%98%8E%E6%9C%83-065243733.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】智易 2026年2月合併營收40.26億元 年增-6.6%",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%99%BA%E6%98%93-2026%E5%B9%B42%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B640-26%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E-055245840.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】智易受邀參加機構投資人說明會",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%99%BA%E6%98%93%E5%8F%97%E9%82%80%E5%8F%83%E5%8A%A0%E6%A9%9F%E6%A7%8B%E6%8A%95%E8%B3%87%E4%BA%BA%E8%AA%AA%E6%98%8E%E6%9C%83-060545557.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】董事會決議股利分派及資本公積發放現金",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E8%82%A1%E5%88%A9%E5%88%86%E6%B4%BE%E5%8F%8A%E8%B3%87%E6%9C%AC%E5%85%AC%E7%A9%8D%E7%99%BC%E6%94%BE%E7%8F%BE%E9%87%91-092939107.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】智易受邀參加機構投資人說明會",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%99%BA%E6%98%93%E5%8F%97%E9%82%80%E5%8F%83%E5%8A%A0%E6%A9%9F%E6%A7%8B%E6%8A%95%E8%B3%87%E4%BA%BA%E8%AA%AA%E6%98%8E%E6%9C%83-064452570.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】智易114年第4季財務報告董事會召開日期",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%99%BA%E6%98%93114%E5%B9%B4%E7%AC%AC4%E5%AD%A3%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A%E8%91%A3%E4%BA%8B%E6%9C%83%E5%8F%AC%E9%96%8B%E6%97%A5%E6%9C%9F-074346506.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】智易 2026年1月合併營收42.33億元 年增7.43%",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%99%BA%E6%98%93-2026%E5%B9%B41%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B642-33%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E7-065158921.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】智易 2025年12月合併營收42.08億元 年增5%",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%99%BA%E6%98%93-2025%E5%B9%B412%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B642-08%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E5-092339215.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】智易代重要子公司Arcadyan Holding(BVI) Corp.公告董事會決議現金減資事宜",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%99%BA%E6%98%93%E4%BB%A3%E9%87%8D%E8%A6%81%E5%AD%90%E5%85%AC%E5%8F%B8arcadyan-holding-bvi-corp-092545150.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】智易代重要子公司Arcadyan Holding(BVI) Corp.公告現金減資變更登記完成",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%99%BA%E6%98%93%E4%BB%A3%E9%87%8D%E8%A6%81%E5%AD%90%E5%85%AC%E5%8F%B8arcadyan-holding-bvi-corp-092239895.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】智易 2025年11月合併營收43.37億元 年增6.79%",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%99%BA%E6%98%93-2025%E5%B9%B411%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B643-37%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E6-082133571.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】智易受邀參加機構投資人說明會",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%99%BA%E6%98%93%E5%8F%97%E9%82%80%E5%8F%83%E5%8A%A0%E6%A9%9F%E6%A7%8B%E6%8A%95%E8%B3%87%E4%BA%BA%E8%AA%AA%E6%98%8E%E6%9C%83-084459457.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】智易受邀參加機構投資人說明會",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%99%BA%E6%98%93%E5%8F%97%E9%82%80%E5%8F%83%E5%8A%A0%E6%A9%9F%E6%A7%8B%E6%8A%95%E8%B3%87%E4%BA%BA%E8%AA%AA%E6%98%8E%E6%9C%83-084654293.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】智易 2025年10月合併營收44.58億元 年增10.95%",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%99%BA%E6%98%93-2025%E5%B9%B410%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B644-58%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E10-064303861.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】智易114年第三季合併財務報告",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%99%BA%E6%98%93114%E5%B9%B4%E7%AC%AC%E4%B8%89%E5%AD%A3%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A-092811339.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】智易受邀參加機構投資人說明會",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%99%BA%E6%98%93%E5%8F%97%E9%82%80%E5%8F%83%E5%8A%A0%E6%A9%9F%E6%A7%8B%E6%8A%95%E8%B3%87%E4%BA%BA%E8%AA%AA%E6%98%8E%E6%9C%83-093856224.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】智易 2025年9月合併營收46.67億元 年增14.94%",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%99%BA%E6%98%93-2025%E5%B9%B49%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B646-67%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E14-083157959.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    }
+  ]
+}

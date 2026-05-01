@@ -33,10 +33,6 @@ const SEED = [
       ["台積電 2 奈米 N2 進入試產 客戶導入加速", "yahoo", "2026-01-15"],
       ["台積電法說會展望:AI 帶動營收年增 25-30%", "yahoo", "2026-01-10"],
       ["3nm 5nm 製程大客戶 NVIDIA AMD 需求強勁", "ltn", "2025-12-22"],
-      ["公告本公司董事會決議重要決議事項", "mops", "2026-01-15"],
-      ["TSMC 2nm GAA 製程技術節點解析:AI 晶片新世代起點", "technews", "2026-01-20"],
-      ["先進封裝 CoWoS-L 與 SoIC 路線圖深度解析", "digitimes", "2026-01-08"],
-      ["台積電 AI 伺服器晶片市佔再上修", "anue", "2026-01-26"],
     ],
   },
   {
@@ -46,9 +42,6 @@ const SEED = [
       ["NVIDIA HGX H200 廣達掌握主要訂單", "ltn", "2026-01-25"],
       ["AI 機櫃 GB200 NVL72 廣達取得大單", "yahoo", "2026-01-12"],
       ["廣達 2025 Q4 營收創高 AI 伺服器佔比攀升", "yahoo", "2026-01-08"],
-      ["廣達電腦公告營收與重大訊息", "mops", "2026-01-10"],
-      ["AI Server ODM 戰況:廣達在 GB200 NVL72 取得關鍵供應地位", "digitimes", "2026-01-26"],
-      ["廣達股價評析 AI 伺服器題材續強", "anue", "2026-01-30"],
     ],
   },
   {
@@ -75,7 +68,6 @@ const SEED = [
       ["AI 晶片布局 聯發科 NVIDIA 合作客製化 ASIC", "ltn", "2026-01-15"],
       ["5G 數據機晶片 聯發科市佔超越高通", "yahoo", "2026-01-04"],
       ["AI PC SoC 客戶採用聯發科 天璣 AI", "yahoo", "2025-12-20"],
-      ["MediaTek 客製化 AI ASIC 路線圖:從 SoC 走向資料中心", "technews", "2026-01-18"],
     ],
   },
   {
@@ -298,24 +290,12 @@ for (const item of SEED) {
       case "ltn":
         url = `https://search.ltn.com.tw/list?keyword=${encodeURIComponent(item.name)}#${date}`;
         break;
-      case "mops":
-        url = `https://mops.twse.com.tw/mops/web/t05st02#${item.code}-${date}`;
-        break;
-      case "technews":
-        url = `https://technews.tw/?s=${encodeURIComponent(item.name)}#${date}`;
-        break;
-      case "digitimes":
-        url = `https://www.digitimes.com.tw/search/result.asp?keyword=${encodeURIComponent(item.name)}#${date}`;
-        break;
-      case "anue":
-        url = `https://news.cnyes.com/search/?keyword=${encodeURIComponent(item.name)}#${date}`;
-        break;
       default:
         url = "#";
     }
     return { title, url, source, date, snippet: "" };
   });
-  const SOURCES = ["yahoo", "ltn", "mops", "technews", "digitimes", "anue"];
+  const SOURCES = ["yahoo", "ltn"];
   const sourceCounts = {};
   for (const s of SOURCES) {
     sourceCounts[s] = news.filter((n) => n.source === s).length;

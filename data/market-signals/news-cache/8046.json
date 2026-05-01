@@ -1,22 +1,290 @@
 {
   "stockCode": "8046",
-  "name": "南電",
-  "scrapedAt": "2026-05-01T10:42:11.370Z",
-  "devSeed": true,
+  "name": "南亞電路板",
+  "scrapedAt": "2026-05-01T11:12:25.353Z",
   "sourceCounts": {
-    "yahoo": 1,
-    "ltn": 0,
-    "mops": 0,
-    "technews": 0,
-    "digitimes": 0,
-    "anue": 0
+    "yahoo": 20,
+    "ltn": 20
   },
   "news": [
     {
-      "title": "南電 ABF 載板需求回溫 利用率提升",
-      "url": "https://tw.stock.yahoo.com/news/8046-南電 ABF-2026-01-18.html",
+      "title": "塑化報價大漲 台塑四寶3月營收大爆發Q1全數轉盈",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5399452",
+      "source": "ltn",
+      "date": "2026-04-10",
+      "snippet": ""
+    },
+    {
+      "title": "台塑去年大虧百億 四寶合計虧損11億",
+      "url": "https://ec.ltn.com.tw/article/paper/1739757",
+      "source": "ltn",
+      "date": "2026-01-13",
+      "snippet": ""
+    },
+    {
+      "title": "母以子貴！南亞去年Q4 EPS0.62元 單季創近14季以來新高",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5307195",
+      "source": "ltn",
+      "date": "2026-01-12",
+      "snippet": ""
+    },
+    {
+      "title": "萬潤等17家廠商獲日月光最佳供應商獎",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5009181",
+      "source": "ltn",
+      "date": "2025-04-11",
+      "snippet": ""
+    },
+    {
+      "title": "日月光偕逾百家供應商宣示減碳淨零",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4400648",
+      "source": "ltn",
+      "date": "2023-08-18",
+      "snippet": ""
+    },
+    {
+      "title": "台商PCB好威！市佔率32.8％居全球第1",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4034260",
+      "source": "ltn",
+      "date": "2022-08-23",
+      "snippet": ""
+    },
+    {
+      "title": "新北開春就博會2800職缺 科技製造業近半",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/3823407",
+      "source": "ltn",
+      "date": "2022-02-08",
+      "snippet": ""
+    },
+    {
+      "title": "新北與南亞合作專案徵才 600職缺夜班起薪最高達43K",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/3674993",
+      "source": "ltn",
+      "date": "2021-09-17",
+      "snippet": ""
+    },
+    {
+      "title": "台塑南亞專案徵才  600多個職缺別錯過",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/3658611",
+      "source": "ltn",
+      "date": "2021-09-02",
+      "snippet": ""
+    },
+    {
+      "title": "勞動基金上半年賺逾3千億 收益率6.59％",
+      "url": "https://ec.ltn.com.tw/article/paper/1464567",
+      "source": "ltn",
+      "date": "2021-08-03",
+      "snippet": ""
+    },
+    {
+      "title": "3大勞動基金前10大持股    占比最高都是台積電",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/3624754",
+      "source": "ltn",
+      "date": "2021-08-02",
+      "snippet": ""
+    },
+    {
+      "title": "力成CEO：台灣供應鏈競爭力 仍居全球之冠",
+      "url": "https://ec.ltn.com.tw/article/paper/1450039",
+      "source": "ltn",
+      "date": "2021-05-21",
+      "snippet": ""
+    },
+    {
+      "title": "力成CEO：台灣競爭力NO.1   無意將產線擴至美國",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/3540322",
+      "source": "ltn",
+      "date": "2021-05-20",
+      "snippet": ""
+    },
+    {
+      "title": "中壢、桃園大型徵才 釋出逾1200個職缺",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/3174277",
+      "source": "ltn",
+      "date": "2020-05-22",
+      "snippet": ""
+    },
+    {
+      "title": "用電大戶設備故障 北北桃驚傳跳電",
+      "url": "https://ec.ltn.com.tw/article/paper/1232056",
+      "source": "ltn",
+      "date": "2018-09-14",
+      "snippet": ""
+    },
+    {
+      "title": "大用戶跳電影響電網 經長：將請台電找解方",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/2550024",
+      "source": "ltn",
+      "date": "2018-09-13",
+      "snippet": ""
+    },
+    {
+      "title": "桃煉冒火光 中油：電壓下降安全機制啟動",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/2549882",
+      "source": "ltn",
+      "date": "2018-09-13",
+      "snippet": ""
+    },
+    {
+      "title": "南亞電路設備故障導致大跳電  台電：高階製程廠商需裝穩壓設備保護",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/2549804",
+      "source": "ltn",
+      "date": "2018-09-13",
+      "snippet": ""
+    },
+    {
+      "title": "世界先進桃園晶圓三廠遭停電停產 影響待評估",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/2549731",
+      "source": "ltn",
+      "date": "2018-09-13",
+      "snippet": ""
+    },
+    {
+      "title": "推動環保 台塑與中山大學合作",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/2235474",
+      "source": "ltn",
+      "date": "2017-10-27",
+      "snippet": ""
+    },
+    {
+      "title": "【公告】南電115年第1季合併財務報告董事會召開日期為115年5月7日",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%8D%97%E9%9B%BB115%E5%B9%B4%E7%AC%AC1%E5%AD%A3%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A%E8%91%A3%E4%BA%8B%E6%9C%83%E5%8F%AC%E9%96%8B%E6%97%A5%E6%9C%9F%E7%82%BA115%E5%B9%B45%E6%9C%887%E6%97%A5-093614122.html",
       "source": "yahoo",
-      "date": "2026-01-18",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "南電：今年績效再提升 擴AI伺服器用載板",
+      "url": "https://tw.stock.yahoo.com/news/%E5%8D%97%E9%9B%BB-%E4%BB%8A%E5%B9%B4%E7%B8%BE%E6%95%88%E5%86%8D%E6%8F%90%E5%8D%87-%E6%93%B4ai%E4%BC%BA%E6%9C%8D%E5%99%A8%E7%94%A8%E8%BC%89%E6%9D%BF-003359559.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】因南電有價證券於集中交易市場達公布注意交易資訊標準，故公布相關財務業務等重大訊息，以利投資人區別瞭解",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%9B%A0%E5%8D%97%E9%9B%BB%E6%9C%89%E5%83%B9%E8%AD%89%E5%88%B8%E6%96%BC%E9%9B%86%E4%B8%AD%E4%BA%A4%E6%98%93%E5%B8%82%E5%A0%B4%E9%81%94%E5%85%AC%E5%B8%83%E6%B3%A8%E6%84%8F%E4%BA%A4%E6%98%93%E8%B3%87%E8%A8%8A%E6%A8%99%E6%BA%96-%E6%95%85%E5%85%AC%E5%B8%83%E7%9B%B8%E9%97%9C%E8%B2%A1%E5%8B%99%E6%A5%AD%E5%8B%99%E7%AD%89%E9%87%8D%E5%A4%A7%E8%A8%8A%E6%81%AF-%E4%BB%A5%E5%88%A9%E6%8A%95%E8%B3%87%E4%BA%BA%E5%8D%80%E5%88%A5%E7%9E%AD%E8%A7%A3-084743949.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】南電 2026年3月合併營收42.91億元 年增39.03%",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%8D%97%E9%9B%BB-2026%E5%B9%B43%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B642-91%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E39-041246401.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】(更正)公告南電董事會決議召開115年度股東常會相關事宜",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%9B%B4%E6%AD%A3-%E5%85%AC%E5%91%8A%E5%8D%97%E9%9B%BB%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E5%8F%AC%E9%96%8B115%E5%B9%B4%E5%BA%A6%E8%82%A1%E6%9D%B1%E5%B8%B8%E6%9C%83%E7%9B%B8%E9%97%9C%E4%BA%8B%E5%AE%9C-082504652.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】南電受邀參加群益證券舉辦之2026年第一季投資論壇",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%8D%97%E9%9B%BB%E5%8F%97%E9%82%80%E5%8F%83%E5%8A%A0%E7%BE%A4%E7%9B%8A%E8%AD%89%E5%88%B8%E8%88%89%E8%BE%A6%E4%B9%8B2026%E5%B9%B4%E7%AC%AC-%E5%AD%A3%E6%8A%95%E8%B3%87%E8%AB%96%E5%A3%87-100738156.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "外資連三砍台股又中刀 群創大單夢醒爆量賣壓炸鍋｜Yahoo財經掃描",
+      "url": "https://tw.stock.yahoo.com/news/%E5%A4%96%E8%B3%87%E9%80%A3%E4%B8%89%E7%A0%8D%E5%8F%B0%E8%82%A1%E5%8F%88%E4%B8%AD%E5%88%80-%E7%BE%A4%E5%89%B5%E5%A4%A7%E5%96%AE%E5%A4%A2%E9%86%92%E7%88%86%E9%87%8F%E8%B3%A3%E5%A3%93%E7%82%B8%E9%8D%8B%EF%BD%9Cyahoo%E8%B2%A1%E7%B6%93%E6%8E%83%E6%8F%8F-085633136.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】南電 2026年2月合併營收31.66億元 年增12.84%",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%8D%97%E9%9B%BB-2026%E5%B9%B42%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B631-66%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E12-064331366.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "南電1月自結獲利大增逾81倍 AI應用載板需求強勁",
+      "url": "https://tw.stock.yahoo.com/news/%E5%8D%97%E9%9B%BB1%E6%9C%88%E8%87%AA%E7%B5%90%E7%8D%B2%E5%88%A9%E5%A4%A7%E5%A2%9E%E9%80%BE81%E5%80%8D-ai%E6%87%89%E7%94%A8%E8%BC%89%E6%9D%BF%E9%9C%80%E6%B1%82%E5%BC%B7%E5%8B%81-093254378.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】因南電有價證券於集中交易市場達公布注意交易資訊標準，故公布相關財務業務等重大訊息，以利投資人區別瞭解",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%9B%A0%E5%8D%97%E9%9B%BB%E6%9C%89%E5%83%B9%E8%AD%89%E5%88%B8%E6%96%BC%E9%9B%86%E4%B8%AD%E4%BA%A4%E6%98%93%E5%B8%82%E5%A0%B4%E9%81%94%E5%85%AC%E5%B8%83%E6%B3%A8%E6%84%8F%E4%BA%A4%E6%98%93%E8%B3%87%E8%A8%8A%E6%A8%99%E6%BA%96-%E6%95%85%E5%85%AC%E5%B8%83%E7%9B%B8%E9%97%9C%E8%B2%A1%E5%8B%99%E6%A5%AD%E5%8B%99%E7%AD%89%E9%87%8D%E5%A4%A7%E8%A8%8A%E6%81%AF-%E4%BB%A5%E5%88%A9%E6%8A%95%E8%B3%87%E4%BA%BA%E5%8D%80%E5%88%A5%E7%9E%AD%E8%A7%A3-080406211.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "南電2025年每股賺3.01元 擬配息2元",
+      "url": "https://tw.stock.yahoo.com/news/%E5%8D%97%E9%9B%BB2025%E5%B9%B4%E6%AF%8F%E8%82%A1%E8%B3%BA3-01%E5%85%83-%E6%93%AC%E9%85%8D%E6%81%AF2%E5%85%83-133258332.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】南電董事會決議召開115年度股東常會相關事宜",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%8D%97%E9%9B%BB%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E5%8F%AC%E9%96%8B115%E5%B9%B4%E5%BA%A6%E8%82%A1%E6%9D%B1%E5%B8%B8%E6%9C%83%E7%9B%B8%E9%97%9C%E4%BA%8B%E5%AE%9C-083526642.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】南電114年度合併財務報告業經董事會決議通過",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%8D%97%E9%9B%BB114%E5%B9%B4%E5%BA%A6%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A%E6%A5%AD%E7%B6%93%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E9%80%9A%E9%81%8E-083524746.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】南電董事會決議股利分派",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%8D%97%E9%9B%BB%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E8%82%A1%E5%88%A9%E5%88%86%E6%B4%BE-083522835.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】南電114年度財務報告董事會預計召開日期為115年2月24日",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%8D%97%E9%9B%BB114%E5%B9%B4%E5%BA%A6%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A%E8%91%A3%E4%BA%8B%E6%9C%83%E9%A0%90%E8%A8%88%E5%8F%AC%E9%96%8B%E6%97%A5%E6%9C%9F%E7%82%BA115%E5%B9%B42%E6%9C%8824%E6%97%A5-084917542.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】代子公司南亞電路板(香港)有限公司公告董事會決議不發放股利",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E4%BB%A3%E5%AD%90%E5%85%AC%E5%8F%B8%E5%8D%97%E4%BA%9E%E9%9B%BB%E8%B7%AF%E6%9D%BF-%E9%A6%99%E6%B8%AF-%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%E5%85%AC%E5%91%8A%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E4%B8%8D%E7%99%BC%E6%94%BE%E8%82%A1%E5%88%A9-084915790.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】代子公司南亞電路板(香港)有限公司公告股東會重要決議事項",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E4%BB%A3%E5%AD%90%E5%85%AC%E5%8F%B8%E5%8D%97%E4%BA%9E%E9%9B%BB%E8%B7%AF%E6%9D%BF-%E9%A6%99%E6%B8%AF-%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%E5%85%AC%E5%91%8A%E8%82%A1%E6%9D%B1%E6%9C%83%E9%87%8D%E8%A6%81%E6%B1%BA%E8%AD%B0%E4%BA%8B%E9%A0%85-084913003.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】南電代子公司南亞電路板(昆山)有限公司公告董事會決議不發放股利",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%8D%97%E9%9B%BB%E4%BB%A3%E5%AD%90%E5%85%AC%E5%8F%B8%E5%8D%97%E4%BA%9E%E9%9B%BB%E8%B7%AF%E6%9D%BF-%E6%98%86%E5%B1%B1-%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%E5%85%AC%E5%91%8A%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E4%B8%8D%E7%99%BC%E6%94%BE%E8%82%A1%E5%88%A9-093325607.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】南電代子公司南亞電路板(昆山)有限公司公告股東會重要決議事項",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%8D%97%E9%9B%BB%E4%BB%A3%E5%AD%90%E5%85%AC%E5%8F%B8%E5%8D%97%E4%BA%9E%E9%9B%BB%E8%B7%AF%E6%9D%BF-%E6%98%86%E5%B1%B1-%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%E5%85%AC%E5%91%8A%E8%82%A1%E6%9D%B1%E6%9C%83%E9%87%8D%E8%A6%81%E6%B1%BA%E8%AD%B0%E4%BA%8B%E9%A0%85-093323547.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】南電代子公司南亞電路板(昆山)有限公司公告董事及監事任期屆滿重新委任",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%8D%97%E9%9B%BB%E4%BB%A3%E5%AD%90%E5%85%AC%E5%8F%B8%E5%8D%97%E4%BA%9E%E9%9B%BB%E8%B7%AF%E6%9D%BF-%E6%98%86%E5%B1%B1-%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%E5%85%AC%E5%91%8A%E8%91%A3%E4%BA%8B%E5%8F%8A%E7%9B%A3%E4%BA%8B%E4%BB%BB%E6%9C%9F%E5%B1%86%E6%BB%BF%E9%87%8D%E6%96%B0%E5%A7%94%E4%BB%BB-093321188.html",
+      "source": "yahoo",
+      "date": null,
       "snippet": ""
     }
   ]

@@ -1,0 +1,165 @@
+{
+  "stockCode": "8069",
+  "name": "元太科技工業",
+  "scrapedAt": "2026-05-01T11:12:26.617Z",
+  "sourceCounts": {
+    "yahoo": 20,
+    "ltn": 2
+  },
+  "news": [
+    {
+      "title": "華邦電增設12吋晶圓智慧化產線 增聘183本國員工",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4235949",
+      "source": "ltn",
+      "date": "2023-03-10",
+      "snippet": ""
+    },
+    {
+      "title": "今年台商回台他搶頭香！ 累積至8519億後續還有90家",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/3029159",
+      "source": "ltn",
+      "date": "2020-01-03",
+      "snippet": ""
+    },
+    {
+      "title": "【公告】元太召開法人說明會相關資訊",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%85%83%E5%A4%AA%E5%8F%AC%E9%96%8B%E6%B3%95%E4%BA%BA%E8%AA%AA%E6%98%8E%E6%9C%83%E7%9B%B8%E9%97%9C%E8%B3%87%E8%A8%8A-104547915.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "元太 公告本公司召開法人說明會相關資訊",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%83%E5%A4%AA-%E5%85%AC%E5%91%8A%E6%9C%AC%E5%85%AC%E5%8F%B8%E5%8F%AC%E9%96%8B%E6%B3%95%E4%BA%BA%E8%AA%AA%E6%98%8E%E6%9C%83%E7%9B%B8%E9%97%9C%E8%B3%87%E8%A8%8A-103700400.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "元太第一季財報，預計5/8提報董事會",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%83%E5%A4%AA%E7%AC%AC-%E5%AD%A3%E8%B2%A1%E5%A0%B1-%E9%A0%90%E8%A8%885-8%E6%8F%90%E5%A0%B1%E8%91%A3%E4%BA%8B%E6%9C%83-071200753.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "電子紙技術邁向量產新紀元，元太攜手BMW搶灘智慧車體市場",
+      "url": "https://tw.stock.yahoo.com/news/%E9%9B%BB%E5%AD%90%E7%B4%99%E6%8A%80%E8%A1%93%E9%82%81%E5%90%91%E9%87%8F%E7%94%A2%E6%96%B0%E7%B4%80%E5%85%83-%E5%85%83%E5%A4%AA%E6%94%9C%E6%89%8Bbmw%E6%90%B6%E7%81%98%E6%99%BA%E6%85%A7%E8%BB%8A%E9%AB%94%E5%B8%82%E5%A0%B4-023048365.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "BMW採元太電子紙推變色車 全球首發量產車亮相",
+      "url": "https://tw.stock.yahoo.com/news/bmw%E6%8E%A1%E5%85%83%E5%A4%AA%E9%9B%BB%E5%AD%90%E7%B4%99%E6%8E%A8%E8%AE%8A%E8%89%B2%E8%BB%8A-%E5%85%A8%E7%90%83%E9%A6%96%E7%99%BC%E9%87%8F%E7%94%A2%E8%BB%8A%E4%BA%AE%E7%9B%B8-125155795.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "元太車身電子紙邁入規模化 BMW iX3 Flow Edition成首款量產車型",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%83%E5%A4%AA%E8%BB%8A%E8%BA%AB%E9%9B%BB%E5%AD%90%E7%B4%99%E9%82%81%E5%85%A5%E8%A6%8F%E6%A8%A1%E5%8C%96-bmw-ix3-flow-edition%E6%88%90%E9%A6%96%E6%AC%BE%E9%87%8F%E7%94%A2%E8%BB%8A%E5%9E%8B-110256828.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "電子紙需求成長趨緩，法人下修元太短期動能",
+      "url": "https://tw.stock.yahoo.com/news/%E9%9B%BB%E5%AD%90%E7%B4%99%E9%9C%80%E6%B1%82%E6%88%90%E9%95%B7%E8%B6%A8%E7%B7%A9-%E6%B3%95%E4%BA%BA%E4%B8%8B%E4%BF%AE%E5%85%83%E5%A4%AA%E7%9F%AD%E6%9C%9F%E5%8B%95%E8%83%BD-024400730.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "元太 法人買盤帶動",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%83%E5%A4%AA-%E6%B3%95%E4%BA%BA%E8%B2%B7%E7%9B%A4%E5%B8%B6%E5%8B%95-201000114.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "Touch Taiwan現場直擊》光通訊人潮擠爆！玻璃、MicroLED被賦予新角色加速搶進AI市場",
+      "url": "https://tw.stock.yahoo.com/news/touch-taiwan%E7%8F%BE%E5%A0%B4%E7%9B%B4%E6%93%8A%E3%80%8B%E5%85%89%E9%80%9A%E8%A8%8A%E4%BA%BA%E6%BD%AE%E6%93%A0%E7%88%86%EF%BC%81%E7%8E%BB%E7%92%83%E3%80%81microled%E8%A2%AB%E8%B3%A6%E4%BA%88%E6%96%B0%E8%A7%92%E8%89%B2%E5%8A%A0%E9%80%9F%E6%90%B6%E9%80%B2ai%E5%B8%82%E5%A0%B4-024027790.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "元太子公司董事會授權出清SK Hynix 1,842股；近一年已執行處分利益約13億韓圜",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%83%E5%A4%AA%E5%AD%90%E5%85%AC%E5%8F%B8%E8%91%A3%E4%BA%8B%E6%9C%83%E6%8E%88%E6%AC%8A%E5%87%BA%E6%B8%85sk-hynix-1-842%E8%82%A1-%E8%BF%91-094900495.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】元太代子公司Hydis Technologies Co.,Ltd.公告董事會通過處分有價證券相關事宜",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%85%83%E5%A4%AA%E4%BB%A3%E5%AD%90%E5%85%AC%E5%8F%B8hydis-technologies-co-ltd-094340495.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "元太 代子公司Hydis Technologies Co.,Ltd.公告董事會通過處分有價證券相關事宜",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%83%E5%A4%AA-%E4%BB%A3%E5%AD%90%E5%85%AC%E5%8F%B8hydis-technologies-co-ltd-093300426.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "〈智慧顯示展〉凌巨聚焦膽固醇液晶和電子紙 多方技術開發應用",
+      "url": "https://tw.stock.yahoo.com/news/%E6%99%BA%E6%85%A7%E9%A1%AF%E7%A4%BA%E5%B1%95-%E5%87%8C%E5%B7%A8%E8%81%9A%E7%84%A6%E8%86%BD%E5%9B%BA%E9%86%87%E6%B6%B2%E6%99%B6%E5%92%8C%E9%9B%BB%E5%AD%90%E7%B4%99-%E5%A4%9A%E6%96%B9%E6%8A%80%E8%A1%93%E9%96%8B%E7%99%BC%E6%87%89%E7%94%A8-023301065.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "ESL＋電子看板出貨暢旺，元太首季營收86.33億元、季增23.06%",
+      "url": "https://tw.stock.yahoo.com/news/esl-%E9%9B%BB%E5%AD%90%E7%9C%8B%E6%9D%BF%E5%87%BA%E8%B2%A8%E6%9A%A2%E6%97%BA-%E5%85%83%E5%A4%AA%E9%A6%96%E5%AD%A3%E7%87%9F%E6%94%B686-33%E5%84%84%E5%85%83-%E5%AD%A3%E5%A2%9E23-004535230.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】元太 2026年3月合併營收32.5億元 年增1.26%",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%85%83%E5%A4%AA-2026%E5%B9%B43%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B632-5%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E1-070330113.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "元太 115年3月營收32.50億、年增1.26%",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%83%E5%A4%AA-115%E5%B9%B43%E6%9C%88%E7%87%9F%E6%94%B632-50%E5%84%84-%E5%B9%B4%E5%A2%9E1-26-065700069.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "拓展電子材料業務 元太入主台虹",
+      "url": "https://tw.stock.yahoo.com/news/%E6%8B%93%E5%B1%95%E9%9B%BB%E5%AD%90%E6%9D%90%E6%96%99%E6%A5%AD%E5%8B%99-%E5%85%83%E5%A4%AA%E5%85%A5%E4%B8%BB%E5%8F%B0%E8%99%B9-201000429.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "元太科技篤定入主台虹拿4席董事 陳永恒今以法人代表接任董事長",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%83%E5%A4%AA%E7%A7%91%E6%8A%80%E7%AF%A4%E5%AE%9A%E5%85%A5%E4%B8%BB%E5%8F%B0%E8%99%B9%E6%8B%BF4%E5%B8%AD%E8%91%A3%E4%BA%8B-%E9%99%B3%E6%B0%B8%E6%81%92%E4%BB%8A%E4%BB%A5%E6%B3%95%E4%BA%BA%E4%BB%A3%E8%A1%A8%E6%8E%A5%E4%BB%BB%E8%91%A3%E4%BA%8B%E9%95%B7-131436470.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】台虹董事長異動",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%8F%B0%E8%99%B9%E8%91%A3%E4%BA%8B%E9%95%B7%E7%95%B0%E5%8B%95-102813267.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "台虹 公告本公司董事長異動",
+      "url": "https://tw.stock.yahoo.com/news/%E5%8F%B0%E8%99%B9-%E5%85%AC%E5%91%8A%E6%9C%AC%E5%85%AC%E5%8F%B8%E8%91%A3%E4%BA%8B%E9%95%B7%E7%95%B0%E5%8B%95-101300751.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    }
+  ]
+}

@@ -1,0 +1,158 @@
+{
+  "stockCode": "3038",
+  "name": "全台晶像",
+  "scrapedAt": "2026-05-01T11:10:08.177Z",
+  "sourceCounts": {
+    "yahoo": 20,
+    "ltn": 1
+  },
+  "news": [
+    {
+      "title": "漲停股》全台：訂單看到Q3 預期毛利率維持2成以上",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4344699",
+      "source": "ltn",
+      "date": "2023-06-26",
+      "snippet": ""
+    },
+    {
+      "title": "【公告】115年第一季財務報告董事會預計召開日期為115年05月05日",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-115%E5%B9%B4%E7%AC%AC-%E5%AD%A3%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A%E8%91%A3%E4%BA%8B%E6%9C%83%E9%A0%90%E8%A8%88%E5%8F%AC%E9%96%8B%E6%97%A5%E6%9C%9F%E7%82%BA115%E5%B9%B405%E6%9C%8805%E6%97%A5-063357763.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】全台董事會決議第二十二次買回全台股份",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%85%A8%E5%8F%B0%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E7%AC%AC%E4%BA%8C%E5%8D%81%E4%BA%8C%E6%AC%A1%E8%B2%B7%E5%9B%9E%E5%85%A8%E5%8F%B0%E8%82%A1%E4%BB%BD-083436852.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】全台 2026年3月合併營收2.51億元 年增-0.61%",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%85%A8%E5%8F%B0-2026%E5%B9%B43%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B62-51%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E-085230635.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】全台 2026年2月合併營收2.22億元 年增-13.46%",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%85%A8%E5%8F%B0-2026%E5%B9%B42%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B62-22%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E-092325174.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】董事會決議股利分派",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E8%82%A1%E5%88%A9%E5%88%86%E6%B4%BE-123344102.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】全台董事會通過114年度合併財務報告",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%85%A8%E5%8F%B0%E8%91%A3%E4%BA%8B%E6%9C%83%E9%80%9A%E9%81%8E114%E5%B9%B4%E5%BA%A6%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A-121550126.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】全台114年度財務報告董事會預計召開日期為115年03月04日",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%85%A8%E5%8F%B0114%E5%B9%B4%E5%BA%A6%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A%E8%91%A3%E4%BA%8B%E6%9C%83%E9%A0%90%E8%A8%88%E5%8F%AC%E9%96%8B%E6%97%A5%E6%9C%9F%E7%82%BA115%E5%B9%B403%E6%9C%8804%E6%97%A5-141643836.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】全台第21次買回庫藏股期間屆滿及執行情形",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%85%A8%E5%8F%B0%E7%AC%AC21%E6%AC%A1%E8%B2%B7%E5%9B%9E%E5%BA%AB%E8%97%8F%E8%82%A1%E6%9C%9F%E9%96%93%E5%B1%86%E6%BB%BF%E5%8F%8A%E5%9F%B7%E8%A1%8C%E6%83%85%E5%BD%A2-111446748.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】全台 2026年1月合併營收2.59億元 年增-6.27%",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%85%A8%E5%8F%B0-2026%E5%B9%B41%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B62-59%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E-063356315.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】全台買回股份數量達已發行股份總數百分之二",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%85%A8%E5%8F%B0%E8%B2%B7%E5%9B%9E%E8%82%A1%E4%BB%BD%E6%95%B8%E9%87%8F%E9%81%94%E5%B7%B2%E7%99%BC%E8%A1%8C%E8%82%A1%E4%BB%BD%E7%B8%BD%E6%95%B8%E7%99%BE%E5%88%86%E4%B9%8B%E4%BA%8C-090637470.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】全台 2025年12月合併營收2.25億元 年增-19.37%",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%85%A8%E5%8F%B0-2025%E5%B9%B412%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B62-25%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E-063253921.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】全台董事會決議第二十一次買回全台股份",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%85%A8%E5%8F%B0%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E7%AC%AC%E4%BA%8C%E5%8D%81-%E6%AC%A1%E8%B2%B7%E5%9B%9E%E5%85%A8%E5%8F%B0%E8%82%A1%E4%BB%BD-082606092.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】全台 2025年11月合併營收2.12億元 年增-24.9%",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%85%A8%E5%8F%B0-2025%E5%B9%B411%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B62-12%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E-062413394.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】全台受邀參加元大證券舉辦之線上法人說明會",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%85%A8%E5%8F%B0%E5%8F%97%E9%82%80%E5%8F%83%E5%8A%A0%E5%85%83%E5%A4%A7%E8%AD%89%E5%88%B8%E8%88%89%E8%BE%A6%E4%B9%8B%E7%B7%9A%E4%B8%8A%E6%B3%95%E4%BA%BA%E8%AA%AA%E6%98%8E%E6%9C%83-080141575.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】全台 2025年10月合併營收2.42億元 年增-15.25%",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%85%A8%E5%8F%B0-2025%E5%B9%B410%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B62-42%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E-061206952.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】全台董事會通過114年第3季合併財務報告",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%85%A8%E5%8F%B0%E8%91%A3%E4%BA%8B%E6%9C%83%E9%80%9A%E9%81%8E114%E5%B9%B4%E7%AC%AC3%E5%AD%A3%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A-101503754.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】全台114年第三季財務報告董事會預計召開日期為114年11月6日",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%85%A8%E5%8F%B0114%E5%B9%B4%E7%AC%AC%E4%B8%89%E5%AD%A3%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A%E8%91%A3%E4%BA%8B%E6%9C%83%E9%A0%90%E8%A8%88%E5%8F%AC%E9%96%8B%E6%97%A5%E6%9C%9F%E7%82%BA114%E5%B9%B411%E6%9C%886%E6%97%A5-063630373.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】全台 2025年9月合併營收2.29億元 年增-16.68%",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%85%A8%E5%8F%B0-2025%E5%B9%B49%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B62-29%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E-063201526.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】全台 2025年8月合併營收2.75億元 年增-8.11%",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%85%A8%E5%8F%B0-2025%E5%B9%B48%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B62-75%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E-061158641.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】全台受邀參加元大證券舉辦之線上法人說明會",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%85%A8%E5%8F%B0%E5%8F%97%E9%82%80%E5%8F%83%E5%8A%A0%E5%85%83%E5%A4%A7%E8%AD%89%E5%88%B8%E8%88%89%E8%BE%A6%E4%B9%8B%E7%B7%9A%E4%B8%8A%E6%B3%95%E4%BA%BA%E8%AA%AA%E6%98%8E%E6%9C%83-015554450.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    }
+  ]
+}

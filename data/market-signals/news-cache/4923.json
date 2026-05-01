@@ -1,0 +1,158 @@
+{
+  "stockCode": "4923",
+  "name": "力士科技",
+  "scrapedAt": "2026-05-01T11:10:55.932Z",
+  "sourceCounts": {
+    "yahoo": 20,
+    "ltn": 1
+  },
+  "news": [
+    {
+      "title": "穎崴股東會通過每股配發現金股利22元",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4340791",
+      "source": "ltn",
+      "date": "2023-06-21",
+      "snippet": ""
+    },
+    {
+      "title": "【公告】力士115年第一季財務報告董事會召開日期為115年5月6日",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%8A%9B%E5%A3%AB115%E5%B9%B4%E7%AC%AC-%E5%AD%A3%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A%E8%91%A3%E4%BA%8B%E6%9C%83%E5%8F%AC%E9%96%8B%E6%97%A5%E6%9C%9F%E7%82%BA115%E5%B9%B45%E6%9C%886%E6%97%A5-073621010.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】力士 2026年3月合併營收8526.2萬元 年增21.26%",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%8A%9B%E5%A3%AB-2026%E5%B9%B43%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B68526-2%E8%90%AC%E5%85%83-%E5%B9%B4%E5%A2%9E21-081241749.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】力士與華碩電腦股份有限公司之專利侵權賠償訴訟案之美國法院判決之補充裁定(補充公告)",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%8A%9B%E5%A3%AB%E8%88%87%E8%8F%AF%E7%A2%A9%E9%9B%BB%E8%85%A6%E8%82%A1%E4%BB%BD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%E4%B9%8B%E5%B0%88%E5%88%A9%E4%BE%B5%E6%AC%8A%E8%B3%A0%E5%84%9F%E8%A8%B4%E8%A8%9F%E6%A1%88%E4%B9%8B%E7%BE%8E%E5%9C%8B%E6%B3%95%E9%99%A2%E5%88%A4%E6%B1%BA%E4%B9%8B%E8%A3%9C%E5%85%85%E8%A3%81%E5%AE%9A-%E8%A3%9C%E5%85%85%E5%85%AC%E5%91%8A-072650638.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "力士：公司與華碩之專利侵權賠償訴訟案，美國法院判決之補充裁定",
+      "url": "https://tw.stock.yahoo.com/news/%E5%8A%9B%E5%A3%AB-%E5%85%AC%E5%8F%B8%E8%88%87%E8%8F%AF%E7%A2%A9%E4%B9%8B%E5%B0%88%E5%88%A9%E4%BE%B5%E6%AC%8A%E8%B3%A0%E5%84%9F%E8%A8%B4%E8%A8%9F%E6%A1%88-%E7%BE%8E%E5%9C%8B%E6%B3%95%E9%99%A2%E5%88%A4%E6%B1%BA%E4%B9%8B%E8%A3%9C%E5%85%85%E8%A3%81%E5%AE%9A-071700569.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "力士 公告本公司與華碩電腦股份有限公司之專利侵權賠償訴訟案之美國法院判決之補充裁定(補充公告)",
+      "url": "https://tw.stock.yahoo.com/news/%E5%8A%9B%E5%A3%AB-%E5%85%AC%E5%91%8A%E6%9C%AC%E5%85%AC%E5%8F%B8%E8%88%87%E8%8F%AF%E7%A2%A9%E9%9B%BB%E8%85%A6%E8%82%A1%E4%BB%BD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%E4%B9%8B%E5%B0%88%E5%88%A9%E4%BE%B5%E6%AC%8A%E8%B3%A0%E5%84%9F%E8%A8%B4%E8%A8%9F%E6%A1%88%E4%B9%8B%E7%BE%8E%E5%9C%8B%E6%B3%95%E9%99%A2%E5%88%A4%E6%B1%BA%E4%B9%8B%E8%A3%9C%E5%85%85%E8%A3%81%E5%AE%9A-%E8%A3%9C%E5%85%85%E5%85%AC%E5%91%8A-071300691.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】力士 2026年2月合併營收8519.4萬元 年增39.63%",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%8A%9B%E5%A3%AB-2026%E5%B9%B42%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B68519-4%E8%90%AC%E5%85%83-%E5%B9%B4%E5%A2%9E39-072328834.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】力士股東常會召開日期、召集事由、停止過戶日期及受理股東提案期間",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%8A%9B%E5%A3%AB%E8%82%A1%E6%9D%B1%E5%B8%B8%E6%9C%83%E5%8F%AC%E9%96%8B%E6%97%A5%E6%9C%9F-%E5%8F%AC%E9%9B%86%E4%BA%8B%E7%94%B1-%E5%81%9C%E6%AD%A2%E9%81%8E%E6%88%B6%E6%97%A5%E6%9C%9F%E5%8F%8A%E5%8F%97%E7%90%86%E8%82%A1%E6%9D%B1%E6%8F%90%E6%A1%88%E6%9C%9F%E9%96%93-091511702.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】力士董事會決議不分派股利",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%8A%9B%E5%A3%AB%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E4%B8%8D%E5%88%86%E6%B4%BE%E8%82%A1%E5%88%A9-091509616.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】力士董事會通過114年度合併財務報告",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%8A%9B%E5%A3%AB%E8%91%A3%E4%BA%8B%E6%9C%83%E9%80%9A%E9%81%8E114%E5%B9%B4%E5%BA%A6%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A-083448186.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】力士114年度財務報告董事會召開日期為115年2月25日",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%8A%9B%E5%A3%AB114%E5%B9%B4%E5%BA%A6%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A%E8%91%A3%E4%BA%8B%E6%9C%83%E5%8F%AC%E9%96%8B%E6%97%A5%E6%9C%9F%E7%82%BA115%E5%B9%B42%E6%9C%8825%E6%97%A5-041224831.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】力士 2026年1月合併營收8010.7萬元 年增33.47%",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%8A%9B%E5%A3%AB-2026%E5%B9%B41%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B68010-7%E8%90%AC%E5%85%83-%E5%B9%B4%E5%A2%9E33-073328302.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】力士國內第一次無擔保轉換公司債收足應募價款",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%8A%9B%E5%A3%AB%E5%9C%8B%E5%85%A7%E7%AC%AC-%E6%AC%A1%E7%84%A1%E6%93%94%E4%BF%9D%E8%BD%89%E6%8F%9B%E5%85%AC%E5%8F%B8%E5%82%B5%E6%94%B6%E8%B6%B3%E6%87%89%E5%8B%9F%E5%83%B9%E6%AC%BE-065303530.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】更正力士115年1月23日發布股價異常重訊之事實發生日為115/01/23",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%9B%B4%E6%AD%A3%E5%8A%9B%E5%A3%AB115%E5%B9%B41%E6%9C%8823%E6%97%A5%E7%99%BC%E5%B8%83%E8%82%A1%E5%83%B9%E7%95%B0%E5%B8%B8%E9%87%8D%E8%A8%8A%E4%B9%8B%E4%BA%8B%E5%AF%A6%E7%99%BC%E7%94%9F%E6%97%A5%E7%82%BA115-01-23-093416776.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】力士因近期股價價格異常，應櫃買中心要求公布相關資訊，俾便投資人暸解",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%8A%9B%E5%A3%AB%E5%9B%A0%E8%BF%91%E6%9C%9F%E8%82%A1%E5%83%B9%E5%83%B9%E6%A0%BC%E7%95%B0%E5%B8%B8-%E6%87%89%E6%AB%83%E8%B2%B7%E4%B8%AD%E5%BF%83%E8%A6%81%E6%B1%82%E5%85%AC%E5%B8%83%E7%9B%B8%E9%97%9C%E8%B3%87%E8%A8%8A-%E4%BF%BE%E4%BE%BF%E6%8A%95%E8%B3%87%E4%BA%BA%E6%9A%B8%E8%A7%A3-061535570.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】力士國內第一次無擔保轉換公司債完成訂價",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%8A%9B%E5%A3%AB%E5%9C%8B%E5%85%A7%E7%AC%AC-%E6%AC%A1%E7%84%A1%E6%93%94%E4%BF%9D%E8%BD%89%E6%8F%9B%E5%85%AC%E5%8F%B8%E5%82%B5%E5%AE%8C%E6%88%90%E8%A8%82%E5%83%B9-071218941.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】力士國內第一次無擔保轉換公司債代收價款及存儲專戶行庫",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%8A%9B%E5%A3%AB%E5%9C%8B%E5%85%A7%E7%AC%AC-%E6%AC%A1%E7%84%A1%E6%93%94%E4%BF%9D%E8%BD%89%E6%8F%9B%E5%85%AC%E5%8F%B8%E5%82%B5%E4%BB%A3%E6%94%B6%E5%83%B9%E6%AC%BE%E5%8F%8A%E5%AD%98%E5%84%B2%E5%B0%88%E6%88%B6%E8%A1%8C%E5%BA%AB-083248558.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】力士 2025年12月合併營收8036.7萬元 年增33.83%",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%8A%9B%E5%A3%AB-2025%E5%B9%B412%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B68036-7%E8%90%AC%E5%85%83-%E5%B9%B4%E5%A2%9E33-083225901.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】強茂股份有限公司不服113年民公訴字第7號案判決對力士提出上訴",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%BC%B7%E8%8C%82%E8%82%A1%E4%BB%BD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%E4%B8%8D%E6%9C%8D113%E5%B9%B4%E6%B0%91%E5%85%AC%E8%A8%B4%E5%AD%97%E7%AC%AC7%E8%99%9F%E6%A1%88%E5%88%A4%E6%B1%BA%E5%B0%8D%E5%8A%9B%E5%A3%AB%E6%8F%90%E5%87%BA%E4%B8%8A%E8%A8%B4-060339995.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】力士董事會決議發行國內第一次無擔保轉換公司債",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%8A%9B%E5%A3%AB%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E7%99%BC%E8%A1%8C%E5%9C%8B%E5%85%A7%E7%AC%AC-%E6%AC%A1%E7%84%A1%E6%93%94%E4%BF%9D%E8%BD%89%E6%8F%9B%E5%85%AC%E5%8F%B8%E5%82%B5-084740563.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】力士 2025年11月合併營收8053.7萬元 年增14.96%",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%8A%9B%E5%A3%AB-2025%E5%B9%B411%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B68053-7%E8%90%AC%E5%85%83-%E5%B9%B4%E5%A2%9E14-081134602.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    }
+  ]
+}

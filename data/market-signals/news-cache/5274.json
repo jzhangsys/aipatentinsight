@@ -1,29 +1,290 @@
 {
   "stockCode": "5274",
-  "name": "信驊",
-  "scrapedAt": "2026-05-01T10:42:11.374Z",
-  "devSeed": true,
+  "name": "信驊科技",
+  "scrapedAt": "2026-05-01T11:11:07.929Z",
   "sourceCounts": {
-    "yahoo": 1,
-    "ltn": 1,
-    "mops": 0,
-    "technews": 0,
-    "digitimes": 0,
-    "anue": 0
+    "yahoo": 20,
+    "ltn": 20
   },
   "news": [
     {
-      "title": "信驊 BMC 晶片 AI 伺服器導入率攀升",
-      "url": "https://tw.stock.yahoo.com/news/5274-信驊 BMC-2026-01-30.html",
-      "source": "yahoo",
-      "date": "2026-01-30",
+      "title": "信驊：最新OBMF-ICP over USB解決方案  簡化資料中心管理",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5419848",
+      "source": "ltn",
+      "date": "2026-04-29",
       "snippet": ""
     },
     {
-      "title": "AI Server 開機晶片 信驊掌握獨家供應",
-      "url": "https://search.ltn.com.tw/list?keyword=%E4%BF%A1%E9%A9%8A#2026-01-18",
+      "title": "攻進股王供應鏈！Exein攜手信驊、聯發科 搶攻資料中心與IoT資安",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5405598",
       "source": "ltn",
-      "date": "2026-01-18",
+      "date": "2026-04-16",
+      "snippet": ""
+    },
+    {
+      "title": "橋科首家企業廠房落成 記憶體模組「華騰」拔頭籌",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5308837",
+      "source": "ltn",
+      "date": "2026-01-13",
+      "snippet": ""
+    },
+    {
+      "title": "完備南部半導體S廊帶！亞灣2.0吸引23家ICT公司落地、建置3座算力中心",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5250454",
+      "source": "ltn",
+      "date": "2025-11-18",
+      "snippet": ""
+    },
+    {
+      "title": "陳其邁上任累計招商逾9100億 台積電P4廠也動工了",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5195031",
+      "source": "ltn",
+      "date": "2025-09-29",
+      "snippet": ""
+    },
+    {
+      "title": "SEMICON Taiwan下周登場   17個國家館參與創紀錄",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5165676",
+      "source": "ltn",
+      "date": "2025-09-03",
+      "snippet": ""
+    },
+    {
+      "title": "華碩：台北國際自動化大展秀實力 首度完整公開AI全場景應用",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5150569",
+      "source": "ltn",
+      "date": "2025-08-20",
+      "snippet": ""
+    },
+    {
+      "title": "台肥竹科D7-B科技研發大樓動土 李孫榮：成為高科技產業鏈整合平台",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5036266",
+      "source": "ltn",
+      "date": "2025-05-08",
+      "snippet": ""
+    },
+    {
+      "title": "台肥新竹科技園區第三期核心工程 即將啟動",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5035291",
+      "source": "ltn",
+      "date": "2025-05-07",
+      "snippet": ""
+    },
+    {
+      "title": "棧貳庫+大港倉遊客快破400萬！土開公司：旗鼓鹽共存共榮",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4998490",
+      "source": "ltn",
+      "date": "2025-04-01",
+      "snippet": ""
+    },
+    {
+      "title": "亞灣智慧公宅公辦都更案評選出爐 高市府：估引資逾110億元",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4982398",
+      "source": "ltn",
+      "date": "2025-03-17",
+      "snippet": ""
+    },
+    {
+      "title": "焦點股》信驊：GB300降低BMC用量？外資砍目標價",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4902456",
+      "source": "ltn",
+      "date": "2024-12-24",
+      "snippet": ""
+    },
+    {
+      "title": "輝達等4公司將進駐高雄香蕉碼頭  成立生成式主權AI辦公室",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4901862",
+      "source": "ltn",
+      "date": "2024-12-23",
+      "snippet": ""
+    },
+    {
+      "title": "信驊科技20週年慶宣布在高雄設研發中心 陳其邁：感謝看好高雄",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4894222",
+      "source": "ltn",
+      "date": "2024-12-15",
+      "snippet": ""
+    },
+    {
+      "title": "盟立AMR導入信驊全景相機 為機器人添「慧眼」",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4791041",
+      "source": "ltn",
+      "date": "2024-09-05",
+      "snippet": ""
+    },
+    {
+      "title": "超微在高雄設研發中心有譜 資深副總拜會陳其邁",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4775304",
+      "source": "ltn",
+      "date": "2024-08-21",
+      "snippet": ""
+    },
+    {
+      "title": "完成高雄半導體產業鏈最後拼圖  南部晶片設計產業推動基地成立",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4763950",
+      "source": "ltn",
+      "date": "2024-08-09",
+      "snippet": ""
+    },
+    {
+      "title": "焦點股》信驊：搭上輝達列車 股價飆新高",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4695593",
+      "source": "ltn",
+      "date": "2024-06-05",
+      "snippet": ""
+    },
+    {
+      "title": "專家指高雄AI潛力最大 AI產業鏈地圖曝光",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4694205",
+      "source": "ltn",
+      "date": "2024-06-04",
+      "snippet": ""
+    },
+    {
+      "title": "「放視大賞」數位設計展登場 陳其邁證實爭取AMD落腳高雄",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4689276",
+      "source": "ltn",
+      "date": "2024-05-30",
+      "snippet": ""
+    },
+    {
+      "title": "信驊前進OCP EMEA峰會 展示簡化資料中心管理方案",
+      "url": "https://tw.stock.yahoo.com/news/%E4%BF%A1%E9%A9%8A%E5%89%8D%E9%80%B2ocp-emea%E5%B3%B0%E6%9C%83-%E5%B1%95%E7%A4%BA%E7%B0%A1%E5%8C%96%E8%B3%87%E6%96%99%E4%B8%AD%E5%BF%83%E7%AE%A1%E7%90%86%E6%96%B9%E6%A1%88-115413360.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】信驊115年第1季財務報告董事會預計召開日期為115年05月05日",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E4%BF%A1%E9%A9%8A115%E5%B9%B4%E7%AC%AC1%E5%AD%A3%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A%E8%91%A3%E4%BA%8B%E6%9C%83%E9%A0%90%E8%A8%88%E5%8F%AC%E9%96%8B%E6%97%A5%E6%9C%9F%E7%82%BA115%E5%B9%B405%E6%9C%8805%E6%97%A5-082116117.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【台股盤中】台積電衝2330元新天價 台股飆1262點拚站穩4萬點",
+      "url": "https://tw.stock.yahoo.com/news/%E5%8F%B0%E8%82%A1%E7%9B%A4%E4%B8%AD-%E5%8F%B0%E7%A9%8D%E9%9B%BB%E8%A1%9D2330%E5%85%83%E6%96%B0%E5%A4%A9%E5%83%B9-%E5%8F%B0%E8%82%A1%E9%A3%861262%E9%BB%9E%E6%8B%9A%E7%AB%99%E7%A9%A94%E8%90%AC%E9%BB%9E-024559914.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【盤後焦點】台股上漲273點38000點得而復失 股王續攻現47千金",
+      "url": "https://tw.stock.yahoo.com/news/%E7%9B%A4%E5%BE%8C%E7%84%A6%E9%BB%9E-%E5%8F%B0%E8%82%A1%E4%B8%8A%E6%BC%B2273%E9%BB%9E38000%E9%BB%9E%E5%BE%97%E8%80%8C%E5%BE%A9%E5%A4%B1-%E8%82%A1%E7%8E%8B%E7%BA%8C%E6%94%BB%E7%8F%BE47%E5%8D%83%E9%87%91-065744309.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【台股盤中】股王信驊衝16495元新紀錄 台股再現47千金",
+      "url": "https://tw.stock.yahoo.com/news/%E5%8F%B0%E8%82%A1%E7%9B%A4%E4%B8%AD-%E8%82%A1%E7%8E%8B%E4%BF%A1%E9%A9%8A%E8%A1%9D16495%E5%85%83%E6%96%B0%E7%B4%80%E9%8C%84-%E5%8F%B0%E8%82%A1%E5%86%8D%E7%8F%BE47%E5%8D%83%E9%87%91-025443761.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "信驊衝15680元台股新紀錄 聯發科鎖漲停2090元創新高",
+      "url": "https://tw.stock.yahoo.com/news/%E4%BF%A1%E9%A9%8A%E8%A1%9D15680%E5%85%83%E5%8F%B0%E8%82%A1%E6%96%B0%E7%B4%80%E9%8C%84-%E8%81%AF%E7%99%BC%E7%A7%91%E9%8E%96%E6%BC%B2%E5%81%9C2090%E5%85%83%E5%89%B5%E6%96%B0%E9%AB%98-034704442.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【台股盤中】股王信驊續創天價15680元 台股續創新高",
+      "url": "https://tw.stock.yahoo.com/news/%E5%8F%B0%E8%82%A1%E7%9B%A4%E4%B8%AD-%E8%82%A1%E7%8E%8B%E4%BF%A1%E9%A9%8A%E7%BA%8C%E5%89%B5%E5%A4%A9%E5%83%B915680%E5%85%83-%E5%8F%B0%E8%82%A1%E7%BA%8C%E5%89%B5%E6%96%B0%E9%AB%98-030026776.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "股王信驊盤中衝高至14890元 再寫台股個股天價紀錄",
+      "url": "https://tw.stock.yahoo.com/news/%E8%82%A1%E7%8E%8B%E4%BF%A1%E9%A9%8A%E7%9B%A4%E4%B8%AD%E8%A1%9D%E9%AB%98%E8%87%B314890%E5%85%83-%E5%86%8D%E5%AF%AB%E5%8F%B0%E8%82%A1%E5%80%8B%E8%82%A1%E5%A4%A9%E5%83%B9%E7%B4%80%E9%8C%84-040330264.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【台股盤中】台積電信驊創新天價 台股盤中屢刷新高衝上37000點",
+      "url": "https://tw.stock.yahoo.com/news/%E5%8F%B0%E8%82%A1%E7%9B%A4%E4%B8%AD-%E5%8F%B0%E7%A9%8D%E9%9B%BB%E4%BF%A1%E9%A9%8A%E5%89%B5%E6%96%B0%E5%A4%A9%E5%83%B9-%E5%8F%B0%E8%82%A1%E7%9B%A4%E4%B8%AD%E5%B1%A2%E5%88%B7%E6%96%B0%E9%AB%98%E8%A1%9D%E4%B8%8A37000%E9%BB%9E-030832340.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "台積電衝2075元新天價 台股觸36727.49點再創新高",
+      "url": "https://tw.stock.yahoo.com/news/%E5%8F%B0%E7%A9%8D%E9%9B%BB%E8%A1%9D2075%E5%85%83%E6%96%B0%E5%A4%A9%E5%83%B9-%E5%8F%B0%E8%82%A1%E8%A7%B836727-49%E9%BB%9E%E5%86%8D%E5%89%B5%E6%96%B0%E9%AB%98-011851211.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "台股閃現41千金終場首見40千金 14檔千元股漲停",
+      "url": "https://tw.stock.yahoo.com/news/%E5%8F%B0%E8%82%A1%E9%96%83%E7%8F%BE41%E5%8D%83%E9%87%91%E7%B5%82%E5%A0%B4%E9%A6%96%E8%A6%8B40%E5%8D%83%E9%87%91-14%E6%AA%94%E5%8D%83%E5%85%83%E8%82%A1%E6%BC%B2%E5%81%9C-064734022.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "股王信驊大漲1145元攻漲停12615元 再創台股新紀錄",
+      "url": "https://tw.stock.yahoo.com/news/%E8%82%A1%E7%8E%8B%E4%BF%A1%E9%A9%8A%E5%A4%A7%E6%BC%B21145%E5%85%83%E6%94%BB%E6%BC%B2%E5%81%9C12615%E5%85%83-%E5%86%8D%E5%89%B5%E5%8F%B0%E8%82%A1%E6%96%B0%E7%B4%80%E9%8C%84-020209492.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "信驊伺服器晶片出貨旺 3月和第1季營收創新高",
+      "url": "https://tw.stock.yahoo.com/news/%E4%BF%A1%E9%A9%8A%E4%BC%BA%E6%9C%8D%E5%99%A8%E6%99%B6%E7%89%87%E5%87%BA%E8%B2%A8%E6%97%BA-3%E6%9C%88%E5%92%8C%E7%AC%AC1%E5%AD%A3%E7%87%9F%E6%94%B6%E5%89%B5%E6%96%B0%E9%AB%98-092758528.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】信驊 2026年3月合併營收12.35億元 年增63.63%",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E4%BF%A1%E9%A9%8A-2026%E5%B9%B43%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B612-35%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E63-064237628.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "《資服股》系微開發TapRUUT為AI PC、AI伺服器與資料中心打造基礎平台",
+      "url": "https://tw.stock.yahoo.com/news/%E8%B3%87%E6%9C%8D%E8%82%A1-%E7%B3%BB%E5%BE%AE%E9%96%8B%E7%99%BCtapruut%E7%82%BAai-pc-ai%E4%BC%BA%E6%9C%8D%E5%99%A8%E8%88%87%E8%B3%87%E6%96%99%E4%B8%AD%E5%BF%83%E6%89%93%E9%80%A0%E5%9F%BA%E7%A4%8E%E5%B9%B3%E5%8F%B0-020531211.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "外資連2買加碼記憶體 敲進旺宏4.37萬張最多",
+      "url": "https://tw.stock.yahoo.com/news/%E5%A4%96%E8%B3%87%E9%80%A32%E8%B2%B7%E5%8A%A0%E7%A2%BC%E8%A8%98%E6%86%B6%E9%AB%94-%E6%95%B2%E9%80%B2%E6%97%BA%E5%AE%8F4-37%E8%90%AC%E5%BC%B5%E6%9C%80%E5%A4%9A-093149040.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "信驊衝漲停11320元大漲1025元 寫台股新紀錄",
+      "url": "https://tw.stock.yahoo.com/news/%E4%BF%A1%E9%A9%8A%E8%A1%9D%E6%BC%B2%E5%81%9C11320%E5%85%83%E5%A4%A7%E6%BC%B21025%E5%85%83-%E5%AF%AB%E5%8F%B0%E8%82%A1%E6%96%B0%E7%B4%80%E9%8C%84-051823939.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】信驊受邀參加美林證券(BofA)舉辦之2026 Asia Tech Conference",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E4%BF%A1%E9%A9%8A%E5%8F%97%E9%82%80%E5%8F%83%E5%8A%A0%E7%BE%8E%E6%9E%97%E8%AD%89%E5%88%B8-bofa-%E8%88%89%E8%BE%A6%E4%B9%8B2026-asia-103127995.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【台股盤後】中東局勢緊繃 台股震盪下跌181點週線連2黑",
+      "url": "https://tw.stock.yahoo.com/news/%E5%8F%B0%E8%82%A1%E7%9B%A4%E5%BE%8C-%E4%B8%AD%E6%9D%B1%E5%B1%80%E5%8B%A2%E7%B7%8A%E7%B9%83-%E5%8F%B0%E8%82%A1%E9%9C%87%E7%9B%AA%E4%B8%8B%E8%B7%8C181%E9%BB%9E%E9%80%B1%E7%B7%9A%E9%80%A32%E9%BB%91-061714664.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【盤後焦點】中東局勢多變 台股下跌532點力守月線支撐",
+      "url": "https://tw.stock.yahoo.com/news/%E7%9B%A4%E5%BE%8C%E7%84%A6%E9%BB%9E-%E4%B8%AD%E6%9D%B1%E5%B1%80%E5%8B%A2%E5%A4%9A%E8%AE%8A-%E5%8F%B0%E8%82%A1%E4%B8%8B%E8%B7%8C532%E9%BB%9E%E5%8A%9B%E5%AE%88%E6%9C%88%E7%B7%9A%E6%94%AF%E6%92%90-061828334.html",
+      "source": "yahoo",
+      "date": null,
       "snippet": ""
     }
   ]

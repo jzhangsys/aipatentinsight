@@ -1,0 +1,179 @@
+{
+  "stockCode": "6715",
+  "name": "嘉基科技",
+  "scrapedAt": "2026-05-01T11:12:07.652Z",
+  "sourceCounts": {
+    "yahoo": 20,
+    "ltn": 4
+  },
+  "news": [
+    {
+      "title": "《金融時報》公佈亞太高成長500強企業 台灣54家公司上榜",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/3485482",
+      "source": "ltn",
+      "date": "2021-03-31",
+      "snippet": ""
+    },
+    {
+      "title": "嘉基：領先佈局第四代THUNDERBOLT 光傳輸將對營收貢獻20％",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/2981953",
+      "source": "ltn",
+      "date": "2019-11-18",
+      "snippet": ""
+    },
+    {
+      "title": "嘉澤Q1營收創高 法人看好逐季成長",
+      "url": "https://ec.ltn.com.tw/article/paper/1280455",
+      "source": "ltn",
+      "date": "2019-04-10",
+      "snippet": ""
+    },
+    {
+      "title": "5G、電動車帶動連接器 萬泰科、貿聯看俏",
+      "url": "https://ec.ltn.com.tw/article/paper/1208778",
+      "source": "ltn",
+      "date": "2018-06-14",
+      "snippet": ""
+    },
+    {
+      "title": "【公告】嘉基115年第一季財務報告董事會召開日期為115年5月11日",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%98%89%E5%9F%BA115%E5%B9%B4%E7%AC%AC-%E5%AD%A3%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A%E8%91%A3%E4%BA%8B%E6%9C%83%E5%8F%AC%E9%96%8B%E6%97%A5%E6%9C%9F%E7%82%BA115%E5%B9%B45%E6%9C%8811%E6%97%A5-100727864.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】嘉基股份有限公司國內第二次無擔保轉換公司債(簡稱：嘉基二，代碼：67152)發行公司行使債券贖回權暨訂於115年06月11日終止櫃檯買賣等相關事宜。",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%98%89%E5%9F%BA%E8%82%A1%E4%BB%BD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%E5%9C%8B%E5%85%A7%E7%AC%AC%E4%BA%8C%E6%AC%A1%E7%84%A1%E6%93%94%E4%BF%9D%E8%BD%89%E6%8F%9B%E5%85%AC%E5%8F%B8%E5%82%B5-%E7%B0%A1%E7%A8%B1-%E5%98%89%E5%9F%BA%E4%BA%8C-%E4%BB%A3%E7%A2%BC-094449659.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】嘉基有價證券於集中交易市場達公布注意交易資訊標準故公布相關財務業務等重大訊息，以利投資人區別瞭解",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%98%89%E5%9F%BA%E6%9C%89%E5%83%B9%E8%AD%89%E5%88%B8%E6%96%BC%E9%9B%86%E4%B8%AD%E4%BA%A4%E6%98%93%E5%B8%82%E5%A0%B4%E9%81%94%E5%85%AC%E5%B8%83%E6%B3%A8%E6%84%8F%E4%BA%A4%E6%98%93%E8%B3%87%E8%A8%8A%E6%A8%99%E6%BA%96%E6%95%85%E5%85%AC%E5%B8%83%E7%9B%B8%E9%97%9C%E8%B2%A1%E5%8B%99%E6%A5%AD%E5%8B%99%E7%AD%89%E9%87%8D%E5%A4%A7%E8%A8%8A%E6%81%AF-%E4%BB%A5%E5%88%A9%E6%8A%95%E8%B3%87%E4%BA%BA%E5%8D%80%E5%88%A5%E7%9E%AD%E8%A7%A3-072654226.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】嘉基 2026年3月合併營收1.93億元 年增9.55%",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%98%89%E5%9F%BA-2026%E5%B9%B43%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B61-93%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E9-080233594.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】嘉基可轉換公司債嘉基二(代號:67152) 近期達公布注意交易資訊標準， 故公告相關訊息，以利投資人區別瞭解",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%98%89%E5%9F%BA%E5%8F%AF%E8%BD%89%E6%8F%9B%E5%85%AC%E5%8F%B8%E5%82%B5%E5%98%89%E5%9F%BA%E4%BA%8C-%E4%BB%A3%E8%99%9F-67152-%E8%BF%91%E6%9C%9F%E9%81%94%E5%85%AC%E5%B8%83%E6%B3%A8%E6%84%8F%E4%BA%A4%E6%98%93%E8%B3%87%E8%A8%8A%E6%A8%99%E6%BA%96-090928197.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】嘉基庫藏股轉讓員工認股基準日",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%98%89%E5%9F%BA%E5%BA%AB%E8%97%8F%E8%82%A1%E8%BD%89%E8%AE%93%E5%93%A1%E5%B7%A5%E8%AA%8D%E8%82%A1%E5%9F%BA%E6%BA%96%E6%97%A5-101733548.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】嘉基董事會決議召開民國115年股東常會",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%98%89%E5%9F%BA%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E5%8F%AC%E9%96%8B%E6%B0%91%E5%9C%8B115%E5%B9%B4%E8%82%A1%E6%9D%B1%E5%B8%B8%E6%9C%83-093131760.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】嘉基董事會決議股利分派",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%98%89%E5%9F%BA%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E8%82%A1%E5%88%A9%E5%88%86%E6%B4%BE-093129137.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】嘉基有價證券於集中交易市場達公布注意交易資訊標準故公布相關財務業務等重大訊息，以利投資人區別瞭解",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%98%89%E5%9F%BA%E6%9C%89%E5%83%B9%E8%AD%89%E5%88%B8%E6%96%BC%E9%9B%86%E4%B8%AD%E4%BA%A4%E6%98%93%E5%B8%82%E5%A0%B4%E9%81%94%E5%85%AC%E5%B8%83%E6%B3%A8%E6%84%8F%E4%BA%A4%E6%98%93%E8%B3%87%E8%A8%8A%E6%A8%99%E6%BA%96%E6%95%85%E5%85%AC%E5%B8%83%E7%9B%B8%E9%97%9C%E8%B2%A1%E5%8B%99%E6%A5%AD%E5%8B%99%E7%AD%89%E9%87%8D%E5%A4%A7%E8%A8%8A%E6%81%AF-%E4%BB%A5%E5%88%A9%E6%8A%95%E8%B3%87%E4%BA%BA%E5%8D%80%E5%88%A5%E7%9E%AD%E8%A7%A3-082536211.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】嘉基 2026年2月合併營收1.26億元 年增17.74%",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%98%89%E5%9F%BA-2026%E5%B9%B42%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B61-26%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E17-073358567.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】嘉基 2026年1月合併營收1.91億元 年增26.26%",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%98%89%E5%9F%BA-2026%E5%B9%B41%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B61-91%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E26-071319412.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】嘉基有價證券於集中交易市場達公布注意交易資訊標準故公布相關財務業務等重大訊息，以利投資人區別瞭解",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%98%89%E5%9F%BA%E6%9C%89%E5%83%B9%E8%AD%89%E5%88%B8%E6%96%BC%E9%9B%86%E4%B8%AD%E4%BA%A4%E6%98%93%E5%B8%82%E5%A0%B4%E9%81%94%E5%85%AC%E5%B8%83%E6%B3%A8%E6%84%8F%E4%BA%A4%E6%98%93%E8%B3%87%E8%A8%8A%E6%A8%99%E6%BA%96%E6%95%85%E5%85%AC%E5%B8%83%E7%9B%B8%E9%97%9C%E8%B2%A1%E5%8B%99%E6%A5%AD%E5%8B%99%E7%AD%89%E9%87%8D%E5%A4%A7%E8%A8%8A%E6%81%AF-%E4%BB%A5%E5%88%A9%E6%8A%95%E8%B3%87%E4%BA%BA%E5%8D%80%E5%88%A5%E7%9E%AD%E8%A7%A3-082408130.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】嘉基 2025年12月合併營收1.77億元 年增3.5%",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%98%89%E5%9F%BA-2025%E5%B9%B412%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B61-77%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E3-072336883.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】嘉基受邀參加中國信託證券舉辦之「2025年第四季前瞻論壇」",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%98%89%E5%9F%BA%E5%8F%97%E9%82%80%E5%8F%83%E5%8A%A0%E4%B8%AD%E5%9C%8B%E4%BF%A1%E8%A8%97%E8%AD%89%E5%88%B8%E8%88%89%E8%BE%A6%E4%B9%8B-2025%E5%B9%B4%E7%AC%AC%E5%9B%9B%E5%AD%A3%E5%89%8D%E7%9E%BB%E8%AB%96%E5%A3%87-092113914.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】嘉基 2025年11月合併營收1.38億元 年增-18.37%",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%98%89%E5%9F%BA-2025%E5%B9%B411%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B61-38%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E-072223046.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】依公司法第369條之8第1項規定，接獲嘉澤端子工業股份有限公司已取得嘉基已發行股份總數三分之一以上通知之公告",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E4%BE%9D%E5%85%AC%E5%8F%B8%E6%B3%95%E7%AC%AC369%E6%A2%9D%E4%B9%8B8%E7%AC%AC1%E9%A0%85%E8%A6%8F%E5%AE%9A-%E6%8E%A5%E7%8D%B2%E5%98%89%E6%BE%A4%E7%AB%AF%E5%AD%90%E5%B7%A5%E6%A5%AD%E8%82%A1%E4%BB%BD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%E5%B7%B2%E5%8F%96%E5%BE%97%E5%98%89%E5%9F%BA%E5%B7%B2%E7%99%BC%E8%A1%8C%E8%82%A1%E4%BB%BD%E7%B8%BD%E6%95%B8%E4%B8%89%E5%88%86%E4%B9%8B-%E4%BB%A5%E4%B8%8A%E9%80%9A%E7%9F%A5%E4%B9%8B%E5%85%AC%E5%91%8A-083618299.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】嘉基 2025年10月合併營收1.31億元 年增-36.78%",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%98%89%E5%9F%BA-2025%E5%B9%B410%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B61-31%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E-083306481.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】嘉基 2025年9月合併營收1.05億元 年增-44.73%",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%98%89%E5%9F%BA-2025%E5%B9%B49%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B61-05%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E-072142634.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】嘉基限制員工權利新股註銷完成變更登記事宜",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%98%89%E5%9F%BA%E9%99%90%E5%88%B6%E5%93%A1%E5%B7%A5%E6%AC%8A%E5%88%A9%E6%96%B0%E8%82%A1%E8%A8%BB%E9%8A%B7%E5%AE%8C%E6%88%90%E8%AE%8A%E6%9B%B4%E7%99%BB%E8%A8%98%E4%BA%8B%E5%AE%9C-094403917.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】嘉基 2025年8月合併營收7738.4萬元 年增-59.35%",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%98%89%E5%9F%BA-2025%E5%B9%B48%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B67738-4%E8%90%AC%E5%85%83-%E5%B9%B4%E5%A2%9E-101123476.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    }
+  ]
+}

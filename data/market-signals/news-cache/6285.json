@@ -1,0 +1,291 @@
+{
+  "stockCode": "6285",
+  "name": "啟碁科技",
+  "scrapedAt": "2026-05-01T11:11:46.680Z",
+  "sourceCounts": {
+    "yahoo": 20,
+    "ltn": 20
+  },
+  "news": [
+    {
+      "title": "研調：88％台灣人樂與AI協作 僅16％肯讓AI當長官",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5161431",
+      "source": "ltn",
+      "date": "2025-08-30",
+      "snippet": ""
+    },
+    {
+      "title": "國網中心開發「雲端PCB組裝分析平台」成本可大幅下降",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4890617",
+      "source": "ltn",
+      "date": "2024-12-11",
+      "snippet": ""
+    },
+    {
+      "title": "衛報：SpaceX要供應商外移產線 台灣內部有怨言",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4857160",
+      "source": "ltn",
+      "date": "2024-11-08",
+      "snippet": ""
+    },
+    {
+      "title": "緯創10年來最高股利入袋！ 他一人笑領1.1億元鉅款",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4742581",
+      "source": "ltn",
+      "date": "2024-07-20",
+      "snippet": ""
+    },
+    {
+      "title": "緯創配息2.6元 董事長林憲銘1.1億股利入袋",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4716074",
+      "source": "ltn",
+      "date": "2024-06-25",
+      "snippet": ""
+    },
+    {
+      "title": "緯創第3季EPS 1.67元  創近7季新高",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4485262",
+      "source": "ltn",
+      "date": "2023-11-09",
+      "snippet": ""
+    },
+    {
+      "title": "緯創助攻台鐵「行控4.0」 4主要功能達標",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4464935",
+      "source": "ltn",
+      "date": "2023-10-20",
+      "snippet": ""
+    },
+    {
+      "title": "衝刺指考外的選擇 勞動部「雙軌訓練旗艦計畫」50％學費補助",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/3939958",
+      "source": "ltn",
+      "date": "2022-05-26",
+      "snippet": ""
+    },
+    {
+      "title": "「運動在南科」23日登場 11家大廠釋出3000職缺徵才",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/3900477",
+      "source": "ltn",
+      "date": "2022-04-21",
+      "snippet": ""
+    },
+    {
+      "title": "南科14家大廠提供2500職缺 工程師月薪最高破6萬",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/3802030",
+      "source": "ltn",
+      "date": "2022-01-15",
+      "snippet": ""
+    },
+    {
+      "title": "義隆電子等3家公司獲竹科研發成效獎",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/3769660",
+      "source": "ltn",
+      "date": "2021-12-15",
+      "snippet": ""
+    },
+    {
+      "title": "Garmin育兒月領1萬搶人才  專場徵才活動吸引民眾求職",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/3660899",
+      "source": "ltn",
+      "date": "2021-09-04",
+      "snippet": ""
+    },
+    {
+      "title": "竹縣勞動參與率 今年上半年全國第一",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/3616283",
+      "source": "ltn",
+      "date": "2021-07-26",
+      "snippet": ""
+    },
+    {
+      "title": "平均五天壓降一次？ 南科供電品質 廠商怒罵爛",
+      "url": "https://ec.ltn.com.tw/article/paper/1443332",
+      "source": "ltn",
+      "date": "2021-04-16",
+      "snippet": ""
+    },
+    {
+      "title": "南科每5天壓降1次 供電品質差廠商罵「爛」",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/3500338",
+      "source": "ltn",
+      "date": "2021-04-15",
+      "snippet": ""
+    },
+    {
+      "title": "南科跳電 影響台積晶圓產能6萬片",
+      "url": "https://ec.ltn.com.tw/article/paper/1443132",
+      "source": "ltn",
+      "date": "2021-04-15",
+      "snippet": ""
+    },
+    {
+      "title": "線上就業博覽會將開跑 80家廠商提供3千多個工作機會",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/3443572",
+      "source": "ltn",
+      "date": "2021-02-19",
+      "snippet": ""
+    },
+    {
+      "title": "投資有前景 台商回流南市佔全國15％",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/3350623",
+      "source": "ltn",
+      "date": "2020-11-13",
+      "snippet": ""
+    },
+    {
+      "title": "《科技與創新》林憲銘：化危機為轉機 樹立企業經營典範",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/3334292",
+      "source": "ltn",
+      "date": "2020-10-28",
+      "snippet": ""
+    },
+    {
+      "title": "投資台灣3大方案 估年底前落實投資逾6263億元",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/3321456",
+      "source": "ltn",
+      "date": "2020-10-14",
+      "snippet": ""
+    },
+    {
+      "title": "千金股大亂鬥！股王信驊飆破17000元關卡後翻臉 行情還能衝？",
+      "url": "https://tw.stock.yahoo.com/news/%E5%8D%83%E9%87%91%E8%82%A1%E5%A4%A7%E4%BA%82%E9%AC%A5-%E8%82%A1%E7%8E%8B%E4%BF%A1%E9%A9%8A%E9%A3%86%E7%A0%B417000%E5%85%83%E9%97%9C%E5%8D%A1%E5%BE%8C%E7%BF%BB%E8%87%89-%E8%A1%8C%E6%83%85%E9%82%84%E8%83%BD%E8%A1%9D-035755716.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "美超微摔8% 傳甲骨文撤機櫃大單、改由緯穎接手",
+      "url": "https://tw.stock.yahoo.com/news/%E7%BE%8E%E8%B6%85%E5%BE%AE%E6%91%948-%E5%82%B3%E7%94%B2%E9%AA%A8%E6%96%87%E6%92%A4%E6%A9%9F%E6%AB%83%E5%A4%A7%E5%96%AE-%E6%94%B9%E7%94%B1%E7%B7%AF%E7%A9%8E%E6%8E%A5%E6%89%8B-003700695.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】因啟碁有價證券於集中交易市場達公布注意交易資訊標準，故公布相關財務業務等重大訊息，以利投資人區別瞭解",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%9B%A0%E5%95%9F%E7%A2%81%E6%9C%89%E5%83%B9%E8%AD%89%E5%88%B8%E6%96%BC%E9%9B%86%E4%B8%AD%E4%BA%A4%E6%98%93%E5%B8%82%E5%A0%B4%E9%81%94%E5%85%AC%E5%B8%83%E6%B3%A8%E6%84%8F%E4%BA%A4%E6%98%93%E8%B3%87%E8%A8%8A%E6%A8%99%E6%BA%96-%E6%95%85%E5%85%AC%E5%B8%83%E7%9B%B8%E9%97%9C%E8%B2%A1%E5%8B%99%E6%A5%AD%E5%8B%99%E7%AD%89%E9%87%8D%E5%A4%A7%E8%A8%8A%E6%81%AF-%E4%BB%A5%E5%88%A9%E6%8A%95%E8%B3%87%E4%BA%BA%E5%8D%80%E5%88%A5%E7%9E%AD%E8%A7%A3-081835825.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】啟碁 2026年3月合併營收108.47億元 年增3.8%",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%95%9F%E7%A2%81-2026%E5%B9%B43%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B6108-47%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E3-090229654.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "187家賺逾1股本！ 謝金河點名「2產業」：獲利會很嚇人",
+      "url": "https://tw.stock.yahoo.com/news/187%E5%AE%B6%E8%B3%BA%E9%80%BE1%E8%82%A1%E6%9C%AC-%E8%AC%9D%E9%87%91%E6%B2%B3%E9%BB%9E%E5%90%8D-2%E7%94%A2%E6%A5%AD-%E7%8D%B2%E5%88%A9%E6%9C%83%E5%BE%88%E5%9A%87%E4%BA%BA-021300893.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "獲利、績效紅不讓 台積電、緯穎創佳績",
+      "url": "https://tw.stock.yahoo.com/news/%E7%8D%B2%E5%88%A9-%E7%B8%BE%E6%95%88%E7%B4%85%E4%B8%8D%E8%AE%93-%E5%8F%B0%E7%A9%8D%E9%9B%BB-%E7%B7%AF%E7%A9%8E%E5%89%B5%E4%BD%B3%E7%B8%BE-201000114.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】啟碁收回已發行之限制員工權利新股註銷減資變更登記完成",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%95%9F%E7%A2%81%E6%94%B6%E5%9B%9E%E5%B7%B2%E7%99%BC%E8%A1%8C%E4%B9%8B%E9%99%90%E5%88%B6%E5%93%A1%E5%B7%A5%E6%AC%8A%E5%88%A9%E6%96%B0%E8%82%A1%E8%A8%BB%E9%8A%B7%E6%B8%9B%E8%B3%87%E8%AE%8A%E6%9B%B4%E7%99%BB%E8%A8%98%E5%AE%8C%E6%88%90-142523111.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "群益金鼎證券論壇南電等廠商參加，2026市場核心聚焦三面向",
+      "url": "https://tw.stock.yahoo.com/news/%E7%BE%A4%E7%9B%8A%E9%87%91%E9%BC%8E%E8%AD%89%E5%88%B8%E8%AB%96%E5%A3%87%E5%8D%97%E9%9B%BB%E7%AD%89%E5%BB%A0%E5%95%86%E5%8F%83%E5%8A%A0-2026%E5%B8%82%E5%A0%B4%E6%A0%B8%E5%BF%83%E8%81%9A%E7%84%A6%E4%B8%89%E9%9D%A2%E5%90%91-074115325.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "《金融股》群益證投資論壇 聚焦3核心變數面向",
+      "url": "https://tw.stock.yahoo.com/news/%E9%87%91%E8%9E%8D%E8%82%A1-%E7%BE%A4%E7%9B%8A%E8%AD%89%E6%8A%95%E8%B3%87%E8%AB%96%E5%A3%87-%E8%81%9A%E7%84%A63%E6%A0%B8%E5%BF%83%E8%AE%8A%E6%95%B8%E9%9D%A2%E5%90%91-070827242.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】啟碁受BofA Securities邀請參加「2026 Asia Tech Conference」",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%95%9F%E7%A2%81%E5%8F%97bofa-securities%E9%82%80%E8%AB%8B%E5%8F%83%E5%8A%A0-2026-asia-090529320.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】啟碁受台新證券邀請參加台新2026年第一季全球投資論壇",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%95%9F%E7%A2%81%E5%8F%97%E5%8F%B0%E6%96%B0%E8%AD%89%E5%88%B8%E9%82%80%E8%AB%8B%E5%8F%83%E5%8A%A0%E5%8F%B0%E6%96%B02026%E5%B9%B4%E7%AC%AC-%E5%AD%A3%E5%85%A8%E7%90%83%E6%8A%95%E8%B3%87%E8%AB%96%E5%A3%87-102957885.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】啟碁受中國信託證券邀請參加中信證券2026第一季前瞻論壇",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%95%9F%E7%A2%81%E5%8F%97%E4%B8%AD%E5%9C%8B%E4%BF%A1%E8%A8%97%E8%AD%89%E5%88%B8%E9%82%80%E8%AB%8B%E5%8F%83%E5%8A%A0%E4%B8%AD%E4%BF%A1%E8%AD%89%E5%88%B82026%E7%AC%AC-%E5%AD%A3%E5%89%8D%E7%9E%BB%E8%AB%96%E5%A3%87-102955773.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】啟碁董事會決議股利分派",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%95%9F%E7%A2%81%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E8%82%A1%E5%88%A9%E5%88%86%E6%B4%BE-095611224.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】啟碁受花旗證券邀請參加 Citi 2026 March Corporate Day",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%95%9F%E7%A2%81%E5%8F%97%E8%8A%B1%E6%97%97%E8%AD%89%E5%88%B8%E9%82%80%E8%AB%8B%E5%8F%83%E5%8A%A0-citi-2026-march-091515789.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "AI好強！緯創2月業績撐竿跳，逆勢刷新紀錄，緯穎同步月/年勁揚",
+      "url": "https://tw.stock.yahoo.com/news/ai%E5%A5%BD%E5%BC%B7-%E7%B7%AF%E5%89%B52%E6%9C%88%E6%A5%AD%E7%B8%BE%E6%92%90%E7%AB%BF%E8%B7%B3-%E9%80%86%E5%8B%A2%E5%88%B7%E6%96%B0%E7%B4%80%E9%8C%84-%E7%B7%AF%E7%A9%8E%E5%90%8C%E6%AD%A5%E6%9C%88-%E5%B9%B4%E5%8B%81%E6%8F%9A-090203268.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】啟碁 2026年2月合併營收81.74億元 年增-6.93%",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%95%9F%E7%A2%81-2026%E5%B9%B42%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B681-74%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E-085235514.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "財報撐腰外資點讚！廣達逆勢漲逾3%拚回300元大關 緯穎同飆5%",
+      "url": "https://tw.stock.yahoo.com/news/%E8%B2%A1%E5%A0%B1%E6%92%90%E8%85%B0%E5%A4%96%E8%B3%87%E9%BB%9E%E8%AE%9A%EF%BC%81%E5%BB%A3%E9%81%94%E9%80%86%E5%8B%A2%E6%BC%B2%E9%80%BE3%E6%8B%9A%E5%9B%9E300%E5%85%83%E5%A4%A7%E9%97%9C-%E7%B7%AF%E7%A9%8E%E5%90%8C%E9%A3%865-033459058.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "(啟)碁MWC秀AI-RAN解決方案 與輝達合作6G創新",
+      "url": "https://tw.stock.yahoo.com/news/%E5%95%9F-%E7%A2%81mwc%E7%A7%80ai-ran%E8%A7%A3%E6%B1%BA%E6%96%B9%E6%A1%88-%E8%88%87%E8%BC%9D%E9%81%94%E5%90%88%E4%BD%9C6g%E5%89%B5%E6%96%B0-023005087.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】啟碁 2026年1月合併營收101.36億元 年增10.95%",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%95%9F%E7%A2%81-2026%E5%B9%B41%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B6101-36%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E10-085201561.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "《產業》全球前20大EMS/ODM業者排名 鴻海、緯創、廣達包辦前三名",
+      "url": "https://tw.stock.yahoo.com/news/%E7%94%A2%E6%A5%AD-%E5%85%A8%E7%90%83%E5%89%8D20%E5%A4%A7ems-odm%E6%A5%AD%E8%80%85%E6%8E%92%E5%90%8D-%E9%B4%BB%E6%B5%B7-%E7%B7%AF%E5%89%B5-024713053.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    }
+  ]
+}

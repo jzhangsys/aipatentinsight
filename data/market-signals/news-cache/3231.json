@@ -1,0 +1,291 @@
+{
+  "stockCode": "3231",
+  "name": "緯創資通",
+  "scrapedAt": "2026-05-01T11:10:17.660Z",
+  "sourceCounts": {
+    "yahoo": 20,
+    "ltn": 20
+  },
+  "news": [
+    {
+      "title": "全球創新百大機構 台連5年列第3",
+      "url": "https://ec.ltn.com.tw/article/paper/1750244",
+      "source": "ltn",
+      "date": "2026-04-10",
+      "snippet": ""
+    },
+    {
+      "title": "台灣連5年全球創新機構第3、僅次美日 工研院第10度獲獎",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5398076",
+      "source": "ltn",
+      "date": "2026-04-09",
+      "snippet": ""
+    },
+    {
+      "title": "明新科大徵才博覽會3/24登場 130家企業釋出逾4500職缺",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5379602",
+      "source": "ltn",
+      "date": "2026-03-23",
+      "snippet": ""
+    },
+    {
+      "title": "投資百億後再加碼  緯創高雄研發大樓1期動土",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5356255",
+      "source": "ltn",
+      "date": "2026-03-02",
+      "snippet": ""
+    },
+    {
+      "title": "緯創前鎮智慧廠房砸百億元 明年創4500個就業機會",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5274195",
+      "source": "ltn",
+      "date": "2025-12-10",
+      "snippet": ""
+    },
+    {
+      "title": "竹北11/13、15雙徵才 釋出科技、餐飲、托育等1800個多元職缺",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5236351",
+      "source": "ltn",
+      "date": "2025-11-06",
+      "snippet": ""
+    },
+    {
+      "title": "義隆電研發總部上梁 董事長葉儀皓：持續深化AI技術研發",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5228755",
+      "source": "ltn",
+      "date": "2025-10-30",
+      "snippet": ""
+    },
+    {
+      "title": "工研院院長佈達交接 張培仁期許三方向",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5225017",
+      "source": "ltn",
+      "date": "2025-10-27",
+      "snippet": ""
+    },
+    {
+      "title": "緯創資通內湖研發大樓開工！蔣萬安：感謝選在台北",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5107020",
+      "source": "ltn",
+      "date": "2025-07-14",
+      "snippet": ""
+    },
+    {
+      "title": "兆豐銀主辦緯創6億美元聯貸 超額認購1.6倍",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5091113",
+      "source": "ltn",
+      "date": "2025-06-30",
+      "snippet": ""
+    },
+    {
+      "title": "蕭美琴︰確保台灣AI供應鏈關鍵地位",
+      "url": "https://ec.ltn.com.tw/article/paper/1712448",
+      "source": "ltn",
+      "date": "2025-06-20",
+      "snippet": ""
+    },
+    {
+      "title": "蕭美琴：台灣轉型人工智慧島 台廠具黃金優勢不易被複製",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5080195",
+      "source": "ltn",
+      "date": "2025-06-19",
+      "snippet": ""
+    },
+    {
+      "title": "林憲銘：駕馭AI應用決定國力 緯創助台灣掌握主導權",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5079875",
+      "source": "ltn",
+      "date": "2025-06-19",
+      "snippet": ""
+    },
+    {
+      "title": "科睿唯安「全球百大創新機構」台灣13家入選創新高",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5014244",
+      "source": "ltn",
+      "date": "2025-04-16",
+      "snippet": ""
+    },
+    {
+      "title": "竹北聯發紡織舊址轉型緯創進駐 帶動區域房市",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4986251",
+      "source": "ltn",
+      "date": "2025-03-20",
+      "snippet": ""
+    },
+    {
+      "title": "攜手客戶制定產能「B計畫」 林憲銘：美國廠不可能千人規模",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4961399",
+      "source": "ltn",
+      "date": "2025-02-24",
+      "snippet": ""
+    },
+    {
+      "title": "緯創聚焦事業含金量 無意組裝機器人",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4961365",
+      "source": "ltn",
+      "date": "2025-02-24",
+      "snippet": ""
+    },
+    {
+      "title": "聯發紡織竹北廠停產  緯創AI太旺租下廠房",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4961348",
+      "source": "ltn",
+      "date": "2025-02-24",
+      "snippet": ""
+    },
+    {
+      "title": "台積電、力積電獲竹科廢棄物減量特優獎",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4893536",
+      "source": "ltn",
+      "date": "2024-12-14",
+      "snippet": ""
+    },
+    {
+      "title": "緯創、群聯與陽明交大攜手 23億打造AI半導體人才基地",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4871815",
+      "source": "ltn",
+      "date": "2024-11-22",
+      "snippet": ""
+    },
+    {
+      "title": "智崴體感設備導入美國大型主題樂園 拓展北美布局",
+      "url": "https://tw.stock.yahoo.com/news/%E6%99%BA%E5%B4%B4%E9%AB%94%E6%84%9F%E8%A8%AD%E5%82%99%E5%B0%8E%E5%85%A5%E7%BE%8E%E5%9C%8B%E5%A4%A7%E5%9E%8B%E4%B8%BB%E9%A1%8C%E6%A8%82%E5%9C%92-%E6%8B%93%E5%B1%95%E5%8C%97%E7%BE%8E%E5%B8%83%E5%B1%80-100241966.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "緯創 公告本公司115年第一季合併財務報告董事會召開日期為115年5月8日",
+      "url": "https://tw.stock.yahoo.com/news/%E7%B7%AF%E5%89%B5-%E5%85%AC%E5%91%8A%E6%9C%AC%E5%85%AC%E5%8F%B8115%E5%B9%B4%E7%AC%AC-%E5%AD%A3%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A%E8%91%A3%E4%BA%8B%E6%9C%83%E5%8F%AC%E9%96%8B%E6%97%A5%E6%9C%9F%E7%82%BA115%E5%B9%B45%E6%9C%888%E6%97%A5-085400315.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "位速第一季合併財報，預計5/7提報董事會",
+      "url": "https://tw.stock.yahoo.com/news/%E4%BD%8D%E9%80%9F%E7%AC%AC-%E5%AD%A3%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1-%E9%A0%90%E8%A8%885-7%E6%8F%90%E5%A0%B1%E8%91%A3%E4%BA%8B%E6%9C%83-010200405.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "緯創聚焦高獲利事業",
+      "url": "https://tw.stock.yahoo.com/news/%E7%B7%AF%E5%89%B5%E8%81%9A%E7%84%A6%E9%AB%98%E7%8D%B2%E5%88%A9%E4%BA%8B%E6%A5%AD-201000414.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】位速114年度私募普通股案未能於截止日完成繳款事宜",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E4%BD%8D%E9%80%9F114%E5%B9%B4%E5%BA%A6%E7%A7%81%E5%8B%9F%E6%99%AE%E9%80%9A%E8%82%A1%E6%A1%88%E6%9C%AA%E8%83%BD%E6%96%BC%E6%88%AA%E6%AD%A2%E6%97%A5%E5%AE%8C%E6%88%90%E7%B9%B3%E6%AC%BE%E4%BA%8B%E5%AE%9C-093700782.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】(補充公告)董事會決議向子公司鼎創香港有限公司(簡稱WCHK)取得Dell Technologies Inc.之股權",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E8%A3%9C%E5%85%85%E5%85%AC%E5%91%8A-%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E5%90%91%E5%AD%90%E5%85%AC%E5%8F%B8%E9%BC%8E%E5%89%B5%E9%A6%99%E6%B8%AF%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8-%E7%B0%A1%E7%A8%B1wchk-%E5%8F%96%E5%BE%97dell-082120869.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "緯創向WCHK取得Dell股權案已完成交易，WCHK因處分產生之獲利將轉入保留盈餘(補充)",
+      "url": "https://tw.stock.yahoo.com/news/%E7%B7%AF%E5%89%B5%E5%90%91wchk%E5%8F%96%E5%BE%97dell%E8%82%A1%E6%AC%8A%E6%A1%88%E5%B7%B2%E5%AE%8C%E6%88%90%E4%BA%A4%E6%98%93-wchk%E5%9B%A0%E8%99%95%E5%88%86%E7%94%A2%E7%94%9F%E4%B9%8B%E7%8D%B2%E5%88%A9%E5%B0%87%E8%BD%89%E5%85%A5%E4%BF%9D%E7%95%99%E7%9B%88%E9%A4%98-%E8%A3%9C%E5%85%85-081100087.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "緯創 (補充公告)董事會決議向子公司鼎創香港有限公司(簡稱WCHK)取得Dell Technologies Inc.之股權",
+      "url": "https://tw.stock.yahoo.com/news/%E7%B7%AF%E5%89%B5-%E8%A3%9C%E5%85%85%E5%85%AC%E5%91%8A-%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E5%90%91%E5%AD%90%E5%85%AC%E5%8F%B8%E9%BC%8E%E5%89%B5%E9%A6%99%E6%B8%AF%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8-%E7%B0%A1%E7%A8%B1wchk-%E5%8F%96%E5%BE%97dell-075300059.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "緯創：打造未來10年成長引擎 強化全球製造彈性",
+      "url": "https://tw.stock.yahoo.com/news/%E7%B7%AF%E5%89%B5-%E6%89%93%E9%80%A0%E6%9C%AA%E4%BE%8610%E5%B9%B4%E6%88%90%E9%95%B7%E5%BC%95%E6%93%8E-%E5%BC%B7%E5%8C%96%E5%85%A8%E7%90%83%E8%A3%BD%E9%80%A0%E5%BD%88%E6%80%A7-132016643.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "緯軟第一季合併財報，預計5/5提報董事會",
+      "url": "https://tw.stock.yahoo.com/news/%E7%B7%AF%E8%BB%9F%E7%AC%AC-%E5%AD%A3%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1-%E9%A0%90%E8%A8%885-5%E6%8F%90%E5%A0%B1%E8%91%A3%E4%BA%8B%E6%9C%83-003400339.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "緯創插旗無人機 經緯航併入翔譽",
+      "url": "https://tw.stock.yahoo.com/news/%E7%B7%AF%E5%89%B5%E6%8F%92%E6%97%97%E7%84%A1%E4%BA%BA%E6%A9%9F-%E7%B6%93%E7%B7%AF%E8%88%AA%E4%BD%B5%E5%85%A5%E7%BF%94%E8%AD%BD-201000637.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "緯軟 公告本公司115年第1季合併財務報告董事會召開日期",
+      "url": "https://tw.stock.yahoo.com/news/%E7%B7%AF%E8%BB%9F-%E5%85%AC%E5%91%8A%E6%9C%AC%E5%85%AC%E5%8F%B8115%E5%B9%B4%E7%AC%AC1%E5%AD%A3%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A%E8%91%A3%E4%BA%8B%E6%9C%83%E5%8F%AC%E9%96%8B%E6%97%A5%E6%9C%9F-151300852.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】代子公司翔譽科技股份有限公司公告吸收合併經緯航太科技股份有限公司",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E4%BB%A3%E5%AD%90%E5%85%AC%E5%8F%B8%E7%BF%94%E8%AD%BD%E7%A7%91%E6%8A%80%E8%82%A1%E4%BB%BD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%E5%85%AC%E5%91%8A%E5%90%B8%E6%94%B6%E5%90%88%E4%BD%B5%E7%B6%93%E7%B7%AF%E8%88%AA%E5%A4%AA%E7%A7%91%E6%8A%80%E8%82%A1%E4%BB%BD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8-095929621.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "緯創 代子公司翔譽科技股份有限公司公告吸收合併經緯航太科技股份有限公司",
+      "url": "https://tw.stock.yahoo.com/news/%E7%B7%AF%E5%89%B5-%E4%BB%A3%E5%AD%90%E5%85%AC%E5%8F%B8%E7%BF%94%E8%AD%BD%E7%A7%91%E6%8A%80%E8%82%A1%E4%BB%BD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%E5%85%AC%E5%91%8A%E5%90%B8%E6%94%B6%E5%90%88%E4%BD%B5%E7%B6%93%E7%B7%AF%E8%88%AA%E5%A4%AA%E7%A7%91%E6%8A%80%E8%82%A1%E4%BB%BD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8-094300809.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "台灣邁向「量子島」！經部點名產業鏈 金寶緯創廣達全入列",
+      "url": "https://tw.stock.yahoo.com/news/%E5%8F%B0%E7%81%A3%E9%82%81%E5%90%91%E3%80%8C%E9%87%8F%E5%AD%90%E5%B3%B6%E3%80%8D%EF%BC%81%E7%B6%93%E9%83%A8%E9%BB%9E%E5%90%8D%E7%94%A2%E6%A5%AD%E9%8F%88-%E9%87%91%E5%AF%B6%E7%B7%AF%E5%89%B5%E5%BB%A3%E9%81%94%E5%85%A8%E5%85%A5%E5%88%97-064920078.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "焦點股：緯穎躋身Anthropic概念股，再獲甲骨文轉單，股價突破5千元創新天價",
+      "url": "https://tw.stock.yahoo.com/news/%E7%84%A6%E9%BB%9E%E8%82%A1-%E7%B7%AF%E7%A9%8E%E8%BA%8B%E8%BA%ABanthropic%E6%A6%82%E5%BF%B5%E8%82%A1-%E5%86%8D%E7%8D%B2%E7%94%B2%E9%AA%A8%E6%96%87%E8%BD%89%E5%96%AE-%E8%82%A1%E5%83%B9%E7%AA%81%E7%A0%B45%E5%8D%83%E5%85%83%E5%89%B5%E6%96%B0%E5%A4%A9%E5%83%B9-034056862.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "台灣AI供應鏈矽谷徵才 半導體、製造專業需求強勁",
+      "url": "https://tw.stock.yahoo.com/news/%E5%8F%B0%E7%81%A3ai%E4%BE%9B%E6%87%89%E9%8F%88%E7%9F%BD%E8%B0%B7%E5%BE%B5%E6%89%8D-%E5%8D%8A%E5%B0%8E%E9%AB%94-%E8%A3%BD%E9%80%A0%E5%B0%88%E6%A5%AD%E9%9C%80%E6%B1%82%E5%BC%B7%E5%8B%81-024905792.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "董監改選 富邦媒引強將攻零售媒體",
+      "url": "https://tw.stock.yahoo.com/news/%E8%91%A3%E7%9B%A3%E6%94%B9%E9%81%B8-%E5%AF%8C%E9%82%A6%E5%AA%92%E5%BC%95%E5%BC%B7%E5%B0%87%E6%94%BB%E9%9B%B6%E5%94%AE%E5%AA%92%E9%AB%94-201000704.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "緯穎：今年營運 成長、轉型雙收",
+      "url": "https://tw.stock.yahoo.com/news/%E7%B7%AF%E7%A9%8E-%E4%BB%8A%E5%B9%B4%E7%87%9F%E9%81%8B-%E6%88%90%E9%95%B7-%E8%BD%89%E5%9E%8B%E9%9B%99%E6%94%B6-201000447.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "代理式企業時代來了…算力新商機 台廠受惠",
+      "url": "https://tw.stock.yahoo.com/news/%E4%BB%A3%E7%90%86%E5%BC%8F%E4%BC%81%E6%A5%AD%E6%99%82%E4%BB%A3%E4%BE%86%E4%BA%86-%E7%AE%97%E5%8A%9B%E6%96%B0%E5%95%86%E6%A9%9F-%E5%8F%B0%E5%BB%A0%E5%8F%97%E6%83%A0-201000442.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    }
+  ]
+}

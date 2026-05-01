@@ -1,0 +1,270 @@
+{
+  "stockCode": "2465",
+  "name": "麗臺科技",
+  "scrapedAt": "2026-05-01T11:09:51.332Z",
+  "sourceCounts": {
+    "yahoo": 20,
+    "ltn": 17
+  },
+  "news": [
+    {
+      "title": "焦點股》麗臺：AI推廣效益增加 股價大漲",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4883620",
+      "source": "ltn",
+      "date": "2024-12-04",
+      "snippet": ""
+    },
+    {
+      "title": "加密貨幣漲翻天 麗臺：有機會應讓它合法合規",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4878039",
+      "source": "ltn",
+      "date": "2024-11-28",
+      "snippet": ""
+    },
+    {
+      "title": "焦點股》麗臺：恢復融券交易 帶量攻漲停",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4637579",
+      "source": "ltn",
+      "date": "2024-04-11",
+      "snippet": ""
+    },
+    {
+      "title": "焦點股》麗臺：美超微調高財測 朝漲停奔",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4556986",
+      "source": "ltn",
+      "date": "2024-01-19",
+      "snippet": ""
+    },
+    {
+      "title": "麗臺股臨會》泛美超微集團取2席董事 整合資源新設事業群",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4533287",
+      "source": "ltn",
+      "date": "2023-12-27",
+      "snippet": ""
+    },
+    {
+      "title": "焦點股》麗臺：私募大咖進駐 市場很捧場",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4469071",
+      "source": "ltn",
+      "date": "2023-10-25",
+      "snippet": ""
+    },
+    {
+      "title": "獲美超微系統大咖參與私募 麗臺股價漲停",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4467120",
+      "source": "ltn",
+      "date": "2023-10-23",
+      "snippet": ""
+    },
+    {
+      "title": "麗臺劍指AI時代 3年內切入系統解決方案供應商",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4295241",
+      "source": "ltn",
+      "date": "2023-05-09",
+      "snippet": ""
+    },
+    {
+      "title": "麗臺董座：顯卡明年Q1清完庫存 2023年營運優於今年",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4154903",
+      "source": "ltn",
+      "date": "2022-12-14",
+      "snippet": ""
+    },
+    {
+      "title": "顯卡廠麗臺遭駭客網攻！內部系統陸續回復運作",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4142041",
+      "source": "ltn",
+      "date": "2022-12-01",
+      "snippet": ""
+    },
+    {
+      "title": "加密貨幣話題再起 顯卡廠麗臺亮燈漲停鎖死",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/3822862",
+      "source": "ltn",
+      "date": "2022-02-08",
+      "snippet": ""
+    },
+    {
+      "title": "法說會傳佳音 麗臺開盤半小時內漲停鎖死",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/3774210",
+      "source": "ltn",
+      "date": "2021-12-20",
+      "snippet": ""
+    },
+    {
+      "title": "麗臺顯卡供不應求 持續看好元宇宙、車用商機",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/3772278",
+      "source": "ltn",
+      "date": "2021-12-17",
+      "snippet": ""
+    },
+    {
+      "title": "麗臺投入心衰照護 個人檢測服務正式上線",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/2027452",
+      "source": "ltn",
+      "date": "2017-04-06",
+      "snippet": ""
+    },
+    {
+      "title": "搶低頭族護眼商機 麗臺科技推紅外線眼罩",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/1507372",
+      "source": "ltn",
+      "date": "2015-11-13",
+      "snippet": ""
+    },
+    {
+      "title": "攻心商機 麗臺拚醫療比重倍增",
+      "url": "https://ec.ltn.com.tw/article/paper/879372",
+      "source": "ltn",
+      "date": "2015-05-11",
+      "snippet": ""
+    },
+    {
+      "title": "醫療新品助攻 麗臺首季每股獲利大增",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/1293832",
+      "source": "ltn",
+      "date": "2015-04-21",
+      "snippet": ""
+    },
+    {
+      "title": "【公告】麗臺115年第1季合併財務報告董事會召開日期",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E9%BA%97%E8%87%BA115%E5%B9%B4%E7%AC%AC1%E5%AD%A3%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A%E8%91%A3%E4%BA%8B%E6%9C%83%E5%8F%AC%E9%96%8B%E6%97%A5%E6%9C%9F-070745061.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】麗臺 2026年3月合併營收6.25億元 年增83.15%",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E9%BA%97%E8%87%BA-2026%E5%B9%B43%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B66-25%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E83-071301398.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】麗臺董事會決議股利分派",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E9%BA%97%E8%87%BA%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E8%82%A1%E5%88%A9%E5%88%86%E6%B4%BE-124304720.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】麗臺 2026年2月合併營收4.78億元 年增127.43%",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E9%BA%97%E8%87%BA-2026%E5%B9%B42%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B64-78%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E127-073422101.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】麗臺114年度財務報告董事會召開日期115年3月9日",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E9%BA%97%E8%87%BA114%E5%B9%B4%E5%BA%A6%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A%E8%91%A3%E4%BA%8B%E6%9C%83%E5%8F%AC%E9%96%8B%E6%97%A5%E6%9C%9F115%E5%B9%B43%E6%9C%889%E6%97%A5-085200724.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】麗臺 2026年1月合併營收4.67億元 年增73.4%",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E9%BA%97%E8%87%BA-2026%E5%B9%B41%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B64-67%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E73-075232654.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】麗臺 2025年12月合併營收3.61億元 年增-61.58%",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E9%BA%97%E8%87%BA-2025%E5%B9%B412%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B63-61%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E-075343394.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "輝達新款GPU擴增記憶體容量 麗臺入列首波合作廠商",
+      "url": "https://tw.stock.yahoo.com/news/%E8%BC%9D%E9%81%94%E6%96%B0%E6%AC%BEgpu%E6%93%B4%E5%A2%9E%E8%A8%98%E6%86%B6%E9%AB%94%E5%AE%B9%E9%87%8F-%E9%BA%97%E8%87%BA%E5%85%A5%E5%88%97%E9%A6%96%E6%B3%A2%E5%90%88%E4%BD%9C%E5%BB%A0%E5%95%86-031953873.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】麗臺召開法人說明會相關資訊",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E9%BA%97%E8%87%BA%E5%8F%AC%E9%96%8B%E6%B3%95%E4%BA%BA%E8%AA%AA%E6%98%8E%E6%9C%83%E7%9B%B8%E9%97%9C%E8%B3%87%E8%A8%8A-055323416.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】麗臺114年度現金增資股款催繳期間屆滿",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E9%BA%97%E8%87%BA114%E5%B9%B4%E5%BA%A6%E7%8F%BE%E9%87%91%E5%A2%9E%E8%B3%87%E8%82%A1%E6%AC%BE%E5%82%AC%E7%B9%B3%E6%9C%9F%E9%96%93%E5%B1%86%E6%BB%BF-072524077.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】麗臺 2025年11月合併營收3.07億元 年增-9.8%",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E9%BA%97%E8%87%BA-2025%E5%B9%B411%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B63-07%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E-072209153.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】麗臺114年現金增資發行新股已依中國證監會發布之「境內企業境外發行證券和上市管理試行辦法」進行備案",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E9%BA%97%E8%87%BA114%E5%B9%B4%E7%8F%BE%E9%87%91%E5%A2%9E%E8%B3%87%E7%99%BC%E8%A1%8C%E6%96%B0%E8%82%A1%E5%B7%B2%E4%BE%9D%E4%B8%AD%E5%9C%8B%E8%AD%89%E7%9B%A3%E6%9C%83%E7%99%BC%E5%B8%83%E4%B9%8B-%E5%A2%83%E5%85%A7%E4%BC%81%E6%A5%AD%E5%A2%83%E5%A4%96%E7%99%BC%E8%A1%8C%E8%AD%89%E5%88%B8%E5%92%8C%E4%B8%8A%E5%B8%82%E7%AE%A1%E7%90%86%E8%A9%A6%E8%A1%8C%E8%BE%A6%E6%B3%95-%E9%80%B2%E8%A1%8C%E5%82%99%E6%A1%88-065509221.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】麗臺董事會通過114年度第3季合併財務報告",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E9%BA%97%E8%87%BA%E8%91%A3%E4%BA%8B%E6%9C%83%E9%80%9A%E9%81%8E114%E5%B9%B4%E5%BA%A6%E7%AC%AC3%E5%AD%A3%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A-102348387.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】麗臺 2025年10月合併營收2.6億元 年增-25.47%",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E9%BA%97%E8%87%BA-2025%E5%B9%B410%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B62-6%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E-072357327.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】麗臺董事因轉讓持股超過選任當時持股之二分之一，依法其董事職務當然解任",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E9%BA%97%E8%87%BA%E8%91%A3%E4%BA%8B%E5%9B%A0%E8%BD%89%E8%AE%93%E6%8C%81%E8%82%A1%E8%B6%85%E9%81%8E%E9%81%B8%E4%BB%BB%E7%95%B6%E6%99%82%E6%8C%81%E8%82%A1%E4%B9%8B%E4%BA%8C%E5%88%86%E4%B9%8B-%E4%BE%9D%E6%B3%95%E5%85%B6%E8%91%A3%E4%BA%8B%E8%81%B7%E5%8B%99%E7%95%B6%E7%84%B6%E8%A7%A3%E4%BB%BB-085524367.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】麗臺114年第3季合併財務報告董事會召開日期",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E9%BA%97%E8%87%BA114%E5%B9%B4%E7%AC%AC3%E5%AD%A3%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A%E8%91%A3%E4%BA%8B%E6%9C%83%E5%8F%AC%E9%96%8B%E6%97%A5%E6%9C%9F-070734715.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "下周7檔台股紅包抽籤登場！抽中永擎電子最高可望賺逾23萬元",
+      "url": "https://tw.stock.yahoo.com/news/%E4%B8%8B%E5%91%A87%E6%AA%94%E5%8F%B0%E8%82%A1%E7%B4%85%E5%8C%85%E6%8A%BD%E7%B1%A4%E7%99%BB%E5%A0%B4%EF%BC%81%E6%8A%BD%E4%B8%AD%E6%B0%B8%E6%93%8E%E9%9B%BB%E5%AD%90%E6%9C%80%E9%AB%98%E5%8F%AF%E6%9C%9B%E8%B3%BA%E9%80%BE23%E8%90%AC%E5%85%83-104751792.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】麗臺114年現金增資發行新股認股基準日等相關事宜(補充公告現金增資每股發行價格)",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E9%BA%97%E8%87%BA114%E5%B9%B4%E7%8F%BE%E9%87%91%E5%A2%9E%E8%B3%87%E7%99%BC%E8%A1%8C%E6%96%B0%E8%82%A1%E8%AA%8D%E8%82%A1%E5%9F%BA%E6%BA%96%E6%97%A5%E7%AD%89%E7%9B%B8%E9%97%9C%E4%BA%8B%E5%AE%9C-%E8%A3%9C%E5%85%85%E5%85%AC%E5%91%8A%E7%8F%BE%E9%87%91%E5%A2%9E%E8%B3%87%E6%AF%8F%E8%82%A1%E7%99%BC%E8%A1%8C%E5%83%B9%E6%A0%BC-093308426.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】係因麗臺有價證券於集中交易市場有異常交易情形，故公布基本資料及相關財務業務等重大訊息，以利投資人區別瞭解。",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E4%BF%82%E5%9B%A0%E9%BA%97%E8%87%BA%E6%9C%89%E5%83%B9%E8%AD%89%E5%88%B8%E6%96%BC%E9%9B%86%E4%B8%AD%E4%BA%A4%E6%98%93%E5%B8%82%E5%A0%B4%E6%9C%89%E7%95%B0%E5%B8%B8%E4%BA%A4%E6%98%93%E6%83%85%E5%BD%A2-%E6%95%85%E5%85%AC%E5%B8%83%E5%9F%BA%E6%9C%AC%E8%B3%87%E6%96%99%E5%8F%8A%E7%9B%B8%E9%97%9C%E8%B2%A1%E5%8B%99%E6%A5%AD%E5%8B%99%E7%AD%89%E9%87%8D%E5%A4%A7%E8%A8%8A%E6%81%AF-%E4%BB%A5%E5%88%A9%E6%8A%95%E8%B3%87%E4%BA%BA%E5%8D%80%E5%88%A5%E7%9E%AD%E8%A7%A3-073631691.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "最妖「老黃概念股」麗臺上海子公司AI伺服器專案踩雷...提列7千多萬元呆帳",
+      "url": "https://tw.stock.yahoo.com/news/%E6%9C%80%E5%A6%96%E3%80%8C%E8%80%81%E9%BB%83%E6%A6%82%E5%BF%B5%E8%82%A1%E3%80%8D%E9%BA%97%E8%87%BA%E4%B8%8A%E6%B5%B7%E5%AD%90%E5%85%AC%E5%8F%B8ai%E4%BC%BA%E6%9C%8D%E5%99%A8%E5%B0%88%E6%A1%88%E8%B8%A9%E9%9B%B7%E6%8F%90%E5%88%977%E5%8D%83%E5%A4%9A%E8%90%AC%E5%85%83%E5%91%86%E5%B8%B3-084316357.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    }
+  ]
+}

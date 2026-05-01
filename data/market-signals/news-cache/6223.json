@@ -1,0 +1,214 @@
+{
+  "stockCode": "6223",
+  "name": "旺矽科技",
+  "scrapedAt": "2026-05-01T11:11:39.431Z",
+  "sourceCounts": {
+    "yahoo": 20,
+    "ltn": 9
+  },
+  "news": [
+    {
+      "title": "明新科大徵才博覽會3/24登場 130家企業釋出逾4500職缺",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5379602",
+      "source": "ltn",
+      "date": "2026-03-23",
+      "snippet": ""
+    },
+    {
+      "title": "跨足半導體 機械公會籲台廠「2招」加大投資、貼近客戶",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/5174867",
+      "source": "ltn",
+      "date": "2025-09-11",
+      "snippet": ""
+    },
+    {
+      "title": "竹北年後首場徵才活動 42家廠商提供2911個職缺",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/4949356",
+      "source": "ltn",
+      "date": "2025-02-12",
+      "snippet": ""
+    },
+    {
+      "title": "旺矽斥資2.85億元併購美國探針卡公司 打入化合物半導體等三領域",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/3651684",
+      "source": "ltn",
+      "date": "2021-08-26",
+      "snippet": ""
+    },
+    {
+      "title": "旺矽科技捐巡邏車 從側翼助新竹縣防疫",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/3567305",
+      "source": "ltn",
+      "date": "2021-06-12",
+      "snippet": ""
+    },
+    {
+      "title": "企業響應抗疫   南茂、旺矽科技各捐100萬和2輛警車",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/3567060",
+      "source": "ltn",
+      "date": "2021-06-11",
+      "snippet": ""
+    },
+    {
+      "title": "台商回台真的不是0元！ 新建廠名單經部全都露",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/2983204",
+      "source": "ltn",
+      "date": "2019-11-19",
+      "snippet": ""
+    },
+    {
+      "title": "台商回台再添4家  總投資達3864億",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/2829783",
+      "source": "ltn",
+      "date": "2019-06-21",
+      "snippet": ""
+    },
+    {
+      "title": "工研院連7年獲「產業創新奧斯卡獎」 台泥、旺矽搶先佈局",
+      "url": "https://ec.ltn.com.tw/article/breakingnews/1152149",
+      "source": "ltn",
+      "date": "2014-11-08",
+      "snippet": ""
+    },
+    {
+      "title": "旺矽砸20億元擴產 首季營收創新高",
+      "url": "https://tw.stock.yahoo.com/news/%E6%97%BA%E7%9F%BD%E7%A0%B820%E5%84%84%E5%85%83%E6%93%B4%E7%94%A2-%E9%A6%96%E5%AD%A3%E7%87%9F%E6%94%B6%E5%89%B5%E6%96%B0%E9%AB%98-123137835.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】旺矽取得土地與廠房",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%97%BA%E7%9F%BD%E5%8F%96%E5%BE%97%E5%9C%9F%E5%9C%B0%E8%88%87%E5%BB%A0%E6%88%BF-094746639.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】旺矽董事會決議發行國內第六次無擔保轉換公司債",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%97%BA%E7%9F%BD%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E7%99%BC%E8%A1%8C%E5%9C%8B%E5%85%A7%E7%AC%AC%E5%85%AD%E6%AC%A1%E7%84%A1%E6%93%94%E4%BF%9D%E8%BD%89%E6%8F%9B%E5%85%AC%E5%8F%B8%E5%82%B5-094738754.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】旺矽 2026年3月合併營收13.88億元 年增38.62%",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%97%BA%E7%9F%BD-2026%E5%B9%B43%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B613-88%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E38-092255509.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "旺矽：今年業績逐季成長 訂單能見度達2年",
+      "url": "https://tw.stock.yahoo.com/news/%E6%97%BA%E7%9F%BD-%E4%BB%8A%E5%B9%B4%E6%A5%AD%E7%B8%BE%E9%80%90%E5%AD%A3%E6%88%90%E9%95%B7-%E8%A8%82%E5%96%AE%E8%83%BD%E8%A6%8B%E5%BA%A6%E9%81%942%E5%B9%B4-074110667.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】旺矽受邀參加證券櫃檯買賣中心舉辦之櫃買市場業績發表會",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%97%BA%E7%9F%BD%E5%8F%97%E9%82%80%E5%8F%83%E5%8A%A0%E8%AD%89%E5%88%B8%E6%AB%83%E6%AA%AF%E8%B2%B7%E8%B3%A3%E4%B8%AD%E5%BF%83%E8%88%89%E8%BE%A6%E4%B9%8B%E6%AB%83%E8%B2%B7%E5%B8%82%E5%A0%B4%E6%A5%AD%E7%B8%BE%E7%99%BC%E8%A1%A8%E6%9C%83-092820013.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】旺矽有價證券近期多次達公佈注意交易資訊標準，故公告相關訊息，以利投資人區別暸解",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%97%BA%E7%9F%BD%E6%9C%89%E5%83%B9%E8%AD%89%E5%88%B8%E8%BF%91%E6%9C%9F%E5%A4%9A%E6%AC%A1%E9%81%94%E5%85%AC%E4%BD%88%E6%B3%A8%E6%84%8F%E4%BA%A4%E6%98%93%E8%B3%87%E8%A8%8A%E6%A8%99%E6%BA%96-%E6%95%85%E5%85%AC%E5%91%8A%E7%9B%B8%E9%97%9C%E8%A8%8A%E6%81%AF-%E4%BB%A5%E5%88%A9%E6%8A%95%E8%B3%87%E4%BA%BA%E5%8D%80%E5%88%A5%E6%9A%B8%E8%A7%A3-060057733.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】旺矽受邀參加美銀證券舉辦之2026 Asia Tech Conference",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%97%BA%E7%9F%BD%E5%8F%97%E9%82%80%E5%8F%83%E5%8A%A0%E7%BE%8E%E9%8A%80%E8%AD%89%E5%88%B8%E8%88%89%E8%BE%A6%E4%B9%8B2026-asia-tech-conference-094427326.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "旺矽去年獲利創高每股賺33.49元 擬配息22元",
+      "url": "https://tw.stock.yahoo.com/news/%E6%97%BA%E7%9F%BD%E5%8E%BB%E5%B9%B4%E7%8D%B2%E5%88%A9%E5%89%B5%E9%AB%98%E6%AF%8F%E8%82%A1%E8%B3%BA33-49%E5%85%83-%E6%93%AC%E9%85%8D%E6%81%AF22%E5%85%83-132935489.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】旺矽董事會決議召開115年股東常會",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%97%BA%E7%9F%BD%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E5%8F%AC%E9%96%8B115%E5%B9%B4%E8%82%A1%E6%9D%B1%E5%B8%B8%E6%9C%83-095454266.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】旺矽董事會決議股利分派",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%97%BA%E7%9F%BD%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E8%82%A1%E5%88%A9%E5%88%86%E6%B4%BE-095452436.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】旺矽董事會通過114年度合併財務報告",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%97%BA%E7%9F%BD%E8%91%A3%E4%BA%8B%E6%9C%83%E9%80%9A%E9%81%8E114%E5%B9%B4%E5%BA%A6%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A-094734816.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】旺矽受邀參加富邦證券舉辦之1Q26 Tech Trip法人說明會",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%97%BA%E7%9F%BD%E5%8F%97%E9%82%80%E5%8F%83%E5%8A%A0%E5%AF%8C%E9%82%A6%E8%AD%89%E5%88%B8%E8%88%89%E8%BE%A6%E4%B9%8B1q26-tech-trip%E6%B3%95%E4%BA%BA%E8%AA%AA%E6%98%8E%E6%9C%83-095416473.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】旺矽 2026年2月合併營收13.16億元 年增45.54%",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%97%BA%E7%9F%BD-2026%E5%B9%B42%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B613-16%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E45-093440245.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】旺矽受邀參加花旗證券舉辦之Citi 2026 March Corporate Day",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%97%BA%E7%9F%BD%E5%8F%97%E9%82%80%E5%8F%83%E5%8A%A0%E8%8A%B1%E6%97%97%E8%AD%89%E5%88%B8%E8%88%89%E8%BE%A6%E4%B9%8Bciti-2026-march-corporate-093003110.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】旺矽114年度財務報告董事會召開日期",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%97%BA%E7%9F%BD114%E5%B9%B4%E5%BA%A6%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A%E8%91%A3%E4%BA%8B%E6%9C%83%E5%8F%AC%E9%96%8B%E6%97%A5%E6%9C%9F-093510742.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】旺矽受邀參加元大證券舉辦之2026年第一季投資論壇",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%97%BA%E7%9F%BD%E5%8F%97%E9%82%80%E5%8F%83%E5%8A%A0%E5%85%83%E5%A4%A7%E8%AD%89%E5%88%B8%E8%88%89%E8%BE%A6%E4%B9%8B2026%E5%B9%B4%E7%AC%AC-%E5%AD%A3%E6%8A%95%E8%B3%87%E8%AB%96%E5%A3%87-093112992.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】旺矽 2026年1月合併營收12.27億元 年增33.06%",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%97%BA%E7%9F%BD-2026%E5%B9%B41%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B612-27%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E33-092240470.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "投信百億銀彈開路 台積點火台股暴衝571點/記憶體股爆量洗牌 探針族群接力衝鋒/GDP保4是利多？股市還要看聯準會臉色｜Yahoo財經掃描",
+      "url": "https://tw.stock.yahoo.com/news/%E6%8A%95%E4%BF%A1%E7%99%BE%E5%84%84%E9%8A%80%E5%BD%88%E9%96%8B%E8%B7%AF-%E5%8F%B0%E7%A9%8D%E9%BB%9E%E7%81%AB%E5%8F%B0%E8%82%A1%E6%9A%B4%E8%A1%9D571%E9%BB%9E%E8%A8%98%E6%86%B6%E9%AB%94%E8%82%A1%E7%88%86%E9%87%8F%E6%B4%97%E7%89%8C-%E6%8E%A2%E9%87%9D%E6%97%8F%E7%BE%A4%E6%8E%A5%E5%8A%9B%E8%A1%9D%E9%8B%92gdp%E4%BF%9D4%E6%98%AF%E5%88%A9%E5%A4%9A%EF%BC%9F%E8%82%A1%E5%B8%82%E9%82%84%E8%A6%81%E7%9C%8B%E8%81%AF%E6%BA%96%E6%9C%83%E8%87%89%E8%89%B2%EF%BD%9Cyahoo%E8%B2%A1%E7%B6%93%E6%8E%83%E6%8F%8F-092154247.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    },
+    {
+      "title": "【公告】旺矽代重要子公司旺芯科技(合肥)有限公司公告與聯貸銀行團簽訂聯貸合約案",
+      "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E6%97%BA%E7%9F%BD%E4%BB%A3%E9%87%8D%E8%A6%81%E5%AD%90%E5%85%AC%E5%8F%B8%E6%97%BA%E8%8A%AF%E7%A7%91%E6%8A%80-%E5%90%88%E8%82%A5-%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%E5%85%AC%E5%91%8A%E8%88%87%E8%81%AF%E8%B2%B8%E9%8A%80%E8%A1%8C%E5%9C%98%E7%B0%BD%E8%A8%82%E8%81%AF%E8%B2%B8%E5%90%88%E7%B4%84%E6%A1%88-094619443.html",
+      "source": "yahoo",
+      "date": null,
+      "snippet": ""
+    }
+  ]
+}
