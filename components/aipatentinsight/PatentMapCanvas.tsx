@@ -3,14 +3,15 @@
 /**
  * PatentMapCanvas — 公司專利 3D 點雲(Three.js)
  *
+ * 視覺風格:宇宙星圖 — 每個公司是一顆星(亮核 + 柔光暈),
+ * 用 AdditiveBlending 讓密集區域疊出星雲般的發光感,顏色按 main category 區分。
+ *
  * 收到 dataset / 篩選 / layout 模式 props 後:
- * 1. 建 Three.js 場景 + 自訂 shader 點雲(中心白核 + 強光暈 + focus 變暗)
+ * 1. 建 Three.js 場景 + 自訂 shader 點雲(亮核 + halo + focus 變暗)
  * 2. 跑 random / force layout(後者 chunked async,有進度 toast)
  * 3. layout 切換時用 ease-out cubic lerp 700ms 過渡點位
- * 4. hover 顯示 tooltip,click 觸發 onCompanyClick callback(由 parent 開 detail panel)
- * 5. 點到的公司:其他點變暗 + 拉線到同 cat 最近 6 家
- *
- * 移植自靜態原型 aipatentinsight-website/insights.html。
+ * 4. hover 顯示 tooltip + 280ms 後拉跨域連線
+ * 5. click 觸發 onCompanyClick → 直接導去公司頁
  */
 
 import { useEffect, useRef } from "react";
@@ -18,7 +19,6 @@ import * as THREE from "three";
 import {
   computeRandomLayout,
   computeForceLayout,
-  computeRingSlices,
   type LayoutCompany,
 } from "@/lib/aipatentinsight/patentMapLayout";
 import type { InsightsDataset } from "@/lib/aipatentinsight/insightsData";
@@ -59,6 +59,90 @@ function hexToThreeColor(hex: string): THREE.Color {
   return new THREE.Color(hex);
 }
 
+// ============== Tooltip donut + cat list builders ==============
+const HTML_ESCAPES: Record<string, string> = {
+  "&": "&amp;",
+  "<": "&lt;",
+  ">": "&gt;",
+  '"': "&quot;",
+  "'": "&#39;",
+};
+function escapeHtml(s: string): string {
+  return s.replace(/[&<>"']/g, (c) => HTML_ESCAPES[c]);
+}
+
+/** 用 categoryDist 畫 80x80 的 donut svg 字串(各段 = 該 cat palette 色)。 */
+function buildDonutSvg(
+  dist: Record<string, number>,
+  palette: Record<string, string>
+): string {
+  const cx = 40, cy = 40, r1 = 36, r0 = 20;
+  const total = Object.values(dist).reduce((s, n) => s + n, 0);
+  if (total === 0) return "";
+  const entries = Object.entries(dist)
+    .filter(([, n]) => n > 0)
+    .sort((a, b) => b[1] - a[1]);
+
+  // 單一 cat = 滿環(避免 sweep=2π 退化成空 path)
+  if (entries.length === 1) {
+    const color = palette[entries[0][0]] || "#888";
+    return `<svg width="80" height="80" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg"><path fill="${color}" fill-rule="evenodd" d="M ${cx - r1} ${cy} a ${r1} ${r1} 0 1 0 ${r1 * 2} 0 a ${r1} ${r1} 0 1 0 -${r1 * 2} 0 M ${cx - r0} ${cy} a ${r0} ${r0} 0 1 1 ${r0 * 2} 0 a ${r0} ${r0} 0 1 1 -${r0 * 2} 0 Z" /></svg>`;
+  }
+
+  let startAngle = -Math.PI / 2;
+  const paths: string[] = [];
+  for (const [cat, count] of entries) {
+    const fraction = count / total;
+    const endAngle = startAngle + fraction * Math.PI * 2;
+    const largeArc = fraction > 0.5 ? 1 : 0;
+    const x1 = cx + r1 * Math.cos(startAngle);
+    const y1 = cy + r1 * Math.sin(startAngle);
+    const x2 = cx + r1 * Math.cos(endAngle);
+    const y2 = cy + r1 * Math.sin(endAngle);
+    const x3 = cx + r0 * Math.cos(endAngle);
+    const y3 = cy + r0 * Math.sin(endAngle);
+    const x4 = cx + r0 * Math.cos(startAngle);
+    const y4 = cy + r0 * Math.sin(startAngle);
+    const color = palette[cat] || "#888";
+    paths.push(
+      `<path fill="${color}" d="M ${x1.toFixed(2)} ${y1.toFixed(2)} A ${r1} ${r1} 0 ${largeArc} 1 ${x2.toFixed(2)} ${y2.toFixed(2)} L ${x3.toFixed(2)} ${y3.toFixed(2)} A ${r0} ${r0} 0 ${largeArc} 0 ${x4.toFixed(2)} ${y4.toFixed(2)} Z" />`
+    );
+    startAngle = endAngle;
+  }
+  return `<svg width="80" height="80" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">${paths.join("")}</svg>`;
+}
+
+/** 用 categoryDist 畫右側 cat 列表(top 5 + 其他合併行)。 */
+function buildCatListHtml(
+  dist: Record<string, number>,
+  palette: Record<string, string>
+): string {
+  const total = Object.values(dist).reduce((s, n) => s + n, 0);
+  if (total === 0) return "";
+  const entries = Object.entries(dist)
+    .filter(([, n]) => n > 0)
+    .sort((a, b) => b[1] - a[1]);
+  const top = entries.slice(0, 5);
+  const rest = entries.slice(5);
+  const restCount = rest.reduce((s, [, n]) => s + n, 0);
+
+  const rows: string[] = [];
+  for (const [cat, n] of top) {
+    const pct = Math.round((n / total) * 100);
+    const color = palette[cat] || "#888";
+    rows.push(
+      `<div class="ai-map-tt-row"><span class="ai-map-tt-dot" style="background:${color}"></span><span class="ai-map-tt-cat">${escapeHtml(cat)}</span><span class="ai-map-tt-pct">${pct}%</span></div>`
+    );
+  }
+  if (restCount > 0) {
+    const pct = Math.round((restCount / total) * 100);
+    rows.push(
+      `<div class="ai-map-tt-row ai-map-tt-row-rest"><span class="ai-map-tt-dot"></span><span class="ai-map-tt-cat">其他 ${rest.length} 類</span><span class="ai-map-tt-pct">${pct}%</span></div>`
+    );
+  }
+  return rows.join("");
+}
+
 export default function PatentMapCanvas({
   dataset,
   selectedMonth,
@@ -75,6 +159,7 @@ export default function PatentMapCanvas({
   const toastRef = useRef<HTMLDivElement | null>(null);
   const toastProgressRef = useRef<HTMLSpanElement | null>(null);
   const tooltipRef = useRef<HTMLDivElement | null>(null);
+  const focusLabelsContainerRef = useRef<HTMLDivElement | null>(null);
 
   // 把所有可變狀態包進 ref,讓 useEffect 內的 closure 可隨時讀到最新值,
   // 而不需把每個 props 都做為 useEffect 的依賴(避免整個場景被重建)。
@@ -188,6 +273,9 @@ export default function PatentMapCanvas({
     let companyOriginalSizes: Float32Array | null = null;
     let visibleCompanies: LayoutCompany[] = [];
     let focusLines: THREE.LineSegments | null = null;
+    // Focus labels:hover 時為每條 line 終點放一個 HTML 文字標籤(cat 名 + %)
+    let focusLabels: { centroid: THREE.Vector3; el: HTMLDivElement }[] = [];
+    let hoverHighlightTimer: ReturnType<typeof setTimeout> | null = null;
     let positionTween:
       | { startPos: Float32Array; endPos: Float32Array; t0: number; duration: number }
       | null = null;
@@ -316,21 +404,6 @@ export default function PatentMapCanvas({
       companySizes = new Float32Array(N);
       companyOriginalSizes = new Float32Array(N);
 
-      // 跨域 ring slices:6 slot,每 slot 一個 vec4(cumFraction, r, g, b)
-      const RING_SLOTS = 6;
-      const sliceBuffers: Float32Array[] = [];
-      for (let s = 0; s < RING_SLOTS; s++) {
-        sliceBuffers.push(new Float32Array(N * 4));
-      }
-
-      // 呼吸動畫的 phase:同 cat 公司同步呼吸,不同 cat 錯開
-      const phases = new Float32Array(N);
-      // 計算 cat 的 phase offset(每個 cat 給一個獨立節拍)
-      const catPhaseMap = new Map<string, number>();
-      sortedCats.forEach((cat, ci) => {
-        catPhaseMap.set(cat, (ci / sortedCats.length) * Math.PI * 2);
-      });
-
       let needsTween = false;
       visibleCompanies.forEach((company, i) => {
         const p = layoutResult.positions[i];
@@ -361,29 +434,10 @@ export default function PatentMapCanvas({
         colors[i * 3 + 1] = color.g;
         colors[i * 3 + 2] = color.b;
 
-        const s = Math.min(20, 4 + Math.sqrt(company.displayPatents) * 1.4);
+        // size 比之前再縮小一點 — 「星圖」感:單顆星不要太大,密集的點才像宇宙
+        const s = Math.min(13, 2.6 + Math.sqrt(company.displayPatents) * 1.0);
         companyOriginalSizes![i] = s;
         companySizes![i] = s;
-
-        // 計算該公司的 ring slices(top 5 + 其他)
-        const slices = computeRingSlices(
-          company.categoryDist || {},
-          pal,
-          RING_SLOTS
-        );
-        for (let k = 0; k < RING_SLOTS; k++) {
-          const slc = slices[k];
-          sliceBuffers[k][i * 4]     = slc.cumFraction;
-          sliceBuffers[k][i * 4 + 1] = slc.r;
-          sliceBuffers[k][i * 4 + 2] = slc.g;
-          sliceBuffers[k][i * 4 + 3] = slc.b;
-        }
-
-        // 呼吸 phase:基底 = 該 cat 的節拍,加微小 per-company jitter
-        // 同 cat 公司大致同步呼吸,但內部有微差讓視覺不死板
-        const catBase = catPhaseMap.get(company.mainCategory) || 0;
-        const jitter = ((i * 0.13) % 1) * 0.6;  // 0~0.6 rad jitter
-        phases[i] = catBase + jitter;
       });
 
       if (needsTween) {
@@ -399,60 +453,29 @@ export default function PatentMapCanvas({
       geom.setAttribute("position", new THREE.BufferAttribute(positions, 3));
       geom.setAttribute("color", new THREE.BufferAttribute(colors, 3));
       geom.setAttribute("size", new THREE.BufferAttribute(companySizes, 1));
-      geom.setAttribute("phase", new THREE.BufferAttribute(phases, 1));
-      for (let k = 0; k < RING_SLOTS; k++) {
-        geom.setAttribute(
-          `slice${k}`,
-          new THREE.BufferAttribute(sliceBuffers[k], 4)
-        );
-      }
 
+      // 「宇宙星圖」shader — 小亮核 + 柔光暈,純色相區分 cat。
+      // 用 AdditiveBlending 讓鄰近點疊加時更亮,模擬星團密集區的發光感。
       const mat = new THREE.ShaderMaterial({
         uniforms: {
           pixelRatio: { value: renderer.getPixelRatio() },
           focusIdx: { value: -1.0 },
-          time: { value: 0 },
         },
         vertexShader: `
           attribute float size;
-          attribute float phase;
-          attribute vec4 slice0;
-          attribute vec4 slice1;
-          attribute vec4 slice2;
-          attribute vec4 slice3;
-          attribute vec4 slice4;
-          attribute vec4 slice5;
           varying vec3 vColor;
           varying float vDepth;
           varying float vDim;
-          varying vec4 vSlice0;
-          varying vec4 vSlice1;
-          varying vec4 vSlice2;
-          varying vec4 vSlice3;
-          varying vec4 vSlice4;
-          varying vec4 vSlice5;
           uniform float pixelRatio;
           uniform float focusIdx;
-          uniform float time;
           void main() {
             vColor = color;
-            vSlice0 = slice0;
-            vSlice1 = slice1;
-            vSlice2 = slice2;
-            vSlice3 = slice3;
-            vSlice4 = slice4;
-            vSlice5 = slice5;
             float vid = float(gl_VertexID);
-            if (focusIdx >= 0.0 && abs(vid - focusIdx) > 0.5) {
-              vDim = 0.22;
-            } else {
-              vDim = 1.0;
-            }
+            vDim = (focusIdx >= 0.0 && abs(vid - focusIdx) > 0.5) ? 0.20 : 1.0;
             vec4 mv = modelViewMatrix * vec4(position, 1.0);
             vDepth = -mv.z;
-            // 呼吸動畫:同 cat 同步 + 微差;size ±7%
-            float breath = 1.0 + sin(time * 1.3 + phase) * 0.07;
-            gl_PointSize = size * breath * pixelRatio * (150.0 / -mv.z);
+            // 點點大小:近看大、遠看小,但因為用 AdditiveBlending 所以給比較大的 halo radius
+            gl_PointSize = size * pixelRatio * (180.0 / -mv.z);
             gl_Position = projectionMatrix * mv;
           }
         `,
@@ -460,88 +483,35 @@ export default function PatentMapCanvas({
           varying vec3 vColor;
           varying float vDepth;
           varying float vDim;
-          varying vec4 vSlice0;
-          varying vec4 vSlice1;
-          varying vec4 vSlice2;
-          varying vec4 vSlice3;
-          varying vec4 vSlice4;
-          varying vec4 vSlice5;
           void main() {
-            vec2 uv = gl_PointCoord - vec2(0.5);
-            float d = length(uv);
+            vec2 c = gl_PointCoord - vec2(0.5);
+            float d = length(c);
             if (d > 0.5) discard;
 
+            // 深度淡出 — 遠處的星淡到背景裡
             float fade = smoothstep(220.0, 15.0, vDepth);
 
-            // === ring 切片色 ===
-            float angle = atan(uv.y, uv.x) / 6.2831853;
-            if (angle < 0.0) angle += 1.0;
-            vec3 ringCol;
-            if (angle < vSlice0.x) ringCol = vSlice0.yzw;
-            else if (angle < vSlice1.x) ringCol = vSlice1.yzw;
-            else if (angle < vSlice2.x) ringCol = vSlice2.yzw;
-            else if (angle < vSlice3.x) ringCol = vSlice3.yzw;
-            else if (angle < vSlice4.x) ringCol = vSlice4.yzw;
-            else ringCol = vSlice5.yzw;
+            // 中心亮核:極亮的小白點(d<0.04 才白,範圍縮小才不會把 cat 色洗掉)
+            float core = smoothstep(0.04, 0.0, d);
+            // 主體:從中心往外的柔軟光暈,quadratic falloff 像高斯星點
+            float body = pow(1.0 - smoothstep(0.0, 0.5, d), 2.2);
+            // 外圍 halo:更柔軟的擴散光,讓星看起來會「發光」
+            float halo = pow(1.0 - smoothstep(0.0, 0.5, d), 5.0) * 0.65;
 
-            // === 模擬光源:從左上前方來的方向光 ===
-            vec3 lightDir = normalize(vec3(-0.45, 0.55, 0.75));
+            // 顏色:核心微白(0.55 而不是 0.9),外圍維持飽和 cat 色,
+            // 這樣即使在 AdditiveBlending 下也能保留色相識別度
+            vec3 col = mix(vColor, vec3(1.0, 0.97, 0.92), core * 0.55);
 
-            // ============================================================
-            // Disc 球面光照(0.0 ~ 0.30):像 3D 球體,有 diffuse + specular
-            // ============================================================
-            // 把 disc 看成半球:中心 normal=(0,0,1),邊緣 normal 往外彎
-            float discR = clamp(d / 0.30, 0.0, 1.0);
-            float discZ = sqrt(max(0.0, 1.0 - discR * discR));
-            vec3 discN = normalize(vec3(uv * (1.0 / 0.30), discZ));
-            float discNDotL = max(0.0, dot(discN, lightDir));
-            // 漫反射 diffuse + 環境光 ambient
-            float discDiff = discNDotL * 0.55 + 0.45;
-            // 鏡面高光:Phong-like,sharp 反光點
-            float discSpec = pow(discNDotL, 12.0);
-            // 中心微白核(讓正中央更亮一點)
-            float coreWhite = smoothstep(0.10, 0.0, d);
-            vec3 discBase = mix(vColor, vec3(1.0), coreWhite * 0.35);
-            vec3 discCol = discBase * discDiff + vec3(discSpec * 0.55);
+            // 整體 alpha — 降一點 core 權重免得疊加處全變白
+            float alpha = (body * 0.85 + halo + core * 0.9) * fade * vDim;
 
-            // ============================================================
-            // Ring 立體環(0.34 ~ 0.46):像 torus 的剖面,內外緣有 highlight
-            // ============================================================
-            // ring 中心線 d=0.40,半厚度 0.06
-            float ringR = clamp((d - 0.40) / 0.06, -1.0, 1.0);
-            float ringNZ = sqrt(max(0.0, 1.0 - ringR * ringR));
-            // 環的 normal:徑向偏移 + 朝視角的 z(剖面是個 torus)
-            vec2 radialDir = uv / max(d, 0.0001);
-            vec3 ringN = normalize(vec3(radialDir * ringR * 0.85, ringNZ));
-            float ringNDotL = max(0.0, dot(ringN, lightDir));
-            float ringDiff = ringNDotL * 0.5 + 0.5;
-            float ringSpec = pow(ringNDotL, 16.0);
-            vec3 ringColLit = ringCol * ringDiff + vec3(ringSpec * 0.5);
-
-            // ============================================================
-            // Alpha 三層:disc / ring / halo(柔光暈)
-            // ============================================================
-            float discMask = 1.0 - smoothstep(0.27, 0.32, d);
-            float ringMask = smoothstep(0.34, 0.36, d) * (1.0 - smoothstep(0.45, 0.48, d));
-            // halo:整片柔光,在 disc/ring 邊緣外圍給「發光」感
-            float haloOuter = (1.0 - smoothstep(0.46, 0.50, d)) * smoothstep(0.45, 0.47, d) * 0.55;
-            float haloAmbient = (1.0 - smoothstep(0.0, 0.50, d)) * 0.16;
-            float halo = max(haloOuter, haloAmbient);
-
-            // 顏色 blend:disc 主導內部,ring 主導外部,過渡區漸進
-            float t = smoothstep(0.28, 0.36, d);
-            vec3 col = mix(discCol, ringColLit, t);
-
-            // halo 區域用 ring 色(外緣 ring 光暈)或 disc 色(中心擴散)
-            float alpha = max(max(discMask * 0.96, ringMask * 0.96), halo);
-
-            alpha *= fade * vDim;
             gl_FragColor = vec4(col, alpha);
           }
         `,
         transparent: true,
         depthWrite: false,
-        blending: THREE.NormalBlending,
+        // Additive blending:點點重疊處變亮 — 像星雲、星團密集區的發光感
+        blending: THREE.AdditiveBlending,
         vertexColors: true,
       });
 
@@ -643,6 +613,135 @@ export default function PatentMapCanvas({
       scene.add(focusLines);
     }
 
+    // ===== Hover focus lines + endpoint labels =====
+    // hover 公司 → 從該公司拉線到每個 secondary cat 的 cluster centroid,
+    // 線終點放一個 HTML 標籤顯示 cat 名 + 該公司在該 cat 的比例。
+    // 標籤色 = 線色 = palette[cat],用戶能直接對應到 tooltip donut 的色塊。
+    // 標籤跟 centroid 用 vec3 綁定,在 animate loop 內 project 到 screen 座標,
+    // 鏡頭旋轉 / 縮放時標籤跟著群移動。
+    function showHoverFocusLinesAndLabels(centerIdx: number) {
+      clearHoverFocusLinesAndLabels();
+      if (centerIdx < 0 || !companyPoints) return;
+      const positions = (companyPoints.geometry.attributes.position as THREE.BufferAttribute).array as Float32Array;
+      const focusName = visibleCompanies[centerIdx].name;
+      const ds = stateRef.current.dataset;
+      const focusCompany = ds.companies.find((c) => c.name === focusName);
+      if (!focusCompany) return;
+
+      const cx = positions[centerIdx * 3];
+      const cy = positions[centerIdx * 3 + 1];
+      const cz = positions[centerIdx * 3 + 2];
+
+      const totalPatents = focusCompany.totalPatents || 1;
+      const dist = focusCompany.categoryDist || {};
+      const mainCat = focusCompany.mainCategory;
+      // top 5 secondary cat,按比例排序(只挑真正跨領域多的)
+      const secondary = Object.entries(dist)
+        .filter(([cat, count]) => cat !== mainCat && count > 0)
+        .sort((a, b) => b[1] - a[1])
+        .slice(0, 5);
+      if (secondary.length === 0) return;
+
+      type Line = {
+        cat: string;
+        count: number;
+        cx2: number; cy2: number; cz2: number;
+        color: THREE.Color;
+      };
+      const lines: Line[] = [];
+      for (const [cat, count] of secondary) {
+        let sx = 0, sy = 0, sz = 0, n = 0;
+        visibleCompanies.forEach((co, i) => {
+          if (co.mainCategory === cat) {
+            sx += positions[i * 3];
+            sy += positions[i * 3 + 1];
+            sz += positions[i * 3 + 2];
+            n++;
+          }
+        });
+        if (n === 0) continue;
+        lines.push({
+          cat,
+          count,
+          cx2: sx / n,
+          cy2: sy / n,
+          cz2: sz / n,
+          color: hexToThreeColor(stateRef.current.palette[cat] || "#CCCCCC"),
+        });
+      }
+      if (lines.length === 0) return;
+
+      // ---- 3D lines ----
+      const linePos = new Float32Array(lines.length * 6);
+      const lineCol = new Float32Array(lines.length * 6);
+      lines.forEach((ln, i) => {
+        linePos[i * 6]     = cx;
+        linePos[i * 6 + 1] = cy;
+        linePos[i * 6 + 2] = cz;
+        // 起點(focus 端)暗一點,終點(centroid)飽和 — 暗示「方向」
+        lineCol[i * 6]     = ln.color.r * 0.3;
+        lineCol[i * 6 + 1] = ln.color.g * 0.3;
+        lineCol[i * 6 + 2] = ln.color.b * 0.3;
+        linePos[i * 6 + 3] = ln.cx2;
+        linePos[i * 6 + 4] = ln.cy2;
+        linePos[i * 6 + 5] = ln.cz2;
+        lineCol[i * 6 + 3] = ln.color.r;
+        lineCol[i * 6 + 4] = ln.color.g;
+        lineCol[i * 6 + 5] = ln.color.b;
+      });
+      const lg = new THREE.BufferGeometry();
+      lg.setAttribute("position", new THREE.BufferAttribute(linePos, 3));
+      lg.setAttribute("color", new THREE.BufferAttribute(lineCol, 3));
+      const lm = new THREE.LineBasicMaterial({
+        vertexColors: true,
+        transparent: true,
+        opacity: 0.7,
+        depthWrite: false,
+      });
+      focusLines = new THREE.LineSegments(lg, lm);
+      scene.add(focusLines);
+
+      // ---- HTML labels at line endpoints ----
+      const container = focusLabelsContainerRef.current;
+      if (!container) return;
+      for (const ln of lines) {
+        const pct = Math.round((ln.count / totalPatents) * 100);
+        const hex =
+          "#" +
+          [ln.color.r, ln.color.g, ln.color.b]
+            .map((v) => Math.round(v * 255).toString(16).padStart(2, "0"))
+            .join("")
+            .toUpperCase();
+        const el = document.createElement("div");
+        el.className = "ai-map-focus-label";
+        el.style.borderColor = hex;
+        el.style.color = hex;
+        el.innerHTML = `<span class="ai-map-focus-label-dot" style="background:${hex}"></span><span class="ai-map-focus-label-cat">${escapeHtml(ln.cat)}</span><span class="ai-map-focus-label-pct">${pct}%</span>`;
+        container.appendChild(el);
+        focusLabels.push({
+          centroid: new THREE.Vector3(ln.cx2, ln.cy2, ln.cz2),
+          el,
+        });
+      }
+    }
+
+    function clearHoverFocusLinesAndLabels() {
+      if (hoverHighlightTimer) {
+        clearTimeout(hoverHighlightTimer);
+        hoverHighlightTimer = null;
+      }
+      if (focusLines) {
+        scene.remove(focusLines);
+        focusLines.geometry.dispose();
+        (focusLines.material as THREE.Material).dispose();
+        focusLines = null;
+      }
+      for (const lab of focusLabels) {
+        lab.el.remove();
+      }
+      focusLabels = [];
+    }
+
     // ===== 鏡頭控制(統一 Pointer Events:支援 mouse / touch / pen) =====
     let isDragging = false;
     let didDrag = false;
@@ -672,20 +771,6 @@ export default function PatentMapCanvas({
     raycaster.params.Points!.threshold = 1.2;
     const mouseNDC = new THREE.Vector2();
     let hoveredIdx = -1;
-    let hoverFocusTimer: ReturnType<typeof setTimeout> | null = null;
-
-    function clearHoverFocusLines() {
-      if (hoverFocusTimer) {
-        clearTimeout(hoverFocusTimer);
-        hoverFocusTimer = null;
-      }
-      if (focusLines) {
-        scene.remove(focusLines);
-        focusLines.geometry.dispose();
-        (focusLines.material as THREE.Material).dispose();
-        focusLines = null;
-      }
-    }
 
     const onPointerDown = (e: PointerEvent) => {
       // 阻止瀏覽器預設(避免雙指縮放整個頁面)
@@ -765,35 +850,42 @@ export default function PatentMapCanvas({
 
       if (hits.length > 0 && companySizes && companyOriginalSizes) {
         const idx = hits[0].index!;
+        const c = visibleCompanies[idx];
         if (idx !== hoveredIdx) {
           if (hoveredIdx >= 0) companySizes[hoveredIdx] = companyOriginalSizes[hoveredIdx];
           hoveredIdx = idx;
           companySizes[idx] = companyOriginalSizes[idx] * 1.7;
           (companyPoints.geometry.attributes.size as THREE.BufferAttribute).needsUpdate = true;
 
-          // 切到新的 hover 點 → 重設 focus lines timer
-          if (hoverFocusTimer) clearTimeout(hoverFocusTimer);
-          if (focusLines) {
-            scene.remove(focusLines);
-            focusLines.geometry.dispose();
-            (focusLines.material as THREE.Material).dispose();
-            focusLines = null;
+          // 切到新公司 → 重灌 donut + cat list(只在公司變才重畫,不用每次 mouse move)
+          if (tooltipEl) {
+            const donutEl = tooltipEl.querySelector(".ai-map-tooltip-donut") as HTMLElement | null;
+            const listEl = tooltipEl.querySelector(".ai-map-tooltip-cat-list") as HTMLElement | null;
+            const dist = c.categoryDist || {};
+            if (donutEl) donutEl.innerHTML = buildDonutSvg(dist, stateRef.current.palette);
+            if (listEl) listEl.innerHTML = buildCatListHtml(dist, stateRef.current.palette);
           }
-          // 280ms 後若還停在同一點,拉跨域連線
+
+          // 切公司 → 先清舊線/標籤,280ms 防抖後再畫新線/標籤(避免快速劃過頻繁建銷)
+          clearHoverFocusLinesAndLabels();
           const hoverTarget = idx;
-          hoverFocusTimer = setTimeout(() => {
+          hoverHighlightTimer = setTimeout(() => {
             if (hoveredIdx === hoverTarget) {
-              showFocusLines(hoverTarget);
+              showHoverFocusLinesAndLabels(hoverTarget);
             }
           }, 280);
         }
-        const c = visibleCompanies[idx];
         if (tooltipEl) {
           (tooltipEl.querySelector(".ai-map-tooltip-cat") as HTMLElement).textContent = c.mainCategory;
           (tooltipEl.querySelector(".ai-map-tooltip-name") as HTMLElement).textContent = c.name;
           (tooltipEl.querySelector(".ai-map-tooltip-meta") as HTMLElement).textContent = `${c.displayPatents} 筆專利`;
-          tooltipEl.style.left = e.clientX + 14 + "px";
-          tooltipEl.style.top = e.clientY + 14 + "px";
+          // tooltip 偏右下,但靠近右/下邊界時自動翻到滑鼠的左/上(避免被視窗截掉)
+          const tw = tooltipEl.offsetWidth || 280;
+          const th = tooltipEl.offsetHeight || 160;
+          const placeX = e.clientX + 14 + tw > window.innerWidth ? e.clientX - tw - 14 : e.clientX + 14;
+          const placeY = e.clientY + 14 + th > window.innerHeight ? e.clientY - th - 14 : e.clientY + 14;
+          tooltipEl.style.left = Math.max(8, placeX) + "px";
+          tooltipEl.style.top = Math.max(8, placeY) + "px";
           tooltipEl.classList.add("show");
         }
         canvasRef.current.style.cursor = "pointer";
@@ -802,8 +894,7 @@ export default function PatentMapCanvas({
           companySizes[hoveredIdx] = companyOriginalSizes[hoveredIdx];
           (companyPoints.geometry.attributes.size as THREE.BufferAttribute).needsUpdate = true;
           hoveredIdx = -1;
-          // 離開所有點 → 清掉 hover 帶起的 focus lines(不影響 click 焦點)
-          clearHoverFocusLines();
+          clearHoverFocusLinesAndLabels();
         }
         if (tooltipEl) tooltipEl.classList.remove("show");
         canvasRef.current.style.cursor = isDragging ? "grabbing" : "grab";
@@ -974,9 +1065,24 @@ export default function PatentMapCanvas({
       }
       noiseGeom.attributes.position.needsUpdate = true;
 
-      // 公司點:更新 time uniform 讓呼吸動畫跑
-      if (companyPoints) {
-        (companyPoints.material as THREE.ShaderMaterial).uniforms.time.value = time;
+      // Focus labels:每 frame 把 3D centroid project 到 screen 座標,更新 label 位置。
+      // 鏡頭旋轉/縮放時 label 會跟著 cluster 移動。
+      if (focusLabels.length > 0 && canvas) {
+        const rect = canvas.getBoundingClientRect();
+        for (const lab of focusLabels) {
+          const v = lab.centroid.clone().project(camera);
+          // NDC → 螢幕座標(轉換成 fixed 定位的 left/top)
+          const x = rect.left + (v.x * 0.5 + 0.5) * rect.width;
+          const y = rect.top + (1 - (v.y * 0.5 + 0.5)) * rect.height;
+          // v.z > 1 表示在相機後方,藏起來
+          if (v.z > 1) {
+            lab.el.style.opacity = "0";
+          } else {
+            lab.el.style.left = x + "px";
+            lab.el.style.top = y + "px";
+            lab.el.style.opacity = "";
+          }
+        }
       }
 
       // 點位 tween
@@ -1019,6 +1125,9 @@ export default function PatentMapCanvas({
         focusLines.geometry.dispose();
         (focusLines.material as THREE.Material).dispose();
       }
+      // 清 focus labels
+      if (hoverHighlightTimer) clearTimeout(hoverHighlightTimer);
+      for (const lab of focusLabels) lab.el.remove();
       renderer.dispose();
       apiRef.current = null;
     };
@@ -1047,11 +1156,17 @@ export default function PatentMapCanvas({
   return (
     <>
       <canvas ref={canvasRef} className="ai-map-canvas" />
-      {/* hover tooltip */}
+      {/* focus labels overlay — animate loop 把 3D centroid project 到這裡 */}
+      <div ref={focusLabelsContainerRef} className="ai-map-focus-labels" />
+      {/* hover tooltip:標頭 + 跨域 donut + cat list */}
       <div ref={tooltipRef} className="ai-map-tooltip">
         <span className="ai-map-tooltip-cat" />
         <div className="ai-map-tooltip-name" />
         <div className="ai-map-tooltip-meta" />
+        <div className="ai-map-tooltip-body">
+          <div className="ai-map-tooltip-donut" />
+          <div className="ai-map-tooltip-cat-list" />
+        </div>
       </div>
       {/* compute toast */}
       <div ref={toastRef} className="ai-map-toast">

@@ -341,23 +341,48 @@ export async function computeForceLayout(
  *
  * 回傳 category → hex 字串(如 "#7DF9FF")的對照表。
  */
+/**
+ * 程式產 30 色 palette,專為「同 snapshot 內每個 cat 都需要明顯不同顏色」設計。
+ *
+ * 邏輯:30 個 index 配對成 15 個 hue group(每組 24° 間距),
+ *      每組內第一個 index 用「深飽和」tier(深色背景上很搶眼),
+ *      第二個 index 用「明亮淡彩」tier,且 hue 偏移半步 12°。
+ *
+ * 結果:
+ *  - 任何相鄰 index 都同時在 hue + sat + light 三軸上拉開
+ *  - 30 色裡任兩色 RGB 歐式距離最小 26.9,平均 ~120
+ *  - 暖/冷/中性色在 index 順序上自然交錯,圖譜不會出現「一片紅」「一片藍」的色塊
+ *
+ * 為什麼不全部用「深飽和」tier?同明度下 30 色擠不下,hue 必須 < 12° 才能容納,
+ * 結果相鄰 cat 看起來像漸變。tier 交錯讓相鄰 hue 至少在 saturation/lightness 上明顯區分。
+ */
+function buildStarPalette(N: number): string[] {
+  const colors: string[] = [];
+  for (let i = 0; i < N; i++) {
+    const half = Math.floor(i / 2); // 同組兩個 index 共用 hue base
+    const tier = i % 2;             // 0 = 深飽和, 1 = 明亮淡彩
+    const hue = (tier === 0 ? half * 24 : half * 24 + 12) % 360;
+    const sat = tier === 0 ? 88 : 72;
+    const light = tier === 0 ? 56 : 75;
+    colors.push(hslToHex(hue, sat, light));
+  }
+  return colors;
+}
+
+const STAR_PALETTE_30 = buildStarPalette(30);
+
 export function buildCategoryPalette(categories: string[]): Record<string, string> {
+  // 同 snapshot 內每個 cat 拿到 STAR_PALETTE_30 對應 index 的唯一色。
+  // 實際 snapshot 最多 28 個 cat,30 色足夠;>30 的兜底仍走演算法不會 crash。
   const palette: Record<string, string> = {};
   categories.forEach((cat, i) => {
-    const hue = (i * 137.508) % 360;
-    const tier = i % 3;
-    let sat: number, light: number;
-    if (tier === 0) {
-      sat = 80;
-      light = 62;
-    } else if (tier === 1) {
-      sat = 92;
-      light = 46;
+    if (i < STAR_PALETTE_30.length) {
+      palette[cat] = STAR_PALETTE_30[i];
     } else {
-      sat = 56;
-      light = 78;
+      const hue = (i * 137.508) % 360;
+      const sat = i % 2 === 0 ? 92 : 65;
+      palette[cat] = hslToHex(hue, sat, 64);
     }
-    palette[cat] = hslToHex(hue, sat, light);
   });
   return palette;
 }

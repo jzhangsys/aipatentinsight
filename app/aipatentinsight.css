@@ -1469,13 +1469,14 @@
   z-index: 25;
   background: rgba(3, 5, 15, 0.96);
   border: 1px solid rgba(125, 249, 255, 0.4);
-  padding: 8px 12px;
-  border-radius: 4px;
+  padding: 10px 12px 11px;
+  border-radius: 6px;
   font-size: 11px;
   color: rgba(255, 255, 255, 0.95);
   opacity: 0;
   transition: opacity 0.15s;
-  max-width: 260px;
+  width: 268px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6);
 }
 .ai-patent-map .ai-map-tooltip.show { opacity: 1; }
 .ai-patent-map .ai-map-tooltip-cat {
@@ -1491,11 +1492,119 @@
   font-family: 'Manrope', system-ui, sans-serif;
   font-weight: 500;
   margin-bottom: 4px;
+  word-break: break-all;
 }
 .ai-patent-map .ai-map-tooltip-meta {
   font-family: 'JetBrains Mono', 'Courier New', monospace;
   color: rgba(255, 255, 255, 0.5);
   font-size: 10px;
+}
+
+/* tooltip body:donut + cat list */
+.ai-patent-map .ai-map-tooltip-body {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-top: 9px;
+  padding-top: 9px;
+  border-top: 1px solid rgba(125, 249, 255, 0.12);
+}
+.ai-patent-map .ai-map-tooltip-body:empty,
+.ai-patent-map .ai-map-tooltip-donut:empty + .ai-map-tooltip-cat-list:empty {
+  display: none;
+}
+.ai-patent-map .ai-map-tooltip-donut {
+  flex: 0 0 80px;
+}
+.ai-patent-map .ai-map-tooltip-donut svg {
+  display: block;
+  filter: drop-shadow(0 0 6px rgba(125, 249, 255, 0.08));
+}
+.ai-patent-map .ai-map-tooltip-cat-list {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-family: 'JetBrains Mono', 'Courier New', monospace;
+  font-size: 10px;
+  min-width: 0;
+}
+.ai-patent-map .ai-map-tt-row {
+  display: grid;
+  grid-template-columns: 8px 1fr auto;
+  gap: 6px;
+  align-items: center;
+  min-width: 0;
+}
+.ai-patent-map .ai-map-tt-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 2px;
+  background: rgba(255, 255, 255, 0.25);
+}
+.ai-patent-map .ai-map-tt-cat {
+  color: rgba(255, 255, 255, 0.85);
+  font-family: 'Manrope', system-ui, sans-serif;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  min-width: 0;
+}
+.ai-patent-map .ai-map-tt-pct {
+  color: rgba(255, 255, 255, 0.55);
+  font-variant-numeric: tabular-nums;
+  text-align: right;
+}
+.ai-patent-map .ai-map-tt-row-rest .ai-map-tt-cat {
+  color: rgba(255, 255, 255, 0.45);
+  font-style: italic;
+}
+
+/* === Focus labels:hover 時 3D 線終點上的 cat 名標籤 === */
+.ai-patent-map .ai-map-focus-labels {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 22;
+}
+.ai-map-focus-label {
+  position: fixed;
+  transform: translate(-50%, -50%);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 9px 4px 8px;
+  border: 1px solid currentColor;
+  border-radius: 12px;
+  background: rgba(3, 5, 15, 0.92);
+  font-family: 'Manrope', system-ui, sans-serif;
+  font-size: 10.5px;
+  white-space: nowrap;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.5), 0 0 12px currentColor;
+  opacity: 0;
+  animation: aiMapFocusLabelIn 0.22s 0.08s forwards;
+  pointer-events: none;
+}
+@keyframes aiMapFocusLabelIn {
+  to { opacity: 1; }
+}
+.ai-map-focus-label-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: currentColor;
+  box-shadow: 0 0 4px currentColor;
+}
+.ai-map-focus-label-cat {
+  color: rgba(255, 255, 255, 0.95);
+  font-weight: 500;
+  letter-spacing: 0.01em;
+}
+.ai-map-focus-label-pct {
+  color: rgba(255, 255, 255, 0.55);
+  font-family: 'JetBrains Mono', 'Courier New', monospace;
+  font-size: 9.5px;
+  font-variant-numeric: tabular-nums;
 }
 
 /* === Compute toast === */
