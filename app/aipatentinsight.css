@@ -4372,3 +4372,393 @@
   }
   .ai-footer-disclaimer-box p { font-size: 9.5px; }
 }
+
+/* ============================================================
+   Industry Trends — 3-concept prototype 容器 + 共用元件
+   ============================================================ */
+.ai-trends-page .ai-trends-concept-tabs {
+  display: flex;
+  gap: 8px;
+  margin: 16px 0 18px;
+  flex-wrap: wrap;
+}
+.ai-trends-page .ai-trends-concept-stage {
+  background: rgba(3, 5, 15, 0.5);
+  border: 1px solid rgba(125, 249, 255, 0.12);
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 24px;
+}
+
+/* Concept toolbar 共用 */
+.ai-trends-page .ai-concept-toolbar {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding-bottom: 12px;
+  margin-bottom: 12px;
+  border-bottom: 1px solid rgba(125, 249, 255, 0.08);
+}
+.ai-trends-page .ai-concept-mode-toggle {
+  display: flex;
+  gap: 6px;
+}
+.ai-trends-page .ai-concept-range {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  color: rgba(255, 255, 255, 0.65);
+}
+.ai-trends-page .ai-concept-range-label {
+  color: rgba(125, 249, 255, 0.6);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  font-size: 9px;
+}
+.ai-trends-page .ai-concept-range-date {
+  color: rgba(255, 255, 255, 0.85);
+  min-width: 78px;
+}
+.ai-trends-page .ai-concept-range input[type="range"] {
+  width: 130px;
+  accent-color: rgba(125, 249, 255, 0.8);
+}
+.ai-trends-page .ai-concept-hint {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  color: rgba(255, 255, 255, 0.45);
+  letter-spacing: 0.04em;
+}
+.ai-trends-page .ai-concept-title-inline {
+  font-family: 'Manrope', system-ui;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.65);
+  margin-right: auto;
+}
+
+.ai-trends-page .ai-concept-chart {
+  width: 100%;
+  position: relative;
+  background: rgba(0, 0, 0, 0.18);
+  border-radius: 4px;
+  overflow: hidden;
+}
+.ai-trends-page .ai-concept-chart svg {
+  display: block;
+}
+
+.ai-trends-page .ai-concept-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px 24px;
+  margin-top: 12px;
+  padding-top: 10px;
+  border-top: 1px solid rgba(125, 249, 255, 0.08);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  color: rgba(255, 255, 255, 0.55);
+}
+.ai-trends-page .ai-concept-legend .legend-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+.ai-trends-page .ai-concept-legend .dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 2px;
+  display: inline-block;
+}
+
+.ai-trends-page .ai-trends-loading,
+.ai-trends-page .ai-trends-error {
+  font-family: 'Manrope', system-ui;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.55);
+  padding: 30px;
+  text-align: center;
+}
+
+/* === 3D Currents 海洋場景 === */
+.ai-currents-3d-wrap {
+  background: linear-gradient(180deg,
+    rgba(2, 8, 22, 0.95) 0%,
+    rgba(8, 22, 44, 0.9) 40%,
+    rgba(4, 14, 30, 0.85) 100%);
+  cursor: default;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+/* === 時間軸 labels:浮在 canvas 上的 HTML overlay === */
+.ai-currents-time-labels {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+.ai-currents-time-label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: 'JetBrains Mono', 'Courier New', monospace;
+  font-size: 9px;
+  letter-spacing: 0.12em;
+  color: rgba(125, 249, 255, 0.55);
+  background: rgba(3, 8, 20, 0.6);
+  border: 1px solid rgba(125, 249, 255, 0.18);
+  border-radius: 2px;
+  padding: 2px 6px;
+  white-space: nowrap;
+  text-shadow: 0 0 4px rgba(0, 0, 0, 0.7);
+  transition: opacity 0.15s;
+  will-change: transform;
+  /* 用 translate 讓 label 中心對齊 X 位置 + 略往下偏(不擋畫面) */
+  transform-origin: 0 0;
+  margin-left: -28px;
+  margin-top: -10px;
+}
+
+/* === 兩欄佈局:左 cat list + 右 canvas === */
+.ai-currents-layout {
+  display: grid;
+  grid-template-columns: minmax(220px, 260px) 1fr;
+  gap: 16px;
+}
+.ai-currents-canvas-col {
+  min-width: 0;
+}
+.ai-currents-cats {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  max-height: 700px;
+  overflow-y: auto;
+  padding-right: 4px;
+}
+.ai-currents-cats-title {
+  font-family: 'JetBrains Mono', 'Courier New', monospace;
+  font-size: 9px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: rgba(125, 249, 255, 0.65);
+  padding: 4px 0 8px 0;
+}
+.ai-currents-cat-card {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(3, 5, 15, 0.55);
+  border: 1px solid rgba(125, 249, 255, 0.12);
+  border-radius: 4px;
+  padding: 9px 11px;
+  cursor: pointer;
+  transition: border-color 0.15s, background 0.15s, transform 0.15s;
+  text-align: left;
+  font-family: inherit;
+  color: inherit;
+  /* 入場 stagger 動畫 */
+  opacity: 0;
+  transform: translateX(-8px);
+  animation: aiCurrentsCardIn 0.4s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+}
+@keyframes aiCurrentsCardIn {
+  to { opacity: 1; transform: translateX(0); }
+}
+.ai-currents-cat-card:hover {
+  border-color: rgba(125, 249, 255, 0.4);
+  background: rgba(125, 249, 255, 0.05);
+  transform: translateX(2px);
+}
+.ai-currents-cat-card.active {
+  border-color: rgba(125, 249, 255, 0.85);
+  background: linear-gradient(90deg, rgba(125, 249, 255, 0.15) 0%, rgba(125, 249, 255, 0.06) 100%);
+  box-shadow: 0 0 20px rgba(125, 249, 255, 0.28), inset 2px 0 0 0 rgba(125, 249, 255, 0.95);
+  animation: aiCurrentsCardIn 0.4s cubic-bezier(0.2, 0.8, 0.2, 1) forwards,
+             aiCurrentsCardPulse 2.4s ease-in-out infinite 0.4s;
+}
+@keyframes aiCurrentsCardPulse {
+  0%, 100% { box-shadow: 0 0 20px rgba(125, 249, 255, 0.28), inset 2px 0 0 0 rgba(125, 249, 255, 0.95); }
+  50% { box-shadow: 0 0 30px rgba(125, 249, 255, 0.45), inset 2px 0 0 0 rgba(125, 249, 255, 1); }
+}
+.ai-currents-cat-card.all {
+  justify-content: space-between;
+  margin-bottom: 6px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+.ai-currents-cat-card .cat-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  box-shadow: 0 0 6px currentColor;
+}
+.ai-currents-cat-card .cat-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  min-width: 0;
+}
+.ai-currents-cat-card .cat-name {
+  font-family: 'Manrope', system-ui;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.92);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.ai-currents-cat-card .cat-meta {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 9px;
+  color: rgba(255, 255, 255, 0.5);
+  letter-spacing: 0.04em;
+}
+.ai-currents-cat-card .cat-trend {
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.7);
+}
+.ai-currents-cat-card .cat-trend.up { color: #4ade80; }
+.ai-currents-cat-card .cat-trend.down { color: #fb7185; }
+.ai-currents-cat-card .cat-total {
+  color: rgba(125, 249, 255, 0.85);
+  font-variant-numeric: tabular-nums;
+}
+.ai-currents-cat-card .cat-pers {
+  color: rgba(255, 255, 255, 0.45);
+  font-variant-numeric: tabular-nums;
+}
+
+@media (max-width: 720px) {
+  .ai-currents-layout {
+    grid-template-columns: 1fr;
+  }
+  .ai-currents-cats {
+    flex-direction: row;
+    overflow-x: auto;
+    overflow-y: hidden;
+    max-height: none;
+    padding-bottom: 6px;
+  }
+  .ai-currents-cat-card {
+    flex-shrink: 0;
+    min-width: 180px;
+  }
+}
+
+/* === 首次進入 onboarding 引導 === */
+.ai-currents-onboarding {
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: rgba(3, 8, 20, 0.85);
+  border: 1px solid rgba(125, 249, 255, 0.3);
+  border-radius: 6px;
+  padding: 12px 16px;
+  backdrop-filter: blur(10px);
+  pointer-events: none;
+  max-width: 280px;
+  animation: aiCurrentsHintIn 0.4s ease;
+}
+@keyframes aiCurrentsHintIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.ai-currents-onboarding-step {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+.ai-currents-onboarding .step-icon {
+  font-size: 16px;
+  line-height: 1.2;
+  flex-shrink: 0;
+}
+.ai-currents-onboarding .step-title {
+  font-family: 'Manrope', system-ui;
+  font-size: 11px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.95);
+  margin-bottom: 1px;
+}
+.ai-currents-onboarding .step-text {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 9px;
+  color: rgba(125, 249, 255, 0.7);
+  letter-spacing: 0.02em;
+}
+
+/* === Hover tooltip === */
+.ai-currents-tooltip {
+  position: fixed;
+  z-index: 30;
+  pointer-events: none;
+  background: rgba(3, 8, 20, 0.96);
+  border: 1px solid rgba(125, 249, 255, 0.45);
+  border-radius: 6px;
+  padding: 10px 14px;
+  min-width: 200px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6);
+  font-family: 'Manrope', system-ui;
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.92);
+}
+.ai-currents-tooltip .tt-name {
+  font-size: 13px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.98);
+  margin-bottom: 8px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid rgba(125, 249, 255, 0.18);
+}
+.ai-currents-tooltip .tt-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4px 14px;
+}
+.ai-currents-tooltip .tt-stats > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+}
+.ai-currents-tooltip .tt-stats span {
+  color: rgba(255, 255, 255, 0.55);
+}
+.ai-currents-tooltip .tt-stats strong {
+  color: rgba(125, 249, 255, 0.95);
+  font-weight: 500;
+  font-size: 11px;
+}
+.ai-currents-tooltip .tt-stats strong.up { color: #4ade80; }
+.ai-currents-tooltip .tt-stats strong.down { color: #fb7185; }
+.ai-currents-tooltip .tt-tag {
+  margin-top: 8px;
+  padding: 3px 8px;
+  border-radius: 3px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 9px;
+  letter-spacing: 0.1em;
+  display: inline-block;
+}
+.ai-currents-tooltip .tt-tag.flash {
+  color: #fb7185;
+  background: rgba(251, 113, 133, 0.12);
+  border: 1px solid rgba(251, 113, 133, 0.4);
+}
+.ai-currents-tooltip .tt-tag.steady {
+  color: #4ade80;
+  background: rgba(74, 222, 128, 0.12);
+  border: 1px solid rgba(74, 222, 128, 0.4);
+}

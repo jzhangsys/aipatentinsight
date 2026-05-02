@@ -24,7 +24,13 @@ declare module "d3" {
   export function stack<Datum, Key = string>(): Stack<Datum, Key>;
 
   export const stackOffsetSilhouette: unknown;
+  export const stackOffsetWiggle: unknown;
+  export const stackOffsetExpand: unknown;
+  export const stackOffsetNone: unknown;
   export const stackOrderInsideOut: unknown;
+  export const stackOrderNone: unknown;
+  export const stackOrderAscending: unknown;
+  export const stackOrderDescending: unknown;
 
   // ===== Area =====
   export interface Area<Datum> {

@@ -113,14 +113,30 @@ function buildDonutSvg(
 }
 
 /** 用 categoryDist 畫右側 cat 列表(top 5 + 其他合併行)。 */
+/**
+ * 把比例格式化:
+ *  - >= 10%   → 整數("23%")
+ *  - 1-10%    → 1 位小數("3.5%")
+ *  - 0.01-1%  → 2 位小數("0.45%")
+ *  - < 0.01%  → 回 null,代表「太低,不顯示」
+ */
+function formatPct(n: number, total: number): string | null {
+  const raw = (n / total) * 100;
+  if (raw >= 10) return Math.round(raw) + "%";
+  if (raw >= 1) return raw.toFixed(1) + "%";
+  if (raw >= 0.01) return raw.toFixed(2) + "%";
+  return null; // 太低,捨去
+}
+
 function buildCatListHtml(
   dist: Record<string, number>,
   palette: Record<string, string>
 ): string {
   const total = Object.values(dist).reduce((s, n) => s + n, 0);
   if (total === 0) return "";
+  // 按 count 降序,且 filter 掉佔比 < 0.01% 的(一律不顯示)
   const entries = Object.entries(dist)
-    .filter(([, n]) => n > 0)
+    .filter(([, n]) => n > 0 && (n / total) * 100 >= 0.01)
     .sort((a, b) => b[1] - a[1]);
   const top = entries.slice(0, 5);
   const rest = entries.slice(5);
@@ -128,17 +144,20 @@ function buildCatListHtml(
 
   const rows: string[] = [];
   for (const [cat, n] of top) {
-    const pct = Math.round((n / total) * 100);
+    const pct = formatPct(n, total);
+    if (!pct) continue;
     const color = palette[cat] || "#888";
     rows.push(
-      `<div class="ai-map-tt-row"><span class="ai-map-tt-dot" style="background:${color}"></span><span class="ai-map-tt-cat">${escapeHtml(cat)}</span><span class="ai-map-tt-pct">${pct}%</span></div>`
+      `<div class="ai-map-tt-row"><span class="ai-map-tt-dot" style="background:${color}"></span><span class="ai-map-tt-cat">${escapeHtml(cat)}</span><span class="ai-map-tt-pct">${pct}</span></div>`
     );
   }
   if (restCount > 0) {
-    const pct = Math.round((restCount / total) * 100);
-    rows.push(
-      `<div class="ai-map-tt-row ai-map-tt-row-rest"><span class="ai-map-tt-dot"></span><span class="ai-map-tt-cat">其他 ${rest.length} 類</span><span class="ai-map-tt-pct">${pct}%</span></div>`
-    );
+    const pct = formatPct(restCount, total);
+    if (pct) {
+      rows.push(
+        `<div class="ai-map-tt-row ai-map-tt-row-rest"><span class="ai-map-tt-dot"></span><span class="ai-map-tt-cat">其他 ${rest.length} 類</span><span class="ai-map-tt-pct">${pct}</span></div>`
+      );
+    }
   }
   return rows.join("");
 }
