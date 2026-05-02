@@ -2719,15 +2719,10 @@
 .ai-trends-page {
   position: relative;
   min-height: 100vh;
-  padding: 110px 48px 60px;
+  /* 收窄水平 padding,讓主視覺盡量往左右延伸 */
+  padding: 110px 24px 48px;
   background: radial-gradient(ellipse at 50% 60%, #060A1C 0%, #03050F 60%, #01030A 100%);
-  display: grid;
-  grid-template-columns: 1fr 280px;
-  grid-template-areas:
-    "header  legend"
-    "stream  legend";
-  gap: 32px;
-  align-items: start;
+  display: block;
 }
 
 /* === Header(標題 + controls,標題置左) === */
@@ -4484,13 +4479,25 @@
 
 /* === 3D Currents 海洋場景 === */
 .ai-currents-3d-wrap {
-  background: linear-gradient(180deg,
-    rgba(2, 8, 22, 0.95) 0%,
-    rgba(8, 22, 44, 0.9) 40%,
-    rgba(4, 14, 30, 0.85) 100%);
-  cursor: default;
+  /* viewport-based 高度 — 主視覺更大,但保留 toolbar/legend 的呼吸空間 */
+  height: clamp(560px, 76vh, 920px);
+  /* 深海漸層:中央略亮(光柱效果)、四周漆黑 */
+  background:
+    radial-gradient(ellipse 60% 50% at 50% 55%,
+      rgba(20, 48, 92, 0.22) 0%,
+      rgba(6, 16, 38, 0.18) 40%,
+      transparent 75%),
+    linear-gradient(180deg, #020713 0%, #010510 100%);
+  cursor: grab;
   border-radius: 6px;
   overflow: hidden;
+}
+.ai-currents-3d-wrap:active {
+  cursor: grabbing;
+}
+.ai-currents-3d-wrap canvas {
+  width: 100% !important;
+  height: 100% !important;
 }
 
 /* === 時間軸 labels:浮在 canvas 上的 HTML overlay === */
@@ -4520,6 +4527,97 @@
   transform-origin: 0 0;
   margin-left: -28px;
   margin-top: -10px;
+}
+
+/* === Insight Pills(本期觀察)— 一進站就看到 takeaway === */
+.ai-currents-insights {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  margin: 0 0 20px;
+  padding: 14px 16px;
+  background: linear-gradient(180deg, rgba(125, 249, 255, 0.04) 0%, rgba(125, 249, 255, 0.01) 100%);
+  border: 1px solid rgba(125, 249, 255, 0.16);
+  border-radius: 10px;
+}
+.ai-currents-insights-label {
+  flex: 0 0 auto;
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  color: rgba(125, 249, 255, 0.7);
+  text-transform: uppercase;
+  padding-top: 12px;
+  white-space: nowrap;
+}
+.ai-currents-insights-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  flex: 1 1 auto;
+}
+.ai-currents-insight-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 9px 14px 9px 12px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  border-radius: 999px;
+  cursor: pointer;
+  transition: all 0.18s ease;
+  text-align: left;
+  color: var(--ai-text);
+  font-family: inherit;
+}
+.ai-currents-insight-pill:hover {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(255, 255, 255, 0.22);
+  transform: translateY(-1px);
+}
+.ai-currents-insight-pill.active {
+  background: rgba(125, 249, 255, 0.10);
+  border-color: rgba(125, 249, 255, 0.45);
+  box-shadow: 0 0 0 3px rgba(125, 249, 255, 0.10);
+}
+.ai-currents-insight-pill .pill-icon {
+  font-size: 16px;
+  line-height: 1;
+  filter: drop-shadow(0 0 6px currentColor);
+}
+.ai-currents-insight-pill .pill-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.25;
+}
+.ai-currents-insight-pill .pill-head {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--ai-text);
+}
+.ai-currents-insight-pill .pill-detail {
+  font-size: 10.5px;
+  color: rgba(255, 255, 255, 0.55);
+  margin-top: 2px;
+  letter-spacing: 0.04em;
+}
+/* 四象限色彩 */
+.ai-currents-insight-pill.steady .pill-icon { color: #ffd86b; }
+.ai-currents-insight-pill.steady.active { border-color: rgba(255, 216, 107, 0.5); box-shadow: 0 0 0 3px rgba(255, 216, 107, 0.12); }
+.ai-currents-insight-pill.rising .pill-icon { color: #ff6b6b; }
+.ai-currents-insight-pill.rising.active { border-color: rgba(255, 107, 107, 0.5); box-shadow: 0 0 0 3px rgba(255, 107, 107, 0.12); }
+.ai-currents-insight-pill.flash  .pill-icon { color: #c084fc; }
+.ai-currents-insight-pill.flash.active  { border-color: rgba(192, 132, 252, 0.5); box-shadow: 0 0 0 3px rgba(192, 132, 252, 0.12); }
+.ai-currents-insight-pill.fading .pill-icon { color: #94a3b8; }
+.ai-currents-insight-pill.fading.active { border-color: rgba(148, 163, 184, 0.5); box-shadow: 0 0 0 3px rgba(148, 163, 184, 0.12); }
+
+@media (max-width: 720px) {
+  .ai-currents-insights {
+    flex-direction: column;
+    gap: 10px;
+    padding: 12px 14px;
+  }
+  .ai-currents-insights-label { padding-top: 0; }
+  .ai-currents-insight-pill .pill-detail { font-size: 10px; }
 }
 
 /* === 兩欄佈局:左 cat list + 右 canvas === */

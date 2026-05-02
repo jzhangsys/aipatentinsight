@@ -31,6 +31,7 @@ type Concept = "A" | "B" | "C";
 
 export default function IndustryTrendsClient() {
   const [data, setData] = useState<AggregateData | null>(null);
+  const [domains, setDomains] = useState<Record<string, string>>({});
   const [error, setError] = useState<string | null>(null);
   const [concept, setConcept] = useState<Concept>(() => {
     if (typeof window === "undefined") return "A";
@@ -51,6 +52,19 @@ export default function IndustryTrendsClient() {
       .catch((e) => {
         if (!cancelled) setError(e.message);
       });
+    // domains map(失敗無妨,fallback 為純文字)
+    fetch("/data/company-domains.json")
+      .then((r) => (r.ok ? r.json() : {}))
+      .then((m) => {
+        if (cancelled) return;
+        // 過濾掉 _comment 等非 stockCode key
+        const out: Record<string, string> = {};
+        for (const [k, v] of Object.entries(m)) {
+          if (typeof v === "string" && !k.startsWith("_")) out[k] = v;
+        }
+        setDomains(out);
+      })
+      .catch(() => {});
     return () => {
       cancelled = true;
     };
@@ -121,7 +135,7 @@ export default function IndustryTrendsClient() {
       </div>
 
       <section className="ai-trends-concept-stage">
-        {concept === "A" && <IndustryConceptA data={data} />}
+        {concept === "A" && <IndustryConceptA data={data} domains={domains} />}
         {concept === "B" && <IndustryConceptB data={data} />}
         {concept === "C" && <IndustryConceptC data={data} />}
       </section>

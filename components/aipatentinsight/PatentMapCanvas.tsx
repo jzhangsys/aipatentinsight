@@ -291,6 +291,8 @@ export default function PatentMapCanvas({
     let companySizes: Float32Array | null = null;
     let companyOriginalSizes: Float32Array | null = null;
     let visibleCompanies: LayoutCompany[] = [];
+    // cat name → 連續整數 id,讓 shader 可以用 uniform 比對
+    let catNameToId: Map<string, number> = new Map();
     let focusLines: THREE.LineSegments | null = null;
     // Focus labels:hover 時為每條 line 終點放一個 HTML 文字標籤(cat 名 + %)
     let focusLabels: { centroid: THREE.Vector3; el: HTMLDivElement }[] = [];
@@ -422,6 +424,10 @@ export default function PatentMapCanvas({
       const colors = new Float32Array(N * 3);
       companySizes = new Float32Array(N);
       companyOriginalSizes = new Float32Array(N);
+      // 每點所屬 cat 的索引(穩定 hash):給 shader 用 uniform 比對是否該 dim
+      const catIds = new Float32Array(N);
+      catNameToId = new Map<string, number>();
+      let nextCatId = 0;
 
       let needsTween = false;
       visibleCompanies.forEach((company, i) => {
@@ -457,6 +463,11 @@ export default function PatentMapCanvas({
         const s = Math.min(13, 2.6 + Math.sqrt(company.displayPatents) * 1.0);
         companyOriginalSizes![i] = s;
         companySizes![i] = s;
+
+        // cat id 對應(穩定遞增 id,每個 cat name 一個編號)
+        const cat = company.mainCategory;
+        if (!catNameToId.has(cat)) catNameToId.set(cat, nextCatId++);
+        catIds[i] = catNameToId.get(cat)!;
       });
 
       if (needsTween) {
@@ -472,29 +483,61 @@ export default function PatentMapCanvas({
       geom.setAttribute("position", new THREE.BufferAttribute(positions, 3));
       geom.setAttribute("color", new THREE.BufferAttribute(colors, 3));
       geom.setAttribute("size", new THREE.BufferAttribute(companySizes, 1));
+      geom.setAttribute("aCatId", new THREE.BufferAttribute(catIds, 1));
 
-      // 「宇宙星圖」shader — 小亮核 + 柔光暈,純色相區分 cat。
-      // 用 AdditiveBlending 讓鄰近點疊加時更亮,模擬星團密集區的發光感。
+      // 「宇宙星圖」shader
+      //   focusIdx     — 單一公司聚焦(focusByName)
+      //   activeCatId  — 當前選中的 cat id,點 cat 時該 cat 的點全亮其他暗
+      //   topIdx       — 該 cat 內 patent 數最高公司的 vertex index → 閃爍光暈
+      //   uTime        — 給 topIdx pulse 用
       const mat = new THREE.ShaderMaterial({
         uniforms: {
           pixelRatio: { value: renderer.getPixelRatio() },
           focusIdx: { value: -1.0 },
+          activeCatId: { value: -1.0 },
+          topIdx: { value: -1.0 },
+          uTime: { value: 0.0 },
         },
         vertexShader: `
           attribute float size;
+          attribute float aCatId;
           varying vec3 vColor;
           varying float vDepth;
           varying float vDim;
+          varying float vIsTop;
+          varying float vTime;
           uniform float pixelRatio;
           uniform float focusIdx;
+          uniform float activeCatId;
+          uniform float topIdx;
+          uniform float uTime;
           void main() {
             vColor = color;
+            vTime = uTime;
             float vid = float(gl_VertexID);
-            vDim = (focusIdx >= 0.0 && abs(vid - focusIdx) > 0.5) ? 0.20 : 1.0;
+
+            // dim 計算:三層優先序
+            //   focusIdx 模式(單點聚焦):非 focus 點 dim 0.20
+            //   activeCatId 模式(cat 群集):非該 cat 點 dim 0.12
+            //   都沒設:不 dim
+            float dim = 1.0;
+            if (focusIdx >= 0.0) {
+              dim = abs(vid - focusIdx) > 0.5 ? 0.20 : 1.0;
+            } else if (activeCatId >= 0.0) {
+              dim = abs(aCatId - activeCatId) > 0.5 ? 0.12 : 1.0;
+            }
+            vDim = dim;
+
+            // 是否為 cat 內 top company(專利數最高)
+            vIsTop = abs(vid - topIdx) < 0.5 ? 1.0 : 0.0;
+
+            // pulse 倍率:top 點呼吸放大(0.85 ~ 1.4)
+            float pulse = 1.0 + sin(uTime * 3.5) * 0.32;
+            float sizeBoost = vIsTop > 0.5 ? (2.4 * pulse) : 1.0;
+
             vec4 mv = modelViewMatrix * vec4(position, 1.0);
             vDepth = -mv.z;
-            // 點點大小:近看大、遠看小,但因為用 AdditiveBlending 所以給比較大的 halo radius
-            gl_PointSize = size * pixelRatio * (180.0 / -mv.z);
+            gl_PointSize = size * sizeBoost * pixelRatio * (180.0 / -mv.z);
             gl_Position = projectionMatrix * mv;
           }
         `,
@@ -502,34 +545,35 @@ export default function PatentMapCanvas({
           varying vec3 vColor;
           varying float vDepth;
           varying float vDim;
+          varying float vIsTop;
+          varying float vTime;
           void main() {
             vec2 c = gl_PointCoord - vec2(0.5);
             float d = length(c);
             if (d > 0.5) discard;
 
-            // 深度淡出 — 遠處的星淡到背景裡
             float fade = smoothstep(220.0, 15.0, vDepth);
-
-            // 中心亮核:極亮的小白點(d<0.04 才白,範圍縮小才不會把 cat 色洗掉)
             float core = smoothstep(0.04, 0.0, d);
-            // 主體:從中心往外的柔軟光暈,quadratic falloff 像高斯星點
             float body = pow(1.0 - smoothstep(0.0, 0.5, d), 2.2);
-            // 外圍 halo:更柔軟的擴散光,讓星看起來會「發光」
             float halo = pow(1.0 - smoothstep(0.0, 0.5, d), 5.0) * 0.65;
-
-            // 顏色:核心微白(0.55 而不是 0.9),外圍維持飽和 cat 色,
-            // 這樣即使在 AdditiveBlending 下也能保留色相識別度
             vec3 col = mix(vColor, vec3(1.0, 0.97, 0.92), core * 0.55);
-
-            // 整體 alpha — 降一點 core 權重免得疊加處全變白
             float alpha = (body * 0.85 + halo + core * 0.9) * fade * vDim;
+
+            // top 公司:額外環狀光暈(d 範圍 0.25~0.5 內加亮 + pulse alpha)
+            if (vIsTop > 0.5) {
+              float ringPulse = 0.5 + sin(vTime * 4.0) * 0.5;
+              float ring = smoothstep(0.5, 0.32, d) * smoothstep(0.18, 0.32, d);
+              alpha += ring * 0.85 * fade * ringPulse;
+              // 中心也更亮 + 偏白
+              col = mix(col, vec3(1.0, 0.98, 0.94), 0.35);
+              alpha *= 1.4;
+            }
 
             gl_FragColor = vec4(col, alpha);
           }
         `,
         transparent: true,
         depthWrite: false,
-        // Additive blending:點點重疊處變亮 — 像星雲、星團密集區的發光感
         blending: THREE.AdditiveBlending,
         vertexColors: true,
       });
@@ -1061,15 +1105,23 @@ export default function PatentMapCanvas({
       refresh: () => { rebuildGraph(); },
       focusCategory: (cat) => {
         if (!companyPoints) return;
+        const matAny = companyPoints.material as THREE.ShaderMaterial;
         if (cat) {
-          // 計算該 cat 質心並把鏡頭推過去
+          // 計算該 cat 質心 + 找該 cat 內 patent 數最高的公司
           const positions = (companyPoints.geometry.attributes.position as THREE.BufferAttribute).array as Float32Array;
           let sx = 0, sy = 0, n = 0;
+          let topIdx = -1;
+          let topCount = -1;
           visibleCompanies.forEach((c, i) => {
             if (c.mainCategory === cat) {
               sx += positions[i * 3];
               sy += positions[i * 3 + 1];
               n++;
+              const cnt = c.totalPatents ?? 0;
+              if (cnt > topCount) {
+                topCount = cnt;
+                topIdx = i;
+              }
             }
           });
           if (n > 0) {
@@ -1077,10 +1129,17 @@ export default function PatentMapCanvas({
             cameraTarget.y = sy / n;
             cameraTarget.distance = 38;
           }
+          // 套用到 shader uniforms
+          //   activeCatId:對應該 cat 在 catNameToId 的 id
+          const cid = catNameToId.get(cat);
+          matAny.uniforms.activeCatId.value = cid !== undefined ? cid : -1;
+          matAny.uniforms.topIdx.value = topIdx;
         } else {
           cameraTarget.x = 0;
           cameraTarget.y = 0;
           cameraTarget.distance = 80;
+          matAny.uniforms.activeCatId.value = -1;
+          matAny.uniforms.topIdx.value = -1;
         }
       },
       // 由清單點選某公司時呼叫:鏡頭聚焦 + shader focusIdx + 拉線
@@ -1148,6 +1207,11 @@ export default function PatentMapCanvas({
     function animate() {
       rafId = requestAnimationFrame(animate);
       const time = (performance.now() - animStart) / 1000;
+
+      // shader uTime — 給 top company pulse 光暈用
+      if (companyPoints) {
+        (companyPoints.material as THREE.ShaderMaterial).uniforms.uTime.value = time;
+      }
 
       // 鏡頭 lerp
       cameraState.x += (cameraTarget.x - cameraState.x) * 0.08;
