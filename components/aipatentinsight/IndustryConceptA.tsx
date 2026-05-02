@@ -34,7 +34,7 @@ type Props = { data: AggregateData; domains?: Record<string, string> };
 // 主視覺高度由 wrap 容器的 CSS 決定(viewport-based);這裡只是 fallback。
 const FALLBACK_HEIGHT = 760;
 const TOP_CATS = 14;
-const TOP_COMPANIES = 30;
+const TOP_COMPANIES = 45;
 const KEY_COMPANIES_PER_CAT = 5; // 每個 cat 高亮幾家代表公司
 
 // Slope-based 暖寒色軸 — 暖色(紅橙黃)= slope 強正、冷色(青藍紫)= slope 強負
@@ -152,6 +152,24 @@ export default function IndustryConceptA({ data, domains = {} }: Props) {
       });
       const top = inThisCat.slice(0, KEY_COMPANIES_PER_CAT);
       map.set(cat, new Set(top.map((c) => c.stockCode)));
+    }
+    return map;
+  }, [topCatNames, topCompanies, data]);
+
+  // 每 cat 的「首席代表公司」(該 cat 內 totalPatents 最高的 1 家)— 點 cat 時強烈閃爍
+  const primaryCompanyByCat = useMemo(() => {
+    const map = new Map<string, string>();
+    for (const cat of topCatNames) {
+      const inThisCat = topCompanies.filter((co) => {
+        const idx = data.companies.findIndex((c) => c.stockCode === co.stockCode);
+        if (idx < 0) return false;
+        for (const mainCat of data.companyMainCatMatrix.map((row) => row[idx])) {
+          if (mainCat === cat) return true;
+        }
+        return false;
+      });
+      // topCompanies 已按 total 排序大→小,第一個就是首席
+      if (inThisCat[0]) map.set(cat, inThisCat[0].stockCode);
     }
     return map;
   }, [topCatNames, topCompanies, data]);
@@ -541,6 +559,7 @@ export default function IndustryConceptA({ data, domains = {} }: Props) {
       glow: THREE.Mesh;       // 底座光暈(hover 時亮)
       label: THREE.Sprite;    // stockCode 文字標(billboard 自動對相機)
       labelTexture: THREE.CanvasTexture;
+      labelBaseScale: number; // logo 板基本縮放 — 大公司更大塊
       pillarHeight: number;
       hitTarget: THREE.Mesh;  // raycaster 用的 hit 大盒(包住整柱)
       stockCode: string;
@@ -716,10 +735,9 @@ export default function IndustryConceptA({ data, domains = {} }: Props) {
 
       function localToWorld(snapIdxRel: number, catIdx: number): THREE.Vector3 {
         const x = -WORLD_W / 2 + snapIdxRel * xStep;
-        // 用該 cat 在 weighted z 帶的中央 row,而非均分
         const tzCenter = cellCatCenterTz[catIdx];
-        // y 改用 catBaseY(各 cat 自己的層)— 不再貼海床
-        const y = (catBaseY[catIdx] ?? 0) - 0.3;
+        // y 直接對齊該 cat 的洋流中軸 → 公司浮標跟粒子在同一個 y 層上
+        const y = catBaseY[catIdx] ?? 0;
         const z = -WORLD_DEPTH / 2 + (tzCenter / TZ) * WORLD_DEPTH;
         return new THREE.Vector3(x, y, z);
       }
@@ -742,9 +760,14 @@ export default function IndustryConceptA({ data, domains = {} }: Props) {
         const lastPoint = pathPoints[pathPoints.length - 1];
         const totalForSize = data.metrics.company[co.stockCode]?.total || 1;
 
-        // 浮標立柱(短小):高度 0.6 ~ 1.6,僅作為「公司浮標的桿」
-        const pillarHeight = 0.6 + Math.min(1.0, Math.sqrt(totalForSize) * 0.12);
-        const capRadius = 0.32 + Math.min(0.4, Math.sqrt(totalForSize) * 0.05);
+        // 浮標尺寸全部跟公司專利量直接連動(去掉 cap 限制,讓對比真的拉開)
+        //   capRadius 範圍 ~0.5(80 件)→ ~2.8(3032 件,台積電),5× 對比
+        //   ring/glow 都基於 capRadius,自動跟著 scale
+        const sq = Math.sqrt(totalForSize);
+        const pillarHeight = 0.4 + sq * 0.025; // 0.6 ~ 1.8
+        const capRadius = 0.32 + sq * 0.045;   // 0.5 ~ 2.8
+        // Logo board 基本縮放也跟公司大小連動,大公司 logo 牌更大
+        const labelBaseScale = 0.85 + Math.min(0.7, sq * 0.013); // 0.95 ~ 1.55
 
         // 該公司主類別顏色;沒有則白色
         const catColor =
@@ -766,7 +789,8 @@ export default function IndustryConceptA({ data, domains = {} }: Props) {
           opacity: 0.95,
         });
         const pillar = new THREE.Mesh(pillarGeom, pillarMat);
-        pillar.position.y = pillarHeight / 2; // 底貼海床,頂在 pillarHeight
+        // 跨越洋流中軸:中心在 root.y(= catBaseY),上下各延伸 pillarHeight/2
+        pillar.position.y = 0;
         pillar.userData = { kind: "company", stockCode: co.stockCode, name: co.name };
         root.add(pillar);
 
@@ -780,11 +804,12 @@ export default function IndustryConceptA({ data, domains = {} }: Props) {
           roughness: 0.3,
         });
         const cap = new THREE.Mesh(capGeom, capMat);
-        cap.position.y = pillarHeight + capRadius * 0.2;
+        // 光球放在洋流中軸正中央 — 粒子會從它周圍流過
+        cap.position.y = 0;
         cap.userData = { kind: "company", stockCode: co.stockCode, name: co.name };
         root.add(cap);
 
-        // === 頂端水平光環(慢慢轉)===
+        // === 水平光環(像「節點」標示,圍著光球)===
         const ringGeom = new THREE.TorusGeometry(capRadius * 2.2, 0.045, 8, 28);
         ringGeom.rotateX(Math.PI / 2); // 水平
         const ringMat = new THREE.MeshBasicMaterial({
@@ -795,10 +820,10 @@ export default function IndustryConceptA({ data, domains = {} }: Props) {
           blending: THREE.AdditiveBlending,
         });
         const ring = new THREE.Mesh(ringGeom, ringMat);
-        ring.position.y = pillarHeight + capRadius * 0.2;
+        ring.position.y = 0; // 跟光球同高,圍住它
         root.add(ring);
 
-        // === 底座光暈(hover/key 時擴張)===
+        // === 底座光暈(hover/key 時擴張),也置中 ===
         const glowGeom = new THREE.SphereGeometry(capRadius * 1.2, 14, 14);
         const glowMat = new THREE.MeshBasicMaterial({
           color: 0xffffff,
@@ -808,7 +833,7 @@ export default function IndustryConceptA({ data, domains = {} }: Props) {
           blending: THREE.AdditiveBlending,
         });
         const glow = new THREE.Mesh(glowGeom, glowMat);
-        glow.position.y = 0.1;
+        glow.position.y = 0;
         root.add(glow);
 
         // === 大盒子當 hit target(覆蓋整柱,raycaster 容易命中)===
@@ -827,15 +852,15 @@ export default function IndustryConceptA({ data, domains = {} }: Props) {
         // === Logo board(金屬框平板 + favicon + stockCode,Sprite billboard)===
         const { sprite: label, texture: labelTexture } =
           makeLogoBoardSprite(co.stockCode, catColor);
-        // 浮在頂端球上方一點(板子比文字大,要留更多高度)
-        label.position.y = pillarHeight + capRadius * 0.2 + 1.95;
+        // 微微浮在洋流中軸上方(可讀但仍在流的 spread 範圍內)
+        label.position.y = capRadius + 1.0;
         root.add(label);
 
         companyGroup.add(root);
 
         companyPoints.push({
           group: root,
-          pillar, cap, ring, glow, hitTarget, label, labelTexture,
+          pillar, cap, ring, glow, hitTarget, label, labelTexture, labelBaseScale,
           pillarHeight,
           stockCode: co.stockCode,
           name: co.name,
@@ -897,26 +922,29 @@ export default function IndustryConceptA({ data, domains = {} }: Props) {
     scene.add(noisePoints);
 
     // ===== Cat 粒子流(每 cat 由 N 顆粒子組成,N ∝ total)=====
-    //   想像每顆粒子是一筆專利,沿 cat 軸流動。
-    //   大 cat 粒子量多、洋流條寬;小 cat 粒子少、條窄 → 一眼就看出大小差。
+    //   大 cat 粒子量多、條粗、粒子大;小 cat 粒子少、條細、粒子小 → 大小差距非常顯著。
     function particleCountForCat(catName: string): number {
       const total = data.metrics.cat[catName]?.total ?? 0;
-      // 全 cat 等比例 3× 提升:大 cat 約 1900、小 cat 約 240,共 ~12500 顆
-      return Math.max(240, Math.min(1920, Math.round(total * 1.5)));
+      // 對比拉到 ~17×:大 cat 約 2500、小 cat 約 150,共 ~17000 顆
+      return Math.max(150, Math.min(2500, Math.round(total * 1.9)));
     }
     const flowParticleCounts = zOrderedCats.map(particleCountForCat);
     const TOTAL_FLOW = flowParticleCounts.reduce((a, b) => a + b, 0);
 
-    // 每 cat 的散布寬度(大 cat 寬條,小 cat 窄條)
+    // 每 cat 的散布寬度 + 粒子大小因子(大 cat 粗大,小 cat 纖細)
     const catSpreadY: number[] = new Array(TOP_CATS);
     const catSpreadZ: number[] = new Array(TOP_CATS);
+    const catParticleSize: number[] = new Array(TOP_CATS);
     {
       const totals = zOrderedCats.map((c) => data.metrics.cat[c]?.total ?? 1);
       const maxT = Math.max(...totals, 1);
       for (let i = 0; i < TOP_CATS; i++) {
-        const f = Math.sqrt(totals[i] / maxT); // 0.25 ~ 1.0
-        catSpreadY[i] = 0.5 + f * 1.6; // 0.5 ~ 2.1
-        catSpreadZ[i] = 0.35 + f * 1.0; // 0.35 ~ 1.35
+        const f = Math.sqrt(totals[i] / maxT); // 0.20 ~ 1.0
+        // spread 對比拉到 ~9×(原本 4×)
+        catSpreadY[i] = 0.3 + f * 2.7;  // 0.3 ~ 3.0
+        catSpreadZ[i] = 0.25 + f * 1.85; // 0.25 ~ 2.1
+        // 每粒子尺寸倍率:小 cat 0.5、大 cat 2.0(4× 對比)
+        catParticleSize[i] = 0.5 + f * 1.5;
       }
     }
 
@@ -941,21 +969,9 @@ export default function IndustryConceptA({ data, domains = {} }: Props) {
       }
     }
 
-    // 每條 gyre cat 自己的 yaw/pitch 偏移(z 跟 y 方向)— 不再都走直線
-    //   deterministic 計算讓相鄰 cat 方向不同,有的偏上有的偏下
-    const catAngleZ: number[] = new Array(TOP_CATS);
-    const catAngleY: number[] = new Array(TOP_CATS);
-    for (let i = 0; i < TOP_CATS; i++) {
-      if (catLayer[i] === "boundary") {
-        // boundary 直流,不加偏角
-        catAngleZ[i] = 0;
-        catAngleY[i] = 0;
-      } else {
-        // gyre:用 sin/cos hash 產生範圍 ±0.35 rad 的偏角
-        catAngleZ[i] = Math.sin(i * 2.7 + 1.3) * 0.32 + Math.cos(i * 1.4) * 0.12;
-        catAngleY[i] = Math.cos(i * 3.1 + 0.7) * 0.18;
-      }
-    }
+    // 全部 cat 最終都向 +x 流動(供應鏈共同演化往同一方向)。
+    //   分歧 → 匯流的視覺由「每粒子 spawn 時的隨機角度 + 隨時間衰減 + 慢回 baseZ」產生:
+    //   起點散得開、中段交錯,後段全部平行向右。所以這裡不再用 cat 級的 angle。
 
     // Boundary cat 的位置(每 frame 用,預先 cache 計算)
     const boundaryIndices: number[] = [];
@@ -973,21 +989,27 @@ export default function IndustryConceptA({ data, domains = {} }: Props) {
     const fpCatIdx = new Int32Array(TOTAL_FLOW); // 屬於哪個 zOrderedCats index
     const fpPhase = new Float32Array(TOTAL_FLOW); // sin 相位
 
+    // Spawn 在左邊界散布 z,每粒子有自己的初始 vz angle(分歧)
+    //   隨時間 vz 衰減 + z 慢慢 lerp 回 cat baseZ → 後段全部平行向右(匯流)
     function spawnFlowParticle(p: number) {
       const ci = fpCatIdx[p];
-      fpPos[p * 3] = -WORLD_W / 2 - Math.random() * 6;
-      // y 用該 cat 的 baseline,散布範圍 ∝ catSpreadY[ci](大 cat 寬條,小 cat 窄條)
       const baseY = catBaseY[ci] ?? 0;
-      fpPos[p * 3 + 1] = baseY + (Math.random() - 0.5) * 2 * catSpreadY[ci];
       const tzCenter = cellCatCenterTz[ci] ?? 0;
       const zCenter = -WORLD_DEPTH / 2 + (tzCenter / TZ) * WORLD_DEPTH;
-      fpPos[p * 3 + 2] = zCenter + (Math.random() - 0.5) * 2 * catSpreadZ[ci];
-      fpVel[p * 3] = 7 + Math.random() * 3;
+      // 起點 x 在左邊界,z 散布範圍加大(讓「分歧起點」明顯)
+      fpPos[p * 3] = -WORLD_W / 2 - Math.random() * 6;
+      fpPos[p * 3 + 1] = baseY + (Math.random() - 0.5) * 2 * catSpreadY[ci];
+      fpPos[p * 3 + 2] = zCenter + (Math.random() - 0.5) * 3.6 * catSpreadZ[ci];
+      // 每粒子隨機初始 angle ∈ ±0.55 rad,vx vz 由此推
+      const angle = (Math.random() - 0.5) * 1.1;
+      const speed = 7 + Math.random() * 3;
+      fpVel[p * 3] = Math.cos(angle) * speed;
       fpVel[p * 3 + 1] = (Math.random() - 0.5) * 0.04;
-      fpVel[p * 3 + 2] = 0;
+      fpVel[p * 3 + 2] = Math.sin(angle) * speed;
       const r = Math.random();
-      // 大 cat 偶發大粒子(代表「主要公司專利」突出)
-      fpSize[p] = r < 0.78 ? 0.6 + Math.random() * 0.9 : 1.8 + Math.random() * 1.4;
+      // 基本大小 × 該 cat 的尺寸倍率(大 cat 粒子大、小 cat 粒子小)
+      const baseSize = r < 0.78 ? 0.6 + Math.random() * 0.9 : 1.8 + Math.random() * 1.4;
+      fpSize[p] = baseSize * catParticleSize[ci];
       fpAge[p] = 0;
       fpTotal[p] = 7 + Math.random() * 5;
     }
@@ -1004,11 +1026,15 @@ export default function IndustryConceptA({ data, domains = {} }: Props) {
       for (let n = 0; n < N; n++) {
         fpCatIdx[fpIdx] = ci;
         spawnFlowParticle(fpIdx);
-        // 隨機散開 x,避免一開始全擠在左側
+        // 隨機散開沿 x 軸,避免一開始全擠在 spawn 點
         fpAge[fpIdx] = Math.random() * fpTotal[fpIdx];
+        // 散布越大 z 偏離,模擬「分歧」起點
         fpPos[fpIdx * 3] = -WORLD_W / 2 + Math.random() * WORLD_W * 1.1;
         fpPos[fpIdx * 3 + 1] = baseY + (Math.random() - 0.5) * 2 * catSpreadY[ci];
-        fpPos[fpIdx * 3 + 2] = zCenter + (Math.random() - 0.5) * 2 * catSpreadZ[ci];
+        // z 隨 x 收斂:左邊散得開,右邊接近 zCenter
+        const progressX = (fpPos[fpIdx * 3] + WORLD_W / 2) / WORLD_W; // 0~1
+        const spreadFactor = Math.max(0, 1 - progressX * progressX);
+        fpPos[fpIdx * 3 + 2] = zCenter + (Math.random() - 0.5) * 3.6 * catSpreadZ[ci] * spreadFactor;
         fpCol[fpIdx * 3] = cColor.r;
         fpCol[fpIdx * 3 + 1] = cColor.g;
         fpCol[fpIdx * 3 + 2] = cColor.b;
@@ -1418,10 +1444,16 @@ export default function IndustryConceptA({ data, domains = {} }: Props) {
       (terrainGeom.attributes.color as THREE.BufferAttribute).needsUpdate = true;
 
       // 公司錨點 / 里程碑(立柱 + 頂端球 + 光環 + 底座光暈)
+      // primary = 該 cat 的「首席代表」(專利量最高那一家)— 強烈閃爍
+      const primaryCode = sel !== null ? primaryCompanyByCat.get(sel) : undefined;
+      // 強烈 pulse(0.85 ~ 1.45),首席代表用
+      const primaryPulse = 1.15 + Math.sin(time * 5.0) * 0.32;
+      const primaryRingPulse = 0.5 + Math.sin(time * 5.0) * 0.5;
       companyPoints.forEach((cp) => {
         const isHovered = stateRef.current.hoveredKey === "company:" + cp.stockCode;
         const isKey = sel !== null && cp.mainCatLastSnap === sel &&
           (keyCompaniesByCat.get(sel)?.has(cp.stockCode) || false);
+        const isPrimary = sel !== null && cp.stockCode === primaryCode;
         // 公司 mainCat 是 selected cat 的 top-3 secondary → 中亮(不全暗)
         const isSecondary = sel !== null && !!cp.mainCatLastSnap &&
           cp.mainCatLastSnap !== sel && !!secSet && secSet.has(cp.mainCatLastSnap);
@@ -1432,9 +1464,9 @@ export default function IndustryConceptA({ data, domains = {} }: Props) {
         let pillarEmTarget = 0.85;
         if (isDimmed) pillarEmTarget = 0.18;
         if (isKey) pillarEmTarget = 1.4;
+        if (isPrimary) pillarEmTarget = 2.4 * primaryPulse; // 首席:強閃
         if (isHovered) pillarEmTarget = 2.6;
-        pillarMat.emissiveIntensity += (pillarEmTarget - pillarMat.emissiveIntensity) * 0.2;
-        // 立柱整體 opacity
+        pillarMat.emissiveIntensity += (pillarEmTarget - pillarMat.emissiveIntensity) * 0.25;
         const pillarOpaTarget = isDimmed ? 0.35 : 0.95;
         pillarMat.opacity += (pillarOpaTarget - pillarMat.opacity) * 0.18;
 
@@ -1443,51 +1475,69 @@ export default function IndustryConceptA({ data, domains = {} }: Props) {
         let capEmTarget = 1.4;
         if (isDimmed) capEmTarget = 0.3;
         if (isKey) capEmTarget = 2.2;
+        if (isPrimary) capEmTarget = 4.0 * primaryPulse; // 首席:強光球
         if (isHovered) capEmTarget = 3.5;
-        capMat.emissiveIntensity += (capEmTarget - capMat.emissiveIntensity) * 0.2;
-        // hover 時光球放大
-        const capScaleTarget = isHovered ? 1.8 : 1.0;
+        capMat.emissiveIntensity += (capEmTarget - capMat.emissiveIntensity) * 0.25;
+        // 首席與 hover 時光球放大,且首席額外加 pulse
+        let capScaleTarget = 1.0;
+        if (isHovered) capScaleTarget = 1.8;
+        if (isPrimary) capScaleTarget = 1.55 + Math.sin(time * 5.0) * 0.35; // 1.20~1.90 pulse
         const curS = cp.cap.scale.x;
-        const nextS = curS + (capScaleTarget - curS) * 0.22;
+        const nextS = curS + (capScaleTarget - curS) * 0.25;
         cp.cap.scale.set(nextS, nextS, nextS);
 
         // === 光環旋轉 + opacity ===
-        cp.ring.rotation.y += (isHovered ? 0.04 : 0.012);
+        cp.ring.rotation.y += (isPrimary ? 0.06 : isHovered ? 0.04 : 0.012);
         const ringMat = cp.ring.material as THREE.MeshBasicMaterial;
         let ringOpaTarget = 0.55;
         if (isDimmed) ringOpaTarget = 0.18;
         if (isKey) ringOpaTarget = 0.85 + Math.sin(time * 2) * 0.1;
+        if (isPrimary) ringOpaTarget = 1.0; // 首席:環全亮
         if (isHovered) ringOpaTarget = 1.0;
-        ringMat.opacity += (ringOpaTarget - ringMat.opacity) * 0.18;
-        // hover 時環擴大
-        const ringScaleTarget = isHovered ? 1.6 : 1.0;
+        ringMat.opacity += (ringOpaTarget - ringMat.opacity) * 0.22;
+        // 首席與 hover 時環擴大
+        let ringScaleTarget = 1.0;
+        if (isHovered) ringScaleTarget = 1.6;
+        if (isPrimary) ringScaleTarget = 1.4 + Math.sin(time * 5.0 + 1.2) * 0.5; // 0.9~1.9 pulse
         const curR = cp.ring.scale.x;
         const nextR = curR + (ringScaleTarget - curR) * 0.18;
         cp.ring.scale.set(nextR, 1, nextR);
 
-        // === 底座光暈(hover/isKey 才亮)===
+        // === 底座光暈(hover/isKey/isPrimary 才亮)===
         const glowMat = cp.glow.material as THREE.MeshBasicMaterial;
         let glowOpacityTarget = 0;
-        if (isHovered) {
+        let glowScale = 2.0;
+        if (isPrimary) {
+          glowMat.color.setHex(0xffffff);
+          glowOpacityTarget = 0.85 + Math.sin(time * 5.0) * 0.15; // 強閃爍
+          glowScale = 3.2 + Math.sin(time * 5.0) * 0.7; // 2.5~3.9 大幅 pulse
+        } else if (isHovered) {
           glowMat.color.setHex(0xffffff);
           glowOpacityTarget = 0.7 + Math.sin(time * 4) * 0.12;
+          glowScale = 3.2;
         } else if (isKey) {
           glowMat.color.set(cp.catColor);
           glowOpacityTarget = 0.45 + Math.sin(time * 2 + cp.group.position.x * 0.5) * 0.12;
+          glowScale = 2.2 + Math.sin(time * 1.5) * 0.25;
         }
-        glowMat.opacity += (glowOpacityTarget - glowMat.opacity) * 0.15;
-        const glowScale = isHovered ? 3.2 : (isKey ? 2.2 + Math.sin(time * 1.5) * 0.25 : 2.0);
+        glowMat.opacity += (glowOpacityTarget - glowMat.opacity) * 0.18;
         cp.glow.scale.set(glowScale, glowScale, glowScale);
 
-        // === Logo board:hover/key 時放大 + opacity 升 ===
+        // === Logo board:hover/key/primary 時放大 + opacity 升 ===
         const labelMat = cp.label.material as THREE.SpriteMaterial;
         let labelOpaTarget = 0.92;
         if (isDimmed) labelOpaTarget = 0.22;
         if (isKey) labelOpaTarget = 1.0;
         if (isHovered) labelOpaTarget = 1.0;
+        if (isPrimary) labelOpaTarget = 1.0;
         labelMat.opacity += (labelOpaTarget - labelMat.opacity) * 0.18;
-        const labelScale = isHovered ? 1.4 : (isKey ? 1.18 : 1);
-        cp.label.scale.set(3.4 * labelScale, 2.55 * labelScale, 1);
+        let labelScale = 1.0;
+        if (isHovered) labelScale = 1.4;
+        else if (isPrimary) labelScale = 1.4 + Math.sin(time * 5.0) * 0.15; // pulse 1.25~1.55
+        else if (isKey) labelScale = 1.18;
+        // 乘上該公司的 base scale(大公司 logo 板更大,小公司更小)
+        const finalLabelScale = labelScale * cp.labelBaseScale;
+        cp.label.scale.set(3.4 * finalLabelScale, 2.55 * finalLabelScale, 1);
       });
 
       // 大尺度環流(Gyre):粒子在大橢圓軌跡上慢慢轉動
@@ -1537,33 +1587,20 @@ export default function IndustryConceptA({ data, domains = {} }: Props) {
         const zCenter = -WORLD_DEPTH / 2 + (tzCenter / TZ) * WORLD_DEPTH;
         const baseY = catBaseY[ci] ?? 0;
 
-        if (layer === "boundary") {
-          // 細窄高速直流:x 速度 1.4×,y/z 振幅縮小
-          const ampY = catSpreadY[ci] * 0.5;
-          const ampZ = catSpreadZ[ci] * 0.4;
-          const targetY = baseY + Math.sin(fpPos[i3] * 0.08 + time * 0.5 + fpPhase[p]) * ampY;
-          const targetZ = zCenter + Math.sin(fpPos[i3] * 0.07 + time * 0.4 + ci * 1.3) * ampZ;
-          fpPos[i3] += fpVel[i3] * dtFlow * 1.5; // 高速
-          fpPos[i3 + 1] += (targetY - fpPos[i3 + 1]) * 0.12;
-          fpPos[i3 + 2] += (targetZ - fpPos[i3 + 2]) * 0.12;
-          fpAge[p] += dtFlow;
-        } else {
-          // gyre:常規 sin 流動 + 該 cat 的方向偏移(角度)
-          const ampY = catSpreadY[ci] * 0.8;
-          const ampZ = catSpreadZ[ci] * 0.8;
-          // x 軸距離左邊界的 progress(0~1):用來累積 angle 偏移
-          const xProgress = (fpPos[i3] + WORLD_W / 2) / WORLD_W;
-          const angleZBias = catAngleZ[ci] * xProgress * 8; // 沿 x 累積偏移
-          const angleYBias = catAngleY[ci] * xProgress * 6;
-          const targetY = baseY + angleYBias +
-            Math.sin(fpPos[i3] * 0.06 + time * 0.5 + fpPhase[p]) * ampY;
-          const targetZ = zCenter + angleZBias +
-            Math.sin(fpPos[i3] * 0.05 + time * 0.4 + ci * 1.3) * ampZ;
-          fpPos[i3] += fpVel[i3] * dtFlow * 0.85; // 略慢
-          fpPos[i3 + 1] += (targetY - fpPos[i3 + 1]) * 0.08;
-          fpPos[i3 + 2] += (targetZ - fpPos[i3 + 2]) * 0.08;
-          fpAge[p] += dtFlow;
-        }
+        // boundary 高速、gyre 略慢
+        const speedMul = layer === "boundary" ? 1.5 : 0.85;
+        // 沿 spawn 時設定的方向移動,但 vz 隨時間衰減 → 越流越平直
+        //   衰減率:每幀 vz *= 0.985(約 1.5% / frame)
+        fpVel[i3 + 2] *= 0.985;
+        fpPos[i3] += fpVel[i3] * dtFlow * speedMul;
+        fpPos[i3 + 2] += fpVel[i3 + 2] * dtFlow * speedMul;
+        // z 慢慢 lerp 回 cat baseZ(匯流)— 比 vz 衰減更慢,讓「歸位」是漸進的
+        fpPos[i3 + 2] += (zCenter - fpPos[i3 + 2]) * 0.011;
+        // y 圍繞 baseY sin 振動 + 微 lerp 回 baseY
+        const ampY = catSpreadY[ci] * (layer === "boundary" ? 0.5 : 0.8);
+        const targetY = baseY + Math.sin(time * 0.5 + fpPhase[p]) * ampY;
+        fpPos[i3 + 1] += (targetY - fpPos[i3 + 1]) * 0.08;
+        fpAge[p] += dtFlow;
 
         // === 洋流交會渦旋:靠近 boundary 流時被吸 + 螺旋(eddy 現象)===
         //   小流撞上大流產生的「邊界渦」 — 同時 attraction(向中心)+ swirl(切線旋轉)
@@ -1615,7 +1652,7 @@ export default function IndustryConceptA({ data, domains = {} }: Props) {
         }
         fpLife[p] = strength;
 
-        // 出右邊界 → respawn 在左邊界
+        // 出右邊界 → respawn
         if (fpPos[i3] > WORLD_W / 2 + 4) {
           spawnFlowParticle(p);
         }
@@ -1832,8 +1869,20 @@ export default function IndustryConceptA({ data, domains = {} }: Props) {
         >
           <canvas ref={canvasRef} style={{ display: "block", width: "100%", height: "100%" }} />
 
-          {hoverInfo.entity && (
-            <div className="ai-currents-tooltip" style={{ left: hoverInfo.x + 14, top: hoverInfo.y + 14 }}>
+          {hoverInfo.entity && (() => {
+            // 邊界檢測 — 防止 tooltip 跑出 viewport
+            //   假設 tooltip 約 260×160px,接近邊緣時翻轉到游標另一側
+            const TT_W = 260, TT_H = 160, MARGIN = 14;
+            const vw = typeof window !== "undefined" ? window.innerWidth : 1920;
+            const vh = typeof window !== "undefined" ? window.innerHeight : 1080;
+            let left = hoverInfo.x + MARGIN;
+            let top = hoverInfo.y + MARGIN;
+            if (left + TT_W > vw - 8) left = hoverInfo.x - TT_W - MARGIN;
+            if (top + TT_H > vh - 8) top = hoverInfo.y - TT_H - MARGIN;
+            if (left < 8) left = 8;
+            if (top < 8) top = 8;
+            return (
+            <div className="ai-currents-tooltip" style={{ left, top }}>
               <div className="tt-name">
                 {hoverInfo.entity.label}
                 <span className="tt-kind">{hoverInfo.entity.kind === "cat" ? "技術類別" : "公司"}</span>
@@ -1851,13 +1900,14 @@ export default function IndustryConceptA({ data, domains = {} }: Props) {
                 <div><span>集中度</span><strong>{Math.round(hoverInfo.entity.flash * 100)}%</strong></div>
               </div>
               {hoverInfo.entity.flash > 0.6 && hoverInfo.entity.persistence < 0.5 && (
-                <div className="tt-tag flash">✦ 曇花一現</div>
+                <div className="tt-tag flash">✦ 短期爆發</div>
               )}
               {hoverInfo.entity.persistence > 0.7 && hoverInfo.entity.slope >= 0 && (
                 <div className="tt-tag steady">⭐ 核心穩健</div>
               )}
             </div>
-          )}
+            );
+          })()}
         </div>
 
         <div className="ai-concept-legend">

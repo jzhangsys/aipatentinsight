@@ -516,24 +516,32 @@ export default function PatentMapCanvas({
             vTime = uTime;
             float vid = float(gl_VertexID);
 
-            // dim 計算:三層優先序
-            //   focusIdx 模式(單點聚焦):非 focus 點 dim 0.20
-            //   activeCatId 模式(cat 群集):非該 cat 點 dim 0.12
-            //   都沒設:不 dim
-            float dim = 1.0;
-            if (focusIdx >= 0.0) {
-              dim = abs(vid - focusIdx) > 0.5 ? 0.20 : 1.0;
-            } else if (activeCatId >= 0.0) {
-              dim = abs(aCatId - activeCatId) > 0.5 ? 0.12 : 1.0;
-            }
-            vDim = dim;
-
             // 是否為 cat 內 top company(專利數最高)
             vIsTop = abs(vid - topIdx) < 0.5 ? 1.0 : 0.0;
 
-            // pulse 倍率:top 點呼吸放大(0.85 ~ 1.4)
-            float pulse = 1.0 + sin(uTime * 3.5) * 0.32;
-            float sizeBoost = vIsTop > 0.5 ? (2.4 * pulse) : 1.0;
+            // dim 計算:四層優先序(top 點不被 dim,只 boost)
+            //   focusIdx 模式(單點聚焦):非 focus 點 dim 0.18
+            //   activeCatId 模式:
+            //     - top 點 = 1.0(不變)
+            //     - 同 cat 非 top = 0.45(中亮,讓 top 跳出來)
+            //     - 其他 cat = 0.08(深 dim)
+            float dim = 1.0;
+            if (focusIdx >= 0.0) {
+              dim = abs(vid - focusIdx) > 0.5 ? 0.18 : 1.0;
+            } else if (activeCatId >= 0.0) {
+              if (vIsTop > 0.5) {
+                dim = 1.0;
+              } else if (abs(aCatId - activeCatId) > 0.5) {
+                dim = 0.08;
+              } else {
+                dim = 0.45;
+              }
+            }
+            vDim = dim;
+
+            // pulse 倍率:top 點呼吸放大(更猛 0.7 ~ 1.7)
+            float pulse = 1.2 + sin(uTime * 3.5) * 0.5;
+            float sizeBoost = vIsTop > 0.5 ? (3.6 * pulse) : 1.0;
 
             vec4 mv = modelViewMatrix * vec4(position, 1.0);
             vDepth = -mv.z;
@@ -559,14 +567,19 @@ export default function PatentMapCanvas({
             vec3 col = mix(vColor, vec3(1.0, 0.97, 0.92), core * 0.55);
             float alpha = (body * 0.85 + halo + core * 0.9) * fade * vDim;
 
-            // top 公司:額外環狀光暈(d 範圍 0.25~0.5 內加亮 + pulse alpha)
+            // top 公司:雙環光暈 + 強 pulse + 偏白核心
             if (vIsTop > 0.5) {
               float ringPulse = 0.5 + sin(vTime * 4.0) * 0.5;
-              float ring = smoothstep(0.5, 0.32, d) * smoothstep(0.18, 0.32, d);
-              alpha += ring * 0.85 * fade * ringPulse;
-              // 中心也更亮 + 偏白
-              col = mix(col, vec3(1.0, 0.98, 0.94), 0.35);
-              alpha *= 1.4;
+              // 內環(中段)
+              float ring1 = smoothstep(0.5, 0.32, d) * smoothstep(0.16, 0.32, d);
+              // 外環(更外側,sin offset 讓它跟內環錯開呼吸)
+              float ring2Pulse = 0.5 + sin(vTime * 4.0 + 1.5) * 0.5;
+              float ring2 = smoothstep(0.5, 0.42, d) * 0.8;
+              alpha += ring1 * 1.1 * fade * ringPulse;
+              alpha += ring2 * 0.6 * fade * ring2Pulse;
+              // 中心更白
+              col = mix(col, vec3(1.0, 0.98, 0.94), 0.55);
+              alpha *= 1.7;
             }
 
             gl_FragColor = vec4(col, alpha);
@@ -1107,16 +1120,12 @@ export default function PatentMapCanvas({
         if (!companyPoints) return;
         const matAny = companyPoints.material as THREE.ShaderMaterial;
         if (cat) {
-          // 計算該 cat 質心 + 找該 cat 內 patent 數最高的公司
+          // 找該 cat 內 patent 數最高的公司,鏡頭聚焦到那家公司位置
           const positions = (companyPoints.geometry.attributes.position as THREE.BufferAttribute).array as Float32Array;
-          let sx = 0, sy = 0, n = 0;
           let topIdx = -1;
           let topCount = -1;
           visibleCompanies.forEach((c, i) => {
             if (c.mainCategory === cat) {
-              sx += positions[i * 3];
-              sy += positions[i * 3 + 1];
-              n++;
               const cnt = c.totalPatents ?? 0;
               if (cnt > topCount) {
                 topCount = cnt;
@@ -1124,13 +1133,12 @@ export default function PatentMapCanvas({
               }
             }
           });
-          if (n > 0) {
-            cameraTarget.x = sx / n;
-            cameraTarget.y = sy / n;
-            cameraTarget.distance = 38;
+          if (topIdx >= 0) {
+            // 鏡頭直接對準龍頭公司,而不是 cat 質心 → 一眼看到誰最大
+            cameraTarget.x = positions[topIdx * 3];
+            cameraTarget.y = positions[topIdx * 3 + 1];
+            cameraTarget.distance = 30; // 拉得更近,看清楚 pulse + ring
           }
-          // 套用到 shader uniforms
-          //   activeCatId:對應該 cat 在 catNameToId 的 id
           const cid = catNameToId.get(cat);
           matAny.uniforms.activeCatId.value = cid !== undefined ? cid : -1;
           matAny.uniforms.topIdx.value = topIdx;
@@ -1164,10 +1172,15 @@ export default function PatentMapCanvas({
         const idx = visibleCompanies.findIndex((c) => c.name === name);
         if (idx < 0) return;
         const positions = (companyPoints.geometry.attributes.position as THREE.BufferAttribute).array as Float32Array;
-        // 因為右側 detail panel 會遮 ~420px,鏡頭往右偏一點(視野中心右移 = 點看起來偏左)
-        cameraTarget.x = positions[idx * 3] + 8;
+        // 智慧化鏡頭:
+        //   1. 移動視野中心到公司位置(不再無腦右偏 +8,讓公司直接置中)
+        //   2. 只在「離太遠看不清」時才溫和拉近 — 維持使用者當前 zoom 偏好
+        //      distance > 55 → 拉近到 50;否則保留現狀,不打亂
+        cameraTarget.x = positions[idx * 3];
         cameraTarget.y = positions[idx * 3 + 1];
-        cameraTarget.distance = 28;
+        if (cameraState.distance > 55) {
+          cameraTarget.distance = 50;
+        }
 
         (companyPoints.material as THREE.ShaderMaterial).uniforms.focusIdx.value = idx;
         if (companyOriginalSizes && companySizes) {
