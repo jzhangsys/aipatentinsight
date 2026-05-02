@@ -168,7 +168,13 @@ const DEFAULT_INSIGHTS_URL = "/data/insights-2025-02-15-light.json";
 
 // ============== Abstract lazy loader ==============
 
-const ABSTRACTS_URL = "/data/insights-2025-02-15-abstracts.json";
+/**
+ * Master abstracts — build-snapshot-index.mjs 在 build time 把所有
+ * snapshot 的 -abstracts.json 合併成這份檔。
+ * 之前硬寫死某個 snapshot 日期的 -abstracts.json,跨 snapshot 的
+ * patent 永遠查不到 → bug。改成 master 後 O(1) 查表覆蓋全部 patent。
+ */
+const ABSTRACTS_URL = "/data/abstracts-master.json";
 let abstractsCache: Promise<Record<string, string>> | null = null;
 
 /**

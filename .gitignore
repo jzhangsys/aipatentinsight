@@ -42,3 +42,6 @@ next-env.d.ts
 
 # Market signals scraped news cache(著作權保護:本地分析用,不進版控)
 /data/market-signals/news-cache/
+
+# Patent abstract enrich cache(從 Google Patents 抓回的中介資料)
+/data/patent-abstract-cache/

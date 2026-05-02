@@ -85,9 +85,6 @@ function generateDerivatives(srcPath, baseName, json) {
   const lightPath = join(DATA_DIR, `${baseName}-light.json`);
   const abstractsPath = join(DATA_DIR, `${baseName}-abstracts.json`);
 
-  // 略過 — 衍生檔已存在且新於原檔
-  // (簡化:每次 build 都重產,確保跟原檔同步)
-
   // -light:同 schema,但 abstract 全部清空
   const light = {
     ...json,
@@ -96,14 +93,32 @@ function generateDerivatives(srcPath, baseName, json) {
   writeFileSync(lightPath, JSON.stringify(light));
 
   // -abstracts:單純 { patentId: abstract } 對映,壓到最小
-  const abstracts = {};
+  // 重要:既有 -abstracts.json 視為 ground truth(被 enrich 過,通常比 source 完整)。
+  //   merge 策略:source 跟既有版本逐一比長度,取較長的。
+  //   這樣 enrich 補進去的長 abstract 不會被 build 蓋回 16 字 fallback 標題。
+  const existingAbstracts = (() => {
+    try {
+      if (existsSync(abstractsPath)) {
+        return JSON.parse(readFileSync(abstractsPath, "utf8"));
+      }
+    } catch {}
+    return {};
+  })();
+
+  const abstracts = { ...existingAbstracts };
   for (const p of json.patents || []) {
-    if (p.abstract) abstracts[p.id] = p.abstract;
+    const fromSource = p.abstract || "";
+    if (!fromSource) continue;
+    const existing = abstracts[p.id] || "";
+    // 取較長者(代表更完整),且至少 30 字才視為「真 abstract」
+    if (fromSource.length > existing.length) {
+      abstracts[p.id] = fromSource;
+    }
   }
   writeFileSync(abstractsPath, JSON.stringify(abstracts));
 
   console.log(
-    `  [derive] ${baseName} → light(${formatBytes(JSON.stringify(light).length)}) + abstracts(${formatBytes(JSON.stringify(abstracts).length)})`
+    `  [derive] ${baseName} → light(${formatBytes(JSON.stringify(light).length)}) + abstracts(${formatBytes(JSON.stringify(abstracts).length)}, ${Object.keys(abstracts).length} patents)`
   );
 }
 
@@ -120,8 +135,36 @@ function formatLabel(date) {
   return `${y}/${m}`;
 }
 
+// === 把所有 snapshot 的 -abstracts 合併成一份 master ===
+//   原本 lazy loader 寫死指向某一份 -abstracts.json,跨 snapshot 的 patent 會查不到。
+//   改成 build-time 合併,client 一次拿,O(1) 查表。
+function buildMasterAbstracts() {
+  const abstractsFiles = readdirSync(DATA_DIR).filter(
+    (f) => /^insights-\d{4}-\d{2}-\d{2}-abstracts\.json$/.test(f)
+  );
+  const master = {};
+  for (const file of abstractsFiles) {
+    const data = JSON.parse(readFileSync(join(DATA_DIR, file), "utf8"));
+    for (const [pid, abst] of Object.entries(data)) {
+      if (!abst) continue;
+      // 同 patent 出現在多個 snapshot — 取最長的(品質代理:抓比 fallback 完整)
+      if (!master[pid] || abst.length > master[pid].length) {
+        master[pid] = abst;
+      }
+    }
+  }
+  const masterPath = join(DATA_DIR, "abstracts-master.json");
+  const masterJson = JSON.stringify(master);
+  writeFileSync(masterPath, masterJson);
+  console.log(
+    `  [master] ${abstractsFiles.length} 份 -abstracts → master(${Object.keys(master).length} unique patents, ${formatBytes(masterJson.length)})`
+  );
+  return Object.keys(master).length;
+}
+
 // === 主流程 ===
 const actual = scanActualSnapshots();
+const masterCount = buildMasterAbstracts();
 const actualDates = new Set(actual.map((s) => s.date));
 const expected = readExpectedDates();
 
