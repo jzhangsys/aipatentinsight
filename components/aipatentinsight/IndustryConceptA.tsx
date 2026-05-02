@@ -244,7 +244,7 @@ export default function IndustryConceptA({ data, domains = {} }: Props) {
         cat: name,
         icon: "✦",
         headline: name,
-        detail: `短期爆發 · ${Math.round(m.flash * 100)}% 集中度 · 後勁不足`,
+        detail: `短期爆發 · ${Math.round(m.flash * 100)}% 集中度`,
       });
     }
 
@@ -264,7 +264,7 @@ export default function IndustryConceptA({ data, domains = {} }: Props) {
         cat: name,
         icon: "↓",
         headline: name,
-        detail: `動能下滑 · 趨勢斜率 ${m.slope.toFixed(1)} · ${m.total} 件`,
+        detail: `趨勢斜率 ${m.slope.toFixed(1)} · ${m.total} 件`,
       });
     }
 
