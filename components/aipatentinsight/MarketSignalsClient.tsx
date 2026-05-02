@@ -180,9 +180,9 @@ export default function MarketSignalsClient() {
       </header>
 
       <div className="ai-signals-precision-note" role="note">
-        <strong>關於精度</strong>:本頁的「題材分類」是從<strong>新聞與網路發布用語</strong>
-        撈取的關鍵字命中,題材語意天生隨媒體口徑變動、混雜炒作與雜訊,
-        <strong>並非如 Patent Map 中專利分類那樣的精準分類體系</strong>。
+        <strong>關於用語質量</strong>:本頁之「題材」類別,僅遵<strong>「輿情」之認定辦法</strong>,
+        題材語意隨市場偏好變動、混雜炒作與雜訊,
+        <strong>並非依循 Patent Map 中專利語言體系</strong>,請務必多加注意。
         排序與分類僅反映媒體聲量趨勢,使用時請以「市場 narrative」視角理解,
         不應作為投資決策依據。
       </div>
