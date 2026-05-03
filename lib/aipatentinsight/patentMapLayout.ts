@@ -134,11 +134,33 @@ export function computeRandomLayout(
   companies: LayoutCompany[],
   sortedCategories: string[]
 ): LayoutResult {
-  // 按 category 分組
-  const byCat: Record<string, LayoutCompany[]> = {};
-  sortedCategories.forEach((c) => { byCat[c] = []; });
+  // === Tiny cat 合併:< 3 家公司的 cat 合併到一個虛擬「其他」cluster ===
+  //   原因:有些 snapshot(例 2025-01-01)有 12+ 個 singleton cat,
+  //   每個自己 1 點 arc,視覺上像散亂點不像群集。
+  //   合併到 _misc 可以變成一個大群,看起來「有整理」。
+  //   注意:company.mainCategory 仍保留原值,只影響 layout 的 group key。
+  const TINY_THRESHOLD = 3;
+  const MISC_KEY = "_misc"; // 不在 sortedCategories 中,layout 內部用
+  const counts = new Map<string, number>();
   companies.forEach((c) => {
-    if (byCat[c.mainCategory]) byCat[c.mainCategory].push(c);
+    counts.set(c.mainCategory, (counts.get(c.mainCategory) || 0) + 1);
+  });
+  const tinyCats = new Set<string>();
+  counts.forEach((n, cat) => {
+    if (n < TINY_THRESHOLD) tinyCats.add(cat);
+  });
+  const useMisc = tinyCats.size >= 2; // 有 ≥2 個 tiny cat 才值得合併
+
+  // 按 category 分組(tiny cats 走 _misc)
+  const byCat: Record<string, LayoutCompany[]> = {};
+  sortedCategories.forEach((c) => {
+    if (!useMisc || !tinyCats.has(c)) byCat[c] = [];
+  });
+  if (useMisc) byCat[MISC_KEY] = [];
+  companies.forEach((c) => {
+    const key = useMisc && tinyCats.has(c.mainCategory) ? MISC_KEY : c.mainCategory;
+    if (!byCat[key]) byCat[key] = [];
+    byCat[key].push(c);
   });
   Object.values(byCat).forEach((arr) =>
     arr.sort((a, b) => b.displayPatents - a.displayPatents)
@@ -147,10 +169,13 @@ export function computeRandomLayout(
   const positions: Vec3[] = [];
   const orderedCompanies: LayoutCompany[] = [];
 
-  // 只考慮實際有公司的 cat
+  // 只考慮實際有公司的 cat(_misc 排在最後當「雜項」cluster)
   const activeCats = sortedCategories.filter(
     (c) => (byCat[c] || []).length > 0
   );
+  if (useMisc && (byCat[MISC_KEY] || []).length > 0) {
+    activeCats.push(MISC_KEY);
+  }
   const totalCompanies = companies.length;
   if (activeCats.length === 0 || totalCompanies === 0) {
     return { positions, orderedCompanies };
