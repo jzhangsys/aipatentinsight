@@ -20,29 +20,45 @@ export type LegendCategoryRow = {
 
 type Props = {
   categories: LegendCategoryRow[];
-  /** 當前聚焦的 category(null 表示無聚焦) */
-  activeCategory: string | null;
-  /** 點選某 category 觸發,點同一個傳 null(toggle off) */
-  onSelectCategory: (category: string | null) => void;
+  /** 當前聚焦的 categories(空陣列表示無聚焦,多選支援) */
+  activeCategories: string[];
+  /** 點某 category 觸發 toggle(已選 → 移除、未選 → 加入) */
+  onToggleCategory: (category: string) => void;
+  /** 清空所有選擇 */
+  onClearAll?: () => void;
 };
 
 export default function PatentMapLegend({
   categories,
-  activeCategory,
-  onSelectCategory,
+  activeCategories,
+  onToggleCategory,
+  onClearAll,
 }: Props) {
-  // 把 0 個公司的 cat 排到最後,避免空項目
   const sorted = useMemo(() => {
     return [...categories].sort((a, b) => b.count - a.count);
   }, [categories]);
+  const activeSet = useMemo(() => new Set(activeCategories), [activeCategories]);
+  const hasSelection = activeCategories.length > 0;
 
   return (
     <aside className="ai-map-legend" aria-label="Tech Categories">
-      <div className="ai-map-legend-title">Tech Categories · 點選聚焦</div>
+      <div className="ai-map-legend-title">
+        Tech Categories · 點選 / 多選
+        {hasSelection && onClearAll && (
+          <button
+            type="button"
+            className="ai-map-legend-clear"
+            onClick={onClearAll}
+            aria-label="Clear selection"
+          >
+            清除({activeCategories.length})
+          </button>
+        )}
+      </div>
       <div className="ai-map-legend-list">
         {sorted.map((row) => {
-          const isActive = activeCategory === row.category;
-          const isDimmed = activeCategory !== null && !isActive;
+          const isActive = activeSet.has(row.category);
+          const isDimmed = hasSelection && !isActive;
           return (
             <button
               key={row.category}
@@ -52,7 +68,7 @@ export default function PatentMapLegend({
                 (isActive ? " active" : "") +
                 (isDimmed ? " dim" : "")
               }
-              onClick={() => onSelectCategory(isActive ? null : row.category)}
+              onClick={() => onToggleCategory(row.category)}
             >
               <span
                 className="ai-map-legend-dot"

@@ -17,6 +17,7 @@ import PatentMapCanvas, { type PatentMapLayout } from "./PatentMapCanvas";
 import PatentMapLegend, { type LegendCategoryRow } from "./PatentMapLegend";
 import PatentMapCompanyPanel from "./PatentMapCompanyPanel";
 import PatentMapTimeline from "./PatentMapTimeline";
+import PatentMapGlobalSearch, { type GlobalSearchCompany } from "./PatentMapGlobalSearch";
 import {
   loadSnapshotIndex,
   loadSnapshotByDate,
@@ -82,8 +83,12 @@ export default function PatentMapClient() {
   const [layout, setLayout] = useState<PatentMapLayout>(
     () => parseLayout(searchParams.get("layout"))
   );
-  const [activeCategory, setActiveCategory] = useState<string | null>(
-    () => searchParams.get("category")
+  // 多選 cat;URL 參數仍叫 category,改用逗號分隔
+  const [activeCategories, setActiveCategories] = useState<string[]>(
+    () => {
+      const raw = searchParams.get("category");
+      return raw ? raw.split(",").filter(Boolean) : [];
+    }
   );
   const [visibleCompanies, setVisibleCompanies] = useState<LayoutCompany[]>([]);
 
@@ -96,13 +101,19 @@ export default function PatentMapClient() {
     const params = new URLSearchParams();
     if (selectedDate) params.set("date", selectedDate);
     if (layout !== "force") params.set("layout", layout);
-    if (activeCategory) params.set("category", activeCategory);
+    if (activeCategories.length > 0) params.set("category", activeCategories.join(","));
     const qs = params.toString();
     const newUrl = window.location.pathname + (qs ? "?" + qs : "");
     if (window.location.search.replace(/^\?/, "") !== qs) {
       window.history.replaceState(null, "", newUrl);
     }
-  }, [selectedDate, layout, activeCategory]);
+  }, [selectedDate, layout, activeCategories]);
+
+  function toggleCategory(cat: string) {
+    setActiveCategories((prev) =>
+      prev.includes(cat) ? prev.filter((c) => c !== cat) : [...prev, cat]
+    );
+  }
 
   // ===== 衍生資料 =====
   const palette = useMemo(
@@ -132,9 +143,19 @@ export default function PatentMapClient() {
     return selectedDate ? selectedDate.replace(/-/g, ".") : "—";
   }, [selectedDate]);
 
-  const filteredCompanies = activeCategory
-    ? visibleCompanies.filter((c) => c.mainCategory === activeCategory)
+  const filteredCompanies = activeCategories.length > 0
+    ? visibleCompanies.filter((c) => activeCategories.includes(c.mainCategory))
     : visibleCompanies;
+
+  // 全域搜尋用的公司清單(用 dataset 的所有公司,跟 visible 無關)
+  const globalSearchCompanies: GlobalSearchCompany[] = useMemo(() => {
+    if (!dataset) return [];
+    return dataset.companies.map((c) => ({
+      name: c.name,
+      stockCode: c.stockCode || null,
+      mainCategory: c.mainCategory || null,
+    }));
+  }, [dataset]);
 
   const getCompanyMeta = useMemo(() => {
     return (name: string) => {
@@ -221,6 +242,11 @@ export default function PatentMapClient() {
             </button>
           ))}
         </div>
+
+        <PatentMapGlobalSearch
+          companies={globalSearchCompanies}
+          onSelect={goToCompany}
+        />
       </header>
 
       <PatentMapCanvas
@@ -229,7 +255,8 @@ export default function PatentMapClient() {
         mode="cumulative"
         branch="all"
         layout={layout}
-        activeCategory={activeCategory}
+        activeCategory={null}
+        activeCategories={activeCategories}
         palette={palette}
         highlightedCompanyName={null}
         onCompanyClick={(p) => goToCompany(p.name)}
@@ -238,8 +265,9 @@ export default function PatentMapClient() {
 
       <PatentMapLegend
         categories={legendRows}
-        activeCategory={activeCategory}
-        onSelectCategory={setActiveCategory}
+        activeCategories={activeCategories}
+        onToggleCategory={toggleCategory}
+        onClearAll={() => setActiveCategories([])}
       />
 
       <PatentMapCompanyPanel

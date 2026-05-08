@@ -44,6 +44,8 @@ type Props = {
   layout: PatentMapLayout;
   /** Legend 點選的 category(null = 無聚焦) */
   activeCategory: string | null;
+  /** 多選 category 清單(優先於 activeCategory;空陣列等於無多選) */
+  activeCategories?: string[];
   /** category → hex 顏色對照表 */
   palette: Record<string, string>;
   /** 由 parent 控制的高亮公司名;null = 無聚焦 */
@@ -169,6 +171,7 @@ export default function PatentMapCanvas({
   branch,
   layout,
   activeCategory,
+  activeCategories,
   palette,
   highlightedCompanyName,
   onCompanyClick,
@@ -209,6 +212,7 @@ export default function PatentMapCanvas({
   const apiRef = useRef<{
     refresh: () => void;
     focusCategory: (cat: string | null) => void;
+    focusCategories: (cats: string[]) => void;
     focusByName: (name: string | null) => void;
     clearFocus: () => void;
   } | null>(null);
@@ -486,15 +490,19 @@ export default function PatentMapCanvas({
       geom.setAttribute("aCatId", new THREE.BufferAttribute(catIds, 1));
 
       // 「宇宙星圖」shader
-      //   focusIdx     — 單一公司聚焦(focusByName)
-      //   activeCatId  — 當前選中的 cat id,點 cat 時該 cat 的點全亮其他暗
-      //   topIdx       — 該 cat 內 patent 數最高公司的 vertex index → 閃爍光暈
-      //   uTime        — 給 topIdx pulse 用
+      //   focusIdx       — 單一公司聚焦(focusByName)
+      //   activeCatId    — 單選 cat(legacy)
+      //   activeCatIds[] — 多選 cat 陣列(優先於 activeCatId)
+      //   activeCatCount — array 內有幾筆有效
+      //   topIdx         — 該 cat 內 patent 數最高公司 vertex idx → 閃爍光暈(僅單選時用)
+      const ACTIVE_CAT_MAX = 32;
       const mat = new THREE.ShaderMaterial({
         uniforms: {
           pixelRatio: { value: renderer.getPixelRatio() },
           focusIdx: { value: -1.0 },
           activeCatId: { value: -1.0 },
+          activeCatIds: { value: new Float32Array(ACTIVE_CAT_MAX) },
+          activeCatCount: { value: 0.0 },
           topIdx: { value: -1.0 },
           uTime: { value: 0.0 },
         },
@@ -509,6 +517,8 @@ export default function PatentMapCanvas({
           uniform float pixelRatio;
           uniform float focusIdx;
           uniform float activeCatId;
+          uniform float activeCatIds[${ACTIVE_CAT_MAX}];
+          uniform float activeCatCount;
           uniform float topIdx;
           uniform float uTime;
           void main() {
@@ -516,18 +526,23 @@ export default function PatentMapCanvas({
             vTime = uTime;
             float vid = float(gl_VertexID);
 
-            // 是否為 cat 內 top company(專利數最高)
             vIsTop = abs(vid - topIdx) < 0.5 ? 1.0 : 0.0;
 
-            // dim 計算:四層優先序(top 點不被 dim,只 boost)
-            //   focusIdx 模式(單點聚焦):非 focus 點 dim 0.18
-            //   activeCatId 模式:
-            //     - top 點 = 1.0(不變)
-            //     - 同 cat 非 top = 0.45(中亮,讓 top 跳出來)
-            //     - 其他 cat = 0.08(深 dim)
+            // dim:
+            //   focusIdx >= 0 → 單點聚焦
+            //   activeCatCount > 0 → 多選 cat(全部都亮,其他暗)
+            //   activeCatId >= 0 → 單選 cat(top 額外突出)
+            //   都沒 → 全亮
             float dim = 1.0;
             if (focusIdx >= 0.0) {
               dim = abs(vid - focusIdx) > 0.5 ? 0.18 : 1.0;
+            } else if (activeCatCount > 0.5) {
+              bool isActive = false;
+              for (int k = 0; k < ${ACTIVE_CAT_MAX}; k++) {
+                if (float(k) >= activeCatCount) break;
+                if (abs(aCatId - activeCatIds[k]) < 0.5) { isActive = true; break; }
+              }
+              dim = isActive ? 1.0 : 0.08;
             } else if (activeCatId >= 0.0) {
               if (vIsTop > 0.5) {
                 dim = 1.0;
@@ -1116,9 +1131,44 @@ export default function PatentMapCanvas({
     // ===== Imperative API:由其他 effect 呼叫 =====
     apiRef.current = {
       refresh: () => { rebuildGraph(); },
+      focusCategories: (cats) => {
+        if (!companyPoints) return;
+        const matAny = companyPoints.material as THREE.ShaderMaterial;
+        // 多選模式:清掉單選 / topIdx 邏輯,把 cats 對應的 ids 寫入 array uniform
+        const arr = matAny.uniforms.activeCatIds.value as Float32Array;
+        const ids = cats
+          .map((c) => catNameToId.get(c))
+          .filter((v): v is number => v !== undefined);
+        for (let k = 0; k < arr.length; k++) arr[k] = k < ids.length ? ids[k] : 0;
+        matAny.uniforms.activeCatCount.value = ids.length;
+        // 多選同時清除單選 / 單點 highlight,避免衝突
+        matAny.uniforms.activeCatId.value = -1;
+        matAny.uniforms.topIdx.value = -1;
+        // 鏡頭:多選 → 移到所有選中 cat 的整體質心
+        if (ids.length > 0) {
+          const positions = (companyPoints.geometry.attributes.position as THREE.BufferAttribute).array as Float32Array;
+          let sx = 0, sy = 0, n = 0;
+          const catSet = new Set(cats);
+          visibleCompanies.forEach((c, i) => {
+            if (catSet.has(c.mainCategory)) {
+              sx += positions[i * 3];
+              sy += positions[i * 3 + 1];
+              n++;
+            }
+          });
+          if (n > 0) {
+            cameraTarget.x = sx / n;
+            cameraTarget.y = sy / n;
+            // 多選用較廣的視野
+            cameraTarget.distance = Math.min(60, Math.max(35, 30 + n * 0.3));
+          }
+        }
+      },
       focusCategory: (cat) => {
         if (!companyPoints) return;
         const matAny = companyPoints.material as THREE.ShaderMaterial;
+        // 切回單選模式 → 清多選 uniform
+        matAny.uniforms.activeCatCount.value = 0;
         if (cat) {
           // 找該 cat 內 patent 數最高的公司,鏡頭聚焦到那家公司位置
           const positions = (companyPoints.geometry.attributes.position as THREE.BufferAttribute).array as Float32Array;
@@ -1325,9 +1375,17 @@ export default function PatentMapCanvas({
   }, [dataset, selectedMonth, mode, branch, layout]);
 
   // ============== 副 effect:Legend 點選 → 鏡頭聚焦 ==============
+  // 多選優先;activeCategories 有內容時走 focusCategories,否則走 focusCategory
+  const activeCatsKey = (activeCategories || []).join("|");
   useEffect(() => {
-    apiRef.current?.focusCategory(activeCategory);
-  }, [activeCategory]);
+    const arr = activeCategories || [];
+    if (arr.length > 0) {
+      apiRef.current?.focusCategories(arr);
+    } else {
+      apiRef.current?.focusCategory(activeCategory);
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [activeCategory, activeCatsKey]);
 
   // ============== 副 effect:公司清單點選 → 對該公司聚焦 / 清空 ==============
   useEffect(() => {

@@ -59,7 +59,13 @@ export default function PatentMapCompanyPanel({
   const filtered = useMemo(() => {
     let list = companies;
     if (searchQuery) {
-      list = list.filter((c) => c.name.toLowerCase().includes(searchQuery));
+      // 同時比對公司名稱跟股票代號(透過 getMeta)
+      list = list.filter((c) => {
+        if (c.name.toLowerCase().includes(searchQuery)) return true;
+        const meta = getMeta(c.name);
+        if (meta?.stockCode && meta.stockCode.toLowerCase().includes(searchQuery)) return true;
+        return false;
+      });
     }
     const sorted = [...list];
     if (sortBy === "patents") {
@@ -75,7 +81,7 @@ export default function PatentMapCompanyPanel({
       });
     }
     return sorted;
-  }, [companies, searchQuery, sortBy]);
+  }, [companies, searchQuery, sortBy, getMeta]);
 
   const displayList = filtered.slice(0, MAX_DISPLAY);
   const overflow = filtered.length - displayList.length;
@@ -105,7 +111,7 @@ export default function PatentMapCompanyPanel({
           type="text"
           value={searchInput}
           onChange={(e) => setSearchInput(e.target.value)}
-          placeholder="搜尋公司名稱..."
+          placeholder="搜尋公司或股票代號..."
           autoComplete="off"
         />
       </div>

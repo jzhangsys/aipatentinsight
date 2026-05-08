@@ -3624,14 +3624,113 @@
 /* Header 改用 grid:標題在左上,時間軸佔大欄,Layout toggle 在右上 */
 .ai-patent-map .ai-page-header {
   display: grid;
-  grid-template-columns: minmax(0, 320px) 1fr auto;
-  grid-template-areas: "title timeline layout";
+  grid-template-columns: minmax(0, 280px) 1fr auto auto;
+  grid-template-areas: "title timeline layout search";
   gap: 16px 24px;
   align-items: end;
 }
 .ai-patent-map .ai-page-header > div:first-child { grid-area: title; }
 .ai-map-timeline { grid-area: timeline; }
 .ai-patent-map .ai-map-layout-pills { grid-area: layout; }
+.ai-patent-map .ai-map-global-search { grid-area: search; }
+
+/* === 全域搜尋(Patent Map 右上)=== */
+.ai-map-global-search {
+  position: relative;
+  width: 240px;
+}
+.ai-map-global-search input {
+  width: 100%;
+  padding: 8px 12px;
+  background: rgba(3, 5, 15, 0.85);
+  border: 1px solid rgba(125, 249, 255, 0.32);
+  border-radius: 6px;
+  color: rgba(255, 255, 255, 0.95);
+  font-size: 12px;
+  font-family: inherit;
+  outline: none;
+  transition: border-color 0.15s;
+}
+.ai-map-global-search input:focus {
+  border-color: rgba(125, 249, 255, 0.7);
+}
+.ai-map-global-search input::placeholder {
+  color: rgba(255, 255, 255, 0.4);
+  letter-spacing: 0.02em;
+}
+.ai-map-global-search-results {
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0;
+  right: 0;
+  z-index: 50;
+  background: rgba(3, 8, 22, 0.97);
+  border: 1px solid rgba(125, 249, 255, 0.38);
+  border-radius: 6px;
+  list-style: none;
+  margin: 0;
+  padding: 4px 0;
+  max-height: 360px;
+  overflow-y: auto;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.6);
+}
+.ai-map-global-search-item {
+  padding: 8px 12px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.92);
+  border-bottom: 1px solid rgba(125, 249, 255, 0.06);
+}
+.ai-map-global-search-item:last-child { border-bottom: none; }
+.ai-map-global-search-item.active,
+.ai-map-global-search-item:hover {
+  background: rgba(125, 249, 255, 0.10);
+}
+.ai-map-global-search-item .gs-name {
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.96);
+}
+.ai-map-global-search-item .gs-meta {
+  font-size: 10.5px;
+  color: rgba(255, 255, 255, 0.5);
+  display: flex;
+  gap: 6px;
+}
+.ai-map-global-search-item .gs-code {
+  font-family: ui-monospace, monospace;
+  color: rgba(125, 249, 255, 0.85);
+}
+.ai-map-global-search-empty {
+  padding: 10px 12px;
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.4);
+  text-align: center;
+}
+.ai-map-legend-clear {
+  margin-left: 8px;
+  padding: 2px 8px;
+  background: rgba(125, 249, 255, 0.12);
+  border: 1px solid rgba(125, 249, 255, 0.32);
+  border-radius: 4px;
+  font-size: 9px;
+  color: rgba(255, 255, 255, 0.85);
+  cursor: pointer;
+  letter-spacing: 0.06em;
+}
+.ai-map-legend-clear:hover {
+  background: rgba(125, 249, 255, 0.18);
+}
+
+@media (max-width: 900px) {
+  .ai-patent-map .ai-page-header {
+    grid-template-columns: 1fr;
+    grid-template-areas: "title" "search" "timeline" "layout";
+  }
+  .ai-map-global-search { width: 100%; }
+}
 
 /* Time axis */
 .ai-map-timeline {
