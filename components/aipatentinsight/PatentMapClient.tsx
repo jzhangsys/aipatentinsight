@@ -127,11 +127,14 @@ export default function PatentMapClient() {
     for (const c of visibleCompanies) {
       counts.set(c.mainCategory, (counts.get(c.mainCategory) || 0) + 1);
     }
-    return dataset.categories.map((cat) => ({
-      category: cat,
-      count: counts.get(cat) || 0,
-      color: palette[cat] || "#CCCCCC",
-    }));
+    // 只顯示實際有公司的 cat — declared 但無 company 的不在 legend 上佔位
+    return dataset.categories
+      .map((cat) => ({
+        category: cat,
+        count: counts.get(cat) || 0,
+        color: palette[cat] || "#CCCCCC",
+      }))
+      .filter((row) => row.count > 0);
   }, [dataset, visibleCompanies, palette]);
 
   const totalPatentsInView = useMemo(
