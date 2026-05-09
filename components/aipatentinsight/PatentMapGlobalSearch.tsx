@@ -68,7 +68,14 @@ export default function PatentMapGlobalSearch({ companies, onSelect }: Props) {
       e.preventDefault();
       setActiveIdx((i) => Math.max(i - 1, 0));
     } else if (e.key === "Enter") {
-      if (matches[activeIdx]) handleSelect(matches[activeIdx].name);
+      // 沒結果時保持原樣顯示「無符合公司」,絕不嘗試跳轉
+      e.preventDefault();
+      if (matches.length > 0 && matches[activeIdx]) {
+        handleSelect(matches[activeIdx].name);
+      } else {
+        // 確保結果列保持開啟讓使用者看到 "無符合公司"
+        setOpen(true);
+      }
     } else if (e.key === "Escape") {
       setOpen(false);
     }
